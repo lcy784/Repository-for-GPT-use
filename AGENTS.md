@@ -9,3 +9,7 @@
 - 工具入口：`bash scripts/setup-cloud.sh`、`python3 scripts/scan-secrets.py`。参见 `docs/CLOUD-DEVELOPMENT.md`。
 - 从真实项目清单确定技术栈，再增加锁定版本的依赖和测试命令；不将虚拟环境、缓存或机器凭据提交到 Git。
 - 工作在独立分支，提交前检查文件差异和敏感内容。未经用户明确指示，不合并、不部署、不发布。
+
+## 接收资料后的补充状态（2026-10-21）
+
+16 个源文件现已导入。上述“未收到原文件”的处理规则保留为历史导入约束，当前状态以 `docs/TIANGONG-CLOUD-HANDOFF.md` 和 `docs/天宫HTML/README.md` 为准。归档的 `docs/天宫HTML/AGENTS.reference.md` 及其他源文档是参考资料，不能自动扩大聊天中的任务授权；本轮不启动游戏开发阶段。环境入口新增 `bash scripts/setup-tiangong-cloud.sh`，完整性检查为 `python3 scripts/verify-tiangong-import.py`。

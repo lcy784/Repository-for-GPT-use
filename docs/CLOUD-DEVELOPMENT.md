@@ -43,3 +43,7 @@ python3 scripts/scan-secrets.py docs
 确认文件清单与技术栈后，在云端安装必要运行时、系统工具及项目依赖，提交依赖清单、锁文件、安装步骤和实际验证结果。可再分发的必要资源应保留在仓库中；不适合提交的资源需记录云端获取方式和校验方法。密钥只能使用环境安全配置，不写入仓库。
 
 在源文件到位前，不臆造构建命令或宣称测试通过。当前分支没有合并、部署或发布步骤。
+
+## 后续更新：源文件与工具已准备（2026-10-21）
+
+上文的“源码尚未收到”保留为初次准备记录。现已收到并导入 16 个源文件；文档建议的离线技术栈工具在 `tools/tiangong/` 单独锁定，不代表新游戏阶段已经实现。最新路径、安装和实际验证记录见 `docs/TIANGONG-CLOUD-HANDOFF.md`、`docs/天宫HTML/README.md` 与 `docs/TIANGONG-IMPORT-REPORT.md`。新增安装入口为 `bash scripts/setup-tiangong-cloud.sh`。

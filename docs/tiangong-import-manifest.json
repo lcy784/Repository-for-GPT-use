@@ -1,0 +1,138 @@
+{
+  "archive": "天宫HTML.zip",
+  "archive_sha256": "ae6d86b4b5830ad0c64c27e6fd166eadcd29c1ddd3421fb99e24f86bf2762355",
+  "source_file_count": 16,
+  "imported_file_count": 16,
+  "source_bytes": 10531422,
+  "excluded_files": [],
+  "files": [
+    {
+      "source_path": "天宫HTML/AGENTS.md",
+      "repository_path": "docs/天宫HTML/AGENTS.reference.md",
+      "bytes": 2242,
+      "sha256": "3663f72e4e02c222788b1bca6fd69046b5d8c53e2cd8e817242dc0ad1b55eab8",
+      "review": "credential-and-privacy-text-review",
+      "transformation": "filename-only; content unchanged"
+    },
+    {
+      "source_path": "天宫HTML/input/IMG_20261019_161156.jpg",
+      "repository_path": "docs/天宫HTML/input/IMG_20261019_161156.jpg",
+      "bytes": 1113789,
+      "sha256": "cdf3515efebb4a758457698bf348baf2ed5244279f8aefeb86154b2138127a80",
+      "review": "visual-and-jpeg-metadata-review",
+      "transformation": "none"
+    },
+    {
+      "source_path": "天宫HTML/input/IMG_20261019_161213.jpg",
+      "repository_path": "docs/天宫HTML/input/IMG_20261019_161213.jpg",
+      "bytes": 1157361,
+      "sha256": "bbca359c3c44b09ce860dca6a9fdc63bdb947e91f30f3438fb37c30a7da2a841",
+      "review": "visual-and-jpeg-metadata-review",
+      "transformation": "none"
+    },
+    {
+      "source_path": "天宫HTML/input/IMG_20261019_161233.jpg",
+      "repository_path": "docs/天宫HTML/input/IMG_20261019_161233.jpg",
+      "bytes": 863522,
+      "sha256": "8bb4b31a4e18b11db4ba3b5ee9ac7efe6bfd7c944912f49e990a8344e8170ff4",
+      "review": "visual-and-jpeg-metadata-review",
+      "transformation": "none"
+    },
+    {
+      "source_path": "天宫HTML/input/IMG_20261019_161249.jpg",
+      "repository_path": "docs/天宫HTML/input/IMG_20261019_161249.jpg",
+      "bytes": 1131489,
+      "sha256": "5d17dd496a78792af99a7b7a090b9f87228155e18a5ed38ceb5883e09be8ceb7",
+      "review": "visual-and-jpeg-metadata-review",
+      "transformation": "none"
+    },
+    {
+      "source_path": "天宫HTML/input/IMG_20261019_161304.jpg",
+      "repository_path": "docs/天宫HTML/input/IMG_20261019_161304.jpg",
+      "bytes": 966924,
+      "sha256": "9e1f677d16010d4b9d58cf1b22fb470963e0050cf4c99a985a1dcf78d3ffe0f3",
+      "review": "visual-and-jpeg-metadata-review",
+      "transformation": "none"
+    },
+    {
+      "source_path": "天宫HTML/input/IMG_20261019_161318.jpg",
+      "repository_path": "docs/天宫HTML/input/IMG_20261019_161318.jpg",
+      "bytes": 773478,
+      "sha256": "5b8bcac49fa521711d110aa3019fa4535dc733400bd8542aabd95dd78765b977",
+      "review": "visual-and-jpeg-metadata-review",
+      "transformation": "none"
+    },
+    {
+      "source_path": "天宫HTML/input/IMG_20261019_161331.jpg",
+      "repository_path": "docs/天宫HTML/input/IMG_20261019_161331.jpg",
+      "bytes": 949060,
+      "sha256": "88d89e55af143aab0c8800b509f64947dcf3af24c78c826996bf260b9da188f8",
+      "review": "visual-and-jpeg-metadata-review",
+      "transformation": "none"
+    },
+    {
+      "source_path": "天宫HTML/input/IMG_20261019_161402.jpg",
+      "repository_path": "docs/天宫HTML/input/IMG_20261019_161402.jpg",
+      "bytes": 1112388,
+      "sha256": "dcc34e9ba24a5724ea936f5aeb1827e7d75fe1e71bc0719e92cd4fbcf3021049",
+      "review": "visual-and-jpeg-metadata-review",
+      "transformation": "none"
+    },
+    {
+      "source_path": "天宫HTML/input/IMG_20261019_161420.jpg",
+      "repository_path": "docs/天宫HTML/input/IMG_20261019_161420.jpg",
+      "bytes": 1041820,
+      "sha256": "d04bdb03336d415d85d898e22a0cd1c7cd1e53c63c8cbf90a77841519c9d6684",
+      "review": "visual-and-jpeg-metadata-review",
+      "transformation": "none"
+    },
+    {
+      "source_path": "天宫HTML/input/IMG_20261019_161434.jpg",
+      "repository_path": "docs/天宫HTML/input/IMG_20261019_161434.jpg",
+      "bytes": 1172272,
+      "sha256": "38d9b13092ee49ed7c6b95b336ccdd144a58a201b6b881368bd513ed20eee145",
+      "review": "visual-and-jpeg-metadata-review",
+      "transformation": "none"
+    },
+    {
+      "source_path": "天宫HTML/input/jiangnan-offline.html",
+      "repository_path": "docs/天宫HTML/input/jiangnan-offline.html",
+      "bytes": 52444,
+      "sha256": "a43629c2b22b3f7d5508fcd151de8f64a6ca5156d61c0299d70459cd75226458",
+      "review": "credential-and-privacy-text-review",
+      "transformation": "none"
+    },
+    {
+      "source_path": "天宫HTML/tiangong-phased-development-plan-v1.0.md",
+      "repository_path": "docs/天宫HTML/tiangong-phased-development-plan-v1.0.md",
+      "bytes": 103253,
+      "sha256": "0045d6c04d6eb11ab52b59db970a75a9f23256b31e834fa5d2954c38bf9c1279",
+      "review": "credential-and-privacy-text-review",
+      "transformation": "none"
+    },
+    {
+      "source_path": "天宫HTML/tiangong-product-requirements-v1.0.md",
+      "repository_path": "docs/天宫HTML/tiangong-product-requirements-v1.0.md",
+      "bytes": 22057,
+      "sha256": "0fea5f8af1646173013bfa40825b465d6d835ecdc809ab0729c7465755085932",
+      "review": "credential-and-privacy-text-review",
+      "transformation": "none"
+    },
+    {
+      "source_path": "天宫HTML/tiangong-system-architecture-v1.0.md",
+      "repository_path": "docs/天宫HTML/tiangong-system-architecture-v1.0.md",
+      "bytes": 38384,
+      "sha256": "da7c0cd78ac53b3bd4ab75ca93f332144eee7b3ccffe73a720a6c4a0b1a73822",
+      "review": "credential-and-privacy-text-review",
+      "transformation": "none"
+    },
+    {
+      "source_path": "天宫HTML/tiangong-user-requirements-v1.0.md",
+      "repository_path": "docs/天宫HTML/tiangong-user-requirements-v1.0.md",
+      "bytes": 30939,
+      "sha256": "e153e3de88f10d2315d6e895e5f9bc64fa29d158ac1ca7f38660bcdc859b3fac",
+      "review": "credential-and-privacy-text-review",
+      "transformation": "none"
+    }
+  ]
+}
