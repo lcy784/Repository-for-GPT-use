@@ -1,0 +1,15 @@
+{
+  "scope": "All 150 paths changed from the P01 parent: source, documentation, four formal P02 run directories and review index",
+  "scanner": "detect-secrets; all files; no remote credential verification",
+  "rawPotentialFindings": 793,
+  "classifiedFalsePositives": {
+    "generatedSha256Metadata": 782,
+    "verifiedGeneratedCloudRunDirectory": 11
+  },
+  "unclassifiedFindings": 0,
+  "classification": "Each hex finding was located by SHA-1 matching and consists of a 64-hex SHA-256 in a generated candidate/artifact hash field, or the review index candidate fingerprint. Each Base64 finding is a generated runDir value verified equal to its cloud report parent directory. No findings outside these generated metadata classes.",
+  "manualReview": "New files contain original procedural geometry, public tool/module names and engineering evidence; no passwords, API keys, private user documents or personal contact data added. All final screenshots were visually inspected. New commits use public GitHub noreply identity.",
+  "originalSources": "16 files; 10531422 bytes; all source SHA-256 unchanged",
+  "rawLogs": "Tool whitespace retained without editing to preserve evidence hashes. Source-only git diff whitespace check passed.",
+  "executionCorrection": "The first review-classification command did not halt the following shell commands on assertion failure, so the implementation push preceded this review record. All flagged classes have now been verified. Subsequent dependent steps use fail-on-error shell execution."
+}
