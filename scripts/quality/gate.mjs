@@ -24,7 +24,7 @@ try {
   const context = { runId, candidate: candidate.sha256 };
   const result = runChain(chain, stage => executeStage(root, stage, context, runDir, timeout));
   assertCandidateUnchanged(candidate.sha256, candidateFingerprint(root).sha256);
-  summary = { runId, through: args[1], candidate: candidate.sha256, ...result, packages: { A: 'not-built-at-P00', B: 'not-built-at-P00' } };
+  summary = { runId, through: args[1], candidate: candidate.sha256, ...result, packages: { A: 'not-yet-delivered', B: 'not-yet-delivered', P01: result.stages.find(stage => stage.stage === 'P01')?.buildManifest || 'not-built-in-this-run' } };
 } catch (error) {
   summary = { runId, through: args[1], status: 'FAIL', reason: error.message, nextStageEligible: false };
 }

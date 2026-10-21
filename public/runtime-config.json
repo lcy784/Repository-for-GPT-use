@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "sceneFixture": "p01-depth",
+  "simulationHz": 60,
+  "maxCatchUpSteps": 5,
+  "cameraPositions": [[12, 9, -17], [-15, 6, -8]],
+  "background": [0.045, 0.085, 0.095]
+}

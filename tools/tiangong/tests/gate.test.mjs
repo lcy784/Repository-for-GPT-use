@@ -47,6 +47,11 @@ function inputFixture() {
   for (const name of ['implementation-decisions.json', 'acceptance-profile.json', 'contracts.json']) {
     writeJson(path.join(f.root, 'quality', name), readJson(path.join(source, 'quality', name)));
   }
+  const decisionsFile = path.join(f.root, 'quality/implementation-decisions.json');
+  const decisions = readJson(decisionsFile);
+  decisions.firstRelease.status = 'pending-user-preference';
+  decisions.architecture.find(item => item.id === 'A-03').status = 'pending-user-preference';
+  writeJson(decisionsFile, decisions);
   const sourceDir = path.join(f.root, 'docs/天宫HTML');
   mkdirSync(path.join(sourceDir, 'input'), { recursive: true });
   for (const name of ['user-requirements', 'product-requirements', 'system-architecture', 'phased-development-plan']) writeFileSync(path.join(sourceDir, `tiangong-${name}-v1.0.md`), 'Isolated prerequisite fixture, not a product document.');
@@ -58,6 +63,17 @@ describe('P00-01 prerequisite and scope checks', () => {
   test('keeps unresolved user choices blocked after technical validation succeeds', () => {
     const f = inputFixture();
     expect(inspectImplementationInputs(f.root).blockers.length).toBeGreaterThan(0);
+  });
+  test('releases only the scope blocker after a user selection is recorded', () => {
+    const f = inputFixture();
+    const filename = path.join(f.root, 'quality/implementation-decisions.json');
+    const decisions = readJson(filename);
+    decisions.firstRelease.status = 'user-selected';
+    decisions.architecture.find(item => item.id === 'A-03').status = 'user-selected';
+    decisions.unresolved = decisions.unresolved.filter(item => item.blocks !== 'P00');
+    writeJson(filename, decisions);
+    expect(inspectImplementationInputs(f.root).blockers).toEqual([]);
+    expect(decisions.unresolved.some(item => item.blocks === 'P04')).toBe(true);
   });
   test('refuses placeholder and missing movement thresholds', () => {
     const f = inputFixture();

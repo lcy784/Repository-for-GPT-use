@@ -16,7 +16,7 @@ try {
   inputs = inspectImplementationInputs(root);
   const sourceCheck = spawnSync('python3', ['scripts/verify-tiangong-import.py'], { cwd: root, encoding: 'utf8', timeout: 15000 });
   assert.equal(sourceCheck.status, 0, 'Imported source verification failed.');
-  const typeCheck = spawnSync(path.join(root, 'tools/tiangong/node_modules/.bin/tsc'), ['--noEmit', '--strict', '--target', 'es2022', '--module', 'nodenext', 'src/shared/contracts.ts'], { cwd: root, encoding: 'utf8', timeout: 30000 });
+  const typeCheck = spawnSync(path.join(root, 'tools/tiangong/node_modules/.bin/tsc'), ['--project', 'quality/tsconfig.contracts.json'], { cwd: root, encoding: 'utf8', timeout: 30000 });
   assert.equal(typeCheck.status, 0, `Logical contract type checking failed: ${typeCheck.stderr || typeCheck.stdout}`);
   const built = path.join(runDir, 'candidate-contracts.json');
   writeJson(built, { candidate: context.candidate, contracts: inputs.contracts, acceptance: inputs.profile, decisions: inputs.decisions });
@@ -29,7 +29,7 @@ try {
 
 const vitestOutput = path.join(runDir, 'P00-vitest.json');
 const tests = spawnSync(process.execPath, [
-  'tools/tiangong/node_modules/vitest/vitest.mjs', 'run', '--config', 'quality/vitest.config.mjs', '--reporter=json', `--outputFile=${vitestOutput}`,
+  'tools/tiangong/node_modules/vitest/vitest.mjs', 'run', 'tools/tiangong/tests/gate.test.mjs', '--config', 'quality/vitest.config.mjs', '--reporter=json', `--outputFile=${vitestOutput}`,
 ], { cwd: root, encoding: 'utf8', timeout: 90000, maxBuffer: 8 * 1024 * 1024 });
 const testLog = path.join(runDir, 'P00-vitest.log');
 writeFileSync(testLog, `${tests.stdout || ''}\n${tests.stderr || ''}`);

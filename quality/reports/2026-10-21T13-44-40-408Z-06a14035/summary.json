@@ -1,0 +1,252 @@
+{
+  "runId": "2026-10-21T13-44-40-408Z-06a14035",
+  "through": "P01",
+  "candidate": "327309572a089019b8b2d8cb1bb63ab2e661036e885b682af462fcd79ac46369",
+  "status": "PASS",
+  "stages": [
+    {
+      "runId": "2026-10-21T13-44-40-408Z-06a14035",
+      "candidate": "327309572a089019b8b2d8cb1bb63ab2e661036e885b682af462fcd79ac46369",
+      "stage": "P00",
+      "status": "PASS",
+      "cases": [
+        {
+          "id": "P00-01",
+          "status": "PASS",
+          "executed": 5,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P00-input-checks.log",
+              "sha256": "9755161012e68396876bfa6e17a025c7d9b510636fb99421bca23e707feb8703"
+            },
+            {
+              "path": "candidate-contracts.json",
+              "sha256": "538b0de721f640fa9087bd3009f7e5451733f634cc69d67579f4cd9a518111d4"
+            },
+            {
+              "path": "P00-vitest.json",
+              "sha256": "1a7fb50f94b90f5102ea82f7fbe17516bf89e247d946c03a500f695bf816248d"
+            },
+            {
+              "path": "P00-vitest.log",
+              "sha256": "4e6ad685cf4afdeeea90674868b06fe369fd2987de39a56f4fe58d03ae53b420"
+            }
+          ]
+        },
+        {
+          "id": "P00-02",
+          "status": "PASS",
+          "executed": 13,
+          "evidence": [
+            {
+              "path": "P00-vitest.json",
+              "sha256": "1a7fb50f94b90f5102ea82f7fbe17516bf89e247d946c03a500f695bf816248d"
+            },
+            {
+              "path": "P00-vitest.log",
+              "sha256": "4e6ad685cf4afdeeea90674868b06fe369fd2987de39a56f4fe58d03ae53b420"
+            }
+          ]
+        },
+        {
+          "id": "P00-03",
+          "status": "PASS",
+          "executed": 4,
+          "evidence": [
+            {
+              "path": "P00-vitest.json",
+              "sha256": "1a7fb50f94b90f5102ea82f7fbe17516bf89e247d946c03a500f695bf816248d"
+            },
+            {
+              "path": "P00-vitest.log",
+              "sha256": "4e6ad685cf4afdeeea90674868b06fe369fd2987de39a56f4fe58d03ae53b420"
+            }
+          ]
+        },
+        {
+          "id": "P00-04",
+          "status": "PASS",
+          "executed": 9,
+          "evidence": [
+            {
+              "path": "P00-vitest.json",
+              "sha256": "1a7fb50f94b90f5102ea82f7fbe17516bf89e247d946c03a500f695bf816248d"
+            },
+            {
+              "path": "P00-vitest.log",
+              "sha256": "4e6ad685cf4afdeeea90674868b06fe369fd2987de39a56f4fe58d03ae53b420"
+            }
+          ]
+        }
+      ],
+      "automaticTests": 30,
+      "startedAt": "2026-10-21T13:44:40.439Z",
+      "endedAt": "2026-10-21T13:44:42.157Z",
+      "exitCode": 0,
+      "signal": null,
+      "environment": {
+        "node": "24.19.0",
+        "os": "linux",
+        "arch": "x64"
+      }
+    },
+    {
+      "runId": "2026-10-21T13-44-40-408Z-06a14035",
+      "candidate": "327309572a089019b8b2d8cb1bb63ab2e661036e885b682af462fcd79ac46369",
+      "stage": "P01",
+      "status": "PASS",
+      "cases": [
+        {
+          "id": "P01-01",
+          "status": "PASS",
+          "executed": 2,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "1de38a27afd126beafd75ff3e9e91113ea961d610df09a40df4ef43834674f55"
+            },
+            {
+              "path": "P01-build-and-tests.log",
+              "sha256": "32004a7dfc83329c81d4d9efa95ae5d120a08ff2f9d32dfa63b7d59a74134d7b"
+            },
+            {
+              "path": "P01-browser/results.json",
+              "sha256": "307ec479d64de41b140a1a3e069367dd93491bea93143619cc249b221d29c1a7"
+            },
+            {
+              "path": "P01-browser.log",
+              "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+            },
+            {
+              "path": "P01-browser/production-camera-a.png",
+              "sha256": "945f6c92424ff268a85ffe53a5a66dc2a5587985b693fcc25afdfa27b611eaa6"
+            },
+            {
+              "path": "P01-browser/production-camera-b.png",
+              "sha256": "88471be8b51f80d45e8124071b4b634e5ee7258b11da1175c37c86758559184e"
+            },
+            {
+              "path": "P01-browser/development-camera-a.png",
+              "sha256": "945f6c92424ff268a85ffe53a5a66dc2a5587985b693fcc25afdfa27b611eaa6"
+            },
+            {
+              "path": "P01-browser/development-camera-b.png",
+              "sha256": "88471be8b51f80d45e8124071b4b634e5ee7258b11da1175c37c86758559184e"
+            }
+          ]
+        },
+        {
+          "id": "P01-02",
+          "status": "PASS",
+          "executed": 4,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "1de38a27afd126beafd75ff3e9e91113ea961d610df09a40df4ef43834674f55"
+            },
+            {
+              "path": "P01-build-and-tests.log",
+              "sha256": "32004a7dfc83329c81d4d9efa95ae5d120a08ff2f9d32dfa63b7d59a74134d7b"
+            },
+            {
+              "path": "P01-browser/results.json",
+              "sha256": "307ec479d64de41b140a1a3e069367dd93491bea93143619cc249b221d29c1a7"
+            },
+            {
+              "path": "P01-browser.log",
+              "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+            }
+          ]
+        },
+        {
+          "id": "P01-03",
+          "status": "PASS",
+          "executed": 7,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "1de38a27afd126beafd75ff3e9e91113ea961d610df09a40df4ef43834674f55"
+            },
+            {
+              "path": "P01-build-and-tests.log",
+              "sha256": "32004a7dfc83329c81d4d9efa95ae5d120a08ff2f9d32dfa63b7d59a74134d7b"
+            },
+            {
+              "path": "P01-browser/results.json",
+              "sha256": "307ec479d64de41b140a1a3e069367dd93491bea93143619cc249b221d29c1a7"
+            },
+            {
+              "path": "P01-browser.log",
+              "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+            },
+            {
+              "path": "P01-clock-tests.json",
+              "sha256": "a40d83edf16765ddf0dc9089aaebe2db53b4000547b65e1bd5192c627a9be241"
+            },
+            {
+              "path": "P01-clock-tests.log",
+              "sha256": "1ec3cb59fad54b8d42addd2aeb5d701b37fe74c16c34927f99f4460956a01315"
+            }
+          ]
+        },
+        {
+          "id": "P01-04",
+          "status": "PASS",
+          "executed": 6,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "1de38a27afd126beafd75ff3e9e91113ea961d610df09a40df4ef43834674f55"
+            },
+            {
+              "path": "P01-build-and-tests.log",
+              "sha256": "32004a7dfc83329c81d4d9efa95ae5d120a08ff2f9d32dfa63b7d59a74134d7b"
+            },
+            {
+              "path": "P01-browser/results.json",
+              "sha256": "307ec479d64de41b140a1a3e069367dd93491bea93143619cc249b221d29c1a7"
+            },
+            {
+              "path": "P01-browser.log",
+              "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+            }
+          ]
+        }
+      ],
+      "environment": {
+        "browser": "154.0.8037.57",
+        "display": "real Chromium tabs on cloud Xvfb",
+        "graphics": "ANGLE SwiftShader; functional checks only",
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "node": "24.19.0",
+        "os": "linux",
+        "arch": "x64"
+      },
+      "buildManifest": {
+        "path": "P01-production-manifest.json",
+        "sha256": "1de38a27afd126beafd75ff3e9e91113ea961d610df09a40df4ef43834674f55"
+      },
+      "startedAt": "2026-10-21T13:44:42.161Z",
+      "endedAt": "2026-10-21T13:45:02.559Z",
+      "exitCode": 0,
+      "signal": null
+    }
+  ],
+  "nextStageEligible": true,
+  "packages": {
+    "A": "not-yet-delivered",
+    "B": "not-yet-delivered",
+    "P01": {
+      "path": "P01-production-manifest.json",
+      "sha256": "1de38a27afd126beafd75ff3e9e91113ea961d610df09a40df4ef43834674f55"
+    }
+  }
+}

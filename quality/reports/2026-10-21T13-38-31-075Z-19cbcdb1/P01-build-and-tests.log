@@ -1,0 +1,50 @@
+
+> tiangong@0.0.0 build
+> node tools/tiangong/node_modules/typescript/bin/tsc --noEmit && node tools/tiangong/node_modules/vite/bin/vite.js build
+
+vite v8.3.5 building client environment for production...
+transforming...
+✓ 457 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                           1.45 kB │ gzip:   0.81 kB
+dist/assets/index-BKxVMWTm.css                            1.79 kB │ gzip:   0.84 kB
+dist/assets/postprocess.vertex-BdayeqI-.js                0.45 kB │ gzip:   0.30 kB
+dist/assets/rgbdDecode.fragment-CSNS0rUE.js               0.51 kB │ gzip:   0.34 kB
+dist/assets/postprocess.vertex-BBgtSh4A.js                0.57 kB │ gzip:   0.35 kB
+dist/assets/rgbdDecode.fragment-DzuuTDan.js               0.65 kB │ gzip:   0.38 kB
+dist/assets/mesh.vertexData.functions-CD4JOR2q.js         0.93 kB │ gzip:   0.48 kB
+dist/assets/ddsTextureLoader-CRor8jU-.js                  1.25 kB │ gzip:   0.62 kB
+dist/assets/logger-CuBYPcDK.js                            1.88 kB │ gzip:   0.82 kB
+dist/assets/logDepthDeclaration-Cs9hkyb3.js               2.15 kB │ gzip:   0.85 kB
+dist/assets/hdrTextureLoader-BQVwkxK1.js                  2.31 kB │ gzip:   1.13 kB
+dist/assets/iesTextureLoader-D3JSkXrT.js                  2.46 kB │ gzip:   1.07 kB
+dist/assets/logDepthDeclaration-CEU66hoM.js               2.53 kB │ gzip:   0.84 kB
+dist/assets/tgaTextureLoader-CqhhocF6.js                  3.40 kB │ gzip:   1.35 kB
+dist/assets/cubemapToSphericalPolynomial-BFiwNRQo.js      3.56 kB │ gzip:   1.57 kB
+dist/assets/halfFloat-CXxwV7oo.js                         4.87 kB │ gzip:   1.80 kB
+dist/assets/helperFunctions-DLAxwd-S.js                   6.48 kB │ gzip:   2.18 kB
+dist/assets/helperFunctions-6JzEbypF.js                   6.80 kB │ gzip:   2.30 kB
+dist/assets/dds.pure-DW-g0QY0.js                          6.91 kB │ gzip:   2.53 kB
+dist/assets/exrTextureLoader-B_4ckACJ.js                 13.09 kB │ gzip:   4.79 kB
+dist/assets/ktxTextureLoader-D6j9y0OS.js                 16.37 kB │ gzip:   4.79 kB
+dist/assets/basisTextureLoader-By3EI-Ej.js               27.16 kB │ gzip:   8.09 kB
+dist/assets/default.vertex-CaFU0LuK.js                   29.81 kB │ gzip:   6.03 kB
+dist/assets/envTextureLoader-DXIAKb-j.js                 31.53 kB │ gzip:   8.84 kB
+dist/assets/default.vertex-C-_gm0yA.js                   49.56 kB │ gzip:   8.07 kB
+dist/assets/default.fragment-DWc3cwIR.js                112.51 kB │ gzip:  23.02 kB
+dist/assets/default.fragment-C9Y3Bz85.js                117.52 kB │ gzip:  22.91 kB
+dist/assets/index-DxRD0g24.js                         1,062.51 kB │ gzip: 251.67 kB
+
+✓ built in 543ms
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice

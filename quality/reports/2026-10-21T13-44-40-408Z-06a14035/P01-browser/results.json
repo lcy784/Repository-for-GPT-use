@@ -1,0 +1,825 @@
+{
+  "runId": "2026-10-21T13-44-40-408Z-06a14035",
+  "candidate": "327309572a089019b8b2d8cb1bb63ab2e661036e885b682af462fcd79ac46369",
+  "browser": "154.0.8037.57",
+  "display": "real Chromium tabs on cloud Xvfb",
+  "results": [
+    {
+      "id": "P01-01",
+      "status": "PASS",
+      "executed": 2,
+      "views": [
+        {
+          "mode": "production",
+          "snapshot": {
+            "phase": "ready",
+            "error": null,
+            "frame": 46,
+            "tick": 113,
+            "maxStepsInFrame": 5,
+            "backend": "WebGL2",
+            "meshes": 4,
+            "activeMeshes": 4,
+            "engines": 1,
+            "listeners": 2,
+            "width": 1280,
+            "height": 720,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 1,
+            "glError": 0,
+            "fixture": "p01-depth",
+            "totalFrames": 46,
+            "generation": 1,
+            "canvases": 1
+          },
+          "captures": [
+            {
+              "file": "production-camera-a.png",
+              "sha256": "945f6c92424ff268a85ffe53a5a66dc2a5587985b693fcc25afdfa27b611eaa6",
+              "colors": 35,
+              "width": 1280,
+              "height": 720
+            },
+            {
+              "file": "production-camera-b.png",
+              "sha256": "88471be8b51f80d45e8124071b4b634e5ee7258b11da1175c37c86758559184e",
+              "colors": 31,
+              "width": 1280,
+              "height": 720
+            }
+          ],
+          "network": [
+            {
+              "path": "/",
+              "status": 200
+            },
+            {
+              "path": "/assets/index-BKxVMWTm.css",
+              "status": 200
+            },
+            {
+              "path": "/assets/halfFloat-CXxwV7oo.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/logger-CuBYPcDK.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/index-DxRD0g24.js",
+              "status": 200
+            },
+            {
+              "path": "/runtime-config.json",
+              "status": 200
+            },
+            {
+              "path": "/assets/helperFunctions-6JzEbypF.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/logDepthDeclaration-Cs9hkyb3.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/default.vertex-CaFU0LuK.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/default.fragment-DWc3cwIR.js",
+              "status": 200
+            }
+          ],
+          "errors": []
+        },
+        {
+          "mode": "development",
+          "snapshot": {
+            "phase": "ready",
+            "error": null,
+            "frame": 41,
+            "tick": 98,
+            "maxStepsInFrame": 5,
+            "backend": "WebGL2",
+            "meshes": 4,
+            "activeMeshes": 4,
+            "engines": 1,
+            "listeners": 2,
+            "width": 1280,
+            "height": 720,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 1,
+            "glError": 0,
+            "fixture": "p01-depth",
+            "totalFrames": 41,
+            "generation": 1,
+            "canvases": 1
+          },
+          "captures": [
+            {
+              "file": "development-camera-a.png",
+              "sha256": "945f6c92424ff268a85ffe53a5a66dc2a5587985b693fcc25afdfa27b611eaa6",
+              "colors": 35,
+              "width": 1280,
+              "height": 720
+            },
+            {
+              "file": "development-camera-b.png",
+              "sha256": "88471be8b51f80d45e8124071b4b634e5ee7258b11da1175c37c86758559184e",
+              "colors": 31,
+              "width": 1280,
+              "height": 720
+            }
+          ],
+          "network": [
+            {
+              "path": "/",
+              "status": 200
+            },
+            {
+              "path": "/src/main.ts",
+              "status": 200
+            },
+            {
+              "path": "/src/style.css",
+              "status": 200
+            },
+            {
+              "path": "/src/runtime/application.ts",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_Engines_engineStore.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_Engines_engine.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_Maths_math__vector.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_scene.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_Maths_math__color.js",
+              "status": 200
+            },
+            {
+              "path": "/@vite/client",
+              "status": 200
+            },
+            {
+              "path": "/src/runtime/clock.ts",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_Meshes_Builders_boxBuilder.js",
+              "status": 200
+            },
+            {
+              "path": "/src/runtime/config.ts",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_Lights_hemisphericLight.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_Cameras_arcRotateCamera.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_Materials_standardMaterial.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/engineStore-DtIt56Pm.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/guid-BOloIiB8.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/abstractEngine.renderPass.pure-DzVcxx_6.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/perfCounter-CF5njbLL.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/sphericalPolynomial.pure-DaAcDUad.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/baseTexture.pure-DjRs6utU.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/engine.dynamicBuffer.pure-Dcj9E03j.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/math.vector.pure-DgR0DsBl.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/math.color.pure-5sHEvgSw.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/compatibilityOptions-Cf3WuxrY.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/typeStore-D4_ZTXSQ.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/scene.pure-4lQKcNu1.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/mesh.pure-DwychNlH.js",
+              "status": 200
+            },
+            {
+              "path": "/tools/tiangong/node_modules/vite/dist/client/env.mjs",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/node-Doz7Lp8u.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/math.plane-DmG8-q8v.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/lightConstants-f_KhykSz.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/tools.pure-D_fJwSFz.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/deviceInputEvents-BPVvKc2C.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/math.size-DipjcOjW.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/smartArray-BCwDpu76.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/sceneComponent-q12b8TR8.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/materialHelper.geometryrendering-BFuKPlcM.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/drawWrapper-C_eApexp.js",
+              "status": 200
+            },
+            {
+              "path": "/runtime-config.json",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/default.vertex-DXVKMC0Z.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/default.fragment-YQwuPE87.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/logDepthDeclaration-CYhOYw10.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/helperFunctions-L8W9sEkV.js",
+              "status": 200
+            }
+          ],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "P01-02",
+      "status": "PASS",
+      "executed": 4,
+      "failures": [
+        {
+          "fault": "missing-WebGL2",
+          "snapshot": {
+            "phase": "error",
+            "error": "无法启动 WebGL 2，请检查浏览器硬件加速设置",
+            "frame": 0,
+            "tick": 0,
+            "maxStepsInFrame": 0,
+            "backend": null,
+            "meshes": 0,
+            "activeMeshes": 0,
+            "engines": 0,
+            "listeners": 0,
+            "width": 300,
+            "height": 150,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "fixture": "p01-depth",
+            "totalFrames": 0,
+            "generation": 1,
+            "canvases": 1
+          },
+          "visibleMessage": "无法启动 WebGL 2，请检查浏览器硬件加速设置",
+          "errors": [],
+          "network": [
+            {
+              "path": "/",
+              "status": 200
+            },
+            {
+              "path": "/assets/index-BKxVMWTm.css",
+              "status": 200
+            },
+            {
+              "path": "/assets/halfFloat-CXxwV7oo.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/logger-CuBYPcDK.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/index-DxRD0g24.js",
+              "status": 200
+            },
+            {
+              "path": "/runtime-config.json",
+              "status": 200
+            }
+          ]
+        },
+        {
+          "fault": "missing-WASM",
+          "snapshot": {
+            "phase": "error",
+            "error": "当前浏览器不支持必需的 WebAssembly",
+            "frame": 0,
+            "tick": 0,
+            "maxStepsInFrame": 0,
+            "backend": null,
+            "meshes": 0,
+            "activeMeshes": 0,
+            "engines": 0,
+            "listeners": 0,
+            "width": 300,
+            "height": 150,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "fixture": "p01-depth",
+            "totalFrames": 0,
+            "generation": 1,
+            "canvases": 1
+          },
+          "visibleMessage": "当前浏览器不支持必需的 WebAssembly",
+          "errors": [],
+          "network": [
+            {
+              "path": "/",
+              "status": 200
+            },
+            {
+              "path": "/assets/index-BKxVMWTm.css",
+              "status": 200
+            },
+            {
+              "path": "/assets/halfFloat-CXxwV7oo.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/logger-CuBYPcDK.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/index-DxRD0g24.js",
+              "status": 200
+            },
+            {
+              "path": "/runtime-config.json",
+              "status": 200
+            }
+          ]
+        },
+        {
+          "fault": "missing-runtime-config",
+          "snapshot": {
+            "phase": "error",
+            "error": "运行配置加载失败（HTTP 404）",
+            "frame": 0,
+            "tick": 0,
+            "maxStepsInFrame": 0,
+            "backend": null,
+            "meshes": 0,
+            "activeMeshes": 0,
+            "engines": 0,
+            "listeners": 0,
+            "width": 300,
+            "height": 150,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "fixture": null,
+            "totalFrames": 0,
+            "generation": 1,
+            "canvases": 1
+          },
+          "visibleMessage": "运行配置加载失败（HTTP 404）",
+          "errors": [
+            "Failed to load resource: the server responded with a status of 404 (Not Found)"
+          ],
+          "network": [
+            {
+              "path": "/",
+              "status": 200
+            },
+            {
+              "path": "/assets/index-BKxVMWTm.css",
+              "status": 200
+            },
+            {
+              "path": "/assets/logger-CuBYPcDK.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/halfFloat-CXxwV7oo.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/index-DxRD0g24.js",
+              "status": 200
+            },
+            {
+              "path": "/runtime-config.json",
+              "status": 404
+            }
+          ]
+        },
+        {
+          "fault": "render-error",
+          "snapshot": {
+            "phase": "error",
+            "error": "Injected render failure",
+            "frame": 3,
+            "tick": 6,
+            "maxStepsInFrame": 5,
+            "backend": null,
+            "meshes": 0,
+            "activeMeshes": 0,
+            "engines": 0,
+            "listeners": 0,
+            "width": 1280,
+            "height": 720,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "fixture": "p01-depth",
+            "totalFrames": 3,
+            "generation": 1,
+            "canvases": 1
+          },
+          "visibleMessage": "Injected render failure",
+          "errors": [],
+          "network": [
+            {
+              "path": "/",
+              "status": 200
+            },
+            {
+              "path": "/assets/halfFloat-CXxwV7oo.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/logger-CuBYPcDK.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/index-BKxVMWTm.css",
+              "status": 200
+            },
+            {
+              "path": "/assets/index-DxRD0g24.js",
+              "status": 200
+            },
+            {
+              "path": "/runtime-config.json",
+              "status": 200
+            },
+            {
+              "path": "/assets/default.vertex-CaFU0LuK.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/logDepthDeclaration-Cs9hkyb3.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/helperFunctions-6JzEbypF.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/default.fragment-DWc3cwIR.js",
+              "status": 200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P01-03",
+      "status": "PASS",
+      "executed": 1,
+      "nativeFocus": true,
+      "hidden": {
+        "phase": "paused",
+        "error": null,
+        "frame": 10,
+        "tick": 24,
+        "maxStepsInFrame": 5,
+        "backend": "WebGL2",
+        "meshes": 4,
+        "activeMeshes": 4,
+        "engines": 1,
+        "listeners": 2,
+        "width": 1280,
+        "height": 720,
+        "visibility": "hidden",
+        "visibilityTransitions": 1,
+        "camera": 0,
+        "glError": 0,
+        "fixture": "p01-depth",
+        "totalFrames": 10,
+        "generation": 1,
+        "canvases": 1
+      },
+      "restored": {
+        "phase": "ready",
+        "error": null,
+        "frame": 12,
+        "tick": 27,
+        "maxStepsInFrame": 5,
+        "backend": "WebGL2",
+        "meshes": 4,
+        "activeMeshes": 4,
+        "engines": 1,
+        "listeners": 2,
+        "width": 1280,
+        "height": 720,
+        "visibility": "visible",
+        "visibilityTransitions": 2,
+        "camera": 0,
+        "glError": 0,
+        "fixture": "p01-depth",
+        "totalFrames": 12,
+        "generation": 1,
+        "canvases": 1
+      },
+      "errors": []
+    },
+    {
+      "id": "P01-04",
+      "status": "PASS",
+      "executed": 6,
+      "sizes": [
+        {
+          "phase": "ready",
+          "error": null,
+          "frame": 10,
+          "tick": 15,
+          "maxStepsInFrame": 5,
+          "backend": "WebGL2",
+          "meshes": 4,
+          "activeMeshes": 4,
+          "engines": 1,
+          "listeners": 2,
+          "width": 640,
+          "height": 480,
+          "visibility": "visible",
+          "visibilityTransitions": 0,
+          "camera": 0,
+          "glError": 0,
+          "fixture": "p01-depth",
+          "totalFrames": 10,
+          "generation": 1,
+          "canvases": 1
+        },
+        {
+          "phase": "ready",
+          "error": null,
+          "frame": 13,
+          "tick": 21,
+          "maxStepsInFrame": 5,
+          "backend": "WebGL2",
+          "meshes": 4,
+          "activeMeshes": 4,
+          "engines": 1,
+          "listeners": 2,
+          "width": 1366,
+          "height": 768,
+          "visibility": "visible",
+          "visibilityTransitions": 0,
+          "camera": 0,
+          "glError": 0,
+          "fixture": "p01-depth",
+          "totalFrames": 13,
+          "generation": 1,
+          "canvases": 1
+        },
+        {
+          "phase": "ready",
+          "error": null,
+          "frame": 17,
+          "tick": 28,
+          "maxStepsInFrame": 5,
+          "backend": "WebGL2",
+          "meshes": 4,
+          "activeMeshes": 4,
+          "engines": 1,
+          "listeners": 2,
+          "width": 1024,
+          "height": 640,
+          "visibility": "visible",
+          "visibilityTransitions": 0,
+          "camera": 0,
+          "glError": 0,
+          "fixture": "p01-depth",
+          "totalFrames": 17,
+          "generation": 1,
+          "canvases": 1
+        }
+      ],
+      "cycles": [
+        {
+          "stopped": {
+            "phase": "disposed",
+            "error": null,
+            "frame": 28,
+            "tick": 47,
+            "maxStepsInFrame": 5,
+            "backend": null,
+            "meshes": 0,
+            "activeMeshes": 0,
+            "engines": 0,
+            "listeners": 0,
+            "width": 1024,
+            "height": 640,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "fixture": "p01-depth",
+            "totalFrames": 28,
+            "generation": 1,
+            "canvases": 1
+          },
+          "restarted": {
+            "phase": "ready",
+            "error": null,
+            "frame": 2,
+            "tick": 1,
+            "maxStepsInFrame": 1,
+            "backend": "WebGL2",
+            "meshes": 4,
+            "activeMeshes": 4,
+            "engines": 1,
+            "listeners": 2,
+            "width": 1024,
+            "height": 640,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "fixture": "p01-depth",
+            "totalFrames": 30,
+            "generation": 2,
+            "canvases": 1
+          }
+        },
+        {
+          "stopped": {
+            "phase": "disposed",
+            "error": null,
+            "frame": 11,
+            "tick": 16,
+            "maxStepsInFrame": 5,
+            "backend": null,
+            "meshes": 0,
+            "activeMeshes": 0,
+            "engines": 0,
+            "listeners": 0,
+            "width": 1024,
+            "height": 640,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "fixture": "p01-depth",
+            "totalFrames": 39,
+            "generation": 2,
+            "canvases": 1
+          },
+          "restarted": {
+            "phase": "ready",
+            "error": null,
+            "frame": 2,
+            "tick": 1,
+            "maxStepsInFrame": 1,
+            "backend": "WebGL2",
+            "meshes": 4,
+            "activeMeshes": 4,
+            "engines": 1,
+            "listeners": 2,
+            "width": 1024,
+            "height": 640,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "fixture": "p01-depth",
+            "totalFrames": 41,
+            "generation": 3,
+            "canvases": 1
+          }
+        },
+        {
+          "stopped": {
+            "phase": "disposed",
+            "error": null,
+            "frame": 9,
+            "tick": 12,
+            "maxStepsInFrame": 3,
+            "backend": null,
+            "meshes": 0,
+            "activeMeshes": 0,
+            "engines": 0,
+            "listeners": 0,
+            "width": 1024,
+            "height": 640,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "fixture": "p01-depth",
+            "totalFrames": 48,
+            "generation": 3,
+            "canvases": 1
+          },
+          "restarted": {
+            "phase": "ready",
+            "error": null,
+            "frame": 3,
+            "tick": 1,
+            "maxStepsInFrame": 1,
+            "backend": "WebGL2",
+            "meshes": 4,
+            "activeMeshes": 4,
+            "engines": 1,
+            "listeners": 2,
+            "width": 1024,
+            "height": 640,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "fixture": "p01-depth",
+            "totalFrames": 51,
+            "generation": 4,
+            "canvases": 1
+          }
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

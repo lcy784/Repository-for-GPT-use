@@ -5,3 +5,4 @@ __pycache__/
 
 # Root build/test caches are cloud installation artifacts.
 /node_modules/
+/dist/

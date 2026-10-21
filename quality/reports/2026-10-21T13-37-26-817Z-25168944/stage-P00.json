@@ -1,0 +1,76 @@
+{
+  "runId": "2026-10-21T13-37-26-817Z-25168944",
+  "candidate": "083e93464311233937132734efbc07f8dd6a1f5b8b63482070378162893fe9fc",
+  "stage": "P00",
+  "status": "FAIL",
+  "cases": [
+    {
+      "id": "P00-01",
+      "status": "FAIL",
+      "executed": 5,
+      "details": [
+        "Logical contract type checking failed: error TS5112: tsconfig.json is present but will not be loaded if files are specified on commandline. Use '--ignoreConfig' to skip this error.\n\n\n1 !== 0\n"
+      ],
+      "evidence": [
+        {
+          "path": "P00-input-checks.log",
+          "sha256": "f6a86d31ac01c27ab203ae440467aa904566c38f45b21996bfc51da4c413e873"
+        },
+        {
+          "path": "P00-vitest.json",
+          "sha256": "57c4b2ccf0d696cd57201ee6df538de84866d5eeea25041a74a54e145449f597"
+        },
+        {
+          "path": "P00-vitest.log",
+          "sha256": "6f5d99d59561af61946bbd4a0394732c91104f5734f8cf113272a051bed19a48"
+        }
+      ]
+    },
+    {
+      "id": "P00-02",
+      "status": "PASS",
+      "executed": 13,
+      "evidence": [
+        {
+          "path": "P00-vitest.json",
+          "sha256": "57c4b2ccf0d696cd57201ee6df538de84866d5eeea25041a74a54e145449f597"
+        },
+        {
+          "path": "P00-vitest.log",
+          "sha256": "6f5d99d59561af61946bbd4a0394732c91104f5734f8cf113272a051bed19a48"
+        }
+      ]
+    },
+    {
+      "id": "P00-03",
+      "status": "PASS",
+      "executed": 4,
+      "evidence": [
+        {
+          "path": "P00-vitest.json",
+          "sha256": "57c4b2ccf0d696cd57201ee6df538de84866d5eeea25041a74a54e145449f597"
+        },
+        {
+          "path": "P00-vitest.log",
+          "sha256": "6f5d99d59561af61946bbd4a0394732c91104f5734f8cf113272a051bed19a48"
+        }
+      ]
+    },
+    {
+      "id": "P00-04",
+      "status": "PASS",
+      "executed": 9,
+      "evidence": [
+        {
+          "path": "P00-vitest.json",
+          "sha256": "57c4b2ccf0d696cd57201ee6df538de84866d5eeea25041a74a54e145449f597"
+        },
+        {
+          "path": "P00-vitest.log",
+          "sha256": "6f5d99d59561af61946bbd4a0394732c91104f5734f8cf113272a051bed19a48"
+        }
+      ]
+    }
+  ],
+  "automaticTests": 30
+}

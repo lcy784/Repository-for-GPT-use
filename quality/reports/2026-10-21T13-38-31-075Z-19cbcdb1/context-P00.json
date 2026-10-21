@@ -1,0 +1,19 @@
+{
+  "runId": "2026-10-21T13-38-31-075Z-19cbcdb1",
+  "candidate": "46d021f4f450bc29f32d3bf5d84bbc9a99dd6fc51ddb06fd67b6e44708b8655f",
+  "resultFile": "/workspace/tiangong-development/quality/reports/2026-10-21T13-38-31-075Z-19cbcdb1/stage-P00.json",
+  "runDir": "/workspace/tiangong-development/quality/reports/2026-10-21T13-38-31-075Z-19cbcdb1",
+  "root": "/workspace/tiangong-development/",
+  "stage": {
+    "id": "P00",
+    "enabled": true,
+    "implementation": "present",
+    "entry": "scripts/quality/stages/P00.mjs",
+    "requiredCases": [
+      "P00-01",
+      "P00-02",
+      "P00-03",
+      "P00-04"
+    ]
+  }
+}

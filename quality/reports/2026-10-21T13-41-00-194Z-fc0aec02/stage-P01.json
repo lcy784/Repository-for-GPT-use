@@ -1,0 +1,80 @@
+{
+  "runId": "2026-10-21T13-41-00-194Z-fc0aec02",
+  "candidate": "e2c7197d513b9013bd0d84a59da4b21360a171473e03d92332641c52fdedd266",
+  "stage": "P01",
+  "status": "FAIL",
+  "cases": [
+    {
+      "id": "P01-01",
+      "status": "FAIL",
+      "executed": 1,
+      "details": [
+        "Browser test process failed or timed out\n\n1 !== 0\n"
+      ],
+      "evidence": [
+        {
+          "path": "P01-failure.log",
+          "sha256": "0d4ba44356dfcb8ea06b38e0c5e2424b5ed383574c329fe5a7e8773bc2849e85"
+        },
+        {
+          "path": "P01-build-and-tests.log",
+          "sha256": "7f469526b6d171c5e553be107fea468763f1d28ac1838801c29eda483c2f8774"
+        }
+      ]
+    },
+    {
+      "id": "P01-02",
+      "status": "FAIL",
+      "executed": 1,
+      "details": [
+        "Browser test process failed or timed out\n\n1 !== 0\n"
+      ],
+      "evidence": [
+        {
+          "path": "P01-failure.log",
+          "sha256": "0d4ba44356dfcb8ea06b38e0c5e2424b5ed383574c329fe5a7e8773bc2849e85"
+        },
+        {
+          "path": "P01-build-and-tests.log",
+          "sha256": "7f469526b6d171c5e553be107fea468763f1d28ac1838801c29eda483c2f8774"
+        }
+      ]
+    },
+    {
+      "id": "P01-03",
+      "status": "FAIL",
+      "executed": 1,
+      "details": [
+        "Browser test process failed or timed out\n\n1 !== 0\n"
+      ],
+      "evidence": [
+        {
+          "path": "P01-failure.log",
+          "sha256": "0d4ba44356dfcb8ea06b38e0c5e2424b5ed383574c329fe5a7e8773bc2849e85"
+        },
+        {
+          "path": "P01-build-and-tests.log",
+          "sha256": "7f469526b6d171c5e553be107fea468763f1d28ac1838801c29eda483c2f8774"
+        }
+      ]
+    },
+    {
+      "id": "P01-04",
+      "status": "FAIL",
+      "executed": 1,
+      "details": [
+        "Browser test process failed or timed out\n\n1 !== 0\n"
+      ],
+      "evidence": [
+        {
+          "path": "P01-failure.log",
+          "sha256": "0d4ba44356dfcb8ea06b38e0c5e2424b5ed383574c329fe5a7e8773bc2849e85"
+        },
+        {
+          "path": "P01-build-and-tests.log",
+          "sha256": "7f469526b6d171c5e553be107fea468763f1d28ac1838801c29eda483c2f8774"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "runId": "2026-10-21T13-38-31-075Z-19cbcdb1",
+  "through": "P01",
+  "candidate": "46d021f4f450bc29f32d3bf5d84bbc9a99dd6fc51ddb06fd67b6e44708b8655f",
+  "status": "FAIL",
+  "stages": [
+    {
+      "runId": "2026-10-21T13-38-31-075Z-19cbcdb1",
+      "candidate": "46d021f4f450bc29f32d3bf5d84bbc9a99dd6fc51ddb06fd67b6e44708b8655f",
+      "stage": "P00",
+      "status": "PASS",
+      "cases": [
+        {
+          "id": "P00-01",
+          "status": "PASS",
+          "executed": 5,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P00-input-checks.log",
+              "sha256": "9755161012e68396876bfa6e17a025c7d9b510636fb99421bca23e707feb8703"
+            },
+            {
+              "path": "candidate-contracts.json",
+              "sha256": "8d5e9edf51302250f874f974e439e3602cb5494bc107a69251dd6c9f0c20b7e7"
+            },
+            {
+              "path": "P00-vitest.json",
+              "sha256": "7298013a8ea009266019d1f0e3fdbd5ceb328f06cc4aaa625d5213dd3da7ed33"
+            },
+            {
+              "path": "P00-vitest.log",
+              "sha256": "fad1205ce9a9faece1341d86dd45caf06034e13635a0ce07557754ecf5c6a89c"
+            }
+          ]
+        },
+        {
+          "id": "P00-02",
+          "status": "PASS",
+          "executed": 13,
+          "evidence": [
+            {
+              "path": "P00-vitest.json",
+              "sha256": "7298013a8ea009266019d1f0e3fdbd5ceb328f06cc4aaa625d5213dd3da7ed33"
+            },
+            {
+              "path": "P00-vitest.log",
+              "sha256": "fad1205ce9a9faece1341d86dd45caf06034e13635a0ce07557754ecf5c6a89c"
+            }
+          ]
+        },
+        {
+          "id": "P00-03",
+          "status": "PASS",
+          "executed": 4,
+          "evidence": [
+            {
+              "path": "P00-vitest.json",
+              "sha256": "7298013a8ea009266019d1f0e3fdbd5ceb328f06cc4aaa625d5213dd3da7ed33"
+            },
+            {
+              "path": "P00-vitest.log",
+              "sha256": "fad1205ce9a9faece1341d86dd45caf06034e13635a0ce07557754ecf5c6a89c"
+            }
+          ]
+        },
+        {
+          "id": "P00-04",
+          "status": "PASS",
+          "executed": 9,
+          "evidence": [
+            {
+              "path": "P00-vitest.json",
+              "sha256": "7298013a8ea009266019d1f0e3fdbd5ceb328f06cc4aaa625d5213dd3da7ed33"
+            },
+            {
+              "path": "P00-vitest.log",
+              "sha256": "fad1205ce9a9faece1341d86dd45caf06034e13635a0ce07557754ecf5c6a89c"
+            }
+          ]
+        }
+      ],
+      "automaticTests": 30,
+      "startedAt": "2026-10-21T13:38:31.106Z",
+      "endedAt": "2026-10-21T13:38:33.567Z",
+      "exitCode": 0,
+      "signal": null,
+      "environment": {
+        "node": "24.19.0",
+        "os": "linux",
+        "arch": "x64"
+      }
+    },
+    {
+      "runId": "2026-10-21T13-38-31-075Z-19cbcdb1",
+      "candidate": "46d021f4f450bc29f32d3bf5d84bbc9a99dd6fc51ddb06fd67b6e44708b8655f",
+      "stage": "P01",
+      "status": "FAIL",
+      "cases": [
+        {
+          "id": "P01-01",
+          "status": "FAIL",
+          "executed": 1,
+          "details": [
+            "Browser test process failed or timed out\n\n1 !== 0\n"
+          ],
+          "evidence": [
+            {
+              "path": "P01-failure.log",
+              "sha256": "0d4ba44356dfcb8ea06b38e0c5e2424b5ed383574c329fe5a7e8773bc2849e85"
+            },
+            {
+              "path": "P01-build-and-tests.log",
+              "sha256": "ef9ce182d05eb8ab7320c316ab8cebd943a1dcdfe78a0646eeca28cf8f182ec8"
+            }
+          ]
+        },
+        {
+          "id": "P01-02",
+          "status": "FAIL",
+          "executed": 1,
+          "details": [
+            "Browser test process failed or timed out\n\n1 !== 0\n"
+          ],
+          "evidence": [
+            {
+              "path": "P01-failure.log",
+              "sha256": "0d4ba44356dfcb8ea06b38e0c5e2424b5ed383574c329fe5a7e8773bc2849e85"
+            },
+            {
+              "path": "P01-build-and-tests.log",
+              "sha256": "ef9ce182d05eb8ab7320c316ab8cebd943a1dcdfe78a0646eeca28cf8f182ec8"
+            }
+          ]
+        },
+        {
+          "id": "P01-03",
+          "status": "FAIL",
+          "executed": 1,
+          "details": [
+            "Browser test process failed or timed out\n\n1 !== 0\n"
+          ],
+          "evidence": [
+            {
+              "path": "P01-failure.log",
+              "sha256": "0d4ba44356dfcb8ea06b38e0c5e2424b5ed383574c329fe5a7e8773bc2849e85"
+            },
+            {
+              "path": "P01-build-and-tests.log",
+              "sha256": "ef9ce182d05eb8ab7320c316ab8cebd943a1dcdfe78a0646eeca28cf8f182ec8"
+            }
+          ]
+        },
+        {
+          "id": "P01-04",
+          "status": "FAIL",
+          "executed": 1,
+          "details": [
+            "Browser test process failed or timed out\n\n1 !== 0\n"
+          ],
+          "evidence": [
+            {
+              "path": "P01-failure.log",
+              "sha256": "0d4ba44356dfcb8ea06b38e0c5e2424b5ed383574c329fe5a7e8773bc2849e85"
+            },
+            {
+              "path": "P01-build-and-tests.log",
+              "sha256": "ef9ce182d05eb8ab7320c316ab8cebd943a1dcdfe78a0646eeca28cf8f182ec8"
+            }
+          ]
+        }
+      ],
+      "startedAt": "2026-10-21T13:38:33.584Z",
+      "endedAt": "2026-10-21T13:39:25.840Z",
+      "exitCode": 0,
+      "signal": null,
+      "environment": {
+        "node": "24.19.0",
+        "os": "linux",
+        "arch": "x64"
+      }
+    }
+  ],
+  "nextStageEligible": false,
+  "packages": {
+    "A": "not-yet-delivered",
+    "B": "not-yet-delivered",
+    "P01": "not-built-in-this-run"
+  }
+}

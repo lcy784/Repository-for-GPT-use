@@ -1,0 +1,100 @@
+{
+  "runId": "2026-10-21T13-26-18-711Z-4a546323",
+  "through": "P00",
+  "candidate": "d51b6841949b4e8777a50c8b97e7de4a8d063d6bc7259abb7105fe18163350e4",
+  "status": "PASS",
+  "stages": [
+    {
+      "runId": "2026-10-21T13-26-18-711Z-4a546323",
+      "candidate": "d51b6841949b4e8777a50c8b97e7de4a8d063d6bc7259abb7105fe18163350e4",
+      "stage": "P00",
+      "status": "PASS",
+      "cases": [
+        {
+          "id": "P00-01",
+          "status": "PASS",
+          "executed": 5,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P00-input-checks.log",
+              "sha256": "9755161012e68396876bfa6e17a025c7d9b510636fb99421bca23e707feb8703"
+            },
+            {
+              "path": "candidate-contracts.json",
+              "sha256": "3d87724d458ff19d7cc87f0118f3c9bdad9880610404d536c86457950e9db104"
+            },
+            {
+              "path": "P00-vitest.json",
+              "sha256": "19b0ab78d90353776b750914d30a9bdef9c3e55563e5bef5a93824298712532e"
+            },
+            {
+              "path": "P00-vitest.log",
+              "sha256": "fa20b671a8195261e9242a43833c7b1010ad8ddaddbdfdcc30af6bb8855fe825"
+            }
+          ]
+        },
+        {
+          "id": "P00-02",
+          "status": "PASS",
+          "executed": 13,
+          "evidence": [
+            {
+              "path": "P00-vitest.json",
+              "sha256": "19b0ab78d90353776b750914d30a9bdef9c3e55563e5bef5a93824298712532e"
+            },
+            {
+              "path": "P00-vitest.log",
+              "sha256": "fa20b671a8195261e9242a43833c7b1010ad8ddaddbdfdcc30af6bb8855fe825"
+            }
+          ]
+        },
+        {
+          "id": "P00-03",
+          "status": "PASS",
+          "executed": 4,
+          "evidence": [
+            {
+              "path": "P00-vitest.json",
+              "sha256": "19b0ab78d90353776b750914d30a9bdef9c3e55563e5bef5a93824298712532e"
+            },
+            {
+              "path": "P00-vitest.log",
+              "sha256": "fa20b671a8195261e9242a43833c7b1010ad8ddaddbdfdcc30af6bb8855fe825"
+            }
+          ]
+        },
+        {
+          "id": "P00-04",
+          "status": "PASS",
+          "executed": 9,
+          "evidence": [
+            {
+              "path": "P00-vitest.json",
+              "sha256": "19b0ab78d90353776b750914d30a9bdef9c3e55563e5bef5a93824298712532e"
+            },
+            {
+              "path": "P00-vitest.log",
+              "sha256": "fa20b671a8195261e9242a43833c7b1010ad8ddaddbdfdcc30af6bb8855fe825"
+            }
+          ]
+        }
+      ],
+      "automaticTests": 30,
+      "startedAt": "2026-10-21T13:26:18.774Z",
+      "endedAt": "2026-10-21T13:26:21.469Z",
+      "exitCode": 0,
+      "signal": null,
+      "environment": {
+        "node": "24.19.0",
+        "os": "linux",
+        "arch": "x64"
+      }
+    }
+  ],
+  "nextStageEligible": true,
+  "packages": {
+    "A": "not-built-at-P00",
+    "B": "not-built-at-P00"
+  }
+}

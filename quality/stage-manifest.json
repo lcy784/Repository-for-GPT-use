@@ -16,7 +16,7 @@
     {
       "id": "P01",
       "enabled": true,
-      "implementation": "planned-no-placeholder-entry",
+      "implementation": "present",
       "entry": "scripts/quality/stages/P01.mjs",
       "requiredCases": [
         "P01-01",

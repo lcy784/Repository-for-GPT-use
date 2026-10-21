@@ -1,0 +1,17 @@
+1:38:38 PM [vite] (client) [optimizer] bundling dependencies...
+
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: One or more P01 browser checks failed
+    at file:///workspace/tiangong-development/scripts/quality/p01-browser.mjs:169:3 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

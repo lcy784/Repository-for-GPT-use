@@ -28,7 +28,7 @@ export function candidateFingerprint(root) {
     for (const entry of readdirSync(path.join(root, relative), { withFileTypes: true }).sort((a, b) => a.name < b.name ? -1 : a.name > b.name ? 1 : 0)) {
       if (['.git', 'node_modules', '.cloud-tools', '__pycache__'].includes(entry.name)) continue;
       const filename = path.posix.join(relative, entry.name);
-      if (filename === 'quality/reports') continue;
+      if (filename === 'quality/reports' || filename === 'dist') continue;
       if (entry.isSymbolicLink()) throw new Error(`Symbolic candidate input: ${filename}`);
       if (entry.isDirectory()) walk(filename);
       else if (entry.isFile()) files.push({ path: filename, sha256: hash(readFileSync(path.join(root, filename))) });
@@ -89,7 +89,8 @@ export function executeStage(root, stage, context, runDir, timeoutMs) {
   const execution = { startedAt, endedAt: new Date().toISOString(), exitCode: child.status, signal: child.signal, environment: { node: process.versions.node, os: os.platform(), arch: os.arch() } };
   if (child.error || child.status !== 0) return { stage: stage.id, status: 'FAIL', reason: child.error?.code || 'Stage process exited unsuccessfully', ...execution };
   try {
-    return { ...validateStageResult(readJson(resultFile), context, stage, runDir), ...execution };
+    const result = validateStageResult(readJson(resultFile), context, stage, runDir);
+    return { ...result, ...execution, environment: { ...result.environment, ...execution.environment } };
   } catch (error) {
     return { stage: stage.id, status: 'FAIL', reason: error.message, ...execution };
   }

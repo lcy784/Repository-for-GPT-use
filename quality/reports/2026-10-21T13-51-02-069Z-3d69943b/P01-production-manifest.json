@@ -1,0 +1,122 @@
+{
+  "candidate": "7c4923a620558f7facb7f4e1f71aa05df88b892db3002d9342b9f12783126067",
+  "files": [
+    {
+      "path": "assets/basisTextureLoader-DArKPsVt.js",
+      "sha256": "c9a864a1c4eaf55e035f65ed4f6278f9440ac3969659a5cfff697c2083ebfa8f"
+    },
+    {
+      "path": "assets/cubemapToSphericalPolynomial-CWqtJwUj.js",
+      "sha256": "dd47d7c27b57dc96b1005d543dde2d14386f264b9cfc1f971a6d8428417e6f61"
+    },
+    {
+      "path": "assets/dds.pure-C2Q1nmpg.js",
+      "sha256": "b9adeb30df1dddf20638b435c1f781f208cec9d03fe5ecef11ece86a655966c8"
+    },
+    {
+      "path": "assets/ddsTextureLoader-l64_xid4.js",
+      "sha256": "649171b4a20cca9744913e1ab7cf1b07faa3d9ae9572d4387a57241db32b54f6"
+    },
+    {
+      "path": "assets/default.fragment-0y4UmrlE.js",
+      "sha256": "bbfd073ca8d6bea750a57b69d7740bb52902ece1e704c86159352a48b5cfc126"
+    },
+    {
+      "path": "assets/default.fragment-C1E3V_Lw.js",
+      "sha256": "9824cb7f568225786797e3146e7b5d0e229d4e85f19abe0595bff5950ab44c8d"
+    },
+    {
+      "path": "assets/default.vertex-DVDOJWqu.js",
+      "sha256": "fcc2cdb9b7725f89107813f38233070883a629233fb78a2124c459fac4be232d"
+    },
+    {
+      "path": "assets/default.vertex-qHQBHctt.js",
+      "sha256": "d27420acfb7be42749a67e9b888c71ec61bfbc59b8f6ab4dbeb8dc034f830e26"
+    },
+    {
+      "path": "assets/envTextureLoader-BGlSVVW1.js",
+      "sha256": "3fd13e792d664bf3d6a0e2482b40a2aa7fec2a3e119c2b902d4d1c76a695e45c"
+    },
+    {
+      "path": "assets/exrTextureLoader-Bth9P8Y5.js",
+      "sha256": "5b92131ce9751bdf537b1f854df93a1cea208e3f06c1d2c5b987634b555dfb00"
+    },
+    {
+      "path": "assets/halfFloat-CXxwV7oo.js",
+      "sha256": "00d984a536e2ae0092a3739317c78bd1ba6207236b041de3154c56f5f0a1f5f0"
+    },
+    {
+      "path": "assets/hdrTextureLoader-BQVwkxK1.js",
+      "sha256": "c1dfa7a7928d2c03e86324a093297ad10c35caefff14518691c5fe4d4172447a"
+    },
+    {
+      "path": "assets/helperFunctions-CoyIKu45.js",
+      "sha256": "b33d495e267305fd7880eac7c921b16f344aca91522f00fe6a8613ea05a5fee2"
+    },
+    {
+      "path": "assets/helperFunctions-DSd4Bv9Z.js",
+      "sha256": "fcdf17266c6560ad482790c58b971081e1495732ff0936aa3711399ca6398192"
+    },
+    {
+      "path": "assets/iesTextureLoader-CFoosTu5.js",
+      "sha256": "ee93371341fb3664f380cf65faa905fd50217f0c2cc80249140ce96bddc61103"
+    },
+    {
+      "path": "assets/index-BKxVMWTm.css",
+      "sha256": "429b1f404f6f6da1303022f33b0bb7734b383204f7f6af2e602bbf26f2619579"
+    },
+    {
+      "path": "assets/index-Ccawlgnm.js",
+      "sha256": "0a3913d8a95753cfea1d766874fe7e63d7f424528d0e06078c175876fb3f31d3"
+    },
+    {
+      "path": "assets/ktxTextureLoader-BsqtmwXc.js",
+      "sha256": "0e06d7065d70b1eb6a098bd9ae916057e1afede1aeb588c2f2c3d594cb6edd42"
+    },
+    {
+      "path": "assets/logDepthDeclaration-CxZElW1W.js",
+      "sha256": "b48a1bb503ad17ed74aed0ecf2ff6c374093e72dc5fcdecac6525f880074388e"
+    },
+    {
+      "path": "assets/logDepthDeclaration-E20KgvjC.js",
+      "sha256": "d528b811dba5ba5f42dc4634b33a74b71b9326b32b170fbd7ceaea1e73b74629"
+    },
+    {
+      "path": "assets/logger-CuBYPcDK.js",
+      "sha256": "30a999582eace71f2e78a479182e71e943508bbda9574b17e5b29575c49a3b9e"
+    },
+    {
+      "path": "assets/mesh.vertexData.functions-CD4JOR2q.js",
+      "sha256": "bdeb852116676b6289101b6ef271fb52200959188fba6863858942ec2e068338"
+    },
+    {
+      "path": "assets/postprocess.vertex-B6y9bp6d.js",
+      "sha256": "393d1474a3e03c6b62adaecca9cf73efd780f0aa11f8b871919b5d2a7494285a"
+    },
+    {
+      "path": "assets/postprocess.vertex-DkJe9in7.js",
+      "sha256": "cbd0b1cffbe8ee541a7da067ad232a790e35772ca079b260413268f41429ab43"
+    },
+    {
+      "path": "assets/rgbdDecode.fragment-Bd5hYAri.js",
+      "sha256": "2ea05488c80684500d4afd3a32d38e845d29b14ec3efc3ef4297a8d5d9afd25d"
+    },
+    {
+      "path": "assets/rgbdDecode.fragment-CsW2nyeR.js",
+      "sha256": "f71955e5504b6bf57deb6fdf84ec3b7546597768fb314b836ca26f0c3e3d1afd"
+    },
+    {
+      "path": "assets/tgaTextureLoader-CqhhocF6.js",
+      "sha256": "7edd7f23ff0ade28e79de5a87b7c966629d4e26d815fa3321589c50632179ae0"
+    },
+    {
+      "path": "index.html",
+      "sha256": "27f9e7172aa32712da0b891a2377e3f016f43a23a49aced5887d0e2837c85c09"
+    },
+    {
+      "path": "runtime-config.json",
+      "sha256": "d109ba2a411c20236f7fee592fb8c53e803f6a234ffd24b6ab4625d6c43e1800"
+    }
+  ],
+  "packageType": "P01-runtime-base-not-final-A-or-B"
+}

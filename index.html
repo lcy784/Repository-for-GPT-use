@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:," />
+    <title>天宫 · 三维底座预览</title>
+  </head>
+  <body>
+    <main id="app">
+      <div id="scene" aria-label="三维场景"></div>
+      <header class="masthead">
+        <p class="eyebrow">云上观景 · 底座预览</p>
+        <h1>天宫</h1>
+        <p class="description">从一束光、一个空间开始。</p>
+      </header>
+      <section id="notice" role="status" aria-live="polite">正在准备三维空间…</section>
+      <nav class="controls" aria-label="预览操作">
+        <button id="camera" type="button" disabled>切换观察位置</button>
+        <button id="restart" type="button">重新载入</button>
+        <button id="stop" type="button" disabled>结束预览</button>
+      </nav>
+      <details class="diagnostics"><summary>运行信息</summary><pre id="metrics"></pre></details>
+      <footer>三维底座验证 · 巨殿、人物与飞行将在后续阶段加入</footer>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -4,19 +4,21 @@
   "architecture": [
     { "id": "A-01", "status": "engineering-adopted", "decision": "Shared Babylon.js and TypeScript browser core; dependencies already provisioned." },
     { "id": "A-02", "status": "engineering-adopted", "decision": "Rapier with render meshes independent from collision proxies." },
-    { "id": "A-03", "status": "pending-user-preference", "decision": "Propose embedded HTML A and loopback static-service B; direct file loading remains unverified." },
+    { "id": "A-03", "status": "user-selected", "decision": "User selected the first-release scope and loopback static-service B on 2026-10-21. Embedded HTML A remains the planned delivery; file loading must still be verified." },
     { "id": "A-04", "status": "engineering-adopted", "decision": "Validate one visual sample and the exploration loop before expanding the world." },
     { "id": "A-05", "status": "engineering-adopted", "decision": "WebGL2 baseline; WebGPU is deferred." },
     { "id": "A-06", "status": "deferred", "decision": "No network implementation or deployment in this iteration." }
   ],
   "firstRelease": {
-    "status": "pending-user-preference",
+    "status": "user-selected",
+    "selectedOn": "2026-10-21",
+    "source": "User's chat response adopting the proposed scope and B launch method.",
+    "bLaunch": "loopback-static-service",
     "proposal": ["one-palace-sample", "ground-to-palace-walking-and-flight", "first-and-third-person", "one-interior", "landable-roof"],
     "fullProductScopeUnchanged": true,
     "extensionsEnabled": []
   },
   "unresolved": [
-    { "id": "scope-and-launch", "blocks": "P00", "description": "Select the initial A scope and whether B may use a local static service." },
     { "id": "visual-sample-review", "blocks": "P02", "description": "Review the actual sample; current reference selection is an engineering proposal." },
     { "id": "flight-and-falling-rules", "blocks": "P04", "description": "Define flying transitions and falling recovery before implementation." },
     { "id": "water-rules", "blocks": "P12", "description": "Define wading, swimming, diving or their combination." },
