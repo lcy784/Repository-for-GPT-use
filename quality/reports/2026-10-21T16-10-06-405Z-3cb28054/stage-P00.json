@@ -1,0 +1,78 @@
+{
+  "runId": "2026-10-21T16-10-06-405Z-3cb28054",
+  "candidate": "fe5126121299713547da5516b6c1bb7d886a493f28058f7d3d7cced372579d84",
+  "stage": "P00",
+  "status": "PASS",
+  "cases": [
+    {
+      "id": "P00-01",
+      "status": "PASS",
+      "executed": 5,
+      "details": [],
+      "evidence": [
+        {
+          "path": "P00-input-checks.log",
+          "sha256": "9755161012e68396876bfa6e17a025c7d9b510636fb99421bca23e707feb8703"
+        },
+        {
+          "path": "candidate-contracts.json",
+          "sha256": "faab41e4ca8bc23cc24c357ecc63f461cd58481ec981c3dbf939d8ba69ae812d"
+        },
+        {
+          "path": "P00-vitest.json",
+          "sha256": "70259ee93fde743c0fd7e372247487c081c80bd1ef345d2ad96ea76e47c47656"
+        },
+        {
+          "path": "P00-vitest.log",
+          "sha256": "5b07ea6629f50376dfb00a00fb24a4ae31d8aba133751347089b0e525aa802f1"
+        }
+      ]
+    },
+    {
+      "id": "P00-02",
+      "status": "PASS",
+      "executed": 13,
+      "evidence": [
+        {
+          "path": "P00-vitest.json",
+          "sha256": "70259ee93fde743c0fd7e372247487c081c80bd1ef345d2ad96ea76e47c47656"
+        },
+        {
+          "path": "P00-vitest.log",
+          "sha256": "5b07ea6629f50376dfb00a00fb24a4ae31d8aba133751347089b0e525aa802f1"
+        }
+      ]
+    },
+    {
+      "id": "P00-03",
+      "status": "PASS",
+      "executed": 4,
+      "evidence": [
+        {
+          "path": "P00-vitest.json",
+          "sha256": "70259ee93fde743c0fd7e372247487c081c80bd1ef345d2ad96ea76e47c47656"
+        },
+        {
+          "path": "P00-vitest.log",
+          "sha256": "5b07ea6629f50376dfb00a00fb24a4ae31d8aba133751347089b0e525aa802f1"
+        }
+      ]
+    },
+    {
+      "id": "P00-04",
+      "status": "PASS",
+      "executed": 9,
+      "evidence": [
+        {
+          "path": "P00-vitest.json",
+          "sha256": "70259ee93fde743c0fd7e372247487c081c80bd1ef345d2ad96ea76e47c47656"
+        },
+        {
+          "path": "P00-vitest.log",
+          "sha256": "5b07ea6629f50376dfb00a00fb24a4ae31d8aba133751347089b0e525aa802f1"
+        }
+      ]
+    }
+  ],
+  "automaticTests": 30
+}

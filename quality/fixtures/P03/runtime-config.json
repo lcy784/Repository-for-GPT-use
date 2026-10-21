@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "sceneFixture": "p03-terrain",
+  "simulationHz": 60,
+  "maxCatchUpSteps": 5,
+  "cameraPositions": [
+    [
+      6,
+      4,
+      9
+    ],
+    [
+      -8,
+      5,
+      10
+    ],
+    [
+      0,
+      10,
+      18
+    ]
+  ],
+  "background": [
+    0.57,
+    0.73,
+    0.81
+  ],
+  "cameraTargets": [
+    [
+      0,
+      1.51,
+      0
+    ],
+    [
+      0,
+      1.51,
+      0
+    ],
+    [
+      0,
+      1.51,
+      0
+    ]
+  ],
+  "spawn": [
+    0,
+    0.91,
+    0
+  ]
+}

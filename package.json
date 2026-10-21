@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "engines": { "node": ">=24.19.0 <25" },
+  "engines": {
+    "node": ">=24.19.0 <25"
+  },
   "scripts": {
     "gate": "node scripts/quality/gate.mjs",
     "test:gate": "node tools/tiangong/node_modules/vitest/vitest.mjs run tools/tiangong/tests/gate.test.mjs --config quality/vitest.config.mjs",
@@ -11,5 +13,8 @@
     "build": "node tools/tiangong/node_modules/typescript/bin/tsc --noEmit && node tools/tiangong/node_modules/vite/bin/vite.js build",
     "preview": "node tools/tiangong/node_modules/vite/bin/vite.js preview --host 127.0.0.1"
   },
-  "dependencies": { "@babylonjs/core": "9.31.2" }
+  "dependencies": {
+    "@babylonjs/core": "9.31.2",
+    "@dimforge/rapier3d-compat": "0.21.0"
+  }
 }

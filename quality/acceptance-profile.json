@@ -26,7 +26,7 @@
     "acceptanceStatus": "pending-real-device-and-user-criteria",
     "requiredBefore": "P15",
     "mayUseCloudResultsInstead": false,
-    "P02SampleCostEvidence": "required-at-P02-missing-target-device-BLOCKED"
+    "P02SampleCostEvidence": "passed-by-user-confirmation-no-agent-measurements"
   },
   "visualReview": {
     "requiredBefore": "P02",
@@ -89,5 +89,24 @@
     "automaticImageDifferenceProvesArtisticAcceptance": false,
     "latestUserFeedback": "2026-10-21: User explicitly accepted the monumental revision: 验收通过.",
     "acceptanceRecord": "quality/visual-acceptance/P02-20261021.json"
+  },
+  "groundMovement": {
+    "status": "engineering-test-parameters",
+    "speedMetersPerSecond": 3,
+    "capsuleHeight": 1.75,
+    "capsuleRadius": 0.3,
+    "skin": 0.02,
+    "maxStep": 0.35,
+    "snapToGround": 0.45,
+    "maxSlopeDegrees": 40,
+    "minSlideDegrees": 45,
+    "positionToleranceMeters": 0.01,
+    "simulationHz": 60,
+    "displayCadences": [
+      30,
+      60,
+      144
+    ],
+    "palaceAscentBudgetSeconds": 60
   }
 }

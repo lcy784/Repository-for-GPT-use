@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "status": "user-confirmed-continue",
+  "date": "2026-10-21",
+  "source": {"quote": "这个也通过了。继续执行开发。", "context": "User explicitly selected the outstanding P02 target-device performance item, confirmed it passed, and instructed continued development."},
+  "performance": {"status":"passed-by-user-confirmation","scope":"P02-sample-performance","measuredByAgent":false,"deviceMeasurements":null,"sourceOfDecision":"user-report","P15FormalMeasurementsStillRequired":true},
+  "visualFixture": {"config":"quality/fixtures/P02/runtime-config.json","scope":"preserve-accepted-palace-art-and-three-identical-PNGs-during-gameplay-development","automaticBaselineReplacement":false},
+  "boundary": "User confirmation supersedes the previous instruction to stop at the missing P02 hardware report; no hardware numbers are invented and no merge or deployment is authorized."
+}

@@ -82,5 +82,14 @@
       "record": "quality/visual-acceptance/P02-20261021.json",
       "sourceQuote": "验收通过"
     }
-  ]
+  ],
+  "P02PerformanceConfirmation": {
+    "status": "passed-by-user-confirmation",
+    "sourceQuote": "这个也通过了。继续执行开发。",
+    "record": "quality/visual-acceptance/P02-CONTINUED-DEVELOPMENT.json",
+    "measuredByAgent": false,
+    "deviceMeasurements": null,
+    "scope": "P02 only; P15 formal measurements remain required"
+  },
+  "currentStage": "P03"
 }

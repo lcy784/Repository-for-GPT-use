@@ -1,0 +1,64 @@
+{
+  "runId": "2026-10-21T16-10-06-405Z-3cb28054",
+  "candidate": "fe5126121299713547da5516b6c1bb7d886a493f28058f7d3d7cced372579d84",
+  "stage": "P02",
+  "status": "FAIL",
+  "cases": [
+    {
+      "id": "P02-01",
+      "status": "FAIL",
+      "executed": 1,
+      "details": [
+        "ENOENT: no such file or directory, open '/workspace/tiangong-development/quality/reports/2026-10-21T16-10-06-405Z-3cb28054/P02-browser/results.json'"
+      ],
+      "evidence": [
+        {
+          "path": "P02-failure.log",
+          "sha256": "be98240eb3d208d42621a639bc9b0379ac73b4173c8a66da67f2d253edb83a2c"
+        }
+      ]
+    },
+    {
+      "id": "P02-02",
+      "status": "FAIL",
+      "executed": 1,
+      "details": [
+        "ENOENT: no such file or directory, open '/workspace/tiangong-development/quality/reports/2026-10-21T16-10-06-405Z-3cb28054/P02-browser/results.json'"
+      ],
+      "evidence": [
+        {
+          "path": "P02-failure.log",
+          "sha256": "be98240eb3d208d42621a639bc9b0379ac73b4173c8a66da67f2d253edb83a2c"
+        }
+      ]
+    },
+    {
+      "id": "P02-03",
+      "status": "FAIL",
+      "executed": 1,
+      "details": [
+        "ENOENT: no such file or directory, open '/workspace/tiangong-development/quality/reports/2026-10-21T16-10-06-405Z-3cb28054/P02-browser/results.json'"
+      ],
+      "evidence": [
+        {
+          "path": "P02-failure.log",
+          "sha256": "be98240eb3d208d42621a639bc9b0379ac73b4173c8a66da67f2d253edb83a2c"
+        }
+      ]
+    },
+    {
+      "id": "P02-04",
+      "status": "FAIL",
+      "executed": 1,
+      "details": [
+        "ENOENT: no such file or directory, open '/workspace/tiangong-development/quality/reports/2026-10-21T16-10-06-405Z-3cb28054/P02-browser/results.json'"
+      ],
+      "evidence": [
+        {
+          "path": "P02-failure.log",
+          "sha256": "be98240eb3d208d42621a639bc9b0379ac73b4173c8a66da67f2d253edb83a2c"
+        }
+      ]
+    }
+  ]
+}

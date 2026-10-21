@@ -17,7 +17,7 @@ try {
  const geometry=spawnSync(process.execPath,['tools/tiangong/node_modules/vitest/vitest.mjs','run','tools/tiangong/tests/roof.test.mjs','tools/tiangong/tests/visual-acceptance.test.mjs','--config','quality/vitest.config.mjs','--reporter=json',`--outputFile=${geometryOutput}`],{cwd:root,encoding:'utf8',timeout:20000});
  const geometryLog=path.join(runDir,'P02-unit-tests.log');writeFileSync(geometryLog,`${geometry.stdout||''}\n${geometry.stderr||''}`);
  const assertions=readJson(geometryOutput).testResults.flatMap(suite=>suite.assertionResults);
- assert(geometry.status===0&&assertions.length===9&&assertions.every(t=>t.status==='passed'),'Roof/visual-acceptance checks failed or were skipped');
+ assert(geometry.status===0&&assertions.length===11&&assertions.every(t=>t.status==='passed'),'Roof/visual-acceptance checks failed or were skipped');
  const browser=spawnSync(process.execPath,['scripts/quality/p02-browser.mjs'],{cwd:root,encoding:'utf8',timeout:480000,maxBuffer:8*1024*1024,env:process.env});
  writeFileSync(log,`${browser.stdout||''}\n${browser.stderr||''}`);
  const filename=path.join(runDir,'P02-browser/results.json'),report=readJson(filename);
@@ -31,8 +31,12 @@ try {
    images:report.views.map(v=>({file:`P02-browser/${v.name}.png`,sha256:v.sha256})),
    criteria:['Small figure versus giant columns and long stair','Roof silhouette, depth of colonnade and warm main lighting','Cloud depth and material direction worth continuing'],
    requiredDecision:approval.reason});
+ const continuation=readJson(path.join(root,'quality/visual-acceptance/P02-CONTINUED-DEVELOPMENT.json'));
+ assert.equal(continuation.status,'user-confirmed-continue');assert.equal(continuation.performance.status,'passed-by-user-confirmation');
+ assert.equal(continuation.performance.measuredByAgent,false);assert.equal(continuation.performance.deviceMeasurements,null);
+ const performanceFile=path.join(runDir,'P02-user-performance-acceptance.json');writeJson(performanceFile,continuation);
  const cost=path.join(runDir,'P02-cost-record.json');
- writeJson(cost,{runId:context.runId,candidate:context.candidate,cloudOnly:true,targetDeviceStatus:'BLOCKED-missing-real-Windows-device',
+ writeJson(cost,{runId:context.runId,candidate:context.candidate,cloudOnly:true,targetDeviceStatus:'passed-by-user-confirmation-no-agent-hardware-measurement',deviceMeasurements:null,
   note:'RAF intervals include software rendering, GPU command latency and browser test capture overhead. CPU render submission time is not GPU time or target FPS. No hardware budget is approved from these readings.',
   browser:report.browser,views:report.views.map(v=>({camera:v.name,...v.snapshot})),resources:report.resources,
   targetEvidenceRequired:['Windows hardware/GPU and driver','Resolution/DPR and quality preset','Per-view frame-time distribution and draw calls','Resource size and browser version']});
@@ -40,11 +44,11 @@ try {
  const images=report.views.map(v=>evidence(path.join(runDir,'P02-browser',`${v.name}.png`)));
  const cases=[
   {id:'P02-01',status:'PASS',executed:report.views.length+3,details:['Actual local PBR assets, authored cameras and sample/source dimensions loaded.'],evidence:[...common,...images,evidence(geometryOutput),evidence(geometryLog)]},
-  {id:'P02-02',status:approval.status,executed:11,details:['Repeated and rebuilt pixels are stable.',approval.reason],evidence:[...common,...images,evidence(review),evidence(approvalFile),evidence(geometryOutput),evidence(geometryLog),evidence(path.join(runDir,'P02-browser/far-repeat.png')),evidence(path.join(runDir,'P02-browser/far-restarted.png'))]},
+  {id:'P02-02',status:approval.status,executed:13,details:['Repeated and rebuilt pixels are stable.',approval.reason],evidence:[...common,...images,evidence(review),evidence(approvalFile),evidence(geometryOutput),evidence(geometryLog),evidence(path.join(runDir,'P02-browser/far-repeat.png')),evidence(path.join(runDir,'P02-browser/far-restarted.png'))]},
   {id:'P02-03',status:'PASS',executed:3,details:['Actual triangle ray intersections at changed cameras demonstrate different surfaces and world-space depths.'],evidence:common},
-  {id:'P02-04',status:'BLOCKED',executed:3,details:['Actual cloud resource and per-view timing readings recorded. Required target Windows device evidence is unavailable; software results cannot replace it.'],evidence:[...common,evidence(cost)]}
+  {id:'P02-04',status:'PASS',executed:4,details:['User explicitly confirmed this performance item passed and authorized continued development. No device measurements were supplied or invented. Cloud measurements remain labelled as software-only.'],evidence:[...common,evidence(cost),evidence(performanceFile)]}
  ];
- writeJson(context.resultFile,{runId:context.runId,candidate:context.candidate,stage:stage.id,status:'BLOCKED',cases,environment:{browser:report.browser,graphics:report.views[0].snapshot.renderer,scope:'cloud-functional-only'}});
+ writeJson(context.resultFile,{runId:context.runId,candidate:context.candidate,stage:stage.id,status:cases.every(c=>c.status==='PASS')?'PASS':'BLOCKED',cases,environment:{browser:report.browser,graphics:report.views[0].snapshot.renderer,scope:'cloud-functional-only'}});
 } catch(error) {
  const failure=path.join(runDir,'P02-failure.log');writeFileSync(failure,error.stack||error.message);
  writeJson(context.resultFile,{runId:context.runId,candidate:context.candidate,stage:stage.id,status:'FAIL',cases:stage.requiredCases.map(id=>({id,status:'FAIL',executed:1,details:[error.message],evidence:[evidence(failure)]}))});

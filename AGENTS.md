@@ -21,3 +21,5 @@
 用户已选择首轮范围和 B 回环启动方式，现已推进到 P01。当前累计命令为 `npm run gate -- --through P01`，云端安装入口为 `bash scripts/setup-p01-cloud.sh`；详见 `docs/P01-RUNTIME.md`。新产物不覆盖原 `docs/天宫HTML/` 资料，后续仍按当前最高已实现阶段重跑全部入口。
 
 用户随后要求执行 P02，当前入口为 `npm run gate -- --through P02`。从 `docs/P02-VISUAL-STUDY.md` 读取样本路径与审核条件。人工视觉评审和必需目标设备证据缺失时保持 BLOCKED，不自动接受截图，不进入 P03。
+
+用户随后确认剩余 P02 性能项通过并明确要求继续开发。该确认优先于上文此前的停止条件；依据记录在 `quality/visual-acceptance/P02-CONTINUED-DEVELOPMENT.json`，不编造设备读数。当前推进 P03，累计入口 `npm run gate -- --through P03`；参见 `docs/P03-GROUND-WALKING.md`。P02 已审模型及固定审核图继续保护，P15 正式性能数据仍需实测。本轮不合并、不部署，不提前加入 P04 飞行规则。

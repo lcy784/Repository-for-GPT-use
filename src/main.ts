@@ -14,7 +14,7 @@ Object.defineProperty(window, '__TIANGONG_OBSERVE__', { value: observe, writable
 function update(): void {
   const value = application?.observe();
   if (!value) return;
-  const labels = { loading: '正在准备三维空间…', ready: '空间已就绪 · 拖动旋转，滚轮缩放', paused: '预览已暂停，返回此页后恢复', disposed: '预览已结束，可重新载入', error: value.error || '场景启动失败' };
+  const labels = { loading: '正在准备三维空间…', ready: value.fixture?.startsWith('p03-') ? '点击场景开始行走 · WASD / 方向键 · 拖动转向 · 失焦即停' : '空间已就绪 · 拖动旋转，滚轮缩放', paused: '预览已暂停，返回此页后恢复', disposed: '预览已结束，可重新载入', error: value.error || '场景启动失败' };
   notice.textContent = labels[value.phase];
   notice.dataset.error = String(value.phase === 'error');
   camera.disabled = value.phase !== 'ready';

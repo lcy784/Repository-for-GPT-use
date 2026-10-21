@@ -1,0 +1,608 @@
+{
+  "runId": "2026-10-21T16-12-36-611Z-7354029d",
+  "candidate": "97f8b083e4332d665fd41bef8dcd842821146273e4366d0f52aa05ee19976ae6",
+  "observations": [
+    {
+      "test": "Ground physics terrain matrix > settles on flat ground with a real support surface",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 60,
+            "position": {
+              "x": 0,
+              "y": 0.8951000571250916,
+              "z": 0
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 0,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 60,
+            "position": "{\"x\":0,\"y\":0.8951000571250916,\"z\":0}",
+            "physicalPosition": "{\"x\":0,\"y\":0.8951000571250916,\"z\":0}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flat-ground",
+            "velocity": "{\"x\":0,\"y\":0,\"z\":0}",
+            "penetration": 0,
+            "colliders": 11,
+            "bodyCount": 1,
+            "controllerCount": 1
+          }
+        }
+      ]
+    },
+    {
+      "test": "Ground physics terrain matrix > walks at frozen speed and stops on zero intent",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 110,
+            "position": {
+              "x": -0.9998887777328491,
+              "y": 0.894999086856842,
+              "z": 10.000017166137695
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": -0.000057220458984375
+            },
+            "yaw": 1.5707963267948966,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 110,
+            "position": "{\"x\":-0.9998887777328491,\"y\":0.894999086856842,\"z\":10.000017166137695}",
+            "physicalPosition": "{\"x\":-0.9998887777328491,\"y\":0.894999086856842,\"z\":10.000017166137695}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flat-ground",
+            "velocity": "{\"x\":0,\"y\":0,\"z\":-0.000057220458984375}",
+            "penetration": 0,
+            "colliders": 11,
+            "bodyCount": 1,
+            "controllerCount": 1
+          }
+        }
+      ]
+    },
+    {
+      "test": "Ground physics terrain matrix > normalizes diagonal input speed",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 80,
+            "position": {
+              "x": -1.8806202411651611,
+              "y": 0.8924871683120728,
+              "z": 12.121539115905762
+            },
+            "velocity": {
+              "x": 2.121298313140869,
+              "y": 0,
+              "z": 2.12127685546875
+            },
+            "yaw": 2.356194490192345,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 80,
+            "position": "{\"x\":-1.8806202411651611,\"y\":0.8924871683120728,\"z\":12.121539115905762}",
+            "physicalPosition": "{\"x\":-1.8806202411651611,\"y\":0.8924871683120728,\"z\":12.121539115905762}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flat-ground",
+            "velocity": "{\"x\":2.121298313140869,\"y\":0,\"z\":2.12127685546875}",
+            "penetration": 0,
+            "colliders": 11,
+            "bodyCount": 1,
+            "controllerCount": 1
+          }
+        }
+      ]
+    },
+    {
+      "test": "Ground physics terrain matrix > slides to a wall corner without penetrating either wall",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 320,
+            "position": {
+              "x": 3.529900550842285,
+              "y": 0.8949977159500122,
+              "z": -4.529899597167969
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0.0018310546875
+            },
+            "yaw": 0.7853981633974483,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 320,
+            "position": "{\"x\":3.529900550842285,\"y\":0.8949977159500122,\"z\":-4.529899597167969}",
+            "physicalPosition": "{\"x\":3.529900550842285,\"y\":0.8949977159500122,\"z\":-4.529899597167969}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flat-ground",
+            "velocity": "{\"x\":0,\"y\":0,\"z\":0.0018310546875}",
+            "penetration": 0,
+            "colliders": 11,
+            "bodyCount": 1,
+            "controllerCount": 1
+          }
+        }
+      ]
+    },
+    {
+      "test": "Ground physics terrain matrix > climbs permitted quarter-metre stairs",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 130,
+            "position": {
+              "x": 12.000309944152832,
+              "y": 1.6453779935836792,
+              "z": -1.7597100734710693
+            },
+            "velocity": {
+              "x": -0.000858306884765625,
+              "y": 0,
+              "z": -2.8177285194396973
+            },
+            "yaw": 0,
+            "mode": "grounded",
+            "supportId": "allowed-step-1"
+          },
+          "physics": {
+            "active": true,
+            "tick": 130,
+            "position": "{\"x\":12.000309944152832,\"y\":1.6453779935836792,\"z\":-1.7597100734710693}",
+            "physicalPosition": "{\"x\":12.000309944152832,\"y\":1.6453779935836792,\"z\":-1.7597100734710693}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "allowed-step-1",
+            "velocity": "{\"x\":-0.000858306884765625,\"y\":0,\"z\":-2.8177285194396973}",
+            "penetration": 0,
+            "colliders": 11,
+            "bodyCount": 1,
+            "controllerCount": 1
+          }
+        }
+      ]
+    },
+    {
+      "test": "Ground physics terrain matrix > does not jump onto an over-height step",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 170,
+            "position": {
+              "x": 20.0007266998291,
+              "y": 0.894997775554657,
+              "z": 1.3200998306274414
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0.005664825439453125
+            },
+            "yaw": 0,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 170,
+            "position": "{\"x\":20.0007266998291,\"y\":0.894997775554657,\"z\":1.3200998306274414}",
+            "physicalPosition": "{\"x\":20.0007266998291,\"y\":0.894997775554657,\"z\":1.3200998306274414}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flat-ground",
+            "velocity": "{\"x\":0,\"y\":0,\"z\":0.005664825439453125}",
+            "penetration": 0,
+            "colliders": 11,
+            "bodyCount": 1,
+            "controllerCount": 1
+          }
+        }
+      ]
+    },
+    {
+      "test": "Ground physics terrain matrix > walks up and down a permitted slope",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 345,
+            "position": {
+              "x": -12.000073432922363,
+              "y": 0.8956162929534912,
+              "z": 7.384368419647217
+            },
+            "velocity": {
+              "x": 0.003032684326171875,
+              "y": 0,
+              "z": 2.9979801177978516
+            },
+            "yaw": 3.141592653589793,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 345,
+            "position": "{\"x\":-12.000073432922363,\"y\":0.8956162929534912,\"z\":7.384368419647217}",
+            "physicalPosition": "{\"x\":-12.000073432922363,\"y\":0.8956162929534912,\"z\":7.384368419647217}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flat-ground",
+            "velocity": "{\"x\":0.003032684326171875,\"y\":0,\"z\":2.9979801177978516}",
+            "penetration": 0,
+            "colliders": 11,
+            "bodyCount": 1,
+            "controllerCount": 1
+          }
+        }
+      ]
+    },
+    {
+      "test": "Ground physics terrain matrix > refuses a slope above the climb limit",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 200,
+            "position": {
+              "x": -22.001708984375,
+              "y": 0.9022688865661621,
+              "z": 3.2796754837036133
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": -0.002231597900390625
+            },
+            "yaw": 0,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 200,
+            "position": "{\"x\":-22.001708984375,\"y\":0.9022688865661621,\"z\":3.2796754837036133}",
+            "physicalPosition": "{\"x\":-22.001708984375,\"y\":0.9022688865661621,\"z\":3.2796754837036133}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flat-ground",
+            "velocity": "{\"x\":0,\"y\":0,\"z\":-0.002231597900390625}",
+            "penetration": 0,
+            "colliders": 11,
+            "bodyCount": 1,
+            "controllerCount": 1
+          }
+        }
+      ]
+    },
+    {
+      "test": "Ground physics terrain matrix > loses support at an edge, falls under gravity and lands",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 260,
+            "position": {
+              "x": 31.99932861328125,
+              "y": 0.8944535851478577,
+              "z": -10.80124282836914
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": -3.000011444091797
+            },
+            "yaw": 0,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 260,
+            "position": "{\"x\":31.99932861328125,\"y\":0.8944535851478577,\"z\":-10.80124282836914}",
+            "physicalPosition": "{\"x\":31.99932861328125,\"y\":0.8944535851478577,\"z\":-10.80124282836914}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flat-ground",
+            "velocity": "{\"x\":0,\"y\":0,\"z\":-3.000011444091797}",
+            "penetration": 0,
+            "colliders": 11,
+            "bodyCount": 1,
+            "controllerCount": 1
+          }
+        }
+      ]
+    },
+    {
+      "test": "Ground physics terrain matrix > ascends the actual 0.3 m palace stairs from the lower approach",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 3630,
+            "position": {
+              "x": 0.0017120825359597802,
+              "y": 18.892274856567383,
+              "z": 49.50273895263672
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": -2.9999542236328125
+            },
+            "yaw": 0,
+            "mode": "grounded",
+            "supportId": "palace-terrace"
+          },
+          "physics": {
+            "active": true,
+            "tick": 3630,
+            "position": "{\"x\":0.0017120825359597802,\"y\":18.892274856567383,\"z\":49.50273895263672}",
+            "physicalPosition": "{\"x\":0.0017120825359597802,\"y\":18.892274856567383,\"z\":49.50273895263672}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "palace-terrace",
+            "velocity": "{\"x\":0,\"y\":0,\"z\":-2.9999542236328125}",
+            "penetration": 0,
+            "colliders": 233,
+            "bodyCount": 1,
+            "controllerCount": 1
+          }
+        }
+      ]
+    },
+    {
+      "test": "Ground physics terrain matrix > descends the palace stair and crosses its upper landing without a gap",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 630,
+            "position": {
+              "x": -0.00017218715220224112,
+              "y": 16.494924545288086,
+              "z": 91.68804931640625
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 3.00018310546875
+            },
+            "yaw": 3.141592653589793,
+            "mode": "grounded",
+            "supportId": "palace-step-51"
+          },
+          "physics": {
+            "active": true,
+            "tick": 630,
+            "position": "{\"x\":-0.00017218715220224112,\"y\":16.494924545288086,\"z\":91.68804931640625}",
+            "physicalPosition": "{\"x\":-0.00017218715220224112,\"y\":16.494924545288086,\"z\":91.68804931640625}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "palace-step-51",
+            "velocity": "{\"x\":0,\"y\":0,\"z\":3.00018310546875}",
+            "penetration": 0,
+            "colliders": 233,
+            "bodyCount": 1,
+            "controllerCount": 1
+          }
+        }
+      ]
+    },
+    {
+      "test": "Ground simulation clock and single state writer > replays identical logical input at 30, 60 and 144 display cadences",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 480,
+            "position": {
+              "x": -8.33914852142334,
+              "y": 0.8957006931304932,
+              "z": -4.528212070465088
+            },
+            "velocity": {
+              "x": -2.999553680419922,
+              "y": 0,
+              "z": -0.004405975341796875
+            },
+            "yaw": -1.5707963267948966,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 480,
+            "position": "{\"x\":-8.33914852142334,\"y\":0.8957006931304932,\"z\":-4.528212070465088}",
+            "physicalPosition": "{\"x\":-8.33914852142334,\"y\":0.8957006931304932,\"z\":-4.528212070465088}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flat-ground",
+            "velocity": "{\"x\":-2.999553680419922,\"y\":0,\"z\":-0.004405975341796875}",
+            "penetration": 0,
+            "colliders": 11,
+            "bodyCount": 1,
+            "controllerCount": 1
+          }
+        },
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 480,
+            "position": {
+              "x": -8.33914852142334,
+              "y": 0.8957006931304932,
+              "z": -4.528212070465088
+            },
+            "velocity": {
+              "x": -2.999553680419922,
+              "y": 0,
+              "z": -0.004405975341796875
+            },
+            "yaw": -1.5707963267948966,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 480,
+            "position": "{\"x\":-8.33914852142334,\"y\":0.8957006931304932,\"z\":-4.528212070465088}",
+            "physicalPosition": "{\"x\":-8.33914852142334,\"y\":0.8957006931304932,\"z\":-4.528212070465088}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flat-ground",
+            "velocity": "{\"x\":-2.999553680419922,\"y\":0,\"z\":-0.004405975341796875}",
+            "penetration": 0,
+            "colliders": 11,
+            "bodyCount": 1,
+            "controllerCount": 1
+          }
+        },
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 480,
+            "position": {
+              "x": -8.33914852142334,
+              "y": 0.8957006931304932,
+              "z": -4.528212070465088
+            },
+            "velocity": {
+              "x": -2.999553680419922,
+              "y": 0,
+              "z": -0.004405975341796875
+            },
+            "yaw": -1.5707963267948966,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 480,
+            "position": "{\"x\":-8.33914852142334,\"y\":0.8957006931304932,\"z\":-4.528212070465088}",
+            "physicalPosition": "{\"x\":-8.33914852142334,\"y\":0.8957006931304932,\"z\":-4.528212070465088}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flat-ground",
+            "velocity": "{\"x\":-2.999553680419922,\"y\":0,\"z\":-0.004405975341796875}",
+            "penetration": 0,
+            "colliders": 11,
+            "bodyCount": 1,
+            "controllerCount": 1
+          }
+        }
+      ]
+    },
+    {
+      "test": "Ground simulation clock and single state writer > freezes state, rejects stale/foreign commits and matches the physical body",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 60,
+            "position": {
+              "x": 3.0000147819519043,
+              "y": 0.8925933837890625,
+              "z": -0.00002146065526176244
+            },
+            "velocity": {
+              "x": 2.9999828338623047,
+              "y": 0,
+              "z": -0.000019694198272190988
+            },
+            "yaw": 1.5707963267948966,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 60,
+            "position": "{\"x\":3.0000147819519043,\"y\":0.8925933837890625,\"z\":-0.00002146065526176244}",
+            "physicalPosition": "{\"x\":3.0000147819519043,\"y\":0.8925933837890625,\"z\":-0.00002146065526176244}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flat-ground",
+            "velocity": "{\"x\":2.9999828338623047,\"y\":0,\"z\":-0.000019694198272190988}",
+            "penetration": 0,
+            "colliders": 11,
+            "bodyCount": 1,
+            "controllerCount": 1
+          }
+        }
+      ]
+    },
+    {
+      "test": "Ground simulation clock and single state writer > releases Rapier resources and rejects stepping a disposed session",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 0,
+            "position": {
+              "x": 0,
+              "y": 0.91,
+              "z": 0
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 0,
+            "mode": "falling",
+            "supportId": null
+          },
+          "physics": {
+            "active": false
+          }
+        }
+      ]
+    }
+  ]
+}

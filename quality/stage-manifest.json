@@ -40,7 +40,7 @@
     {
       "id": "P03",
       "enabled": true,
-      "implementation": "planned-no-placeholder-entry",
+      "implementation": "present",
       "entry": "scripts/quality/stages/P03.mjs",
       "requiredCases": [
         "P03-01",

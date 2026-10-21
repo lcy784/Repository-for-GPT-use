@@ -14,7 +14,7 @@ try {
  const origin=`http://127.0.0.1:${server.httpServer.address().port}`;
  browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',headless:true,args:['--no-sandbox','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
  const session=await browser.newContext({viewport:profile.cloud.viewport,deviceScaleFactor:1});
- await session.route(/^https?:\/\//,route=>{ if(new URL(route.request().url()).origin!==origin) { external.push(route.request().url());return route.abort();}return route.continue();});
+ await session.route(/^https?:\/\//,route=>{ if(new URL(route.request().url()).origin!==origin) { external.push(route.request().url());return route.abort();}if(route.request().url().endsWith('/runtime-config.json'))return route.fulfill({contentType:'application/json',body:JSON.stringify(readJson(path.join(root,'quality/fixtures/P02/runtime-config.json')))});return route.continue();});
  const page=await session.newPage();page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error') errors.push(m.text());});
  page.on('response',r=>network.push({path:new URL(r.url()).pathname,status:r.status()}));
  const observe=()=>page.evaluate(()=>window.__TIANGONG_OBSERVE__());

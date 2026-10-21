@@ -1,0 +1,15 @@
+{
+  "scope": "All 119 staged P03 source, documentation and two formal run directories",
+  "scanner": "detect-secrets; all files; no remote credential verification",
+  "potentialFindings": 499,
+  "verifiedFalsePositives": {
+    "verifiedCandidateArtifactOrCommitHashes": 492,
+    "verifiedReportPaths": 7
+  },
+  "unclassifiedFindings": 0,
+  "classification": "Flagged values were SHA-1 located and verified as generated candidate/artifact hashes, the known approved commit, or report path fields resolving to existing evidence files/directories.",
+  "manualReview": "Original procedural character and terrain; no new downloaded models/photos/fonts. User performance confirmation is recorded without private hardware details or invented measurements. The playable palace screenshot and regression captures were inspected. No passwords, keys, personal contact data or private documents added. New commit uses GitHub noreply identity.",
+  "preservation": "All 16 original files remain byte-identical. Reviewed palace/roof art and approved screenshot hashes unchanged. Previous branches and reports preserved.",
+  "result": "P00-P03 cumulative PASS. P02 performance is user-confirmed, not agent-measured. No merge or deployment.",
+  "rawLogs": "Tool whitespace retained to preserve evidence hashes; source-only whitespace check run separately."
+}

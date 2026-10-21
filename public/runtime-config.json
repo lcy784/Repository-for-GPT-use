@@ -1,23 +1,23 @@
 {
   "version": 1,
-  "sceneFixture": "p02-palace",
+  "sceneFixture": "p03-palace-walk",
   "simulationHz": 60,
   "maxCatchUpSteps": 5,
   "cameraPositions": [
     [
-      180,
-      135,
-      330
+      6,
+      23,
+      64
     ],
     [
-      37,
-      28,
-      154
+      -8,
+      24,
+      64
     ],
     [
-      -24,
-      19.7,
-      62
+      0,
+      30,
+      72
     ]
   ],
   "background": [
@@ -28,18 +28,23 @@
   "cameraTargets": [
     [
       0,
-      65,
-      25
+      19.51,
+      54
     ],
     [
       0,
-      73,
-      -12
+      19.51,
+      54
     ],
     [
       0,
-      79,
-      -10
+      19.51,
+      54
     ]
+  ],
+  "spawn": [
+    0,
+    18.91,
+    54
   ]
 }
