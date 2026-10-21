@@ -30,7 +30,7 @@
   },
   "visualReview": {
     "requiredBefore": "P02",
-    "status": "revision-requested-monumental-scale-and-ornament",
+    "status": "accepted-by-user",
     "referenceFiles": [
       "docs/天宫HTML/input/IMG_20261019_161331.jpg",
       "docs/天宫HTML/input/IMG_20261019_161156.jpg"
@@ -79,7 +79,7 @@
         "fovDegrees": 60
       }
     ],
-    "cameraCoordinatesStatus": "P02-authored-study-fixed-cameras-pending-human-review",
+    "cameraCoordinatesStatus": "accepted-for-current-P02-visual-sample",
     "preserve": [
       "small-character-large-building-scale",
       "palace-silhouette-and-columns",
@@ -87,6 +87,7 @@
     ],
     "allTenReferencesRemainProductReferences": true,
     "automaticImageDifferenceProvesArtisticAcceptance": false,
-    "latestUserFeedback": "2026-10-21: Increase monumental proportions and make the palace immense and intricately layered; existing direction accepted subject to this revision."
+    "latestUserFeedback": "2026-10-21: User explicitly accepted the monumental revision: 验收通过.",
+    "acceptanceRecord": "quality/visual-acceptance/P02-20261021.json"
   }
 }

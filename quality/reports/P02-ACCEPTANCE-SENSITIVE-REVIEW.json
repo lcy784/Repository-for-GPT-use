@@ -1,0 +1,14 @@
+{
+  "scope": "All 51 staged acceptance-tool, documentation, approval-record and formal-run paths",
+  "scanner": "detect-secrets; all files; no remote credential verification",
+  "potentialFindings": 273,
+  "verifiedFalsePositives": {
+    "verifiedCandidateArtifactOrCommitHashes": 270,
+    "verifiedReportPaths": 3
+  },
+  "unclassifiedFindings": 0,
+  "classification": "SHA findings were located by SHA-1 matching and are generated candidate/artifact hashes or the known approved Git commit. Flagged report path fields resolve to existing evidence directories/files. No findings outside these verified metadata classes.",
+  "manualReview": "Only user acceptance quote, public Git revision identifiers, local generated evidence and quality logic were added. No game visuals or assets changed. New rendered images match all three user-approved PNG hashes. No passwords, API keys, personal contact information or private documents added.",
+  "preservation": "All 16 original files remain byte-identical. Previous branch and historical reports preserved.",
+  "result": "P02-02 visual PASS; P02-04 performance BLOCKED. No merge or deployment."
+}

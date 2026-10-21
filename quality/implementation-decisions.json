@@ -50,11 +50,6 @@
   },
   "unresolved": [
     {
-      "id": "visual-sample-review",
-      "blocks": "P02",
-      "description": "Review the actual sample; current reference selection is an engineering proposal."
-    },
-    {
       "id": "flight-and-falling-rules",
       "blocks": "P04",
       "description": "Define flying transitions and falling recovery before implementation."
@@ -73,9 +68,19 @@
   "visualFeedback": {
     "date": "2026-10-21",
     "source": "User chat: palace should feel immense, taller in proportion and intricately layered.",
-    "status": "revision-requested-before-acceptance",
+    "status": "accepted-by-user",
     "previousSampleBranch": "feat/tiangong-p02-20261021",
     "revisionBranch": "feat/tiangong-p02-monumental-20261021",
     "newImagesAutomaticallyAccepted": false
-  }
+  },
+  "resolved": [
+    {
+      "id": "visual-sample-review",
+      "blocks": "P02",
+      "description": "Review the actual sample; current reference selection is an engineering proposal.",
+      "status": "accepted-by-user",
+      "record": "quality/visual-acceptance/P02-20261021.json",
+      "sourceQuote": "验收通过"
+    }
+  ]
 }

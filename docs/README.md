@@ -34,3 +34,5 @@ P00 实现在 `feat/tiangong-p00-20261021` 分支，包含上述完整归档。�
 P02 的当前开发分支为 `feat/tiangong-p02-20261021`，包含全部历史资料。新增 [巨殿视觉样本与审核路径](P02-VISUAL-STUDY.md)，当前进度始终以根目录 `PROJECT_STATUS.md` 为准。
 
 用户反馈后的最新调整分支为 `feat/tiangong-p02-monumental-20261021`，见 [巨殿尺度与繁复构件修订](P02-MONUMENTAL-REVISION.md)。此前 P02 分支保留供对照。
+
+用户已明确验收巨殿视觉样本。最新验收记录分支为 `docs/tiangong-p02-visual-acceptance-20261021`，见 [P02 视觉验收与剩余性能项](P02-VISUAL-ACCEPTANCE.md)。

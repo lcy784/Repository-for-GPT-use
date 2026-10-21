@@ -1,0 +1,31 @@
+{
+  "runId": "2026-10-21T15-39-44-693Z-603b0727",
+  "candidate": "5d5305ec3402707ec65ca2247a07e783ff050ff4199846c0e081cc2a770fc008",
+  "status": "accepted-by-user",
+  "approvedBaseline": true,
+  "acceptanceEvidence": "P02-visual-acceptance.json",
+  "references": [
+    "docs/天宫HTML/input/IMG_20261019_161331.jpg",
+    "docs/天宫HTML/input/IMG_20261019_161156.jpg"
+  ],
+  "images": [
+    {
+      "file": "P02-browser/far.png",
+      "sha256": "abd21b8948109f0c6aca1b4cba16b0be0eb18b06aeea530d2fb556f5c75da78d"
+    },
+    {
+      "file": "P02-browser/stairs.png",
+      "sha256": "1cd77a5c02137eb0aab948ea7bc20d9a868b7443cbff2ebe5e32b5b322acba0d"
+    },
+    {
+      "file": "P02-browser/human.png",
+      "sha256": "8301b58014fe0afac6346469c4eee81a99bc7bc685a999ecd956d1b8e9349ca6"
+    }
+  ],
+  "criteria": [
+    "Small figure versus giant columns and long stair",
+    "Roof silhouette, depth of colonnade and warm main lighting",
+    "Cloud depth and material direction worth continuing"
+  ],
+  "requiredDecision": "User acceptance applies: current visual inputs and three rendered images match the accepted sample."
+}

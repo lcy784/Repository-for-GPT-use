@@ -1,0 +1,345 @@
+{
+  "sha256": "5d5305ec3402707ec65ca2247a07e783ff050ff4199846c0e081cc2a770fc008",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "ef7d986a614e330d52de1d02a15b43822b7e399c8c881af633406301de651f9c"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "8a45e8700f61a936bd17d02d60f20a9e965cf7cf7a0e0eb4581248686a1f87b0"
+    },
+    {
+      "path": ".node-version",
+      "sha256": "7e8a2fa94951112b894a3dbe3d05efef5e9263741fa49125f0a70f40fedab4cc"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "9a18a2aeb41036fccb7efb97c705ed81f7db5a6e7fe24413d0527696865de862"
+    },
+    {
+      "path": "DECISIONS.md",
+      "sha256": "881103c34d837482181e14ee1a495692b8622739a3742c04b1b17718b0ea683e"
+    },
+    {
+      "path": "PROJECT_STATUS.md",
+      "sha256": "d6b68b35fff980d17d38d92590c4e7e9f4e8b3909af34a81350452a608fda874"
+    },
+    {
+      "path": "docs/CLOUD-DEVELOPMENT.md",
+      "sha256": "7f11d54a86fed0143c6b1a7e9ebdc48c5ee4747e98b7f4ef3ebb0694b2d01579"
+    },
+    {
+      "path": "docs/IMPORT-STATUS.md",
+      "sha256": "d3c392938ab87d00ff40bf4cb096901fd36b3898b693375420693ea44defed34"
+    },
+    {
+      "path": "docs/P01-RUNTIME.md",
+      "sha256": "26c9ad9aed7773fdd9048d244f937b4a546097fe53f6f6298f38c839cc45f64e"
+    },
+    {
+      "path": "docs/P02-MONUMENTAL-REVISION.md",
+      "sha256": "971318a41db360738e7299783d8183bccc7b2a61254edb28a81a847d9cd19416"
+    },
+    {
+      "path": "docs/P02-VISUAL-ACCEPTANCE.md",
+      "sha256": "745d9f1941f36e882ae185549ee61f60e81f2149718a3410646985d7cdcd2458"
+    },
+    {
+      "path": "docs/P02-VISUAL-STUDY.md",
+      "sha256": "404f168466ef7ef55ebe61430246f2f4c54f5784452863b8da8b90965fa15193"
+    },
+    {
+      "path": "docs/README.md",
+      "sha256": "b996c2539b80dc6eea54db90d248b630ac1a52889b1750eb46dc3fa1fe16d674"
+    },
+    {
+      "path": "docs/TIANGONG-CLOUD-HANDOFF.md",
+      "sha256": "1ca94b255a0ddbf73c8695bad2a592022aa24cd91425501bd7c973ff62ff7a10"
+    },
+    {
+      "path": "docs/TIANGONG-IMPORT-REPORT.md",
+      "sha256": "c21bf6f387037e153378312fb8686f522c9982259ac6e9cf5a2f564994e1a027"
+    },
+    {
+      "path": "docs/tiangong-import-manifest.json",
+      "sha256": "441e788f056ad5832d1c357f793c62f9b98ebf63ad7fe4de19628582443dcb88"
+    },
+    {
+      "path": "docs/天宫HTML/AGENTS.reference.md",
+      "sha256": "3663f72e4e02c222788b1bca6fd69046b5d8c53e2cd8e817242dc0ad1b55eab8"
+    },
+    {
+      "path": "docs/天宫HTML/README.md",
+      "sha256": "2edd520c2e4d8c3ea86a32e475de5fd45411c19fea09ae0ea8e939d6a5149555"
+    },
+    {
+      "path": "docs/天宫HTML/input/IMG_20261019_161156.jpg",
+      "sha256": "cdf3515efebb4a758457698bf348baf2ed5244279f8aefeb86154b2138127a80"
+    },
+    {
+      "path": "docs/天宫HTML/input/IMG_20261019_161213.jpg",
+      "sha256": "bbca359c3c44b09ce860dca6a9fdc63bdb947e91f30f3438fb37c30a7da2a841"
+    },
+    {
+      "path": "docs/天宫HTML/input/IMG_20261019_161233.jpg",
+      "sha256": "8bb4b31a4e18b11db4ba3b5ee9ac7efe6bfd7c944912f49e990a8344e8170ff4"
+    },
+    {
+      "path": "docs/天宫HTML/input/IMG_20261019_161249.jpg",
+      "sha256": "5d17dd496a78792af99a7b7a090b9f87228155e18a5ed38ceb5883e09be8ceb7"
+    },
+    {
+      "path": "docs/天宫HTML/input/IMG_20261019_161304.jpg",
+      "sha256": "9e1f677d16010d4b9d58cf1b22fb470963e0050cf4c99a985a1dcf78d3ffe0f3"
+    },
+    {
+      "path": "docs/天宫HTML/input/IMG_20261019_161318.jpg",
+      "sha256": "5b8bcac49fa521711d110aa3019fa4535dc733400bd8542aabd95dd78765b977"
+    },
+    {
+      "path": "docs/天宫HTML/input/IMG_20261019_161331.jpg",
+      "sha256": "88d89e55af143aab0c8800b509f64947dcf3af24c78c826996bf260b9da188f8"
+    },
+    {
+      "path": "docs/天宫HTML/input/IMG_20261019_161402.jpg",
+      "sha256": "dcc34e9ba24a5724ea936f5aeb1827e7d75fe1e71bc0719e92cd4fbcf3021049"
+    },
+    {
+      "path": "docs/天宫HTML/input/IMG_20261019_161420.jpg",
+      "sha256": "d04bdb03336d415d85d898e22a0cd1c7cd1e53c63c8cbf90a77841519c9d6684"
+    },
+    {
+      "path": "docs/天宫HTML/input/IMG_20261019_161434.jpg",
+      "sha256": "38d9b13092ee49ed7c6b95b336ccdd144a58a201b6b881368bd513ed20eee145"
+    },
+    {
+      "path": "docs/天宫HTML/input/jiangnan-offline.html",
+      "sha256": "a43629c2b22b3f7d5508fcd151de8f64a6ca5156d61c0299d70459cd75226458"
+    },
+    {
+      "path": "docs/天宫HTML/tiangong-phased-development-plan-v1.0.md",
+      "sha256": "0045d6c04d6eb11ab52b59db970a75a9f23256b31e834fa5d2954c38bf9c1279"
+    },
+    {
+      "path": "docs/天宫HTML/tiangong-product-requirements-v1.0.md",
+      "sha256": "0fea5f8af1646173013bfa40825b465d6d835ecdc809ab0729c7465755085932"
+    },
+    {
+      "path": "docs/天宫HTML/tiangong-system-architecture-v1.0.md",
+      "sha256": "da7c0cd78ac53b3bd4ab75ca93f332144eee7b3ccffe73a720a6c4a0b1a73822"
+    },
+    {
+      "path": "docs/天宫HTML/tiangong-user-requirements-v1.0.md",
+      "sha256": "e153e3de88f10d2315d6e895e5f9bc64fa29d158ac1ca7f38660bcdc859b3fac"
+    },
+    {
+      "path": "index.html",
+      "sha256": "a4e0ad0227a7175b9764a6a8a08d14b5840dae85a710af4f91ede360280fdd5d"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "862ca1f3484e7e7f53d3e43b4b9bfc457dd9570465cfcba4a632d2ffcb88dc6a"
+    },
+    {
+      "path": "package.json",
+      "sha256": "a326ae1e8551770582a43bcd52f1873de93c6eef27e5e003c6d44563820fa718"
+    },
+    {
+      "path": "public/assets/palace/source-manifest.json",
+      "sha256": "f7451da15028218e05e267808eb81dc50ed12f40882f7c6e9d1d3a6e1ef1dcfc"
+    },
+    {
+      "path": "public/runtime-config.json",
+      "sha256": "da2fd6d5249a060323c0b10afc1c27633f07b1a2dd1067f0a61c3ce7b0babbb3"
+    },
+    {
+      "path": "quality/.gitignore",
+      "sha256": "8f3de1e507d277f725b13858f0c46932e42bed12a7aeaf6adc57fb7089023581"
+    },
+    {
+      "path": "quality/README.md",
+      "sha256": "5b78b787af4dd31fd02bddfc21aa82b030cc48bdfdba7cfb0850cb864f0ec12d"
+    },
+    {
+      "path": "quality/acceptance-profile.json",
+      "sha256": "990b48f1679ef49f3c6349d67443e767a962347995e695539249b74dcfc1526d"
+    },
+    {
+      "path": "quality/contracts.json",
+      "sha256": "7172f286c97204e2ff7986cb619a5efae5faaa83af1ac3c736c0acf36c9add7c"
+    },
+    {
+      "path": "quality/fixtures/P01/runtime-config.json",
+      "sha256": "d109ba2a411c20236f7fee592fb8c53e803f6a234ffd24b6ab4625d6c43e1800"
+    },
+    {
+      "path": "quality/implementation-decisions.json",
+      "sha256": "c5c2ef21a2523d9db8c5fc66ce41b06551cad735d5141138dd5e1a067aea5be7"
+    },
+    {
+      "path": "quality/stage-manifest.json",
+      "sha256": "4331fef4a4130462bb84200b62b4200b37066c871c4737e9d6f68dd03eafadba"
+    },
+    {
+      "path": "quality/tsconfig.contracts.json",
+      "sha256": "1f0f15f9e9bd4ed2864a54beb1882a6bbd99e5d01914886d363a7628b05e0ab4"
+    },
+    {
+      "path": "quality/visual-acceptance/P02-20261021.json",
+      "sha256": "988007994ae08385709b5db70d2e442a8bbdce6708b8df886c79788e57f202a9"
+    },
+    {
+      "path": "quality/vitest.config.mjs",
+      "sha256": "df72d18b667373acfcbaf32f557971e8e8ca94cd21c63e668a8b3c3ff61851a8"
+    },
+    {
+      "path": "scripts/quality/contracts.mjs",
+      "sha256": "7aae57a485a53526f3dd527022da71bcc083b5e5eb7303ce1c912fb650d07323"
+    },
+    {
+      "path": "scripts/quality/gate.mjs",
+      "sha256": "5d9369dcc19611bd169734e6d8e344336dc564a4f6e041a56871804cd0d1e0e4"
+    },
+    {
+      "path": "scripts/quality/lib.mjs",
+      "sha256": "2cd816c47ae141e97ed72e02e31c187a7a45a25a46ae689895a60831e5452657"
+    },
+    {
+      "path": "scripts/quality/p01-browser.mjs",
+      "sha256": "39d92fedc4bf6562c854afa1326d89404d997e1af7dec8cc396de5aa22686c8c"
+    },
+    {
+      "path": "scripts/quality/p02-browser.mjs",
+      "sha256": "4d21662a116b972feeb22b979a164ff924508c680df48d37566a7a2988f091d7"
+    },
+    {
+      "path": "scripts/quality/stages/P00.mjs",
+      "sha256": "6fdbb50d6e4493545a1925eda6a9ac515d65573eba178b77b519d66ca2e6499f"
+    },
+    {
+      "path": "scripts/quality/stages/P01.mjs",
+      "sha256": "ff6ab9c2d96cc1b2064fdff90ec649aa41953e4bfef6782210dbc7d0d660b8c1"
+    },
+    {
+      "path": "scripts/quality/stages/P02.mjs",
+      "sha256": "55d4d6df377de710f22fb3fd42a21ed904aed5f307c90f858f1ff1aaceb56e90"
+    },
+    {
+      "path": "scripts/quality/visual-acceptance.mjs",
+      "sha256": "1a2233010ceba96d31bbcacb73ca0662ef6614f9668d9017360efcf2a37b65b1"
+    },
+    {
+      "path": "scripts/scan-secrets.py",
+      "sha256": "56901b6539bc447f0992be651873cb22824953c0e0f6aad49c92ef7f466053d3"
+    },
+    {
+      "path": "scripts/setup-cloud.sh",
+      "sha256": "2c1a5a5a636ca762f1ed0f8400fab9bd29f6cda77499383032300a9cf265bad9"
+    },
+    {
+      "path": "scripts/setup-p01-cloud.sh",
+      "sha256": "f065fa335df9cbe2382be5582701c47237b03d17e84174c4483e92819cad260d"
+    },
+    {
+      "path": "scripts/setup-p01-system.py",
+      "sha256": "fda10bcdb972e969fd8d425c073412e7b3c9d8b10052aeaa006bd8801b9d588b"
+    },
+    {
+      "path": "scripts/setup-tiangong-cloud.sh",
+      "sha256": "fb85aca5b51cce0f7f3036426dcc4ad7b1755f6d4d9fdbde073224b9fdc4be75"
+    },
+    {
+      "path": "scripts/verify-tiangong-import.py",
+      "sha256": "3d117b6b35ec40a131d8499e81ca723c5de06f7e46a7b8b1115d98c5f1e5c3a5"
+    },
+    {
+      "path": "src/env.d.ts",
+      "sha256": "da5bf71d48cf909584a01c80b445f730507068f5b34c920f352e2bfcf0315e4c"
+    },
+    {
+      "path": "src/main.ts",
+      "sha256": "162aa240e0612af3b2bfdf1c4d1c185a9e990f14f574c140a0b5c19f4a6c5a75"
+    },
+    {
+      "path": "src/runtime/application.ts",
+      "sha256": "b561b0ca5adc9abdb0fdef37ea4b7fb3f7cab51704a2a7d1af9fe5fd2abab3b9"
+    },
+    {
+      "path": "src/runtime/clock.ts",
+      "sha256": "2000fc356ce604c8b9b58e1c7b589d3f22feb989cd8aa8f5c8591ab400d6b5fe"
+    },
+    {
+      "path": "src/runtime/config.ts",
+      "sha256": "e08e8130fec7bb0d322d7630df68c134ccd834034774f39ac93b6b445f340149"
+    },
+    {
+      "path": "src/runtime/palace.ts",
+      "sha256": "361886f995158e2bebc64afb8a5e16d1a2f7afe0e65d0295af6d364e4b3d1d7d"
+    },
+    {
+      "path": "src/runtime/roof.ts",
+      "sha256": "bd699f080daf7c0c69a266ec1fe8b598b21edb440180fb3e399531c1153e241f"
+    },
+    {
+      "path": "src/shared/contracts.ts",
+      "sha256": "520001b1feaea23488b36f6a3f0b54c39dc4d22f3e5f1fa6373696e7a60496d3"
+    },
+    {
+      "path": "src/style.css",
+      "sha256": "dc9f41033ec155fe52a5badacd4a8585b0f729da76387989731a529f6dc88f31"
+    },
+    {
+      "path": "tools/cloud-requirements.txt",
+      "sha256": "6f49c6f97ac876b8a70922da4577fca1d4bb75dbdae09b8607f983e1dddfb785"
+    },
+    {
+      "path": "tools/system-packages.json",
+      "sha256": "9ef4fd5323fa5422fc793911d9984bebb83606b3806e40b1381bdb9311769492"
+    },
+    {
+      "path": "tools/tiangong/.gitignore",
+      "sha256": "4d56952b0fb13bf8f9b6c13a6d4c34a075bac3af447636a1df4335d7576e2f97"
+    },
+    {
+      "path": "tools/tiangong/check.mjs",
+      "sha256": "5af7adaecb77bc45e9dff3933be0c1cc06d2caa8715035a9bf2f3a29afec9e6e"
+    },
+    {
+      "path": "tools/tiangong/package-lock.json",
+      "sha256": "ada23080ecf3d99a3365695efe779402add272490b4ee4bef3a287da9b9449f3"
+    },
+    {
+      "path": "tools/tiangong/package.json",
+      "sha256": "e1deb629bb157b60b70c4420cfd889ad932d8bade07feac2f17f0e8afa2441d4"
+    },
+    {
+      "path": "tools/tiangong/tests/clock.test.mjs",
+      "sha256": "96e466b2585d001dd33b2905c648d197eafa91a16260a75c6cc02117eefa72bd"
+    },
+    {
+      "path": "tools/tiangong/tests/gate.test.mjs",
+      "sha256": "c6355860baaea6ad0c49dcfb88f017e4cb06569d978cef2f9fc8bb459545f21d"
+    },
+    {
+      "path": "tools/tiangong/tests/roof.test.mjs",
+      "sha256": "50aedb4993a3fc638f519aa27b21290108c5793770dcc09a0100eb9805b3e9d6"
+    },
+    {
+      "path": "tools/tiangong/tests/visual-acceptance.test.mjs",
+      "sha256": "70e823175839e1b068bd4c4839659df3598e43aada02086ae76b6bfba915ab8e"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "7c6e6eed1f34ba59874ead255af211e0c45d0a202c1ce54d680d491de114c3ce"
+    },
+    {
+      "path": "vite.config.mjs",
+      "sha256": "7c9ea1f476bf91ebe6fd8fee8d3bcacbf5229dec25ca05256aa3f49ef3c34ad2"
+    },
+    {
+      "path": "。。",
+      "sha256": "73098ff5ba559de045842e9215edeb7946cc70fdf83fa61657cc9edde49e2095"
+    }
+  ]
+}
