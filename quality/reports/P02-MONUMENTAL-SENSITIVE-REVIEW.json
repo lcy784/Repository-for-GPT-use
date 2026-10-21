@@ -1,0 +1,15 @@
+{
+  "scope": "All 53 staged paths in the monumental palace revision",
+  "scanner": "detect-secrets; all files; no remote credential verification",
+  "potentialFindings": 222,
+  "verifiedFalsePositives": {
+    "generatedSha256Metadata": 219,
+    "verifiedCloudRunDirectory": 3
+  },
+  "unclassifiedFindings": 0,
+  "classification": "Each hex finding was SHA-1 located and is a 64-hex candidate/artifact SHA-256 in a known generated field, or the review index candidate fingerprint. Any Base64 runDir value is verified against its generated report parent path.",
+  "manualReview": "New geometry is original procedural work. Three final review images were visually inspected. No private documents, password/key values, personal contact data or downloaded models/images were added. Commit will use public GitHub noreply identity.",
+  "preservation": "All 16 imported source files remain byte-identical; previous version and its evidence remain unchanged.",
+  "stageStatus": "P00 PASS; P01 PASS; P02 BLOCKED for unapproved new images and missing target-device evidence. Automatic technical checks passed.",
+  "rawLogs": "Preserved without whitespace normalization so evidence hashes stay valid."
+}

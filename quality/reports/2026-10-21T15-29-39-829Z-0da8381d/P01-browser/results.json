@@ -1,0 +1,1503 @@
+{
+  "runId": "2026-10-21T15-29-39-829Z-0da8381d",
+  "candidate": "fb75666ecd7d379e80f945a87ec4ca9ecb0a17494f27c8585eea891576819151",
+  "browser": "154.0.8037.57",
+  "display": "real Chromium tabs on cloud Xvfb",
+  "results": [
+    {
+      "id": "P01-01",
+      "status": "PASS",
+      "executed": 2,
+      "views": [
+        {
+          "mode": "production",
+          "snapshot": {
+            "phase": "ready",
+            "error": null,
+            "frame": 42,
+            "tick": 96,
+            "maxStepsInFrame": 5,
+            "backend": "WebGL2",
+            "meshes": 4,
+            "activeMeshes": 4,
+            "engines": 1,
+            "listeners": 2,
+            "width": 1280,
+            "height": 720,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 1,
+            "glError": 0,
+            "depthWitness": "",
+            "projectedRoofEnvelope": "",
+            "frameIntervalMsMedian": 48.600000001490116,
+            "frameIntervalMsP95": 154.7999999988824,
+            "drawCalls": 4,
+            "assemblyMetrics": null,
+            "study": null,
+            "triangles": 48,
+            "materials": 3,
+            "textures": 0,
+            "renderCpuMsMedian": 0.5,
+            "cameraEye": "-14.999999999999998,5.999999999999999,-8.000000000000004",
+            "cameraTarget": "0,1.5,0",
+            "fixture": "p01-depth",
+            "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+            "totalFrames": 42,
+            "generation": 1,
+            "canvases": 1
+          },
+          "captures": [
+            {
+              "file": "production-camera-a.png",
+              "sha256": "27e8291c2f32c62f3dbb8362c7c7f4d9d44f9209ff26c4c7f91514f87905e848",
+              "colors": 34,
+              "width": 1280,
+              "height": 720
+            },
+            {
+              "file": "production-camera-b.png",
+              "sha256": "a353242133c5d17db385267c3c97d88842e529fa40397d9b57b65fd3f10fb343",
+              "colors": 30,
+              "width": 1280,
+              "height": 720
+            }
+          ],
+          "network": [
+            {
+              "path": "/",
+              "status": 200
+            },
+            {
+              "path": "/assets/shaderStore-D-XQlhUT.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/index-BKxVMWTm.css",
+              "status": 200
+            },
+            {
+              "path": "/assets/engineStore-Bn2tApal.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/logger-CuBYPcDK.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/internalTexture-B3djGrls.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/performanceConfigurator-UtxC_Odd.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/precisionDate-DgO8bWsc.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/math.scalar.functions-Bcxiuh2E.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/halfFloat-Cfx5m4ll.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/thinEngine.pure-CVicMHaa.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/math.color.pure-DLMyD1Sf.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/index-pe5fj950.js",
+              "status": 200
+            },
+            {
+              "path": "/runtime-config.json",
+              "status": 200
+            },
+            {
+              "path": "/assets/meshUboDeclaration-DYEo1Glw.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/logDepthDeclaration-D_lEqJ0h.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/default.vertex-BMHK6cNB.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/defaultUboDeclaration-DjVzEbLK.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/helperFunctions-gEnZbjN3.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/logDepthVertex-DwMacBUy.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/clipPlaneVertex-D0NeDy6h.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/default.fragment-DYlPFgaB.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/oitFragment-NMD8MAKW.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/clipPlaneFragment-DVK0wgyZ.js",
+              "status": 200
+            }
+          ],
+          "errors": []
+        },
+        {
+          "mode": "development",
+          "snapshot": {
+            "phase": "ready",
+            "error": null,
+            "frame": 43,
+            "tick": 85,
+            "maxStepsInFrame": 5,
+            "backend": "WebGL2",
+            "meshes": 4,
+            "activeMeshes": 4,
+            "engines": 1,
+            "listeners": 2,
+            "width": 1280,
+            "height": 720,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 1,
+            "glError": 0,
+            "depthWitness": "",
+            "projectedRoofEnvelope": "",
+            "frameIntervalMsMedian": 38.29999999888241,
+            "frameIntervalMsP95": 120.59999999962747,
+            "drawCalls": 4,
+            "assemblyMetrics": null,
+            "study": null,
+            "triangles": 48,
+            "materials": 3,
+            "textures": 0,
+            "renderCpuMsMedian": 0.5,
+            "cameraEye": "-14.999999999999998,5.999999999999999,-8.000000000000004",
+            "cameraTarget": "0,1.5,0",
+            "fixture": "p01-depth",
+            "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+            "totalFrames": 43,
+            "generation": 1,
+            "canvases": 1
+          },
+          "captures": [
+            {
+              "file": "development-camera-a.png",
+              "sha256": "27e8291c2f32c62f3dbb8362c7c7f4d9d44f9209ff26c4c7f91514f87905e848",
+              "colors": 34,
+              "width": 1280,
+              "height": 720
+            },
+            {
+              "file": "development-camera-b.png",
+              "sha256": "a353242133c5d17db385267c3c97d88842e529fa40397d9b57b65fd3f10fb343",
+              "colors": 30,
+              "width": 1280,
+              "height": 720
+            }
+          ],
+          "network": [
+            {
+              "path": "/",
+              "status": 200
+            },
+            {
+              "path": "/src/main.ts",
+              "status": 200
+            },
+            {
+              "path": "/src/style.css",
+              "status": 200
+            },
+            {
+              "path": "/src/runtime/application.ts",
+              "status": 200
+            },
+            {
+              "path": "/@vite/client",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_Engines_engineStore.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_Maths_math__vector.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_scene.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_Engines_engine.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_Maths_math__color.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_Lights_hemisphericLight.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_Meshes_Builders_boxBuilder.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_Culling_ray.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_Instrumentation_sceneInstrumentation.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_Cameras_arcRotateCamera.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_Materials_standardMaterial.js",
+              "status": 200
+            },
+            {
+              "path": "/src/runtime/palace.ts",
+              "status": 200
+            },
+            {
+              "path": "/src/runtime/clock.ts",
+              "status": 200
+            },
+            {
+              "path": "/src/runtime/config.ts",
+              "status": 200
+            },
+            {
+              "path": "/tools/tiangong/node_modules/vite/dist/client/env.mjs",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/engineStore-DtIt56Pm.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/math.vector.pure-FVpuNUA6.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/timingTools-JxkNW_Pj.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/fileTools.pure-D846LVuw.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/abstractEngine.renderPass.pure-YYY6twoZ.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/engine.dynamicBuffer.pure-nHrho8xH.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/scene.pure-QTVcnG8o.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/thinEngine.pure-DKUkv8O7.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/math.color.pure-D_eYANY-.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/perfCounter-CeOHrerT.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/sphericalPolynomial.pure-GZzF_Os1.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/abstractEngine.texture.pure-BJ-IFXy3.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/textureLoaderManager-q3VqRHGK.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/baseTexture.pure-BhObSBeN.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/decorators-BPzzqbh8.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/typeStore-Dj0SBy6w.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/node-xqid1G3m.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/light-C5Q4UQfv.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/mesh.pure-BIhR3yHB.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/mesh.vertexData-BrZRQZ5y.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/compatibilityOptions-Cf3WuxrY.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/math.scalar.functions-Da3Hx1LB.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/pickingInfo-CrttPus6.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/intersectionInfo-BDSDApP1.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/camera.pure-1biX3QKE.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/devTools-CGEJIhrn.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/deviceInputEvents-lBYaLv72.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/decorators.serialization-B1xQmeWD.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/math.plane-C3oeBKJn.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/tools.pure-D1CVBTX8.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/math.axis-Fu70dIcA.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/math.size-DipjcOjW.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/buffer.pure-Cb1b8Act.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/smartArray-BCwDpu76.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/materialHelper.geometryrendering-D1znzMj7.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/materialHelper.functions-vLY4qLAT.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/material.pure-D3fgq4Ld.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/effectFallbacks-BvFw-nIb.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/imageProcessing-BulONhRY.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/vertexPullingHelper.functions-CT6coPLa.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_Meshes_mesh.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_Meshes_mesh__vertexData.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_Meshes_transformNode.js",
+              "status": 200
+            },
+            {
+              "path": "/src/runtime/roof.ts",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_Meshes_Builders_sphereBuilder.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_Meshes_Builders_cylinderBuilder.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_Materials_shaderMaterial.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_Meshes_Builders_tubeBuilder.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_Materials_Textures_dynamicTexture.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_Materials_Textures_rawCubeTexture.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_Engines_constants.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_Lights_directionalLight.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_Materials_PBR_pbrMaterial.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_Lights_Shadows_shadowGenerator.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_Lights_Shadows_shadowGeneratorSceneComponent.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/@babylonjs_core_Materials_Textures_Loaders_envTextureLoader.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/bufferUtils-CiT1lNSc.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/guid-v5ylGSh_.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/lightConstants-yf4TZrwr.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/floatingOriginMatrixOverrides-BH_KntDD.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/sceneComponent-COMZZqQJ.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/renderingManager-BUB7xE0j.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/math.viewport-1tvuc1Mk.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/transformNode.pure-Crg78NDY.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/subMesh.pure-eEHqFk3u.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/instantiationTools-aS0xdjKH.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/drawWrapper-Bp0FM1Yo.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/texture.pure-DCtf9ftw.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/environmentTextureTools.pure-Bft-_pGH.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/postProcess.pure-ClUl2qCd.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/shadowGeneratorSceneComponent.pure-Dkowdo0z.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/cubemapToSphericalPolynomial-CBE2zSSr.js",
+              "status": 200
+            },
+            {
+              "path": "/runtime-config.json",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/default.vertex-CHiXDamJ.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/default.fragment-BO6viRYa.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/meshUboDeclaration-DxuhRYq-.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/helperFunctions-uCkFKxQy.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/logDepthDeclaration-B4TAfW9s.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/defaultUboDeclaration-Bp8gyP57.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/logDepthVertex-DLfv5X7Y.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/clipPlaneVertex-DPwHIwOi.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/oitFragment-C9Imga1i.js",
+              "status": 200
+            },
+            {
+              "path": "/node_modules/.vite/deps/clipPlaneFragment-B8RuuPaD.js",
+              "status": 200
+            }
+          ],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "P01-02",
+      "status": "PASS",
+      "executed": 4,
+      "failures": [
+        {
+          "fault": "missing-WebGL2",
+          "snapshot": {
+            "phase": "error",
+            "error": "无法启动 WebGL 2，请检查浏览器硬件加速设置",
+            "frame": 0,
+            "tick": 0,
+            "maxStepsInFrame": 0,
+            "backend": null,
+            "meshes": 0,
+            "activeMeshes": 0,
+            "engines": 0,
+            "listeners": 0,
+            "width": 300,
+            "height": 150,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "depthWitness": "",
+            "projectedRoofEnvelope": "",
+            "frameIntervalMsMedian": 0,
+            "frameIntervalMsP95": 0,
+            "drawCalls": 0,
+            "assemblyMetrics": null,
+            "study": null,
+            "triangles": 0,
+            "materials": 0,
+            "textures": 0,
+            "renderCpuMsMedian": 0,
+            "cameraEye": null,
+            "cameraTarget": null,
+            "fixture": "p01-depth",
+            "renderer": null,
+            "totalFrames": 0,
+            "generation": 1,
+            "canvases": 1
+          },
+          "visibleMessage": "无法启动 WebGL 2，请检查浏览器硬件加速设置",
+          "errors": [],
+          "network": [
+            {
+              "path": "/",
+              "status": 200
+            },
+            {
+              "path": "/assets/engineStore-Bn2tApal.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/internalTexture-B3djGrls.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/logger-CuBYPcDK.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/index-BKxVMWTm.css",
+              "status": 200
+            },
+            {
+              "path": "/assets/shaderStore-D-XQlhUT.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/performanceConfigurator-UtxC_Odd.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/math.scalar.functions-Bcxiuh2E.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/precisionDate-DgO8bWsc.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/thinEngine.pure-CVicMHaa.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/halfFloat-Cfx5m4ll.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/math.color.pure-DLMyD1Sf.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/index-pe5fj950.js",
+              "status": 200
+            },
+            {
+              "path": "/runtime-config.json",
+              "status": 200
+            }
+          ]
+        },
+        {
+          "fault": "missing-WASM",
+          "snapshot": {
+            "phase": "error",
+            "error": "当前浏览器不支持必需的 WebAssembly",
+            "frame": 0,
+            "tick": 0,
+            "maxStepsInFrame": 0,
+            "backend": null,
+            "meshes": 0,
+            "activeMeshes": 0,
+            "engines": 0,
+            "listeners": 0,
+            "width": 300,
+            "height": 150,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "depthWitness": "",
+            "projectedRoofEnvelope": "",
+            "frameIntervalMsMedian": 0,
+            "frameIntervalMsP95": 0,
+            "drawCalls": 0,
+            "assemblyMetrics": null,
+            "study": null,
+            "triangles": 0,
+            "materials": 0,
+            "textures": 0,
+            "renderCpuMsMedian": 0,
+            "cameraEye": null,
+            "cameraTarget": null,
+            "fixture": "p01-depth",
+            "renderer": null,
+            "totalFrames": 0,
+            "generation": 1,
+            "canvases": 1
+          },
+          "visibleMessage": "当前浏览器不支持必需的 WebAssembly",
+          "errors": [],
+          "network": [
+            {
+              "path": "/",
+              "status": 200
+            },
+            {
+              "path": "/assets/shaderStore-D-XQlhUT.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/logger-CuBYPcDK.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/internalTexture-B3djGrls.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/engineStore-Bn2tApal.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/index-BKxVMWTm.css",
+              "status": 200
+            },
+            {
+              "path": "/assets/precisionDate-DgO8bWsc.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/performanceConfigurator-UtxC_Odd.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/math.scalar.functions-Bcxiuh2E.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/halfFloat-Cfx5m4ll.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/thinEngine.pure-CVicMHaa.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/math.color.pure-DLMyD1Sf.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/index-pe5fj950.js",
+              "status": 200
+            },
+            {
+              "path": "/runtime-config.json",
+              "status": 200
+            }
+          ]
+        },
+        {
+          "fault": "missing-runtime-config",
+          "snapshot": {
+            "phase": "error",
+            "error": "运行配置加载失败（HTTP 404）",
+            "frame": 0,
+            "tick": 0,
+            "maxStepsInFrame": 0,
+            "backend": null,
+            "meshes": 0,
+            "activeMeshes": 0,
+            "engines": 0,
+            "listeners": 0,
+            "width": 300,
+            "height": 150,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "depthWitness": "",
+            "projectedRoofEnvelope": "",
+            "frameIntervalMsMedian": 0,
+            "frameIntervalMsP95": 0,
+            "drawCalls": 0,
+            "assemblyMetrics": null,
+            "study": null,
+            "triangles": 0,
+            "materials": 0,
+            "textures": 0,
+            "renderCpuMsMedian": 0,
+            "cameraEye": null,
+            "cameraTarget": null,
+            "fixture": null,
+            "renderer": null,
+            "totalFrames": 0,
+            "generation": 1,
+            "canvases": 1
+          },
+          "visibleMessage": "运行配置加载失败（HTTP 404）",
+          "errors": [
+            "Failed to load resource: the server responded with a status of 404 (Not Found)"
+          ],
+          "network": [
+            {
+              "path": "/",
+              "status": 200
+            },
+            {
+              "path": "/assets/index-BKxVMWTm.css",
+              "status": 200
+            },
+            {
+              "path": "/assets/shaderStore-D-XQlhUT.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/internalTexture-B3djGrls.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/logger-CuBYPcDK.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/engineStore-Bn2tApal.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/precisionDate-DgO8bWsc.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/performanceConfigurator-UtxC_Odd.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/math.scalar.functions-Bcxiuh2E.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/halfFloat-Cfx5m4ll.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/math.color.pure-DLMyD1Sf.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/thinEngine.pure-CVicMHaa.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/index-pe5fj950.js",
+              "status": 200
+            },
+            {
+              "path": "/runtime-config.json",
+              "status": 404
+            }
+          ]
+        },
+        {
+          "fault": "render-error",
+          "snapshot": {
+            "phase": "error",
+            "error": "Injected render failure",
+            "frame": 5,
+            "tick": 12,
+            "maxStepsInFrame": 5,
+            "backend": null,
+            "meshes": 0,
+            "activeMeshes": 0,
+            "engines": 0,
+            "listeners": 0,
+            "width": 1280,
+            "height": 720,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "depthWitness": "",
+            "projectedRoofEnvelope": "",
+            "frameIntervalMsMedian": 47.90000000037253,
+            "frameIntervalMsP95": 79.80000000074506,
+            "drawCalls": 0,
+            "assemblyMetrics": null,
+            "study": null,
+            "triangles": 0,
+            "materials": 0,
+            "textures": 0,
+            "renderCpuMsMedian": 1,
+            "cameraEye": null,
+            "cameraTarget": null,
+            "fixture": "p01-depth",
+            "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+            "totalFrames": 5,
+            "generation": 1,
+            "canvases": 1
+          },
+          "visibleMessage": "Injected render failure",
+          "errors": [],
+          "network": [
+            {
+              "path": "/",
+              "status": 200
+            },
+            {
+              "path": "/assets/engineStore-Bn2tApal.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/shaderStore-D-XQlhUT.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/internalTexture-B3djGrls.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/logger-CuBYPcDK.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/index-BKxVMWTm.css",
+              "status": 200
+            },
+            {
+              "path": "/assets/precisionDate-DgO8bWsc.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/performanceConfigurator-UtxC_Odd.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/math.scalar.functions-Bcxiuh2E.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/thinEngine.pure-CVicMHaa.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/halfFloat-Cfx5m4ll.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/math.color.pure-DLMyD1Sf.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/index-pe5fj950.js",
+              "status": 200
+            },
+            {
+              "path": "/runtime-config.json",
+              "status": 200
+            },
+            {
+              "path": "/assets/default.vertex-BMHK6cNB.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/meshUboDeclaration-DYEo1Glw.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/defaultUboDeclaration-DjVzEbLK.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/logDepthDeclaration-D_lEqJ0h.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/helperFunctions-gEnZbjN3.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/logDepthVertex-DwMacBUy.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/clipPlaneVertex-D0NeDy6h.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/default.fragment-DYlPFgaB.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/clipPlaneFragment-DVK0wgyZ.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/oitFragment-NMD8MAKW.js",
+              "status": 200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P01-03",
+      "status": "PASS",
+      "executed": 1,
+      "nativeFocus": true,
+      "hidden": {
+        "phase": "paused",
+        "error": null,
+        "frame": 8,
+        "tick": 19,
+        "maxStepsInFrame": 5,
+        "backend": "WebGL2",
+        "meshes": 4,
+        "activeMeshes": 4,
+        "engines": 1,
+        "listeners": 2,
+        "width": 1280,
+        "height": 720,
+        "visibility": "hidden",
+        "visibilityTransitions": 1,
+        "camera": 0,
+        "glError": 0,
+        "depthWitness": "",
+        "projectedRoofEnvelope": "",
+        "frameIntervalMsMedian": 43,
+        "frameIntervalMsP95": 182.5,
+        "drawCalls": 4,
+        "assemblyMetrics": null,
+        "study": null,
+        "triangles": 48,
+        "materials": 3,
+        "textures": 0,
+        "renderCpuMsMedian": 2.400000000372529,
+        "cameraEye": "11.999999999999995,9,-17.000000000000004",
+        "cameraTarget": "0,1.5,0",
+        "fixture": "p01-depth",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "totalFrames": 8,
+        "generation": 1,
+        "canvases": 1
+      },
+      "restored": {
+        "phase": "ready",
+        "error": null,
+        "frame": 9,
+        "tick": 19,
+        "maxStepsInFrame": 5,
+        "backend": "WebGL2",
+        "meshes": 4,
+        "activeMeshes": 4,
+        "engines": 1,
+        "listeners": 2,
+        "width": 1280,
+        "height": 720,
+        "visibility": "visible",
+        "visibilityTransitions": 2,
+        "camera": 0,
+        "glError": 0,
+        "depthWitness": "",
+        "projectedRoofEnvelope": "",
+        "frameIntervalMsMedian": 43,
+        "frameIntervalMsP95": 182.5,
+        "drawCalls": 4,
+        "assemblyMetrics": null,
+        "study": null,
+        "triangles": 48,
+        "materials": 3,
+        "textures": 0,
+        "renderCpuMsMedian": 1,
+        "cameraEye": "11.999999999999995,9,-17.000000000000004",
+        "cameraTarget": "0,1.5,0",
+        "fixture": "p01-depth",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "totalFrames": 9,
+        "generation": 1,
+        "canvases": 1
+      },
+      "errors": []
+    },
+    {
+      "id": "P01-04",
+      "status": "PASS",
+      "executed": 6,
+      "sizes": [
+        {
+          "phase": "ready",
+          "error": null,
+          "frame": 11,
+          "tick": 19,
+          "maxStepsInFrame": 5,
+          "backend": "WebGL2",
+          "meshes": 4,
+          "activeMeshes": 4,
+          "engines": 1,
+          "listeners": 2,
+          "width": 640,
+          "height": 480,
+          "visibility": "visible",
+          "visibilityTransitions": 0,
+          "camera": 0,
+          "glError": 0,
+          "depthWitness": "",
+          "projectedRoofEnvelope": "",
+          "frameIntervalMsMedian": 25.40000000037253,
+          "frameIntervalMsP95": 75.20000000111759,
+          "drawCalls": 4,
+          "assemblyMetrics": null,
+          "study": null,
+          "triangles": 48,
+          "materials": 3,
+          "textures": 0,
+          "renderCpuMsMedian": 0.7999999988824129,
+          "cameraEye": "11.999999999999995,9,-17.000000000000004",
+          "cameraTarget": "0,1.5,0",
+          "fixture": "p01-depth",
+          "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "totalFrames": 11,
+          "generation": 1,
+          "canvases": 1
+        },
+        {
+          "phase": "ready",
+          "error": null,
+          "frame": 13,
+          "tick": 24,
+          "maxStepsInFrame": 5,
+          "backend": "WebGL2",
+          "meshes": 4,
+          "activeMeshes": 4,
+          "engines": 1,
+          "listeners": 2,
+          "width": 1366,
+          "height": 768,
+          "visibility": "visible",
+          "visibilityTransitions": 0,
+          "camera": 0,
+          "glError": 0,
+          "depthWitness": "",
+          "projectedRoofEnvelope": "",
+          "frameIntervalMsMedian": 25.40000000037253,
+          "frameIntervalMsP95": 85.89999999850988,
+          "drawCalls": 4,
+          "assemblyMetrics": null,
+          "study": null,
+          "triangles": 48,
+          "materials": 3,
+          "textures": 0,
+          "renderCpuMsMedian": 0.7000000011175871,
+          "cameraEye": "11.999999999999995,9,-17.000000000000004",
+          "cameraTarget": "0,1.5,0",
+          "fixture": "p01-depth",
+          "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "totalFrames": 13,
+          "generation": 1,
+          "canvases": 1
+        },
+        {
+          "phase": "ready",
+          "error": null,
+          "frame": 18,
+          "tick": 32,
+          "maxStepsInFrame": 5,
+          "backend": "WebGL2",
+          "meshes": 4,
+          "activeMeshes": 4,
+          "engines": 1,
+          "listeners": 2,
+          "width": 1024,
+          "height": 640,
+          "visibility": "visible",
+          "visibilityTransitions": 0,
+          "camera": 0,
+          "glError": 0,
+          "depthWitness": "",
+          "projectedRoofEnvelope": "",
+          "frameIntervalMsMedian": 22.90000000037253,
+          "frameIntervalMsP95": 110.19999999925494,
+          "drawCalls": 4,
+          "assemblyMetrics": null,
+          "study": null,
+          "triangles": 48,
+          "materials": 3,
+          "textures": 0,
+          "renderCpuMsMedian": 0.599999999627471,
+          "cameraEye": "11.999999999999995,9,-17.000000000000004",
+          "cameraTarget": "0,1.5,0",
+          "fixture": "p01-depth",
+          "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "totalFrames": 18,
+          "generation": 1,
+          "canvases": 1
+        }
+      ],
+      "cycles": [
+        {
+          "stopped": {
+            "phase": "disposed",
+            "error": null,
+            "frame": 30,
+            "tick": 48,
+            "maxStepsInFrame": 5,
+            "backend": null,
+            "meshes": 0,
+            "activeMeshes": 0,
+            "engines": 0,
+            "listeners": 0,
+            "width": 1024,
+            "height": 640,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "depthWitness": "",
+            "projectedRoofEnvelope": "",
+            "frameIntervalMsMedian": 20,
+            "frameIntervalMsP95": 85.89999999850988,
+            "drawCalls": 0,
+            "assemblyMetrics": null,
+            "study": null,
+            "triangles": 0,
+            "materials": 0,
+            "textures": 0,
+            "renderCpuMsMedian": 0.5,
+            "cameraEye": null,
+            "cameraTarget": null,
+            "fixture": "p01-depth",
+            "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+            "totalFrames": 30,
+            "generation": 1,
+            "canvases": 1
+          },
+          "restarted": {
+            "phase": "ready",
+            "error": null,
+            "frame": 4,
+            "tick": 5,
+            "maxStepsInFrame": 3,
+            "backend": "WebGL2",
+            "meshes": 4,
+            "activeMeshes": 4,
+            "engines": 1,
+            "listeners": 2,
+            "width": 1024,
+            "height": 640,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "depthWitness": "",
+            "projectedRoofEnvelope": "",
+            "frameIntervalMsMedian": 33.09999999962747,
+            "frameIntervalMsP95": 51.600000001490116,
+            "drawCalls": 4,
+            "assemblyMetrics": null,
+            "study": null,
+            "triangles": 48,
+            "materials": 3,
+            "textures": 0,
+            "renderCpuMsMedian": 0.8999999985098839,
+            "cameraEye": "11.999999999999995,9,-17.000000000000004",
+            "cameraTarget": "0,1.5,0",
+            "fixture": "p01-depth",
+            "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+            "totalFrames": 34,
+            "generation": 2,
+            "canvases": 1
+          }
+        },
+        {
+          "stopped": {
+            "phase": "disposed",
+            "error": null,
+            "frame": 12,
+            "tick": 16,
+            "maxStepsInFrame": 3,
+            "backend": null,
+            "meshes": 0,
+            "activeMeshes": 0,
+            "engines": 0,
+            "listeners": 0,
+            "width": 1024,
+            "height": 640,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "depthWitness": "",
+            "projectedRoofEnvelope": "",
+            "frameIntervalMsMedian": 21.5,
+            "frameIntervalMsP95": 51.600000001490116,
+            "drawCalls": 0,
+            "assemblyMetrics": null,
+            "study": null,
+            "triangles": 0,
+            "materials": 0,
+            "textures": 0,
+            "renderCpuMsMedian": 0.599999999627471,
+            "cameraEye": null,
+            "cameraTarget": null,
+            "fixture": "p01-depth",
+            "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+            "totalFrames": 42,
+            "generation": 2,
+            "canvases": 1
+          },
+          "restarted": {
+            "phase": "ready",
+            "error": null,
+            "frame": 3,
+            "tick": 4,
+            "maxStepsInFrame": 3,
+            "backend": "WebGL2",
+            "meshes": 4,
+            "activeMeshes": 4,
+            "engines": 1,
+            "listeners": 2,
+            "width": 1024,
+            "height": 640,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "depthWitness": "",
+            "projectedRoofEnvelope": "",
+            "frameIntervalMsMedian": 55,
+            "frameIntervalMsP95": 55,
+            "drawCalls": 4,
+            "assemblyMetrics": null,
+            "study": null,
+            "triangles": 48,
+            "materials": 3,
+            "textures": 0,
+            "renderCpuMsMedian": 0.40000000037252903,
+            "cameraEye": "11.999999999999995,9,-17.000000000000004",
+            "cameraTarget": "0,1.5,0",
+            "fixture": "p01-depth",
+            "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+            "totalFrames": 45,
+            "generation": 3,
+            "canvases": 1
+          }
+        },
+        {
+          "stopped": {
+            "phase": "disposed",
+            "error": null,
+            "frame": 12,
+            "tick": 18,
+            "maxStepsInFrame": 3,
+            "backend": null,
+            "meshes": 0,
+            "activeMeshes": 0,
+            "engines": 0,
+            "listeners": 0,
+            "width": 1024,
+            "height": 640,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "depthWitness": "",
+            "projectedRoofEnvelope": "",
+            "frameIntervalMsMedian": 22.5,
+            "frameIntervalMsP95": 55.59999999962747,
+            "drawCalls": 0,
+            "assemblyMetrics": null,
+            "study": null,
+            "triangles": 0,
+            "materials": 0,
+            "textures": 0,
+            "renderCpuMsMedian": 0.7000000011175871,
+            "cameraEye": null,
+            "cameraTarget": null,
+            "fixture": "p01-depth",
+            "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+            "totalFrames": 54,
+            "generation": 3,
+            "canvases": 1
+          },
+          "restarted": {
+            "phase": "ready",
+            "error": null,
+            "frame": 2,
+            "tick": 1,
+            "maxStepsInFrame": 1,
+            "backend": "WebGL2",
+            "meshes": 4,
+            "activeMeshes": 4,
+            "engines": 1,
+            "listeners": 2,
+            "width": 1024,
+            "height": 640,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "depthWitness": "",
+            "projectedRoofEnvelope": "",
+            "frameIntervalMsMedian": 17.199999999254942,
+            "frameIntervalMsP95": 17.199999999254942,
+            "drawCalls": 4,
+            "assemblyMetrics": null,
+            "study": null,
+            "triangles": 48,
+            "materials": 3,
+            "textures": 0,
+            "renderCpuMsMedian": 9.799999998882413,
+            "cameraEye": "11.999999999999995,9,-17.000000000000004",
+            "cameraTarget": "0,1.5,0",
+            "fixture": "p01-depth",
+            "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+            "totalFrames": 56,
+            "generation": 4,
+            "canvases": 1
+          }
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

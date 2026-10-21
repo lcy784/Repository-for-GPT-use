@@ -32,3 +32,5 @@ P00 实现在 `feat/tiangong-p00-20261021` 分支，包含上述完整归档。�
 当前开发已进入 `feat/tiangong-p01-20261021` 分支，范围已选定，P00—P01 已累计通过。新增 [P01 云端运行说明](P01-RUNTIME.md)。当前分支包含此前资料与门禁，新的云端会话应选择此分支读取最新进展。
 
 P02 的当前开发分支为 `feat/tiangong-p02-20261021`，包含全部历史资料。新增 [巨殿视觉样本与审核路径](P02-VISUAL-STUDY.md)，当前进度始终以根目录 `PROJECT_STATUS.md` 为准。
+
+用户反馈后的最新调整分支为 `feat/tiangong-p02-monumental-20261021`，见 [巨殿尺度与繁复构件修订](P02-MONUMENTAL-REVISION.md)。此前 P02 分支保留供对照。

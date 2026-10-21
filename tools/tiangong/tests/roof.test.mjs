@@ -2,7 +2,7 @@ import {describe,it,expect} from 'vitest';
 import {roofHeight,roofVertexData} from '../../../src/runtime/roof.ts';
 describe('Right-handed hipped roof surface',()=>{
  it('has upward unit normals on both tiers, including upturned corners',()=>{
-  for(const dimensions of [[112,88,51.5,64],[89,62,60,70]]) {
+  for(const dimensions of [[112,88,51.5,64],[89,62,60,70],[67,40,67,79]]) {
    const data=roofVertexData(...dimensions);
    for(let i=0;i<data.normals.length;i+=3) {
     const [x,y,z]=data.normals.slice(i,i+3);expect(y).toBeGreaterThan(0);expect(Math.hypot(x,y,z)).toBeCloseTo(1,5);

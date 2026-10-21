@@ -30,51 +30,51 @@
   },
   "visualReview": {
     "requiredBefore": "P02",
-    "status": "pending-actual-sample-review",
+    "status": "revision-requested-monumental-scale-and-ornament",
     "referenceFiles": [
-      "docs/\u5929\u5babHTML/input/IMG_20261019_161331.jpg",
-      "docs/\u5929\u5babHTML/input/IMG_20261019_161156.jpg"
+      "docs/天宫HTML/input/IMG_20261019_161331.jpg",
+      "docs/天宫HTML/input/IMG_20261019_161156.jpg"
     ],
     "views": [
       {
         "id": "ground-to-cloud-approach",
         "eyeMeters": [
-          120,
-          90,
-          190
+          180,
+          135,
+          330
         ],
         "targetMeters": [
           0,
-          26,
-          16
+          65,
+          25
         ],
         "fovDegrees": 60
       },
       {
         "id": "stairs-toward-palace",
         "eyeMeters": [
-          42,
+          37,
           28,
-          112
+          154
         ],
         "targetMeters": [
           0,
-          35,
-          -6
+          73,
+          -12
         ],
         "fovDegrees": 60
       },
       {
         "id": "human-height-at-palace-entrance",
         "eyeMeters": [
-          -17,
-          13.7,
-          35
+          -24,
+          19.7,
+          62
         ],
         "targetMeters": [
           0,
-          40,
-          -5
+          79,
+          -10
         ],
         "fovDegrees": 60
       }
@@ -86,6 +86,7 @@
       "cloud-depth-and-light"
     ],
     "allTenReferencesRemainProductReferences": true,
-    "automaticImageDifferenceProvesArtisticAcceptance": false
+    "automaticImageDifferenceProvesArtisticAcceptance": false,
+    "latestUserFeedback": "2026-10-21: Increase monumental proportions and make the palace immense and intricately layered; existing direction accepted subject to this revision."
   }
 }

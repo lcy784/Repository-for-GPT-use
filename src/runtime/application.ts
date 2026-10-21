@@ -117,7 +117,7 @@ export class Application {
       if(this.scene.isReady() && this.witnessView!==this.view && this.config?.sceneFixture==='p02-palace') {
         this.depthWitness = JSON.stringify([.43,.5,.57].map(x=>{ const hit=this.scene!.pick(this.canvas.width*x,this.canvas.height*.52);return {screenX:x,hit:hit?.pickedMesh?.name || null,distance:hit?.distance || null,point:hit?.pickedPoint?.asArray() || null}; }));
         const viewport=this.camera!.viewport.toGlobal(this.canvas.width,this.canvas.height);
-        this.projectedEnvelope=JSON.stringify([-57,57].flatMap(x=>[50,73].flatMap(y=>[-59,31].map(z=>Vector3.Project(new Vector3(x,y,z),Matrix.Identity(),this.scene!.getTransformMatrix(),viewport).asArray()))));
+        this.projectedEnvelope=JSON.stringify(PALACE.roofEnvelope.x.flatMap(x=>PALACE.roofEnvelope.y.flatMap(y=>PALACE.roofEnvelope.z.map(z=>Vector3.Project(new Vector3(x,y,z),Matrix.Identity(),this.scene!.getTransformMatrix(),viewport).asArray()))));
         this.witnessView=this.view;
       }
       this.frames++; this.countFrame();
@@ -160,6 +160,7 @@ export class Application {
       frameIntervalMsMedian: [...this.intervals].sort((a,b)=>a-b)[Math.floor(this.intervals.length/2)] || 0,
       frameIntervalMsP95: [...this.intervals].sort((a,b)=>a-b)[Math.min(this.intervals.length-1,Math.floor(this.intervals.length*.95))] || 0,
       drawCalls: this.instrumentation?.drawCallsCounter.current || 0,
+      assemblyMetrics: this.scene?.metadata?.palaceStudy ? JSON.stringify(this.scene.metadata.palaceStudy) : null,
       study: this.config?.sceneFixture==='p02-palace' ? JSON.stringify(PALACE) : null,
       triangles: this.scene?.getActiveIndices() ? this.scene.getActiveIndices() / 3 : 0,
       materials: this.scene?.materials.length || 0, textures: this.scene?.textures.length || 0,

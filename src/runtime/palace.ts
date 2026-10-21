@@ -1,5 +1,6 @@
 import { Scene } from '@babylonjs/core/scene';
 import { VertexData } from '@babylonjs/core/Meshes/mesh.vertexData';
+import { TransformNode } from '@babylonjs/core/Meshes/transformNode';
 import { Mesh } from '@babylonjs/core/Meshes/mesh';
 import { roofHeight, roofVertexData } from './roof';
 import { CreateBox } from '@babylonjs/core/Meshes/Builders/boxBuilder';
@@ -20,11 +21,20 @@ import '@babylonjs/core/Lights/Shadows/shadowGeneratorSceneComponent';
 import '@babylonjs/core/Materials/Textures/Loaders/envTextureLoader';
 
 // Original parametric study. Coordinates are metres; no reference photograph is a runtime texture.
-export const PALACE = Object.freeze({ seed: 20261021, units: 'metres', terraceTop: 12, columnHeight: 36,
-  ridgeHeight: 70, humanHeight: 1.75, footprint: [120, 100], frozenSun: [-.65, -1, -.55] });
+export const PALACE = Object.freeze({ seed: 20261021, units: 'metres', terraceTop: 18, columnHeight: 64.98,
+  ridgeHeight: 145.3, humanHeight: 1.75, footprint: [168.75, 159.65],
+  roofEnvelope: { x: [-78,78], y: [92,151], z: [-94,50] },
+  roofTiers: 3, columnCount: 36, bracketTiers: 8, frozenSun: [-.65, -1, -.55] });
 export function createPalace(scene: Scene): void {
   let seed = PALACE.seed;
   const random = () => { seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0; return seed / 4294967296; };
+  // Keep human size and railing height unchanged while enlarging the architecture in metres.
+  const foundation = new TransformNode('monumental-foundation',scene);foundation.scaling.set(1.35,1.5,1.55);
+  const details = new TransformNode('terrace-human-scale-details',scene);details.scaling.set(1.35,1,1.55);details.position.y=6;
+  const architecture = new TransformNode('monumental-hall',scene);architecture.scaling.set(1.35,1.9,1.55);architecture.position.y=-4.8;
+  const figure = new TransformNode('unscaled-human-reference',scene);figure.position.y=6;
+  let assembly: TransformNode | null = foundation;
+  const shafts: Mesh[]=[];
   const batches = new Map<PBRMaterial, Mesh[]>();
   const mat = (name: string, hex: string, roughness: number, metallic = 0): PBRMaterial => {
     const m = new PBRMaterial(name, scene); m.albedoColor = Color3.FromHexString(hex); m.roughness = roughness; m.metallic = metallic;
@@ -76,7 +86,7 @@ export function createPalace(scene: Scene): void {
   const shadows = new ShadowGenerator(1024, sun); shadows.usePercentageCloserFiltering = true; shadows.filteringQuality = ShadowGenerator.QUALITY_LOW;
   shadows.bias = .001; shadows.normalBias = .12; shadows.setDarkness(.28);
   const add = (mesh: Mesh, m: PBRMaterial, x: number,y: number,z: number): Mesh => {
-    mesh.position.set(x,y,z); mesh.material = m; batches.get(m)!.push(mesh); return mesh;
+    mesh.position.set(x,y,z); mesh.parent=assembly; mesh.material = m; batches.get(m)!.push(mesh); return mesh;
   };
   const box = (w: number,h: number,d: number,x: number,y: number,z: number,m: PBRMaterial) => add(CreateBox('component', {width:w,height:h,depth:d}, scene),m,x,y,z);
   const cylinder = (diameter: number,height: number,x: number,y: number,z: number,m: PBRMaterial, top=diameter) => add(CreateCylinder('turned-component', { diameterBottom:diameter,diameterTop:top,height,tessellation:16 }, scene),m,x,y,z);
@@ -93,6 +103,7 @@ export function createPalace(scene: Scene): void {
       box(1.3,1.7,3.9,x,y+.85,z-1.3,edge); cylinder(1.5,.3,x,y+1.85,z,edge);
     }
   }
+  assembly=details;
   // Relief panels around the plinth and rhythm of balustrades.
   for (let x=-58; x<=58; x+=4) for (const z of [-59,41]) {
     if(z===41 && Math.abs(x)<17) continue;
@@ -104,20 +115,21 @@ export function createPalace(scene: Scene): void {
     box(.7,2.6,.7,x,13.3,z,edge); cylinder(1,.35,x,14.75,z,edge);
     box(.45,.38,3.4,x,14.3,z+1.7,edge); box(.45,.38,3.4,x,13,z+1.7,edge);
   }
-  // Deep colonnade, 36 metre red columns, stacked carved capitals and five bracket tiers.
-  for (const x of [-42,-28,-14,14,28,42]) for (const z of [22,-2,-26,-50]) {
+  assembly=architecture;
+  // Six bays in depth; eight stepped bracket courses under every colossal column capital.
+  for (const x of [-42,-28,-14,14,28,42]) for (const z of [22,8,-6,-20,-34,-50]) {
     box(4.6,.7,4.6,x,12.35,z,stone); cylinder(4.4,1.4,x,13.4,z,edge);
-    cylinder(2.8,34.2,x,31.2,z,red,2.25);
+    shafts.push(cylinder(2.8,34.2,x,31.2,z,red,2.25));
     for (const y of [14.5,15,46.4,47]) cylinder(y<20?2.9:2.5,.22,x,y,z,gold);
-    for(let j=0;j<5;j++) {
-      box(3+j*.9,.52,2.6+j*.45,x,47.5+j*.65,z,wood);
-      box(1.2,.5,4+j*.7,x,47.8+j*.65,z,gold);
+    for(let j=0;j<8;j++) {
+      box(3+j*.9,.52,2.6+j*.45,x,46.8+j*.46,z,wood);
+      box(1.2,.5,4+j*.7,x,47.05+j*.46,z,gold);
     }
   }
   // Beams run through the hall; ceiling coffers are visible from the human camera.
-  for (const z of [22,-2,-26,-50]) {
+  for (const z of [22,8,-6,-20,-34,-50]) {
     box(93,2.1,2,0,49,z,red); box(94,.3,2.3,0,50.2,z,gold);
-    for(let x=-45;x<=45;x+=3) { box(1.3,.45,5.6,x,50.6,z,wood); box(.5,.3,6.2,x,50.85,z,gold); }
+    for(let x=-45;x<=45;x+=1.8) { box(1.3,.45,5.6,x,50.6,z,wood); box(.5,.3,6.2,x,50.85,z,gold); }
   }
   for (const x of [-42,-28,-14,0,14,28,42]) box(1.5,1.8,77,x,49,-14,wood);
   box(88,.45,72,0,51,-14,dark);
@@ -133,11 +145,40 @@ export function createPalace(scene: Scene): void {
     box(10,5,.5,x,15.5,19,red);
     for(const dx of [-5.5,5.5]) box(.7,28,1,x+dx,27,19,red);
   }
-  box(88,29,1,0,27,-49,red);
-  for(const x of [-43.5,43.5]) box(1,29,69,x,27,-15,wood);
+  box(88,36,1,0,30.5,-49,red);
+  for(const x of [-43.5,43.5]) box(1,36,69,x,30.5,-15,wood);
   box(26,6,1.6,0,44.5,21,red); box(22,3.7,.2,0,44.5,22,gold); box(21.4,3.1,.25,0,44.5,22.2,wood);
   // A simple original seal motif instead of a font-dependent inscription.
   for(const x of [-6,0,6]) { box(2.3,.2,.35,x,45.3,22.5,gold); box(.2,2,.35,x,44.5,22.5,gold); box(2.3,.2,.35,x,43.8,22.5,gold); }
+  // Nested portal reveals, lintel fretwork and hanging carved brackets: geometry, not a texture decal.
+  for(const x of [-13,13]) {
+    box(.55,28,2.4,x,27,21.6,gold);box(.3,26,2.8,x*.96,27,22.4,wood);
+  }
+  for(let x=-41;x<=41;x+=2.8) {
+    for(const y of [39.2,41.2]) {
+      const diamond=box(.9,.9,.3,x,y,22.2,gold);diamond.rotation.z=Math.PI/4;
+    }
+    box(.2,3,.3,x,40.2,22.2,gold);
+  }
+  // The visible flanks have nested red reveals and fine double-height lattice screens.
+  for(const side of [-1,1]) for(const z of [11,-4,-19,-34]) {
+    const x=side*44.15;
+    box(.35,24,11,x,28,z,red);box(.4,20.5,9.5,x+side*.25,28,z,dark);
+    for(let dz=-4.2;dz<=4.3;dz+=1.05) box(.3,20,.13,x+side*.55,28,z+dz,gold);
+    for(let y=18;y<39;y+=1.3) box(.3,.12,9.5,x+side*.55,y,z,gold);
+    for(const y of [16.5,28,39.5]) box(.8,.45,10.8,x+side*.65,y,z,red);
+  }
+  // Visible coffer rosettes and crossed diagonal arms build a dense under-eave hierarchy.
+  for(let x=-40;x<=40;x+=8) for(let z=-46;z<20;z+=8) {
+    cylinder(1.35,.22,x,50.3,z,gold);
+    for(const sign of [-1,1]) {const diagonal=box(5.3,.24,.2,x,50.2,z,wood);diagonal.rotation.y=sign*Math.PI/4;}
+  }
+  for(const x of [-42,-28,-14,14,28,42]) for(const z of [22,8,-6,-20,-34,-50]) {
+    for(const side of [-1,1]) {
+      const arm=box(4.8,.5,.65,x+side*1.3,46.9,z,red);arm.rotation.z=side*.33;
+      tube([new Vector3(x+side*.5,46,z+1.7),new Vector3(x+side*1.8,45.1,z+1.7),new Vector3(x+side*3,46.6,z+1.7)],.14,gold);
+    }
+  }
   // Parametric hipped roofs: curved slopes, lifted corners and physically modelled tile ribs.
   function roofTier(width: number,depth: number,eave: number,ridge: number) {
     const height=(x:number,z:number)=>roofHeight(x,z,width,depth,eave,ridge);
@@ -156,7 +197,12 @@ export function createPalace(scene: Scene): void {
     tube([new Vector3(-width*.26,ridge+.5,-14),new Vector3(0,ridge+.5,-14),new Vector3(width*.26,ridge+.5,-14)],.55,gold);
     for(const sign of [-1,1]) for(let i=0;i<5;i++) cylinder(.65,1.3+i*.2,sign*(width*.26-i*1.5),ridge+1,-14,gold,.25);
   }
-  roofTier(112,88,51.5,64); roofTier(89,62,60,70);
+  roofTier(112,88,51.5,64); roofTier(89,62,60,70); roofTier(67,40,67,79);
+  // Bronze corner scrolls and small ridge ornaments break up the three roof silhouettes.
+  for(const sx of [-1,1]) for(const sz of [-1,1]) {
+    tube([new Vector3(sx*54,55,-14+sz*43),new Vector3(sx*57,57,-14+sz*45),new Vector3(sx*56,59,-14+sz*44)],.28,gold);
+  }
+  assembly=details;
   // Small stone lanterns on the terrace.
   for(const x of [-24,24]) for(const z of [33,-43]) {
     box(2.3,.5,2.3,x,12.25,z,edge); cylinder(1.2,3.5,x,14.2,z,stone);
@@ -164,12 +210,21 @@ export function createPalace(scene: Scene): void {
     add(CreateCylinder('lantern-cap',{diameterBottom:3.2,diameterTop:.5,height:1.2,tessellation:4},scene),roof,x,18,z).rotation.y=Math.PI/4;
   }
   // A single 1.75 m robed scale figure, not a playable character or collision body.
-  const hx=5,hz=35;
+  assembly=figure;
+  const hx=8,hz=54;
   cylinder(.65,1.24,hx,12.62,hz,robe,.33);
   add(CreateSphere('scale-head',{diameter:.26,segments:12},scene),skin,hx,13.55,hz);
   add(CreateSphere('scale-hair',{diameter:.28,segments:12},scene),wood,hx,13.61,hz-.03);
   cylinder(.15,.17,hx,13.665,hz-.03,wood);
   for(const sign of [-1,1]) { const arm=box(.14,.68,.18,hx+sign*.22,13.05,hz,robe); arm.rotation.z=sign*.13; }
+  const worldHeight=(meshes:Mesh[]):number=>{
+    let min=Infinity,max=-Infinity;
+    for(const mesh of meshes) {mesh.computeWorldMatrix(true);const b=mesh.getBoundingInfo().boundingBox;min=Math.min(min,b.minimumWorld.y);max=Math.max(max,b.maximumWorld.y);}
+    return max-min;
+  };
+  scene.metadata={palaceStudy:{columnCount:shafts.length,shaftHeightMeters:worldHeight([shafts[0]]),
+    humanHeightMeters:worldHeight(figure.getChildMeshes().filter((m):m is Mesh=>m instanceof Mesh)),roofTiers:3,bracketTiers:8}};
+  assembly=null;
   // A continuous low-cost cloud surface avoids intersecting ellipsoid cut-outs and overdraw.
   cloud.emissiveColor = new Color3(.12,.15,.15);cloud.directIntensity=.75;
   const cloudPositions:number[]=[],cloudIndices:number[]=[],cloudNormals:number[]=[];
@@ -207,7 +262,7 @@ export function createPalace(scene: Scene): void {
   }
   // Invisible future physics proxies are deliberately not enabled as a second collision engine.
   for(const [name,size,position] of [
-    ['terrace',[125,.5,103],[0,11.75,-9]],['hall-roof-envelope',[112,19,88],[0,60.5,-14]],
+    ['terrace',[168.75,.75,159.65],[0,17.625,-13.95]],['hall-roof-envelope',[154,58,144],[0,121,-21.7]],
   ] as const) {
     const proxy=CreateBox(`proxy/${name}`,{width:size[0],height:size[1],depth:size[2]},scene);
     proxy.position.set(position[0],position[1],position[2]);proxy.isVisible=false;proxy.isPickable=false;

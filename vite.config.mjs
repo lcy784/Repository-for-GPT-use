@@ -2,6 +2,7 @@ export default {
   base: './',
   // Stable prebundle entries prevent late PBR shader imports invalidating active dev requests.
   optimizeDeps: { noDiscovery: true, include: [
+    "@babylonjs/core/Meshes/transformNode",
     "@babylonjs/core/Cameras/arcRotateCamera",
     "@babylonjs/core/Culling/ray",
     "@babylonjs/core/Engines/constants",

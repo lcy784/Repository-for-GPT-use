@@ -23,6 +23,11 @@ try {
  let value=await observe();assert.equal(value.phase,'ready',JSON.stringify({value,errors}));
  const manifest=await page.evaluate(async()=>{const r=await fetch('assets/palace/source-manifest.json');if(!r.ok) throw new Error('Missing sample source manifest');return r.json();});
  const study=JSON.parse(value.study);assert.equal(study.seed,manifest.seed);assert.equal(study.humanHeight,manifest.dimensions.humanHeight);assert.equal(study.columnHeight,manifest.dimensions.columnHeight);assert.equal(study.units,manifest.units);assert(study.columnHeight/study.humanHeight>20);
+ const assembled=JSON.parse(value.assemblyMetrics);
+ assert(Math.abs(assembled.humanHeightMeters-manifest.dimensions.humanHeight)<.001,'Human reference was scaled');
+ assert(Math.abs(assembled.shaftHeightMeters-manifest.dimensions.columnHeight)<.001,'Declared column height differs from world geometry');
+ assert.equal(assembled.columnCount,manifest.assembly.columnCount);assert.equal(assembled.roofTiers,manifest.assembly.roofTiers);
+ assert(assembled.shaftHeightMeters/assembled.humanHeightMeters>35,'Monumental scale revision missing');
  assert(manifest.collisionProxies.every(p=>p.enabled===false));
  for(const name of ['far','stairs','human']) {
    await page.waitForFunction(()=>window.__TIANGONG_OBSERVE__().frame>=5);

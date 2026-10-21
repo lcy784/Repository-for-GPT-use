@@ -1,0 +1,219 @@
+{
+  "candidate": "fb75666ecd7d379e80f945a87ec4ca9ecb0a17494f27c8585eea891576819151",
+  "contracts": {
+    "version": 1,
+    "lengthUnit": "meter",
+    "timeUnit": "second",
+    "upAxis": "+Y",
+    "handedness": "right-handed",
+    "rotationUnit": "radian",
+    "stateWriter": "LocalSession.commitSimulationResult",
+    "readOnlyConsumers": [
+      "input",
+      "camera",
+      "animation",
+      "renderer",
+      "network-adapter"
+    ],
+    "interfaces": {
+      "PlayerIntent": [
+        "sequence",
+        "movement",
+        "viewDelta",
+        "flightRequest",
+        "interactionRequest"
+      ],
+      "PlayerState": [
+        "id",
+        "tick",
+        "position",
+        "velocity",
+        "yaw",
+        "mode",
+        "supportId"
+      ],
+      "WorldManifest": [
+        "version",
+        "coordinateSystem",
+        "zones",
+        "assets",
+        "spawn"
+      ]
+    },
+    "waterBehavior": "reserved-until-P12-decision",
+    "worldDimensions": "not-fixed-by-this-contract"
+  },
+  "acceptance": {
+    "version": 1,
+    "cloud": {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "deviceScaleFactor": 1,
+      "renderBackend": "WebGL2",
+      "softwareRenderingAllowedForFunctionalChecks": true,
+      "softwareRenderingProvesTargetPerformance": false,
+      "randomSeed": 20261021,
+      "simulationHz": 60,
+      "maxCatchUpSteps": 5,
+      "stageTimeoutMs": 600000
+    },
+    "provisionalSimulationParameters": {
+      "status": "engineering-test-values-not-confirmed-gameplay",
+      "walkingMetersPerSecond": 3,
+      "flyingMetersPerSecond": 10,
+      "gravityMetersPerSecondSquared": 9.81,
+      "positionToleranceMeters": 0.01
+    },
+    "targetWindows": {
+      "targetFps": 60,
+      "acceptanceStatus": "pending-real-device-and-user-criteria",
+      "requiredBefore": "P15",
+      "mayUseCloudResultsInstead": false,
+      "P02SampleCostEvidence": "required-at-P02-missing-target-device-BLOCKED"
+    },
+    "visualReview": {
+      "requiredBefore": "P02",
+      "status": "revision-requested-monumental-scale-and-ornament",
+      "referenceFiles": [
+        "docs/天宫HTML/input/IMG_20261019_161331.jpg",
+        "docs/天宫HTML/input/IMG_20261019_161156.jpg"
+      ],
+      "views": [
+        {
+          "id": "ground-to-cloud-approach",
+          "eyeMeters": [
+            180,
+            135,
+            330
+          ],
+          "targetMeters": [
+            0,
+            65,
+            25
+          ],
+          "fovDegrees": 60
+        },
+        {
+          "id": "stairs-toward-palace",
+          "eyeMeters": [
+            37,
+            28,
+            154
+          ],
+          "targetMeters": [
+            0,
+            73,
+            -12
+          ],
+          "fovDegrees": 60
+        },
+        {
+          "id": "human-height-at-palace-entrance",
+          "eyeMeters": [
+            -24,
+            19.7,
+            62
+          ],
+          "targetMeters": [
+            0,
+            79,
+            -10
+          ],
+          "fovDegrees": 60
+        }
+      ],
+      "cameraCoordinatesStatus": "P02-authored-study-fixed-cameras-pending-human-review",
+      "preserve": [
+        "small-character-large-building-scale",
+        "palace-silhouette-and-columns",
+        "cloud-depth-and-light"
+      ],
+      "allTenReferencesRemainProductReferences": true,
+      "automaticImageDifferenceProvesArtisticAcceptance": false,
+      "latestUserFeedback": "2026-10-21: Increase monumental proportions and make the palace immense and intricately layered; existing direction accepted subject to this revision."
+    }
+  },
+  "decisions": {
+    "version": 1,
+    "task": "P00 cloud implementation after the user's continue instruction",
+    "architecture": [
+      {
+        "id": "A-01",
+        "status": "engineering-adopted",
+        "decision": "Shared Babylon.js and TypeScript browser core; dependencies already provisioned."
+      },
+      {
+        "id": "A-02",
+        "status": "engineering-adopted",
+        "decision": "Rapier with render meshes independent from collision proxies."
+      },
+      {
+        "id": "A-03",
+        "status": "user-selected",
+        "decision": "User selected the first-release scope and loopback static-service B on 2026-10-21. Embedded HTML A remains the planned delivery; file loading must still be verified."
+      },
+      {
+        "id": "A-04",
+        "status": "engineering-adopted",
+        "decision": "Validate one visual sample and the exploration loop before expanding the world."
+      },
+      {
+        "id": "A-05",
+        "status": "engineering-adopted",
+        "decision": "WebGL2 baseline; WebGPU is deferred."
+      },
+      {
+        "id": "A-06",
+        "status": "deferred",
+        "decision": "No network implementation or deployment in this iteration."
+      }
+    ],
+    "firstRelease": {
+      "status": "user-selected",
+      "selectedOn": "2026-10-21",
+      "source": "User's chat response adopting the proposed scope and B launch method.",
+      "bLaunch": "loopback-static-service",
+      "proposal": [
+        "one-palace-sample",
+        "ground-to-palace-walking-and-flight",
+        "first-and-third-person",
+        "one-interior",
+        "landable-roof"
+      ],
+      "fullProductScopeUnchanged": true,
+      "extensionsEnabled": []
+    },
+    "unresolved": [
+      {
+        "id": "visual-sample-review",
+        "blocks": "P02",
+        "description": "Review the actual sample; current reference selection is an engineering proposal."
+      },
+      {
+        "id": "flight-and-falling-rules",
+        "blocks": "P04",
+        "description": "Define flying transitions and falling recovery before implementation."
+      },
+      {
+        "id": "water-rules",
+        "blocks": "P12",
+        "description": "Define wading, swimming, diving or their combination."
+      },
+      {
+        "id": "target-performance",
+        "blocks": "P15",
+        "description": "Record actual Windows device, resolution, quality and performance statistics."
+      }
+    ],
+    "visualFeedback": {
+      "date": "2026-10-21",
+      "source": "User chat: palace should feel immense, taller in proportion and intricately layered.",
+      "status": "revision-requested-before-acceptance",
+      "previousSampleBranch": "feat/tiangong-p02-20261021",
+      "revisionBranch": "feat/tiangong-p02-monumental-20261021",
+      "newImagesAutomaticallyAccepted": false
+    }
+  }
+}
