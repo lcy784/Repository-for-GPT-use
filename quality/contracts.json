@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "lengthUnit": "meter",
+  "timeUnit": "second",
+  "upAxis": "+Y",
+  "handedness": "right-handed",
+  "rotationUnit": "radian",
+  "stateWriter": "LocalSession.commitSimulationResult",
+  "readOnlyConsumers": ["input", "camera", "animation", "renderer", "network-adapter"],
+  "interfaces": {
+    "PlayerIntent": ["sequence", "movement", "viewDelta", "flightRequest", "interactionRequest"],
+    "PlayerState": ["id", "tick", "position", "velocity", "yaw", "mode", "supportId"],
+    "WorldManifest": ["version", "coordinateSystem", "zones", "assets", "spawn"]
+  },
+  "waterBehavior": "reserved-until-P12-decision",
+  "worldDimensions": "not-fixed-by-this-contract"
+}

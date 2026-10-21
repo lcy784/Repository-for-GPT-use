@@ -1,0 +1,105 @@
+{
+  "runId": "2026-10-21T12-38-23-469Z-f61c4908",
+  "through": "P00",
+  "candidate": "7a22fe7e135c31699f905d99cfbb610bab6cbd647bbf3ab7b598413c70c47ee0",
+  "status": "BLOCKED",
+  "stages": [
+    {
+      "runId": "2026-10-21T12-38-23-469Z-f61c4908",
+      "candidate": "7a22fe7e135c31699f905d99cfbb610bab6cbd647bbf3ab7b598413c70c47ee0",
+      "stage": "P00",
+      "status": "BLOCKED",
+      "cases": [
+        {
+          "id": "P00-01",
+          "status": "BLOCKED",
+          "executed": 4,
+          "details": [
+            "Select the initial A scope and whether B may use a local static service.",
+            "An architecture decision is still awaiting a user preference.",
+            "First-release scope has not been selected by the user."
+          ],
+          "evidence": [
+            {
+              "path": "P00-input-checks.log",
+              "sha256": "4ae46ba72d33c57bfeee830635b4b3def6253884acad5dddac7ac14dbffc62c5"
+            },
+            {
+              "path": "candidate-contracts.json",
+              "sha256": "575340479e6faf65164bacac6a02a065f9e7d8130ea6ed510b3b6806fea5e3e9"
+            },
+            {
+              "path": "P00-vitest.json",
+              "sha256": "43ca98c880a75f41ab664c6857022b48219da2508cd5b0c43b94ceab8180946f"
+            },
+            {
+              "path": "P00-vitest.log",
+              "sha256": "0299842e100960228beaae13daf14aae22850f9facd146ae9366aa3d70cbddf4"
+            }
+          ]
+        },
+        {
+          "id": "P00-02",
+          "status": "PASS",
+          "executed": 13,
+          "evidence": [
+            {
+              "path": "P00-vitest.json",
+              "sha256": "43ca98c880a75f41ab664c6857022b48219da2508cd5b0c43b94ceab8180946f"
+            },
+            {
+              "path": "P00-vitest.log",
+              "sha256": "0299842e100960228beaae13daf14aae22850f9facd146ae9366aa3d70cbddf4"
+            }
+          ]
+        },
+        {
+          "id": "P00-03",
+          "status": "PASS",
+          "executed": 4,
+          "evidence": [
+            {
+              "path": "P00-vitest.json",
+              "sha256": "43ca98c880a75f41ab664c6857022b48219da2508cd5b0c43b94ceab8180946f"
+            },
+            {
+              "path": "P00-vitest.log",
+              "sha256": "0299842e100960228beaae13daf14aae22850f9facd146ae9366aa3d70cbddf4"
+            }
+          ]
+        },
+        {
+          "id": "P00-04",
+          "status": "PASS",
+          "executed": 9,
+          "evidence": [
+            {
+              "path": "P00-vitest.json",
+              "sha256": "43ca98c880a75f41ab664c6857022b48219da2508cd5b0c43b94ceab8180946f"
+            },
+            {
+              "path": "P00-vitest.log",
+              "sha256": "0299842e100960228beaae13daf14aae22850f9facd146ae9366aa3d70cbddf4"
+            }
+          ]
+        }
+      ],
+      "automaticTests": 29,
+      "reason": "Initial release scope and launch preference are unresolved; P01 remains blocked.",
+      "startedAt": "2026-10-21T12:38:23.489Z",
+      "endedAt": "2026-10-21T12:38:25.458Z",
+      "exitCode": 0,
+      "signal": null,
+      "environment": {
+        "node": "24.19.0",
+        "os": "linux",
+        "arch": "x64"
+      }
+    }
+  ],
+  "nextStageEligible": false,
+  "packages": {
+    "A": "not-built-at-P00",
+    "B": "not-built-at-P00"
+  }
+}

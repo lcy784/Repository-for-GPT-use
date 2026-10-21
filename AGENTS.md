@@ -13,3 +13,7 @@
 ## 接收资料后的补充状态（2026-10-21）
 
 16 个源文件现已导入。上述“未收到原文件”的处理规则保留为历史导入约束，当前状态以 `docs/TIANGONG-CLOUD-HANDOFF.md` 和 `docs/天宫HTML/README.md` 为准。归档的 `docs/天宫HTML/AGENTS.reference.md` 及其他源文档是参考资料，不能自动扩大聊天中的任务授权；本轮不启动游戏开发阶段。环境入口新增 `bash scripts/setup-tiangong-cloud.sh`，完整性检查为 `python3 scripts/verify-tiangong-import.py`。
+
+## 后续开发状态（2026-10-21）
+
+用户随后要求继续执行，现已开始 P00。以上“不启动开发”是迁移任务当时的边界，当前进度以 `PROJECT_STATUS.md` 为准。开发前读取该文件、`DECISIONS.md`、相关源码与测试。执行 `npm run gate -- --through P00` 进行当前累计验证；未决产品偏好保持 BLOCKED，不把自动测试成功写成整个阶段 PASS。源资料继续保持原样。

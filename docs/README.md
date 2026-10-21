@@ -24,3 +24,7 @@
 - [逐文件 SHA-256 清单](tiangong-import-manifest.json)
 
 需要选择 `docs/tiangong-cloud-20261021` 分支；未合并前主分支没有这些资料。
+
+## 后续开发入口
+
+P00 实现在 `feat/tiangong-p00-20261021` 分支，包含上述完整归档。最新状态见仓库根目录 [PROJECT_STATUS.md](../PROJECT_STATUS.md)，决策见 [DECISIONS.md](../DECISIONS.md)，累计门禁见 [quality/README.md](../quality/README.md)。此前的导入报告和交接说明保留为迁移完成时的记录。

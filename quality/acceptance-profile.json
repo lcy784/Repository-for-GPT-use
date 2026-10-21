@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "cloud": {
+    "viewport": { "width": 1280, "height": 720 },
+    "deviceScaleFactor": 1,
+    "renderBackend": "WebGL2",
+    "softwareRenderingAllowedForFunctionalChecks": true,
+    "softwareRenderingProvesTargetPerformance": false,
+    "randomSeed": 20261021,
+    "simulationHz": 60,
+    "maxCatchUpSteps": 5,
+    "stageTimeoutMs": 120000
+  },
+  "provisionalSimulationParameters": {
+    "status": "engineering-test-values-not-confirmed-gameplay",
+    "walkingMetersPerSecond": 3,
+    "flyingMetersPerSecond": 10,
+    "gravityMetersPerSecondSquared": 9.81,
+    "positionToleranceMeters": 0.01
+  },
+  "targetWindows": {
+    "targetFps": 60,
+    "acceptanceStatus": "pending-real-device-and-user-criteria",
+    "requiredBefore": "P15",
+    "mayUseCloudResultsInstead": false
+  },
+  "visualReview": {
+    "requiredBefore": "P02",
+    "status": "pending-actual-sample-review",
+    "referenceFiles": [
+      "docs/天宫HTML/input/IMG_20261019_161331.jpg",
+      "docs/天宫HTML/input/IMG_20261019_161156.jpg"
+    ],
+    "views": [
+      { "id": "human-height-at-palace-entrance", "eyeMeters": [0, 1.7, 80], "targetMeters": [0, 35, 0], "fovDegrees": 60 },
+      { "id": "stairs-toward-palace", "eyeMeters": [-35, 8, 120], "targetMeters": [0, 30, 0], "fovDegrees": 60 },
+      { "id": "ground-to-cloud-approach", "eyeMeters": [80, 90, 160], "targetMeters": [0, 30, 0], "fovDegrees": 60 }
+    ],
+    "cameraCoordinatesStatus": "engineering-starting-points-for-an-unbuilt-sample-not-approved-world-layout",
+    "preserve": ["small-character-large-building-scale", "palace-silhouette-and-columns", "cloud-depth-and-light"],
+    "allTenReferencesRemainProductReferences": true,
+    "automaticImageDifferenceProvesArtisticAcceptance": false
+  }
+}

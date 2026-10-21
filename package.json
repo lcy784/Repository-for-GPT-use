@@ -1,0 +1,11 @@
+{
+  "name": "tiangong",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24.19.0 <25" },
+  "scripts": {
+    "gate": "node scripts/quality/gate.mjs",
+    "test:gate": "node tools/tiangong/node_modules/vitest/vitest.mjs run --config quality/vitest.config.mjs"
+  }
+}

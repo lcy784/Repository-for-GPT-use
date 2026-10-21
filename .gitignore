@@ -2,3 +2,6 @@
 .cloud-tools/
 __pycache__/
 *.pyc
+
+# Root build/test caches are cloud installation artifacts.
+/node_modules/
