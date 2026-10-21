@@ -1,0 +1,6 @@
+{
+  "portConflict": "PASS - fails without killing other processes",
+  "modifiedStaticFile": "PASS - refuses to serve a changed build",
+  "newLauncherAndReadmeSensitiveScan": "PASS - zero potential findings",
+  "scope": "Cloud PowerShell 7.4.19; Windows PowerShell 5.1 and Edge not executed"
+}

@@ -1,0 +1,67 @@
+{
+  "staticFileHashesVerified": 74,
+  "parallelConnections": 12,
+  "protocolCases": [
+    {
+      "method": "HEAD",
+      "path": "/",
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "method": "POST",
+      "path": "/",
+      "expected": 405,
+      "actual": 405
+    },
+    {
+      "method": "GET",
+      "path": "/%2e%2e/BUILD.json",
+      "expected": 403,
+      "actual": 403
+    },
+    {
+      "method": "GET",
+      "path": "/StartPreview.ps1",
+      "expected": 404,
+      "actual": 404
+    },
+    {
+      "method": "GET",
+      "path": "/%5c..%5cBUILD.json",
+      "expected": 403,
+      "actual": 403
+    },
+    {
+      "method": "GET",
+      "path": "/",
+      "expected": 403,
+      "actual": 403
+    },
+    {
+      "method": "GET",
+      "path": "/missing.png",
+      "expected": 404,
+      "actual": 404
+    },
+    {
+      "method": "GET",
+      "path": "/__tiangong_preview__/health",
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "method": "GET",
+      "path": "/runtime-config.json?v=1",
+      "expected": 200,
+      "actual": 200
+    }
+  ],
+  "health": {
+    "commit": "f394d0ae5beeef56c3452e0628e79d7c6351ad62",
+    "candidate": "97f8b083e4332d665fd41bef8dcd842821146273e4366d0f52aa05ee19976ae6",
+    "loopbackOnly": true,
+    "stage": "P03"
+  },
+  "environment": "Linux cloud PowerShell 7.4.19; Windows PowerShell 5.1 and local Edge not executed"
+}
