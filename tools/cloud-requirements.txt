@@ -1,0 +1,8 @@
+# Cloud credential scanner, pinned from the verified Python 3.12 environment.
+certifi==2026.10.19
+charset-normalizer==3.5.2
+detect-secrets==1.5.0
+idna==3.20
+PyYAML==6.0.3
+requests==2.34.2
+urllib3==2.8.0
