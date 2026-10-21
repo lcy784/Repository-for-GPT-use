@@ -28,7 +28,7 @@
     {
       "id": "P02",
       "enabled": true,
-      "implementation": "planned-no-placeholder-entry",
+      "implementation": "present",
       "entry": "scripts/quality/stages/P02.mjs",
       "requiredCases": [
         "P02-01",

@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "sample": "P02-single-palace-study",
+  "generator": "src/runtime/palace.ts",
+  "authorship": "Original procedural geometry, seeded textures, sky and lighting authored for this repository. No third-party model or reference photograph is embedded in the runtime.",
+  "referenceIndex": "docs/天宫HTML/README.md",
+  "referenceUse": "Visual comparison only. Existing creator marks remain in archived images; no production asset licence inferred.",
+  "units": "metres",
+  "coordinateSystem": "right-handed-Y-up",
+  "seed": 20261021,
+  "dimensions": {"terraceTop":12,"columnHeight":36,"ridgeHeight":70,"humanHeight":1.75,"approachStairRise":12,"approachStairLength":76.8},
+  "materialSources": ["seeded-256px-stone-and-wood-fields", "16px-local-daylight-cubemap", "analytic-sky-gradient", "original-solid-PBR-colours"],
+  "lighting": {"sunDirection":[-0.65,-1,-0.55],"shadowMap":1024,"exposure":1.13,"contrast":1.12,"frozenTime":true},
+  "collisionProxies": [
+    {"mesh":"proxy/terrace","purpose":"authoring-only","enabled":false,"centre":[0,11.75,-9],"size":[125,0.5,103]},
+    {"mesh":"proxy/hall-roof-envelope","purpose":"authoring-only-coarse-envelope-not-landable-collider","enabled":false,"centre":[0,60.5,-14],"size":[112,19,88]}
+  ],
+  "limitations": ["No walking or flight controller in P02", "The scale figure is static", "Clouds are an opaque seeded noise heightfield; not final volumetric clouds", "Roof proxy is not final collision geometry", "Reference-level ornamental sculpting and final art acceptance remain pending"]
+}

@@ -1,0 +1,18 @@
+2:29:44 PM [vite] (client) dependencies optimized: @babylonjs/core/Culling/ray, @babylonjs/core/Engines/constants, @babylonjs/core/Instrumentation/sceneInstrumentation, @babylonjs/core/Lights/Shadows/shadowGenerator, @babylonjs/core/Lights/Shadows/shadowGeneratorSceneComponent, @babylonjs/core/Lights/directionalLight, @babylonjs/core/Materials/PBR/pbrMaterial, @babylonjs/core/Materials/Textures/Loaders/envTextureLoader, @babylonjs/core/Materials/Textures/dynamicTexture, @babylonjs/core/Materials/Textures/rawCubeTexture, @babylonjs/core/Materials/shaderMaterial, @babylonjs/core/Meshes/Builders/cylinderBuilder, @babylonjs/core/Meshes/Builders/sphereBuilder, @babylonjs/core/Meshes/Builders/tubeBuilder, @babylonjs/core/Meshes/mesh, @babylonjs/core/Meshes/mesh.vertexData
+2:29:44 PM [vite] (client) optimized dependencies changed. reloading
+
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: One or more P01 browser checks failed
+    at file:///workspace/tiangong-development/scripts/quality/p01-browser.mjs:198:3 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

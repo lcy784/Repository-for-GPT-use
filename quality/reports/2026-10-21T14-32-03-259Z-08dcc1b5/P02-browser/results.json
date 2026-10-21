@@ -1,0 +1,232 @@
+{
+  "runId": "2026-10-21T14-32-03-259Z-08dcc1b5",
+  "candidate": "f1f817485ebf8e7ec6c257de44a38ced62bf2b4272c17aa6bd7f6a47df2bae99",
+  "status": "FAIL",
+  "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#camera')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"camera\" type=\"button\">切换观察位置</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\n    at /workspace/tiangong-development/scripts/quality/p02-browser.mjs:40:34",
+  "views": [
+    {
+      "name": "far",
+      "sha256": "62700db8119bda493d538cf8368d125ea0f4b233c22be013085cd46b66368005",
+      "bytes": 558332,
+      "snapshot": {
+        "phase": "ready",
+        "error": null,
+        "frame": 27,
+        "tick": 102,
+        "maxStepsInFrame": 5,
+        "backend": "WebGL2",
+        "meshes": 13,
+        "activeMeshes": 11,
+        "engines": 1,
+        "listeners": 2,
+        "width": 1280,
+        "height": 720,
+        "visibility": "visible",
+        "visibilityTransitions": 0,
+        "camera": 0,
+        "glError": 0,
+        "depthWitness": "[{\"screenX\":0.43,\"hit\":\"palace/vermilion-lacquer\",\"distance\":245.91751822546829,\"point\":[-40.14999999999996,14.062598951964944,19.381655286834473]},{\"screenX\":0.5,\"hit\":\"palace/pale-stone-carving\",\"distance\":244.49989662706102,\"point\":[-11.934583099157535,13.725918567363507,-1.3234050706327025]},{\"screenX\":0.57,\"hit\":\"palace/recess-shadow\",\"distance\":200.08291576528833,\"point\":[36.55301925837517,28.21088988926472,18.850000762939487]}]",
+        "projectedRoofEnvelope": "[[631.0903138560149,256.9347763658822,0.9997042987219847],[491.6647909197585,283.02255310039885,0.9996041717667671],[630.8905536262462,208.45324928265194,0.9996969218857068],[487.2972782745607,220.12290646380117,0.9995915361368733],[870.6063797873906,278.8798281288666,0.9996200757454896],[779.9682469658643,323.50728210183865,0.9994487936439498],[877.1375798126357,218.25907496741257,0.9996083719123376],[785.641906009775,238.5535081805132,0.9994250996895947]]",
+        "frameIntervalMsMedian": 407.69999999925494,
+        "frameIntervalMsP95": 5130.39999999851,
+        "drawCalls": 20,
+        "study": "{\"seed\":20261021,\"units\":\"metres\",\"terraceTop\":12,\"columnHeight\":36,\"ridgeHeight\":70,\"humanHeight\":1.75,\"footprint\":[120,100],\"frozenSun\":[-0.65,-1,-0.55]}",
+        "triangles": 483536,
+        "materials": 12,
+        "textures": 5,
+        "renderCpuMsMedian": 3.800000000745058,
+        "cameraEye": "120,90,189.99999999999997",
+        "cameraTarget": "0,26,16",
+        "fixture": "p02-palace",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "totalFrames": 27,
+        "generation": 1,
+        "canvases": 1
+      }
+    },
+    {
+      "name": "stairs",
+      "sha256": "1c3ce1d731d0ee6195f7642a26b86951dfa1ac1f2f0356ef603cc96d2f737e23",
+      "bytes": 746627,
+      "snapshot": {
+        "phase": "ready",
+        "error": null,
+        "frame": 52,
+        "tick": 209,
+        "maxStepsInFrame": 5,
+        "backend": "WebGL2",
+        "meshes": 13,
+        "activeMeshes": 11,
+        "engines": 1,
+        "listeners": 2,
+        "width": 1280,
+        "height": 720,
+        "visibility": "visible",
+        "visibilityTransitions": 0,
+        "camera": 1,
+        "glError": 0,
+        "depthWitness": "[{\"screenX\":0.43,\"hit\":\"palace/vermilion-lacquer\",\"distance\":181.3879098760619,\"point\":[-42.51864714482276,33.88155426377767,-48.499999999999986]},{\"screenX\":0.5,\"hit\":\"palace/vermilion-lacquer\",\"distance\":170.35448733885974,\"point\":[-15.125722112863635,33.58066010833572,-48.5]},{\"screenX\":0.57,\"hit\":\"palace/recess-shadow\",\"distance\":94.97782246401907,\"point\":[23.196366847724004,31.08123642956093,18.850000762939445]}]",
+        "projectedRoofEnvelope": "[[525.2470256587346,324.4702524472349,0.999521062556447],[267.184331427772,270.5833661731794,0.9991288283860842],[525.9964973588562,251.83374138663248,0.9995244081586747],[271.4622388504846,143.58694117677265,0.9991392069862768],[923.759291075323,307.3669917122829,0.9993965801608042],[995.6455106511826,205.07149153771908,0.9986519984696732],[921.4592736760649,217.359993547388,0.9994017412193189],[989.4506684958889,13.430312890360737,0.9986760590291585]]",
+        "frameIntervalMsMedian": 2585.0999999996275,
+        "frameIntervalMsP95": 5529.60000000149,
+        "drawCalls": 20,
+        "study": "{\"seed\":20261021,\"units\":\"metres\",\"terraceTop\":12,\"columnHeight\":36,\"ridgeHeight\":70,\"humanHeight\":1.75,\"footprint\":[120,100],\"frozenSun\":[-0.65,-1,-0.55]}",
+        "triangles": 483536,
+        "materials": 12,
+        "textures": 5,
+        "renderCpuMsMedian": 2,
+        "cameraEye": "42.000000000000014,27.999999999999996,112",
+        "cameraTarget": "0,35,-6",
+        "fixture": "p02-palace",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "totalFrames": 52,
+        "generation": 1,
+        "canvases": 1
+      }
+    }
+  ],
+  "network": [
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/assets/engineStore-Bn2tApal.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/internalTexture-B3djGrls.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/logger-CuBYPcDK.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/shaderStore-D-XQlhUT.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/index-BKxVMWTm.css",
+      "status": 200
+    },
+    {
+      "path": "/assets/performanceConfigurator-UtxC_Odd.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/precisionDate-DgO8bWsc.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/math.scalar.functions-Bcxiuh2E.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/halfFloat-Cfx5m4ll.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/math.color.pure-DLMyD1Sf.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/thinEngine.pure-CVicMHaa.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/index-RR5a60_h.js",
+      "status": 200
+    },
+    {
+      "path": "/runtime-config.json",
+      "status": 200
+    },
+    {
+      "path": "/assets/meshUboDeclaration-DYEo1Glw.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/shadowMap.fragment-DX4Yo1bp.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/clipPlaneFragment-DVK0wgyZ.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/helperFunctions-gEnZbjN3.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/packingFunctions-DpGwbupU.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/shadowMap.vertex-B6-W_3yx.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/depthBoxBlur.fragment-CLEAG5DG.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/shadowMapFragmentSoftTransparentShadow-R_iOKnyx.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/clipPlaneVertex-D0NeDy6h.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/logDepthDeclaration-D_lEqJ0h.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/defaultUboDeclaration-DjVzEbLK.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/logDepthVertex-DwMacBUy.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/default.vertex-BMHK6cNB.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/default.fragment-DYlPFgaB.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/rgbdDecode.fragment-Cdz2Tveq.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/oitFragment-NMD8MAKW.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/postprocess.vertex-DJCmMhI8.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/pbrBRDFFunctions-7vMwHmnJ.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/pbr.vertex-DxOwqMI-.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/pbr.fragment-uN9anP7u.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/palace/source-manifest.json",
+      "status": 200
+    }
+  ],
+  "errors": [],
+  "external": []
+}

@@ -34,7 +34,7 @@ async function pageAt(base, { init, configFailure } = {}, existingSession) {
   await session.route(/^https?:\/\//, route => {
     const url = route.request().url();
     if (new URL(url).origin !== base) { external.push(url); return route.abort(); }
-    if (configFailure && url.endsWith('/runtime-config.json')) return route.fulfill({ status: 404, contentType: 'application/json', body: '{}' });
+    if (url.endsWith('/runtime-config.json')) return route.fulfill({ status: configFailure ? 404 : 200, contentType: 'application/json', body: JSON.stringify(configFailure ? {} : readJson(path.join(root, 'quality/fixtures/P01/runtime-config.json'))) });
     return route.continue();
   });
   if (init) await session.addInitScript(init);

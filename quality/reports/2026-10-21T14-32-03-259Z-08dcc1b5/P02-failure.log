@@ -1,0 +1,21 @@
+AssertionError [ERR_ASSERTION]: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('#camera')[22m
+[2m    - locator resolved to <button id="camera" type="button">切换观察位置</button>[22m
+[2m  - attempting click action[22m
+[2m    - waiting for element to be visible, enabled and stable[22m
+[2m    - element is visible, enabled and stable[22m
+[2m    - scrolling into view if needed[22m
+[2m    - done scrolling[22m
+[2m    - performing click action[22m
+[2m    - click action done[22m
+[2m    - waiting for scheduled navigations to finish[22m
+
+    at /workspace/tiangong-development/scripts/quality/p02-browser.mjs:40:34
+
+1 !== 0
+
+    at file:///workspace/tiangong-development/scripts/quality/stages/P02.mjs:24:9
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)

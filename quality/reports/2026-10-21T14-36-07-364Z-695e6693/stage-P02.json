@@ -1,0 +1,149 @@
+{
+  "runId": "2026-10-21T14-36-07-364Z-695e6693",
+  "candidate": "43cc46b4df784d771ef8637c79b868eecc0dbf1c3b374bd367b7b88fd8de661e",
+  "stage": "P02",
+  "status": "BLOCKED",
+  "cases": [
+    {
+      "id": "P02-01",
+      "status": "PASS",
+      "executed": 6,
+      "details": [
+        "Actual local PBR assets, authored cameras and sample/source dimensions loaded."
+      ],
+      "evidence": [
+        {
+          "path": "P02-browser.log",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "path": "P02-browser/results.json",
+          "sha256": "266cfe1a4b36f5a95601d2fca5594beba2f9f0677e745f6571e17b083166cbcc"
+        },
+        {
+          "path": "P01-production-manifest.json",
+          "sha256": "0fa82009f55474ad0330f4454ab7c1717a75dd4ec0b276b8fbff830dd6eeabf6"
+        },
+        {
+          "path": "P02-browser/far.png",
+          "sha256": "e897fd1b81d6fa195b7e0619b936e8aaa182d395c3416067677eda8b67055577"
+        },
+        {
+          "path": "P02-browser/stairs.png",
+          "sha256": "6fe27f6745d4ba0128b082a720d7c30f0b328476b8ae0aea63130f5c7a44a92e"
+        },
+        {
+          "path": "P02-browser/human.png",
+          "sha256": "570c8b8b0a18f211393329131e406cb77ebb50f08d00b5ce0e036babeea506a8"
+        },
+        {
+          "path": "P02-geometry-tests.json",
+          "sha256": "6ffcf6651fe7bf5dd600f454204fcde0eb5f4405939c7068cf48e21779de9097"
+        },
+        {
+          "path": "P02-geometry-tests.log",
+          "sha256": "fda9818c1d18f7ac71cff30942c3021244f36355c9a413b6b2230e096aab4663"
+        }
+      ]
+    },
+    {
+      "id": "P02-02",
+      "status": "BLOCKED",
+      "executed": 5,
+      "details": [
+        "Pixel identity passed for repeated and freshly rebuilt seeded scene. Human review remains pending; these are proposed review images, not approved baselines."
+      ],
+      "evidence": [
+        {
+          "path": "P02-browser.log",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "path": "P02-browser/results.json",
+          "sha256": "266cfe1a4b36f5a95601d2fca5594beba2f9f0677e745f6571e17b083166cbcc"
+        },
+        {
+          "path": "P01-production-manifest.json",
+          "sha256": "0fa82009f55474ad0330f4454ab7c1717a75dd4ec0b276b8fbff830dd6eeabf6"
+        },
+        {
+          "path": "P02-browser/far.png",
+          "sha256": "e897fd1b81d6fa195b7e0619b936e8aaa182d395c3416067677eda8b67055577"
+        },
+        {
+          "path": "P02-browser/stairs.png",
+          "sha256": "6fe27f6745d4ba0128b082a720d7c30f0b328476b8ae0aea63130f5c7a44a92e"
+        },
+        {
+          "path": "P02-browser/human.png",
+          "sha256": "570c8b8b0a18f211393329131e406cb77ebb50f08d00b5ce0e036babeea506a8"
+        },
+        {
+          "path": "P02-review-request.json",
+          "sha256": "52b797119685c3127e56aa6c36727e22a02a93964109b0bf4139aa75e0e441a7"
+        },
+        {
+          "path": "P02-browser/far-repeat.png",
+          "sha256": "e897fd1b81d6fa195b7e0619b936e8aaa182d395c3416067677eda8b67055577"
+        },
+        {
+          "path": "P02-browser/far-restarted.png",
+          "sha256": "e897fd1b81d6fa195b7e0619b936e8aaa182d395c3416067677eda8b67055577"
+        }
+      ]
+    },
+    {
+      "id": "P02-03",
+      "status": "PASS",
+      "executed": 3,
+      "details": [
+        "Actual triangle ray intersections at changed cameras demonstrate different surfaces and world-space depths."
+      ],
+      "evidence": [
+        {
+          "path": "P02-browser.log",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "path": "P02-browser/results.json",
+          "sha256": "266cfe1a4b36f5a95601d2fca5594beba2f9f0677e745f6571e17b083166cbcc"
+        },
+        {
+          "path": "P01-production-manifest.json",
+          "sha256": "0fa82009f55474ad0330f4454ab7c1717a75dd4ec0b276b8fbff830dd6eeabf6"
+        }
+      ]
+    },
+    {
+      "id": "P02-04",
+      "status": "BLOCKED",
+      "executed": 3,
+      "details": [
+        "Actual cloud resource and per-view timing readings recorded. Required target Windows device evidence is unavailable; software results cannot replace it."
+      ],
+      "evidence": [
+        {
+          "path": "P02-browser.log",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "path": "P02-browser/results.json",
+          "sha256": "266cfe1a4b36f5a95601d2fca5594beba2f9f0677e745f6571e17b083166cbcc"
+        },
+        {
+          "path": "P01-production-manifest.json",
+          "sha256": "0fa82009f55474ad0330f4454ab7c1717a75dd4ec0b276b8fbff830dd6eeabf6"
+        },
+        {
+          "path": "P02-cost-record.json",
+          "sha256": "83d1fa1238dd2cfe6b9e0f8f5ec9a147b40a34d4e907fcd3f4358231401e96f0"
+        }
+      ]
+    }
+  ],
+  "environment": {
+    "browser": "154.0.8037.57",
+    "graphics": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "scope": "cloud-functional-only"
+  }
+}

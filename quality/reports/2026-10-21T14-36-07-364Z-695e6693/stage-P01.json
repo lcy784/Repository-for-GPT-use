@@ -1,0 +1,141 @@
+{
+  "runId": "2026-10-21T14-36-07-364Z-695e6693",
+  "candidate": "43cc46b4df784d771ef8637c79b868eecc0dbf1c3b374bd367b7b88fd8de661e",
+  "stage": "P01",
+  "status": "PASS",
+  "cases": [
+    {
+      "id": "P01-01",
+      "status": "PASS",
+      "executed": 2,
+      "details": [],
+      "evidence": [
+        {
+          "path": "P01-production-manifest.json",
+          "sha256": "0fa82009f55474ad0330f4454ab7c1717a75dd4ec0b276b8fbff830dd6eeabf6"
+        },
+        {
+          "path": "P01-build-and-tests.log",
+          "sha256": "4472dd055d2aca110c9b4a7158df78e5461d9d03568dbf19443ce7afce12deb3"
+        },
+        {
+          "path": "P01-browser/results.json",
+          "sha256": "d42ccef9b87f9bb2c246e6deffd7e3528ae4f3c5ef792fd8ff944faa0ed23660"
+        },
+        {
+          "path": "P01-browser.log",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "path": "P01-browser/production-camera-a.png",
+          "sha256": "27e8291c2f32c62f3dbb8362c7c7f4d9d44f9209ff26c4c7f91514f87905e848"
+        },
+        {
+          "path": "P01-browser/production-camera-b.png",
+          "sha256": "a353242133c5d17db385267c3c97d88842e529fa40397d9b57b65fd3f10fb343"
+        },
+        {
+          "path": "P01-browser/development-camera-a.png",
+          "sha256": "27e8291c2f32c62f3dbb8362c7c7f4d9d44f9209ff26c4c7f91514f87905e848"
+        },
+        {
+          "path": "P01-browser/development-camera-b.png",
+          "sha256": "a353242133c5d17db385267c3c97d88842e529fa40397d9b57b65fd3f10fb343"
+        }
+      ]
+    },
+    {
+      "id": "P01-02",
+      "status": "PASS",
+      "executed": 4,
+      "details": [],
+      "evidence": [
+        {
+          "path": "P01-production-manifest.json",
+          "sha256": "0fa82009f55474ad0330f4454ab7c1717a75dd4ec0b276b8fbff830dd6eeabf6"
+        },
+        {
+          "path": "P01-build-and-tests.log",
+          "sha256": "4472dd055d2aca110c9b4a7158df78e5461d9d03568dbf19443ce7afce12deb3"
+        },
+        {
+          "path": "P01-browser/results.json",
+          "sha256": "d42ccef9b87f9bb2c246e6deffd7e3528ae4f3c5ef792fd8ff944faa0ed23660"
+        },
+        {
+          "path": "P01-browser.log",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        }
+      ]
+    },
+    {
+      "id": "P01-03",
+      "status": "PASS",
+      "executed": 7,
+      "details": [],
+      "evidence": [
+        {
+          "path": "P01-production-manifest.json",
+          "sha256": "0fa82009f55474ad0330f4454ab7c1717a75dd4ec0b276b8fbff830dd6eeabf6"
+        },
+        {
+          "path": "P01-build-and-tests.log",
+          "sha256": "4472dd055d2aca110c9b4a7158df78e5461d9d03568dbf19443ce7afce12deb3"
+        },
+        {
+          "path": "P01-browser/results.json",
+          "sha256": "d42ccef9b87f9bb2c246e6deffd7e3528ae4f3c5ef792fd8ff944faa0ed23660"
+        },
+        {
+          "path": "P01-browser.log",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "path": "P01-clock-tests.json",
+          "sha256": "88a9d975802235316b9be86f7d46c58b20e0761698bdff6faba6b0ac9594b6ad"
+        },
+        {
+          "path": "P01-clock-tests.log",
+          "sha256": "ee2a1ab621653d05f087620eff45a0f705958e41b41db8570bbea544e9f37346"
+        }
+      ]
+    },
+    {
+      "id": "P01-04",
+      "status": "PASS",
+      "executed": 6,
+      "details": [],
+      "evidence": [
+        {
+          "path": "P01-production-manifest.json",
+          "sha256": "0fa82009f55474ad0330f4454ab7c1717a75dd4ec0b276b8fbff830dd6eeabf6"
+        },
+        {
+          "path": "P01-build-and-tests.log",
+          "sha256": "4472dd055d2aca110c9b4a7158df78e5461d9d03568dbf19443ce7afce12deb3"
+        },
+        {
+          "path": "P01-browser/results.json",
+          "sha256": "d42ccef9b87f9bb2c246e6deffd7e3528ae4f3c5ef792fd8ff944faa0ed23660"
+        },
+        {
+          "path": "P01-browser.log",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        }
+      ]
+    }
+  ],
+  "environment": {
+    "browser": "154.0.8037.57",
+    "display": "real Chromium tabs on cloud Xvfb",
+    "graphics": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "buildManifest": {
+    "path": "P01-production-manifest.json",
+    "sha256": "0fa82009f55474ad0330f4454ab7c1717a75dd4ec0b276b8fbff830dd6eeabf6"
+  }
+}

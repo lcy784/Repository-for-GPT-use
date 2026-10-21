@@ -1,8 +1,45 @@
 {
   "version": 1,
-  "sceneFixture": "p01-depth",
+  "sceneFixture": "p02-palace",
   "simulationHz": 60,
   "maxCatchUpSteps": 5,
-  "cameraPositions": [[12, 9, -17], [-15, 6, -8]],
-  "background": [0.045, 0.085, 0.095]
+  "cameraPositions": [
+    [
+      120,
+      90,
+      190
+    ],
+    [
+      42,
+      28,
+      112
+    ],
+    [
+      -17,
+      13.7,
+      35
+    ]
+  ],
+  "background": [
+    0.57,
+    0.73,
+    0.81
+  ],
+  "cameraTargets": [
+    [
+      0,
+      26,
+      16
+    ],
+    [
+      0,
+      35,
+      -6
+    ],
+    [
+      0,
+      40,
+      -5
+    ]
+  ]
 }

@@ -1,0 +1,30 @@
+{
+  "runId": "2026-10-21T14-36-07-364Z-695e6693",
+  "candidate": "43cc46b4df784d771ef8637c79b868eecc0dbf1c3b374bd367b7b88fd8de661e",
+  "status": "pending-human-review",
+  "approvedBaseline": false,
+  "references": [
+    "docs/天宫HTML/input/IMG_20261019_161331.jpg",
+    "docs/天宫HTML/input/IMG_20261019_161156.jpg"
+  ],
+  "images": [
+    {
+      "file": "P02-browser/far.png",
+      "sha256": "e897fd1b81d6fa195b7e0619b936e8aaa182d395c3416067677eda8b67055577"
+    },
+    {
+      "file": "P02-browser/stairs.png",
+      "sha256": "6fe27f6745d4ba0128b082a720d7c30f0b328476b8ae0aea63130f5c7a44a92e"
+    },
+    {
+      "file": "P02-browser/human.png",
+      "sha256": "570c8b8b0a18f211393329131e406cb77ebb50f08d00b5ce0e036babeea506a8"
+    }
+  ],
+  "criteria": [
+    "Small figure versus giant columns and long stair",
+    "Roof silhouette, depth of colonnade and warm main lighting",
+    "Cloud depth and material direction worth continuing"
+  ],
+  "requiredDecision": "Actual user review of these candidate-bound images; no automatic golden baseline."
+}

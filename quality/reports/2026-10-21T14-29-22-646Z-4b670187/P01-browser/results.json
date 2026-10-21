@@ -1,0 +1,863 @@
+{
+  "runId": "2026-10-21T14-29-22-646Z-4b670187",
+  "candidate": "46eff7703b68dbe5045c41a4a64e11b753b0e3c60c4c4d12bbe935f7a965cf04",
+  "browser": "154.0.8037.57",
+  "display": "real Chromium tabs on cloud Xvfb",
+  "results": [
+    {
+      "id": "P01-01",
+      "status": "FAIL",
+      "executed": 1,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)',\n+   'Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)',\n+   'Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)',\n+   'Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)',\n+   'Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)',\n+   'Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)',\n+   'Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)',\n+   'Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)',\n+   'Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)',\n+   'Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)',\n+   'Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)',\n+   'Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)',\n+   'Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)'\n+ ]\n- []\n\n    at file:///workspace/tiangong-development/scripts/quality/p01-browser.mjs:122:55\n    at async check (file:///workspace/tiangong-development/scripts/quality/p01-browser.mjs:98:48)\n    at async file:///workspace/tiangong-development/scripts/quality/p01-browser.mjs:109:3"
+    },
+    {
+      "id": "P01-02",
+      "status": "PASS",
+      "executed": 4,
+      "failures": [
+        {
+          "fault": "missing-WebGL2",
+          "snapshot": {
+            "phase": "error",
+            "error": "无法启动 WebGL 2，请检查浏览器硬件加速设置",
+            "frame": 0,
+            "tick": 0,
+            "maxStepsInFrame": 0,
+            "backend": null,
+            "meshes": 0,
+            "activeMeshes": 0,
+            "engines": 0,
+            "listeners": 0,
+            "width": 300,
+            "height": 150,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "depthWitness": "",
+            "projectedRoofEnvelope": "",
+            "frameIntervalMsMedian": 0,
+            "frameIntervalMsP95": 0,
+            "drawCalls": 0,
+            "study": null,
+            "triangles": 0,
+            "materials": 0,
+            "textures": 0,
+            "renderCpuMsMedian": 0,
+            "cameraEye": null,
+            "cameraTarget": null,
+            "fixture": "p01-depth",
+            "renderer": null,
+            "totalFrames": 0,
+            "generation": 1,
+            "canvases": 1
+          },
+          "visibleMessage": "无法启动 WebGL 2，请检查浏览器硬件加速设置",
+          "errors": [],
+          "network": [
+            {
+              "path": "/",
+              "status": 200
+            },
+            {
+              "path": "/assets/index-BKxVMWTm.css",
+              "status": 200
+            },
+            {
+              "path": "/assets/engineStore-Bn2tApal.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/internalTexture-B3djGrls.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/logger-CuBYPcDK.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/performanceConfigurator-UtxC_Odd.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/shaderStore-D-XQlhUT.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/precisionDate-DgO8bWsc.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/math.scalar.functions-Bcxiuh2E.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/halfFloat-Cfx5m4ll.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/thinEngine.pure-CVicMHaa.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/math.color.pure-DLMyD1Sf.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/index-ayyAmNiR.js",
+              "status": 200
+            },
+            {
+              "path": "/runtime-config.json",
+              "status": 200
+            }
+          ]
+        },
+        {
+          "fault": "missing-WASM",
+          "snapshot": {
+            "phase": "error",
+            "error": "当前浏览器不支持必需的 WebAssembly",
+            "frame": 0,
+            "tick": 0,
+            "maxStepsInFrame": 0,
+            "backend": null,
+            "meshes": 0,
+            "activeMeshes": 0,
+            "engines": 0,
+            "listeners": 0,
+            "width": 300,
+            "height": 150,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "depthWitness": "",
+            "projectedRoofEnvelope": "",
+            "frameIntervalMsMedian": 0,
+            "frameIntervalMsP95": 0,
+            "drawCalls": 0,
+            "study": null,
+            "triangles": 0,
+            "materials": 0,
+            "textures": 0,
+            "renderCpuMsMedian": 0,
+            "cameraEye": null,
+            "cameraTarget": null,
+            "fixture": "p01-depth",
+            "renderer": null,
+            "totalFrames": 0,
+            "generation": 1,
+            "canvases": 1
+          },
+          "visibleMessage": "当前浏览器不支持必需的 WebAssembly",
+          "errors": [],
+          "network": [
+            {
+              "path": "/",
+              "status": 200
+            },
+            {
+              "path": "/assets/engineStore-Bn2tApal.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/logger-CuBYPcDK.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/shaderStore-D-XQlhUT.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/internalTexture-B3djGrls.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/precisionDate-DgO8bWsc.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/index-BKxVMWTm.css",
+              "status": 200
+            },
+            {
+              "path": "/assets/performanceConfigurator-UtxC_Odd.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/halfFloat-Cfx5m4ll.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/math.scalar.functions-Bcxiuh2E.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/thinEngine.pure-CVicMHaa.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/math.color.pure-DLMyD1Sf.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/index-ayyAmNiR.js",
+              "status": 200
+            },
+            {
+              "path": "/runtime-config.json",
+              "status": 200
+            }
+          ]
+        },
+        {
+          "fault": "missing-runtime-config",
+          "snapshot": {
+            "phase": "error",
+            "error": "运行配置加载失败（HTTP 404）",
+            "frame": 0,
+            "tick": 0,
+            "maxStepsInFrame": 0,
+            "backend": null,
+            "meshes": 0,
+            "activeMeshes": 0,
+            "engines": 0,
+            "listeners": 0,
+            "width": 300,
+            "height": 150,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "depthWitness": "",
+            "projectedRoofEnvelope": "",
+            "frameIntervalMsMedian": 0,
+            "frameIntervalMsP95": 0,
+            "drawCalls": 0,
+            "study": null,
+            "triangles": 0,
+            "materials": 0,
+            "textures": 0,
+            "renderCpuMsMedian": 0,
+            "cameraEye": null,
+            "cameraTarget": null,
+            "fixture": null,
+            "renderer": null,
+            "totalFrames": 0,
+            "generation": 1,
+            "canvases": 1
+          },
+          "visibleMessage": "运行配置加载失败（HTTP 404）",
+          "errors": [
+            "Failed to load resource: the server responded with a status of 404 (Not Found)"
+          ],
+          "network": [
+            {
+              "path": "/",
+              "status": 200
+            },
+            {
+              "path": "/assets/shaderStore-D-XQlhUT.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/engineStore-Bn2tApal.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/index-BKxVMWTm.css",
+              "status": 200
+            },
+            {
+              "path": "/assets/logger-CuBYPcDK.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/internalTexture-B3djGrls.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/precisionDate-DgO8bWsc.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/performanceConfigurator-UtxC_Odd.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/math.scalar.functions-Bcxiuh2E.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/halfFloat-Cfx5m4ll.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/thinEngine.pure-CVicMHaa.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/math.color.pure-DLMyD1Sf.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/index-ayyAmNiR.js",
+              "status": 200
+            },
+            {
+              "path": "/runtime-config.json",
+              "status": 404
+            }
+          ]
+        },
+        {
+          "fault": "render-error",
+          "snapshot": {
+            "phase": "error",
+            "error": "Injected render failure",
+            "frame": 4,
+            "tick": 9,
+            "maxStepsInFrame": 4,
+            "backend": null,
+            "meshes": 0,
+            "activeMeshes": 0,
+            "engines": 0,
+            "listeners": 0,
+            "width": 1280,
+            "height": 720,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "depthWitness": "",
+            "projectedRoofEnvelope": "",
+            "frameIntervalMsMedian": 50.20000000111759,
+            "frameIntervalMsP95": 61.80000000074506,
+            "drawCalls": 0,
+            "study": null,
+            "triangles": 0,
+            "materials": 0,
+            "textures": 0,
+            "renderCpuMsMedian": 1,
+            "cameraEye": null,
+            "cameraTarget": null,
+            "fixture": "p01-depth",
+            "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+            "totalFrames": 4,
+            "generation": 1,
+            "canvases": 1
+          },
+          "visibleMessage": "Injected render failure",
+          "errors": [],
+          "network": [
+            {
+              "path": "/",
+              "status": 200
+            },
+            {
+              "path": "/assets/index-BKxVMWTm.css",
+              "status": 200
+            },
+            {
+              "path": "/assets/engineStore-Bn2tApal.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/shaderStore-D-XQlhUT.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/logger-CuBYPcDK.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/precisionDate-DgO8bWsc.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/internalTexture-B3djGrls.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/performanceConfigurator-UtxC_Odd.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/math.scalar.functions-Bcxiuh2E.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/halfFloat-Cfx5m4ll.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/thinEngine.pure-CVicMHaa.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/math.color.pure-DLMyD1Sf.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/index-ayyAmNiR.js",
+              "status": 200
+            },
+            {
+              "path": "/runtime-config.json",
+              "status": 200
+            },
+            {
+              "path": "/assets/default.vertex-BMHK6cNB.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/meshUboDeclaration-DYEo1Glw.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/defaultUboDeclaration-DjVzEbLK.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/logDepthDeclaration-D_lEqJ0h.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/helperFunctions-gEnZbjN3.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/clipPlaneVertex-D0NeDy6h.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/logDepthVertex-DwMacBUy.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/default.fragment-DYlPFgaB.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/oitFragment-NMD8MAKW.js",
+              "status": 200
+            },
+            {
+              "path": "/assets/clipPlaneFragment-DVK0wgyZ.js",
+              "status": 200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P01-03",
+      "status": "PASS",
+      "executed": 1,
+      "nativeFocus": true,
+      "hidden": {
+        "phase": "paused",
+        "error": null,
+        "frame": 6,
+        "tick": 19,
+        "maxStepsInFrame": 5,
+        "backend": "WebGL2",
+        "meshes": 4,
+        "activeMeshes": 4,
+        "engines": 1,
+        "listeners": 2,
+        "width": 1280,
+        "height": 720,
+        "visibility": "hidden",
+        "visibilityTransitions": 1,
+        "camera": 0,
+        "glError": 0,
+        "depthWitness": "",
+        "projectedRoofEnvelope": "",
+        "frameIntervalMsMedian": 78.29999999888241,
+        "frameIntervalMsP95": 135.7000000011176,
+        "drawCalls": 4,
+        "study": null,
+        "triangles": 48,
+        "materials": 3,
+        "textures": 0,
+        "renderCpuMsMedian": 1.900000000372529,
+        "cameraEye": "11.999999999999995,9,-17.000000000000004",
+        "cameraTarget": "0,1.5,0",
+        "fixture": "p01-depth",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "totalFrames": 6,
+        "generation": 1,
+        "canvases": 1
+      },
+      "restored": {
+        "phase": "ready",
+        "error": null,
+        "frame": 9,
+        "tick": 24,
+        "maxStepsInFrame": 5,
+        "backend": "WebGL2",
+        "meshes": 4,
+        "activeMeshes": 4,
+        "engines": 1,
+        "listeners": 2,
+        "width": 1280,
+        "height": 720,
+        "visibility": "visible",
+        "visibilityTransitions": 2,
+        "camera": 0,
+        "glError": 0,
+        "depthWitness": "",
+        "projectedRoofEnvelope": "",
+        "frameIntervalMsMedian": 55.19999999925494,
+        "frameIntervalMsP95": 135.7000000011176,
+        "drawCalls": 4,
+        "study": null,
+        "triangles": 48,
+        "materials": 3,
+        "textures": 0,
+        "renderCpuMsMedian": 1.900000000372529,
+        "cameraEye": "11.999999999999995,9,-17.000000000000004",
+        "cameraTarget": "0,1.5,0",
+        "fixture": "p01-depth",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "totalFrames": 9,
+        "generation": 1,
+        "canvases": 1
+      },
+      "errors": []
+    },
+    {
+      "id": "P01-04",
+      "status": "PASS",
+      "executed": 6,
+      "sizes": [
+        {
+          "phase": "ready",
+          "error": null,
+          "frame": 10,
+          "tick": 25,
+          "maxStepsInFrame": 5,
+          "backend": "WebGL2",
+          "meshes": 4,
+          "activeMeshes": 4,
+          "engines": 1,
+          "listeners": 2,
+          "width": 640,
+          "height": 480,
+          "visibility": "visible",
+          "visibilityTransitions": 0,
+          "camera": 0,
+          "glError": 0,
+          "depthWitness": "",
+          "projectedRoofEnvelope": "",
+          "frameIntervalMsMedian": 47.30000000074506,
+          "frameIntervalMsP95": 181.59999999962747,
+          "drawCalls": 4,
+          "study": null,
+          "triangles": 48,
+          "materials": 3,
+          "textures": 0,
+          "renderCpuMsMedian": 2.599999999627471,
+          "cameraEye": "11.999999999999995,9,-17.000000000000004",
+          "cameraTarget": "0,1.5,0",
+          "fixture": "p01-depth",
+          "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "totalFrames": 10,
+          "generation": 1,
+          "canvases": 1
+        },
+        {
+          "phase": "ready",
+          "error": null,
+          "frame": 14,
+          "tick": 35,
+          "maxStepsInFrame": 5,
+          "backend": "WebGL2",
+          "meshes": 4,
+          "activeMeshes": 4,
+          "engines": 1,
+          "listeners": 2,
+          "width": 1366,
+          "height": 768,
+          "visibility": "visible",
+          "visibilityTransitions": 0,
+          "camera": 0,
+          "glError": 0,
+          "depthWitness": "",
+          "projectedRoofEnvelope": "",
+          "frameIntervalMsMedian": 47.30000000074506,
+          "frameIntervalMsP95": 406.5,
+          "drawCalls": 4,
+          "study": null,
+          "triangles": 48,
+          "materials": 3,
+          "textures": 0,
+          "renderCpuMsMedian": 1.1000000014901161,
+          "cameraEye": "11.999999999999995,9,-17.000000000000004",
+          "cameraTarget": "0,1.5,0",
+          "fixture": "p01-depth",
+          "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "totalFrames": 14,
+          "generation": 1,
+          "canvases": 1
+        },
+        {
+          "phase": "ready",
+          "error": null,
+          "frame": 19,
+          "tick": 49,
+          "maxStepsInFrame": 5,
+          "backend": "WebGL2",
+          "meshes": 4,
+          "activeMeshes": 4,
+          "engines": 1,
+          "listeners": 2,
+          "width": 1024,
+          "height": 640,
+          "visibility": "visible",
+          "visibilityTransitions": 0,
+          "camera": 0,
+          "glError": 0,
+          "depthWitness": "",
+          "projectedRoofEnvelope": "",
+          "frameIntervalMsMedian": 54.80000000074506,
+          "frameIntervalMsP95": 406.5,
+          "drawCalls": 4,
+          "study": null,
+          "triangles": 48,
+          "materials": 3,
+          "textures": 0,
+          "renderCpuMsMedian": 1,
+          "cameraEye": "11.999999999999995,9,-17.000000000000004",
+          "cameraTarget": "0,1.5,0",
+          "fixture": "p01-depth",
+          "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "totalFrames": 19,
+          "generation": 1,
+          "canvases": 1
+        }
+      ],
+      "cycles": [
+        {
+          "stopped": {
+            "phase": "disposed",
+            "error": null,
+            "frame": 31,
+            "tick": 70,
+            "maxStepsInFrame": 5,
+            "backend": null,
+            "meshes": 0,
+            "activeMeshes": 0,
+            "engines": 0,
+            "listeners": 0,
+            "width": 1024,
+            "height": 640,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "depthWitness": "",
+            "projectedRoofEnvelope": "",
+            "frameIntervalMsMedian": 29.799999998882413,
+            "frameIntervalMsP95": 181.59999999962747,
+            "drawCalls": 0,
+            "study": null,
+            "triangles": 0,
+            "materials": 0,
+            "textures": 0,
+            "renderCpuMsMedian": 0.599999999627471,
+            "cameraEye": null,
+            "cameraTarget": null,
+            "fixture": "p01-depth",
+            "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+            "totalFrames": 31,
+            "generation": 1,
+            "canvases": 1
+          },
+          "restarted": {
+            "phase": "ready",
+            "error": null,
+            "frame": 4,
+            "tick": 6,
+            "maxStepsInFrame": 4,
+            "backend": "WebGL2",
+            "meshes": 4,
+            "activeMeshes": 4,
+            "engines": 1,
+            "listeners": 2,
+            "width": 1024,
+            "height": 640,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "depthWitness": "",
+            "projectedRoofEnvelope": "",
+            "frameIntervalMsMedian": 34.30000000074506,
+            "frameIntervalMsP95": 62.5,
+            "drawCalls": 4,
+            "study": null,
+            "triangles": 48,
+            "materials": 3,
+            "textures": 0,
+            "renderCpuMsMedian": 0.7999999988824129,
+            "cameraEye": "11.999999999999995,9,-17.000000000000004",
+            "cameraTarget": "0,1.5,0",
+            "fixture": "p01-depth",
+            "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+            "totalFrames": 35,
+            "generation": 2,
+            "canvases": 1
+          }
+        },
+        {
+          "stopped": {
+            "phase": "disposed",
+            "error": null,
+            "frame": 12,
+            "tick": 18,
+            "maxStepsInFrame": 4,
+            "backend": null,
+            "meshes": 0,
+            "activeMeshes": 0,
+            "engines": 0,
+            "listeners": 0,
+            "width": 1024,
+            "height": 640,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "depthWitness": "",
+            "projectedRoofEnvelope": "",
+            "frameIntervalMsMedian": 27.199999999254942,
+            "frameIntervalMsP95": 62.5,
+            "drawCalls": 0,
+            "study": null,
+            "triangles": 0,
+            "materials": 0,
+            "textures": 0,
+            "renderCpuMsMedian": 0.599999999627471,
+            "cameraEye": null,
+            "cameraTarget": null,
+            "fixture": "p01-depth",
+            "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+            "totalFrames": 43,
+            "generation": 2,
+            "canvases": 1
+          },
+          "restarted": {
+            "phase": "ready",
+            "error": null,
+            "frame": 3,
+            "tick": 4,
+            "maxStepsInFrame": 3,
+            "backend": "WebGL2",
+            "meshes": 4,
+            "activeMeshes": 4,
+            "engines": 1,
+            "listeners": 2,
+            "width": 1024,
+            "height": 640,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "depthWitness": "",
+            "projectedRoofEnvelope": "",
+            "frameIntervalMsMedian": 61.29999999888241,
+            "frameIntervalMsP95": 61.29999999888241,
+            "drawCalls": 4,
+            "study": null,
+            "triangles": 48,
+            "materials": 3,
+            "textures": 0,
+            "renderCpuMsMedian": 3.199999999254942,
+            "cameraEye": "11.999999999999995,9,-17.000000000000004",
+            "cameraTarget": "0,1.5,0",
+            "fixture": "p01-depth",
+            "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+            "totalFrames": 46,
+            "generation": 3,
+            "canvases": 1
+          }
+        },
+        {
+          "stopped": {
+            "phase": "disposed",
+            "error": null,
+            "frame": 13,
+            "tick": 18,
+            "maxStepsInFrame": 3,
+            "backend": null,
+            "meshes": 0,
+            "activeMeshes": 0,
+            "engines": 0,
+            "listeners": 0,
+            "width": 1024,
+            "height": 640,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "depthWitness": "",
+            "projectedRoofEnvelope": "",
+            "frameIntervalMsMedian": 22.5,
+            "frameIntervalMsP95": 61.29999999888241,
+            "drawCalls": 0,
+            "study": null,
+            "triangles": 0,
+            "materials": 0,
+            "textures": 0,
+            "renderCpuMsMedian": 0.599999999627471,
+            "cameraEye": null,
+            "cameraTarget": null,
+            "fixture": "p01-depth",
+            "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+            "totalFrames": 56,
+            "generation": 3,
+            "canvases": 1
+          },
+          "restarted": {
+            "phase": "ready",
+            "error": null,
+            "frame": 4,
+            "tick": 5,
+            "maxStepsInFrame": 4,
+            "backend": "WebGL2",
+            "meshes": 4,
+            "activeMeshes": 4,
+            "engines": 1,
+            "listeners": 2,
+            "width": 1024,
+            "height": 640,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "depthWitness": "",
+            "projectedRoofEnvelope": "",
+            "frameIntervalMsMedian": 19.199999999254942,
+            "frameIntervalMsP95": 68.70000000111759,
+            "drawCalls": 4,
+            "study": null,
+            "triangles": 48,
+            "materials": 3,
+            "textures": 0,
+            "renderCpuMsMedian": 0.40000000037252903,
+            "cameraEye": "11.999999999999995,9,-17.000000000000004",
+            "cameraTarget": "0,1.5,0",
+            "fixture": "p01-depth",
+            "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+            "totalFrames": 60,
+            "generation": 4,
+            "canvases": 1
+          }
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

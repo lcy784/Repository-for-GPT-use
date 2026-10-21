@@ -1,0 +1,325 @@
+{
+  "runId": "2026-10-21T14-32-03-259Z-08dcc1b5",
+  "through": "P02",
+  "candidate": "f1f817485ebf8e7ec6c257de44a38ced62bf2b4272c17aa6bd7f6a47df2bae99",
+  "status": "FAIL",
+  "stages": [
+    {
+      "runId": "2026-10-21T14-32-03-259Z-08dcc1b5",
+      "candidate": "f1f817485ebf8e7ec6c257de44a38ced62bf2b4272c17aa6bd7f6a47df2bae99",
+      "stage": "P00",
+      "status": "PASS",
+      "cases": [
+        {
+          "id": "P00-01",
+          "status": "PASS",
+          "executed": 5,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P00-input-checks.log",
+              "sha256": "9755161012e68396876bfa6e17a025c7d9b510636fb99421bca23e707feb8703"
+            },
+            {
+              "path": "candidate-contracts.json",
+              "sha256": "2cdd9906c24cb342632586e76bc1711a1b64a4270adb60316e4c17bab4d61a57"
+            },
+            {
+              "path": "P00-vitest.json",
+              "sha256": "d4939d8d8de2e0421125d368a09312219c339cb9323bfa5c0eea81d179790ce7"
+            },
+            {
+              "path": "P00-vitest.log",
+              "sha256": "54f81f798093ba1a4264acc49786f1b9a444ddaf26ceac3bf50dd04701df9921"
+            }
+          ]
+        },
+        {
+          "id": "P00-02",
+          "status": "PASS",
+          "executed": 13,
+          "evidence": [
+            {
+              "path": "P00-vitest.json",
+              "sha256": "d4939d8d8de2e0421125d368a09312219c339cb9323bfa5c0eea81d179790ce7"
+            },
+            {
+              "path": "P00-vitest.log",
+              "sha256": "54f81f798093ba1a4264acc49786f1b9a444ddaf26ceac3bf50dd04701df9921"
+            }
+          ]
+        },
+        {
+          "id": "P00-03",
+          "status": "PASS",
+          "executed": 4,
+          "evidence": [
+            {
+              "path": "P00-vitest.json",
+              "sha256": "d4939d8d8de2e0421125d368a09312219c339cb9323bfa5c0eea81d179790ce7"
+            },
+            {
+              "path": "P00-vitest.log",
+              "sha256": "54f81f798093ba1a4264acc49786f1b9a444ddaf26ceac3bf50dd04701df9921"
+            }
+          ]
+        },
+        {
+          "id": "P00-04",
+          "status": "PASS",
+          "executed": 9,
+          "evidence": [
+            {
+              "path": "P00-vitest.json",
+              "sha256": "d4939d8d8de2e0421125d368a09312219c339cb9323bfa5c0eea81d179790ce7"
+            },
+            {
+              "path": "P00-vitest.log",
+              "sha256": "54f81f798093ba1a4264acc49786f1b9a444ddaf26ceac3bf50dd04701df9921"
+            }
+          ]
+        }
+      ],
+      "automaticTests": 30,
+      "startedAt": "2026-10-21T14:32:03.292Z",
+      "endedAt": "2026-10-21T14:32:05.036Z",
+      "exitCode": 0,
+      "signal": null,
+      "environment": {
+        "node": "24.19.0",
+        "os": "linux",
+        "arch": "x64"
+      }
+    },
+    {
+      "runId": "2026-10-21T14-32-03-259Z-08dcc1b5",
+      "candidate": "f1f817485ebf8e7ec6c257de44a38ced62bf2b4272c17aa6bd7f6a47df2bae99",
+      "stage": "P01",
+      "status": "PASS",
+      "cases": [
+        {
+          "id": "P01-01",
+          "status": "PASS",
+          "executed": 2,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "246928a85de2a1aef9c3782fa543b8a912a2bd74f68ef6faba5973457e2b73ec"
+            },
+            {
+              "path": "P01-build-and-tests.log",
+              "sha256": "3aa72141ea72066d7dbc48f23c96616be537dff9f2c08a86872613df7ba47884"
+            },
+            {
+              "path": "P01-browser/results.json",
+              "sha256": "cbfbfde85d9c52dfd89baaff88b1684a5b47baf5de76a49904e29f19a7b10eba"
+            },
+            {
+              "path": "P01-browser.log",
+              "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+            },
+            {
+              "path": "P01-browser/production-camera-a.png",
+              "sha256": "27e8291c2f32c62f3dbb8362c7c7f4d9d44f9209ff26c4c7f91514f87905e848"
+            },
+            {
+              "path": "P01-browser/production-camera-b.png",
+              "sha256": "a353242133c5d17db385267c3c97d88842e529fa40397d9b57b65fd3f10fb343"
+            },
+            {
+              "path": "P01-browser/development-camera-a.png",
+              "sha256": "27e8291c2f32c62f3dbb8362c7c7f4d9d44f9209ff26c4c7f91514f87905e848"
+            },
+            {
+              "path": "P01-browser/development-camera-b.png",
+              "sha256": "a353242133c5d17db385267c3c97d88842e529fa40397d9b57b65fd3f10fb343"
+            }
+          ]
+        },
+        {
+          "id": "P01-02",
+          "status": "PASS",
+          "executed": 4,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "246928a85de2a1aef9c3782fa543b8a912a2bd74f68ef6faba5973457e2b73ec"
+            },
+            {
+              "path": "P01-build-and-tests.log",
+              "sha256": "3aa72141ea72066d7dbc48f23c96616be537dff9f2c08a86872613df7ba47884"
+            },
+            {
+              "path": "P01-browser/results.json",
+              "sha256": "cbfbfde85d9c52dfd89baaff88b1684a5b47baf5de76a49904e29f19a7b10eba"
+            },
+            {
+              "path": "P01-browser.log",
+              "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+            }
+          ]
+        },
+        {
+          "id": "P01-03",
+          "status": "PASS",
+          "executed": 7,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "246928a85de2a1aef9c3782fa543b8a912a2bd74f68ef6faba5973457e2b73ec"
+            },
+            {
+              "path": "P01-build-and-tests.log",
+              "sha256": "3aa72141ea72066d7dbc48f23c96616be537dff9f2c08a86872613df7ba47884"
+            },
+            {
+              "path": "P01-browser/results.json",
+              "sha256": "cbfbfde85d9c52dfd89baaff88b1684a5b47baf5de76a49904e29f19a7b10eba"
+            },
+            {
+              "path": "P01-browser.log",
+              "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+            },
+            {
+              "path": "P01-clock-tests.json",
+              "sha256": "d0308835c0604dea5778f35d68670809c3778327f551a50fd28e511b37c3d02e"
+            },
+            {
+              "path": "P01-clock-tests.log",
+              "sha256": "2fee228fb3b2be56f1dc2fd897d8f2e4863a8cbbdbe27c9b1e5994bb04f065d4"
+            }
+          ]
+        },
+        {
+          "id": "P01-04",
+          "status": "PASS",
+          "executed": 6,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "246928a85de2a1aef9c3782fa543b8a912a2bd74f68ef6faba5973457e2b73ec"
+            },
+            {
+              "path": "P01-build-and-tests.log",
+              "sha256": "3aa72141ea72066d7dbc48f23c96616be537dff9f2c08a86872613df7ba47884"
+            },
+            {
+              "path": "P01-browser/results.json",
+              "sha256": "cbfbfde85d9c52dfd89baaff88b1684a5b47baf5de76a49904e29f19a7b10eba"
+            },
+            {
+              "path": "P01-browser.log",
+              "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+            }
+          ]
+        }
+      ],
+      "environment": {
+        "browser": "154.0.8037.57",
+        "display": "real Chromium tabs on cloud Xvfb",
+        "graphics": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "node": "24.19.0",
+        "os": "linux",
+        "arch": "x64"
+      },
+      "buildManifest": {
+        "path": "P01-production-manifest.json",
+        "sha256": "246928a85de2a1aef9c3782fa543b8a912a2bd74f68ef6faba5973457e2b73ec"
+      },
+      "startedAt": "2026-10-21T14:32:05.038Z",
+      "endedAt": "2026-10-21T14:32:29.144Z",
+      "exitCode": 0,
+      "signal": null
+    },
+    {
+      "runId": "2026-10-21T14-32-03-259Z-08dcc1b5",
+      "candidate": "f1f817485ebf8e7ec6c257de44a38ced62bf2b4272c17aa6bd7f6a47df2bae99",
+      "stage": "P02",
+      "status": "FAIL",
+      "cases": [
+        {
+          "id": "P02-01",
+          "status": "FAIL",
+          "executed": 1,
+          "details": [
+            "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#camera')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"camera\" type=\"button\">切换观察位置</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\n    at /workspace/tiangong-development/scripts/quality/p02-browser.mjs:40:34\n\n1 !== 0\n"
+          ],
+          "evidence": [
+            {
+              "path": "P02-failure.log",
+              "sha256": "137941df4cb57ec2b87775ee1474ea7b8fb55179586a6fb4bfc0de44c8cc7421"
+            }
+          ]
+        },
+        {
+          "id": "P02-02",
+          "status": "FAIL",
+          "executed": 1,
+          "details": [
+            "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#camera')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"camera\" type=\"button\">切换观察位置</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\n    at /workspace/tiangong-development/scripts/quality/p02-browser.mjs:40:34\n\n1 !== 0\n"
+          ],
+          "evidence": [
+            {
+              "path": "P02-failure.log",
+              "sha256": "137941df4cb57ec2b87775ee1474ea7b8fb55179586a6fb4bfc0de44c8cc7421"
+            }
+          ]
+        },
+        {
+          "id": "P02-03",
+          "status": "FAIL",
+          "executed": 1,
+          "details": [
+            "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#camera')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"camera\" type=\"button\">切换观察位置</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\n    at /workspace/tiangong-development/scripts/quality/p02-browser.mjs:40:34\n\n1 !== 0\n"
+          ],
+          "evidence": [
+            {
+              "path": "P02-failure.log",
+              "sha256": "137941df4cb57ec2b87775ee1474ea7b8fb55179586a6fb4bfc0de44c8cc7421"
+            }
+          ]
+        },
+        {
+          "id": "P02-04",
+          "status": "FAIL",
+          "executed": 1,
+          "details": [
+            "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#camera')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"camera\" type=\"button\">切换观察位置</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\n    at /workspace/tiangong-development/scripts/quality/p02-browser.mjs:40:34\n\n1 !== 0\n"
+          ],
+          "evidence": [
+            {
+              "path": "P02-failure.log",
+              "sha256": "137941df4cb57ec2b87775ee1474ea7b8fb55179586a6fb4bfc0de44c8cc7421"
+            }
+          ]
+        }
+      ],
+      "startedAt": "2026-10-21T14:32:29.147Z",
+      "endedAt": "2026-10-21T14:34:51.686Z",
+      "exitCode": 0,
+      "signal": null,
+      "environment": {
+        "node": "24.19.0",
+        "os": "linux",
+        "arch": "x64"
+      }
+    }
+  ],
+  "nextStageEligible": false,
+  "packages": {
+    "A": "not-yet-delivered",
+    "B": "not-yet-delivered",
+    "P01": {
+      "path": "P01-production-manifest.json",
+      "sha256": "246928a85de2a1aef9c3782fa543b8a912a2bd74f68ef6faba5973457e2b73ec"
+    }
+  }
+}

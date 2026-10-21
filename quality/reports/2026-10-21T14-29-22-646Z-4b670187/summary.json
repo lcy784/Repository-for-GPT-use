@@ -1,0 +1,238 @@
+{
+  "runId": "2026-10-21T14-29-22-646Z-4b670187",
+  "through": "P02",
+  "candidate": "46eff7703b68dbe5045c41a4a64e11b753b0e3c60c4c4d12bbe935f7a965cf04",
+  "status": "FAIL",
+  "stages": [
+    {
+      "runId": "2026-10-21T14-29-22-646Z-4b670187",
+      "candidate": "46eff7703b68dbe5045c41a4a64e11b753b0e3c60c4c4d12bbe935f7a965cf04",
+      "stage": "P00",
+      "status": "PASS",
+      "cases": [
+        {
+          "id": "P00-01",
+          "status": "PASS",
+          "executed": 5,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P00-input-checks.log",
+              "sha256": "9755161012e68396876bfa6e17a025c7d9b510636fb99421bca23e707feb8703"
+            },
+            {
+              "path": "candidate-contracts.json",
+              "sha256": "a744de40a9c6a0ad50c3fdc716538368ac3e7b697a9065888d5f4e338bf0fd46"
+            },
+            {
+              "path": "P00-vitest.json",
+              "sha256": "6da035cfb03b8a0a6dfe5dfe65187f8f93d64e9e41508f87ee6d2f88538ab865"
+            },
+            {
+              "path": "P00-vitest.log",
+              "sha256": "f993e449e0407d8be47d51b6e47a551a5fc408017df145f39f25eccf3631c8f6"
+            }
+          ]
+        },
+        {
+          "id": "P00-02",
+          "status": "PASS",
+          "executed": 13,
+          "evidence": [
+            {
+              "path": "P00-vitest.json",
+              "sha256": "6da035cfb03b8a0a6dfe5dfe65187f8f93d64e9e41508f87ee6d2f88538ab865"
+            },
+            {
+              "path": "P00-vitest.log",
+              "sha256": "f993e449e0407d8be47d51b6e47a551a5fc408017df145f39f25eccf3631c8f6"
+            }
+          ]
+        },
+        {
+          "id": "P00-03",
+          "status": "PASS",
+          "executed": 4,
+          "evidence": [
+            {
+              "path": "P00-vitest.json",
+              "sha256": "6da035cfb03b8a0a6dfe5dfe65187f8f93d64e9e41508f87ee6d2f88538ab865"
+            },
+            {
+              "path": "P00-vitest.log",
+              "sha256": "f993e449e0407d8be47d51b6e47a551a5fc408017df145f39f25eccf3631c8f6"
+            }
+          ]
+        },
+        {
+          "id": "P00-04",
+          "status": "PASS",
+          "executed": 9,
+          "evidence": [
+            {
+              "path": "P00-vitest.json",
+              "sha256": "6da035cfb03b8a0a6dfe5dfe65187f8f93d64e9e41508f87ee6d2f88538ab865"
+            },
+            {
+              "path": "P00-vitest.log",
+              "sha256": "f993e449e0407d8be47d51b6e47a551a5fc408017df145f39f25eccf3631c8f6"
+            }
+          ]
+        }
+      ],
+      "automaticTests": 30,
+      "startedAt": "2026-10-21T14:29:22.753Z",
+      "endedAt": "2026-10-21T14:29:27.942Z",
+      "exitCode": 0,
+      "signal": null,
+      "environment": {
+        "node": "24.19.0",
+        "os": "linux",
+        "arch": "x64"
+      }
+    },
+    {
+      "runId": "2026-10-21T14-29-22-646Z-4b670187",
+      "candidate": "46eff7703b68dbe5045c41a4a64e11b753b0e3c60c4c4d12bbe935f7a965cf04",
+      "stage": "P01",
+      "status": "FAIL",
+      "cases": [
+        {
+          "id": "P01-01",
+          "status": "FAIL",
+          "executed": 1,
+          "details": [
+            "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)',\n+   'Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)',\n+   'Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)',\n+   'Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)',\n+   'Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)',\n+   'Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)',\n+   'Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)',\n+   'Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)',\n+   'Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)',\n+   'Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)',\n+   'Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)',\n+   'Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)',\n+   'Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)'\n+ ]\n- []\n\n    at file:///workspace/tiangong-development/scripts/quality/p01-browser.mjs:122:55\n    at async check (file:///workspace/tiangong-development/scripts/quality/p01-browser.mjs:98:48)\n    at async file:///workspace/tiangong-development/scripts/quality/p01-browser.mjs:109:3"
+          ],
+          "evidence": [
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "112a3969829a4d3af7b9c560a59f656231b84a7932b3499b14f94429325c3ddf"
+            },
+            {
+              "path": "P01-build-and-tests.log",
+              "sha256": "05cf6551ea5a09422864a6b77d64daadd667eb7759b0b97b9449b02727db701b"
+            },
+            {
+              "path": "P01-browser/results.json",
+              "sha256": "f53daea5289b61f089657debaa95552af7ab59c8bd2546196af4de7dd7dcd633"
+            },
+            {
+              "path": "P01-browser.log",
+              "sha256": "1e8c73879eb84bb6d2360eaf220ed8133126f636157369fd8b2e54344e88d43e"
+            }
+          ]
+        },
+        {
+          "id": "P01-02",
+          "status": "PASS",
+          "executed": 4,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "112a3969829a4d3af7b9c560a59f656231b84a7932b3499b14f94429325c3ddf"
+            },
+            {
+              "path": "P01-build-and-tests.log",
+              "sha256": "05cf6551ea5a09422864a6b77d64daadd667eb7759b0b97b9449b02727db701b"
+            },
+            {
+              "path": "P01-browser/results.json",
+              "sha256": "f53daea5289b61f089657debaa95552af7ab59c8bd2546196af4de7dd7dcd633"
+            },
+            {
+              "path": "P01-browser.log",
+              "sha256": "1e8c73879eb84bb6d2360eaf220ed8133126f636157369fd8b2e54344e88d43e"
+            }
+          ]
+        },
+        {
+          "id": "P01-03",
+          "status": "PASS",
+          "executed": 7,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "112a3969829a4d3af7b9c560a59f656231b84a7932b3499b14f94429325c3ddf"
+            },
+            {
+              "path": "P01-build-and-tests.log",
+              "sha256": "05cf6551ea5a09422864a6b77d64daadd667eb7759b0b97b9449b02727db701b"
+            },
+            {
+              "path": "P01-browser/results.json",
+              "sha256": "f53daea5289b61f089657debaa95552af7ab59c8bd2546196af4de7dd7dcd633"
+            },
+            {
+              "path": "P01-browser.log",
+              "sha256": "1e8c73879eb84bb6d2360eaf220ed8133126f636157369fd8b2e54344e88d43e"
+            },
+            {
+              "path": "P01-clock-tests.json",
+              "sha256": "db5b22d0b849281e55f31b6829653b827e4533e66779a480cb3ea8069b1ce4e3"
+            },
+            {
+              "path": "P01-clock-tests.log",
+              "sha256": "2ae2fbe48d1189bb2b703fe42df737cd9d062f08cb621e0bd58e2bece9fe7bb0"
+            }
+          ]
+        },
+        {
+          "id": "P01-04",
+          "status": "PASS",
+          "executed": 6,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "112a3969829a4d3af7b9c560a59f656231b84a7932b3499b14f94429325c3ddf"
+            },
+            {
+              "path": "P01-build-and-tests.log",
+              "sha256": "05cf6551ea5a09422864a6b77d64daadd667eb7759b0b97b9449b02727db701b"
+            },
+            {
+              "path": "P01-browser/results.json",
+              "sha256": "f53daea5289b61f089657debaa95552af7ab59c8bd2546196af4de7dd7dcd633"
+            },
+            {
+              "path": "P01-browser.log",
+              "sha256": "1e8c73879eb84bb6d2360eaf220ed8133126f636157369fd8b2e54344e88d43e"
+            }
+          ]
+        }
+      ],
+      "environment": {
+        "browser": "154.0.8037.57",
+        "display": "real Chromium tabs on cloud Xvfb",
+        "graphics": "not-observed",
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "node": "24.19.0",
+        "os": "linux",
+        "arch": "x64"
+      },
+      "buildManifest": {
+        "path": "P01-production-manifest.json",
+        "sha256": "112a3969829a4d3af7b9c560a59f656231b84a7932b3499b14f94429325c3ddf"
+      },
+      "startedAt": "2026-10-21T14:29:27.946Z",
+      "endedAt": "2026-10-21T14:30:00.885Z",
+      "exitCode": 0,
+      "signal": null
+    }
+  ],
+  "nextStageEligible": false,
+  "packages": {
+    "A": "not-yet-delivered",
+    "B": "not-yet-delivered",
+    "P01": {
+      "path": "P01-production-manifest.json",
+      "sha256": "112a3969829a4d3af7b9c560a59f656231b84a7932b3499b14f94429325c3ddf"
+    }
+  }
+}

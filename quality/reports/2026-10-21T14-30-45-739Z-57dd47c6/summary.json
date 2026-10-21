@@ -1,0 +1,325 @@
+{
+  "runId": "2026-10-21T14-30-45-739Z-57dd47c6",
+  "through": "P02",
+  "candidate": "448dea7df44d14b6dfef552ccbb9eedb88011f19423f1ca4889da60fbda415fd",
+  "status": "FAIL",
+  "stages": [
+    {
+      "runId": "2026-10-21T14-30-45-739Z-57dd47c6",
+      "candidate": "448dea7df44d14b6dfef552ccbb9eedb88011f19423f1ca4889da60fbda415fd",
+      "stage": "P00",
+      "status": "PASS",
+      "cases": [
+        {
+          "id": "P00-01",
+          "status": "PASS",
+          "executed": 5,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P00-input-checks.log",
+              "sha256": "9755161012e68396876bfa6e17a025c7d9b510636fb99421bca23e707feb8703"
+            },
+            {
+              "path": "candidate-contracts.json",
+              "sha256": "78933770aa83d3eff6239656485fc93d4c6e82c89b762ee4f6d56fd76aae7b0f"
+            },
+            {
+              "path": "P00-vitest.json",
+              "sha256": "4dc197401ff405a6d079b3b318012f8d07c4a53f9637394ad693fb9ba55ff322"
+            },
+            {
+              "path": "P00-vitest.log",
+              "sha256": "6fefb59912b4065f004978377d529cc8bc599c4b8901c4e6d7fe1d2e5cafd318"
+            }
+          ]
+        },
+        {
+          "id": "P00-02",
+          "status": "PASS",
+          "executed": 13,
+          "evidence": [
+            {
+              "path": "P00-vitest.json",
+              "sha256": "4dc197401ff405a6d079b3b318012f8d07c4a53f9637394ad693fb9ba55ff322"
+            },
+            {
+              "path": "P00-vitest.log",
+              "sha256": "6fefb59912b4065f004978377d529cc8bc599c4b8901c4e6d7fe1d2e5cafd318"
+            }
+          ]
+        },
+        {
+          "id": "P00-03",
+          "status": "PASS",
+          "executed": 4,
+          "evidence": [
+            {
+              "path": "P00-vitest.json",
+              "sha256": "4dc197401ff405a6d079b3b318012f8d07c4a53f9637394ad693fb9ba55ff322"
+            },
+            {
+              "path": "P00-vitest.log",
+              "sha256": "6fefb59912b4065f004978377d529cc8bc599c4b8901c4e6d7fe1d2e5cafd318"
+            }
+          ]
+        },
+        {
+          "id": "P00-04",
+          "status": "PASS",
+          "executed": 9,
+          "evidence": [
+            {
+              "path": "P00-vitest.json",
+              "sha256": "4dc197401ff405a6d079b3b318012f8d07c4a53f9637394ad693fb9ba55ff322"
+            },
+            {
+              "path": "P00-vitest.log",
+              "sha256": "6fefb59912b4065f004978377d529cc8bc599c4b8901c4e6d7fe1d2e5cafd318"
+            }
+          ]
+        }
+      ],
+      "automaticTests": 30,
+      "startedAt": "2026-10-21T14:30:45.769Z",
+      "endedAt": "2026-10-21T14:30:47.560Z",
+      "exitCode": 0,
+      "signal": null,
+      "environment": {
+        "node": "24.19.0",
+        "os": "linux",
+        "arch": "x64"
+      }
+    },
+    {
+      "runId": "2026-10-21T14-30-45-739Z-57dd47c6",
+      "candidate": "448dea7df44d14b6dfef552ccbb9eedb88011f19423f1ca4889da60fbda415fd",
+      "stage": "P01",
+      "status": "PASS",
+      "cases": [
+        {
+          "id": "P01-01",
+          "status": "PASS",
+          "executed": 2,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "8789d485c305873d17cd0d2e42cdb82ece518d554485b148f291e336a6cb9b2d"
+            },
+            {
+              "path": "P01-build-and-tests.log",
+              "sha256": "fc05658d64b2c73653ce44762dd553b662612870e1ce2623729e15a434e0b109"
+            },
+            {
+              "path": "P01-browser/results.json",
+              "sha256": "2bc3e3fb9dee4d2d6809878afb2b80637535d3f903c1aba1479fc4c7d9ea65bd"
+            },
+            {
+              "path": "P01-browser.log",
+              "sha256": "d1857be8a271257aaed5dbf067bf898317fc2b16da8019579493e36864525fc7"
+            },
+            {
+              "path": "P01-browser/production-camera-a.png",
+              "sha256": "27e8291c2f32c62f3dbb8362c7c7f4d9d44f9209ff26c4c7f91514f87905e848"
+            },
+            {
+              "path": "P01-browser/production-camera-b.png",
+              "sha256": "a353242133c5d17db385267c3c97d88842e529fa40397d9b57b65fd3f10fb343"
+            },
+            {
+              "path": "P01-browser/development-camera-a.png",
+              "sha256": "27e8291c2f32c62f3dbb8362c7c7f4d9d44f9209ff26c4c7f91514f87905e848"
+            },
+            {
+              "path": "P01-browser/development-camera-b.png",
+              "sha256": "a353242133c5d17db385267c3c97d88842e529fa40397d9b57b65fd3f10fb343"
+            }
+          ]
+        },
+        {
+          "id": "P01-02",
+          "status": "PASS",
+          "executed": 4,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "8789d485c305873d17cd0d2e42cdb82ece518d554485b148f291e336a6cb9b2d"
+            },
+            {
+              "path": "P01-build-and-tests.log",
+              "sha256": "fc05658d64b2c73653ce44762dd553b662612870e1ce2623729e15a434e0b109"
+            },
+            {
+              "path": "P01-browser/results.json",
+              "sha256": "2bc3e3fb9dee4d2d6809878afb2b80637535d3f903c1aba1479fc4c7d9ea65bd"
+            },
+            {
+              "path": "P01-browser.log",
+              "sha256": "d1857be8a271257aaed5dbf067bf898317fc2b16da8019579493e36864525fc7"
+            }
+          ]
+        },
+        {
+          "id": "P01-03",
+          "status": "PASS",
+          "executed": 7,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "8789d485c305873d17cd0d2e42cdb82ece518d554485b148f291e336a6cb9b2d"
+            },
+            {
+              "path": "P01-build-and-tests.log",
+              "sha256": "fc05658d64b2c73653ce44762dd553b662612870e1ce2623729e15a434e0b109"
+            },
+            {
+              "path": "P01-browser/results.json",
+              "sha256": "2bc3e3fb9dee4d2d6809878afb2b80637535d3f903c1aba1479fc4c7d9ea65bd"
+            },
+            {
+              "path": "P01-browser.log",
+              "sha256": "d1857be8a271257aaed5dbf067bf898317fc2b16da8019579493e36864525fc7"
+            },
+            {
+              "path": "P01-clock-tests.json",
+              "sha256": "42df59e9fbbf5d45c7059d4be00ca8604f0f872fcefd59fe3e7869dbadd39fc7"
+            },
+            {
+              "path": "P01-clock-tests.log",
+              "sha256": "b6f1149f79c5a7cc28d45036ed4c9155bf58323c4f1cb719c6a22bc8954d7187"
+            }
+          ]
+        },
+        {
+          "id": "P01-04",
+          "status": "PASS",
+          "executed": 6,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "8789d485c305873d17cd0d2e42cdb82ece518d554485b148f291e336a6cb9b2d"
+            },
+            {
+              "path": "P01-build-and-tests.log",
+              "sha256": "fc05658d64b2c73653ce44762dd553b662612870e1ce2623729e15a434e0b109"
+            },
+            {
+              "path": "P01-browser/results.json",
+              "sha256": "2bc3e3fb9dee4d2d6809878afb2b80637535d3f903c1aba1479fc4c7d9ea65bd"
+            },
+            {
+              "path": "P01-browser.log",
+              "sha256": "d1857be8a271257aaed5dbf067bf898317fc2b16da8019579493e36864525fc7"
+            }
+          ]
+        }
+      ],
+      "environment": {
+        "browser": "154.0.8037.57",
+        "display": "real Chromium tabs on cloud Xvfb",
+        "graphics": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "node": "24.19.0",
+        "os": "linux",
+        "arch": "x64"
+      },
+      "buildManifest": {
+        "path": "P01-production-manifest.json",
+        "sha256": "8789d485c305873d17cd0d2e42cdb82ece518d554485b148f291e336a6cb9b2d"
+      },
+      "startedAt": "2026-10-21T14:30:47.562Z",
+      "endedAt": "2026-10-21T14:31:11.059Z",
+      "exitCode": 0,
+      "signal": null
+    },
+    {
+      "runId": "2026-10-21T14-30-45-739Z-57dd47c6",
+      "candidate": "448dea7df44d14b6dfef552ccbb9eedb88011f19423f1ca4889da60fbda415fd",
+      "stage": "P02",
+      "status": "FAIL",
+      "cases": [
+        {
+          "id": "P02-01",
+          "status": "FAIL",
+          "executed": 1,
+          "details": [
+            "ENOENT: no such file or directory, open '/workspace/tiangong-development/quality/reports/2026-10-21T14-30-45-739Z-57dd47c6/P02-browser/results.json'"
+          ],
+          "evidence": [
+            {
+              "path": "P02-failure.log",
+              "sha256": "c6c0af053dd1228520e556f7a86b6e0d77e97d8b9e23d9ae5a5a9d2171426d8a"
+            }
+          ]
+        },
+        {
+          "id": "P02-02",
+          "status": "FAIL",
+          "executed": 1,
+          "details": [
+            "ENOENT: no such file or directory, open '/workspace/tiangong-development/quality/reports/2026-10-21T14-30-45-739Z-57dd47c6/P02-browser/results.json'"
+          ],
+          "evidence": [
+            {
+              "path": "P02-failure.log",
+              "sha256": "c6c0af053dd1228520e556f7a86b6e0d77e97d8b9e23d9ae5a5a9d2171426d8a"
+            }
+          ]
+        },
+        {
+          "id": "P02-03",
+          "status": "FAIL",
+          "executed": 1,
+          "details": [
+            "ENOENT: no such file or directory, open '/workspace/tiangong-development/quality/reports/2026-10-21T14-30-45-739Z-57dd47c6/P02-browser/results.json'"
+          ],
+          "evidence": [
+            {
+              "path": "P02-failure.log",
+              "sha256": "c6c0af053dd1228520e556f7a86b6e0d77e97d8b9e23d9ae5a5a9d2171426d8a"
+            }
+          ]
+        },
+        {
+          "id": "P02-04",
+          "status": "FAIL",
+          "executed": 1,
+          "details": [
+            "ENOENT: no such file or directory, open '/workspace/tiangong-development/quality/reports/2026-10-21T14-30-45-739Z-57dd47c6/P02-browser/results.json'"
+          ],
+          "evidence": [
+            {
+              "path": "P02-failure.log",
+              "sha256": "c6c0af053dd1228520e556f7a86b6e0d77e97d8b9e23d9ae5a5a9d2171426d8a"
+            }
+          ]
+        }
+      ],
+      "startedAt": "2026-10-21T14:31:11.062Z",
+      "endedAt": "2026-10-21T14:31:21.801Z",
+      "exitCode": 0,
+      "signal": null,
+      "environment": {
+        "node": "24.19.0",
+        "os": "linux",
+        "arch": "x64"
+      }
+    }
+  ],
+  "nextStageEligible": false,
+  "packages": {
+    "A": "not-yet-delivered",
+    "B": "not-yet-delivered",
+    "P01": {
+      "path": "P01-production-manifest.json",
+      "sha256": "8789d485c305873d17cd0d2e42cdb82ece518d554485b148f291e336a6cb9b2d"
+    }
+  }
+}

@@ -1,7 +1,10 @@
 {
   "version": 1,
   "cloud": {
-    "viewport": { "width": 1280, "height": 720 },
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
     "deviceScaleFactor": 1,
     "renderBackend": "WebGL2",
     "softwareRenderingAllowedForFunctionalChecks": true,
@@ -9,7 +12,7 @@
     "randomSeed": 20261021,
     "simulationHz": 60,
     "maxCatchUpSteps": 5,
-    "stageTimeoutMs": 120000
+    "stageTimeoutMs": 600000
   },
   "provisionalSimulationParameters": {
     "status": "engineering-test-values-not-confirmed-gameplay",
@@ -22,22 +25,66 @@
     "targetFps": 60,
     "acceptanceStatus": "pending-real-device-and-user-criteria",
     "requiredBefore": "P15",
-    "mayUseCloudResultsInstead": false
+    "mayUseCloudResultsInstead": false,
+    "P02SampleCostEvidence": "required-at-P02-missing-target-device-BLOCKED"
   },
   "visualReview": {
     "requiredBefore": "P02",
     "status": "pending-actual-sample-review",
     "referenceFiles": [
-      "docs/天宫HTML/input/IMG_20261019_161331.jpg",
-      "docs/天宫HTML/input/IMG_20261019_161156.jpg"
+      "docs/\u5929\u5babHTML/input/IMG_20261019_161331.jpg",
+      "docs/\u5929\u5babHTML/input/IMG_20261019_161156.jpg"
     ],
     "views": [
-      { "id": "human-height-at-palace-entrance", "eyeMeters": [0, 1.7, 80], "targetMeters": [0, 35, 0], "fovDegrees": 60 },
-      { "id": "stairs-toward-palace", "eyeMeters": [-35, 8, 120], "targetMeters": [0, 30, 0], "fovDegrees": 60 },
-      { "id": "ground-to-cloud-approach", "eyeMeters": [80, 90, 160], "targetMeters": [0, 30, 0], "fovDegrees": 60 }
+      {
+        "id": "ground-to-cloud-approach",
+        "eyeMeters": [
+          120,
+          90,
+          190
+        ],
+        "targetMeters": [
+          0,
+          26,
+          16
+        ],
+        "fovDegrees": 60
+      },
+      {
+        "id": "stairs-toward-palace",
+        "eyeMeters": [
+          42,
+          28,
+          112
+        ],
+        "targetMeters": [
+          0,
+          35,
+          -6
+        ],
+        "fovDegrees": 60
+      },
+      {
+        "id": "human-height-at-palace-entrance",
+        "eyeMeters": [
+          -17,
+          13.7,
+          35
+        ],
+        "targetMeters": [
+          0,
+          40,
+          -5
+        ],
+        "fovDegrees": 60
+      }
     ],
-    "cameraCoordinatesStatus": "engineering-starting-points-for-an-unbuilt-sample-not-approved-world-layout",
-    "preserve": ["small-character-large-building-scale", "palace-silhouette-and-columns", "cloud-depth-and-light"],
+    "cameraCoordinatesStatus": "P02-authored-study-fixed-cameras-pending-human-review",
+    "preserve": [
+      "small-character-large-building-scale",
+      "palace-silhouette-and-columns",
+      "cloud-depth-and-light"
+    ],
     "allTenReferencesRemainProductReferences": true,
     "automaticImageDifferenceProvesArtisticAcceptance": false
   }

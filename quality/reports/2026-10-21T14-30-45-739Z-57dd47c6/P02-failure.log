@@ -1,0 +1,7 @@
+Error: ENOENT: no such file or directory, open '/workspace/tiangong-development/quality/reports/2026-10-21T14-30-45-739Z-57dd47c6/P02-browser/results.json'
+    at readFileSync (node:fs:484:20)
+    at readJson (file:///workspace/tiangong-development/scripts/quality/lib.mjs:8:48)
+    at file:///workspace/tiangong-development/scripts/quality/stages/P02.mjs:17:69
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)

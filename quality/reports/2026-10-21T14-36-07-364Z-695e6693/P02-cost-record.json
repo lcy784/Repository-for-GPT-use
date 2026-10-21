@@ -1,0 +1,201 @@
+{
+  "runId": "2026-10-21T14-36-07-364Z-695e6693",
+  "candidate": "43cc46b4df784d771ef8637c79b868eecc0dbf1c3b374bd367b7b88fd8de661e",
+  "cloudOnly": true,
+  "targetDeviceStatus": "BLOCKED-missing-real-Windows-device",
+  "note": "RAF intervals include software rendering, GPU command latency and browser test capture overhead. CPU render submission time is not GPU time or target FPS. No hardware budget is approved from these readings.",
+  "browser": "154.0.8037.57",
+  "views": [
+    {
+      "camera": 0,
+      "phase": "ready",
+      "error": null,
+      "frame": 27,
+      "tick": 106,
+      "maxStepsInFrame": 5,
+      "backend": "WebGL2",
+      "meshes": 13,
+      "activeMeshes": 11,
+      "engines": 1,
+      "listeners": 2,
+      "width": 1280,
+      "height": 720,
+      "visibility": "visible",
+      "visibilityTransitions": 0,
+      "glError": 0,
+      "depthWitness": "[{\"screenX\":0.43,\"hit\":\"palace/vermilion-lacquer\",\"distance\":245.91751822546829,\"point\":[-40.14999999999996,14.062598951964944,19.381655286834473]},{\"screenX\":0.5,\"hit\":\"palace/pale-stone-carving\",\"distance\":244.49989662706102,\"point\":[-11.934583099157535,13.725918567363507,-1.3234050706327025]},{\"screenX\":0.57,\"hit\":\"palace/recess-shadow\",\"distance\":200.08291576528833,\"point\":[36.55301925837517,28.21088988926472,18.850000762939487]}]",
+      "projectedRoofEnvelope": "[[631.0903138560149,256.9347763658822,0.9997042987219847],[491.6647909197585,283.02255310039885,0.9996041717667671],[630.8905536262462,208.45324928265194,0.9996969218857068],[487.2972782745607,220.12290646380117,0.9995915361368733],[870.6063797873906,278.8798281288666,0.9996200757454896],[779.9682469658643,323.50728210183865,0.9994487936439498],[877.1375798126357,218.25907496741257,0.9996083719123376],[785.641906009775,238.5535081805132,0.9994250996895947]]",
+      "frameIntervalMsMedian": 345.69999999925494,
+      "frameIntervalMsP95": 3268.0999999996275,
+      "drawCalls": 20,
+      "study": "{\"seed\":20261021,\"units\":\"metres\",\"terraceTop\":12,\"columnHeight\":36,\"ridgeHeight\":70,\"humanHeight\":1.75,\"footprint\":[120,100],\"frozenSun\":[-0.65,-1,-0.55]}",
+      "triangles": 230032,
+      "materials": 12,
+      "textures": 5,
+      "renderCpuMsMedian": 3.400000000372529,
+      "cameraEye": "120,90,189.99999999999997",
+      "cameraTarget": "0,26,16",
+      "fixture": "p02-palace",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "totalFrames": 27,
+      "generation": 1,
+      "canvases": 1
+    },
+    {
+      "camera": 1,
+      "phase": "ready",
+      "error": null,
+      "frame": 42,
+      "tick": 165,
+      "maxStepsInFrame": 5,
+      "backend": "WebGL2",
+      "meshes": 13,
+      "activeMeshes": 11,
+      "engines": 1,
+      "listeners": 2,
+      "width": 1280,
+      "height": 720,
+      "visibility": "visible",
+      "visibilityTransitions": 0,
+      "glError": 0,
+      "depthWitness": "[{\"screenX\":0.43,\"hit\":\"palace/vermilion-lacquer\",\"distance\":181.3879098760619,\"point\":[-42.51864714482276,33.88155426377767,-48.499999999999986]},{\"screenX\":0.5,\"hit\":\"palace/vermilion-lacquer\",\"distance\":170.35448733885974,\"point\":[-15.125722112863635,33.58066010833572,-48.5]},{\"screenX\":0.57,\"hit\":\"palace/recess-shadow\",\"distance\":94.97782246401907,\"point\":[23.196366847724004,31.08123642956093,18.850000762939445]}]",
+      "projectedRoofEnvelope": "[[525.2470256587346,324.4702524472349,0.999521062556447],[267.184331427772,270.5833661731794,0.9991288283860842],[525.9964973588562,251.83374138663248,0.9995244081586747],[271.4622388504846,143.58694117677265,0.9991392069862768],[923.759291075323,307.3669917122829,0.9993965801608042],[995.6455106511826,205.07149153771908,0.9986519984696732],[921.4592736760649,217.359993547388,0.9994017412193189],[989.4506684958889,13.430312890360737,0.9986760590291585]]",
+      "frameIntervalMsMedian": 1441.0999999996275,
+      "frameIntervalMsP95": 3189,
+      "drawCalls": 20,
+      "study": "{\"seed\":20261021,\"units\":\"metres\",\"terraceTop\":12,\"columnHeight\":36,\"ridgeHeight\":70,\"humanHeight\":1.75,\"footprint\":[120,100],\"frozenSun\":[-0.65,-1,-0.55]}",
+      "triangles": 230032,
+      "materials": 12,
+      "textures": 5,
+      "renderCpuMsMedian": 2,
+      "cameraEye": "42.000000000000014,27.999999999999996,112",
+      "cameraTarget": "0,35,-6",
+      "fixture": "p02-palace",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "totalFrames": 42,
+      "generation": 1,
+      "canvases": 1
+    },
+    {
+      "camera": 2,
+      "phase": "ready",
+      "error": null,
+      "frame": 67,
+      "tick": 282,
+      "maxStepsInFrame": 5,
+      "backend": "WebGL2",
+      "meshes": 13,
+      "activeMeshes": 9,
+      "engines": 1,
+      "listeners": 2,
+      "width": 1280,
+      "height": 720,
+      "visibility": "visible",
+      "visibilityTransitions": 0,
+      "glError": 0,
+      "depthWitness": "[{\"screenX\":0.43,\"hit\":\"palace/vermilion-lacquer\",\"distance\":13.716178514744502,\"point\":[-14.168745278147139,20.508695624531924,23.31490257411277]},{\"screenX\":0.5,\"hit\":\"palace/weathered-bronze\",\"distance\":73.82115652559843,\"point\":[8.075840330799888,50.50000152587891,-24.002568787229976]},{\"screenX\":0.57,\"hit\":\"palace/recess-shadow\",\"distance\":75.13704635897231,\"point\":[18.10958743555776,50.775,-20.258778511287616]}]",
+      "projectedRoofEnvelope": "[[62.32530115722723,404.2102714705855,0.998774218310887],[-2156.60699712814,-2354.475623596846,0.9883467398921064],[137.64132041539773,264.0994232708771,0.9989383862122022],[-529.3620364588886,-1374.5968069261296,0.9951467797415691],[806.1966289720154,512.2947307144343,0.999182763664259],[1528.3259325795127,170.88093212314632,0.9978922633149373],[790.9125624265132,403.52583984212765,0.9992609902876488],[1347.8617567019028,-0.034455105906819807,0.998327234645346]]",
+      "frameIntervalMsMedian": 2366.699999999255,
+      "frameIntervalMsP95": 4679.700000001118,
+      "drawCalls": 18,
+      "study": "{\"seed\":20261021,\"units\":\"metres\",\"terraceTop\":12,\"columnHeight\":36,\"ridgeHeight\":70,\"humanHeight\":1.75,\"footprint\":[120,100],\"frozenSun\":[-0.65,-1,-0.55]}",
+      "triangles": 229160,
+      "materials": 12,
+      "textures": 5,
+      "renderCpuMsMedian": 3.200000001117587,
+      "cameraEye": "-16.999999999999996,13.699999999999989,34.99999999999999",
+      "cameraTarget": "0,40,-5",
+      "fixture": "p02-palace",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "totalFrames": 67,
+      "generation": 1,
+      "canvases": 1
+    }
+  ],
+  "resources": {
+    "productionFiles": 73,
+    "productionBytes": 2238948,
+    "proceduralGpuResources": "created deterministically at runtime; no downloaded models or images",
+    "sourceManifest": {
+      "version": 1,
+      "sample": "P02-single-palace-study",
+      "generator": "src/runtime/palace.ts",
+      "authorship": "Original procedural geometry, seeded textures, sky and lighting authored for this repository. No third-party model or reference photograph is embedded in the runtime.",
+      "referenceIndex": "docs/天宫HTML/README.md",
+      "referenceUse": "Visual comparison only. Existing creator marks remain in archived images; no production asset licence inferred.",
+      "units": "metres",
+      "coordinateSystem": "right-handed-Y-up",
+      "seed": 20261021,
+      "dimensions": {
+        "terraceTop": 12,
+        "columnHeight": 36,
+        "ridgeHeight": 70,
+        "humanHeight": 1.75,
+        "approachStairRise": 12,
+        "approachStairLength": 76.8
+      },
+      "materialSources": [
+        "seeded-256px-stone-and-wood-fields",
+        "16px-local-daylight-cubemap",
+        "analytic-sky-gradient",
+        "original-solid-PBR-colours"
+      ],
+      "lighting": {
+        "sunDirection": [
+          -0.65,
+          -1,
+          -0.55
+        ],
+        "shadowMap": 1024,
+        "exposure": 1.13,
+        "contrast": 1.12,
+        "frozenTime": true
+      },
+      "collisionProxies": [
+        {
+          "mesh": "proxy/terrace",
+          "purpose": "authoring-only",
+          "enabled": false,
+          "centre": [
+            0,
+            11.75,
+            -9
+          ],
+          "size": [
+            125,
+            0.5,
+            103
+          ]
+        },
+        {
+          "mesh": "proxy/hall-roof-envelope",
+          "purpose": "authoring-only-coarse-envelope-not-landable-collider",
+          "enabled": false,
+          "centre": [
+            0,
+            60.5,
+            -14
+          ],
+          "size": [
+            112,
+            19,
+            88
+          ]
+        }
+      ],
+      "limitations": [
+        "No walking or flight controller in P02",
+        "The scale figure is static",
+        "Clouds are an opaque seeded noise heightfield; not final volumetric clouds",
+        "Roof proxy is not final collision geometry",
+        "Reference-level ornamental sculpting and final art acceptance remain pending"
+      ]
+    }
+  },
+  "targetEvidenceRequired": [
+    "Windows hardware/GPU and driver",
+    "Resolution/DPR and quality preset",
+    "Per-view frame-time distribution and draw calls",
+    "Resource size and browser version"
+  ]
+}

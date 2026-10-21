@@ -1,0 +1,64 @@
+{
+  "runId": "2026-10-21T14-32-03-259Z-08dcc1b5",
+  "candidate": "f1f817485ebf8e7ec6c257de44a38ced62bf2b4272c17aa6bd7f6a47df2bae99",
+  "stage": "P02",
+  "status": "FAIL",
+  "cases": [
+    {
+      "id": "P02-01",
+      "status": "FAIL",
+      "executed": 1,
+      "details": [
+        "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#camera')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"camera\" type=\"button\">切换观察位置</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\n    at /workspace/tiangong-development/scripts/quality/p02-browser.mjs:40:34\n\n1 !== 0\n"
+      ],
+      "evidence": [
+        {
+          "path": "P02-failure.log",
+          "sha256": "137941df4cb57ec2b87775ee1474ea7b8fb55179586a6fb4bfc0de44c8cc7421"
+        }
+      ]
+    },
+    {
+      "id": "P02-02",
+      "status": "FAIL",
+      "executed": 1,
+      "details": [
+        "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#camera')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"camera\" type=\"button\">切换观察位置</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\n    at /workspace/tiangong-development/scripts/quality/p02-browser.mjs:40:34\n\n1 !== 0\n"
+      ],
+      "evidence": [
+        {
+          "path": "P02-failure.log",
+          "sha256": "137941df4cb57ec2b87775ee1474ea7b8fb55179586a6fb4bfc0de44c8cc7421"
+        }
+      ]
+    },
+    {
+      "id": "P02-03",
+      "status": "FAIL",
+      "executed": 1,
+      "details": [
+        "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#camera')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"camera\" type=\"button\">切换观察位置</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\n    at /workspace/tiangong-development/scripts/quality/p02-browser.mjs:40:34\n\n1 !== 0\n"
+      ],
+      "evidence": [
+        {
+          "path": "P02-failure.log",
+          "sha256": "137941df4cb57ec2b87775ee1474ea7b8fb55179586a6fb4bfc0de44c8cc7421"
+        }
+      ]
+    },
+    {
+      "id": "P02-04",
+      "status": "FAIL",
+      "executed": 1,
+      "details": [
+        "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#camera')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"camera\" type=\"button\">切换观察位置</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\n    at /workspace/tiangong-development/scripts/quality/p02-browser.mjs:40:34\n\n1 !== 0\n"
+      ],
+      "evidence": [
+        {
+          "path": "P02-failure.log",
+          "sha256": "137941df4cb57ec2b87775ee1474ea7b8fb55179586a6fb4bfc0de44c8cc7421"
+        }
+      ]
+    }
+  ]
+}

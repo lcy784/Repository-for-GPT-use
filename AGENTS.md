@@ -19,3 +19,5 @@
 用户随后要求继续执行，现已开始 P00。以上“不启动开发”是迁移任务当时的边界，当前进度以 `PROJECT_STATUS.md` 为准。开发前读取该文件、`DECISIONS.md`、相关源码与测试。执行 `npm run gate -- --through P00` 进行当前累计验证；未决产品偏好保持 BLOCKED，不把自动测试成功写成整个阶段 PASS。源资料继续保持原样。
 
 用户已选择首轮范围和 B 回环启动方式，现已推进到 P01。当前累计命令为 `npm run gate -- --through P01`，云端安装入口为 `bash scripts/setup-p01-cloud.sh`；详见 `docs/P01-RUNTIME.md`。新产物不覆盖原 `docs/天宫HTML/` 资料，后续仍按当前最高已实现阶段重跑全部入口。
+
+用户随后要求执行 P02，当前入口为 `npm run gate -- --through P02`。从 `docs/P02-VISUAL-STUDY.md` 读取样本路径与审核条件。人工视觉评审和必需目标设备证据缺失时保持 BLOCKED，不自动接受截图，不进入 P03。
