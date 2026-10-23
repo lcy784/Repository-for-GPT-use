@@ -23,6 +23,14 @@ export type WorldManifest = Readonly<{
   assets: readonly Readonly<{ id: string; path: string; sha256: string; collisionAssetId: string | null }>[];
   spawn: Vec3;
 }>;
+export type MovementEvent = Readonly<{
+  tick:number;
+  kind:'takeoff'|'flight-stopped'|'landed'|'recovered';
+  from:PlayerState['mode'];
+  to:PlayerState['mode'];
+  position:Vec3;
+  supportId:string|null;
+}>;
 /** Only the local session commits simulation results; consumers receive snapshots. */
 export interface LocalSession {
   readonly snapshot: PlayerState;

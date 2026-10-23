@@ -1,0 +1,150 @@
+{
+  "runId": "2026-10-23T10-26-09-515Z-a50fa09f",
+  "candidate": "689bee0cd447000adc397ca7daf1ca827fe4aea6183a580d90e72cf33c36d0b2",
+  "stage": "P03",
+  "status": "PASS",
+  "cases": [
+    {
+      "id": "P03-01",
+      "status": "PASS",
+      "executed": 8,
+      "details": [],
+      "evidence": [
+        {
+          "path": "P03-physics-observations.json",
+          "sha256": "7fca9a51ee42f4ef5fc4903fdc2974ae0f89bdaa74d94d92301ac7deba15c7d0"
+        },
+        {
+          "path": "P03-physics-tests.json",
+          "sha256": "fa3883da08df3c2657b33dcd459139b874e6552656354f91798d0e11673db1dc"
+        },
+        {
+          "path": "P03-physics-tests.log",
+          "sha256": "d40a81cddcdb6a45512104109011b614ca8c5d94957ab4f18d8c6fb0cfc62512"
+        },
+        {
+          "path": "P03-browser/results.json",
+          "sha256": "4d0250d1deabd06b06752fd311e74fc103b1157059b60152e60b46e16d97d747"
+        },
+        {
+          "path": "P03-browser.log",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "path": "P01-production-manifest.json",
+          "sha256": "73a14344e712aaec18617c5581858a59c2e47ceea74f341549c460191dc2ccd8"
+        },
+        {
+          "path": "P03-browser/terrain-real-input.png",
+          "sha256": "347ba28839c557c91fc726db667d43ec71546fc113fab7db3e7db7545800be51"
+        }
+      ]
+    },
+    {
+      "id": "P03-02",
+      "status": "PASS",
+      "executed": 12,
+      "details": [],
+      "evidence": [
+        {
+          "path": "P03-physics-observations.json",
+          "sha256": "7fca9a51ee42f4ef5fc4903fdc2974ae0f89bdaa74d94d92301ac7deba15c7d0"
+        },
+        {
+          "path": "P03-physics-tests.json",
+          "sha256": "fa3883da08df3c2657b33dcd459139b874e6552656354f91798d0e11673db1dc"
+        },
+        {
+          "path": "P03-physics-tests.log",
+          "sha256": "d40a81cddcdb6a45512104109011b614ca8c5d94957ab4f18d8c6fb0cfc62512"
+        },
+        {
+          "path": "P03-browser/results.json",
+          "sha256": "4d0250d1deabd06b06752fd311e74fc103b1157059b60152e60b46e16d97d747"
+        },
+        {
+          "path": "P03-browser.log",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "path": "P01-production-manifest.json",
+          "sha256": "73a14344e712aaec18617c5581858a59c2e47ceea74f341549c460191dc2ccd8"
+        },
+        {
+          "path": "P03-browser/palace-ground-walking.png",
+          "sha256": "87fb81d384eee83b3452e67be136fc1ecff2e4a4496f92049037e62116a6c492"
+        }
+      ]
+    },
+    {
+      "id": "P03-03",
+      "status": "PASS",
+      "executed": 1,
+      "details": [
+        "Real Rapier simulation replayed at 30/60/144 display cadences; endpoints within 0.01 m."
+      ],
+      "evidence": [
+        {
+          "path": "P03-physics-observations.json",
+          "sha256": "7fca9a51ee42f4ef5fc4903fdc2974ae0f89bdaa74d94d92301ac7deba15c7d0"
+        },
+        {
+          "path": "P03-physics-tests.json",
+          "sha256": "fa3883da08df3c2657b33dcd459139b874e6552656354f91798d0e11673db1dc"
+        },
+        {
+          "path": "P03-physics-tests.log",
+          "sha256": "d40a81cddcdb6a45512104109011b614ca8c5d94957ab4f18d8c6fb0cfc62512"
+        },
+        {
+          "path": "P03-browser/results.json",
+          "sha256": "4d0250d1deabd06b06752fd311e74fc103b1157059b60152e60b46e16d97d747"
+        },
+        {
+          "path": "P03-browser.log",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "path": "P01-production-manifest.json",
+          "sha256": "73a14344e712aaec18617c5581858a59c2e47ceea74f341549c460191dc2ccd8"
+        }
+      ]
+    },
+    {
+      "id": "P03-04",
+      "status": "PASS",
+      "executed": 6,
+      "details": [],
+      "evidence": [
+        {
+          "path": "P03-physics-observations.json",
+          "sha256": "7fca9a51ee42f4ef5fc4903fdc2974ae0f89bdaa74d94d92301ac7deba15c7d0"
+        },
+        {
+          "path": "P03-physics-tests.json",
+          "sha256": "fa3883da08df3c2657b33dcd459139b874e6552656354f91798d0e11673db1dc"
+        },
+        {
+          "path": "P03-physics-tests.log",
+          "sha256": "d40a81cddcdb6a45512104109011b614ca8c5d94957ab4f18d8c6fb0cfc62512"
+        },
+        {
+          "path": "P03-browser/results.json",
+          "sha256": "4d0250d1deabd06b06752fd311e74fc103b1157059b60152e60b46e16d97d747"
+        },
+        {
+          "path": "P03-browser.log",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "path": "P01-production-manifest.json",
+          "sha256": "73a14344e712aaec18617c5581858a59c2e47ceea74f341549c460191dc2ccd8"
+        }
+      ]
+    }
+  ],
+  "environment": {
+    "browser": "154.0.8037.57",
+    "physics": "Rapier 0.21.0 WASM; kinematic capsule; fixed 60 Hz"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "runId": "2026-10-23T10-23-04-758Z-2307af98",
+  "candidate": "b70f8a19ee2bf6d7a54f55807b22ee5f6b9e514d8219fe3a52cde54b83cabd3c",
+  "stage": "P02",
+  "status": "FAIL",
+  "cases": [
+    {
+      "id": "P02-01",
+      "status": "FAIL",
+      "executed": 1,
+      "details": [
+        "ENOENT: no such file or directory, open '/workspace/Repository-for-GPT-use/quality/reports/2026-10-23T10-23-04-758Z-2307af98/P02-browser/results.json'"
+      ],
+      "evidence": [
+        {
+          "path": "P02-failure.log",
+          "sha256": "17c1788534232514440a9815e773c19b89c01d4e42c29208b71b10fb0232c54e"
+        }
+      ]
+    },
+    {
+      "id": "P02-02",
+      "status": "FAIL",
+      "executed": 1,
+      "details": [
+        "ENOENT: no such file or directory, open '/workspace/Repository-for-GPT-use/quality/reports/2026-10-23T10-23-04-758Z-2307af98/P02-browser/results.json'"
+      ],
+      "evidence": [
+        {
+          "path": "P02-failure.log",
+          "sha256": "17c1788534232514440a9815e773c19b89c01d4e42c29208b71b10fb0232c54e"
+        }
+      ]
+    },
+    {
+      "id": "P02-03",
+      "status": "FAIL",
+      "executed": 1,
+      "details": [
+        "ENOENT: no such file or directory, open '/workspace/Repository-for-GPT-use/quality/reports/2026-10-23T10-23-04-758Z-2307af98/P02-browser/results.json'"
+      ],
+      "evidence": [
+        {
+          "path": "P02-failure.log",
+          "sha256": "17c1788534232514440a9815e773c19b89c01d4e42c29208b71b10fb0232c54e"
+        }
+      ]
+    },
+    {
+      "id": "P02-04",
+      "status": "FAIL",
+      "executed": 1,
+      "details": [
+        "ENOENT: no such file or directory, open '/workspace/Repository-for-GPT-use/quality/reports/2026-10-23T10-23-04-758Z-2307af98/P02-browser/results.json'"
+      ],
+      "evidence": [
+        {
+          "path": "P02-failure.log",
+          "sha256": "17c1788534232514440a9815e773c19b89c01d4e42c29208b71b10fb0232c54e"
+        }
+      ]
+    }
+  ]
+}

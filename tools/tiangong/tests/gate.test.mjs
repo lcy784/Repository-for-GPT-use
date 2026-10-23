@@ -51,6 +51,8 @@ function inputFixture() {
   const decisions = readJson(decisionsFile);
   decisions.firstRelease.status = 'pending-user-preference';
   decisions.architecture.find(item => item.id === 'A-03').status = 'pending-user-preference';
+  // This fixture models the earlier unresolved scope; current product choices may be resolved.
+  if (!decisions.unresolved.some(item => item.blocks === 'P04')) decisions.unresolved.push({id:'fixture-flight-rules',blocks:'P04',description:'Isolated unresolved gameplay choice.'});
   writeJson(decisionsFile, decisions);
   const sourceDir = path.join(f.root, 'docs/天宫HTML');
   mkdirSync(path.join(sourceDir, 'input'), { recursive: true });

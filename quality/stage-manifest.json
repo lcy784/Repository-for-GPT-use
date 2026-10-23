@@ -52,7 +52,7 @@
     {
       "id": "P04",
       "enabled": true,
-      "implementation": "planned-no-placeholder-entry",
+      "implementation": "present",
       "entry": "scripts/quality/stages/P04.mjs",
       "requiredCases": [
         "P04-01",

@@ -76,7 +76,7 @@ export class Application {
       this.camera.lowerRadiusLimit = 6;
       this.camera.upperRadiusLimit = this.config.sceneFixture === 'p02-palace' ? 650 : 45;
       this.camera.wheelPrecision = 15;
-      if (['p02-palace','p03-palace-walk'].includes(this.config.sceneFixture)) { createPalace(this.scene); } else if (this.config.sceneFixture === 'p01-depth') {
+      if (['p02-palace','p03-palace-walk','p04-palace-flight'].includes(this.config.sceneFixture)) { createPalace(this.scene); } else if (this.config.sceneFixture === 'p01-depth') {
         const light = new HemisphericLight('sky-light', new Vector3(-0.6, 1, -0.3), this.scene);
         light.intensity = 1.25;
         const material = (name: string, color: Color3): StandardMaterial => {
@@ -92,14 +92,16 @@ export class Application {
           const mesh = CreateBox(name, { width, height, depth }, this.scene); mesh.position.set(x,y,z); mesh.material = mat;
         }
       }
-      if(this.config.sceneFixture.startsWith('p03-')) {
+      if(/^p0[34]-/.test(this.config.sceneFixture)) {
         const {GroundSession}=await import('../game/session');groundSessionClass=GroundSession;
         if(this.abort.signal.aborted)return;
         const spawn=this.config.spawn!;
-        const ground=await GroundSession.create(this.config.sceneFixture==='p03-terrain'?'fixture':'palace',{x:spawn[0],y:spawn[1],z:spawn[2]});
+        const flight=this.config.sceneFixture.startsWith('p04-');
+        const fixture=['p03-terrain','p04-flight'].includes(this.config.sceneFixture);
+        const ground=await GroundSession.create(fixture?'fixture':'palace',{x:spawn[0],y:spawn[1],z:spawn[2]},{flight,flightSpeed:this.config.flightSpeedMetersPerSecond});
         if(this.abort.signal.aborted){ground.dispose();return;}
-        this.ground=ground;this.input=new GroundInput(this.canvas);
-        this.avatar=createGroundView(this.scene,ground.shapes,this.config.sceneFixture==='p03-terrain');
+        this.ground=ground;this.input=new GroundInput(this.canvas,flight);
+        this.avatar=createGroundView(this.scene,ground.shapes,fixture);
         this.camera.lowerRadiusLimit=2;this.camera.upperRadiusLimit=60;this.camera.lowerBetaLimit=.05;this.camera.upperBetaLimit=Math.PI*.49;
         this.syncPlayerView();
       }
@@ -130,7 +132,7 @@ export class Application {
       if(this.ground&&this.input&&this.camera) {
         const dx=this.camera.target.x-this.camera.position.x,dz=this.camera.target.z-this.camera.position.z;
         const n=Math.max(.00001,Math.hypot(dx,dz));
-        for(let i=0;i<steps;i++)this.ground.step(this.input.consume({x:dx/n,z:dz/n}));
+        for(let i=0;i<steps;i++)this.ground.step(this.input.consume({x:dx/n,z:dz/n},this.ground.snapshot.mode==='flying'));
         this.syncPlayerView();
       }
       const renderStart = performance.now();

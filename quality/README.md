@@ -42,3 +42,7 @@ P02 的截图稳定性和三维射线检查成功，只能证明技术事实。�
 用户明确确认 P02 剩余性能项通过并继续开发，记录为 `visual-acceptance/P02-CONTINUED-DEVELOPMENT.json`，不虚构硬件测量。P02 现在可按用户确认及本轮技术／视觉复测通过；固定审核配置和已审美术／图像仍锁定，允许新增非美术玩法代码。
 
 当前累计命令 `npm run gate -- --through P03`，包含真实 WASM 物理回放、三机位 P02 审核、P03 实际输入与生命周期。P03 说明为 `docs/P03-GROUND-WALKING.md`；物理状态原始证据保存为 `P03-physics-observations.json`。未进入 P04，不合并、不部署。
+
+## P04 增补
+
+P04 用户规则记录 `flight-rules/P04-20261023.json`，独立入口 `scripts/quality/stages/P04.mjs`；累计命令 `npm run gate -- --through P04`。包含真实 WASM 飞行／重力转换、高速扫掠、实际巨殿屋面、原生标签页隐藏恢复、真实键盘与默认场景验证。P03 巨殿旧输入保存在 `fixtures/P03/palace-runtime-config.json`，继续在当前生产核心运行。未来 P05 入口仍未实现。正式索引 `reports/P04-REVIEW.md`，调试报告不当成阶段放行。

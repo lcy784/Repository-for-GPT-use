@@ -15,7 +15,7 @@ function distance(a,b){return Math.hypot(a.x-b.x,a.z-b.z);}
 async function open(fixture=true){
  const base=`http://127.0.0.1:${server.httpServer.address().port}`,session=await browser.newContext({viewport:profile.cloud.viewport,deviceScaleFactor:1});
  const errors=[],network=[],external=[];
- await session.route(/^https?:\/\//,route=>{if(new URL(route.request().url()).origin!==base){external.push(route.request().url());return route.abort();}if(fixture&&route.request().url().endsWith('/runtime-config.json'))return route.fulfill({contentType:'application/json',body:JSON.stringify(readJson(path.join(root,'quality/fixtures/P03/runtime-config.json')))});return route.continue();});
+ await session.route(/^https?:\/\//,route=>{if(new URL(route.request().url()).origin!==base){external.push(route.request().url());return route.abort();}if(route.request().url().endsWith('/runtime-config.json'))return route.fulfill({contentType:'application/json',body:JSON.stringify(readJson(path.join(root,fixture?'quality/fixtures/P03/runtime-config.json':'quality/fixtures/P03/palace-runtime-config.json')))});return route.continue();});
  const page=await session.newPage();page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});page.on('response',r=>network.push({path:new URL(r.url()).pathname,status:r.status()}));
  await page.goto(base);await page.waitForFunction(()=>['ready','error'].includes(window.__TIANGONG_OBSERVE__?.().phase),null,{timeout:45000});
  const o=await observe(page);assert.equal(o.phase,'ready',o.error||JSON.stringify(errors));assert.equal(o.controllers,1);assert.equal(o.inputListeners,6);

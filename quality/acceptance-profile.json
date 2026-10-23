@@ -108,5 +108,16 @@
       144
     ],
     "palaceAscentBudgetSeconds": 60
+  },
+  "flightMovement": {
+    "status": "user-selected-rules-engineering-parameters",
+    "rules": "quality/flight-rules/P04-20261023.json",
+    "speedMetersPerSecond": 10,
+    "testSpeedLimitMetersPerSecond": 60,
+    "maxSweepDistanceMeters": 0.2,
+    "terminalFallSpeedMetersPerSecond": 60,
+    "positionToleranceMeters": 0.01,
+    "recoveryBelowY": -80,
+    "safeGroundTicks": 30
   }
 }

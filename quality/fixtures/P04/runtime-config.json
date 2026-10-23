@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "sceneFixture": "p04-flight",
+  "simulationHz": 60,
+  "maxCatchUpSteps": 5,
+  "cameraPositions": [
+    [
+      -6,
+      4,
+      17
+    ],
+    [
+      -20,
+      5,
+      18
+    ],
+    [
+      -12,
+      10,
+      26
+    ]
+  ],
+  "background": [
+    0.57,
+    0.73,
+    0.81
+  ],
+  "cameraTargets": [
+    [
+      -12,
+      1.51,
+      8
+    ],
+    [
+      -12,
+      1.51,
+      8
+    ],
+    [
+      -12,
+      1.51,
+      8
+    ]
+  ],
+  "spawn": [
+    -12,
+    0.91,
+    8
+  ],
+  "flightSpeedMetersPerSecond": 10
+}

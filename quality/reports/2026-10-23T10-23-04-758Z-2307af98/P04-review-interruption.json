@@ -1,0 +1,5 @@
+{
+  "status": "aborted-for-code-review",
+  "reason": "A grounded start+descent intent emitted a takeoff event without entering flying state. Stop, fix the event predicate, add a regression, and rerun the full chain.",
+  "notAnArtAcceptanceFailure": true
+}

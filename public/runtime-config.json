@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "sceneFixture": "p03-palace-walk",
+  "sceneFixture": "p04-palace-flight",
   "simulationHz": 60,
   "maxCatchUpSteps": 5,
   "cameraPositions": [
@@ -46,5 +46,6 @@
     0,
     18.91,
     54
-  ]
+  ],
+  "flightSpeedMetersPerSecond": 10
 }

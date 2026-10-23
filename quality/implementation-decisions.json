@@ -50,11 +50,6 @@
   },
   "unresolved": [
     {
-      "id": "flight-and-falling-rules",
-      "blocks": "P04",
-      "description": "Define flying transitions and falling recovery before implementation."
-    },
-    {
       "id": "water-rules",
       "blocks": "P12",
       "description": "Define wading, swimming, diving or their combination."
@@ -81,6 +76,12 @@
       "status": "accepted-by-user",
       "record": "quality/visual-acceptance/P02-20261021.json",
       "sourceQuote": "验收通过"
+    },
+    {
+      "id": "flight-and-falling-rules",
+      "status": "user-selected",
+      "record": "quality/flight-rules/P04-20261023.json",
+      "sourceQuote": "采用这组规则，速度先用可调整的工程参数"
     }
   ],
   "P02PerformanceConfirmation": {
@@ -91,5 +92,5 @@
     "deviceMeasurements": null,
     "scope": "P02 only; P15 formal measurements remain required"
   },
-  "currentStage": "P03"
+  "currentStage": "P04"
 }
