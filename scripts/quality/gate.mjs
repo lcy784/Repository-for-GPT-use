@@ -22,7 +22,11 @@ try {
   const candidate = candidateFingerprint(root);
   writeJson(path.join(runDir, 'candidate.json'), candidate);
   const context = { runId, candidate: candidate.sha256 };
-  const result = runChain(chain, stage => executeStage(root, stage, context, runDir, timeout));
+  const result = runChain(chain, stage => {
+    const budget=stage.timeoutMs??timeout;
+    if(!Number.isInteger(budget)||budget<1000||budget>1500000)throw new Error('Invalid explicit stage execution budget');
+    return executeStage(root, stage, context, runDir, budget);
+  });
   assertCandidateUnchanged(candidate.sha256, candidateFingerprint(root).sha256);
   summary = { runId, through: args[1], candidate: candidate.sha256, ...result, packages: { A: 'not-yet-delivered', B: 'not-yet-delivered', P01: result.stages.find(stage => stage.stage === 'P01')?.buildManifest || 'not-built-in-this-run' } };
 } catch (error) {
