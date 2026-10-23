@@ -32,8 +32,8 @@
     "requiredBefore": "P02",
     "status": "accepted-by-user",
     "referenceFiles": [
-      "docs/天宫HTML/input/IMG_20261019_161331.jpg",
-      "docs/天宫HTML/input/IMG_20261019_161156.jpg"
+      "docs/\u5929\u5babHTML/input/IMG_20261019_161331.jpg",
+      "docs/\u5929\u5babHTML/input/IMG_20261019_161156.jpg"
     ],
     "views": [
       {
@@ -87,7 +87,7 @@
     ],
     "allTenReferencesRemainProductReferences": true,
     "automaticImageDifferenceProvesArtisticAcceptance": false,
-    "latestUserFeedback": "2026-10-21: User explicitly accepted the monumental revision: 验收通过.",
+    "latestUserFeedback": "2026-10-21: User explicitly accepted the monumental revision: \u9a8c\u6536\u901a\u8fc7.",
     "acceptanceRecord": "quality/visual-acceptance/P02-20261021.json"
   },
   "groundMovement": {
@@ -131,5 +131,22 @@
     "minimumSwitches": 10,
     "positionToleranceMeters": 0.01,
     "blendSeconds": 0.12
+  },
+  "coreJourney": {
+    "status": "engineering-sample-awaiting-user-experience-review",
+    "palaceLiftMeters": 120,
+    "cloudHeightMeters": 100,
+    "functionalViewport": {
+      "width": 640,
+      "height": 480
+    },
+    "captureViewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "flightSpeedMetersPerSecond": 10,
+    "positionToleranceMeters": 0.01,
+    "requiresUserReview": "P06-04",
+    "preserveP02ArtAndPixelReview": true
   }
 }

@@ -32,7 +32,7 @@ try {
  for(const name of ['far','stairs','human']) {
    await page.waitForFunction(()=>window.__TIANGONG_OBSERVE__().frame>=5);
    const before=await observe();await page.waitForFunction(n=>window.__TIANGONG_OBSERVE__().frame>n+2,before.frame);
-   const pixels=await page.locator('canvas').evaluate(c=>c.toDataURL());
+   const pixels=await page.evaluate(()=>{const canvas=document.querySelector('canvas');if(!(canvas instanceof HTMLCanvasElement))throw Error('Missing actual render canvas');return canvas.toDataURL();});
    const png=Buffer.from(pixels.split(',')[1],'base64');assert(png.length>25000,'Trivial render');
    writeFileSync(path.join(output,`${name}.png`),png);
    const snapshot=await observe();
@@ -49,14 +49,14 @@ try {
  assert(new Set(views.map(v=>v.sha256)).size===3,'Review cameras do not change pixels');
  await page.waitForFunction(()=>window.__TIANGONG_OBSERVE__().camera===0);
  const before=await observe();await page.waitForFunction(n=>window.__TIANGONG_OBSERVE__().frame>n+2,before.frame);
- const repeat=Buffer.from((await page.locator('canvas').evaluate(c=>c.toDataURL())).split(',')[1],'base64');
+ const repeat=Buffer.from((await page.evaluate(()=>{const canvas=document.querySelector('canvas');if(!(canvas instanceof HTMLCanvasElement))throw Error('Missing actual render canvas');return canvas.toDataURL();})).split(',')[1],'base64');
  writeFileSync(path.join(output,'far-repeat.png'),repeat);
  assert.equal(hash(repeat),views[0].sha256,'Frozen camera/lighting/seed did not reproduce identical pixels');
  // A fresh application recreates the procedural seed and all GPU resources.
  await page.locator('#restart').click({noWaitAfter:true,timeout:60000});
  await page.waitForFunction(()=>window.__TIANGONG_OBSERVE__().generation===2&&window.__TIANGONG_OBSERVE__().phase==='ready');
  const restarted=await observe();await page.waitForFunction(n=>window.__TIANGONG_OBSERVE__().frame>n+2,restarted.frame);
- const fresh=Buffer.from((await page.locator('canvas').evaluate(c=>c.toDataURL())).split(',')[1],'base64');
+ const fresh=Buffer.from((await page.evaluate(()=>{const canvas=document.querySelector('canvas');if(!(canvas instanceof HTMLCanvasElement))throw Error('Missing actual render canvas');return canvas.toDataURL();})).split(',')[1],'base64');
  writeFileSync(path.join(output,'far-restarted.png'),fresh);
  assert.equal(hash(fresh),views[0].sha256,'Fresh seeded scene differs');
  assert.deepEqual(errors,[]);assert.equal(external.length,0);assert(network.every(r=>r.status<400));

@@ -31,3 +31,7 @@
 ## P05 接续开发（2026-10-23）
 
 用户要求执行 P05，并确认临时人物、动作与镜头规则，记录 `quality/avatar-camera-rules/P05-20261023.json`；此前“不进入 P05”已由本次指令更新。分支 `feat/tiangong-p05-avatar-camera-20261023`，参见 `docs/P05-AVATAR-AND-CAMERA.md`，累计命令 `npm run gate -- --through P05`，正式索引 `quality/reports/P05-REVIEW.md`。相机与动作只读人物状态；P02 已审画面、原 16 个资料及 P15 设备要求继续保留。不擅自进入 P06，不合并、不部署。
+
+## P06 接续开发（2026-10-23）
+
+用户明确要求“执行p06开发”，此前“不进入 P06”的边界由本次授权更新。分支 `feat/tiangong-p06-core-journey-20261023`，先读 `docs/P06-CORE-JOURNEY.md`。当前累计命令 `npm run gate -- --through P06`；P06-04 的实际体验与视觉认可不得用自动测试替代，未收到对本轮产物的认可时保持 BLOCKED。P05 原场景配置已归档夹具，旧阶段继续在当前核心上实跑。P02 原巨殿作者代码、审核三机位与 16 个原始资料继续保护。下一阶段 P07 不在本轮范围；不合并、不部署。

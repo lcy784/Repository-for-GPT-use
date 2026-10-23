@@ -1,23 +1,23 @@
 {
   "version": 1,
-  "sceneFixture": "p05-palace-avatar",
+  "sceneFixture": "p06-journey",
   "simulationHz": 60,
   "maxCatchUpSteps": 5,
   "cameraPositions": [
     [
+      -18,
+      4,
+      288
+    ],
+    [
+      -12,
+      4,
+      288
+    ],
+    [
+      -18,
       6,
-      23,
-      64
-    ],
-    [
-      -8,
-      24,
-      64
-    ],
-    [
-      0,
-      30,
-      72
+      292
     ]
   ],
   "background": [
@@ -27,25 +27,25 @@
   ],
   "cameraTargets": [
     [
-      0,
-      19.51,
-      54
+      -18,
+      1.6,
+      282
     ],
     [
-      0,
-      19.51,
-      54
+      -18,
+      1.6,
+      282
     ],
     [
-      0,
-      19.51,
-      54
+      -18,
+      1.6,
+      282
     ]
   ],
   "spawn": [
-    0,
-    18.91,
-    54
+    -18,
+    0.91,
+    282
   ],
   "flightSpeedMetersPerSecond": 10,
   "thirdPersonDistance": 6

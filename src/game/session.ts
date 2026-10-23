@@ -3,6 +3,7 @@ import type {LocalSession,MovementEvent,PlayerIntent,PlayerState,Vec3} from '../
 import {PLAYER,terrain} from './terrain';
 import {createTerrainCollider,type CollisionShape} from './collision';
 import {flightTerrain} from './flight-terrain';
+import {journeyTerrain} from './journey';
 import {cameraTerrain} from './camera-terrain';
 
 export const FLIGHT=Object.freeze({speed:10,maxSpeed:60,terminalFallSpeed:60,maxSweepDistance:.2,recoveryBelowY:-80,safeGroundTicks:30});
@@ -32,16 +33,16 @@ export class GroundSession implements LocalSession {
  readonly shapes:readonly CollisionShape[];
  readonly dt=1/PLAYER.hz;
 
- static async create(kind:'palace'|'fixture'|'camera-fixture',spawn:Vec3,options:Options={}):Promise<GroundSession>{
+ static async create(kind:'palace'|'fixture'|'camera-fixture'|'journey',spawn:Vec3,options:Options={}):Promise<GroundSession>{
   if(!Object.values(spawn).every(Number.isFinite))throw new Error('Invalid spawn');
   if(options.flightSpeed!==undefined&&(!Number.isFinite(options.flightSpeed)||options.flightSpeed<=0||options.flightSpeed>FLIGHT.maxSpeed))throw new Error('Invalid flight speed');
   initialized??=RAPIER.init();await initialized;return new GroundSession(kind,spawn,options);
  }
- private constructor(kind:'palace'|'fixture'|'camera-fixture',spawn:Vec3,options:Options){
+ private constructor(kind:'palace'|'fixture'|'camera-fixture'|'journey',spawn:Vec3,options:Options){
   this.flightEnabled=options.flight===true;this.flightSpeed=options.flightSpeed??FLIGHT.speed;
   this.safePosition=Object.freeze({...spawn});
   this.world=new RAPIER.World({x:0,y:-PLAYER.gravity,z:0});this.world.timestep=this.dt;
-  this.shapes=kind==='camera-fixture'?cameraTerrain():this.flightEnabled?flightTerrain(kind):terrain(kind);
+  this.shapes=kind==='journey'?journeyTerrain():kind==='camera-fixture'?cameraTerrain():this.flightEnabled?flightTerrain(kind):terrain(kind);
   for(const shape of this.shapes)this.ids.set(this.world.createCollider(createTerrainCollider(shape)).handle,shape.id);
   this.body=this.world.createRigidBody(RAPIER.RigidBodyDesc.kinematicPositionBased().setTranslation(spawn.x,spawn.y,spawn.z));
   this.capsule=this.world.createCollider(RAPIER.ColliderDesc.capsule(PLAYER.halfSegment,PLAYER.radius).setActiveCollisionTypes(RAPIER.ActiveCollisionTypes.ALL),this.body);

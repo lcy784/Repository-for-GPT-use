@@ -16,6 +16,7 @@ const distance=(a,b)=>Math.hypot(a.x-b.x,a.y-b.y,a.z-b.z);
 async function ticks(page,count){const t=(await state(page)).tick;await page.waitForFunction(t=>JSON.parse(window.__TIANGONG_OBSERVE__().player).tick>=t,t+count,{timeout:60000});}
 async function ready(page){await page.waitForFunction(()=>['ready','error'].includes(window.__TIANGONG_OBSERVE__?.().phase),null,{timeout:60000});const o=await observe(page);assert.equal(o.phase,'ready',o.error);return o;}
 async function open(config='fixture',existing,missingAvatar=false){
+ if(config===null)config=readJson(path.join(root,'quality/fixtures/P05/palace-runtime-config.json'));
  const base=`http://127.0.0.1:${server.httpServer.address().port}`,session=existing||await browser.newContext({viewport:profile.cloud.viewport,deviceScaleFactor:1});
  const errors=[],network=[],external=[];
  await session.route(/^https?:\/\//,route=>{const url=route.request().url();if(new URL(url).origin!==base){external.push(url);return route.abort();}if(missingAvatar&&url.endsWith('/traveler.glb'))return route.fulfill({status:404,body:'Missing test avatar'});if(config&&url.endsWith('/runtime-config.json'))return route.fulfill({contentType:'application/json',body:JSON.stringify(config==='fixture'?readJson(path.join(root,'quality/fixtures/P05/runtime-config.json')):config)});return route.continue();});

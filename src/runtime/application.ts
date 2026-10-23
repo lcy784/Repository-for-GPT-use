@@ -9,6 +9,8 @@ import { CreateBox } from '@babylonjs/core/Meshes/Builders/boxBuilder';
 import { StandardMaterial } from '@babylonjs/core/Materials/standardMaterial';
 import '@babylonjs/core/Culling/ray';
 import { SceneInstrumentation } from '@babylonjs/core/Instrumentation/sceneInstrumentation';
+import {createJourneyView,type JourneyView} from './journey-view';
+import {journeyLocation} from '../game/journey';
 import { createPalace, PALACE } from './palace';
 import { GroundInput } from '../game/input';
 import { createGroundView } from '../game/view';
@@ -49,6 +51,7 @@ export class Application {
   private avatar: TransformNode | null = null;
   private animatedAvatar:AvatarView|null=null;
   private playerCamera:PlayerCamera|null=null;
+  private journey:JourneyView|null=null;
   private canvas: HTMLCanvasElement;
   constructor(private readonly container: HTMLElement, private readonly update: () => void, private readonly countFrame: () => void) {
     this.canvas = document.createElement('canvas');
@@ -81,7 +84,7 @@ export class Application {
       this.camera.lowerRadiusLimit = 6;
       this.camera.upperRadiusLimit = this.config.sceneFixture === 'p02-palace' ? 650 : 45;
       this.camera.wheelPrecision = 15;
-      if (['p02-palace','p03-palace-walk','p04-palace-flight','p05-palace-avatar'].includes(this.config.sceneFixture)) { createPalace(this.scene); } else if (this.config.sceneFixture === 'p01-depth') {
+      if (['p02-palace','p03-palace-walk','p04-palace-flight','p05-palace-avatar','p06-journey'].includes(this.config.sceneFixture)) { createPalace(this.scene); if(this.config.sceneFixture==='p06-journey')this.journey=createJourneyView(this.scene); } else if (this.config.sceneFixture === 'p01-depth') {
         const light = new HemisphericLight('sky-light', new Vector3(-0.6, 1, -0.3), this.scene);
         light.intensity = 1.25;
         const material = (name: string, color: Color3): StandardMaterial => {
@@ -97,14 +100,14 @@ export class Application {
           const mesh = CreateBox(name, { width, height, depth }, this.scene); mesh.position.set(x,y,z); mesh.material = mat;
         }
       }
-      if(/^p0[345]-/.test(this.config.sceneFixture)) {
+      if(/^p0[3456]-/.test(this.config.sceneFixture)) {
         const {GroundSession}=await import('../game/session');groundSessionClass=GroundSession;
         if(this.abort.signal.aborted)return;
         const spawn=this.config.spawn!;
-        const p05=this.config.sceneFixture.startsWith('p05-');
+        const p05=/^p0[56]-/.test(this.config.sceneFixture);
         const flight=this.config.sceneFixture.startsWith('p04-')||p05;
         const fixture=['p03-terrain','p04-flight','p05-camera'].includes(this.config.sceneFixture);
-        const ground=await GroundSession.create(this.config.sceneFixture==='p05-camera'?'camera-fixture':fixture?'fixture':'palace',{x:spawn[0],y:spawn[1],z:spawn[2]},{flight,flightSpeed:this.config.flightSpeedMetersPerSecond});
+        const ground=await GroundSession.create(this.config.sceneFixture==='p06-journey'?'journey':this.config.sceneFixture==='p05-camera'?'camera-fixture':fixture?'fixture':'palace',{x:spawn[0],y:spawn[1],z:spawn[2]},{flight,flightSpeed:this.config.flightSpeedMetersPerSecond});
         if(this.abort.signal.aborted){ground.dispose();return;}
         this.ground=ground;this.input=new GroundInput(this.canvas,flight);
         this.avatar=createGroundView(this.scene,ground.shapes,fixture,!p05);
@@ -157,6 +160,7 @@ export class Application {
       const renderStart = performance.now();
       if(this.lastFrameTime) { this.intervals.push(renderStart-this.lastFrameTime); if(this.intervals.length>120) this.intervals.shift(); }
       this.lastFrameTime=renderStart;
+      if(this.journey&&this.scene.activeCamera)this.journey.update(this.scene.activeCamera.position);
       this.scene.render();
       this.frameTimes.push(performance.now() - renderStart);
       if (this.frameTimes.length > 120) this.frameTimes.shift();
@@ -205,7 +209,7 @@ export class Application {
     this.engine?.stopRenderLoop(this.render);
     this.instrumentation?.dispose(); this.instrumentation=null;
     this.scene?.dispose(); this.engine?.dispose();
-    this.scene = null; this.engine = null; this.camera = null;
+    this.scene = null; this.engine = null; this.camera = null;this.journey=null;
   }
   private fail(error: unknown): void {
     this.failure = error instanceof Error ? error.message : String(error);
@@ -241,6 +245,7 @@ export class Application {
       avatarPosition:this.avatar?.position.asArray().join(',')||null,
       controllers:groundSessionClass?.instances||0,inputListeners:this.input?.listeners||0,pressedKeys:this.input?.pressed||'',
       inputFocused:document.activeElement===this.canvas,
+      journey:this.journey&&this.ground?JSON.stringify({location:journeyLocation(this.ground.snapshot),...this.journey.observe()}):null,
       fixture: this.config?.sceneFixture || null, renderer: this.renderer,
     });
   }

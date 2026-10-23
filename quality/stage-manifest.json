@@ -76,7 +76,7 @@
     {
       "id": "P06",
       "enabled": true,
-      "implementation": "planned-no-placeholder-entry",
+      "implementation": "present",
       "entry": "scripts/quality/stages/P06.mjs",
       "requiredCases": [
         "P06-01",
