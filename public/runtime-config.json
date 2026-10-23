@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "sceneFixture": "p04-palace-flight",
+  "sceneFixture": "p05-palace-avatar",
   "simulationHz": 60,
   "maxCatchUpSteps": 5,
   "cameraPositions": [
@@ -47,5 +47,6 @@
     18.91,
     54
   ],
-  "flightSpeedMetersPerSecond": 10
+  "flightSpeedMetersPerSecond": 10,
+  "thirdPersonDistance": 6
 }

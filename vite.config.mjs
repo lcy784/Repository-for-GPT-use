@@ -3,6 +3,9 @@ export default {
   // Stable prebundle entries prevent late PBR shader imports invalidating active dev requests.
   optimizeDeps: { noDiscovery: true, include: [
     "@dimforge/rapier3d-compat",
+    "@babylonjs/loaders/glTF",
+    "@babylonjs/core/Loading/sceneLoader",
+    "@babylonjs/core/Cameras/freeCamera",
     "@babylonjs/core/Meshes/transformNode",
     "@babylonjs/core/Cameras/arcRotateCamera",
     "@babylonjs/core/Culling/ray",

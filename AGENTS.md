@@ -27,3 +27,7 @@
 ## P04 接续开发（2026-10-23）
 
 用户明确要求继续 P04，并确认飞行控制、悬停、重力转换、中途再起飞和安全点恢复规则，记录 `quality/flight-rules/P04-20261023.json`。此前“不提前加入 P04”的边界已由本次指令更新。当前分支 `feat/tiangong-p04-flight-20261023`，先读 `PROJECT_STATUS.md`、`DECISIONS.md` 和 `docs/P04-FLIGHT-AND-FALLING.md`。累计命令为 `npm run gate -- --through P04`，真实累计结论以 `quality/reports/P04-REVIEW.md` 为准。不擅自进入 P05；P02 已审画面继续保护，P15 正式目标设备数据要求仍保留，不合并、不部署。
+
+## P05 接续开发（2026-10-23）
+
+用户要求执行 P05，并确认临时人物、动作与镜头规则，记录 `quality/avatar-camera-rules/P05-20261023.json`；此前“不进入 P05”已由本次指令更新。分支 `feat/tiangong-p05-avatar-camera-20261023`，参见 `docs/P05-AVATAR-AND-CAMERA.md`，累计命令 `npm run gate -- --through P05`，正式索引 `quality/reports/P05-REVIEW.md`。相机与动作只读人物状态；P02 已审画面、原 16 个资料及 P15 设备要求继续保留。不擅自进入 P06，不合并、不部署。

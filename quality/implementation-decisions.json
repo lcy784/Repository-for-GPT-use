@@ -82,6 +82,12 @@
       "status": "user-selected",
       "record": "quality/flight-rules/P04-20261023.json",
       "sourceQuote": "采用这组规则，速度先用可调整的工程参数"
+    },
+    {
+      "id": "temporary-avatar-and-perspective-rules",
+      "status": "user-selected",
+      "record": "quality/avatar-camera-rules/P05-20261023.json",
+      "sourceQuote": "采用这组规则，人物细节和镜头参数先用可调整的初版"
     }
   ],
   "P02PerformanceConfirmation": {
@@ -92,5 +98,5 @@
     "deviceMeasurements": null,
     "scope": "P02 only; P15 formal measurements remain required"
   },
-  "currentStage": "P04"
+  "currentStage": "P05"
 }

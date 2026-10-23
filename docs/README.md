@@ -40,3 +40,5 @@ P02 的当前开发分支为 `feat/tiangong-p02-20261021`，包含全部历史�
 用户确认 P02 性能项并要求继续，当前开发分支 `feat/tiangong-p03-ground-walking-20261021`；详见 [P03 地面行走与碰撞](P03-GROUND-WALKING.md)，累计命令 `npm run gate -- --through P03`。P02 性能为用户确认，设备原始读数未提供；当前最新进度以根目录状态文件为准。
 
 用户已要求执行 P04，并确认飞行／坠落规则，当前分支 `feat/tiangong-p04-flight-20261023`；见 [P04 飞行、降落与坠落](P04-FLIGHT-AND-FALLING.md)。累计命令 `npm run gate -- --through P04`，当前状态以根目录 `PROJECT_STATUS.md` 和 P04 正式交付索引为准。
+
+用户已要求 P05 并确认人物／镜头规则，当前分支 `feat/tiangong-p05-avatar-camera-20261023`，见 [临时古装人物与双视角](P05-AVATAR-AND-CAMERA.md)。累计命令 `npm run gate -- --through P05`，最终结论见 `quality/reports/P05-REVIEW.md`。

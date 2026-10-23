@@ -46,3 +46,7 @@ P02 的截图稳定性和三维射线检查成功，只能证明技术事实。�
 ## P04 增补
 
 P04 用户规则记录 `flight-rules/P04-20261023.json`，独立入口 `scripts/quality/stages/P04.mjs`；累计命令 `npm run gate -- --through P04`。包含真实 WASM 飞行／重力转换、高速扫掠、实际巨殿屋面、原生标签页隐藏恢复、真实键盘与默认场景验证。P03 巨殿旧输入保存在 `fixtures/P03/palace-runtime-config.json`，继续在当前生产核心运行。未来 P05 入口仍未实现。正式索引 `reports/P04-REVIEW.md`，调试报告不当成阶段放行。
+
+## P05 增补
+
+P05 选择记录 `avatar-camera-rules/P05-20261023.json`；真实入口 `scripts/quality/stages/P05.mjs`。累计命令 `npm run gate -- --through P05`，包含 GLB 校验与可复现生成、真实动画与关节、Rapier 相机球形扫掠、实际 V／按钮／拖动、12 次切换、分辨率与原生焦点恢复、模型缺失与资源释放。原 P04 巨殿输入归档到 `fixtures/P04/palace-runtime-config.json`，继续在当前核心运行。正式索引 `reports/P05-REVIEW.md`，P06 未启动。

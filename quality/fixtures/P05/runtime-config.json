@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "sceneFixture": "p05-camera",
+  "simulationHz": 60,
+  "maxCatchUpSteps": 5,
+  "cameraPositions": [
+    [
+      0,
+      3.4,
+      6
+    ],
+    [
+      5,
+      3,
+      5
+    ]
+  ],
+  "background": [
+    0.57,
+    0.73,
+    0.81
+  ],
+  "cameraTargets": [
+    [
+      0,
+      1.6,
+      0
+    ],
+    [
+      0,
+      1.6,
+      0
+    ]
+  ],
+  "spawn": [
+    0,
+    0.91,
+    0
+  ],
+  "flightSpeedMetersPerSecond": 10,
+  "thirdPersonDistance": 6
+}

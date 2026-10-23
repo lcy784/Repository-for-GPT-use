@@ -3,6 +3,7 @@ import type {LocalSession,MovementEvent,PlayerIntent,PlayerState,Vec3} from '../
 import {PLAYER,terrain} from './terrain';
 import {createTerrainCollider,type CollisionShape} from './collision';
 import {flightTerrain} from './flight-terrain';
+import {cameraTerrain} from './camera-terrain';
 
 export const FLIGHT=Object.freeze({speed:10,maxSpeed:60,terminalFallSpeed:60,maxSweepDistance:.2,recoveryBelowY:-80,safeGroundTicks:30});
 type Options=Readonly<{flight?:boolean;flightSpeed?:number}>;
@@ -31,16 +32,16 @@ export class GroundSession implements LocalSession {
  readonly shapes:readonly CollisionShape[];
  readonly dt=1/PLAYER.hz;
 
- static async create(kind:'palace'|'fixture',spawn:Vec3,options:Options={}):Promise<GroundSession>{
+ static async create(kind:'palace'|'fixture'|'camera-fixture',spawn:Vec3,options:Options={}):Promise<GroundSession>{
   if(!Object.values(spawn).every(Number.isFinite))throw new Error('Invalid spawn');
   if(options.flightSpeed!==undefined&&(!Number.isFinite(options.flightSpeed)||options.flightSpeed<=0||options.flightSpeed>FLIGHT.maxSpeed))throw new Error('Invalid flight speed');
   initialized??=RAPIER.init();await initialized;return new GroundSession(kind,spawn,options);
  }
- private constructor(kind:'palace'|'fixture',spawn:Vec3,options:Options){
+ private constructor(kind:'palace'|'fixture'|'camera-fixture',spawn:Vec3,options:Options){
   this.flightEnabled=options.flight===true;this.flightSpeed=options.flightSpeed??FLIGHT.speed;
   this.safePosition=Object.freeze({...spawn});
   this.world=new RAPIER.World({x:0,y:-PLAYER.gravity,z:0});this.world.timestep=this.dt;
-  this.shapes=this.flightEnabled?flightTerrain(kind):terrain(kind);
+  this.shapes=kind==='camera-fixture'?cameraTerrain():this.flightEnabled?flightTerrain(kind):terrain(kind);
   for(const shape of this.shapes)this.ids.set(this.world.createCollider(createTerrainCollider(shape)).handle,shape.id);
   this.body=this.world.createRigidBody(RAPIER.RigidBodyDesc.kinematicPositionBased().setTranslation(spawn.x,spawn.y,spawn.z));
   this.capsule=this.world.createCollider(RAPIER.ColliderDesc.capsule(PLAYER.halfSegment,PLAYER.radius).setActiveCollisionTypes(RAPIER.ActiveCollisionTypes.ALL),this.body);
@@ -54,6 +55,15 @@ export class GroundSession implements LocalSession {
  private groundConstraints(){this.controller.enableAutostep(PLAYER.maxStep,.25,false);this.controller.enableSnapToGround(PLAYER.snap);}
  get snapshot():PlayerState{return this.state;}
  get events():readonly MovementEvent[]{return this.eventLog;}
+ /** Read-only sphere sweep for camera clearance; excludes the controlled capsule. */
+ cameraObstruction(origin:Vec3,end:Vec3,radius=.16):Readonly<{distance:number;colliderId:string|null}>{
+  if(this.disposed)throw new Error('Session disposed');
+  if(![origin.x,origin.y,origin.z,end.x,end.y,end.z,radius].every(Number.isFinite)||radius<=0)throw new Error('Invalid camera query');
+  const delta={x:end.x-origin.x,y:end.y-origin.y,z:end.z-origin.z},length=Math.hypot(delta.x,delta.y,delta.z);
+  if(length<1e-8)return Object.freeze({distance:0,colliderId:null});
+  const hit=this.world.castShape(origin,{x:0,y:0,z:0,w:1},{x:delta.x/length,y:delta.y/length,z:delta.z/length},new RAPIER.Ball(radius),.02,length,true,RAPIER.QueryFilterFlags.EXCLUDE_SENSORS,undefined,this.capsule,this.body);
+  return Object.freeze({distance:hit?Math.max(0,hit.time_of_impact-.03):length,colliderId:hit?this.ids.get(hit.collider.handle)||null:null});
+ }
  private event(kind:MovementEvent['kind'],from:PlayerState['mode']){
   const state=this.state;
   this.eventLog=Object.freeze([...this.eventLog,Object.freeze({tick:state.tick,kind,from,to:state.mode,position:state.position,supportId:state.supportId})].slice(-128));

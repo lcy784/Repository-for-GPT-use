@@ -119,5 +119,17 @@
     "positionToleranceMeters": 0.01,
     "recoveryBelowY": -80,
     "safeGroundTicks": 30
+  },
+  "avatarCamera": {
+    "status": "user-selected-rules-engineering-parameters",
+    "rules": "quality/avatar-camera-rules/P05-20261023.json",
+    "heightMeters": 1.75,
+    "eyeHeightMeters": 1.6,
+    "cameraRadiusMeters": 0.16,
+    "nearPlaneMeters": 0.05,
+    "thirdPersonDistanceMeters": 6,
+    "minimumSwitches": 10,
+    "positionToleranceMeters": 0.01,
+    "blendSeconds": 0.12
   }
 }
