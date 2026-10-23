@@ -14,6 +14,7 @@ try{
  const observations=path.join(runDir,'P06-physics-observations.json'),physical=readJson(observations);assert.equal(physical.runId,context.runId);assert.equal(physical.candidate,context.candidate);assert(physical.records.length>=13);
  const browser=spawnSync(process.execPath,['scripts/quality/p06-browser.mjs'],{cwd:root,encoding:'utf8',timeout:(stage.timeoutMs??600000)-120000,maxBuffer:8*1024*1024,env:process.env});
  const browserLog=path.join(runDir,'P06-browser.log');writeFileSync(browserLog,`${browser.stdout||''}\n${browser.stderr||''}`);
+ assert.equal(browser.status,0,browser.error?.message||'P06 browser process failed; see its execution log');
  const browserFile=path.join(runDir,'P06-browser/results.json'),report=readJson(browserFile);assert.equal(report.runId,context.runId);assert.equal(report.candidate,context.candidate);assert.equal(browser.status,0,'Actual browser journey failed');
  assert.equal(report.results.length,3);assert(report.results.every(r=>r.status==='PASS'));assert(report.captures.length>=12);assert.equal(report.defaultFlightSpeed,10);assert.equal(report.external.length,0);assert.deepEqual(report.errors,[]);
  for(const image of report.captures)assert.equal(hash(readFileSync(inside(path.join(runDir,'P06-browser'),image.file))),image.sha256);

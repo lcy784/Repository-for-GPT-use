@@ -9,8 +9,9 @@ const results=[],checkpoints=[],captures=[],clouds=[],errors=[],external=[],netw
 let browser,server,session,page;
 const observe=()=>page.evaluate(()=>window.__TIANGONG_OBSERVE__());
 const state=async()=>JSON.parse((await observe()).player);
-async function ticks(count){const t=(await state()).tick;await page.waitForFunction(t=>JSON.parse(window.__TIANGONG_OBSERVE__().player).tick>=t,t+count,{timeout:300000});}
+async function ticks(count){const t=(await state()).tick;await page.waitForFunction(t=>JSON.parse(window.__TIANGONG_OBSERVE__().player).tick>=t,t+count,{timeout:600000});}
 async function focus(){await page.locator('canvas').click({position:{x:430,y:180},noWaitAfter:true});}
+async function perspective(mode){if((await observe()).perspective!==mode){await focus();await page.keyboard.press('v');await ticks(2);}assert.equal((await observe()).perspective,mode);}
 async function look(yaw,pitch){
  for(let i=0;i<10;i++){
   const camera=JSON.parse((await observe()).cameraState),dx=Math.max(-240,Math.min(240,(yaw-camera.yaw)/.005)),dy=Math.max(-130,Math.min(130,(camera.pitch-pitch)/.005));
@@ -32,9 +33,9 @@ async function mark(label){const o=await observe(),s=JSON.parse(o.player),p=JSON
 async function move(axis,target){
  const s=await state(),positive=target>s.position[axis],key=axis==='y'?(positive?'Space':'Control'):axis==='x'?(positive?'d':'a'):(positive?'s':'w');
  await focus();await page.keyboard.down(key);
- try{await page.waitForFunction(({axis,target,positive})=>{const o=window.__TIANGONG_OBSERVE__();if(o.phase==='error')throw Error(o.error);const s=JSON.parse(o.player);return positive?s.position[axis]>=target:s.position[axis]<=target;},{axis,target,positive},{timeout:300000});}finally{await page.keyboard.up(key);}
+ try{await page.waitForFunction(({axis,target,positive})=>{const o=window.__TIANGONG_OBSERVE__();if(o.phase==='error')throw Error(o.error);const s=JSON.parse(o.player);return positive?s.position[axis]>=target:s.position[axis]<=target;},{axis,target,positive},{timeout:600000});}finally{await page.keyboard.up(key);}
 }
-async function land(){await focus();await page.keyboard.down('Control');try{await page.waitForFunction(()=>JSON.parse(window.__TIANGONG_OBSERVE__().player).mode==='grounded',null,{timeout:300000});}finally{await page.keyboard.up('Control');}await ticks(3);}
+async function land(){await focus();await page.keyboard.down('Control');try{await page.waitForFunction(()=>JSON.parse(window.__TIANGONG_OBSERVE__().player).mode==='grounded',null,{timeout:600000});}finally{await page.keyboard.up('Control');}await ticks(3);}
 function save(){writeJson(path.join(output,'results.json'),{runId:context.runId,candidate:context.candidate,browser:browser?.version(),functionalViewport:{width:640,height:480},captureViewport:{width:1280,height:720},defaultFlightSpeed:10,results,checkpoints,clouds,captures,errors,external,network});}
 try{
  server=await preview({root,configFile:path.join(root,'vite.config.mjs'),preview:{host:'127.0.0.1',port:0}});
@@ -43,7 +44,7 @@ try{
  session=await browser.newContext({viewport:{width:640,height:480},deviceScaleFactor:1});
  await session.route(/^https?:\/\//,route=>{if(new URL(route.request().url()).origin!==base){external.push(route.request().url());return route.abort();}return route.continue();});
  page=await session.newPage();page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});page.on('response',r=>network.push({path:new URL(r.url()).pathname,status:r.status()}));
- await page.goto(base);await page.waitForFunction(()=>['ready','error'].includes(window.__TIANGONG_OBSERVE__?.().phase),null,{timeout:300000});assert.equal((await observe()).phase,'ready',(await observe()).error);assert.equal((await observe()).fixture,'p06-journey');await ticks(40);
+ await page.goto(base);await page.waitForFunction(()=>['ready','error'].includes(window.__TIANGONG_OBSERVE__?.().phase),null,{timeout:600000});assert.equal((await observe()).phase,'ready',(await observe()).error);assert.equal((await observe()).fixture,'p06-journey');await ticks(40);
  await look(.8,-.12);await mark('jiangnan-bank');await capture('01-jiangnan');await look(0,-.20);
  await move('z',272);await move('x',0);assert.equal((await state()).supportId,'jiangnan-bridge');await mark('stone-bridge');await capture('02-bridge');
  await page.keyboard.press('f');await move('y',70);
@@ -54,14 +55,14 @@ try{
    const o=await mark(`cloud-${expected}-${perspective}`),cloud=JSON.parse(o.journey);assert.equal(cloud.cameraCloudBand,expected);assert(o.activeMeshes>=3&&o.glError===0);if(expected==='inside')assert(cloud.cloudOpacity<.1,'Cloud surface did not fade near the camera');clouds.push({height,perspective,cloud,capture:await capture(`03-cloud-${expected}-${perspective}`)});
   }
  }
- await page.keyboard.press('v');await look(0,-.22);await move('y',143);await move('z',54);await land();assert.equal((await state()).supportId,'palace-terrace');await mark('palace-terrace');await look(0,.35);await capture('04-palace-entrance');await look(0,-.15);
+ await perspective('first');await look(0,-.22);await move('y',143);await move('z',54);await land();assert.equal((await state()).supportId,'palace-terrace');await mark('palace-terrace');await perspective('third');await look(0,.35);await capture('04-palace-entrance');await perspective('first');await look(0,-.15);
  await move('z',0);assert(JSON.parse((await observe()).journey).location.includes('室内'));await mark('palace-interior');await look(0,.20);await capture('05-interior');
  // Leave the same hall along a different lane; the physical matrix separately tests both entry lanes.
  await look(0,-.15);await move('x',8);await move('z',54);await mark('interior-offset-exit');
- await page.keyboard.press('f');await move('y',285);await move('x',15);await move('z',0);await land();assert.match((await state()).supportId,/^palace-roof-/);await mark('palace-roof');await look(.8,-.35);await capture('06-roof');
- const roof=(await state()).position;await ticks(40);assert(Math.hypot(...Object.values((await state()).position).map((v,i)=>v-Object.values(roof)[i]))<.005);await focus();await page.keyboard.press('v');await ticks(2);await capture('07-roof-first');
+ await page.keyboard.press('f');await move('y',285);await move('x',15);await move('z',0);await land();assert.match((await state()).supportId,/^palace-roof-/);await mark('palace-roof');await perspective('third');await look(.8,-.35);await capture('06-roof');
+ const roof=(await state()).position;await ticks(40);assert(Math.hypot(...Object.values((await state()).position).map((v,i)=>v-Object.values(roof)[i]))<.005);await perspective('first');await capture('07-roof-first');
  await page.keyboard.press('f');await move('y',285);await mark('roof-departure');await look(Math.PI,-.48);await capture('08-return-view');
  assert.deepEqual(errors,[]);assert.equal(external.length,0);assert(network.every(r=>r.status<400));
- results.push({id:'P06-01',status:'PASS',executed:8,details:['Default production configuration, 10 m/s; one continuous player, real keyboard/pointer input; no reload or state injection.']},{id:'P06-02',status:'PASS',executed:4,details:['Central indoor entry and offset exit, actual roof landing, stable support and takeoff; both entry lanes also run in the physics matrix.']},{id:'P06-03',status:'PASS',executed:6,details:['Below/inside/above cloud with both perspectives, actual rendered captures; user review remains separate.']});save();
+ results.push({id:'P06-01',status:'PASS',executed:8,details:['Default production configuration, 10 m/s; real V-key first-person transit and third/first-person review views; one continuous player, no reload or state injection.']},{id:'P06-02',status:'PASS',executed:4,details:['Central indoor entry and offset exit, actual roof landing, stable support and takeoff; both entry lanes also run in the physics matrix.']},{id:'P06-03',status:'PASS',executed:6,details:['Below/inside/above cloud with both perspectives, actual rendered captures; user review remains separate.']});save();
 }catch(error){results.push({id:'P06-browser-error',status:'FAIL',executed:1,error:error.stack,failureSnapshot:await observe().catch(()=>null)});save();throw error;}
 finally{await session?.close();await browser?.close();if(server)await new Promise(resolve=>server.httpServer.close(resolve));}

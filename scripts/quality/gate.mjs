@@ -24,7 +24,7 @@ try {
   const context = { runId, candidate: candidate.sha256 };
   const result = runChain(chain, stage => {
     const budget=stage.timeoutMs??timeout;
-    if(!Number.isInteger(budget)||budget<1000||budget>1500000)throw new Error('Invalid explicit stage execution budget');
+    if(!Number.isInteger(budget)||budget<1000||budget>2400000)throw new Error('Invalid explicit stage execution budget');
     return executeStage(root, stage, context, runDir, budget);
   });
   assertCandidateUnchanged(candidate.sha256, candidateFingerprint(root).sha256);

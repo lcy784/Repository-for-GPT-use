@@ -148,8 +148,9 @@
     "positionToleranceMeters": 0.01,
     "requiresUserReview": "P06-04",
     "preserveP02ArtAndPixelReview": true,
-    "executionBudgetMs": 1500000,
-    "perMovementWaitMs": 300000,
-    "executionBudgetIsPerformanceAcceptance": false
+    "executionBudgetMs": 2400000,
+    "perMovementWaitMs": 600000,
+    "executionBudgetIsPerformanceAcceptance": false,
+    "transitPerspective": "first-person-selected-through-real-V-key"
   }
 }
