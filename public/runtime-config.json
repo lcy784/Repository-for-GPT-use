@@ -48,5 +48,6 @@
     282
   ],
   "flightSpeedMetersPerSecond": 10,
-  "thirdPersonDistance": 6
+  "thirdPersonDistance": 6,
+  "assetRegistry": "registry/p07.json"
 }

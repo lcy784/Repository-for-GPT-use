@@ -1,0 +1,151 @@
+{
+  "version": 1,
+  "coordinates": "metres-right-handed-Y-up",
+  "assets": [
+    {
+      "id": "fixture.texture",
+      "kind": "texture",
+      "uri": "registry/p07-texture.bin",
+      "version": "1",
+      "sha256": "ffe028615a902e0bf3e10ca18a876b4189d3d4a2bfa15c9c68d6366cbefbcedd",
+      "dependencies": [],
+      "lods": [],
+      "source": {
+        "authorship": "original repository authored; no downloaded assets",
+        "files": [
+          {
+            "path": "tools/author-p07-assets.mjs",
+            "sha256": "4858e204c7d1e5d18ba16dc591e7bde792732e501368c4b7f7f7e524e156c387"
+          }
+        ]
+      },
+      "usage": "diagnostic-fixture"
+    },
+    {
+      "id": "palace.recipe",
+      "kind": "recipe",
+      "uri": "registry/palace.json",
+      "version": "1",
+      "sha256": "c7d865e5069249ac6ea3a023593ba6292561799728fe72cfbd262f4b2ac6ee33",
+      "dependencies": [],
+      "lods": [],
+      "source": {
+        "authorship": "original repository authored; no downloaded assets",
+        "files": [
+          {
+            "path": "src/runtime/palace.ts",
+            "sha256": "361886f995158e2bebc64afb8a5e16d1a2f7afe0e65d0295af6d364e4b3d1d7d"
+          },
+          {
+            "path": "src/runtime/roof.ts",
+            "sha256": "bd699f080daf7c0c69a266ec1fe8b598b21edb440180fb3e399531c1153e241f"
+          }
+        ]
+      }
+    },
+    {
+      "id": "journey.recipe",
+      "kind": "recipe",
+      "uri": "registry/journey.json",
+      "version": "1",
+      "sha256": "8bd2979ff0bc0d5f68702218ef2e3a18dd39611af9bec5e3fb9cda2c00e3b110",
+      "dependencies": [
+        "palace.recipe"
+      ],
+      "lods": [],
+      "source": {
+        "authorship": "original repository authored; no downloaded assets",
+        "files": [
+          {
+            "path": "src/runtime/journey-view.ts",
+            "sha256": "22387d324282bf0e1fcd2d6f24fdd67db40e59cf63968aedd2ec80ac7fd08a6e"
+          },
+          {
+            "path": "src/game/journey.ts",
+            "sha256": "9ac1fd2e034f59030c9b973a275e88f9157512042071cbcbe4a758627ea6c52f"
+          }
+        ]
+      }
+    },
+    {
+      "id": "journey.collision",
+      "kind": "collision",
+      "uri": "registry/collisions.json",
+      "version": "1",
+      "sha256": "013f12a338e3f2c02b130c1ebe127f05d2292aa86f37ed9ef2a95f1d4723f26d",
+      "dependencies": [],
+      "lods": [],
+      "source": {
+        "authorship": "original repository authored; no downloaded assets",
+        "files": [
+          {
+            "path": "src/game/journey.ts",
+            "sha256": "9ac1fd2e034f59030c9b973a275e88f9157512042071cbcbe4a758627ea6c52f"
+          },
+          {
+            "path": "src/game/flight-terrain.ts",
+            "sha256": "fbaf355aabed38dd9afb9ba571e7ee2982a674760b40d08dbba3d40931b939af"
+          },
+          {
+            "path": "src/game/terrain.ts",
+            "sha256": "58d1f9412459e61349db44af09917d5288d22897e9a10d295b57995c3dfefffa"
+          },
+          {
+            "path": "src/game/collision.ts",
+            "sha256": "80885d811b82a0aaa0389337e095ab9baa0386838d622fc4930b276802dc5aed"
+          },
+          {
+            "path": "src/runtime/roof.ts",
+            "sha256": "bd699f080daf7c0c69a266ec1fe8b598b21edb440180fb3e399531c1153e241f"
+          }
+        ]
+      }
+    },
+    {
+      "id": "traveler.model",
+      "kind": "model",
+      "uri": "characters/p05/traveler.glb",
+      "version": "1",
+      "sha256": "a8a6f7394d870bc7cfe3b4dcf0e038c4e5f0a92fa42841a75e27e1c990f372d3",
+      "dependencies": [],
+      "lods": [],
+      "source": {
+        "authorship": "original repository authored; no downloaded assets",
+        "files": [
+          {
+            "path": "tools/author-p05-avatar.py",
+            "sha256": "eec8e531c8805f20a386d97f751f4d73a442cf3a3aa6404822f1a1dc1da71c9f"
+          },
+          {
+            "path": "public/characters/p05/README.md",
+            "sha256": "ea440cf4bd67123f45e36e87e8e0b88afb6a592cc761563bcb5e9c1b86cd0c74"
+          }
+        ]
+      }
+    },
+    {
+      "id": "journey.world",
+      "kind": "world",
+      "uri": "registry/world.json",
+      "version": "1",
+      "sha256": "92d55db570192fb4ee3b2feab09b34ebac3c89360bcc70106952ec91bf1179ef",
+      "dependencies": [
+        "palace.recipe",
+        "journey.recipe",
+        "journey.collision",
+        "traveler.model"
+      ],
+      "lods": [],
+      "source": {
+        "authorship": "original repository authored; no downloaded assets",
+        "files": [
+          {
+            "path": "src/game/journey.ts",
+            "sha256": "9ac1fd2e034f59030c9b973a275e88f9157512042071cbcbe4a758627ea6c52f"
+          }
+        ]
+      },
+      "collisionRef": "journey.collision"
+    }
+  ]
+}

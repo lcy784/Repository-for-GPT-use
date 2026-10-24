@@ -1,3 +1,6 @@
+import {AssetScope,HttpAssets} from '../assets/access';
+import {ownScene} from '../assets/scene-owner';
+import type {CollisionShape} from '../game/collision';
 import { Engine } from '@babylonjs/core/Engines/engine';
 import { EngineStore } from '@babylonjs/core/Engines/engineStore';
 import { Scene } from '@babylonjs/core/scene';
@@ -52,6 +55,8 @@ export class Application {
   private animatedAvatar:AvatarView|null=null;
   private playerCamera:PlayerCamera|null=null;
   private journey:JourneyView|null=null;
+  private assets:AssetScope|null=null;
+  private collisionShapes:readonly CollisionShape[]|undefined;
   private canvas: HTMLCanvasElement;
   constructor(private readonly container: HTMLElement, private readonly update: () => void, private readonly countFrame: () => void) {
     this.canvas = document.createElement('canvas');
@@ -61,6 +66,15 @@ export class Application {
   async start(): Promise<void> {
     try {
       this.config = await loadRuntimeConfig(this.abort.signal);
+      if (this.abort.signal.aborted) return;
+      if(this.config.assetRegistry){
+        const assets=await AssetScope.open(this.config.assetRegistry,new HttpAssets(new URL('./',document.baseURI)),this.abort.signal);
+        if(this.abort.signal.aborted){assets.dispose();return;}this.assets=assets;
+        const world=JSON.parse(new TextDecoder().decode(await assets.hold('journey.world')));
+        if(world.version!==1||world.id!=='p06-core-journey'||world.collision!=='journey.collision'||world.model!=='traveler.model')throw Error('Invalid world asset contract');
+        const collision=JSON.parse(new TextDecoder().decode(await assets.hold(world.collision)));
+        if(collision.version!==1||collision.coordinates!=='metres-right-handed-Y-up'||!Array.isArray(collision.shapes))throw Error('Invalid collision asset');this.collisionShapes=collision.shapes;
+      }
       if (this.abort.signal.aborted) return;
       if (typeof WebAssembly === 'undefined' || !WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,0,0]))) throw new Error('当前浏览器不支持必需的 WebAssembly');
       await WebAssembly.instantiate(new Uint8Array([0,97,115,109,1,0,0,0]));
@@ -84,7 +98,7 @@ export class Application {
       this.camera.lowerRadiusLimit = 6;
       this.camera.upperRadiusLimit = this.config.sceneFixture === 'p02-palace' ? 650 : 45;
       this.camera.wheelPrecision = 15;
-      if (['p02-palace','p03-palace-walk','p04-palace-flight','p05-palace-avatar','p06-journey'].includes(this.config.sceneFixture)) { createPalace(this.scene); if(this.config.sceneFixture==='p06-journey')this.journey=createJourneyView(this.scene); } else if (this.config.sceneFixture === 'p01-depth') {
+      if (['p02-palace','p03-palace-walk','p04-palace-flight','p05-palace-avatar','p06-journey'].includes(this.config.sceneFixture)) { if(this.assets){const assets=this.assets,scene=this.scene;this.journey=await assets.own('journey.scene',async()=>{const palace=JSON.parse(new TextDecoder().decode(await assets.hold('palace.recipe'))),journey=JSON.parse(new TextDecoder().decode(await assets.hold('journey.recipe')));if(palace.factory!=='palace-v1'||journey.factory!=='journey-v1'||journey.palaceLift!==120||journey.cloudHeight!==100)throw Error('Unsupported procedural recipe');return ownScene(scene,()=>{createPalace(scene);return createJourneyView(scene);});});if(this.abort.signal.aborted)return;}else{createPalace(this.scene); if(this.config.sceneFixture==='p06-journey')this.journey=createJourneyView(this.scene);} } else if (this.config.sceneFixture === 'p01-depth') {
         const light = new HemisphericLight('sky-light', new Vector3(-0.6, 1, -0.3), this.scene);
         light.intensity = 1.25;
         const material = (name: string, color: Color3): StandardMaterial => {
@@ -107,16 +121,19 @@ export class Application {
         const p05=/^p0[56]-/.test(this.config.sceneFixture);
         const flight=this.config.sceneFixture.startsWith('p04-')||p05;
         const fixture=['p03-terrain','p04-flight','p05-camera'].includes(this.config.sceneFixture);
-        const ground=await GroundSession.create(this.config.sceneFixture==='p06-journey'?'journey':this.config.sceneFixture==='p05-camera'?'camera-fixture':fixture?'fixture':'palace',{x:spawn[0],y:spawn[1],z:spawn[2]},{flight,flightSpeed:this.config.flightSpeedMetersPerSecond});
+        const ground=await GroundSession.create(this.config.sceneFixture==='p06-journey'?'journey':this.config.sceneFixture==='p05-camera'?'camera-fixture':fixture?'fixture':'palace',{x:spawn[0],y:spawn[1],z:spawn[2]},{flight,flightSpeed:this.config.flightSpeedMetersPerSecond,shapes:this.collisionShapes});
         if(this.abort.signal.aborted){ground.dispose();return;}
         this.ground=ground;this.input=new GroundInput(this.canvas,flight);
-        this.avatar=createGroundView(this.scene,ground.shapes,fixture,!p05);
+        const groundScene=this.scene;
+        this.avatar=this.assets?await this.assets.own('ground.view',async()=>ownScene(groundScene,()=>createGroundView(groundScene,ground.shapes,fixture,!p05))):createGroundView(this.scene,ground.shapes,fixture,!p05);
+        if(this.abort.signal.aborted)return;
         this.camera.lowerRadiusLimit=2;this.camera.upperRadiusLimit=60;this.camera.lowerBetaLimit=.05;this.camera.upperBetaLimit=Math.PI*.49;
         if(p05){
           this.avatar.dispose();this.avatar=null;
           const [{AvatarView},{PlayerCamera}]=await Promise.all([import('../game/avatar'),import('../game/player-camera')]);avatarClass=AvatarView;
           if(this.abort.signal.aborted)return;
-          const animated=await AvatarView.load(this.scene,new URL('characters/p05/traveler.glb',document.baseURI).href);
+          const scene=this.scene;
+          const animated=this.assets?await this.assets.own('traveler.view',async()=>{const view=await AvatarView.load(scene,await this.assets!.hold('traveler.model'));return {value:view,dispose:()=>view.dispose()};}):await AvatarView.load(scene,new URL('characters/p05/traveler.glb',document.baseURI).href);
           if(this.abort.signal.aborted){animated.dispose();return;}
           this.animatedAvatar=animated;this.avatar=animated.root;
           this.camera.dispose();this.camera=null;
@@ -207,6 +224,7 @@ export class Application {
     this.input?.dispose();this.input=null;this.ground?.dispose();this.ground=null;this.avatar=null;
     for (const remove of this.removeListeners.splice(0)) remove();
     this.engine?.stopRenderLoop(this.render);
+    this.assets?.dispose();this.collisionShapes=undefined;
     this.instrumentation?.dispose(); this.instrumentation=null;
     this.scene?.dispose(); this.engine?.dispose();
     this.scene = null; this.engine = null; this.camera = null;this.journey=null;
@@ -245,6 +263,7 @@ export class Application {
       avatarPosition:this.avatar?.position.asArray().join(',')||null,
       controllers:groundSessionClass?.instances||0,inputListeners:this.input?.listeners||0,pressedKeys:this.input?.pressed||'',
       inputFocused:document.activeElement===this.canvas,
+      assets:this.assets?JSON.stringify(this.assets.observe()):null,
       journey:this.journey&&this.ground?JSON.stringify({location:journeyLocation(this.ground.snapshot),...this.journey.observe()}):null,
       fixture: this.config?.sceneFixture || null, renderer: this.renderer,
     });

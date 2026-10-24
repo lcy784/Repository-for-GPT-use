@@ -50,3 +50,7 @@ P04 用户规则记录 `flight-rules/P04-20261023.json`，独立入口 `scripts/
 ## P05 增补
 
 P05 选择记录 `avatar-camera-rules/P05-20261023.json`；真实入口 `scripts/quality/stages/P05.mjs`。累计命令 `npm run gate -- --through P05`，包含 GLB 校验与可复现生成、真实动画与关节、Rapier 相机球形扫掠、实际 V／按钮／拖动、12 次切换、分辨率与原生焦点恢复、模型缺失与资源释放。原 P04 巨殿输入归档到 `fixtures/P04/palace-runtime-config.json`，继续在当前核心运行。正式索引 `reports/P05-REVIEW.md`，P06 未启动。
+
+## P07 增补
+
+当前累计命令 `npm run gate -- --through P07`。真实入口 `scripts/quality/stages/P07.mjs` 检查资源契约、原作者源哈希、实际 GPU 共享／迟到资源、两处迁移 PNG 和十次纹理／完整 P06 世界装卸。结果逐项绑定本轮候选及构建证据，未实现阶段仍无占位成功入口。P06 的明确继续授权另记 `visual-acceptance/P06-CONTINUED-DEVELOPMENT.json`，标明独立美术认可未提供，不伪造艺术评分。详见 `docs/P07-ASSET-LIFECYCLE.md` 和 `reports/P07-REVIEW.md`。

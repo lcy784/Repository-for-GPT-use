@@ -14,7 +14,16 @@ export function assessJourneyReview(record,request){
 }
 export function evaluateJourneyReview(root,request){
  const file=inside(root,'quality/visual-acceptance/P06-CORE-JOURNEY.json');
- if(!existsSync(file))return assessJourneyReview(null,request);
+ if(!existsSync(file)){
+  const continuation=inside(root,'quality/visual-acceptance/P06-CONTINUED-DEVELOPMENT.json');
+  if(!existsSync(continuation))return assessJourneyReview(null,request);
+  const policy=readJson(continuation);assert.equal(policy.version,1);assert.equal(policy.status,'user-directed-continue');assert.equal(policy.scope,'P06-to-P07-development-only');assert.equal(policy.source.quote,'执行p07开发');assert.equal(policy.artisticAcceptance,'not-independently-confirmed');assert.equal(policy.P15FormalMeasurementsStillRequired,true);
+  assert.match(policy.priorRequest,/^quality\/reports\/[0-9TZ.a-f-]+\/P06-review-request\.json$/);
+  assert.equal(hash(readFileSync(inside(root,policy.priorRequest))),policy.priorRequestSha256);
+  assert.deepEqual(policy.preservedInputs.map(i=>i.path),['src/runtime/palace.ts','src/runtime/roof.ts','src/runtime/journey-view.ts','src/game/journey.ts','public/characters/p05/traveler.glb']);
+  for(const input of policy.preservedInputs)assert.equal(hash(readFileSync(inside(root,input.path))),input.sha256,'P06 continuation cannot authorize changed artwork');
+  return {status:'PASS',reason:'User explicitly directed P07 development on preserved P06 artwork. Continuation authorization supersedes the stop; independent artistic acceptance and P15 hardware measurements remain outstanding.',authorization:'continued-development-only',artisticAcceptance:'not-independently-confirmed',source:policy.source};
+ }
  const record=readJson(file),accepted=readJson(inside(root,record.reviewedRequest));
  assert.equal(accepted.reviewInputHash,record.reviewInputHash);
  assert.deepEqual(record.images,accepted.images,'The acceptance must name all images in the reviewed request');

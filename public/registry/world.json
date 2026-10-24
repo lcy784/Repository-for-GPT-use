@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "id": "p06-core-journey",
+  "coordinates": "metres-right-handed-Y-up",
+  "entry": {
+    "position": [
+      -18,
+      0.91,
+      282
+    ]
+  },
+  "regions": [
+    {
+      "id": "jiangnan",
+      "bounds": [
+        [
+          -46,
+          0,
+          162
+        ],
+        [
+          46,
+          15,
+          310
+        ]
+      ]
+    },
+    {
+      "id": "palace",
+      "bounds": [
+        [
+          -90,
+          120,
+          -100
+        ],
+        [
+          90,
+          272,
+          193
+        ]
+      ]
+    }
+  ],
+  "recipes": [
+    "palace.recipe",
+    "journey.recipe"
+  ],
+  "model": "traveler.model",
+  "collision": "journey.collision",
+  "lods": [],
+  "streaming": false
+}

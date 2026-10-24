@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "factory": "palace-v1",
+  "units": "metres",
+  "coordinates": "right-handed-Y-up",
+  "sources": [
+    {
+      "path": "src/runtime/palace.ts",
+      "sha256": "361886f995158e2bebc64afb8a5e16d1a2f7afe0e65d0295af6d364e4b3d1d7d"
+    },
+    {
+      "path": "src/runtime/roof.ts",
+      "sha256": "bd699f080daf7c0c69a266ec1fe8b598b21edb440180fb3e399531c1153e241f"
+    }
+  ]
+}

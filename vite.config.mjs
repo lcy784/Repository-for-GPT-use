@@ -1,4 +1,6 @@
+import {verifyAssets} from './scripts/quality/p07-contracts.mjs';
 export default {
+  plugins:[{name:'p07-asset-contracts',apply:'build',buildStart(){verifyAssets(process.cwd());}}],
   base: './',
   // Stable prebundle entries prevent late PBR shader imports invalidating active dev requests.
   optimizeDeps: { noDiscovery: true, include: [
@@ -35,5 +37,5 @@ export default {
 ] },
   server: { host: '127.0.0.1' },
   preview: { host: '127.0.0.1' },
-  build: { target: 'es2022', sourcemap: false },
+  build: { rolldownOptions:{input:{main:'index.html',p07:'quality/p07-fixture.html'}}, target: 'es2022', sourcemap: false },
 };

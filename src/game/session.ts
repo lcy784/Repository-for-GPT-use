@@ -7,7 +7,7 @@ import {journeyTerrain} from './journey';
 import {cameraTerrain} from './camera-terrain';
 
 export const FLIGHT=Object.freeze({speed:10,maxSpeed:60,terminalFallSpeed:60,maxSweepDistance:.2,recoveryBelowY:-80,safeGroundTicks:30});
-type Options=Readonly<{flight?:boolean;flightSpeed?:number}>;
+type Options=Readonly<{flight?:boolean;flightSpeed?:number;shapes?:readonly CollisionShape[]}>;
 let initialized:Promise<void>|null=null;
 const freezeState=(s:PlayerState):PlayerState=>Object.freeze({...s,position:Object.freeze({...s.position}),velocity:Object.freeze({...s.velocity})});
 
@@ -42,7 +42,7 @@ export class GroundSession implements LocalSession {
   this.flightEnabled=options.flight===true;this.flightSpeed=options.flightSpeed??FLIGHT.speed;
   this.safePosition=Object.freeze({...spawn});
   this.world=new RAPIER.World({x:0,y:-PLAYER.gravity,z:0});this.world.timestep=this.dt;
-  this.shapes=kind==='journey'?journeyTerrain():kind==='camera-fixture'?cameraTerrain():this.flightEnabled?flightTerrain(kind):terrain(kind);
+  this.shapes=options.shapes??(kind==='journey'?journeyTerrain():kind==='camera-fixture'?cameraTerrain():this.flightEnabled?flightTerrain(kind):terrain(kind));
   for(const shape of this.shapes)this.ids.set(this.world.createCollider(createTerrainCollider(shape)).handle,shape.id);
   this.body=this.world.createRigidBody(RAPIER.RigidBodyDesc.kinematicPositionBased().setTranslation(spawn.x,spawn.y,spawn.z));
   this.capsule=this.world.createCollider(RAPIER.ColliderDesc.capsule(PLAYER.halfSegment,PLAYER.radius).setActiveCollisionTypes(RAPIER.ActiveCollisionTypes.ALL),this.body);

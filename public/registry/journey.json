@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "factory": "journey-v1",
+  "palaceLift": 120,
+  "cloudHeight": 100,
+  "sources": [
+    {
+      "path": "src/runtime/journey-view.ts",
+      "sha256": "22387d324282bf0e1fcd2d6f24fdd67db40e59cf63968aedd2ec80ac7fd08a6e"
+    },
+    {
+      "path": "src/game/journey.ts",
+      "sha256": "9ac1fd2e034f59030c9b973a275e88f9157512042071cbcbe4a758627ea6c52f"
+    }
+  ]
+}
