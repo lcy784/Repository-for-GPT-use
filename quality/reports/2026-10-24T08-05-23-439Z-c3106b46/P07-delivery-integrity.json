@@ -1,0 +1,10 @@
+{
+  "candidate": "27c76ef97939b32df5ed9a9e41571bcc03b9552be07399fa9d8a328c180115ae",
+  "sourceCommit": "2de14eb",
+  "unchangedCandidate": true,
+  "stagesVerified": 8,
+  "evidenceHashChecks": 270,
+  "productionFilesVerified": 317,
+  "checkedAt": "2026-10-24T08:45:29.827Z",
+  "scope": "Archive and current production manifest integrity, not a replacement for the recorded test executions"
+}

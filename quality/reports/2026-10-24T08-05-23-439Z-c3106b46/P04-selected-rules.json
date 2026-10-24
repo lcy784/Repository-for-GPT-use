@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "user-selected",
+  "date": "2026-10-23",
+  "source": {
+    "quote": "采用这组规则，速度先用可调整的工程参数",
+    "context": "User accepted the proposed flight controls, hover, gravity, midair rescue and last stable ground recovery in this chat."
+  },
+  "controls": {
+    "toggleFlight": "F",
+    "horizontal": "WASD or arrow keys relative to view",
+    "up": "Space",
+    "down": "Ctrl"
+  },
+  "rules": {
+    "hoverOnRelease": true,
+    "gravityAfterStop": true,
+    "restartFlightWhileFalling": true,
+    "flightEnergy": false,
+    "fallDamage": false,
+    "voidRecovery": "last-stable-supported-position"
+  },
+  "engineeringDetails": {
+    "flightSpeedMetersPerSecond": 10,
+    "maximumConfigurableSpeed": 60,
+    "stopFlightVerticalVelocity": "clear-flight-velocity-then-apply-gravity",
+    "descendingContact": "land-on-walkable-support",
+    "safeGroundTicks": 30,
+    "recoveryBelowY": -80,
+    "boundsAreFinalWorldDimensions": false
+  }
+}

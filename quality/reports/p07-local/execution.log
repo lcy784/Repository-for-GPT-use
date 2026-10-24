@@ -1,0 +1,19 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: 运行配置格式无效
+
+'error' !== 'ready'
+
+    at production (file:///workspace/Repository-for-GPT-use/scripts/quality/p07-browser.mjs:16:140)
+    at async file:///workspace/Repository-for-GPT-use/scripts/quality/p07-browser.mjs:37:330 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 'error',
+  expected: 'ready',
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

@@ -1,0 +1,8 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+ReferenceError: s is not defined
+    at file:///workspace/Repository-for-GPT-use/quality/reports/p07-migration-local/migration.mjs:29:179
+
+Node.js v24.19.0

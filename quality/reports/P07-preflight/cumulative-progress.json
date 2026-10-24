@@ -1,0 +1,162 @@
+{
+  "asOf": "2026-10-24T08:34:36.588Z",
+  "notFinal": true,
+  "stages": [
+    {
+      "stage": "P00",
+      "status": "PASS",
+      "cases": [
+        {
+          "id": "P00-01",
+          "status": "PASS",
+          "executed": 5
+        },
+        {
+          "id": "P00-02",
+          "status": "PASS",
+          "executed": 13
+        },
+        {
+          "id": "P00-03",
+          "status": "PASS",
+          "executed": 4
+        },
+        {
+          "id": "P00-04",
+          "status": "PASS",
+          "executed": 9
+        }
+      ]
+    },
+    {
+      "stage": "P01",
+      "status": "PASS",
+      "cases": [
+        {
+          "id": "P01-01",
+          "status": "PASS",
+          "executed": 2
+        },
+        {
+          "id": "P01-02",
+          "status": "PASS",
+          "executed": 4
+        },
+        {
+          "id": "P01-03",
+          "status": "PASS",
+          "executed": 7
+        },
+        {
+          "id": "P01-04",
+          "status": "PASS",
+          "executed": 6
+        }
+      ]
+    },
+    {
+      "stage": "P02",
+      "status": "PASS",
+      "cases": [
+        {
+          "id": "P02-01",
+          "status": "PASS",
+          "executed": 6
+        },
+        {
+          "id": "P02-02",
+          "status": "PASS",
+          "executed": 13
+        },
+        {
+          "id": "P02-03",
+          "status": "PASS",
+          "executed": 3
+        },
+        {
+          "id": "P02-04",
+          "status": "PASS",
+          "executed": 4
+        }
+      ]
+    },
+    {
+      "stage": "P03",
+      "status": "PASS",
+      "cases": [
+        {
+          "id": "P03-01",
+          "status": "PASS",
+          "executed": 8
+        },
+        {
+          "id": "P03-02",
+          "status": "PASS",
+          "executed": 12
+        },
+        {
+          "id": "P03-03",
+          "status": "PASS",
+          "executed": 1
+        },
+        {
+          "id": "P03-04",
+          "status": "PASS",
+          "executed": 6
+        }
+      ]
+    },
+    {
+      "stage": "P04",
+      "status": "PASS",
+      "cases": [
+        {
+          "id": "P04-01",
+          "status": "PASS",
+          "executed": 14
+        },
+        {
+          "id": "P04-02",
+          "status": "PASS",
+          "executed": 8
+        },
+        {
+          "id": "P04-03",
+          "status": "PASS",
+          "executed": 5
+        },
+        {
+          "id": "P04-04",
+          "status": "PASS",
+          "executed": 9
+        }
+      ]
+    },
+    {
+      "stage": "P05",
+      "status": "PASS",
+      "cases": [
+        {
+          "id": "P05-01",
+          "status": "PASS",
+          "executed": 5
+        },
+        {
+          "id": "P05-02",
+          "status": "PASS",
+          "executed": 8
+        },
+        {
+          "id": "P05-03",
+          "status": "PASS",
+          "executed": 9
+        },
+        {
+          "id": "P05-04",
+          "status": "PASS",
+          "executed": 18
+        }
+      ]
+    }
+  ]
+}

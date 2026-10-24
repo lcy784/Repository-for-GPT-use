@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "stage": "P06",
+  "candidate": "27c76ef97939b32df5ed9a9e41571bcc03b9552be07399fa9d8a328c180115ae",
+  "reviewInputHash": "9160e501c4ec4a0d23e9d36c8c9d8785e1e77fdcfc81b4d166eea7b2e43b08ab",
+  "status": "awaiting-user-review",
+  "scope": "P06-core-journey",
+  "route": [
+    "jiangnan-bank",
+    "stone-bridge",
+    "cloud-below",
+    "cloud-inside",
+    "cloud-above",
+    "palace-terrace",
+    "palace-interior",
+    "palace-roof",
+    "roof-departure"
+  ],
+  "images": [
+    {
+      "path": "quality/reports/2026-10-24T08-05-23-439Z-c3106b46/P06-browser/01-jiangnan.png",
+      "sha256": "c7422dc13a49eb075b0731d4fd8c640f72197076b4bf1a80d65a88c480e54cba"
+    },
+    {
+      "path": "quality/reports/2026-10-24T08-05-23-439Z-c3106b46/P06-browser/02-bridge.png",
+      "sha256": "f03d96d79f4e0abd848860f830f6038672b094d92dca81c579688b6f165853fd"
+    },
+    {
+      "path": "quality/reports/2026-10-24T08-05-23-439Z-c3106b46/P06-browser/03-cloud-below-third.png",
+      "sha256": "986c52ce68825577d5cac14ed22870cc27563a453b40adbc3de0081081c3ae72"
+    },
+    {
+      "path": "quality/reports/2026-10-24T08-05-23-439Z-c3106b46/P06-browser/03-cloud-below-first.png",
+      "sha256": "eb0d9fe1651fe550f90e9e3ce028d2e61fb0e962689f68d543d8d4e4c810afb8"
+    },
+    {
+      "path": "quality/reports/2026-10-24T08-05-23-439Z-c3106b46/P06-browser/03-cloud-inside-third.png",
+      "sha256": "0719f5091843ea0636fbbd58a3a774926549a897506638e86dfd91997d1404db"
+    },
+    {
+      "path": "quality/reports/2026-10-24T08-05-23-439Z-c3106b46/P06-browser/03-cloud-inside-first.png",
+      "sha256": "f7fabae329ae1d97e06d2241ed6570a44defdf6f29142ca7092a157e7a9b4dd3"
+    },
+    {
+      "path": "quality/reports/2026-10-24T08-05-23-439Z-c3106b46/P06-browser/03-cloud-above-third.png",
+      "sha256": "3ef0d66283047c8257c84b33444df3d8d3cea0d65b3e9566a646a376251fc6cf"
+    },
+    {
+      "path": "quality/reports/2026-10-24T08-05-23-439Z-c3106b46/P06-browser/03-cloud-above-first.png",
+      "sha256": "375d52e4d86860f34acb4c8d10dbac0ae2fde6a661ed4c21a0b745bc22703a5f"
+    },
+    {
+      "path": "quality/reports/2026-10-24T08-05-23-439Z-c3106b46/P06-browser/04-palace-entrance.png",
+      "sha256": "8599d462ce66f9a93103a4828e8f7c2d76b3ad84fcd01004e9e9983b549a8c5a"
+    },
+    {
+      "path": "quality/reports/2026-10-24T08-05-23-439Z-c3106b46/P06-browser/05-interior.png",
+      "sha256": "8ad1b9bc9183a533fb6c2e1d709cf332371589c0a04afedd090a165956d228b2"
+    },
+    {
+      "path": "quality/reports/2026-10-24T08-05-23-439Z-c3106b46/P06-browser/06-roof.png",
+      "sha256": "6e50510d634ea091f0f6ad234aba4cf32420bf642fa7e191cb85777a39877d8d"
+    },
+    {
+      "path": "quality/reports/2026-10-24T08-05-23-439Z-c3106b46/P06-browser/07-roof-first.png",
+      "sha256": "82aab89d7a6464f9dcc618708beae02af76cfeed29c02b88dc4cf7f5b15170cb"
+    },
+    {
+      "path": "quality/reports/2026-10-24T08-05-23-439Z-c3106b46/P06-browser/08-return-view.png",
+      "sha256": "aa4fe55e30a580c55dcf8b9ee0c7ec5ec2028d0e6ed58a06882667f2e5579b6c"
+    }
+  ],
+  "referenceFiles": [
+    "docs/天宫HTML/input/IMG_20261019_161331.jpg",
+    "docs/天宫HTML/input/IMG_20261019_161156.jpg",
+    "docs/天宫HTML/input/jiangnan-offline.html"
+  ],
+  "reviewQuestions": [
+    "Does the ground-to-palace journey feel continuous and the palace retain its intended monumental scale?",
+    "Are interior access, roof landing and the below/inside/above-cloud views acceptable in both perspectives?"
+  ],
+  "targetPerformance": "Cloud functional evidence only. P15 still requires real Windows measurements."
+}

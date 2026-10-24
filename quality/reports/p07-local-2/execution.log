@@ -1,0 +1,20 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: bank migration pixels differ
++ actual - expected
+
++ '34f51cdb2128d447382f418e23cdc2c656d2918ba4b90fd1d87fd457640d9f65'
+- '52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566'
+
+    at file:///workspace/Repository-for-GPT-use/scripts/quality/p07-browser.mjs:37:692 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: '34f51cdb2128d447382f418e23cdc2c656d2918ba4b90fd1d87fd457640d9f65',
+  expected: '52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566',
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

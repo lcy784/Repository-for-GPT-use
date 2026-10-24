@@ -1,0 +1,141 @@
+{
+  "date": "2026-10-24 Asia/Shanghai",
+  "automaticFindings": 26,
+  "reviewedFindings": [
+    {
+      "path": "public/registry/journey.json",
+      "line": 9,
+      "classification": "SHA-256 integrity digest; not credential"
+    },
+    {
+      "path": "public/registry/journey.json",
+      "line": 13,
+      "classification": "SHA-256 integrity digest; not credential"
+    },
+    {
+      "path": "public/registry/p07.json",
+      "line": 10,
+      "classification": "SHA-256 integrity digest; not credential"
+    },
+    {
+      "path": "public/registry/p07.json",
+      "line": 18,
+      "classification": "SHA-256 integrity digest; not credential"
+    },
+    {
+      "path": "public/registry/p07.json",
+      "line": 29,
+      "classification": "SHA-256 integrity digest; not credential"
+    },
+    {
+      "path": "public/registry/p07.json",
+      "line": 37,
+      "classification": "SHA-256 integrity digest; not credential"
+    },
+    {
+      "path": "public/registry/p07.json",
+      "line": 41,
+      "classification": "SHA-256 integrity digest; not credential"
+    },
+    {
+      "path": "public/registry/p07.json",
+      "line": 51,
+      "classification": "SHA-256 integrity digest; not credential"
+    },
+    {
+      "path": "public/registry/p07.json",
+      "line": 61,
+      "classification": "SHA-256 integrity digest; not credential"
+    },
+    {
+      "path": "public/registry/p07.json",
+      "line": 65,
+      "classification": "SHA-256 integrity digest; not credential"
+    },
+    {
+      "path": "public/registry/p07.json",
+      "line": 75,
+      "classification": "SHA-256 integrity digest; not credential"
+    },
+    {
+      "path": "public/registry/p07.json",
+      "line": 87,
+      "classification": "SHA-256 integrity digest; not credential"
+    },
+    {
+      "path": "public/registry/p07.json",
+      "line": 91,
+      "classification": "SHA-256 integrity digest; not credential"
+    },
+    {
+      "path": "public/registry/p07.json",
+      "line": 95,
+      "classification": "SHA-256 integrity digest; not credential"
+    },
+    {
+      "path": "public/registry/p07.json",
+      "line": 109,
+      "classification": "SHA-256 integrity digest; not credential"
+    },
+    {
+      "path": "public/registry/p07.json",
+      "line": 117,
+      "classification": "SHA-256 integrity digest; not credential"
+    },
+    {
+      "path": "public/registry/p07.json",
+      "line": 121,
+      "classification": "SHA-256 integrity digest; not credential"
+    },
+    {
+      "path": "public/registry/p07.json",
+      "line": 131,
+      "classification": "SHA-256 integrity digest; not credential"
+    },
+    {
+      "path": "public/registry/palace.json",
+      "line": 9,
+      "classification": "SHA-256 integrity digest; not credential"
+    },
+    {
+      "path": "public/registry/palace.json",
+      "line": 13,
+      "classification": "SHA-256 integrity digest; not credential"
+    },
+    {
+      "path": "quality/visual-acceptance/P06-CONTINUED-DEVELOPMENT.json",
+      "line": 11,
+      "classification": "SHA-256 integrity digest; not credential"
+    },
+    {
+      "path": "quality/visual-acceptance/P06-CONTINUED-DEVELOPMENT.json",
+      "line": 15,
+      "classification": "SHA-256 integrity digest; not credential"
+    },
+    {
+      "path": "quality/visual-acceptance/P06-CONTINUED-DEVELOPMENT.json",
+      "line": 19,
+      "classification": "SHA-256 integrity digest; not credential"
+    },
+    {
+      "path": "quality/visual-acceptance/P06-CONTINUED-DEVELOPMENT.json",
+      "line": 23,
+      "classification": "SHA-256 integrity digest; not credential"
+    },
+    {
+      "path": "quality/visual-acceptance/P06-CONTINUED-DEVELOPMENT.json",
+      "line": 27,
+      "classification": "SHA-256 integrity digest; not credential"
+    },
+    {
+      "path": "quality/visual-acceptance/P06-CONTINUED-DEVELOPMENT.json",
+      "line": 31,
+      "classification": "SHA-256 integrity digest; not credential"
+    }
+  ],
+  "credentialFindings": 0,
+  "reviewScope": "All final changed source, scripts, tests, registry, config, documentation and continuation record; final scan has same 26 SHA-256-only findings. Original imports unchanged.",
+  "scannerLog": "P07-preflight/scan.log",
+  "finalScanLog": "P07-preflight/final-scan.log",
+  "finalCandidate": "27c76ef97939b32df5ed9a9e41571bcc03b9552be07399fa9d8a328c180115ae"
+}
