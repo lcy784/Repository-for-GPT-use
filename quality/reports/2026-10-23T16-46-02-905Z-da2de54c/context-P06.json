@@ -1,0 +1,20 @@
+{
+  "runId": "2026-10-23T16-46-02-905Z-da2de54c",
+  "candidate": "d6738e2f4e1975ca962ebc055ecf81e8393ce73d595d7a4f93d4641832ab1f81",
+  "resultFile": "/workspace/Repository-for-GPT-use/quality/reports/2026-10-23T16-46-02-905Z-da2de54c/stage-P06.json",
+  "runDir": "/workspace/Repository-for-GPT-use/quality/reports/2026-10-23T16-46-02-905Z-da2de54c",
+  "root": "/workspace/Repository-for-GPT-use/",
+  "stage": {
+    "id": "P06",
+    "enabled": true,
+    "implementation": "present",
+    "entry": "scripts/quality/stages/P06.mjs",
+    "requiredCases": [
+      "P06-01",
+      "P06-02",
+      "P06-03",
+      "P06-04"
+    ],
+    "timeoutMs": 1500000
+  }
+}

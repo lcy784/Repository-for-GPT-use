@@ -1,0 +1,13 @@
+
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+page.waitForFunction: Timeout 120000ms exceeded.
+    at move (/workspace/Repository-for-GPT-use/scripts/quality/p06-browser.mjs:35:17)
+    at async file:///workspace/Repository-for-GPT-use/scripts/quality/p06-browser.mjs:57:72 {
+  log: [],
+  name: 'TimeoutError'
+}
+
+Node.js v24.19.0

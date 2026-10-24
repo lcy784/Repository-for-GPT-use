@@ -1,0 +1,13 @@
+{
+  "candidate": "dea40243a0d3d22703bc1caa211fb4c7cca3b3bd3aa7cfbe3485882c74a1e443",
+  "path": "public/characters/p05/traveler.glb",
+  "sha256": "a8a6f7394d870bc7cfe3b4dcf0e038c4e5f0a92fa42841a75e27e1c990f372d3",
+  "source": "tools/author-p05-avatar.py",
+  "clips": [
+    "idle",
+    "walk",
+    "fly",
+    "fall"
+  ],
+  "provenance": "original repository-authored joint-node GLB; no downloaded character assets"
+}

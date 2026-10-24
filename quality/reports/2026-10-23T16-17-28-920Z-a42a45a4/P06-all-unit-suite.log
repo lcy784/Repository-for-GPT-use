@@ -1,0 +1,12 @@
+
+ RUN  v5.0.5 /workspace/Repository-for-GPT-use
+
+
+ Test Files  10 passed (10)
+      Tests  106 passed (106)
+   Start at  16:16:44
+   Duration  15.49s (tests 90%, import 9%, transform 1%, worker 1%)
+
+    Isolate  10 workers spawned · ~153ms startup each (spawn + environment, per file)
+             at least ~1.38s faster with isolate: false — reuses workers across files instead of one per file
+

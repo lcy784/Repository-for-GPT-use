@@ -1,0 +1,13 @@
+AssertionError [ERR_ASSERTION]: locator.evaluate: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('canvas')[22m
+[2m    - locator resolved to visible <canvas width="1280" height="720" tabindex="1" touch-action="none" aria-label="可旋转的三维巨殿视觉样本" data-engine="Babylon.js v9.31.2"></canvas>[22m
+
+    at /workspace/Repository-for-GPT-use/scripts/quality/p02-browser.mjs:35:46
+
+1 !== 0
+
+    at file:///workspace/Repository-for-GPT-use/scripts/quality/stages/P02.mjs:25:9
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)

@@ -1,0 +1,64 @@
+{
+  "runId": "2026-10-23T16-07-04-780Z-e6d83027",
+  "candidate": "00ebae842ca2f0a5aa42fc084af79d2cd58b300fbea9e090014e730a1674c3ca",
+  "stage": "P02",
+  "status": "FAIL",
+  "cases": [
+    {
+      "id": "P02-01",
+      "status": "FAIL",
+      "executed": 1,
+      "details": [
+        "locator.evaluate: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('canvas')\u001b[22m\n\u001b[2m    - locator resolved to visible <canvas width=\"1280\" height=\"720\" tabindex=\"1\" touch-action=\"none\" aria-label=\"可旋转的三维巨殿视觉样本\" data-engine=\"Babylon.js v9.31.2\"></canvas>\u001b[22m\n\n    at /workspace/Repository-for-GPT-use/scripts/quality/p02-browser.mjs:35:46\n\n1 !== 0\n"
+      ],
+      "evidence": [
+        {
+          "path": "P02-failure.log",
+          "sha256": "82c0dbbf0ac5f22de3227063426647611ee4afb1efcfe08dd52b2060ac8e2140"
+        }
+      ]
+    },
+    {
+      "id": "P02-02",
+      "status": "FAIL",
+      "executed": 1,
+      "details": [
+        "locator.evaluate: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('canvas')\u001b[22m\n\u001b[2m    - locator resolved to visible <canvas width=\"1280\" height=\"720\" tabindex=\"1\" touch-action=\"none\" aria-label=\"可旋转的三维巨殿视觉样本\" data-engine=\"Babylon.js v9.31.2\"></canvas>\u001b[22m\n\n    at /workspace/Repository-for-GPT-use/scripts/quality/p02-browser.mjs:35:46\n\n1 !== 0\n"
+      ],
+      "evidence": [
+        {
+          "path": "P02-failure.log",
+          "sha256": "82c0dbbf0ac5f22de3227063426647611ee4afb1efcfe08dd52b2060ac8e2140"
+        }
+      ]
+    },
+    {
+      "id": "P02-03",
+      "status": "FAIL",
+      "executed": 1,
+      "details": [
+        "locator.evaluate: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('canvas')\u001b[22m\n\u001b[2m    - locator resolved to visible <canvas width=\"1280\" height=\"720\" tabindex=\"1\" touch-action=\"none\" aria-label=\"可旋转的三维巨殿视觉样本\" data-engine=\"Babylon.js v9.31.2\"></canvas>\u001b[22m\n\n    at /workspace/Repository-for-GPT-use/scripts/quality/p02-browser.mjs:35:46\n\n1 !== 0\n"
+      ],
+      "evidence": [
+        {
+          "path": "P02-failure.log",
+          "sha256": "82c0dbbf0ac5f22de3227063426647611ee4afb1efcfe08dd52b2060ac8e2140"
+        }
+      ]
+    },
+    {
+      "id": "P02-04",
+      "status": "FAIL",
+      "executed": 1,
+      "details": [
+        "locator.evaluate: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('canvas')\u001b[22m\n\u001b[2m    - locator resolved to visible <canvas width=\"1280\" height=\"720\" tabindex=\"1\" touch-action=\"none\" aria-label=\"可旋转的三维巨殿视觉样本\" data-engine=\"Babylon.js v9.31.2\"></canvas>\u001b[22m\n\n    at /workspace/Repository-for-GPT-use/scripts/quality/p02-browser.mjs:35:46\n\n1 !== 0\n"
+      ],
+      "evidence": [
+        {
+          "path": "P02-failure.log",
+          "sha256": "82c0dbbf0ac5f22de3227063426647611ee4afb1efcfe08dd52b2060ac8e2140"
+        }
+      ]
+    }
+  ]
+}

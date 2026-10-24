@@ -1,0 +1,3089 @@
+{
+  "runId": "2026-10-23T16-17-28-920Z-a42a45a4",
+  "candidate": "8f580f7c19ef22d4671563c0cfbab92980b58fc3e297e89060e672afa0c8495e",
+  "observations": [
+    {
+      "test": "P04-01: transitions and recovery > does not emit takeoff while a start-and-descent command stays on the ground",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 121,
+            "position": {
+              "x": -11.999992370605469,
+              "y": 0.894989550113678,
+              "z": 8.000007629394531
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 0,
+            "mode": "grounded",
+            "supportId": "flight-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 121,
+            "position": "{\"x\":-11.999992370605469,\"y\":0.894989550113678,\"z\":8.000007629394531}",
+            "physicalPosition": "{\"x\":-11.999992370605469,\"y\":0.894989550113678,\"z\":8.000007629394531}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flight-ground",
+            "velocity": "{\"x\":0,\"y\":0,\"z\":0}",
+            "penetration": 0,
+            "colliders": 6,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": true,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 1,
+            "maxSweepDistance": 0.16666666666666666,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": -11.999992370605469,
+              "y": 0.894989550113678,
+              "z": 8.000007629394531
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": -12,
+                  "y": 0.8949993848800659,
+                  "z": 8
+                },
+                "supportId": "flight-ground"
+              }
+            ]
+          },
+          "events": [
+            {
+              "tick": 1,
+              "kind": "landed",
+              "from": "falling",
+              "to": "grounded",
+              "position": {
+                "x": -12,
+                "y": 0.8949993848800659,
+                "z": 8
+              },
+              "supportId": "flight-ground"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "P04-01: transitions and recovery > repeats takeoff, gravity fall and supported landing ten times",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 2880,
+            "position": {
+              "x": -12,
+              "y": 0.8949896693229675,
+              "z": 8
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 0,
+            "mode": "grounded",
+            "supportId": "flight-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 2880,
+            "position": "{\"x\":-12,\"y\":0.8949896693229675,\"z\":8}",
+            "physicalPosition": "{\"x\":-12,\"y\":0.8949896693229675,\"z\":8}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flight-ground",
+            "velocity": "{\"x\":0,\"y\":0,\"z\":0}",
+            "penetration": 0,
+            "colliders": 6,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": true,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 2,
+            "maxSweepDistance": 0.19891249618530274,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": -12,
+              "y": 0.8949896693229675,
+              "z": 8
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": -12,
+                  "y": 0.8949993848800659,
+                  "z": 8
+                },
+                "supportId": "flight-ground"
+              },
+              {
+                "tick": 61,
+                "kind": "takeoff",
+                "from": "grounded",
+                "to": "flying",
+                "position": {
+                  "x": -12,
+                  "y": 0.8949896097183228,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 182,
+                "kind": "flight-stopped",
+                "from": "flying",
+                "to": "falling",
+                "position": {
+                  "x": -12,
+                  "y": 10.892267227172852,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 266,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": -12,
+                  "y": 0.9360142350196838,
+                  "z": 8
+                },
+                "supportId": "flight-ground"
+              },
+              {
+                "tick": 343,
+                "kind": "takeoff",
+                "from": "grounded",
+                "to": "flying",
+                "position": {
+                  "x": -12,
+                  "y": 0.8949896693229675,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 464,
+                "kind": "flight-stopped",
+                "from": "flying",
+                "to": "falling",
+                "position": {
+                  "x": -12,
+                  "y": 10.892267227172852,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 548,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": -12,
+                  "y": 0.9360142350196838,
+                  "z": 8
+                },
+                "supportId": "flight-ground"
+              },
+              {
+                "tick": 625,
+                "kind": "takeoff",
+                "from": "grounded",
+                "to": "flying",
+                "position": {
+                  "x": -12,
+                  "y": 0.8949896693229675,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 746,
+                "kind": "flight-stopped",
+                "from": "flying",
+                "to": "falling",
+                "position": {
+                  "x": -12,
+                  "y": 10.892267227172852,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 830,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": -12,
+                  "y": 0.9360142350196838,
+                  "z": 8
+                },
+                "supportId": "flight-ground"
+              },
+              {
+                "tick": 907,
+                "kind": "takeoff",
+                "from": "grounded",
+                "to": "flying",
+                "position": {
+                  "x": -12,
+                  "y": 0.8949896693229675,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 1028,
+                "kind": "flight-stopped",
+                "from": "flying",
+                "to": "falling",
+                "position": {
+                  "x": -12,
+                  "y": 10.892267227172852,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 1112,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": -12,
+                  "y": 0.9360142350196838,
+                  "z": 8
+                },
+                "supportId": "flight-ground"
+              },
+              {
+                "tick": 1189,
+                "kind": "takeoff",
+                "from": "grounded",
+                "to": "flying",
+                "position": {
+                  "x": -12,
+                  "y": 0.8949896693229675,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 1310,
+                "kind": "flight-stopped",
+                "from": "flying",
+                "to": "falling",
+                "position": {
+                  "x": -12,
+                  "y": 10.892267227172852,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 1394,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": -12,
+                  "y": 0.9360142350196838,
+                  "z": 8
+                },
+                "supportId": "flight-ground"
+              },
+              {
+                "tick": 1471,
+                "kind": "takeoff",
+                "from": "grounded",
+                "to": "flying",
+                "position": {
+                  "x": -12,
+                  "y": 0.8949896693229675,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 1592,
+                "kind": "flight-stopped",
+                "from": "flying",
+                "to": "falling",
+                "position": {
+                  "x": -12,
+                  "y": 10.892267227172852,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 1676,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": -12,
+                  "y": 0.9360142350196838,
+                  "z": 8
+                },
+                "supportId": "flight-ground"
+              },
+              {
+                "tick": 1753,
+                "kind": "takeoff",
+                "from": "grounded",
+                "to": "flying",
+                "position": {
+                  "x": -12,
+                  "y": 0.8949896693229675,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 1874,
+                "kind": "flight-stopped",
+                "from": "flying",
+                "to": "falling",
+                "position": {
+                  "x": -12,
+                  "y": 10.892267227172852,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 1958,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": -12,
+                  "y": 0.9360142350196838,
+                  "z": 8
+                },
+                "supportId": "flight-ground"
+              },
+              {
+                "tick": 2035,
+                "kind": "takeoff",
+                "from": "grounded",
+                "to": "flying",
+                "position": {
+                  "x": -12,
+                  "y": 0.8949896693229675,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 2156,
+                "kind": "flight-stopped",
+                "from": "flying",
+                "to": "falling",
+                "position": {
+                  "x": -12,
+                  "y": 10.892267227172852,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 2240,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": -12,
+                  "y": 0.9360142350196838,
+                  "z": 8
+                },
+                "supportId": "flight-ground"
+              },
+              {
+                "tick": 2317,
+                "kind": "takeoff",
+                "from": "grounded",
+                "to": "flying",
+                "position": {
+                  "x": -12,
+                  "y": 0.8949896693229675,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 2438,
+                "kind": "flight-stopped",
+                "from": "flying",
+                "to": "falling",
+                "position": {
+                  "x": -12,
+                  "y": 10.892267227172852,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 2522,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": -12,
+                  "y": 0.9360142350196838,
+                  "z": 8
+                },
+                "supportId": "flight-ground"
+              },
+              {
+                "tick": 2599,
+                "kind": "takeoff",
+                "from": "grounded",
+                "to": "flying",
+                "position": {
+                  "x": -12,
+                  "y": 0.8949896693229675,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 2720,
+                "kind": "flight-stopped",
+                "from": "flying",
+                "to": "falling",
+                "position": {
+                  "x": -12,
+                  "y": 10.892267227172852,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 2804,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": -12,
+                  "y": 0.9360142350196838,
+                  "z": 8
+                },
+                "supportId": "flight-ground"
+              }
+            ]
+          },
+          "events": [
+            {
+              "tick": 1,
+              "kind": "landed",
+              "from": "falling",
+              "to": "grounded",
+              "position": {
+                "x": -12,
+                "y": 0.8949993848800659,
+                "z": 8
+              },
+              "supportId": "flight-ground"
+            },
+            {
+              "tick": 61,
+              "kind": "takeoff",
+              "from": "grounded",
+              "to": "flying",
+              "position": {
+                "x": -12,
+                "y": 0.8949896097183228,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 182,
+              "kind": "flight-stopped",
+              "from": "flying",
+              "to": "falling",
+              "position": {
+                "x": -12,
+                "y": 10.892267227172852,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 266,
+              "kind": "landed",
+              "from": "falling",
+              "to": "grounded",
+              "position": {
+                "x": -12,
+                "y": 0.9360142350196838,
+                "z": 8
+              },
+              "supportId": "flight-ground"
+            },
+            {
+              "tick": 343,
+              "kind": "takeoff",
+              "from": "grounded",
+              "to": "flying",
+              "position": {
+                "x": -12,
+                "y": 0.8949896693229675,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 464,
+              "kind": "flight-stopped",
+              "from": "flying",
+              "to": "falling",
+              "position": {
+                "x": -12,
+                "y": 10.892267227172852,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 548,
+              "kind": "landed",
+              "from": "falling",
+              "to": "grounded",
+              "position": {
+                "x": -12,
+                "y": 0.9360142350196838,
+                "z": 8
+              },
+              "supportId": "flight-ground"
+            },
+            {
+              "tick": 625,
+              "kind": "takeoff",
+              "from": "grounded",
+              "to": "flying",
+              "position": {
+                "x": -12,
+                "y": 0.8949896693229675,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 746,
+              "kind": "flight-stopped",
+              "from": "flying",
+              "to": "falling",
+              "position": {
+                "x": -12,
+                "y": 10.892267227172852,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 830,
+              "kind": "landed",
+              "from": "falling",
+              "to": "grounded",
+              "position": {
+                "x": -12,
+                "y": 0.9360142350196838,
+                "z": 8
+              },
+              "supportId": "flight-ground"
+            },
+            {
+              "tick": 907,
+              "kind": "takeoff",
+              "from": "grounded",
+              "to": "flying",
+              "position": {
+                "x": -12,
+                "y": 0.8949896693229675,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 1028,
+              "kind": "flight-stopped",
+              "from": "flying",
+              "to": "falling",
+              "position": {
+                "x": -12,
+                "y": 10.892267227172852,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 1112,
+              "kind": "landed",
+              "from": "falling",
+              "to": "grounded",
+              "position": {
+                "x": -12,
+                "y": 0.9360142350196838,
+                "z": 8
+              },
+              "supportId": "flight-ground"
+            },
+            {
+              "tick": 1189,
+              "kind": "takeoff",
+              "from": "grounded",
+              "to": "flying",
+              "position": {
+                "x": -12,
+                "y": 0.8949896693229675,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 1310,
+              "kind": "flight-stopped",
+              "from": "flying",
+              "to": "falling",
+              "position": {
+                "x": -12,
+                "y": 10.892267227172852,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 1394,
+              "kind": "landed",
+              "from": "falling",
+              "to": "grounded",
+              "position": {
+                "x": -12,
+                "y": 0.9360142350196838,
+                "z": 8
+              },
+              "supportId": "flight-ground"
+            },
+            {
+              "tick": 1471,
+              "kind": "takeoff",
+              "from": "grounded",
+              "to": "flying",
+              "position": {
+                "x": -12,
+                "y": 0.8949896693229675,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 1592,
+              "kind": "flight-stopped",
+              "from": "flying",
+              "to": "falling",
+              "position": {
+                "x": -12,
+                "y": 10.892267227172852,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 1676,
+              "kind": "landed",
+              "from": "falling",
+              "to": "grounded",
+              "position": {
+                "x": -12,
+                "y": 0.9360142350196838,
+                "z": 8
+              },
+              "supportId": "flight-ground"
+            },
+            {
+              "tick": 1753,
+              "kind": "takeoff",
+              "from": "grounded",
+              "to": "flying",
+              "position": {
+                "x": -12,
+                "y": 0.8949896693229675,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 1874,
+              "kind": "flight-stopped",
+              "from": "flying",
+              "to": "falling",
+              "position": {
+                "x": -12,
+                "y": 10.892267227172852,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 1958,
+              "kind": "landed",
+              "from": "falling",
+              "to": "grounded",
+              "position": {
+                "x": -12,
+                "y": 0.9360142350196838,
+                "z": 8
+              },
+              "supportId": "flight-ground"
+            },
+            {
+              "tick": 2035,
+              "kind": "takeoff",
+              "from": "grounded",
+              "to": "flying",
+              "position": {
+                "x": -12,
+                "y": 0.8949896693229675,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 2156,
+              "kind": "flight-stopped",
+              "from": "flying",
+              "to": "falling",
+              "position": {
+                "x": -12,
+                "y": 10.892267227172852,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 2240,
+              "kind": "landed",
+              "from": "falling",
+              "to": "grounded",
+              "position": {
+                "x": -12,
+                "y": 0.9360142350196838,
+                "z": 8
+              },
+              "supportId": "flight-ground"
+            },
+            {
+              "tick": 2317,
+              "kind": "takeoff",
+              "from": "grounded",
+              "to": "flying",
+              "position": {
+                "x": -12,
+                "y": 0.8949896693229675,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 2438,
+              "kind": "flight-stopped",
+              "from": "flying",
+              "to": "falling",
+              "position": {
+                "x": -12,
+                "y": 10.892267227172852,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 2522,
+              "kind": "landed",
+              "from": "falling",
+              "to": "grounded",
+              "position": {
+                "x": -12,
+                "y": 0.9360142350196838,
+                "z": 8
+              },
+              "supportId": "flight-ground"
+            },
+            {
+              "tick": 2599,
+              "kind": "takeoff",
+              "from": "grounded",
+              "to": "flying",
+              "position": {
+                "x": -12,
+                "y": 0.8949896693229675,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 2720,
+              "kind": "flight-stopped",
+              "from": "flying",
+              "to": "falling",
+              "position": {
+                "x": -12,
+                "y": 10.892267227172852,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 2804,
+              "kind": "landed",
+              "from": "falling",
+              "to": "grounded",
+              "position": {
+                "x": -12,
+                "y": 0.9360142350196838,
+                "z": 8
+              },
+              "supportId": "flight-ground"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "P04-01: transitions and recovery > normalizes three-axis motion to the configured speed and hovers without drift",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 181,
+            "position": {
+              "x": -24.226455688476562,
+              "y": 25.773544311523438,
+              "z": 13.773487091064453
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 2.356194490192345,
+            "mode": "flying",
+            "supportId": null
+          },
+          "physics": {
+            "active": true,
+            "tick": 181,
+            "position": "{\"x\":-24.226455688476562,\"y\":25.773544311523438,\"z\":13.773487091064453}",
+            "physicalPosition": "{\"x\":-24.226455688476562,\"y\":25.773544311523438,\"z\":13.773487091064453}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "flying",
+            "supportId": null,
+            "velocity": "{\"x\":0,\"y\":0,\"z\":0}",
+            "penetration": 0,
+            "colliders": 6,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": true,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 1,
+            "maxSweepDistance": 0.16666666666666666,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": -30,
+              "y": 20,
+              "z": 8
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "takeoff",
+                "from": "falling",
+                "to": "flying",
+                "position": {
+                  "x": -30,
+                  "y": 20,
+                  "z": 8
+                },
+                "supportId": null
+              }
+            ]
+          },
+          "events": [
+            {
+              "tick": 1,
+              "kind": "takeoff",
+              "from": "falling",
+              "to": "flying",
+              "position": {
+                "x": -30,
+                "y": 20,
+                "z": 8
+              },
+              "supportId": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "P04-01: transitions and recovery > can resume flying while falling and clears downward velocity",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 91,
+            "position": {
+              "x": -12,
+              "y": 48.733558654785156,
+              "z": 8
+            },
+            "velocity": {
+              "x": 0,
+              "y": 10.000076293945312,
+              "z": 0
+            },
+            "yaw": 0,
+            "mode": "flying",
+            "supportId": null
+          },
+          "physics": {
+            "active": true,
+            "tick": 91,
+            "position": "{\"x\":-12,\"y\":48.733558654785156,\"z\":8}",
+            "physicalPosition": "{\"x\":-12,\"y\":48.733558654785156,\"z\":8}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "flying",
+            "supportId": null,
+            "velocity": "{\"x\":0,\"y\":10.000076293945312,\"z\":0}",
+            "penetration": 0,
+            "colliders": 6,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": true,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 1,
+            "maxSweepDistance": 0.16666666666666666,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": -12,
+              "y": 40,
+              "z": 8
+            },
+            "events": [
+              {
+                "tick": 31,
+                "kind": "takeoff",
+                "from": "falling",
+                "to": "flying",
+                "position": {
+                  "x": -12,
+                  "y": 38.733482360839844,
+                  "z": 8
+                },
+                "supportId": null
+              }
+            ]
+          },
+          "events": [
+            {
+              "tick": 31,
+              "kind": "takeoff",
+              "from": "falling",
+              "to": "flying",
+              "position": {
+                "x": -12,
+                "y": 38.733482360839844,
+                "z": 8
+              },
+              "supportId": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "P04-01: transitions and recovery > lands on an elevated roof by descending and restores ground controls",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 91,
+            "position": {
+              "x": 12,
+              "y": 8.894939422607422,
+              "z": 0
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 0,
+            "mode": "grounded",
+            "supportId": "flight-roof-platform"
+          },
+          "physics": {
+            "active": true,
+            "tick": 91,
+            "position": "{\"x\":12,\"y\":8.894939422607422,\"z\":0}",
+            "physicalPosition": "{\"x\":12,\"y\":8.894939422607422,\"z\":0}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flight-roof-platform",
+            "velocity": "{\"x\":0,\"y\":0,\"z\":0}",
+            "penetration": 0,
+            "colliders": 6,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": true,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 1,
+            "maxSweepDistance": 0.16666666666666666,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": 12,
+              "y": 8.894939422607422,
+              "z": 0
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "takeoff",
+                "from": "falling",
+                "to": "flying",
+                "position": {
+                  "x": 12,
+                  "y": 14,
+                  "z": 0
+                },
+                "supportId": null
+              },
+              {
+                "tick": 32,
+                "kind": "landed",
+                "from": "flying",
+                "to": "grounded",
+                "position": {
+                  "x": 12,
+                  "y": 8.895099639892578,
+                  "z": 0
+                },
+                "supportId": "flight-roof-platform"
+              }
+            ]
+          },
+          "events": [
+            {
+              "tick": 1,
+              "kind": "takeoff",
+              "from": "falling",
+              "to": "flying",
+              "position": {
+                "x": 12,
+                "y": 14,
+                "z": 0
+              },
+              "supportId": null
+            },
+            {
+              "tick": 32,
+              "kind": "landed",
+              "from": "flying",
+              "to": "grounded",
+              "position": {
+                "x": 12,
+                "y": 8.895099639892578,
+                "z": 0
+              },
+              "supportId": "flight-roof-platform"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "P04-01: transitions and recovery > recovers only below the void plane to the last broad stable roof support",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 720,
+            "position": {
+              "x": 12,
+              "y": 8.894939422607422,
+              "z": 0
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 0,
+            "mode": "grounded",
+            "supportId": "flight-roof-platform"
+          },
+          "physics": {
+            "active": true,
+            "tick": 720,
+            "position": "{\"x\":12,\"y\":8.894939422607422,\"z\":0}",
+            "physicalPosition": "{\"x\":12,\"y\":8.894939422607422,\"z\":0}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flight-roof-platform",
+            "velocity": "{\"x\":0,\"y\":0,\"z\":0}",
+            "penetration": 0,
+            "colliders": 6,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": true,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 4,
+            "maxSweepDistance": 0.19981046346028644,
+            "recoveryCount": 1,
+            "safePosition": {
+              "x": 12,
+              "y": 8.894939422607422,
+              "z": 0
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": 12,
+                  "y": 8.894939422607422,
+                  "z": 0
+                },
+                "supportId": "flight-roof-platform"
+              },
+              {
+                "tick": 61,
+                "kind": "takeoff",
+                "from": "grounded",
+                "to": "flying",
+                "position": {
+                  "x": 12,
+                  "y": 8.894939422607422,
+                  "z": 0
+                },
+                "supportId": null
+              },
+              {
+                "tick": 422,
+                "kind": "flight-stopped",
+                "from": "flying",
+                "to": "falling",
+                "position": {
+                  "x": 62.00017547607422,
+                  "y": 18.892215728759766,
+                  "z": 0
+                },
+                "supportId": null
+              },
+              {
+                "tick": 690,
+                "kind": "recovered",
+                "from": "falling",
+                "to": "falling",
+                "position": {
+                  "x": 12,
+                  "y": 8.894939422607422,
+                  "z": 0
+                },
+                "supportId": null
+              },
+              {
+                "tick": 691,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": 12,
+                  "y": 8.895039558410645,
+                  "z": 0
+                },
+                "supportId": "flight-roof-platform"
+              }
+            ]
+          },
+          "events": [
+            {
+              "tick": 1,
+              "kind": "landed",
+              "from": "falling",
+              "to": "grounded",
+              "position": {
+                "x": 12,
+                "y": 8.894939422607422,
+                "z": 0
+              },
+              "supportId": "flight-roof-platform"
+            },
+            {
+              "tick": 61,
+              "kind": "takeoff",
+              "from": "grounded",
+              "to": "flying",
+              "position": {
+                "x": 12,
+                "y": 8.894939422607422,
+                "z": 0
+              },
+              "supportId": null
+            },
+            {
+              "tick": 422,
+              "kind": "flight-stopped",
+              "from": "flying",
+              "to": "falling",
+              "position": {
+                "x": 62.00017547607422,
+                "y": 18.892215728759766,
+                "z": 0
+              },
+              "supportId": null
+            },
+            {
+              "tick": 690,
+              "kind": "recovered",
+              "from": "falling",
+              "to": "falling",
+              "position": {
+                "x": 12,
+                "y": 8.894939422607422,
+                "z": 0
+              },
+              "supportId": null
+            },
+            {
+              "tick": 691,
+              "kind": "landed",
+              "from": "falling",
+              "to": "grounded",
+              "position": {
+                "x": 12,
+                "y": 8.895039558410645,
+                "z": 0
+              },
+              "supportId": "flight-roof-platform"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "P04-01: transitions and recovery > rejects invalid commands and speeds without changing the state",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 0,
+            "position": {
+              "x": -12,
+              "y": 0.91,
+              "z": 8
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 0,
+            "mode": "falling",
+            "supportId": null
+          },
+          "physics": {
+            "active": true,
+            "tick": 0,
+            "position": "{\"x\":-12,\"y\":0.91,\"z\":8}",
+            "physicalPosition": "{\"x\":-12,\"y\":0.9100000262260437,\"z\":8}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "falling",
+            "supportId": null,
+            "velocity": "{\"x\":0,\"y\":0,\"z\":0}",
+            "penetration": 0,
+            "colliders": 6,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": true,
+            "flightSpeed": 10,
+            "lastSubsteps": 0,
+            "maxSubsteps": 0,
+            "maxSweepDistance": 0,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": -12,
+              "y": 0.91,
+              "z": 8
+            },
+            "events": []
+          },
+          "events": []
+        }
+      ]
+    },
+    {
+      "test": "P04-02: swept high-speed physics > cannot cross a thin wall at the 60 m/s configuration limit",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 91,
+            "position": {
+              "x": 0.0013099533971399069,
+              "y": 4.996663570404053,
+              "z": -4.639950275421143
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 0,
+            "mode": "flying",
+            "supportId": null
+          },
+          "physics": {
+            "active": true,
+            "tick": 91,
+            "position": "{\"x\":0.0013099533971399069,\"y\":4.996663570404053,\"z\":-4.639950275421143}",
+            "physicalPosition": "{\"x\":0.0013099533971399069,\"y\":4.996663570404053,\"z\":-4.639950275421143}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "flying",
+            "supportId": null,
+            "velocity": "{\"x\":0,\"y\":0,\"z\":0}",
+            "penetration": 0,
+            "colliders": 6,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": true,
+            "flightSpeed": 60,
+            "lastSubsteps": 5,
+            "maxSubsteps": 5,
+            "maxSweepDistance": 0.2,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": 0,
+              "y": 5,
+              "z": 0
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "takeoff",
+                "from": "falling",
+                "to": "flying",
+                "position": {
+                  "x": 0,
+                  "y": 5,
+                  "z": 0
+                },
+                "supportId": null
+              }
+            ]
+          },
+          "events": [
+            {
+              "tick": 1,
+              "kind": "takeoff",
+              "from": "falling",
+              "to": "flying",
+              "position": {
+                "x": 0,
+                "y": 5,
+                "z": 0
+              },
+              "supportId": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "P04-02: swept high-speed physics > blocks ascent below a thin roof and lands above it at high descent speed",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 61,
+            "position": {
+              "x": 4.071189323440194e-7,
+              "y": 9.0650053024292,
+              "z": 4.071189323440194e-7
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0.006008148193359375,
+              "z": 0
+            },
+            "yaw": 0,
+            "mode": "flying",
+            "supportId": null
+          },
+          "physics": {
+            "active": true,
+            "tick": 61,
+            "position": "{\"x\":4.071189323440194e-7,\"y\":9.0650053024292,\"z\":4.071189323440194e-7}",
+            "physicalPosition": "{\"x\":4.071189323440194e-7,\"y\":9.0650053024292,\"z\":4.071189323440194e-7}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "flying",
+            "supportId": null,
+            "velocity": "{\"x\":0,\"y\":0.006008148193359375,\"z\":0}",
+            "penetration": 0,
+            "colliders": 6,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": true,
+            "flightSpeed": 60,
+            "lastSubsteps": 5,
+            "maxSubsteps": 5,
+            "maxSweepDistance": 0.2,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": 0,
+              "y": 5,
+              "z": 0
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "takeoff",
+                "from": "falling",
+                "to": "flying",
+                "position": {
+                  "x": 0,
+                  "y": 5,
+                  "z": 0
+                },
+                "supportId": null
+              }
+            ]
+          },
+          "events": [
+            {
+              "tick": 1,
+              "kind": "takeoff",
+              "from": "falling",
+              "to": "flying",
+              "position": {
+                "x": 0,
+                "y": 5,
+                "z": 0
+              },
+              "supportId": null
+            }
+          ]
+        },
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 61,
+            "position": {
+              "x": 4.071189323440194e-7,
+              "y": 10.934894561767578,
+              "z": 4.071189323440194e-7
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 0,
+            "mode": "grounded",
+            "supportId": "flight-thin-roof"
+          },
+          "physics": {
+            "active": true,
+            "tick": 61,
+            "position": "{\"x\":4.071189323440194e-7,\"y\":10.934894561767578,\"z\":4.071189323440194e-7}",
+            "physicalPosition": "{\"x\":4.071189323440194e-7,\"y\":10.934894561767578,\"z\":4.071189323440194e-7}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flight-thin-roof",
+            "velocity": "{\"x\":0,\"y\":0,\"z\":0}",
+            "penetration": 0,
+            "colliders": 6,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": true,
+            "flightSpeed": 60,
+            "lastSubsteps": 1,
+            "maxSubsteps": 5,
+            "maxSweepDistance": 0.2,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": 4.071189323440194e-7,
+              "y": 10.934894561767578,
+              "z": 4.071189323440194e-7
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "takeoff",
+                "from": "falling",
+                "to": "flying",
+                "position": {
+                  "x": 0,
+                  "y": 15,
+                  "z": 0
+                },
+                "supportId": null
+              },
+              {
+                "tick": 6,
+                "kind": "landed",
+                "from": "flying",
+                "to": "grounded",
+                "position": {
+                  "x": 4.071189323440194e-7,
+                  "y": 10.935094833374023,
+                  "z": 4.071189323440194e-7
+                },
+                "supportId": "flight-thin-roof"
+              }
+            ]
+          },
+          "events": [
+            {
+              "tick": 1,
+              "kind": "takeoff",
+              "from": "falling",
+              "to": "flying",
+              "position": {
+                "x": 0,
+                "y": 15,
+                "z": 0
+              },
+              "supportId": null
+            },
+            {
+              "tick": 6,
+              "kind": "landed",
+              "from": "flying",
+              "to": "grounded",
+              "position": {
+                "x": 4.071189323440194e-7,
+                "y": 10.935094833374023,
+                "z": 4.071189323440194e-7
+              },
+              "supportId": "flight-thin-roof"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "P04-02: swept high-speed physics > falls onto the actual transformed palace roof collision surface",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 300,
+            "position": {
+              "x": 15,
+              "y": 128.05615234375,
+              "z": 0.00004482064105104655
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 0,
+            "mode": "grounded",
+            "supportId": "palace-roof-2"
+          },
+          "physics": {
+            "active": true,
+            "tick": 300,
+            "position": "{\"x\":15,\"y\":128.05615234375,\"z\":0.00004482064105104655}",
+            "physicalPosition": "{\"x\":15,\"y\":128.05615234375,\"z\":0.00004482064105104655}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "palace-roof-2",
+            "velocity": "{\"x\":0,\"y\":0,\"z\":0}",
+            "penetration": 0,
+            "colliders": 237,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": true,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 3,
+            "maxSweepDistance": 0.1993802734375,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": 15,
+              "y": 128.05615234375,
+              "z": 0.00004482064105104655
+            },
+            "events": [
+              {
+                "tick": 175,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": 15,
+                  "y": 128.05625915527344,
+                  "z": 0.00004482064105104655
+                },
+                "supportId": "palace-roof-2"
+              }
+            ]
+          },
+          "events": [
+            {
+              "tick": 175,
+              "kind": "landed",
+              "from": "falling",
+              "to": "grounded",
+              "position": {
+                "x": 15,
+                "y": 128.05625915527344,
+                "z": 0.00004482064105104655
+              },
+              "supportId": "palace-roof-2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "P04-03: fixed clock and pause recovery > caps long-frame displacement and resets elapsed time while flying",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 6,
+            "position": {
+              "x": -12,
+              "y": 40.83333969116211,
+              "z": 8
+            },
+            "velocity": {
+              "x": 0,
+              "y": 10.000076293945312,
+              "z": 0
+            },
+            "yaw": 0,
+            "mode": "flying",
+            "supportId": null
+          },
+          "physics": {
+            "active": true,
+            "tick": 6,
+            "position": "{\"x\":-12,\"y\":40.83333969116211,\"z\":8}",
+            "physicalPosition": "{\"x\":-12,\"y\":40.83333969116211,\"z\":8}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "flying",
+            "supportId": null,
+            "velocity": "{\"x\":0,\"y\":10.000076293945312,\"z\":0}",
+            "penetration": 0,
+            "colliders": 6,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": true,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 1,
+            "maxSweepDistance": 0.16666666666666666,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": -12,
+              "y": 40,
+              "z": 8
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "takeoff",
+                "from": "falling",
+                "to": "flying",
+                "position": {
+                  "x": -12,
+                  "y": 40,
+                  "z": 8
+                },
+                "supportId": null
+              }
+            ]
+          },
+          "events": [
+            {
+              "tick": 1,
+              "kind": "takeoff",
+              "from": "falling",
+              "to": "flying",
+              "position": {
+                "x": -12,
+                "y": 40,
+                "z": 8
+              },
+              "supportId": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "P04-03: fixed clock and pause recovery > caps long-frame displacement and resets elapsed time while falling",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 5,
+            "position": {
+              "x": -12,
+              "y": 39.959144592285156,
+              "z": 8
+            },
+            "velocity": {
+              "x": 0,
+              "y": -0.817108154296875,
+              "z": 0
+            },
+            "yaw": 0,
+            "mode": "falling",
+            "supportId": null
+          },
+          "physics": {
+            "active": true,
+            "tick": 5,
+            "position": "{\"x\":-12,\"y\":39.959144592285156,\"z\":8}",
+            "physicalPosition": "{\"x\":-12,\"y\":39.959144592285156,\"z\":8}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "falling",
+            "supportId": null,
+            "velocity": "{\"x\":0,\"y\":-0.817108154296875,\"z\":0}",
+            "penetration": 0,
+            "colliders": 6,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": true,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 1,
+            "maxSweepDistance": 0.013619775390625,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": -12,
+              "y": 40,
+              "z": 8
+            },
+            "events": []
+          },
+          "events": []
+        }
+      ]
+    },
+    {
+      "test": "P04-03: fixed clock and pause recovery > replays flight and gravity transitions consistently at 30, 60 and 144 Hz",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 480,
+            "position": {
+              "x": -15.85784912109375,
+              "y": 0.8949890732765198,
+              "z": 8
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 1.5707963267948966,
+            "mode": "grounded",
+            "supportId": "flight-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 480,
+            "position": "{\"x\":-15.85784912109375,\"y\":0.8949890732765198,\"z\":8}",
+            "physicalPosition": "{\"x\":-15.85784912109375,\"y\":0.8949890732765198,\"z\":8}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flight-ground",
+            "velocity": "{\"x\":0,\"y\":0,\"z\":0}",
+            "penetration": 0,
+            "colliders": 6,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": true,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 2,
+            "maxSweepDistance": 0.19890200576782227,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": -30,
+              "y": 20,
+              "z": 8
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "takeoff",
+                "from": "falling",
+                "to": "flying",
+                "position": {
+                  "x": -29.88214874267578,
+                  "y": 20.11785125732422,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 181,
+                "kind": "flight-stopped",
+                "from": "flying",
+                "to": "falling",
+                "position": {
+                  "x": -15.85784912109375,
+                  "y": 34.139427185058594,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 301,
+                "kind": "takeoff",
+                "from": "falling",
+                "to": "flying",
+                "position": {
+                  "x": -15.85784912109375,
+                  "y": 14.363921165466309,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 361,
+                "kind": "flight-stopped",
+                "from": "flying",
+                "to": "falling",
+                "position": {
+                  "x": -15.85784912109375,
+                  "y": 14.361196517944336,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 459,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": -15.85784912109375,
+                  "y": 0.8950999975204468,
+                  "z": 8
+                },
+                "supportId": "flight-ground"
+              }
+            ]
+          },
+          "events": [
+            {
+              "tick": 1,
+              "kind": "takeoff",
+              "from": "falling",
+              "to": "flying",
+              "position": {
+                "x": -29.88214874267578,
+                "y": 20.11785125732422,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 181,
+              "kind": "flight-stopped",
+              "from": "flying",
+              "to": "falling",
+              "position": {
+                "x": -15.85784912109375,
+                "y": 34.139427185058594,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 301,
+              "kind": "takeoff",
+              "from": "falling",
+              "to": "flying",
+              "position": {
+                "x": -15.85784912109375,
+                "y": 14.363921165466309,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 361,
+              "kind": "flight-stopped",
+              "from": "flying",
+              "to": "falling",
+              "position": {
+                "x": -15.85784912109375,
+                "y": 14.361196517944336,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 459,
+              "kind": "landed",
+              "from": "falling",
+              "to": "grounded",
+              "position": {
+                "x": -15.85784912109375,
+                "y": 0.8950999975204468,
+                "z": 8
+              },
+              "supportId": "flight-ground"
+            }
+          ]
+        },
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 480,
+            "position": {
+              "x": -15.85784912109375,
+              "y": 0.8949890732765198,
+              "z": 8
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 1.5707963267948966,
+            "mode": "grounded",
+            "supportId": "flight-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 480,
+            "position": "{\"x\":-15.85784912109375,\"y\":0.8949890732765198,\"z\":8}",
+            "physicalPosition": "{\"x\":-15.85784912109375,\"y\":0.8949890732765198,\"z\":8}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flight-ground",
+            "velocity": "{\"x\":0,\"y\":0,\"z\":0}",
+            "penetration": 0,
+            "colliders": 6,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": true,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 2,
+            "maxSweepDistance": 0.19890200576782227,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": -30,
+              "y": 20,
+              "z": 8
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "takeoff",
+                "from": "falling",
+                "to": "flying",
+                "position": {
+                  "x": -29.88214874267578,
+                  "y": 20.11785125732422,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 181,
+                "kind": "flight-stopped",
+                "from": "flying",
+                "to": "falling",
+                "position": {
+                  "x": -15.85784912109375,
+                  "y": 34.139427185058594,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 301,
+                "kind": "takeoff",
+                "from": "falling",
+                "to": "flying",
+                "position": {
+                  "x": -15.85784912109375,
+                  "y": 14.363921165466309,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 361,
+                "kind": "flight-stopped",
+                "from": "flying",
+                "to": "falling",
+                "position": {
+                  "x": -15.85784912109375,
+                  "y": 14.361196517944336,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 459,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": -15.85784912109375,
+                  "y": 0.8950999975204468,
+                  "z": 8
+                },
+                "supportId": "flight-ground"
+              }
+            ]
+          },
+          "events": [
+            {
+              "tick": 1,
+              "kind": "takeoff",
+              "from": "falling",
+              "to": "flying",
+              "position": {
+                "x": -29.88214874267578,
+                "y": 20.11785125732422,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 181,
+              "kind": "flight-stopped",
+              "from": "flying",
+              "to": "falling",
+              "position": {
+                "x": -15.85784912109375,
+                "y": 34.139427185058594,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 301,
+              "kind": "takeoff",
+              "from": "falling",
+              "to": "flying",
+              "position": {
+                "x": -15.85784912109375,
+                "y": 14.363921165466309,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 361,
+              "kind": "flight-stopped",
+              "from": "flying",
+              "to": "falling",
+              "position": {
+                "x": -15.85784912109375,
+                "y": 14.361196517944336,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 459,
+              "kind": "landed",
+              "from": "falling",
+              "to": "grounded",
+              "position": {
+                "x": -15.85784912109375,
+                "y": 0.8950999975204468,
+                "z": 8
+              },
+              "supportId": "flight-ground"
+            }
+          ]
+        },
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 480,
+            "position": {
+              "x": -15.85784912109375,
+              "y": 0.8949890732765198,
+              "z": 8
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 1.5707963267948966,
+            "mode": "grounded",
+            "supportId": "flight-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 480,
+            "position": "{\"x\":-15.85784912109375,\"y\":0.8949890732765198,\"z\":8}",
+            "physicalPosition": "{\"x\":-15.85784912109375,\"y\":0.8949890732765198,\"z\":8}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flight-ground",
+            "velocity": "{\"x\":0,\"y\":0,\"z\":0}",
+            "penetration": 0,
+            "colliders": 6,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": true,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 2,
+            "maxSweepDistance": 0.19890200576782227,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": -30,
+              "y": 20,
+              "z": 8
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "takeoff",
+                "from": "falling",
+                "to": "flying",
+                "position": {
+                  "x": -29.88214874267578,
+                  "y": 20.11785125732422,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 181,
+                "kind": "flight-stopped",
+                "from": "flying",
+                "to": "falling",
+                "position": {
+                  "x": -15.85784912109375,
+                  "y": 34.139427185058594,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 301,
+                "kind": "takeoff",
+                "from": "falling",
+                "to": "flying",
+                "position": {
+                  "x": -15.85784912109375,
+                  "y": 14.363921165466309,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 361,
+                "kind": "flight-stopped",
+                "from": "flying",
+                "to": "falling",
+                "position": {
+                  "x": -15.85784912109375,
+                  "y": 14.361196517944336,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 459,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": -15.85784912109375,
+                  "y": 0.8950999975204468,
+                  "z": 8
+                },
+                "supportId": "flight-ground"
+              }
+            ]
+          },
+          "events": [
+            {
+              "tick": 1,
+              "kind": "takeoff",
+              "from": "falling",
+              "to": "flying",
+              "position": {
+                "x": -29.88214874267578,
+                "y": 20.11785125732422,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 181,
+              "kind": "flight-stopped",
+              "from": "flying",
+              "to": "falling",
+              "position": {
+                "x": -15.85784912109375,
+                "y": 34.139427185058594,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 301,
+              "kind": "takeoff",
+              "from": "falling",
+              "to": "flying",
+              "position": {
+                "x": -15.85784912109375,
+                "y": 14.363921165466309,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 361,
+              "kind": "flight-stopped",
+              "from": "flying",
+              "to": "falling",
+              "position": {
+                "x": -15.85784912109375,
+                "y": 14.361196517944336,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 459,
+              "kind": "landed",
+              "from": "falling",
+              "to": "grounded",
+              "position": {
+                "x": -15.85784912109375,
+                "y": 0.8950999975204468,
+                "z": 8
+              },
+              "supportId": "flight-ground"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "P04-04: ground control and state ownership > walks at 3 m/s after landing at x=-12 z=8 with one matching physics state",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 362,
+            "position": {
+              "x": -8.999988555908203,
+              "y": 0.8949896693229675,
+              "z": 8
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 1.5707963267948966,
+            "mode": "grounded",
+            "supportId": "flight-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 362,
+            "position": "{\"x\":-8.999988555908203,\"y\":0.8949896693229675,\"z\":8}",
+            "physicalPosition": "{\"x\":-8.999988555908203,\"y\":0.8949896693229675,\"z\":8}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flight-ground",
+            "velocity": "{\"x\":0,\"y\":0,\"z\":0}",
+            "penetration": 0,
+            "colliders": 6,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": true,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 1,
+            "maxSweepDistance": 0.16666666666666666,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": -8.999988555908203,
+              "y": 0.8949896693229675,
+              "z": 8
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": -12,
+                  "y": 0.8949993848800659,
+                  "z": 8
+                },
+                "supportId": "flight-ground"
+              },
+              {
+                "tick": 61,
+                "kind": "takeoff",
+                "from": "grounded",
+                "to": "flying",
+                "position": {
+                  "x": -12,
+                  "y": 0.8949896097183228,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 92,
+                "kind": "flight-stopped",
+                "from": "flying",
+                "to": "falling",
+                "position": {
+                  "x": -12,
+                  "y": 5.892263412475586,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 151,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": -12,
+                  "y": 0.9080615043640137,
+                  "z": 8
+                },
+                "supportId": "flight-ground"
+              }
+            ]
+          },
+          "events": [
+            {
+              "tick": 1,
+              "kind": "landed",
+              "from": "falling",
+              "to": "grounded",
+              "position": {
+                "x": -12,
+                "y": 0.8949993848800659,
+                "z": 8
+              },
+              "supportId": "flight-ground"
+            },
+            {
+              "tick": 61,
+              "kind": "takeoff",
+              "from": "grounded",
+              "to": "flying",
+              "position": {
+                "x": -12,
+                "y": 0.8949896097183228,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 92,
+              "kind": "flight-stopped",
+              "from": "flying",
+              "to": "falling",
+              "position": {
+                "x": -12,
+                "y": 5.892263412475586,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 151,
+              "kind": "landed",
+              "from": "falling",
+              "to": "grounded",
+              "position": {
+                "x": -12,
+                "y": 0.9080615043640137,
+                "z": 8
+              },
+              "supportId": "flight-ground"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "P04-04: ground control and state ownership > walks at 3 m/s after landing at x=-4 z=10 with one matching physics state",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 362,
+            "position": {
+              "x": -1.0000028610229492,
+              "y": 0.8949889540672302,
+              "z": 10
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 1.5707963267948966,
+            "mode": "grounded",
+            "supportId": "flight-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 362,
+            "position": "{\"x\":-1.0000028610229492,\"y\":0.8949889540672302,\"z\":10}",
+            "physicalPosition": "{\"x\":-1.0000028610229492,\"y\":0.8949889540672302,\"z\":10}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flight-ground",
+            "velocity": "{\"x\":0,\"y\":0,\"z\":0}",
+            "penetration": 0,
+            "colliders": 6,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": true,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 1,
+            "maxSweepDistance": 0.16666666666666666,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": -1.0000028610229492,
+              "y": 0.8949889540672302,
+              "z": 10
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": -4,
+                  "y": 0.894999623298645,
+                  "z": 10
+                },
+                "supportId": "flight-ground"
+              },
+              {
+                "tick": 61,
+                "kind": "takeoff",
+                "from": "grounded",
+                "to": "flying",
+                "position": {
+                  "x": -4,
+                  "y": 0.8949887752532959,
+                  "z": 10
+                },
+                "supportId": null
+              },
+              {
+                "tick": 92,
+                "kind": "flight-stopped",
+                "from": "flying",
+                "to": "falling",
+                "position": {
+                  "x": -4,
+                  "y": 5.8922624588012695,
+                  "z": 10
+                },
+                "supportId": null
+              },
+              {
+                "tick": 151,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": -4,
+                  "y": 0.9080605506896973,
+                  "z": 10
+                },
+                "supportId": "flight-ground"
+              }
+            ]
+          },
+          "events": [
+            {
+              "tick": 1,
+              "kind": "landed",
+              "from": "falling",
+              "to": "grounded",
+              "position": {
+                "x": -4,
+                "y": 0.894999623298645,
+                "z": 10
+              },
+              "supportId": "flight-ground"
+            },
+            {
+              "tick": 61,
+              "kind": "takeoff",
+              "from": "grounded",
+              "to": "flying",
+              "position": {
+                "x": -4,
+                "y": 0.8949887752532959,
+                "z": 10
+              },
+              "supportId": null
+            },
+            {
+              "tick": 92,
+              "kind": "flight-stopped",
+              "from": "flying",
+              "to": "falling",
+              "position": {
+                "x": -4,
+                "y": 5.8922624588012695,
+                "z": 10
+              },
+              "supportId": null
+            },
+            {
+              "tick": 151,
+              "kind": "landed",
+              "from": "falling",
+              "to": "grounded",
+              "position": {
+                "x": -4,
+                "y": 0.9080605506896973,
+                "z": 10
+              },
+              "supportId": "flight-ground"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "P04-04: ground control and state ownership > walks at 3 m/s after landing at x=0 z=8 with one matching physics state",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 362,
+            "position": {
+              "x": 2.9999983310699463,
+              "y": 0.8949885964393616,
+              "z": 8
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 1.5707963267948966,
+            "mode": "grounded",
+            "supportId": "flight-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 362,
+            "position": "{\"x\":2.9999983310699463,\"y\":0.8949885964393616,\"z\":8}",
+            "physicalPosition": "{\"x\":2.9999983310699463,\"y\":0.8949885964393616,\"z\":8}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flight-ground",
+            "velocity": "{\"x\":0,\"y\":0,\"z\":0}",
+            "penetration": 0,
+            "colliders": 6,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": true,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 1,
+            "maxSweepDistance": 0.16666666666666666,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": 2.9999983310699463,
+              "y": 0.8949885964393616,
+              "z": 8
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": 0,
+                  "y": 0.8950000405311584,
+                  "z": 8
+                },
+                "supportId": "flight-ground"
+              },
+              {
+                "tick": 61,
+                "kind": "takeoff",
+                "from": "grounded",
+                "to": "flying",
+                "position": {
+                  "x": 0,
+                  "y": 0.8949889540672302,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 92,
+                "kind": "flight-stopped",
+                "from": "flying",
+                "to": "falling",
+                "position": {
+                  "x": 0,
+                  "y": 5.892262935638428,
+                  "z": 8
+                },
+                "supportId": null
+              },
+              {
+                "tick": 151,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": 0,
+                  "y": 0.9080610275268555,
+                  "z": 8
+                },
+                "supportId": "flight-ground"
+              }
+            ]
+          },
+          "events": [
+            {
+              "tick": 1,
+              "kind": "landed",
+              "from": "falling",
+              "to": "grounded",
+              "position": {
+                "x": 0,
+                "y": 0.8950000405311584,
+                "z": 8
+              },
+              "supportId": "flight-ground"
+            },
+            {
+              "tick": 61,
+              "kind": "takeoff",
+              "from": "grounded",
+              "to": "flying",
+              "position": {
+                "x": 0,
+                "y": 0.8949889540672302,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 92,
+              "kind": "flight-stopped",
+              "from": "flying",
+              "to": "falling",
+              "position": {
+                "x": 0,
+                "y": 5.892262935638428,
+                "z": 8
+              },
+              "supportId": null
+            },
+            {
+              "tick": 151,
+              "kind": "landed",
+              "from": "falling",
+              "to": "grounded",
+              "position": {
+                "x": 0,
+                "y": 0.9080610275268555,
+                "z": 8
+              },
+              "supportId": "flight-ground"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "P04-04: ground control and state ownership > walks at 3 m/s after landing at x=20 z=10 with one matching physics state",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 362,
+            "position": {
+              "x": 22.999847412109375,
+              "y": 0.8949779868125916,
+              "z": 9.999359130859375
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 1.5707963267948966,
+            "mode": "grounded",
+            "supportId": "flight-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 362,
+            "position": "{\"x\":22.999847412109375,\"y\":0.8949779868125916,\"z\":9.999359130859375}",
+            "physicalPosition": "{\"x\":22.999847412109375,\"y\":0.8949779868125916,\"z\":9.999359130859375}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flight-ground",
+            "velocity": "{\"x\":0,\"y\":0,\"z\":0}",
+            "penetration": 0,
+            "colliders": 6,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": true,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 1,
+            "maxSweepDistance": 0.16666666666666666,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": 22.999847412109375,
+              "y": 0.8949779868125916,
+              "z": 9.999359130859375
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": 20,
+                  "y": 0.8949981331825256,
+                  "z": 10
+                },
+                "supportId": "flight-ground"
+              },
+              {
+                "tick": 61,
+                "kind": "takeoff",
+                "from": "grounded",
+                "to": "flying",
+                "position": {
+                  "x": 20,
+                  "y": 0.8949772119522095,
+                  "z": 10
+                },
+                "supportId": null
+              },
+              {
+                "tick": 92,
+                "kind": "flight-stopped",
+                "from": "flying",
+                "to": "falling",
+                "position": {
+                  "x": 20,
+                  "y": 5.892251014709473,
+                  "z": 10
+                },
+                "supportId": null
+              },
+              {
+                "tick": 151,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": 20,
+                  "y": 0.9080491065979004,
+                  "z": 10
+                },
+                "supportId": "flight-ground"
+              }
+            ]
+          },
+          "events": [
+            {
+              "tick": 1,
+              "kind": "landed",
+              "from": "falling",
+              "to": "grounded",
+              "position": {
+                "x": 20,
+                "y": 0.8949981331825256,
+                "z": 10
+              },
+              "supportId": "flight-ground"
+            },
+            {
+              "tick": 61,
+              "kind": "takeoff",
+              "from": "grounded",
+              "to": "flying",
+              "position": {
+                "x": 20,
+                "y": 0.8949772119522095,
+                "z": 10
+              },
+              "supportId": null
+            },
+            {
+              "tick": 92,
+              "kind": "flight-stopped",
+              "from": "flying",
+              "to": "falling",
+              "position": {
+                "x": 20,
+                "y": 5.892251014709473,
+                "z": 10
+              },
+              "supportId": null
+            },
+            {
+              "tick": 151,
+              "kind": "landed",
+              "from": "falling",
+              "to": "grounded",
+              "position": {
+                "x": 20,
+                "y": 0.9080491065979004,
+                "z": 10
+              },
+              "supportId": "flight-ground"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "P04-04: ground control and state ownership > walks at 3 m/s after landing at x=-30 z=20 with one matching physics state",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 362,
+            "position": {
+              "x": -27.002357482910156,
+              "y": 0.8949891924858093,
+              "z": 19.999916076660156
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 1.5707963267948966,
+            "mode": "grounded",
+            "supportId": "flight-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 362,
+            "position": "{\"x\":-27.002357482910156,\"y\":0.8949891924858093,\"z\":19.999916076660156}",
+            "physicalPosition": "{\"x\":-27.002357482910156,\"y\":0.8949891924858093,\"z\":19.999916076660156}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flight-ground",
+            "velocity": "{\"x\":0,\"y\":0,\"z\":0}",
+            "penetration": 0,
+            "colliders": 6,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": true,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 1,
+            "maxSweepDistance": 0.16666666666666666,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": -27.002357482910156,
+              "y": 0.8949891924858093,
+              "z": 19.999916076660156
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": -30,
+                  "y": 0.8949980139732361,
+                  "z": 20
+                },
+                "supportId": "flight-ground"
+              },
+              {
+                "tick": 61,
+                "kind": "takeoff",
+                "from": "grounded",
+                "to": "flying",
+                "position": {
+                  "x": -30,
+                  "y": 0.8949912786483765,
+                  "z": 20
+                },
+                "supportId": null
+              },
+              {
+                "tick": 92,
+                "kind": "flight-stopped",
+                "from": "flying",
+                "to": "falling",
+                "position": {
+                  "x": -30,
+                  "y": 5.8922648429870605,
+                  "z": 20
+                },
+                "supportId": null
+              },
+              {
+                "tick": 151,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": -30,
+                  "y": 0.9080629348754883,
+                  "z": 20
+                },
+                "supportId": "flight-ground"
+              }
+            ]
+          },
+          "events": [
+            {
+              "tick": 1,
+              "kind": "landed",
+              "from": "falling",
+              "to": "grounded",
+              "position": {
+                "x": -30,
+                "y": 0.8949980139732361,
+                "z": 20
+              },
+              "supportId": "flight-ground"
+            },
+            {
+              "tick": 61,
+              "kind": "takeoff",
+              "from": "grounded",
+              "to": "flying",
+              "position": {
+                "x": -30,
+                "y": 0.8949912786483765,
+                "z": 20
+              },
+              "supportId": null
+            },
+            {
+              "tick": 92,
+              "kind": "flight-stopped",
+              "from": "flying",
+              "to": "falling",
+              "position": {
+                "x": -30,
+                "y": 5.8922648429870605,
+                "z": 20
+              },
+              "supportId": null
+            },
+            {
+              "tick": 151,
+              "kind": "landed",
+              "from": "falling",
+              "to": "grounded",
+              "position": {
+                "x": -30,
+                "y": 0.9080629348754883,
+                "z": 20
+              },
+              "supportId": "flight-ground"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

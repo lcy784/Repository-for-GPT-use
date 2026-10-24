@@ -1,0 +1,7 @@
+Error: ENOENT: no such file or directory, open '/workspace/Repository-for-GPT-use/quality/reports/2026-10-23T16-46-02-905Z-da2de54c/P06-browser/results.json'
+    at readFileSync (node:fs:484:20)
+    at readJson (file:///workspace/Repository-for-GPT-use/scripts/quality/lib.mjs:8:48)
+    at file:///workspace/Repository-for-GPT-use/scripts/quality/stages/P06.mjs:17:72
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)

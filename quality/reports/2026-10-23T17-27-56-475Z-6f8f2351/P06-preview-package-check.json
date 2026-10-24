@@ -1,0 +1,20 @@
+{
+  "candidate": "dea40243a0d3d22703bc1caa211fb4c7cca3b3bd3aa7cfbe3485882c74a1e443",
+  "cumulativeStatus": "BLOCKED",
+  "P06AutomaticCases": [
+    "P06-01 PASS",
+    "P06-02 PASS",
+    "P06-03 PASS"
+  ],
+  "userReview": "P06-04 pending",
+  "WindowsLauncher": "Inherited P03 launcher; P06 labels and manifest updated. Not executed on Windows in this cloud run.",
+  "WindowsHardwarePerformance": "Not measured; P15 pending",
+  "productionFilesMatchFormalManifest": true,
+  "zipSha256": "225cfaaa326ea0d24eea56d6483b96ace093d1d14502e929e9f017cd904da122",
+  "zipBytes": 2722233,
+  "imageCount": 13,
+  "imageDimensions": [
+    1280,
+    720
+  ]
+}

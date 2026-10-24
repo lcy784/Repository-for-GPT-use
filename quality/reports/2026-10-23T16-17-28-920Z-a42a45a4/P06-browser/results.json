@@ -1,0 +1,992 @@
+{
+  "runId": "2026-10-23T16-17-28-920Z-a42a45a4",
+  "candidate": "8f580f7c19ef22d4671563c0cfbab92980b58fc3e297e89060e672afa0c8495e",
+  "browser": "154.0.8037.57",
+  "functionalViewport": {
+    "width": 640,
+    "height": 480
+  },
+  "captureViewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "defaultFlightSpeed": 10,
+  "results": [
+    {
+      "id": "P06-browser-error",
+      "status": "FAIL",
+      "executed": 1,
+      "error": "page.waitForFunction: Timeout 120000ms exceeded.\n    at move (/workspace/Repository-for-GPT-use/scripts/quality/p06-browser.mjs:35:17)\n    at async file:///workspace/Repository-for-GPT-use/scripts/quality/p06-browser.mjs:57:72"
+    }
+  ],
+  "checkpoints": [
+    {
+      "label": "jiangnan-bank",
+      "snapshot": {
+        "phase": "ready",
+        "error": null,
+        "frame": 41,
+        "tick": 189,
+        "maxStepsInFrame": 5,
+        "backend": "WebGL2",
+        "meshes": 55,
+        "activeMeshes": 45,
+        "engines": 1,
+        "listeners": 2,
+        "width": 640,
+        "height": 480,
+        "visibility": "visible",
+        "visibilityTransitions": 0,
+        "camera": 0,
+        "glError": 0,
+        "depthWitness": "",
+        "projectedRoofEnvelope": "",
+        "frameIntervalMsMedian": 244.6999999997206,
+        "frameIntervalMsP95": 794.6000000000931,
+        "drawCalls": 44,
+        "assemblyMetrics": "{\"columnCount\":36,\"shaftHeightMeters\":64.97999918460846,\"humanHeightMeters\":1.75000198364258,\"roofTiers\":3,\"bracketTiers\":8}",
+        "study": null,
+        "triangles": 154880,
+        "materials": 31,
+        "textures": 5,
+        "renderCpuMsMedian": 5.5,
+        "cameraEye": "-22.27547541247643,2.3112609559190846,286.1524041453192",
+        "cameraTarget": "-17.999999910462265,1.6199941807878584,281.99999983700013",
+        "perspective": "third",
+        "cameraState": "{\"mode\":\"third\",\"yaw\":0.8,\"pitch\":-0.11546754846490831,\"desiredDistance\":6,\"distance\":5.999999999999999,\"blocker\":null,\"toggles\":0,\"listeners\":10,\"dragging\":false}",
+        "avatarAnimation": "{\"active\":true,\"action\":\"idle\",\"weights\":{\"idle\":1,\"walk\":0,\"fly\":0,\"fall\":0},\"visible\":true,\"enabledMeshes\":29,\"time\":3.1500000000000012,\"joints\":[{\"name\":\"left-shoulder\",\"rotation\":[0.010026042793176187,0.000300871548318592,-0.02999399159600446,0.9994997464356441]},{\"name\":\"left-hip\",\"rotation\":[0,0,0,1]},{\"name\":\"left-knee\",\"rotation\":[0,0,0,0.9999999999999999]},{\"name\":\"right-shoulder\",\"rotation\":[0.010026042793176185,-0.00030087154831859195,0.029993991596004455,0.999499746435644]},{\"name\":\"right-hip\",\"rotation\":[0,0,0,1]},{\"name\":\"right-knee\",\"rotation\":[0,0,0,0.9999999999999999]}],\"meshes\":29,\"groups\":4,\"rootOffset\":[0,-0.875,0],\"heightMeters\":1.7499999809265137,\"facing\":{\"x\":0,\"z\":-1}}",
+        "animatedAvatars": 1,
+        "player": "{\"id\":\"local-player\",\"tick\":189,\"position\":{\"x\":-18,\"y\":0.8949941396713257,\"z\":282},\"velocity\":{\"x\":0,\"y\":0,\"z\":0},\"yaw\":0,\"mode\":\"grounded\",\"supportId\":\"jiangnan-bank--1\"}",
+        "physics": "{\"active\":true,\"tick\":189,\"position\":\"{\\\"x\\\":-18,\\\"y\\\":0.8949941396713257,\\\"z\\\":282}\",\"physicalPosition\":\"{\\\"x\\\":-18,\\\"y\\\":0.8949941396713257,\\\"z\\\":282}\",\"capsuleAxis\":\"+Y\",\"capsuleHeightMeters\":1.75,\"mode\":\"grounded\",\"supportId\":\"jiangnan-bank--1\",\"velocity\":\"{\\\"x\\\":0,\\\"y\\\":0,\\\"z\\\":0}\",\"penetration\":0,\"colliders\":254,\"bodyCount\":1,\"controllerCount\":1,\"flightEnabled\":true,\"flightSpeed\":10,\"lastSubsteps\":1,\"maxSubsteps\":1,\"maxSweepDistance\":0.002725,\"recoveryCount\":0,\"safePosition\":{\"x\":-18,\"y\":0.8949941396713257,\"z\":282},\"events\":[{\"tick\":1,\"kind\":\"landed\",\"from\":\"falling\",\"to\":\"grounded\",\"position\":{\"x\":-18,\"y\":0.8949971795082092,\"z\":282},\"supportId\":\"jiangnan-bank--1\"}]}",
+        "avatarHeightMeters": 1.7499999809265137,
+        "avatarYaw": 0,
+        "avatarPosition": "-18,0.8949941396713257,282",
+        "controllers": 1,
+        "inputListeners": 6,
+        "pressedKeys": "",
+        "inputFocused": true,
+        "journey": "{\"location\":\"江南水巷 · 沿岸走向石桥，F 起飞\",\"cameraCloudBand\":\"below\",\"cloudOpacity\":1,\"palaceLift\":120}",
+        "fixture": "p06-journey",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "totalFrames": 41,
+        "generation": 1,
+        "canvases": 1
+      }
+    },
+    {
+      "label": "stone-bridge",
+      "snapshot": {
+        "phase": "ready",
+        "error": null,
+        "frame": 220,
+        "tick": 1036,
+        "maxStepsInFrame": 5,
+        "backend": "WebGL2",
+        "meshes": 55,
+        "activeMeshes": 45,
+        "engines": 1,
+        "listeners": 2,
+        "width": 640,
+        "height": 480,
+        "visibility": "visible",
+        "visibilityTransitions": 0,
+        "camera": 0,
+        "glError": 0,
+        "depthWitness": "",
+        "projectedRoofEnvelope": "",
+        "frameIntervalMsMedian": 281,
+        "frameIntervalMsP95": 564.2999999998137,
+        "drawCalls": 44,
+        "assemblyMetrics": "{\"columnCount\":36,\"shaftHeightMeters\":64.97999918460846,\"humanHeightMeters\":1.75000198364258,\"roofTiers\":3,\"bracketTiers\":8}",
+        "study": null,
+        "triangles": 154880,
+        "materials": 31,
+        "textures": 5,
+        "renderCpuMsMedian": 3.099999999627471,
+        "cameraEye": "0.2503463923931125,2.7848676746407515,277.44345054270013",
+        "cameraTarget": "0.2503463923931122,1.619516432813743,271.557708712828",
+        "perspective": "third",
+        "cameraState": "{\"mode\":\"third\",\"yaw\":-5.551115123125783e-17,\"pitch\":-0.19546754846490833,\"desiredDistance\":6,\"distance\":5.999999999999987,\"blocker\":null,\"toggles\":0,\"listeners\":10,\"dragging\":false}",
+        "avatarAnimation": "{\"active\":true,\"action\":\"idle\",\"weights\":{\"idle\":0.7506477912227038,\"walk\":0.24935220877729622,\"fly\":0,\"fall\":0},\"visible\":true,\"enabledMeshes\":29,\"time\":17.266666666666694,\"joints\":[{\"name\":\"left-shoulder\",\"rotation\":[-0.031286355935013305,-0.0015481101178221358,-0.03368749693428566,0.9989413866684247]},{\"name\":\"left-hip\",\"rotation\":[0.0430285939518234,0,0,0.9990738412428746]},{\"name\":\"left-knee\",\"rotation\":[0,0,0,0.9999999999999999]},{\"name\":\"right-shoulder\",\"rotation\":[0.049773278292271385,-0.002102118959983933,0.03366031639923973,0.9981909432348747]},{\"name\":\"right-hip\",\"rotation\":[-0.0430285939518234,0,0,0.9990738412428746]},{\"name\":\"right-knee\",\"rotation\":[0.0491708874151812,0,0,0.9987903805485827]}],\"meshes\":29,\"groups\":4,\"rootOffset\":[0,-0.875,0],\"heightMeters\":1.7499999809265137,\"facing\":{\"x\":1,\"z\":-6.123233995736766e-17}}",
+        "animatedAvatars": 1,
+        "player": "{\"id\":\"local-player\",\"tick\":1036,\"position\":{\"x\":0.2503463923931122,\"y\":0.8945164680480957,\"z\":271.5577087402344},\"velocity\":{\"x\":0,\"y\":0,\"z\":0},\"yaw\":1.5707963267948966,\"mode\":\"grounded\",\"supportId\":\"jiangnan-bridge\"}",
+        "physics": "{\"active\":true,\"tick\":1036,\"position\":\"{\\\"x\\\":0.2503463923931122,\\\"y\\\":0.8945164680480957,\\\"z\\\":271.5577087402344}\",\"physicalPosition\":\"{\\\"x\\\":0.2503463923931122,\\\"y\\\":0.8945164680480957,\\\"z\\\":271.5577087402344}\",\"capsuleAxis\":\"+Y\",\"capsuleHeightMeters\":1.75,\"mode\":\"grounded\",\"supportId\":\"jiangnan-bridge\",\"velocity\":\"{\\\"x\\\":0,\\\"y\\\":0,\\\"z\\\":0}\",\"penetration\":0,\"colliders\":254,\"bodyCount\":1,\"controllerCount\":1,\"flightEnabled\":true,\"flightSpeed\":10,\"lastSubsteps\":1,\"maxSubsteps\":1,\"maxSweepDistance\":0.05,\"recoveryCount\":0,\"safePosition\":{\"x\":0.2503463923931122,\"y\":0.8945164680480957,\"z\":271.5577087402344},\"events\":[{\"tick\":1,\"kind\":\"landed\",\"from\":\"falling\",\"to\":\"grounded\",\"position\":{\"x\":-18,\"y\":0.8949971795082092,\"z\":282},\"supportId\":\"jiangnan-bank--1\"}]}",
+        "avatarHeightMeters": 1.7499999809265137,
+        "avatarYaw": -1.5707963267948966,
+        "avatarPosition": "0.2503463923931122,0.8945164680480957,271.5577087402344",
+        "controllers": 1,
+        "inputListeners": 6,
+        "pressedKeys": "",
+        "inputFocused": true,
+        "journey": "{\"location\":\"江南水巷 · 沿岸走向石桥，F 起飞\",\"cameraCloudBand\":\"below\",\"cloudOpacity\":1,\"palaceLift\":120}",
+        "fixture": "p06-journey",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "totalFrames": 220,
+        "generation": 1,
+        "canvases": 1
+      }
+    },
+    {
+      "label": "cloud-below-third",
+      "snapshot": {
+        "phase": "ready",
+        "error": null,
+        "frame": 344,
+        "tick": 1627,
+        "maxStepsInFrame": 5,
+        "backend": "WebGL2",
+        "meshes": 55,
+        "activeMeshes": 52,
+        "engines": 1,
+        "listeners": 2,
+        "width": 640,
+        "height": 480,
+        "visibility": "visible",
+        "visibilityTransitions": 0,
+        "camera": 0,
+        "glError": 0,
+        "depthWitness": "",
+        "projectedRoofEnvelope": "",
+        "frameIntervalMsMedian": 294,
+        "frameIntervalMsP95": 926.2999999998137,
+        "drawCalls": 51,
+        "assemblyMetrics": "{\"columnCount\":36,\"shaftHeightMeters\":64.97999918460846,\"humanHeightMeters\":1.75000198364258,\"roofTiers\":3,\"bracketTiers\":8}",
+        "study": null,
+        "triangles": 155812,
+        "materials": 31,
+        "textures": 5,
+        "renderCpuMsMedian": 3.400000000372529,
+        "cameraEye": "0.2503463923931125,70.9463525419467,277.53628429649",
+        "cameraTarget": "0.2503463923931122,71.4529434149497,271.55770870921737",
+        "perspective": "third",
+        "cameraState": "{\"mode\":\"third\",\"yaw\":-5.551115123125783e-17,\"pitch\":0.08453245153509167,\"desiredDistance\":6,\"distance\":5.99999999999998,\"blocker\":null,\"toggles\":0,\"listeners\":10,\"dragging\":false}",
+        "avatarAnimation": "{\"active\":true,\"action\":\"fly\",\"weights\":{\"idle\":1.6598796589287797e-34,\"walk\":5.60369509511853e-37,\"fly\":1,\"fall\":0},\"visible\":true,\"enabledMeshes\":29,\"time\":27.116666666666557,\"joints\":[{\"name\":\"left-shoulder\",\"rotation\":[-0.11271035287710532,-0.05329319856067396,-0.4241227095547149,0.8969816948824527]},{\"name\":\"left-hip\",\"rotation\":[0.08987855166196823,0,0,0.9959527254104614]},{\"name\":\"left-knee\",\"rotation\":[0.09983341395854949,0,0,0.9950041770935057]},{\"name\":\"right-shoulder\",\"rotation\":[-0.11180787675222369,0.05516147268053887,0.438990981328063,0.8897994964437863]},{\"name\":\"right-hip\",\"rotation\":[0.08987855166196823,0,0,0.9959527254104614]},{\"name\":\"right-knee\",\"rotation\":[0.09983341395854949,0,0,0.9950041770935057]}],\"meshes\":29,\"groups\":4,\"rootOffset\":[0,-0.875,0],\"heightMeters\":1.7499999809265137,\"facing\":{\"x\":1,\"z\":-6.123233995736766e-17}}",
+        "animatedAvatars": 1,
+        "player": "{\"id\":\"local-player\",\"tick\":1627,\"position\":{\"x\":0.2503463923931122,\"y\":70.72794342041016,\"z\":271.5577087402344},\"velocity\":{\"x\":0,\"y\":0,\"z\":0},\"yaw\":1.5707963267948966,\"mode\":\"flying\",\"supportId\":null}",
+        "physics": "{\"active\":true,\"tick\":1627,\"position\":\"{\\\"x\\\":0.2503463923931122,\\\"y\\\":70.72794342041016,\\\"z\\\":271.5577087402344}\",\"physicalPosition\":\"{\\\"x\\\":0.2503463923931122,\\\"y\\\":70.72794342041016,\\\"z\\\":271.5577087402344}\",\"capsuleAxis\":\"+Y\",\"capsuleHeightMeters\":1.75,\"mode\":\"flying\",\"supportId\":null,\"velocity\":\"{\\\"x\\\":0,\\\"y\\\":0,\\\"z\\\":0}\",\"penetration\":0,\"colliders\":254,\"bodyCount\":1,\"controllerCount\":1,\"flightEnabled\":true,\"flightSpeed\":10,\"lastSubsteps\":1,\"maxSubsteps\":1,\"maxSweepDistance\":0.16666666666666666,\"recoveryCount\":0,\"safePosition\":{\"x\":0.2503463923931122,\"y\":0.8945164680480957,\"z\":271.5577087402344},\"events\":[{\"tick\":1,\"kind\":\"landed\",\"from\":\"falling\",\"to\":\"grounded\",\"position\":{\"x\":-18,\"y\":0.8949971795082092,\"z\":282},\"supportId\":\"jiangnan-bank--1\"},{\"tick\":1068,\"kind\":\"takeoff\",\"from\":\"grounded\",\"to\":\"flying\",\"position\":{\"x\":0.2503463923931122,\"y\":0.8945164680480957,\"z\":271.5577087402344},\"supportId\":null}]}",
+        "avatarHeightMeters": 1.7499999809265137,
+        "avatarYaw": -1.5707963267948966,
+        "avatarPosition": "0.2503463923931122,70.72794342041016,271.5577087402344",
+        "controllers": 1,
+        "inputListeners": 6,
+        "pressedKeys": "",
+        "inputFocused": true,
+        "journey": "{\"location\":\"云下 · 空格上升，朝巨殿飞行\",\"cameraCloudBand\":\"below\",\"cloudOpacity\":1,\"palaceLift\":120}",
+        "fixture": "p06-journey",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "totalFrames": 344,
+        "generation": 1,
+        "canvases": 1
+      }
+    },
+    {
+      "label": "cloud-below-first",
+      "snapshot": {
+        "phase": "ready",
+        "error": null,
+        "frame": 373,
+        "tick": 1751,
+        "maxStepsInFrame": 5,
+        "backend": "WebGL2",
+        "meshes": 55,
+        "activeMeshes": 23,
+        "engines": 1,
+        "listeners": 2,
+        "width": 640,
+        "height": 480,
+        "visibility": "visible",
+        "visibilityTransitions": 0,
+        "camera": 0,
+        "glError": 0,
+        "depthWitness": "",
+        "projectedRoofEnvelope": "",
+        "frameIntervalMsMedian": 295.60000000009313,
+        "frameIntervalMsP95": 1682.7999999998137,
+        "drawCalls": 23,
+        "assemblyMetrics": "{\"columnCount\":36,\"shaftHeightMeters\":64.97999918460846,\"humanHeightMeters\":1.75000198364258,\"roofTiers\":3,\"bracketTiers\":8}",
+        "study": null,
+        "triangles": 153012,
+        "materials": 31,
+        "textures": 5,
+        "renderCpuMsMedian": 2.5,
+        "cameraEye": "0.2503463923931122,71.45294342041015,271.5577087402344",
+        "cameraTarget": "0.2503463923931121,71.53737523257732,270.56127947568893",
+        "perspective": "first",
+        "cameraState": "{\"mode\":\"first\",\"yaw\":-5.551115123125783e-17,\"pitch\":0.08453245153509167,\"desiredDistance\":6,\"distance\":0,\"blocker\":null,\"toggles\":1,\"listeners\":10,\"dragging\":false}",
+        "avatarAnimation": "{\"active\":true,\"action\":\"fly\",\"weights\":{\"idle\":5.5025060111050685e-42,\"walk\":1.8576265923512177e-44,\"fly\":1,\"fall\":0},\"visible\":false,\"enabledMeshes\":0,\"time\":29.1833333333332,\"joints\":[{\"name\":\"left-shoulder\",\"rotation\":[-0.11286990493378359,-0.05295439362862055,-0.4214264154701689,0.8982514023655366]},{\"name\":\"left-hip\",\"rotation\":[0.08987855166196822,0,0,0.9959527254104613]},{\"name\":\"left-knee\",\"rotation\":[0.09983341395854949,0,0,0.9950041770935057]},{\"name\":\"right-shoulder\",\"rotation\":[-0.1116416588442164,0.05549705549742167,0.44166163799501484,0.8884766698015145]},{\"name\":\"right-hip\",\"rotation\":[0.08987855166196823,0,0,0.9959527254104614]},{\"name\":\"right-knee\",\"rotation\":[0.0998334139585495,0,0,0.9950041770935059]}],\"meshes\":29,\"groups\":4,\"rootOffset\":[0,-0.875,0],\"heightMeters\":1.7499999809265137,\"facing\":{\"x\":1,\"z\":-6.123233995736766e-17}}",
+        "animatedAvatars": 1,
+        "player": "{\"id\":\"local-player\",\"tick\":1751,\"position\":{\"x\":0.2503463923931122,\"y\":70.72794342041016,\"z\":271.5577087402344},\"velocity\":{\"x\":0,\"y\":0,\"z\":0},\"yaw\":1.5707963267948966,\"mode\":\"flying\",\"supportId\":null}",
+        "physics": "{\"active\":true,\"tick\":1751,\"position\":\"{\\\"x\\\":0.2503463923931122,\\\"y\\\":70.72794342041016,\\\"z\\\":271.5577087402344}\",\"physicalPosition\":\"{\\\"x\\\":0.2503463923931122,\\\"y\\\":70.72794342041016,\\\"z\\\":271.5577087402344}\",\"capsuleAxis\":\"+Y\",\"capsuleHeightMeters\":1.75,\"mode\":\"flying\",\"supportId\":null,\"velocity\":\"{\\\"x\\\":0,\\\"y\\\":0,\\\"z\\\":0}\",\"penetration\":0,\"colliders\":254,\"bodyCount\":1,\"controllerCount\":1,\"flightEnabled\":true,\"flightSpeed\":10,\"lastSubsteps\":1,\"maxSubsteps\":1,\"maxSweepDistance\":0.16666666666666666,\"recoveryCount\":0,\"safePosition\":{\"x\":0.2503463923931122,\"y\":0.8945164680480957,\"z\":271.5577087402344},\"events\":[{\"tick\":1,\"kind\":\"landed\",\"from\":\"falling\",\"to\":\"grounded\",\"position\":{\"x\":-18,\"y\":0.8949971795082092,\"z\":282},\"supportId\":\"jiangnan-bank--1\"},{\"tick\":1068,\"kind\":\"takeoff\",\"from\":\"grounded\",\"to\":\"flying\",\"position\":{\"x\":0.2503463923931122,\"y\":0.8945164680480957,\"z\":271.5577087402344},\"supportId\":null}]}",
+        "avatarHeightMeters": 1.7499999809265137,
+        "avatarYaw": -1.5707963267948966,
+        "avatarPosition": "0.2503463923931122,70.72794342041016,271.5577087402344",
+        "controllers": 1,
+        "inputListeners": 6,
+        "pressedKeys": "",
+        "inputFocused": true,
+        "journey": "{\"location\":\"云下 · 空格上升，朝巨殿飞行\",\"cameraCloudBand\":\"below\",\"cloudOpacity\":1,\"palaceLift\":120}",
+        "fixture": "p06-journey",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "totalFrames": 373,
+        "generation": 1,
+        "canvases": 1
+      }
+    },
+    {
+      "label": "cloud-inside-third",
+      "snapshot": {
+        "phase": "ready",
+        "error": null,
+        "frame": 449,
+        "tick": 2084,
+        "maxStepsInFrame": 5,
+        "backend": "WebGL2",
+        "meshes": 55,
+        "activeMeshes": 48,
+        "engines": 1,
+        "listeners": 2,
+        "width": 640,
+        "height": 480,
+        "visibility": "visible",
+        "visibilityTransitions": 0,
+        "camera": 0,
+        "glError": 0,
+        "depthWitness": "",
+        "projectedRoofEnvelope": "",
+        "frameIntervalMsMedian": 836.3999999999069,
+        "frameIntervalMsP95": 2635,
+        "drawCalls": 47,
+        "assemblyMetrics": "{\"columnCount\":36,\"shaftHeightMeters\":64.97999918460846,\"humanHeightMeters\":1.75000198364258,\"roofTiers\":3,\"bracketTiers\":8}",
+        "study": null,
+        "triangles": 152080,
+        "materials": 31,
+        "textures": 5,
+        "renderCpuMsMedian": 1.7000000001862645,
+        "cameraEye": "0.2503463923931125,101.61255127241544,277.53628429649",
+        "cameraTarget": "0.2503463923931122,102.11914214541845,271.55770870921737",
+        "perspective": "third",
+        "cameraState": "{\"mode\":\"third\",\"yaw\":-5.551115123125783e-17,\"pitch\":0.08453245153509167,\"desiredDistance\":6,\"distance\":5.99999999999998,\"blocker\":null,\"toggles\":2,\"listeners\":10,\"dragging\":false}",
+        "avatarAnimation": "{\"active\":true,\"action\":\"fly\",\"weights\":{\"idle\":4.512744417478997e-62,\"walk\":1.5234865745671268e-64,\"fly\":1,\"fall\":0},\"visible\":true,\"enabledMeshes\":29,\"time\":34.73333333333323,\"joints\":[{\"name\":\"left-shoulder\",\"rotation\":[-0.11158585994983958,-0.055609214314942666,-0.4425542414909832,0.8880326032279078]},{\"name\":\"left-hip\",\"rotation\":[0.08987855166196823,0,0,0.9959527254104614]},{\"name\":\"left-knee\",\"rotation\":[0.0998334139585495,0,0,0.9950041770935059]},{\"name\":\"right-shoulder\",\"rotation\":[-0.11292307526302488,0.05284096299684661,0.42052370898575864,0.8986745834692325]},{\"name\":\"right-hip\",\"rotation\":[0.08987855166196823,0,0,0.9959527254104614]},{\"name\":\"right-knee\",\"rotation\":[0.09983341395854949,0,0,0.9950041770935057]}],\"meshes\":29,\"groups\":4,\"rootOffset\":[0,-0.875,0],\"heightMeters\":1.7499999809265137,\"facing\":{\"x\":1,\"z\":-6.123233995736766e-17}}",
+        "animatedAvatars": 1,
+        "player": "{\"id\":\"local-player\",\"tick\":2084,\"position\":{\"x\":0.2503463923931122,\"y\":101.3941421508789,\"z\":271.5577087402344},\"velocity\":{\"x\":0,\"y\":0,\"z\":0},\"yaw\":1.5707963267948966,\"mode\":\"flying\",\"supportId\":null}",
+        "physics": "{\"active\":true,\"tick\":2084,\"position\":\"{\\\"x\\\":0.2503463923931122,\\\"y\\\":101.3941421508789,\\\"z\\\":271.5577087402344}\",\"physicalPosition\":\"{\\\"x\\\":0.2503463923931122,\\\"y\\\":101.3941421508789,\\\"z\\\":271.5577087402344}\",\"capsuleAxis\":\"+Y\",\"capsuleHeightMeters\":1.75,\"mode\":\"flying\",\"supportId\":null,\"velocity\":\"{\\\"x\\\":0,\\\"y\\\":0,\\\"z\\\":0}\",\"penetration\":0,\"colliders\":254,\"bodyCount\":1,\"controllerCount\":1,\"flightEnabled\":true,\"flightSpeed\":10,\"lastSubsteps\":1,\"maxSubsteps\":1,\"maxSweepDistance\":0.16666666666666666,\"recoveryCount\":0,\"safePosition\":{\"x\":0.2503463923931122,\"y\":0.8945164680480957,\"z\":271.5577087402344},\"events\":[{\"tick\":1,\"kind\":\"landed\",\"from\":\"falling\",\"to\":\"grounded\",\"position\":{\"x\":-18,\"y\":0.8949971795082092,\"z\":282},\"supportId\":\"jiangnan-bank--1\"},{\"tick\":1068,\"kind\":\"takeoff\",\"from\":\"grounded\",\"to\":\"flying\",\"position\":{\"x\":0.2503463923931122,\"y\":0.8945164680480957,\"z\":271.5577087402344},\"supportId\":null}]}",
+        "avatarHeightMeters": 1.7499999809265137,
+        "avatarYaw": -1.5707963267948966,
+        "avatarPosition": "0.2503463923931122,101.3941421508789,271.5577087402344",
+        "controllers": 1,
+        "inputListeners": 6,
+        "pressedKeys": "",
+        "inputFocused": true,
+        "journey": "{\"location\":\"云中 · 继续上升，前方是天宫\",\"cameraCloudBand\":\"inside\",\"cloudOpacity\":0,\"palaceLift\":120}",
+        "fixture": "p06-journey",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "totalFrames": 449,
+        "generation": 1,
+        "canvases": 1
+      }
+    },
+    {
+      "label": "cloud-inside-first",
+      "snapshot": {
+        "phase": "ready",
+        "error": null,
+        "frame": 469,
+        "tick": 2174,
+        "maxStepsInFrame": 5,
+        "backend": "WebGL2",
+        "meshes": 55,
+        "activeMeshes": 19,
+        "engines": 1,
+        "listeners": 2,
+        "width": 640,
+        "height": 480,
+        "visibility": "visible",
+        "visibilityTransitions": 0,
+        "camera": 0,
+        "glError": 0,
+        "depthWitness": "",
+        "projectedRoofEnvelope": "",
+        "frameIntervalMsMedian": 833,
+        "frameIntervalMsP95": 2635,
+        "drawCalls": 19,
+        "assemblyMetrics": "{\"columnCount\":36,\"shaftHeightMeters\":64.97999918460846,\"humanHeightMeters\":1.75000198364258,\"roofTiers\":3,\"bracketTiers\":8}",
+        "study": null,
+        "triangles": 149280,
+        "materials": 31,
+        "textures": 5,
+        "renderCpuMsMedian": 1.7000000001862645,
+        "cameraEye": "0.2503463923931122,102.1191421508789,271.5577087402344",
+        "cameraTarget": "0.2503463923931121,102.20357396304607,270.56127947568893",
+        "perspective": "first",
+        "cameraState": "{\"mode\":\"first\",\"yaw\":-5.551115123125783e-17,\"pitch\":0.08453245153509167,\"desiredDistance\":6,\"distance\":0,\"blocker\":null,\"toggles\":3,\"listeners\":10,\"dragging\":false}",
+        "avatarAnimation": "{\"active\":true,\"action\":\"fly\",\"weights\":{\"idle\":1.681743329817844e-67,\"walk\":5.677506075729859e-70,\"fly\":1,\"fall\":0},\"visible\":false,\"enabledMeshes\":0,\"time\":36.23333333333326,\"joints\":[{\"name\":\"left-shoulder\",\"rotation\":[-0.11292307525980508,-0.0528409630037264,-0.4205237090405113,0.8986745834436018]},{\"name\":\"left-hip\",\"rotation\":[0.08987855166196822,0,0,0.9959527254104613]},{\"name\":\"left-knee\",\"rotation\":[0.09983341395854949,0,0,0.9950041770935057]},{\"name\":\"right-shoulder\",\"rotation\":[-0.11158585995322777,0.05560921430814389,0.4425542414368743,0.8880326032548684]},{\"name\":\"right-hip\",\"rotation\":[0.08987855166196823,0,0,0.9959527254104614]},{\"name\":\"right-knee\",\"rotation\":[0.0998334139585495,0,0,0.9950041770935059]}],\"meshes\":29,\"groups\":4,\"rootOffset\":[0,-0.875,0],\"heightMeters\":1.7499999809265137,\"facing\":{\"x\":1,\"z\":-6.123233995736766e-17}}",
+        "animatedAvatars": 1,
+        "player": "{\"id\":\"local-player\",\"tick\":2174,\"position\":{\"x\":0.2503463923931122,\"y\":101.3941421508789,\"z\":271.5577087402344},\"velocity\":{\"x\":0,\"y\":0,\"z\":0},\"yaw\":1.5707963267948966,\"mode\":\"flying\",\"supportId\":null}",
+        "physics": "{\"active\":true,\"tick\":2174,\"position\":\"{\\\"x\\\":0.2503463923931122,\\\"y\\\":101.3941421508789,\\\"z\\\":271.5577087402344}\",\"physicalPosition\":\"{\\\"x\\\":0.2503463923931122,\\\"y\\\":101.3941421508789,\\\"z\\\":271.5577087402344}\",\"capsuleAxis\":\"+Y\",\"capsuleHeightMeters\":1.75,\"mode\":\"flying\",\"supportId\":null,\"velocity\":\"{\\\"x\\\":0,\\\"y\\\":0,\\\"z\\\":0}\",\"penetration\":0,\"colliders\":254,\"bodyCount\":1,\"controllerCount\":1,\"flightEnabled\":true,\"flightSpeed\":10,\"lastSubsteps\":1,\"maxSubsteps\":1,\"maxSweepDistance\":0.16666666666666666,\"recoveryCount\":0,\"safePosition\":{\"x\":0.2503463923931122,\"y\":0.8945164680480957,\"z\":271.5577087402344},\"events\":[{\"tick\":1,\"kind\":\"landed\",\"from\":\"falling\",\"to\":\"grounded\",\"position\":{\"x\":-18,\"y\":0.8949971795082092,\"z\":282},\"supportId\":\"jiangnan-bank--1\"},{\"tick\":1068,\"kind\":\"takeoff\",\"from\":\"grounded\",\"to\":\"flying\",\"position\":{\"x\":0.2503463923931122,\"y\":0.8945164680480957,\"z\":271.5577087402344},\"supportId\":null}]}",
+        "avatarHeightMeters": 1.7499999809265137,
+        "avatarYaw": -1.5707963267948966,
+        "avatarPosition": "0.2503463923931122,101.3941421508789,271.5577087402344",
+        "controllers": 1,
+        "inputListeners": 6,
+        "pressedKeys": "",
+        "inputFocused": true,
+        "journey": "{\"location\":\"云中 · 继续上升，前方是天宫\",\"cameraCloudBand\":\"inside\",\"cloudOpacity\":0,\"palaceLift\":120}",
+        "fixture": "p06-journey",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "totalFrames": 469,
+        "generation": 1,
+        "canvases": 1
+      }
+    },
+    {
+      "label": "cloud-above-third",
+      "snapshot": {
+        "phase": "ready",
+        "error": null,
+        "frame": 542,
+        "tick": 2517,
+        "maxStepsInFrame": 5,
+        "backend": "WebGL2",
+        "meshes": 55,
+        "activeMeshes": 45,
+        "engines": 1,
+        "listeners": 2,
+        "width": 640,
+        "height": 480,
+        "visibility": "visible",
+        "visibilityTransitions": 0,
+        "camera": 0,
+        "glError": 0,
+        "depthWitness": "",
+        "projectedRoofEnvelope": "",
+        "frameIntervalMsMedian": 782.3999999999069,
+        "frameIntervalMsP95": 1650.2999999998137,
+        "drawCalls": 44,
+        "assemblyMetrics": "{\"columnCount\":36,\"shaftHeightMeters\":64.97999918460846,\"humanHeightMeters\":1.75000198364258,\"roofTiers\":3,\"bracketTiers\":8}",
+        "study": null,
+        "triangles": 151068,
+        "materials": 31,
+        "textures": 5,
+        "renderCpuMsMedian": 1.5,
+        "cameraEye": "0.2503463923931125,131.77892547895843,277.53628429649",
+        "cameraTarget": "0.2503463923931122,132.28551635196143,271.55770870921737",
+        "perspective": "third",
+        "cameraState": "{\"mode\":\"third\",\"yaw\":-5.551115123125783e-17,\"pitch\":0.08453245153509167,\"desiredDistance\":6,\"distance\":5.999999999999978,\"blocker\":null,\"toggles\":4,\"listeners\":10,\"dragging\":false}",
+        "avatarAnimation": "{\"active\":true,\"action\":\"fly\",\"weights\":{\"idle\":3.439166053498558e-88,\"walk\":1.161050311184933e-90,\"fly\":1,\"fall\":0},\"visible\":true,\"enabledMeshes\":29,\"time\":41.95000000000009,\"joints\":[{\"name\":\"left-shoulder\",\"rotation\":[-0.11205403619205959,-0.054659698411449194,-0.4349977198922592,0.8917584713597215]},{\"name\":\"left-hip\",\"rotation\":[0.08987855166196823,0,0,0.9959527254104614]},{\"name\":\"left-knee\",\"rotation\":[0.0998334139585495,0,0,0.9950041770935059]},{\"name\":\"right-shoulder\",\"rotation\":[-0.11247031700308735,0.053797926581835874,0.4281395047552751,0.8950713728762412]},{\"name\":\"right-hip\",\"rotation\":[0.08987855166196823,0,0,0.9959527254104614]},{\"name\":\"right-knee\",\"rotation\":[0.09983341395854949,0,0,0.9950041770935057]}],\"meshes\":29,\"groups\":4,\"rootOffset\":[0,-0.875,0],\"heightMeters\":1.7499999809265137,\"facing\":{\"x\":1,\"z\":-6.123233995736766e-17}}",
+        "animatedAvatars": 1,
+        "player": "{\"id\":\"local-player\",\"tick\":2517,\"position\":{\"x\":0.2503463923931122,\"y\":131.56051635742188,\"z\":271.5577087402344},\"velocity\":{\"x\":0,\"y\":0,\"z\":0},\"yaw\":1.5707963267948966,\"mode\":\"flying\",\"supportId\":null}",
+        "physics": "{\"active\":true,\"tick\":2517,\"position\":\"{\\\"x\\\":0.2503463923931122,\\\"y\\\":131.56051635742188,\\\"z\\\":271.5577087402344}\",\"physicalPosition\":\"{\\\"x\\\":0.2503463923931122,\\\"y\\\":131.56051635742188,\\\"z\\\":271.5577087402344}\",\"capsuleAxis\":\"+Y\",\"capsuleHeightMeters\":1.75,\"mode\":\"flying\",\"supportId\":null,\"velocity\":\"{\\\"x\\\":0,\\\"y\\\":0,\\\"z\\\":0}\",\"penetration\":0,\"colliders\":254,\"bodyCount\":1,\"controllerCount\":1,\"flightEnabled\":true,\"flightSpeed\":10,\"lastSubsteps\":1,\"maxSubsteps\":1,\"maxSweepDistance\":0.16666666666666666,\"recoveryCount\":0,\"safePosition\":{\"x\":0.2503463923931122,\"y\":0.8945164680480957,\"z\":271.5577087402344},\"events\":[{\"tick\":1,\"kind\":\"landed\",\"from\":\"falling\",\"to\":\"grounded\",\"position\":{\"x\":-18,\"y\":0.8949971795082092,\"z\":282},\"supportId\":\"jiangnan-bank--1\"},{\"tick\":1068,\"kind\":\"takeoff\",\"from\":\"grounded\",\"to\":\"flying\",\"position\":{\"x\":0.2503463923931122,\"y\":0.8945164680480957,\"z\":271.5577087402344},\"supportId\":null}]}",
+        "avatarHeightMeters": 1.7499999809265137,
+        "avatarYaw": -1.5707963267948966,
+        "avatarPosition": "0.2503463923931122,131.56051635742188,271.5577087402344",
+        "controllers": 1,
+        "inputListeners": 6,
+        "pressedKeys": "",
+        "inputFocused": true,
+        "journey": "{\"location\":\"云上天宫 · 殿前台面可降落，绕檐升高可到屋顶\",\"cameraCloudBand\":\"above\",\"cloudOpacity\":1,\"palaceLift\":120}",
+        "fixture": "p06-journey",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "totalFrames": 542,
+        "generation": 1,
+        "canvases": 1
+      }
+    },
+    {
+      "label": "cloud-above-first",
+      "snapshot": {
+        "phase": "ready",
+        "error": null,
+        "frame": 563,
+        "tick": 2602,
+        "maxStepsInFrame": 5,
+        "backend": "WebGL2",
+        "meshes": 55,
+        "activeMeshes": 16,
+        "engines": 1,
+        "listeners": 2,
+        "width": 640,
+        "height": 480,
+        "visibility": "visible",
+        "visibilityTransitions": 0,
+        "camera": 0,
+        "glError": 0,
+        "depthWitness": "",
+        "projectedRoofEnvelope": "",
+        "frameIntervalMsMedian": 769.2000000001863,
+        "frameIntervalMsP95": 1702,
+        "drawCalls": 16,
+        "assemblyMetrics": "{\"columnCount\":36,\"shaftHeightMeters\":64.97999918460846,\"humanHeightMeters\":1.75000198364258,\"roofTiers\":3,\"bracketTiers\":8}",
+        "study": null,
+        "triangles": 148268,
+        "materials": 31,
+        "textures": 5,
+        "renderCpuMsMedian": 1.5,
+        "cameraEye": "0.2503463923931122,132.28551635742187,271.5577087402344",
+        "cameraTarget": "0.2503463923931121,132.36994816958904,270.56127947568893",
+        "perspective": "first",
+        "cameraState": "{\"mode\":\"first\",\"yaw\":-5.551115123125783e-17,\"pitch\":0.08453245153509167,\"desiredDistance\":6,\"distance\":0,\"blocker\":null,\"toggles\":5,\"listeners\":10,\"dragging\":false}",
+        "avatarAnimation": "{\"active\":true,\"action\":\"fly\",\"weights\":{\"idle\":2.5666432713753313e-93,\"walk\":8.66489702030985e-96,\"fly\":1,\"fall\":0},\"visible\":false,\"enabledMeshes\":0,\"time\":43.36666666666679,\"joints\":[{\"name\":\"left-shoulder\",\"rotation\":[-0.11275907301537234,-0.05319003951656352,-0.42330173518540265,0.8973694185333018]},{\"name\":\"left-hip\",\"rotation\":[0.08987855166196823,0,0,0.9959527254104614]},{\"name\":\"left-knee\",\"rotation\":[0.09983341395854949,0,0,0.9950041770935057]},{\"name\":\"right-shoulder\",\"rotation\":[-0.11175735433751947,0.055263761215178106,0.43980502239904584,0.8893974162052418]},{\"name\":\"right-hip\",\"rotation\":[0.08987855166196823,0,0,0.9959527254104614]},{\"name\":\"right-knee\",\"rotation\":[0.09983341395854949,0,0,0.9950041770935057]}],\"meshes\":29,\"groups\":4,\"rootOffset\":[0,-0.875,0],\"heightMeters\":1.7499999809265137,\"facing\":{\"x\":1,\"z\":-6.123233995736766e-17}}",
+        "animatedAvatars": 1,
+        "player": "{\"id\":\"local-player\",\"tick\":2602,\"position\":{\"x\":0.2503463923931122,\"y\":131.56051635742188,\"z\":271.5577087402344},\"velocity\":{\"x\":0,\"y\":0,\"z\":0},\"yaw\":1.5707963267948966,\"mode\":\"flying\",\"supportId\":null}",
+        "physics": "{\"active\":true,\"tick\":2602,\"position\":\"{\\\"x\\\":0.2503463923931122,\\\"y\\\":131.56051635742188,\\\"z\\\":271.5577087402344}\",\"physicalPosition\":\"{\\\"x\\\":0.2503463923931122,\\\"y\\\":131.56051635742188,\\\"z\\\":271.5577087402344}\",\"capsuleAxis\":\"+Y\",\"capsuleHeightMeters\":1.75,\"mode\":\"flying\",\"supportId\":null,\"velocity\":\"{\\\"x\\\":0,\\\"y\\\":0,\\\"z\\\":0}\",\"penetration\":0,\"colliders\":254,\"bodyCount\":1,\"controllerCount\":1,\"flightEnabled\":true,\"flightSpeed\":10,\"lastSubsteps\":1,\"maxSubsteps\":1,\"maxSweepDistance\":0.16666666666666666,\"recoveryCount\":0,\"safePosition\":{\"x\":0.2503463923931122,\"y\":0.8945164680480957,\"z\":271.5577087402344},\"events\":[{\"tick\":1,\"kind\":\"landed\",\"from\":\"falling\",\"to\":\"grounded\",\"position\":{\"x\":-18,\"y\":0.8949971795082092,\"z\":282},\"supportId\":\"jiangnan-bank--1\"},{\"tick\":1068,\"kind\":\"takeoff\",\"from\":\"grounded\",\"to\":\"flying\",\"position\":{\"x\":0.2503463923931122,\"y\":0.8945164680480957,\"z\":271.5577087402344},\"supportId\":null}]}",
+        "avatarHeightMeters": 1.7499999809265137,
+        "avatarYaw": -1.5707963267948966,
+        "avatarPosition": "0.2503463923931122,131.56051635742188,271.5577087402344",
+        "controllers": 1,
+        "inputListeners": 6,
+        "pressedKeys": "",
+        "inputFocused": true,
+        "journey": "{\"location\":\"云上天宫 · 殿前台面可降落，绕檐升高可到屋顶\",\"cameraCloudBand\":\"above\",\"cloudOpacity\":1,\"palaceLift\":120}",
+        "fixture": "p06-journey",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "totalFrames": 563,
+        "generation": 1,
+        "canvases": 1
+      }
+    }
+  ],
+  "clouds": [
+    {
+      "height": 70,
+      "perspective": "third",
+      "cloud": {
+        "location": "云下 · 空格上升，朝巨殿飞行",
+        "cameraCloudBand": "below",
+        "cloudOpacity": 1,
+        "palaceLift": 120
+      },
+      "capture": {
+        "file": "03-cloud-below-third.png",
+        "sha256": "6b95ba316b12ae2e7b93e4cb6dbc6a2f8cd2221b1e780dc1a923606ac33804f9"
+      }
+    },
+    {
+      "height": 70,
+      "perspective": "first",
+      "cloud": {
+        "location": "云下 · 空格上升，朝巨殿飞行",
+        "cameraCloudBand": "below",
+        "cloudOpacity": 1,
+        "palaceLift": 120
+      },
+      "capture": {
+        "file": "03-cloud-below-first.png",
+        "sha256": "996043b40ff915e0202c81337cc283b4cf253763929c83ff4976bcf9a0c0de10"
+      }
+    },
+    {
+      "height": 100,
+      "perspective": "third",
+      "cloud": {
+        "location": "云中 · 继续上升，前方是天宫",
+        "cameraCloudBand": "inside",
+        "cloudOpacity": 0,
+        "palaceLift": 120
+      },
+      "capture": {
+        "file": "03-cloud-inside-third.png",
+        "sha256": "cc626b12dc82de46f0c3f72df3f8857ced5e7ff529d938bdce610a039e18dac8"
+      }
+    },
+    {
+      "height": 100,
+      "perspective": "first",
+      "cloud": {
+        "location": "云中 · 继续上升，前方是天宫",
+        "cameraCloudBand": "inside",
+        "cloudOpacity": 0,
+        "palaceLift": 120
+      },
+      "capture": {
+        "file": "03-cloud-inside-first.png",
+        "sha256": "7716c2a024cfae706dcc128ec1b12ae280ff8cfbc84cd5c13943d0feebcd6a41"
+      }
+    },
+    {
+      "height": 130,
+      "perspective": "third",
+      "cloud": {
+        "location": "云上天宫 · 殿前台面可降落，绕檐升高可到屋顶",
+        "cameraCloudBand": "above",
+        "cloudOpacity": 1,
+        "palaceLift": 120
+      },
+      "capture": {
+        "file": "03-cloud-above-third.png",
+        "sha256": "9d41b808ab35bc004399061be3530e6769225268eb8505953000d499834fbd1a"
+      }
+    },
+    {
+      "height": 130,
+      "perspective": "first",
+      "cloud": {
+        "location": "云上天宫 · 殿前台面可降落，绕檐升高可到屋顶",
+        "cameraCloudBand": "above",
+        "cloudOpacity": 1,
+        "palaceLift": 120
+      },
+      "capture": {
+        "file": "03-cloud-above-first.png",
+        "sha256": "45d9923c2e6106ff2ceb63a4b7fbcfa5ef859c0c45e7b35d0a0e34a365e8b05e"
+      }
+    }
+  ],
+  "captures": [
+    {
+      "file": "01-jiangnan.png",
+      "sha256": "efaf8fd9357a123e0fe96d6e738eb007d9852fe182d44af029c298b2f0376b59"
+    },
+    {
+      "file": "02-bridge.png",
+      "sha256": "ba40a0b7ea159185014a0c7b36e31ef853afbcc12c97b0b0f8630576ca81a20f"
+    },
+    {
+      "file": "03-cloud-below-third.png",
+      "sha256": "6b95ba316b12ae2e7b93e4cb6dbc6a2f8cd2221b1e780dc1a923606ac33804f9"
+    },
+    {
+      "file": "03-cloud-below-first.png",
+      "sha256": "996043b40ff915e0202c81337cc283b4cf253763929c83ff4976bcf9a0c0de10"
+    },
+    {
+      "file": "03-cloud-inside-third.png",
+      "sha256": "cc626b12dc82de46f0c3f72df3f8857ced5e7ff529d938bdce610a039e18dac8"
+    },
+    {
+      "file": "03-cloud-inside-first.png",
+      "sha256": "7716c2a024cfae706dcc128ec1b12ae280ff8cfbc84cd5c13943d0feebcd6a41"
+    },
+    {
+      "file": "03-cloud-above-third.png",
+      "sha256": "9d41b808ab35bc004399061be3530e6769225268eb8505953000d499834fbd1a"
+    },
+    {
+      "file": "03-cloud-above-first.png",
+      "sha256": "45d9923c2e6106ff2ceb63a4b7fbcfa5ef859c0c45e7b35d0a0e34a365e8b05e"
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "network": [
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/assets/math.scalar.functions-D-i-XBaP.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/engineStore-Bn2tApal.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/internalTexture-B3djGrls.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/domManagement-BqltO0ki.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/logger-CuBYPcDK.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/shaderStore-D-XQlhUT.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/index-BvpIQhOp.css",
+      "status": 200
+    },
+    {
+      "path": "/assets/performanceConfigurator-UtxC_Odd.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/tools.functions-DLQU6ymA.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/halfFloat-Ce77JD5z.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/thinEngine.pure-D-L2F5AR.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/abstractEngine.pure-DsyZHOMD.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/bufferUtils-DzEv5AIb.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/buffer.pure-CI0FDLRH.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/typeStore-Cu_sj2zM.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/math.color.pure-CICwgcc2.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/math.plane-cJVaEOjG.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/deviceInputEvents-B3OeHh-P.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/decorators-BWcttrMP.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/decorators.serialization-D4qeHcKi.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/guid-BXdVC_j_.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/tools.pure-C3ZuX3AE.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/keyboardEvents-CGYiptFb.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/pointerEvents-BIoyDeOY.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/smartArray-BRfcgNbX.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/sceneComponent-CMqaI1Dk.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/lightConstants-C_i-ky_L.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/math.axis-BO-Ebjyz.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/scene.pure-Pl6Gq1rh.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/index-CB8OWiBF.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/math.viewport-Cp0w6PSE.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/math.size-BHZaDYSv.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/sphericalPolynomial.pure-D0R9VEEP.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/preload-helper-CRzLMJPS.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/baseTexture.pure-DviMWzrP.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/node-6YizbGaP.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/drawWrapper-D7fYnWcK.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/mesh.vertexData-omtp2Qd-.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/subMesh.pure-DGWz3D8t.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/texture.pure-DycoL75X.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/imageProcessing-_KbCbnjN.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/material.pure-B1zQ2Qxg.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/effectRenderer.pure-Cb-SF-h2.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/postProcess.pure-DrdPo0EA.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/material.detailMapConfiguration-B83pkZAy.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/brdfTextureTools-0EeUu8Wn.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/environmentTextureTools.pure-CxRgphez.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/cubemapToSphericalPolynomial-Bd5X0RUz.js",
+      "status": 200
+    },
+    {
+      "path": "/runtime-config.json",
+      "status": 200
+    },
+    {
+      "path": "/assets/packingFunctions-DpGwbupU.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/shadowMap.fragment-DX4Yo1bp.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/sceneUboDeclaration-B5VhSG0v.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/meshUboDeclaration-BmNu2KU_.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/clipPlaneFragment-DVK0wgyZ.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/shadowMap.vertex-2__0EcBa.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/clipPlaneVertex-C59BO8JS.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/sceneVertexDeclaration-CluTp-RC.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/bakedVertexAnimation-xLaKIOY3.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/shadowMapFragmentSoftTransparentShadow-R_iOKnyx.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/depthBoxBlur.fragment-CLEAG5DG.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/helperFunctions-gEnZbjN3.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/rgbdDecode.fragment-Cdz2Tveq.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/postprocess.vertex-DJCmMhI8.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/session-Bn1O8l54.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/flowGraphInteger.pure-BKfG1Hxi.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/utils-CLq_UU0_.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/flowGraphBlock-DFsABhl-.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/flowGraphAssetsContext-WtUyuDAI.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/flowGraphRichTypes.pure-jhhZJLCd.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/flowGraphAsyncExecutionBlock-BrWBD3iX.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/flowGraphExecutionBlockWithOutSignal-Bh6_FoPG.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/flowGraphEventBlock-BH09FpNA.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/flowGraphExecutionBlock-DBhQC3hL.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/workerPool-Dva09jEo.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/player-camera-DxUXKDA5.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/freeCamera.pure-CY2obS3M.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/glTFLoaderAnimation.pure-DMVAL-l0.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/avatar-CBtjRcXU.js",
+      "status": 200
+    },
+    {
+      "path": "/characters/p05/traveler.glb",
+      "status": 200
+    },
+    {
+      "path": "/assets/pbrMaterialLoadingAdapter-4IfUPivv.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/animationGroup.pure-LrWsOCUq.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/mainUVVaryingDeclaration-BBamQlxR.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/logDepthDeclaration-3gXGtHbI.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/bumpVertexDeclaration-Cb04kLz9.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/pbr.vertex-DPATFZiU.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/instancesDeclaration-CJBvtBV5.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/vertexColorMixing-Dr2MLCTE.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/logDepthVertex-CksyN44U.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/bumpVertex-CWhdIpqj.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/pbrBRDFFunctions-BCNINF-p.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/harmonicsFunctions-QSz_WdsQ.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/pbrUboDeclaration--xFZEw0i.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/pbr.fragment-Dbx7NFfY.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/objectIdFunctions-BCg-H1o3.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/fogFragment-Ck1Rri6b.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/oitFragment-zTT3RJk0.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/lightFragment-x7Xpl9uU.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/reflectionFunction-CivoLMz9.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/bumpFragment-BtJd9tYZ.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/pbrIBLFunctions-CSlJv7qb.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/default.vertex-DHc4KpZ0.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/pbrDebug-CLskE_ZH.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/defaultUboDeclaration-C53xcSdv.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/default.fragment-DPDpC1pV.js",
+      "status": 200
+    }
+  ]
+}

@@ -1,0 +1,1007 @@
+{
+  "runId": "2026-10-23T17-27-56-475Z-6f8f2351",
+  "candidate": "dea40243a0d3d22703bc1caa211fb4c7cca3b3bd3aa7cfbe3485882c74a1e443",
+  "observations": [
+    {
+      "test": "Ground physics terrain matrix > settles on flat ground with a real support surface",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 60,
+            "position": {
+              "x": 0,
+              "y": 0.8949785828590393,
+              "z": 0
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 0,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 60,
+            "position": "{\"x\":0,\"y\":0.8949785828590393,\"z\":0}",
+            "physicalPosition": "{\"x\":0,\"y\":0.8949785828590393,\"z\":0}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flat-ground",
+            "velocity": "{\"x\":0,\"y\":0,\"z\":0}",
+            "penetration": 0,
+            "colliders": 11,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": false,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 1,
+            "maxSweepDistance": 0.002725,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": 0,
+              "y": 0.91,
+              "z": 0
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": 0,
+                  "y": 0.8950000405311584,
+                  "z": 0
+                },
+                "supportId": "flat-ground"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "test": "Ground physics terrain matrix > walks at frozen speed and stops on zero intent",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 110,
+            "position": {
+              "x": -1.0000028610229492,
+              "y": 0.8949889540672302,
+              "z": 10
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 1.5707963267948966,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 110,
+            "position": "{\"x\":-1.0000028610229492,\"y\":0.8949889540672302,\"z\":10}",
+            "physicalPosition": "{\"x\":-1.0000028610229492,\"y\":0.8949889540672302,\"z\":10}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flat-ground",
+            "velocity": "{\"x\":0,\"y\":0,\"z\":0}",
+            "penetration": 0,
+            "colliders": 11,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": false,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 1,
+            "maxSweepDistance": 0.05,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": -4,
+              "y": 0.91,
+              "z": 10
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": -4,
+                  "y": 0.894999623298645,
+                  "z": 10
+                },
+                "supportId": "flat-ground"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "test": "Ground physics terrain matrix > normalizes diagonal input speed",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 80,
+            "position": {
+              "x": -1.879349708557129,
+              "y": 0.8951109051704407,
+              "z": 12.12004280090332
+            },
+            "velocity": {
+              "x": 2.1213197708129883,
+              "y": 0,
+              "z": 2.1213340759277344
+            },
+            "yaw": 2.356194490192345,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 80,
+            "position": "{\"x\":-1.879349708557129,\"y\":0.8951109051704407,\"z\":12.12004280090332}",
+            "physicalPosition": "{\"x\":-1.879349708557129,\"y\":0.8951109051704407,\"z\":12.12004280090332}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flat-ground",
+            "velocity": "{\"x\":2.1213197708129883,\"y\":0,\"z\":2.1213340759277344}",
+            "penetration": 0,
+            "colliders": 11,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": false,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 1,
+            "maxSweepDistance": 0.05,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": -4,
+              "y": 0.91,
+              "z": 10
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": -4,
+                  "y": 0.894999623298645,
+                  "z": 10
+                },
+                "supportId": "flat-ground"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "test": "Ground physics terrain matrix > slides to a wall corner without penetrating either wall",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 320,
+            "position": {
+              "x": 3.529902696609497,
+              "y": 0.8949974179267883,
+              "z": -4.529901504516602
+            },
+            "velocity": {
+              "x": -0.00021457672119140625,
+              "y": 0,
+              "z": 0.00492095947265625
+            },
+            "yaw": 0.7853981633974483,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 320,
+            "position": "{\"x\":3.529902696609497,\"y\":0.8949974179267883,\"z\":-4.529901504516602}",
+            "physicalPosition": "{\"x\":3.529902696609497,\"y\":0.8949974179267883,\"z\":-4.529901504516602}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flat-ground",
+            "velocity": "{\"x\":-0.00021457672119140625,\"y\":0,\"z\":0.00492095947265625}",
+            "penetration": 0,
+            "colliders": 11,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": false,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 1,
+            "maxSweepDistance": 0.05,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": 0,
+              "y": 0.91,
+              "z": 0
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": 0,
+                  "y": 0.8950000405311584,
+                  "z": 0
+                },
+                "supportId": "flat-ground"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "test": "Ground physics terrain matrix > climbs permitted quarter-metre stairs",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 130,
+            "position": {
+              "x": 11.999887466430664,
+              "y": 1.6449997425079346,
+              "z": -1.919003963470459
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": -2.999997138977051
+            },
+            "yaw": 0,
+            "mode": "grounded",
+            "supportId": "allowed-step-2"
+          },
+          "physics": {
+            "active": true,
+            "tick": 130,
+            "position": "{\"x\":11.999887466430664,\"y\":1.6449997425079346,\"z\":-1.919003963470459}",
+            "physicalPosition": "{\"x\":11.999887466430664,\"y\":1.6449997425079346,\"z\":-1.919003963470459}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "allowed-step-2",
+            "velocity": "{\"x\":0,\"y\":0,\"z\":-2.999997138977051}",
+            "penetration": 0,
+            "colliders": 11,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": false,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 1,
+            "maxSweepDistance": 0.05,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": 12,
+              "y": 0.91,
+              "z": 3
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": 12,
+                  "y": 0.8949992060661316,
+                  "z": 3
+                },
+                "supportId": "flat-ground"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "test": "Ground physics terrain matrix > does not jump onto an over-height step",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 170,
+            "position": {
+              "x": 19.999971389770508,
+              "y": 0.894997775554657,
+              "z": 1.320099949836731
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 0,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 170,
+            "position": "{\"x\":19.999971389770508,\"y\":0.894997775554657,\"z\":1.320099949836731}",
+            "physicalPosition": "{\"x\":19.999971389770508,\"y\":0.894997775554657,\"z\":1.320099949836731}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flat-ground",
+            "velocity": "{\"x\":0,\"y\":0,\"z\":0}",
+            "penetration": 0,
+            "colliders": 11,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": false,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 1,
+            "maxSweepDistance": 0.05,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": 20,
+              "y": 0.91,
+              "z": 3
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": 20,
+                  "y": 0.8949978947639465,
+                  "z": 3
+                },
+                "supportId": "flat-ground"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "test": "Ground physics terrain matrix > walks up and down a permitted slope",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 345,
+            "position": {
+              "x": -11.99854564666748,
+              "y": 0.8949986696243286,
+              "z": 7.294589042663574
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 3.000011444091797
+            },
+            "yaw": 3.141592653589793,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 345,
+            "position": "{\"x\":-11.99854564666748,\"y\":0.8949986696243286,\"z\":7.294589042663574}",
+            "physicalPosition": "{\"x\":-11.99854564666748,\"y\":0.8949986696243286,\"z\":7.294589042663574}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flat-ground",
+            "velocity": "{\"x\":0,\"y\":0,\"z\":3.000011444091797}",
+            "penetration": 0,
+            "colliders": 11,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": false,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 1,
+            "maxSweepDistance": 0.050074201191831307,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": -12,
+              "y": 0.91,
+              "z": 5
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": -12,
+                  "y": 0.8949993252754211,
+                  "z": 5
+                },
+                "supportId": "flat-ground"
+              },
+              {
+                "tick": 284,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": -11.998204231262207,
+                  "y": 0.9659263491630554,
+                  "z": 4.245667457580566
+                },
+                "supportId": "flat-ground"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "test": "Ground physics terrain matrix > refuses a slope above the climb limit",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 200,
+            "position": {
+              "x": -22.001420974731445,
+              "y": 0.8943995237350464,
+              "z": 3.2854487895965576
+            },
+            "velocity": {
+              "x": -0.00011444091796875,
+              "y": 0,
+              "z": -0.010313987731933594
+            },
+            "yaw": 0,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 200,
+            "position": "{\"x\":-22.001420974731445,\"y\":0.8943995237350464,\"z\":3.2854487895965576}",
+            "physicalPosition": "{\"x\":-22.001420974731445,\"y\":0.8943995237350464,\"z\":3.2854487895965576}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flat-ground",
+            "velocity": "{\"x\":-0.00011444091796875,\"y\":0,\"z\":-0.010313987731933594}",
+            "penetration": 0,
+            "colliders": 11,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": false,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 1,
+            "maxSweepDistance": 0.05,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": -22,
+              "y": 0.91,
+              "z": 6
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": -22,
+                  "y": 0.8950000405311584,
+                  "z": 6
+                },
+                "supportId": "flat-ground"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "test": "Ground physics terrain matrix > loses support at an edge, falls under gravity and lands",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 260,
+            "position": {
+              "x": 31.999523162841797,
+              "y": 0.8949854969978333,
+              "z": -10.999332427978516
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": -3.000011444091797
+            },
+            "yaw": 0,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 260,
+            "position": "{\"x\":31.999523162841797,\"y\":0.8949854969978333,\"z\":-10.999332427978516}",
+            "physicalPosition": "{\"x\":31.999523162841797,\"y\":0.8949854969978333,\"z\":-10.999332427978516}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flat-ground",
+            "velocity": "{\"x\":0,\"y\":0,\"z\":-3.000011444091797}",
+            "penetration": 0,
+            "colliders": 11,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": false,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 1,
+            "maxSweepDistance": 0.1577864923117805,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": 32,
+              "y": 3.91,
+              "z": 1
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": 32,
+                  "y": 3.8949413299560547,
+                  "z": 1
+                },
+                "supportId": "raised-edge"
+              },
+              {
+                "tick": 129,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": 31.999523162841797,
+                  "y": 0.9359779357910156,
+                  "z": -4.449307441711426
+                },
+                "supportId": "flat-ground"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "test": "Ground physics terrain matrix > ascends the actual 0.3 m palace stairs from the lower approach",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 3630,
+            "position": {
+              "x": 0.0031549734994769096,
+              "y": 18.89499855041504,
+              "z": 46.102821350097656
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": -2.9999542236328125
+            },
+            "yaw": 0,
+            "mode": "grounded",
+            "supportId": "palace-terrace"
+          },
+          "physics": {
+            "active": true,
+            "tick": 3630,
+            "position": "{\"x\":0.0031549734994769096,\"y\":18.89499855041504,\"z\":46.102821350097656}",
+            "physicalPosition": "{\"x\":0.0031549734994769096,\"y\":18.89499855041504,\"z\":46.102821350097656}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "palace-terrace",
+            "velocity": "{\"x\":0,\"y\":0,\"z\":-2.9999542236328125}",
+            "penetration": 0,
+            "colliders": 233,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": false,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 1,
+            "maxSweepDistance": 0.05,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": 0,
+              "y": 0.91,
+              "z": 210
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": 0,
+                  "y": 0.8949933648109436,
+                  "z": 210
+                },
+                "supportId": "lower-approach"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "test": "Ground physics terrain matrix > descends the palace stair and crosses its upper landing without a gap",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 630,
+            "position": {
+              "x": 0.001044403063133359,
+              "y": 16.492889404296875,
+              "z": 91.97843933105469
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 3.00018310546875
+            },
+            "yaw": 3.141592653589793,
+            "mode": "grounded",
+            "supportId": "palace-step-51"
+          },
+          "physics": {
+            "active": true,
+            "tick": 630,
+            "position": "{\"x\":0.001044403063133359,\"y\":16.492889404296875,\"z\":91.97843933105469}",
+            "physicalPosition": "{\"x\":0.001044403063133359,\"y\":16.492889404296875,\"z\":91.97843933105469}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "palace-step-51",
+            "velocity": "{\"x\":0,\"y\":0,\"z\":3.00018310546875}",
+            "penetration": 0,
+            "colliders": 233,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": false,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 1,
+            "maxSweepDistance": 0.05,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": 0,
+              "y": 18.91,
+              "z": 62
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": 0,
+                  "y": 18.895000457763672,
+                  "z": 62
+                },
+                "supportId": "palace-terrace"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "test": "Ground simulation clock and single state writer > replays identical logical input at 30, 60 and 144 display cadences",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 480,
+            "position": {
+              "x": -8.468103408813477,
+              "y": 0.8944487571716309,
+              "z": -4.528431415557861
+            },
+            "velocity": {
+              "x": -3.000011444091797,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": -1.5707963267948966,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 480,
+            "position": "{\"x\":-8.468103408813477,\"y\":0.8944487571716309,\"z\":-4.528431415557861}",
+            "physicalPosition": "{\"x\":-8.468103408813477,\"y\":0.8944487571716309,\"z\":-4.528431415557861}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flat-ground",
+            "velocity": "{\"x\":-3.000011444091797,\"y\":0,\"z\":0}",
+            "penetration": 0,
+            "colliders": 11,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": false,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 1,
+            "maxSweepDistance": 0.050074201191831307,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": 0,
+              "y": 0.91,
+              "z": 0
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": 0.0353553406894207,
+                  "y": 0.8949976563453674,
+                  "z": -0.0353553406894207
+                },
+                "supportId": "flat-ground"
+              }
+            ]
+          }
+        },
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 480,
+            "position": {
+              "x": -8.468103408813477,
+              "y": 0.8944487571716309,
+              "z": -4.528431415557861
+            },
+            "velocity": {
+              "x": -3.000011444091797,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": -1.5707963267948966,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 480,
+            "position": "{\"x\":-8.468103408813477,\"y\":0.8944487571716309,\"z\":-4.528431415557861}",
+            "physicalPosition": "{\"x\":-8.468103408813477,\"y\":0.8944487571716309,\"z\":-4.528431415557861}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flat-ground",
+            "velocity": "{\"x\":-3.000011444091797,\"y\":0,\"z\":0}",
+            "penetration": 0,
+            "colliders": 11,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": false,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 1,
+            "maxSweepDistance": 0.050074201191831307,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": 0,
+              "y": 0.91,
+              "z": 0
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": 0.0353553406894207,
+                  "y": 0.8949976563453674,
+                  "z": -0.0353553406894207
+                },
+                "supportId": "flat-ground"
+              }
+            ]
+          }
+        },
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 480,
+            "position": {
+              "x": -8.468103408813477,
+              "y": 0.8944487571716309,
+              "z": -4.528431415557861
+            },
+            "velocity": {
+              "x": -3.000011444091797,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": -1.5707963267948966,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 480,
+            "position": "{\"x\":-8.468103408813477,\"y\":0.8944487571716309,\"z\":-4.528431415557861}",
+            "physicalPosition": "{\"x\":-8.468103408813477,\"y\":0.8944487571716309,\"z\":-4.528431415557861}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flat-ground",
+            "velocity": "{\"x\":-3.000011444091797,\"y\":0,\"z\":0}",
+            "penetration": 0,
+            "colliders": 11,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": false,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 1,
+            "maxSweepDistance": 0.050074201191831307,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": 0,
+              "y": 0.91,
+              "z": 0
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": 0.0353553406894207,
+                  "y": 0.8949976563453674,
+                  "z": -0.0353553406894207
+                },
+                "supportId": "flat-ground"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "test": "Ground simulation clock and single state writer > freezes state, rejects stale/foreign commits and matches the physical body",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 60,
+            "position": {
+              "x": 2.998511552810669,
+              "y": 0.894980788230896,
+              "z": -0.0004480193601921201
+            },
+            "velocity": {
+              "x": 2.999997138977051,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 1.5707963267948966,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 60,
+            "position": "{\"x\":2.998511552810669,\"y\":0.894980788230896,\"z\":-0.0004480193601921201}",
+            "physicalPosition": "{\"x\":2.998511552810669,\"y\":0.894980788230896,\"z\":-0.0004480193601921201}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "flat-ground",
+            "velocity": "{\"x\":2.999997138977051,\"y\":0,\"z\":0}",
+            "penetration": 0,
+            "colliders": 11,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": false,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 1,
+            "maxSweepDistance": 0.050074201191831307,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": 0,
+              "y": 0.91,
+              "z": 0
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": 0.05000000074505806,
+                  "y": 0.8949976563453674,
+                  "z": 0
+                },
+                "supportId": "flat-ground"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "test": "Ground simulation clock and single state writer > releases Rapier resources and rejects stepping a disposed session",
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 0,
+            "position": {
+              "x": 0,
+              "y": 0.91,
+              "z": 0
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 0,
+            "mode": "falling",
+            "supportId": null
+          },
+          "physics": {
+            "active": false
+          }
+        }
+      ]
+    }
+  ]
+}

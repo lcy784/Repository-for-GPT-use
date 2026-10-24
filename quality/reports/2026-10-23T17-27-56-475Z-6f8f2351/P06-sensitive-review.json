@@ -1,0 +1,11 @@
+{
+  "review": "manual review completed",
+  "scannerFindings": 2,
+  "classification": "false positives: candidate fingerprint and preview ZIP SHA-256",
+  "checks": [
+    "Candidate equals formal cumulative report fingerprint",
+    "ZIP hash recomputed from actual archive"
+  ],
+  "credentialValuesPresent": false,
+  "scope": "New report, gallery and packaging metadata; archive contains only manifested production files, inherited launcher, licenses and P06 instructions."
+}

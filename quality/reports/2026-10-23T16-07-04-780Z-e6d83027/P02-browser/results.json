@@ -1,0 +1,474 @@
+{
+  "runId": "2026-10-23T16-07-04-780Z-e6d83027",
+  "candidate": "00ebae842ca2f0a5aa42fc084af79d2cd58b300fbea9e090014e730a1674c3ca",
+  "status": "FAIL",
+  "error": "locator.evaluate: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('canvas')\u001b[22m\n\u001b[2m    - locator resolved to visible <canvas width=\"1280\" height=\"720\" tabindex=\"1\" touch-action=\"none\" aria-label=\"可旋转的三维巨殿视觉样本\" data-engine=\"Babylon.js v9.31.2\"></canvas>\u001b[22m\n\n    at /workspace/Repository-for-GPT-use/scripts/quality/p02-browser.mjs:35:46",
+  "views": [
+    {
+      "name": "far",
+      "sha256": "abd21b8948109f0c6aca1b4cba16b0be0eb18b06aeea530d2fb556f5c75da78d",
+      "bytes": 311319,
+      "snapshot": {
+        "phase": "ready",
+        "error": null,
+        "frame": 28,
+        "tick": 118,
+        "maxStepsInFrame": 5,
+        "backend": "WebGL2",
+        "meshes": 13,
+        "activeMeshes": 11,
+        "engines": 1,
+        "listeners": 2,
+        "width": 1280,
+        "height": 720,
+        "visibility": "visible",
+        "visibilityTransitions": 0,
+        "camera": 0,
+        "glError": 0,
+        "depthWitness": "[{\"screenX\":0.43,\"hit\":\"palace/vermilion-lacquer\",\"distance\":387.16074672039025,\"point\":[-57.64593206913162,52.02657594844034,35.70158546694154]},{\"screenX\":0.5,\"hit\":\"palace/vermilion-lacquer\",\"distance\":401.1408741499243,\"point\":[-19.112855328765733,48.14836770394892,-7.350202794161021]},{\"screenX\":0.57,\"hit\":\"palace/vermilion-lacquer\",\"distance\":447.8529171722632,\"point\":[14.820771126279595,39.021662078998204,-75.17499697208405]}]",
+        "projectedRoofEnvelope": "[[631.5736479807983,291.94658589427667,0.999831377884709],[506.65798271319096,309.9222016611088,0.9997655900390237],[631.374375913178,215.73297787971833,0.9998266032803621],[502.445141752772,208.6698654435351,0.9997571327202031],[830.6931064147298,302.23113268221226,0.9997937525408295],[754.8333101856648,329.16481376269434,0.9996951855625673],[836.0667586971158,211.7052772583134,0.9997870028848925],[759.4539408660745,200.9863890294919,0.999681581595157]]",
+        "frameIntervalMsMedian": 594.7000000001863,
+        "frameIntervalMsP95": 3747.9000000001397,
+        "drawCalls": 20,
+        "assemblyMetrics": "{\"columnCount\":36,\"shaftHeightMeters\":64.97999918460846,\"humanHeightMeters\":1.75000198364258,\"roofTiers\":3,\"bracketTiers\":8}",
+        "study": "{\"seed\":20261021,\"units\":\"metres\",\"terraceTop\":18,\"columnHeight\":64.98,\"ridgeHeight\":145.3,\"humanHeight\":1.75,\"footprint\":[168.75,159.65],\"roofEnvelope\":{\"x\":[-78,78],\"y\":[92,151],\"z\":[-94,50]},\"roofTiers\":3,\"columnCount\":36,\"bracketTiers\":8,\"frozenSun\":[-0.65,-1,-0.55]}",
+        "triangles": 325584,
+        "materials": 12,
+        "textures": 5,
+        "renderCpuMsMedian": 3.4000000001396984,
+        "cameraEye": "180.00000000000006,135,330",
+        "cameraTarget": "0,65,25",
+        "perspective": null,
+        "cameraState": null,
+        "avatarAnimation": null,
+        "animatedAvatars": 0,
+        "player": null,
+        "physics": null,
+        "avatarHeightMeters": null,
+        "avatarYaw": null,
+        "avatarPosition": null,
+        "controllers": 0,
+        "inputListeners": 0,
+        "pressedKeys": "",
+        "inputFocused": false,
+        "journey": null,
+        "fixture": "p02-palace",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "totalFrames": 28,
+        "generation": 1,
+        "canvases": 1
+      }
+    },
+    {
+      "name": "stairs",
+      "sha256": "1cd77a5c02137eb0aab948ea7bc20d9a868b7443cbff2ebe5e32b5b322acba0d",
+      "bytes": 761587,
+      "snapshot": {
+        "phase": "ready",
+        "error": null,
+        "frame": 44,
+        "tick": 186,
+        "maxStepsInFrame": 5,
+        "backend": "WebGL2",
+        "meshes": 13,
+        "activeMeshes": 11,
+        "engines": 1,
+        "listeners": 2,
+        "width": 1280,
+        "height": 720,
+        "visibility": "visible",
+        "visibilityTransitions": 0,
+        "camera": 1,
+        "glError": 0,
+        "depthWitness": "[{\"screenX\":0.43,\"hit\":\"palace/vermilion-lacquer\",\"distance\":155.72083484003323,\"point\":[-17.255936044525086,63.998404291848146,12.434228275134245]},{\"screenX\":0.5,\"hit\":\"palace/vermilion-lacquer\",\"distance\":241.36809470155262,\"point\":[-14.083451990223885,84.35736802501094,-75.1749969720841]},{\"screenX\":0.57,\"hit\":\"palace/recess-shadow\",\"distance\":128.49003407466543,\"point\":[27.91946877043698,57.70754570174058,29.217500603199]}]",
+        "projectedRoofEnvelope": "[[507.61719178987937,374.6365213515551,0.9996691125583106],[237.0726663236949,227.34030783075414,0.9993122616217768],[514.5145645611371,251.09059218353468,0.9996880885124741],[276.61476898705683,9.088589355943979,0.999383024389538],[882.3719313457,354.2325962848192,0.9996196876453255],[1008.9151960370584,135.1089721206068,0.9990888314075073],[868.1308494153502,216.1039492692337,0.9996439916292938],[962.8918006861851,-130.8297461714421,0.9992066597671746]]",
+        "frameIntervalMsMedian": 2319.6999999999534,
+        "frameIntervalMsP95": 5656,
+        "drawCalls": 20,
+        "assemblyMetrics": "{\"columnCount\":36,\"shaftHeightMeters\":64.97999918460846,\"humanHeightMeters\":1.75000198364258,\"roofTiers\":3,\"bracketTiers\":8}",
+        "study": "{\"seed\":20261021,\"units\":\"metres\",\"terraceTop\":18,\"columnHeight\":64.98,\"ridgeHeight\":145.3,\"humanHeight\":1.75,\"footprint\":[168.75,159.65],\"roofEnvelope\":{\"x\":[-78,78],\"y\":[92,151],\"z\":[-94,50]},\"roofTiers\":3,\"columnCount\":36,\"bracketTiers\":8,\"frozenSun\":[-0.65,-1,-0.55]}",
+        "triangles": 325584,
+        "materials": 12,
+        "textures": 5,
+        "renderCpuMsMedian": 3.6000000000931323,
+        "cameraEye": "37.00000000000001,27.99999999999998,153.99999999999997",
+        "cameraTarget": "0,73,-12",
+        "perspective": null,
+        "cameraState": null,
+        "avatarAnimation": null,
+        "animatedAvatars": 0,
+        "player": null,
+        "physics": null,
+        "avatarHeightMeters": null,
+        "avatarYaw": null,
+        "avatarPosition": null,
+        "controllers": 0,
+        "inputListeners": 0,
+        "pressedKeys": "",
+        "inputFocused": false,
+        "journey": null,
+        "fixture": "p02-palace",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "totalFrames": 44,
+        "generation": 1,
+        "canvases": 1
+      }
+    }
+  ],
+  "network": [
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/assets/math.scalar.functions-D-i-XBaP.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/engineStore-Bn2tApal.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/internalTexture-B3djGrls.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/domManagement-BqltO0ki.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/logger-CuBYPcDK.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/index-BvpIQhOp.css",
+      "status": 200
+    },
+    {
+      "path": "/assets/shaderStore-D-XQlhUT.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/tools.functions-DLQU6ymA.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/performanceConfigurator-UtxC_Odd.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/abstractEngine.pure-DsyZHOMD.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/index-CB8OWiBF.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/halfFloat-Ce77JD5z.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/thinEngine.pure-D-L2F5AR.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/buffer.pure-CI0FDLRH.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/typeStore-Cu_sj2zM.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/bufferUtils-DzEv5AIb.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/math.plane-cJVaEOjG.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/deviceInputEvents-B3OeHh-P.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/guid-BXdVC_j_.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/decorators-BWcttrMP.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/math.color.pure-CICwgcc2.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/decorators.serialization-D4qeHcKi.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/smartArray-BRfcgNbX.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/tools.pure-C3ZuX3AE.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/lightConstants-C_i-ky_L.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/sceneComponent-CMqaI1Dk.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/keyboardEvents-CGYiptFb.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/pointerEvents-BIoyDeOY.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/math.size-BHZaDYSv.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/math.axis-BO-Ebjyz.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/math.viewport-Cp0w6PSE.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/sphericalPolynomial.pure-D0R9VEEP.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/baseTexture.pure-DviMWzrP.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/scene.pure-Pl6Gq1rh.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/preload-helper-CRzLMJPS.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/drawWrapper-D7fYnWcK.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/subMesh.pure-DGWz3D8t.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/node-6YizbGaP.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/mesh.vertexData-omtp2Qd-.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/texture.pure-DycoL75X.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/material.detailMapConfiguration-B83pkZAy.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/material.pure-B1zQ2Qxg.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/effectRenderer.pure-Cb-SF-h2.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/imageProcessing-_KbCbnjN.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/brdfTextureTools-0EeUu8Wn.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/postProcess.pure-DrdPo0EA.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/environmentTextureTools.pure-CxRgphez.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/cubemapToSphericalPolynomial-Bd5X0RUz.js",
+      "status": 200
+    },
+    {
+      "path": "/runtime-config.json",
+      "status": 200
+    },
+    {
+      "path": "/assets/packingFunctions-DpGwbupU.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/sceneUboDeclaration-B5VhSG0v.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/meshUboDeclaration-BmNu2KU_.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/shadowMap.fragment-DX4Yo1bp.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/shadowMap.vertex-2__0EcBa.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/clipPlaneFragment-DVK0wgyZ.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/helperFunctions-gEnZbjN3.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/sceneVertexDeclaration-CluTp-RC.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/bakedVertexAnimation-xLaKIOY3.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/clipPlaneVertex-C59BO8JS.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/depthBoxBlur.fragment-CLEAG5DG.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/shadowMapFragmentSoftTransparentShadow-R_iOKnyx.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/logDepthDeclaration-3gXGtHbI.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/mainUVVaryingDeclaration-BBamQlxR.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/instancesDeclaration-CJBvtBV5.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/defaultUboDeclaration-C53xcSdv.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/vertexColorMixing-Dr2MLCTE.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/default.vertex-DHc4KpZ0.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/bumpVertexDeclaration-Cb04kLz9.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/bumpVertex-CWhdIpqj.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/logDepthVertex-CksyN44U.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/objectIdFunctions-BCg-H1o3.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/default.fragment-DPDpC1pV.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/lightFragment-x7Xpl9uU.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/fogFragment-Ck1Rri6b.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/oitFragment-zTT3RJk0.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/reflectionFunction-CivoLMz9.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/bumpFragment-BtJd9tYZ.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/rgbdDecode.fragment-Cdz2Tveq.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/postprocess.vertex-DJCmMhI8.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/pbr.vertex-DPATFZiU.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/harmonicsFunctions-QSz_WdsQ.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/pbrBRDFFunctions-BCNINF-p.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/pbrIBLFunctions-CSlJv7qb.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/pbr.fragment-Dbx7NFfY.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/pbrUboDeclaration--xFZEw0i.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/pbrDebug-CLskE_ZH.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/palace/source-manifest.json",
+      "status": 200
+    }
+  ],
+  "errors": [],
+  "external": []
+}
