@@ -54,3 +54,7 @@ P05 选择记录 `avatar-camera-rules/P05-20261023.json`；真实入口 `scripts
 ## P07 增补
 
 当前累计命令 `npm run gate -- --through P07`。真实入口 `scripts/quality/stages/P07.mjs` 检查资源契约、原作者源哈希、实际 GPU 共享／迟到资源、两处迁移 PNG 和十次纹理／完整 P06 世界装卸。结果逐项绑定本轮候选及构建证据，未实现阶段仍无占位成功入口。P06 的明确继续授权另记 `visual-acceptance/P06-CONTINUED-DEVELOPMENT.json`，标明独立美术认可未提供，不伪造艺术评分。详见 `docs/P07-ASSET-LIFECYCLE.md` 和 `reports/P07-REVIEW.md`。
+
+## P08 增补
+
+当前最高实现入口 P08，命令 `npm run gate -- --through P08`。P06 全路线运行新的实际分区碰撞入口，P07 输入冻结并继续执行原资源测试。P08 覆盖正常／60m/s 跨界、错误与重试、支撑保留、迟到取消和十次往返；8 项新物理／调度器测试加真实浏览器。边界规则缺少用户选择时，即使自动项通过也为 BLOCKED。正式证据见 `reports/P08-REVIEW.md`。

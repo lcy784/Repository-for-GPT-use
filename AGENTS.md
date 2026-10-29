@@ -39,3 +39,7 @@
 ## P07 接续开发（2026-10-24）
 
 用户明确要求“执行p07开发”，此前不得进入 P07 的停止条件由本次指令更新。继续授权记录 `quality/visual-acceptance/P06-CONTINUED-DEVELOPMENT.json` 仅允许保留 P06 样本的资产入口迁移，不等同独立美术验收。先读 `docs/P07-ASSET-LIFECYCLE.md`，当前累计命令 `npm run gate -- --through P07`，实际结论以 `quality/reports/P07-REVIEW.md` 为准。原 16 个资料、P02 作者代码和三机位审核图保持保护；完整生命周期与迁移像素比较必须实跑。P08 不在本轮范围，不合并、不部署，P15 正式设备测量要求保留。
+
+## P08 接续开发（2026-10-29）
+
+用户明确要求“执行p08开发”，当前分支 `feat/tiangong-p08-streaming-20261029`。先读 `docs/P08-SPATIAL-STREAMING.md`，累计入口 `npm run gate -- --through P08`。未就绪区域暂停／支撑保留／显式重试为待选择的可运行提案，不伪造用户确认，记录 `quality/streaming-rules/P08-20261029.json`。正式结果在 `quality/reports/P08-REVIEW.md`，须真实重跑 P06 流式全路线与 P00—P08 各入口。原视觉样本整体常驻，动态分区资源为实际碰撞字节／解析／物理体，不宣称细粒度美术卸载。原资料与已审作者美术继续保护；本轮不进入 P09，不合并、不部署。

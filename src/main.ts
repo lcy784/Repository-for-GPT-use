@@ -17,7 +17,11 @@ function update(): void {
   const mode=value.player?JSON.parse(value.player).mode:null;
   const flightLabel=mode==='flying'?'飞行中 · 空格上升 · Ctrl 下降 · F 收起飞行':mode==='falling'?'下落中 · F 可重新起飞':'地面行走 · F 起飞';
   const labels = { loading: '正在准备三维空间…', ready: /^p0[56]-/.test(value.fixture||'') ? `${value.perspective==='first'?'第一人称':'第三人称'} · ${flightLabel} · V 切换视角` : value.fixture?.startsWith('p04-') ? flightLabel : value.fixture?.startsWith('p03-') ? '点击场景开始行走 · WASD / 方向键 · 拖动转向 · 失焦即停' : '空间已就绪 · 拖动旋转，滚轮缩放', paused: '预览已暂停，返回此页后恢复', disposed: '预览已结束，可重新载入', error: value.error || '场景启动失败' };
-  notice.textContent = labels[value.phase];
+  const streaming=value.streaming?JSON.parse(value.streaming):null;
+  const zoneError=streaming?.zones.some((z:{state:string})=>z.state==='error');
+  notice.textContent=zoneError?'前方区域加载失败，请点击重试。':streaming?.blocked.length?'前方区域准备中，请稍候…':labels[value.phase];
+  let retry=document.querySelector<HTMLButtonElement>('#retry-regions');
+  if(!retry){retry=document.createElement('button');retry.id='retry-regions';retry.textContent='重试区域加载';retry.addEventListener('click',()=>application?.retryRegions());document.querySelector('.controls')!.append(retry);}retry.hidden=!zoneError;
   const journey=document.querySelector<HTMLElement>('#journey');
   const route=document.querySelector<HTMLElement>('#route');if(route)route.hidden=!value.journey;
   if(journey){journey.hidden=!value.journey;if(value.journey)journey.textContent=JSON.parse(value.journey).location;}

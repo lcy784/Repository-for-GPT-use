@@ -49,5 +49,6 @@
   ],
   "flightSpeedMetersPerSecond": 10,
   "thirdPersonDistance": 6,
-  "assetRegistry": "registry/p07.json"
+  "assetRegistry": "streaming/registry.json",
+  "streamingWorld": true
 }

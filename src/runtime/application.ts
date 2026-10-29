@@ -1,3 +1,5 @@
+import {ZoneScheduler} from '../streaming/scheduler';
+import {type StreamingWorld,type Zone} from '../streaming/zones';
 import {AssetScope,HttpAssets} from '../assets/access';
 import {ownScene} from '../assets/scene-owner';
 import type {CollisionShape} from '../game/collision';
@@ -56,6 +58,9 @@ export class Application {
   private playerCamera:PlayerCamera|null=null;
   private journey:JourneyView|null=null;
   private assets:AssetScope|null=null;
+  private streaming:ZoneScheduler<readonly CollisionShape[]>|null=null;
+  private streamingWorld:StreamingWorld|null=null;
+  private zoneShapes=new Map<string,readonly CollisionShape[]>();
   private collisionShapes:readonly CollisionShape[]|undefined;
   private canvas: HTMLCanvasElement;
   constructor(private readonly container: HTMLElement, private readonly update: () => void, private readonly countFrame: () => void) {
@@ -71,9 +76,10 @@ export class Application {
         const assets=await AssetScope.open(this.config.assetRegistry,new HttpAssets(new URL('./',document.baseURI)),this.abort.signal);
         if(this.abort.signal.aborted){assets.dispose();return;}this.assets=assets;
         const world=JSON.parse(new TextDecoder().decode(await assets.hold('journey.world')));
-        if(world.version!==1||world.id!=='p06-core-journey'||world.collision!=='journey.collision'||world.model!=='traveler.model')throw Error('Invalid world asset contract');
+        if(this.config.streamingWorld){this.streamingWorld=world;this.collisionShapes=[];}
+        else{if(world.version!==1||world.id!=='p06-core-journey'||world.collision!=='journey.collision'||world.model!=='traveler.model')throw Error('Invalid world asset contract');
         const collision=JSON.parse(new TextDecoder().decode(await assets.hold(world.collision)));
-        if(collision.version!==1||collision.coordinates!=='metres-right-handed-Y-up'||!Array.isArray(collision.shapes))throw Error('Invalid collision asset');this.collisionShapes=collision.shapes;
+        if(collision.version!==1||collision.coordinates!=='metres-right-handed-Y-up'||!Array.isArray(collision.shapes))throw Error('Invalid collision asset');this.collisionShapes=collision.shapes;}
       }
       if (this.abort.signal.aborted) return;
       if (typeof WebAssembly === 'undefined' || !WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,0,0]))) throw new Error('当前浏览器不支持必需的 WebAssembly');
@@ -121,8 +127,15 @@ export class Application {
         const p05=/^p0[56]-/.test(this.config.sceneFixture);
         const flight=this.config.sceneFixture.startsWith('p04-')||p05;
         const fixture=['p03-terrain','p04-flight','p05-camera'].includes(this.config.sceneFixture);
-        const ground=await GroundSession.create(this.config.sceneFixture==='p06-journey'?'journey':this.config.sceneFixture==='p05-camera'?'camera-fixture':fixture?'fixture':'palace',{x:spawn[0],y:spawn[1],z:spawn[2]},{flight,flightSpeed:this.config.flightSpeedMetersPerSecond,shapes:this.collisionShapes});
+        const ground=await GroundSession.create(this.config.sceneFixture==='p06-journey'?'journey':this.config.sceneFixture==='p05-camera'?'camera-fixture':fixture?'fixture':'palace',{x:spawn[0],y:spawn[1],z:spawn[2]},{flight,flightSpeed:this.config.flightSpeedMetersPerSecond,shapes:this.collisionShapes,canMove:this.streamingWorld?(a,b)=>this.streaming?.permits(a,b)===true:undefined});
         if(this.abort.signal.aborted){ground.dispose();return;}
+        this.ground=ground;
+        if(this.streamingWorld){
+          const assets=this.assets!;
+          this.streaming=new ZoneScheduler(this.streamingWorld,(zone:Zone)=>{
+            const lease=assets.acquire(zone.assetId);return {ready:lease.ready.then(bytes=>{const data=JSON.parse(new TextDecoder().decode(bytes));if(data.version!==1||!Array.isArray(data.shapes))throw Error('Invalid zone colliders');return data.shapes;}),release:lease.release};
+          },(zone,shapes)=>{const owned=ground.addCollisions(shapes);this.zoneShapes.set(zone.id,shapes);return {value:shapes,dispose:()=>{this.zoneShapes.delete(zone.id);owned.dispose();}};},(zone,id)=>this.zoneShapes.get(zone.id)?.some(s=>s.id===id)===true);
+        }
         this.ground=ground;this.input=new GroundInput(this.canvas,flight);
         const groundScene=this.scene;
         this.avatar=this.assets?await this.assets.own('ground.view',async()=>ownScene(groundScene,()=>createGroundView(groundScene,ground.shapes,fixture,!p05))):createGroundView(this.scene,ground.shapes,fixture,!p05);
@@ -167,6 +180,7 @@ export class Application {
     if (!this.engine || !this.scene || !this.clock) return;
     try {
       const steps=this.clock.advance(performance.now());
+      if(this.streaming&&this.ground){const s=this.ground.snapshot,f=this.playerCamera?.forward()||{x:0,z:-1};this.streaming.update(s.position,s.velocity,{x:f.x,y:0,z:f.z},s.supportId);}
       if(this.ground&&this.input&&(this.camera||this.playerCamera)) {
         const forward=this.playerCamera?.forward();
         const dx=forward?.x??this.camera!.target.x-this.camera!.position.x,dz=forward?.z??this.camera!.target.z-this.camera!.position.z;
@@ -206,6 +220,7 @@ export class Application {
     this.camera.setTarget(new Vector3(p.x,p.y+.6,p.z));
     this.camera.alpha=alpha;this.camera.beta=beta;this.camera.radius=radius;
   }
+  retryRegions():void{this.streaming?.retry();}
   changeCamera(): void {
     if(this.playerCamera){this.playerCamera.toggle();this.animatedAvatar?.setVisible(this.playerCamera.avatarVisible);this.canvas.focus({preventScroll:true});this.update();return;}
     if (!this.config || !this.camera) return;
@@ -221,6 +236,7 @@ export class Application {
   private release(): void {
     this.abort.abort();
     this.playerCamera?.dispose();this.playerCamera=null;this.animatedAvatar?.dispose();this.animatedAvatar=null;
+    this.streaming?.dispose();this.zoneShapes.clear();
     this.input?.dispose();this.input=null;this.ground?.dispose();this.ground=null;this.avatar=null;
     for (const remove of this.removeListeners.splice(0)) remove();
     this.engine?.stopRenderLoop(this.render);
@@ -263,6 +279,7 @@ export class Application {
       avatarPosition:this.avatar?.position.asArray().join(',')||null,
       controllers:groundSessionClass?.instances||0,inputListeners:this.input?.listeners||0,pressedKeys:this.input?.pressed||'',
       inputFocused:document.activeElement===this.canvas,
+      streaming:this.streaming?JSON.stringify(this.streaming.observe()):null,
       assets:this.assets?JSON.stringify(this.assets.observe()):null,
       journey:this.journey&&this.ground?JSON.stringify({location:journeyLocation(this.ground.snapshot),...this.journey.observe()}):null,
       fixture: this.config?.sceneFixture || null, renderer: this.renderer,

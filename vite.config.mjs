@@ -1,6 +1,7 @@
+import {verifyZones} from './scripts/quality/p08-contracts.mjs';
 import {verifyAssets} from './scripts/quality/p07-contracts.mjs';
 export default {
-  plugins:[{name:'p07-asset-contracts',apply:'build',buildStart(){verifyAssets(process.cwd());}}],
+  plugins:[{name:'p07-asset-contracts',apply:'build',buildStart(){verifyAssets(process.cwd());verifyZones(process.cwd());}}],
   base: './',
   // Stable prebundle entries prevent late PBR shader imports invalidating active dev requests.
   optimizeDeps: { noDiscovery: true, include: [

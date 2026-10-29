@@ -7,12 +7,14 @@ import {journeyTerrain} from './journey';
 import {cameraTerrain} from './camera-terrain';
 
 export const FLIGHT=Object.freeze({speed:10,maxSpeed:60,terminalFallSpeed:60,maxSweepDistance:.2,recoveryBelowY:-80,safeGroundTicks:30});
-type Options=Readonly<{flight?:boolean;flightSpeed?:number;shapes?:readonly CollisionShape[]}>;
+type Options=Readonly<{flight?:boolean;flightSpeed?:number;shapes?:readonly CollisionShape[];canMove?:(from:Vec3,to:Vec3)=>boolean}>;
 let initialized:Promise<void>|null=null;
 const freezeState=(s:PlayerState):PlayerState=>Object.freeze({...s,position:Object.freeze({...s.position}),velocity:Object.freeze({...s.velocity})});
 
 export class GroundSession implements LocalSession {
  static instances=0;
+ private canMove:Options['canMove'];
+ private terrainRefs=new Map<string,{collider:RAPIER.Collider;refs:number}>();
  private state:PlayerState;
  private disposed=false;
  private ids=new Map<number,string>();
@@ -39,11 +41,11 @@ export class GroundSession implements LocalSession {
   initialized??=RAPIER.init();await initialized;return new GroundSession(kind,spawn,options);
  }
  private constructor(kind:'palace'|'fixture'|'camera-fixture'|'journey',spawn:Vec3,options:Options){
-  this.flightEnabled=options.flight===true;this.flightSpeed=options.flightSpeed??FLIGHT.speed;
+  this.canMove=options.canMove;this.flightEnabled=options.flight===true;this.flightSpeed=options.flightSpeed??FLIGHT.speed;
   this.safePosition=Object.freeze({...spawn});
   this.world=new RAPIER.World({x:0,y:-PLAYER.gravity,z:0});this.world.timestep=this.dt;
   this.shapes=options.shapes??(kind==='journey'?journeyTerrain():kind==='camera-fixture'?cameraTerrain():this.flightEnabled?flightTerrain(kind):terrain(kind));
-  for(const shape of this.shapes)this.ids.set(this.world.createCollider(createTerrainCollider(shape)).handle,shape.id);
+  this.addCollisions(this.shapes);
   this.body=this.world.createRigidBody(RAPIER.RigidBodyDesc.kinematicPositionBased().setTranslation(spawn.x,spawn.y,spawn.z));
   this.capsule=this.world.createCollider(RAPIER.ColliderDesc.capsule(PLAYER.halfSegment,PLAYER.radius).setActiveCollisionTypes(RAPIER.ActiveCollisionTypes.ALL),this.body);
   this.controller=this.world.createCharacterController(PLAYER.skin);
@@ -53,6 +55,13 @@ export class GroundSession implements LocalSession {
   this.state=freezeState({id:'local-player',tick:0,position:{...spawn},velocity:{x:0,y:0,z:0},yaw:0,mode:'falling',supportId:null});
   GroundSession.instances++;
  }
+ /** The returned ownership handle pins shared physical colliders until the last zone releases. */
+ addCollisions(shapes:readonly CollisionShape[]){
+  if(this.disposed)throw Error('Session disposed');const held:string[]=[];
+  const release=()=>{for(const id of held.splice(0)){const e=this.terrainRefs.get(id)!;if(--e.refs===0){this.ids.delete(e.collider.handle);this.world.removeCollider(e.collider,true);this.terrainRefs.delete(id);}}};
+  try{for(const shape of shapes){let entry=this.terrainRefs.get(shape.id);if(!entry){const collider=this.world.createCollider(createTerrainCollider(shape));entry={collider,refs:0};this.terrainRefs.set(shape.id,entry);this.ids.set(collider.handle,shape.id);}entry.refs++;held.push(shape.id);}this.world.step();return {value:shapes,dispose:()=>{if(!this.disposed)release();}};}catch(error){release();throw error;}
+ }
+ hasCollision(id:string){return this.terrainRefs.has(id);}
  private groundConstraints(){this.controller.enableAutostep(PLAYER.maxStep,.25,false);this.controller.enableSnapToGround(PLAYER.snap);}
  get snapshot():PlayerState{return this.state;}
  get events():readonly MovementEvent[]{return this.eventLog;}
@@ -103,6 +112,9 @@ export class GroundSession implements LocalSession {
   // Flight has direct, drift-free control; exiting it starts a gravity-driven fall.
   const vy=previous.mode==='grounded'?0:previous.mode==='flying'?-PLAYER.gravity*this.dt:Math.max(-FLIGHT.terminalFallSpeed,previous.velocity.y-PLAYER.gravity*this.dt);
   const desired={x:intent.movement.x*scale,y:flying?intent.movement.y*scale:vy*this.dt,z:intent.movement.z*scale};
+  if(this.canMove&&!this.canMove(previous.position,{x:previous.position.x+desired.x,y:previous.position.y+desired.y,z:previous.position.z+desired.z})){
+   this.commitSimulationResult(previous.tick,{...previous,tick:previous.tick+1,velocity:{x:0,y:0,z:0}});return;
+  }
   if(flying){this.controller.disableAutostep();this.controller.disableSnapToGround();}else this.groundConstraints();
   const old={...this.body.translation()};
   const substeps=this.flightEnabled?Math.max(1,Math.ceil(Math.hypot(desired.x,desired.y,desired.z)/FLIGHT.maxSweepDistance)):1;
@@ -112,6 +124,12 @@ export class GroundSession implements LocalSession {
   for(let i=0;i<substeps;i++){
    this.controller.computeColliderMovement(this.capsule,{x:desired.x/substeps,y:desired.y/substeps,z:desired.z/substeps},RAPIER.QueryFilterFlags.EXCLUDE_SENSORS);
    const move=this.controller.computedMovement(),at=this.body.translation();
+   // Rapier can sink at a large coplanar triangle seam after long back-and-forth walks.
+   // Keep an already supported capsule above the same horizontal support using its actual ray hit.
+   if(previous.mode==='grounded'&&!flying&&this.controller.computedGrounded()){
+    const hit=this.world.castRayAndGetNormal(new RAPIER.Ray({x:at.x+move.x,y:at.y,z:at.z+move.z},{x:0,y:-1,z:0}),PLAYER.height/2+PLAYER.snap,true,RAPIER.QueryFilterFlags.EXCLUDE_SENSORS,undefined,this.capsule,this.body);
+    if(hit&&hit.normal.y>.999&&this.ids.get(hit.collider.handle)===previous.supportId){const lift=PLAYER.height/2+PLAYER.skin-hit.timeOfImpact;if(move.y<-.005&&lift>move.y&&Math.abs(lift)<.08)move.y=lift;}
+   }
    this.body.setNextKinematicTranslation({x:at.x+move.x,y:at.y+move.y,z:at.z+move.z});
    this.world.step();
   }
@@ -145,6 +163,6 @@ export class GroundSession implements LocalSession {
   return Object.freeze({active:true,tick:this.state.tick,position:JSON.stringify(this.state.position),physicalPosition:JSON.stringify(p),capsuleAxis:Math.hypot(q.x,q.z)<1e-6?'+Y':'tilted',capsuleHeightMeters:2*(shape.halfHeight+shape.radius),mode:this.state.mode,supportId:this.state.supportId,velocity:JSON.stringify(this.state.velocity),penetration,colliders:this.world.colliders.len(),bodyCount:this.world.bodies.len(),controllerCount:this.world.characterControllers.size,
    flightEnabled:this.flightEnabled,flightSpeed:this.flightSpeed,lastSubsteps:this.lastSubsteps,maxSubsteps:this.maxSubsteps,maxSweepDistance:this.maxSweepDistance,recoveryCount:this.recoveryCount,safePosition:this.safePosition,events:this.events});
  }
- dispose(){if(this.disposed)return;this.disposed=true;this.world.removeCharacterController(this.controller);this.world.free();this.ids.clear();GroundSession.instances--;}
+ dispose(){if(this.disposed)return;this.disposed=true;this.world.removeCharacterController(this.controller);this.world.free();this.ids.clear();this.terrainRefs.clear();GroundSession.instances--;}
 }
 export const idleIntent=(sequence=0):PlayerIntent=>({sequence,movement:{x:0,y:0,z:0},viewDelta:{yaw:0,pitch:0},flightRequest:null,interactionRequest:null});

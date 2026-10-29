@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "status": "awaiting-user-choice",
+  "source": {
+    "quote": "\u6267\u884cp08\u5f00\u53d1"
+  },
+  "proposal": {
+    "boundary": "pause movement at last ready capsule position; preserve support and flight mode",
+    "retry": "explicit retry after read error; no automatic retry",
+    "regions": "60 adjustable axis-aligned horizontal/vertical cells; ground, ascent, palace exterior/interior, roof",
+    "prefetchMetres": 14,
+    "retainMetres": 28,
+    "lookAheadSeconds": 2,
+    "maxConcurrentReads": 2,
+    "maxActivationsPerFrame": 1
+  },
+  "boundary": "Engineering preview only until user selects the proposed unready-region behavior; no artistic or hardware approval implied."
+}

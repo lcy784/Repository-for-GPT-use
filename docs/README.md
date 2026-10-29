@@ -46,3 +46,5 @@ P02 的当前开发分支为 `feat/tiangong-p02-20261021`，包含全部历史�
 用户已要求执行 P06。当前分支 `feat/tiangong-p06-core-journey-20261023`，见 [完整核心旅程](P06-CORE-JOURNEY.md)，累计命令 `npm run gate -- --through P06`。自动项和待用户审核项以正式报告分别记录，不把自动检查通过写成 P06 整体已验收。
 
 用户已要求 P07，当前分支 `feat/tiangong-p07-assets-20261024`。见 [资源登记与生命周期](P07-ASSET-LIFECYCLE.md)，累计入口 `npm run gate -- --through P07`；P06 继续授权不伪写成美术验收。最新结论仍以根目录状态及正式 P07 报告为准。
+
+P08 分区交接开发分支 `feat/tiangong-p08-streaming-20261029`，见 [P08 三维分区与碰撞就绪](P08-SPATIAL-STREAMING.md)。当前为包含待选择边界规则的可运行工程预览，实际结论见 `quality/reports/P08-REVIEW.md`。
