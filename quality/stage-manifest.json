@@ -115,14 +115,15 @@
     {
       "id": "P09",
       "enabled": true,
-      "implementation": "planned-no-placeholder-entry",
+      "implementation": "present",
       "entry": "scripts/quality/stages/P09.mjs",
       "requiredCases": [
         "P09-01",
         "P09-02",
         "P09-03",
         "P09-04"
-      ]
+      ],
+      "timeoutMs": 2400000
     },
     {
       "id": "P10",

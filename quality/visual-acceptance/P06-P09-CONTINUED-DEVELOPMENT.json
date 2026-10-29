@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "status": "user-directed-continue",
+  "date": "2026-10-29",
+  "scope": "P06-to-P09-development-only",
+  "source": {
+    "quote": "执行P09开发",
+    "context": "Explicit user instruction authorizes packaging preserved P06/P08 sample, without independent artistic approval."
+  },
+  "priorRequest": "quality/reports/2026-10-23T17-27-56-475Z-6f8f2351/P06-review-request.json",
+  "priorRequestSha256": "7f705c734657ced1e1186c931e284f6e5d5286531640b9c0d35592746ccebe21",
+  "preservedInputs": [
+    {
+      "path": "src/runtime/palace.ts",
+      "sha256": "361886f995158e2bebc64afb8a5e16d1a2f7afe0e65d0295af6d364e4b3d1d7d"
+    },
+    {
+      "path": "src/runtime/roof.ts",
+      "sha256": "bd699f080daf7c0c69a266ec1fe8b598b21edb440180fb3e399531c1153e241f"
+    },
+    {
+      "path": "src/runtime/journey-view.ts",
+      "sha256": "22387d324282bf0e1fcd2d6f24fdd67db40e59cf63968aedd2ec80ac7fd08a6e"
+    },
+    {
+      "path": "src/game/journey.ts",
+      "sha256": "9ac1fd2e034f59030c9b973a275e88f9157512042071cbcbe4a758627ea6c52f"
+    },
+    {
+      "path": "public/characters/p05/traveler.glb",
+      "sha256": "a8a6f7394d870bc7cfe3b4dcf0e038c4e5f0a92fa42841a75e27e1c990f372d3"
+    }
+  ],
+  "artisticAcceptance": "not-independently-confirmed",
+  "P15FormalMeasurementsStillRequired": true,
+  "boundary": "P09 packaging of preserved P06 artwork and current P08 reversible boundary policy; no independent artwork approval or Windows performance claim"
+}

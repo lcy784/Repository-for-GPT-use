@@ -1,12 +1,14 @@
 import assert from 'node:assert/strict';
-import {mkdirSync,writeFileSync} from 'node:fs';
+import {mkdirSync,writeFileSync,readFileSync} from 'node:fs';
 import path from 'node:path';
+import {pathToFileURL} from 'node:url';
+import {createServer} from 'node:http';
 import {chromium} from '../../tools/tiangong/node_modules/@playwright/test/index.mjs';
 import {preview} from '../../tools/tiangong/node_modules/vite/dist/node/index.js';
 import {hash,readJson,writeJson} from './lib.mjs';
-const context=readJson(process.env.TIANGONG_GATE_CONTEXT),{root,runDir}=context,output=path.join(runDir,'P06-browser');mkdirSync(output,{recursive:true});
+const context=readJson(process.env.TIANGONG_GATE_CONTEXT),{root,runDir}=context,output=path.join(runDir,process.env.TIANGONG_P09_HTML?'P09-journey':'P06-browser');mkdirSync(output,{recursive:true});
 const results=[],checkpoints=[],captures=[],clouds=[],errors=[],external=[],network=[];
-let browser,server,session,page;
+let browser,server,session,page,offlineServer;
 const observe=()=>page.evaluate(()=>window.__TIANGONG_OBSERVE__());
 const state=async()=>JSON.parse((await observe()).player);
 async function ticks(count){const t=(await state()).tick;await page.waitForFunction(t=>JSON.parse(window.__TIANGONG_OBSERVE__().player).tick>=t,t+count,{timeout:600000});}
@@ -36,14 +38,17 @@ async function move(axis,target){
  try{await page.waitForFunction(({axis,target,positive})=>{const o=window.__TIANGONG_OBSERVE__();if(o.phase==='error')throw Error(o.error);const s=JSON.parse(o.player);return positive?s.position[axis]>=target:s.position[axis]<=target;},{axis,target,positive},{timeout:600000});}finally{await page.keyboard.up(key);}
 }
 async function land(){await focus();await page.keyboard.down('Control');try{await page.waitForFunction(()=>JSON.parse(window.__TIANGONG_OBSERVE__().player).mode==='grounded',null,{timeout:600000});}finally{await page.keyboard.up('Control');}await ticks(3);}
-function save(){writeJson(path.join(output,'results.json'),{runId:context.runId,candidate:context.candidate,browser:browser?.version(),functionalViewport:{width:640,height:480},captureViewport:{width:1280,height:720},defaultFlightSpeed:10,results,checkpoints,clouds,captures,errors,external,network});}
+function save(){writeJson(path.join(output,'results.json'),{runId:context.runId,candidate:context.candidate,browser:browser?.version(),functionalViewport:{width:640,height:480},captureViewport:{width:1280,height:720},defaultFlightSpeed:10,artifact:process.env.TIANGONG_P09_HTML||null,offline:!!process.env.TIANGONG_P09_HTML&&!process.env.TIANGONG_P09_HTTP,results,checkpoints,clouds,captures,errors,external,network});}
 try{
- server=await preview({root,configFile:path.join(root,'vite.config.mjs'),preview:{host:'127.0.0.1',port:0}});
- const base=`http://127.0.0.1:${server.httpServer.address().port}`;
+ if(!process.env.TIANGONG_P09_HTML)server=await preview({root,configFile:path.join(root,'vite.config.mjs'),preview:{host:'127.0.0.1',port:0}});
+ if(process.env.TIANGONG_P09_HTTP){offlineServer=createServer((req,res)=>{if(req.url!=='/artifact.html'){res.writeHead(404);res.end();return;}res.setHeader('Content-Type','text/html; charset=utf-8');res.end(readFileSync(process.env.TIANGONG_P09_HTML));});await new Promise(resolve=>offlineServer.listen(0,'127.0.0.1',resolve));}
+ const base=offlineServer?`http://127.0.0.1:${offlineServer.address().port}/artifact.html`:process.env.TIANGONG_P09_HTML?pathToFileURL(process.env.TIANGONG_P09_HTML).href:`http://127.0.0.1:${server.httpServer.address().port}`;
  browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',headless:true,args:['--no-sandbox','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
- session=await browser.newContext({viewport:{width:640,height:480},deviceScaleFactor:1});
- await session.route(/^https?:\/\//,route=>{if(new URL(route.request().url()).origin!==base){external.push(route.request().url());return route.abort();}return route.continue();});
- page=await session.newPage();page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});page.on('response',r=>network.push({path:new URL(r.url()).pathname,status:r.status()}));
+ session=await browser.newContext({viewport:{width:640,height:480},deviceScaleFactor:1,serviceWorkers:'block',offline:!!process.env.TIANGONG_P09_HTML&&!process.env.TIANGONG_P09_HTTP});
+ await session.route(/^https?:\/\//,route=>{if(new URL(route.request().url()).origin!==new URL(base).origin){external.push(route.request().url());return route.abort();}return route.continue();});
+ page=await session.newPage();
+ if(process.env.TIANGONG_P09_HTML)page.on('request',r=>{if(![base].includes(r.url())&&!/^(data:|blob:)/.test(r.url()))external.push(r.url());});page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});page.on('response',r=>network.push({path:new URL(r.url()).pathname,status:r.status()}));
+ if(process.env.TIANGONG_P09_HTML){const cdp=await session.newCDPSession(page);await cdp.send('Network.enable');await cdp.send('Network.clearBrowserCache');}
  await page.goto(base);await page.waitForFunction(()=>['ready','error'].includes(window.__TIANGONG_OBSERVE__?.().phase),null,{timeout:600000});assert.equal((await observe()).phase,'ready',(await observe()).error);assert.equal((await observe()).fixture,'p06-journey');await ticks(40);
  await look(.8,-.12);await mark('jiangnan-bank');await capture('01-jiangnan');await look(0,-.20);
  await move('z',272);await move('x',0);assert.equal((await state()).supportId,'jiangnan-bridge');await mark('stone-bridge');await capture('02-bridge');
@@ -56,7 +61,7 @@ try{
   }
  }
  await perspective('first');await look(0,-.22);await move('y',143);await move('z',54);await land();assert.equal((await state()).supportId,'palace-terrace');await mark('palace-terrace');await perspective('third');await look(0,.35);await capture('04-palace-entrance');await perspective('first');await look(0,-.15);
- await move('z',0);assert(JSON.parse((await observe()).journey).location.includes('室内'));await mark('palace-interior');await look(0,.20);await capture('05-interior');
+ await move('z',0);assert(JSON.parse((await observe()).journey).location.includes('室内'));await mark('palace-interior');if(process.env.TIANGONG_P09_HTML){await move('z',-73);await focus();await page.keyboard.down('w');try{await ticks(100);}finally{await page.keyboard.up('w');}const wall=await state();assert(wall.position.z>-75&&wall.position.z<-73.5,'Hall back wall did not stop the player');await move('z',0);await page.keyboard.press('f');await move('y',145);await page.keyboard.press('f');await ticks(1);assert.equal((await state()).mode,'falling');await page.waitForFunction(()=>JSON.parse(window.__TIANGONG_OBSERVE__().player).mode==='grounded',null,{timeout:600000});await mark('offline-fall-and-wall');}await look(0,.20);await capture('05-interior');
  // Leave the same hall along a different lane; the physical matrix separately tests both entry lanes.
  await look(0,-.15);await move('x',8);await move('z',54);await mark('interior-offset-exit');
  await page.keyboard.press('f');await move('y',285);await move('x',15);await move('z',0);await land();assert.match((await state()).supportId,/^palace-roof-/);await mark('palace-roof');await perspective('third');await look(.8,-.35);await capture('06-roof');
@@ -65,4 +70,4 @@ try{
  assert.deepEqual(errors,[]);assert.equal(external.length,0);assert(network.every(r=>r.status<400));
  results.push({id:'P06-01',status:'PASS',executed:8,details:['Default production configuration, 10 m/s; real V-key first-person transit and third/first-person review views; one continuous player, no reload or state injection.']},{id:'P06-02',status:'PASS',executed:4,details:['Central indoor entry and offset exit, actual roof landing, stable support and takeoff; both entry lanes also run in the physics matrix.']},{id:'P06-03',status:'PASS',executed:6,details:['Below/inside/above cloud with both perspectives, actual rendered captures; user review remains separate.']});save();
 }catch(error){results.push({id:'P06-browser-error',status:'FAIL',executed:1,error:error.stack,failureSnapshot:await observe().catch(()=>null)});save();throw error;}
-finally{await session?.close();await browser?.close();if(server)await new Promise(resolve=>server.httpServer.close(resolve));}
+finally{await session?.close();await browser?.close();if(server)await new Promise(resolve=>server.httpServer.close(resolve));if(offlineServer)await new Promise(resolve=>offlineServer.close(resolve));}

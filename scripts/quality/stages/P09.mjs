@@ -1,0 +1,22 @@
+import assert from 'node:assert/strict';
+import {readFileSync,writeFileSync} from 'node:fs';
+import path from 'node:path';
+import {spawnSync} from 'node:child_process';
+import {buildOfflineA} from '../../build-offline-a.mjs';
+import {checkCopies} from '../p09-offline.mjs';
+import {hash,readJson,writeJson,inside} from '../lib.mjs';
+const c=readJson(process.env.TIANGONG_GATE_CONTEXT),{root,runDir,stage}=c,evidence=f=>({path:path.relative(runDir,f),sha256:hash(readFileSync(f))});
+try{
+ const units=path.join(runDir,'P09-tests.json');const unit=spawnSync(process.execPath,['tools/tiangong/node_modules/vitest/vitest.mjs','run','tools/tiangong/tests/offline-a.test.mjs','--config','quality/vitest.config.mjs','--reporter=json',`--outputFile=${units}`],{cwd:root,encoding:'utf8',timeout:30000});writeFileSync(path.join(runDir,'P09-tests.log'),`${unit.stdout||''}\n${unit.stderr||''}`);assert.equal(unit.status,0);const tests=readJson(units).testResults.flatMap(t=>t.assertionResults);assert.equal(tests.length,4);assert(tests.every(t=>t.status==='passed'));
+ const out=path.join(runDir,'P09-package'),{file,manifest}=await buildOfflineA(root,out);
+ const {copies,fileChecks}=await checkCopies(file,path.join(runDir,'P09-copies'));
+ const journey=spawnSync(process.execPath,['scripts/quality/p06-browser.mjs'],{cwd:root,encoding:'utf8',env:{...process.env,TIANGONG_P09_HTML:file,...(fileChecks.some(t=>t.status==='BLOCKED')?{TIANGONG_P09_HTTP:'1'}:{})},timeout:stage.timeoutMs-300000,maxBuffer:8*1024*1024});
+ const log=path.join(runDir,'P09-journey.log');writeFileSync(log,`${journey.stdout||''}\n${journey.stderr||''}`);assert.equal(journey.status,0,journey.error?.message||'Offline artifact core journey failed');
+ const rfile=path.join(runDir,'P09-journey/results.json'),r=readJson(rfile);assert.equal(r.runId,c.runId);assert.equal(r.candidate,c.candidate);assert.equal(r.artifact,file);assert.equal(r.offline,!fileChecks.some(t=>t.status==='BLOCKED'));assert.deepEqual(r.external,[]);assert.deepEqual(r.errors,[]);assert.equal(r.results.length,3);assert(r.results.every(t=>t.status==='PASS'));assert(r.checkpoints.some(t=>t.label==='offline-fall-and-wall'));assert(r.captures.length>=12);
+ for(const image of r.captures)assert.equal(hash(readFileSync(inside(path.join(runDir,'P09-journey'),image.file))),image.sha256);
+ assert.equal(hash(readFileSync(file)),manifest.sha256);
+ const packageRecord=path.join(runDir,'P09-package.json');writeJson(packageRecord,{runId:c.runId,candidate:c.candidate,...manifest,artifact:path.relative(runDir,file),offline:true});
+ const common=[units,path.join(runDir,'P09-tests.log'),packageRecord,path.join(out,'manifest.json'),file,rfile,log,path.join(runDir,'P09-copies/copies.json')].map(evidence);
+ const details=[`Single IIFE, embedded WASM/config/model/registry and ${manifest.embedded.length} assets; no runtime external requests.`,`Fresh browser contexts with cache cleared and Service Workers blocked; real rendered pixels and controls. File navigation result recorded separately.`,`Identical bytes opened from Chinese/space and ordinary copied paths; walking, perspective switching and cleanup checked.`,`Shared production core: walking/bridge/wall, flight/fall, dual perspective, clouds/interior/roof/departure. Default 10m/s, same player, no state injection.`];
+ writeJson(c.resultFile,{runId:c.runId,candidate:c.candidate,stage:stage.id,status:fileChecks.some(t=>t.status==='BLOCKED')?'BLOCKED':'PASS',packageManifest:path.relative(runDir,packageRecord),cases:stage.requiredCases.map((id,i)=>({id,status:(i===1||i===2)&&fileChecks.some(t=>t.status==='BLOCKED')?'BLOCKED':'PASS',executed:i===3?r.checkpoints.length:copies.length,details:[details[i],...(fileChecks.some(t=>t.status==='BLOCKED')?['file:// blocked by managed Chromium URL policy; equivalent copied bytes exercised via allowed loopback HTTP only. Direct-open offline acceptance outstanding.']:[])],evidence:[...common,...r.captures.map(image=>evidence(path.join(runDir,'P09-journey',image.file)))]})),environment:{browser:r.browser,scope:'Linux Chromium file protocol functional evidence, not target Windows performance or independent artistic acceptance'}});
+}catch(error){const f=path.join(runDir,'P09-failure.log');writeFileSync(f,error.stack||error.message);writeJson(c.resultFile,{runId:c.runId,candidate:c.candidate,stage:stage.id,status:'FAIL',cases:stage.requiredCases.map(id=>({id,status:'FAIL',executed:1,details:[error.message],evidence:[evidence(f)]}))});}

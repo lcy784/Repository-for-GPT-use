@@ -1,6 +1,7 @@
 import {ZoneScheduler} from '../streaming/scheduler';
 import {type StreamingWorld,type Zone} from '../streaming/zones';
-import {AssetScope,HttpAssets} from '../assets/access';
+import {AssetScope} from '../assets/access';
+import {contentAccess} from '../assets/source';
 import {ownScene} from '../assets/scene-owner';
 import type {CollisionShape} from '../game/collision';
 import { Engine } from '@babylonjs/core/Engines/engine';
@@ -73,7 +74,7 @@ export class Application {
       this.config = await loadRuntimeConfig(this.abort.signal);
       if (this.abort.signal.aborted) return;
       if(this.config.assetRegistry){
-        const assets=await AssetScope.open(this.config.assetRegistry,new HttpAssets(new URL('./',document.baseURI)),this.abort.signal);
+        const assets=await AssetScope.open(this.config.assetRegistry,contentAccess(),this.abort.signal);
         if(this.abort.signal.aborted){assets.dispose();return;}this.assets=assets;
         const world=JSON.parse(new TextDecoder().decode(await assets.hold('journey.world')));
         if(this.config.streamingWorld){this.streamingWorld=world;this.collisionShapes=[];}

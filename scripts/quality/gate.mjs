@@ -28,7 +28,7 @@ try {
     return executeStage(root, stage, context, runDir, budget);
   });
   assertCandidateUnchanged(candidate.sha256, candidateFingerprint(root).sha256);
-  summary = { runId, through: args[1], candidate: candidate.sha256, ...result, packages: { A: 'not-yet-delivered', B: 'not-yet-delivered', P01: result.stages.find(stage => stage.stage === 'P01')?.buildManifest || 'not-built-in-this-run' } };
+  summary = { runId, through: args[1], candidate: candidate.sha256, ...result, packages: { A: result.stages.find(stage => stage.stage === 'P09')?.packageManifest || 'not-built-in-this-run', B: 'not-yet-delivered', P01: result.stages.find(stage => stage.stage === 'P01')?.buildManifest || 'not-built-in-this-run' } };
 } catch (error) {
   summary = { runId, through: args[1], status: 'FAIL', reason: error.message, nextStageEligible: false };
 }

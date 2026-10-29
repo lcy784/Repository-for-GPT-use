@@ -1,3 +1,4 @@
+import {contentAccess} from '../assets/source';
 export type RuntimeConfig = {
   version: 1;
   assetRegistry?:string;
@@ -14,9 +15,7 @@ export type RuntimeConfig = {
 };
 
 export async function loadRuntimeConfig(signal: AbortSignal): Promise<RuntimeConfig> {
-  const response = await fetch(new URL('runtime-config.json', document.baseURI), { signal, cache: 'no-store' });
-  if (!response.ok) throw new Error(`运行配置加载失败（HTTP ${response.status}）`);
-  const config = await response.json();
+  const config = JSON.parse(new TextDecoder().decode(await contentAccess().read('runtime-config.json',signal)));
   const vector = (value: unknown): boolean => Array.isArray(value) && value.length === 3 && value.every(Number.isFinite);
   if (config.version !== 1 || !['p01-depth', 'p02-palace', 'p03-palace-walk', 'p03-terrain', 'p04-palace-flight', 'p04-flight', 'p05-palace-avatar', 'p05-camera', 'p06-journey'].includes(config.sceneFixture) || !Number.isFinite(config.simulationHz) || config.simulationHz < 1 || config.simulationHz > 240 || !Number.isInteger(config.maxCatchUpSteps) || config.maxCatchUpSteps < 1 || config.maxCatchUpSteps > 10 || !Array.isArray(config.cameraPositions) || config.cameraPositions.length < 2 || !config.cameraPositions.every(vector) || !vector(config.background)) throw new Error('运行配置格式无效');
   if (config.sceneFixture !== 'p01-depth' && (!Array.isArray(config.cameraTargets) || config.cameraTargets.length !== config.cameraPositions.length || !config.cameraTargets.every(vector))) throw new Error('巨殿机位配置格式无效');

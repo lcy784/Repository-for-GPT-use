@@ -1,29 +1,11 @@
 # 天宫项目状态
 
-更新日期：2026-10-29（北京时间）。当前分支 `feat/tiangong-p08-streaming-20261029`，从 P07 最新交付 `f2d82ac` 接续，全程云端开发。
+更新日期：2026-10-29（America/Tijuana）。当前 `feat/tiangong-p09-offline-a-20261029`，从 P08 `552f634` 接续，用户明确要求“执行P09开发”。
 
-## 当前范围
+P09 已实现单文件 HTML A 候选、内嵌资产适配、产物清单和实际产物检测入口。范围维持原江南—穿云—巨殿—室内—屋顶样本。构建 `npm run build:a`，累计 `npm run gate -- --through P09`，参见 `docs/P09-OFFLINE-A.md`。
 
-用户明确要求“执行p08开发”。当前实现 P08 分区调度与碰撞就绪交接工程预览；默认页仍为江南—穿云—巨殿—室内—屋顶的 P06 样本，保持原场景与操控。
+P09 正在验证，未授予 PASS。当前云端受管 Chromium 禁止 file://，直接打开返回 ERR_BLOCKED_BY_ADMINISTRATOR；不绕过策略，单独记为环境 BLOCKED。冷缓存回环 HTTP 诊断检查同一 HTML，不代替 file 模式离线验收。最终结果见 `quality/reports/P09-REVIEW.md`。
 
-P06 上次真实累计结果：P00—P05 PASS，P06-01—03 PASS，P06-04 等待人工视觉／体验认可。此次明确继续指令解除“不得进入 P07”的开发停止条件，记录在 `quality/visual-acceptance/P06-CONTINUED-DEVELOPMENT.json`；不将该指令记为独立美术验收或设备性能测量。
+此前 P08 已交付 P00—P08 累计 PASS。本次须在当前候选重新执行，历史结果不替代。P06 独立美术／体验认可未确认，继续授权只用于包装保留样本；P08 区域等待规则仍为可逆工程默认。P15 Windows 正式数据、P16 B 包仍待后续。原 16 个资料和 P02 已审作者画面保持保护。
 
-## 云端入口与证据
-
-```bash
-bash scripts/setup-p08-cloud.sh
-npm run dev
-npm run gate -- --through P08
-```
-
-实现与验证见 `docs/P08-SPATIAL-STREAMING.md`。完成状态以 `quality/reports/P08-REVIEW.md` 及其完整累计运行记录为准；开发期间尚未完成的检查不预写 PASS。各旧阶段继续在当前核心实跑。
-
-P02 原作者代码、旧素材及已批准三机位 PNG 保持审核保护；原始 16 个资料保持不变。P15 的真实 Windows 测量仍待采集。
-
-## 后续与边界
-
-- 本轮只做 P08；未就绪区域采用暂停／重试的可逆工程默认，用户偏好未确认，正式门禁按实际开发验证结果记录。
-- P06 独立美术／体验评分未补造，继续授权只适用于保留原样本的 P08 交接。
-- 未合并、部署或发布；正式 A/B 离线包尚未交付。
-
-历史决策及当时的停止条件见 `DECISIONS.md`，以最新明确用户授权为准。
+当前未合并、部署或发布。P10 不在本轮范围。
