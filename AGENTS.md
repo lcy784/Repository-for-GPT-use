@@ -42,4 +42,4 @@
 
 ## P08 接续开发（2026-10-29）
 
-用户明确要求“执行p08开发”，当前分支 `feat/tiangong-p08-streaming-20261029`。先读 `docs/P08-SPATIAL-STREAMING.md`，累计入口 `npm run gate -- --through P08`。未就绪区域暂停／支撑保留／显式重试为待选择的可运行提案，不伪造用户确认，记录 `quality/streaming-rules/P08-20261029.json`。正式结果在 `quality/reports/P08-REVIEW.md`，须真实重跑 P06 流式全路线与 P00—P08 各入口。原视觉样本整体常驻，动态分区资源为实际碰撞字节／解析／物理体，不宣称细粒度美术卸载。原资料与已审作者美术继续保护；本轮不进入 P09，不合并、不部署。
+用户明确要求“执行p08开发”，当前分支 `feat/tiangong-p08-streaming-20261029`。先读 `docs/P08-SPATIAL-STREAMING.md`，累计入口 `npm run gate -- --through P08`。未就绪区域暂停／支撑保留／显式重试为待选择的可运行提案，不伪造用户确认，记录 `quality/streaming-rules/P08-20261029.json`。正式结果在 `quality/reports/P08-REVIEW.md`，须真实重跑 P06 流式全路线与 P00—P08 各入口。边界保护按原 P08 要求采用可逆工程默认，用户偏好尚未确认。原视觉样本整体常驻，动态分区资源为实际碰撞字节／解析／物理体，不宣称细粒度美术卸载。原资料与已审作者美术继续保护；本轮不进入 P09，不合并、不部署。

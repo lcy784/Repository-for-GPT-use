@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "status": "awaiting-user-choice",
+  "status": "engineering-default",
   "source": {
     "quote": "\u6267\u884cp08\u5f00\u53d1"
   },
@@ -14,5 +14,7 @@
     "maxConcurrentReads": 2,
     "maxActivationsPerFrame": 1
   },
-  "boundary": "Engineering preview only until user selects the proposed unready-region behavior; no artistic or hardware approval implied."
+  "boundary": "Development implementation default, not a claim that the user confirmed a product preference. No merge, deployment, artistic or hardware acceptance implied.",
+  "userPreferenceConfirmed": false,
+  "decisionBasis": "P08 explicitly requires retaining old support and preventing entry without ready collisions. This reversible boundary wait is the engineering implementation of that requirement under the instruction to develop P08. The optional behavior question remains open; elapsed time is not approval."
 }
