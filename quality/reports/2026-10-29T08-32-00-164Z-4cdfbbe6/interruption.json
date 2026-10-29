@@ -1,0 +1,5 @@
+{
+  "status": "FAIL",
+  "reason": "Operator stopped cumulative run after local P08 round-trip check failed; browser endpoint straddled a retention boundary. No P08 qualification; preserve partial raw evidence and rerun entire P00-P08 after correction.",
+  "stoppedAt": "2026-10-29T08:33:51.058803+00:00"
+}

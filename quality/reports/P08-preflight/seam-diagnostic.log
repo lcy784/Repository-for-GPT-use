@@ -1,0 +1,27 @@
+
+ RUN  v5.0.5 /workspace/Repository-for-GPT-use
+
+stdout | tools/tiangong/tests/streaming.test.mjs > P08-04: warmed round trips and release > crosses cells ten times with stable physical/byte ownership, then releases everything
+CONTACT {"state":{"id":"local-player","tick":4120,"position":{"x":-18.01460075378418,"y":0.8376168608665466,"z":278.1898498535156},"velocity":{"x":0,"y":0,"z":2.999267578125},"yaw":3.141592653589793,"mode":"grounded","supportId":"jiangnan-bank--1"},"physics":{"active":true,"tick":4120,"position":"{\"x\":-18.01460075378418,\"y\":0.8376168608665466,\"z\":278.1898498535156}","physicalPosition":"{\"x\":-18.01460075378418,\"y\":0.8376168608665466,\"z\":278.1898498535156}","capsuleAxis":"+Y","capsuleHeightMeters":1.75,"mode":"grounded","supportId":"jiangnan-bank--1","velocity":"{\"x\":0,\"y\":0,\"z\":2.999267578125}","penetration":0.037383079528808594,"colliders":24,"bodyCount":1,"controllerCount":1,"flightEnabled":true,"flightSpeed":60,"lastSubsteps":1,"maxSubsteps":1,"maxSweepDistance":0.05,"recoveryCount":0,"safePosition":{"x":-18.01460075378418,"y":0.8376168608665466,"z":278.1898498535156},"events":[{"tick":1,"kind":"landed","from":"falling","to":"grounded","position":{"x":-18,"y":0.8949971795082092,"z":282},"supportId":"jiangnan-bank--1"}]},"streaming":{"disposed":false,"blocked":[],"maxLoading":2,"activations":0,"zones":[{"id":"cell-1-0-4","state":"ready"},{"id":"cell-1-0-3","state":"ready"}],"ready":["cell-1-0-4","cell-1-0-3"]}}
+
+ ❯ tools/tiangong/tests/streaming.test.mjs (8 tests | 1 failed) 5569ms
+   ❯ P08-04: warmed round trips and release (1)
+     × crosses cells ten times with stable physical/byte ownership, then releases everything 1361ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tools/tiangong/tests/streaming.test.mjs > P08-04: warmed round trips and release > crosses cells ten times with stable physical/byte ownership, then releases everything
+AssertionError: expected 0.037383079528808594 to be less than 0.01
+ ❯ step tools/tiangong/tests/streaming.test.mjs:17:326
+
+ ❯ Object.move tools/tiangong/tests/streaming.test.mjs:19:171
+ ❯ tools/tiangong/tests/streaming.test.mjs:43:317
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 7 passed (8)
+   Start at  08:20:47
+   Duration  5.83s (tests 98%, import 1%, transform 1%)
+

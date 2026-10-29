@@ -1,0 +1,334 @@
+{
+  "runId": "2026-10-29T08-35-58-884Z-fffce199",
+  "candidate": "2789c624ca827aa1b50c38245af4601fab6c1183f0568bd484e3bfef1567b5b8",
+  "stage": "P06",
+  "status": "PASS",
+  "cases": [
+    {
+      "id": "P06-01",
+      "status": "PASS",
+      "executed": 9,
+      "details": [
+        "Default production configuration, 10 m/s; real V-key first-person transit and third/first-person review views; one continuous player, no reload or state injection."
+      ],
+      "evidence": [
+        {
+          "path": "P06-physics-tests.json",
+          "sha256": "bd3ad3ff50b32e11389a55479a0580f55e34b743b24827290644f09b7c7536d2"
+        },
+        {
+          "path": "P06-physics-tests.log",
+          "sha256": "59f044acc27b92d65542dbb56d4037bb4c3227574a9202c61154a6fc61440784"
+        },
+        {
+          "path": "P06-physics-observations.json",
+          "sha256": "4dd940e6e8aa4423c41b88ea006cc2f5845ece12db30c178686269517c72184d"
+        },
+        {
+          "path": "P06-browser/results.json",
+          "sha256": "b6f07a37e05cea3cf827630f06d12f890d9053fe4112e3b3f9bc9619fd76ebb5"
+        },
+        {
+          "path": "P06-browser.log",
+          "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+        },
+        {
+          "path": "P01-production-manifest.json",
+          "sha256": "05f8b26635678759c6393da0234708fa868b3681b0d0c858e532762b4e6f1d17"
+        },
+        {
+          "path": "P06-review-request.json",
+          "sha256": "f702948364c88b5a6e1f596c45efd41305286df5a80e9d199278604a19e76a53"
+        },
+        {
+          "path": "P06-browser/01-jiangnan.png",
+          "sha256": "2e321b5e8da3550db664830d03945a7a8fb26707b37c08a02af22ec5022f783e"
+        },
+        {
+          "path": "P06-browser/02-bridge.png",
+          "sha256": "82266738d47893a81a8538e669ceaf02485280095bdaeb4ab72b2d1093d6e9a7"
+        },
+        {
+          "path": "P06-browser/03-cloud-below-third.png",
+          "sha256": "272328b09253815d37fbe613bd2e3c751c3f55e6dd66217e2dfa44e013b15452"
+        },
+        {
+          "path": "P06-browser/03-cloud-below-first.png",
+          "sha256": "100366de3b83eedf23ae4914d5a5ebeb9855d25b866ede88618961f7dcfcb2f3"
+        },
+        {
+          "path": "P06-browser/03-cloud-inside-third.png",
+          "sha256": "a7f978b1e9fe46d4234bce267176a8360cef7dfed04597af3b31b32d1662c0b7"
+        },
+        {
+          "path": "P06-browser/03-cloud-inside-first.png",
+          "sha256": "a1c4064f3a6faafed26d197ae1951f33d7568e9087105197d80c61e06c1e79a2"
+        },
+        {
+          "path": "P06-browser/03-cloud-above-third.png",
+          "sha256": "84e38b4d2c0cbe4311dfb23ff1c332cc03a1b2b0d933212d0d7b34104d8bb467"
+        },
+        {
+          "path": "P06-browser/03-cloud-above-first.png",
+          "sha256": "8df809618d4a0cff5c4025649021cb46092854f38a41925de97a14d242ae3eef"
+        },
+        {
+          "path": "P06-browser/04-palace-entrance.png",
+          "sha256": "fc6e9b522e948d45585d425bde1b9ff0177dc268e8cbf90cc9bfc8816b6b576a"
+        },
+        {
+          "path": "P06-browser/05-interior.png",
+          "sha256": "39653c1ac00eeef9d13f1d2906d27379527c651d9a90e0f2eb8f26bea11f4528"
+        },
+        {
+          "path": "P06-browser/06-roof.png",
+          "sha256": "cce0a0c8804836cdd851917457182db4ea11911248c89c132198730863b702ae"
+        },
+        {
+          "path": "P06-browser/07-roof-first.png",
+          "sha256": "cbe507530bff6e0345801ac776a58499bbcaf4d4bb947f75ee671848d29460ef"
+        },
+        {
+          "path": "P06-browser/08-return-view.png",
+          "sha256": "a4923e6a02aa1d91be6f267dd33ff2afe2198d07db8c54369063e7f3edcee2c9"
+        }
+      ]
+    },
+    {
+      "id": "P06-02",
+      "status": "PASS",
+      "executed": 10,
+      "details": [
+        "Central indoor entry and offset exit, actual roof landing, stable support and takeoff; both entry lanes also run in the physics matrix."
+      ],
+      "evidence": [
+        {
+          "path": "P06-physics-tests.json",
+          "sha256": "bd3ad3ff50b32e11389a55479a0580f55e34b743b24827290644f09b7c7536d2"
+        },
+        {
+          "path": "P06-physics-tests.log",
+          "sha256": "59f044acc27b92d65542dbb56d4037bb4c3227574a9202c61154a6fc61440784"
+        },
+        {
+          "path": "P06-physics-observations.json",
+          "sha256": "4dd940e6e8aa4423c41b88ea006cc2f5845ece12db30c178686269517c72184d"
+        },
+        {
+          "path": "P06-browser/results.json",
+          "sha256": "b6f07a37e05cea3cf827630f06d12f890d9053fe4112e3b3f9bc9619fd76ebb5"
+        },
+        {
+          "path": "P06-browser.log",
+          "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+        },
+        {
+          "path": "P01-production-manifest.json",
+          "sha256": "05f8b26635678759c6393da0234708fa868b3681b0d0c858e532762b4e6f1d17"
+        },
+        {
+          "path": "P06-review-request.json",
+          "sha256": "f702948364c88b5a6e1f596c45efd41305286df5a80e9d199278604a19e76a53"
+        },
+        {
+          "path": "P06-browser/01-jiangnan.png",
+          "sha256": "2e321b5e8da3550db664830d03945a7a8fb26707b37c08a02af22ec5022f783e"
+        },
+        {
+          "path": "P06-browser/02-bridge.png",
+          "sha256": "82266738d47893a81a8538e669ceaf02485280095bdaeb4ab72b2d1093d6e9a7"
+        },
+        {
+          "path": "P06-browser/03-cloud-below-third.png",
+          "sha256": "272328b09253815d37fbe613bd2e3c751c3f55e6dd66217e2dfa44e013b15452"
+        },
+        {
+          "path": "P06-browser/03-cloud-below-first.png",
+          "sha256": "100366de3b83eedf23ae4914d5a5ebeb9855d25b866ede88618961f7dcfcb2f3"
+        },
+        {
+          "path": "P06-browser/03-cloud-inside-third.png",
+          "sha256": "a7f978b1e9fe46d4234bce267176a8360cef7dfed04597af3b31b32d1662c0b7"
+        },
+        {
+          "path": "P06-browser/03-cloud-inside-first.png",
+          "sha256": "a1c4064f3a6faafed26d197ae1951f33d7568e9087105197d80c61e06c1e79a2"
+        },
+        {
+          "path": "P06-browser/03-cloud-above-third.png",
+          "sha256": "84e38b4d2c0cbe4311dfb23ff1c332cc03a1b2b0d933212d0d7b34104d8bb467"
+        },
+        {
+          "path": "P06-browser/03-cloud-above-first.png",
+          "sha256": "8df809618d4a0cff5c4025649021cb46092854f38a41925de97a14d242ae3eef"
+        },
+        {
+          "path": "P06-browser/04-palace-entrance.png",
+          "sha256": "fc6e9b522e948d45585d425bde1b9ff0177dc268e8cbf90cc9bfc8816b6b576a"
+        },
+        {
+          "path": "P06-browser/05-interior.png",
+          "sha256": "39653c1ac00eeef9d13f1d2906d27379527c651d9a90e0f2eb8f26bea11f4528"
+        },
+        {
+          "path": "P06-browser/06-roof.png",
+          "sha256": "cce0a0c8804836cdd851917457182db4ea11911248c89c132198730863b702ae"
+        },
+        {
+          "path": "P06-browser/07-roof-first.png",
+          "sha256": "cbe507530bff6e0345801ac776a58499bbcaf4d4bb947f75ee671848d29460ef"
+        },
+        {
+          "path": "P06-browser/08-return-view.png",
+          "sha256": "a4923e6a02aa1d91be6f267dd33ff2afe2198d07db8c54369063e7f3edcee2c9"
+        }
+      ]
+    },
+    {
+      "id": "P06-03",
+      "status": "PASS",
+      "executed": 8,
+      "details": [
+        "Below/inside/above cloud with both perspectives, actual rendered captures; user review remains separate."
+      ],
+      "evidence": [
+        {
+          "path": "P06-physics-tests.json",
+          "sha256": "bd3ad3ff50b32e11389a55479a0580f55e34b743b24827290644f09b7c7536d2"
+        },
+        {
+          "path": "P06-physics-tests.log",
+          "sha256": "59f044acc27b92d65542dbb56d4037bb4c3227574a9202c61154a6fc61440784"
+        },
+        {
+          "path": "P06-physics-observations.json",
+          "sha256": "4dd940e6e8aa4423c41b88ea006cc2f5845ece12db30c178686269517c72184d"
+        },
+        {
+          "path": "P06-browser/results.json",
+          "sha256": "b6f07a37e05cea3cf827630f06d12f890d9053fe4112e3b3f9bc9619fd76ebb5"
+        },
+        {
+          "path": "P06-browser.log",
+          "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+        },
+        {
+          "path": "P01-production-manifest.json",
+          "sha256": "05f8b26635678759c6393da0234708fa868b3681b0d0c858e532762b4e6f1d17"
+        },
+        {
+          "path": "P06-review-request.json",
+          "sha256": "f702948364c88b5a6e1f596c45efd41305286df5a80e9d199278604a19e76a53"
+        },
+        {
+          "path": "P06-browser/01-jiangnan.png",
+          "sha256": "2e321b5e8da3550db664830d03945a7a8fb26707b37c08a02af22ec5022f783e"
+        },
+        {
+          "path": "P06-browser/02-bridge.png",
+          "sha256": "82266738d47893a81a8538e669ceaf02485280095bdaeb4ab72b2d1093d6e9a7"
+        },
+        {
+          "path": "P06-browser/03-cloud-below-third.png",
+          "sha256": "272328b09253815d37fbe613bd2e3c751c3f55e6dd66217e2dfa44e013b15452"
+        },
+        {
+          "path": "P06-browser/03-cloud-below-first.png",
+          "sha256": "100366de3b83eedf23ae4914d5a5ebeb9855d25b866ede88618961f7dcfcb2f3"
+        },
+        {
+          "path": "P06-browser/03-cloud-inside-third.png",
+          "sha256": "a7f978b1e9fe46d4234bce267176a8360cef7dfed04597af3b31b32d1662c0b7"
+        },
+        {
+          "path": "P06-browser/03-cloud-inside-first.png",
+          "sha256": "a1c4064f3a6faafed26d197ae1951f33d7568e9087105197d80c61e06c1e79a2"
+        },
+        {
+          "path": "P06-browser/03-cloud-above-third.png",
+          "sha256": "84e38b4d2c0cbe4311dfb23ff1c332cc03a1b2b0d933212d0d7b34104d8bb467"
+        },
+        {
+          "path": "P06-browser/03-cloud-above-first.png",
+          "sha256": "8df809618d4a0cff5c4025649021cb46092854f38a41925de97a14d242ae3eef"
+        },
+        {
+          "path": "P06-browser/04-palace-entrance.png",
+          "sha256": "fc6e9b522e948d45585d425bde1b9ff0177dc268e8cbf90cc9bfc8816b6b576a"
+        },
+        {
+          "path": "P06-browser/05-interior.png",
+          "sha256": "39653c1ac00eeef9d13f1d2906d27379527c651d9a90e0f2eb8f26bea11f4528"
+        },
+        {
+          "path": "P06-browser/06-roof.png",
+          "sha256": "cce0a0c8804836cdd851917457182db4ea11911248c89c132198730863b702ae"
+        },
+        {
+          "path": "P06-browser/07-roof-first.png",
+          "sha256": "cbe507530bff6e0345801ac776a58499bbcaf4d4bb947f75ee671848d29460ef"
+        },
+        {
+          "path": "P06-browser/08-return-view.png",
+          "sha256": "a4923e6a02aa1d91be6f267dd33ff2afe2198d07db8c54369063e7f3edcee2c9"
+        }
+      ]
+    },
+    {
+      "id": "P06-04",
+      "status": "PASS",
+      "executed": 4,
+      "details": [
+        "User explicitly directed continued development on preserved P06 artwork. Continuation authorization supersedes the stop; independent artistic acceptance and P15 hardware measurements remain outstanding."
+      ],
+      "evidence": [
+        {
+          "path": "P06-physics-tests.json",
+          "sha256": "bd3ad3ff50b32e11389a55479a0580f55e34b743b24827290644f09b7c7536d2"
+        },
+        {
+          "path": "P06-physics-tests.log",
+          "sha256": "59f044acc27b92d65542dbb56d4037bb4c3227574a9202c61154a6fc61440784"
+        },
+        {
+          "path": "P06-physics-observations.json",
+          "sha256": "4dd940e6e8aa4423c41b88ea006cc2f5845ece12db30c178686269517c72184d"
+        },
+        {
+          "path": "P06-browser/results.json",
+          "sha256": "b6f07a37e05cea3cf827630f06d12f890d9053fe4112e3b3f9bc9619fd76ebb5"
+        },
+        {
+          "path": "P06-browser.log",
+          "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+        },
+        {
+          "path": "P01-production-manifest.json",
+          "sha256": "05f8b26635678759c6393da0234708fa868b3681b0d0c858e532762b4e6f1d17"
+        },
+        {
+          "path": "P06-review-request.json",
+          "sha256": "f702948364c88b5a6e1f596c45efd41305286df5a80e9d199278604a19e76a53"
+        },
+        {
+          "path": "P06-user-review.json",
+          "sha256": "0ef3971027d8b1aa6d47f0635ec8659c94c5f43653213d5af76137632a2464d0"
+        }
+      ]
+    }
+  ],
+  "environment": {
+    "browser": "154.0.8037.57",
+    "functionalViewport": {
+      "width": 640,
+      "height": 480
+    },
+    "captureViewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "scope": "actual default production journey plus physics matrix; cloud functional checks; user artistic acceptance separate",
+    "executionBudgetMs": 2400000,
+    "browserBudgetMs": 2280000
+  }
+}

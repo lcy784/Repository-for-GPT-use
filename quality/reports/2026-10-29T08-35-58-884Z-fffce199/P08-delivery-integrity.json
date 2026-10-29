@@ -1,0 +1,17 @@
+{
+  "candidate": "2789c624ca827aa1b50c38245af4601fab6c1183f0568bd484e3bfef1567b5b8",
+  "sourceCommit": "f1c2ff0",
+  "unchangedCandidate": true,
+  "stagesVerified": 9,
+  "evidenceHashChecks": 318,
+  "productionFilesVerified": 379,
+  "roundTripWorkingSet": [
+    1,
+    5,
+    [
+      "cell-1-1-4"
+    ]
+  ],
+  "checkedAt": "2026-10-29T13:27:57.851Z",
+  "scope": "Archive and candidate integrity; original test executions retained"
+}

@@ -1,0 +1,55 @@
+
+ RUN  v5.0.5 /workspace/Repository-for-GPT-use
+
+ ❯ tools/tiangong/tests/streaming.test.mjs (8 tests | 3 failed) 4467ms
+   ❯ P08-01: qualified spatial handoff (3)
+     × crosses horizontal/vertical/indoor/roof cells on real Rapier at 60 m/s 334ms
+   ❯ P08-02: slow and rejected loads preserve support (2)
+     × holds at an unloaded boundary, reports error once and continues after explicit retry 102ms
+   ❯ P08-04: warmed round trips and release (1)
+     × crosses cells ten times with stable physical/byte ownership, then releases everything 1350ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tools/tiangong/tests/streaming.test.mjs > P08-01: qualified spatial handoff > crosses horizontal/vertical/indoor/roof cells on real Rapier at 60 m/s
+AssertionError: expected 0.900146484375 to be less than 0.2
+ ❯ Object.move tools/tiangong/tests/streaming.test.mjs:19:282
+
+ ❯ tools/tiangong/tests/streaming.test.mjs:28:178
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/3]⎯
+
+ FAIL  tools/tiangong/tests/streaming.test.mjs > P08-02: slow and rejected loads preserve support > holds at an unloaded boundary, reports error once and continues after explicit retry
+AssertionError: expected { x: -18, y: 0.895090639591217, …(1) } to deeply equal { x: -18, y: 0.8949810266494751, …(1) }
+
+- Expected
++ Received
+
+  {
+    "x": -18,
+-   "y": 0.8949810266494751,
+-   "z": 258.05047607421875,
++   "y": 0.895090639591217,
++   "z": 256.55084228515625,
+  }
+
+ ❯ tools/tiangong/tests/streaming.test.mjs:34:365
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/3]⎯
+
+ FAIL  tools/tiangong/tests/streaming.test.mjs > P08-04: warmed round trips and release > crosses cells ten times with stable physical/byte ownership, then releases everything
+AssertionError: expected 0.037383079528808594 to be less than 0.01
+ ❯ step tools/tiangong/tests/streaming.test.mjs:17:168
+
+ ❯ Object.move tools/tiangong/tests/streaming.test.mjs:19:171
+ ❯ tools/tiangong/tests/streaming.test.mjs:43:317
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/3]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  3 failed | 5 passed (8)
+   Start at  08:19:43
+   Duration  4.80s (tests 96%, import 2%, transform 2%)
+

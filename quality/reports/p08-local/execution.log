@@ -1,0 +1,21 @@
+(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+  - import "../shared/contracts" without a file extension (src/streaming/zones.ts:1:25). Add the file extension
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: The input did not match the regular expression /加载失败/. Input:
+
+'第三人称 · 地面行走 · F 起飞 · V 切换视角'
+
+    at file:///workspace/Repository-for-GPT-use/scripts/quality/p08-browser.mjs:23:517 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: '第三人称 · 地面行走 · F 起飞 · V 切换视角',
+  expected: /加载失败/,
+  operator: 'match',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

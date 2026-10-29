@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "status": "user-selected",
+  "date": "2026-10-23",
+  "source": {
+    "quote": "采用这组规则，人物细节和镜头参数先用可调整的初版",
+    "context": "User accepted the proposed 1.75 m neutral ivory/jade temporary traveler, idle/walk/fly/fall, V/button perspectives, drag look, first-person self hiding and third-person wall contraction/recovery."
+  },
+  "avatar": {
+    "asset": "public/characters/p05/traveler.glb",
+    "source": "tools/author-p05-avatar.py",
+    "origin": "original-authored-in-this-repository",
+    "heightMeters": 1.75,
+    "clips": [
+      "idle",
+      "walk",
+      "fly",
+      "fall"
+    ],
+    "rootMotion": false,
+    "finalArtAcceptance": false
+  },
+  "camera": {
+    "toggle": "V-or-button",
+    "look": "drag-without-pointer-lock",
+    "firstPersonSelfModel": "hidden",
+    "thirdPersonObstruction": "sphere-sweep-contract-then-restore",
+    "physicsAuthority": "LocalSession-only"
+  },
+  "engineeringParameters": {
+    "eyeHeightMeters": 1.6,
+    "eyeOffsetFromCapsuleCentre": 0.725,
+    "thirdPersonDistanceMeters": 6,
+    "distanceRange": [
+      2,
+      12
+    ],
+    "cameraRadiusMeters": 0.16,
+    "nearPlaneMeters": 0.05,
+    "blendSeconds": 0.12
+  }
+}

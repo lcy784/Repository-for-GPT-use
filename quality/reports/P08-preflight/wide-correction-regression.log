@@ -1,0 +1,35 @@
+
+ RUN  v5.0.5 /workspace/Repository-for-GPT-use
+
+ ❯ tools/tiangong/tests/ground.test.mjs (14 tests | 1 failed) 1172ms
+   ❯ Ground physics terrain matrix (11)
+     × ascends the actual 0.3 m palace stairs from the lower approach 447ms
+ ❯ tools/tiangong/tests/flight.test.mjs (18 tests | 1 failed) 735ms
+   ❯ P04-04: ground control and state ownership (5)
+     × walks at 3 m/s after landing at x=-30 z=20 with one matching physics state 16ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tools/tiangong/tests/flight.test.mjs > P04-04: ground control and state ownership > walks at 3 m/s after landing at x=-30 z=20 with one matching physics state
+AssertionError: expected 2.994722366333008 to be close to 3, received difference is 0.0052776336669921875, but expected 0.005
+ ❯ tools/tiangong/tests/flight.test.mjs:104:144
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  tools/tiangong/tests/ground.test.mjs > Ground physics terrain matrix > ascends the actual 0.3 m palace stairs from the lower approach
+AssertionError: expected 0.02018570899963379 to be less than 0.01
+ ❯ tools/tiangong/tests/ground.test.mjs:21:364
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  2 failed | 10 passed (12)
+      Tests  2 failed | 141 passed (143)
+   Start at  08:21:55
+   Duration  21.41s (tests 94%, import 5%, transform 1%)
+
+    Isolate  12 workers spawned · ~113ms startup each (spawn + environment, per file)
+             at least ~1.24s faster with isolate: false — reuses workers across files instead of one per file
+

@@ -1,0 +1,169 @@
+{
+  "runId": "2026-10-29T08-35-58-884Z-fffce199",
+  "candidate": "2789c624ca827aa1b50c38245af4601fab6c1183f0568bd484e3bfef1567b5b8",
+  "stage": "P04",
+  "status": "PASS",
+  "cases": [
+    {
+      "id": "P04-01",
+      "status": "PASS",
+      "executed": 14,
+      "details": [],
+      "evidence": [
+        {
+          "path": "P04-selected-rules.json",
+          "sha256": "f5ca93c5eb083d02f616428bcd4c72fdf91d7f9e52764431307a91eb47752f3e"
+        },
+        {
+          "path": "P04-physics-observations.json",
+          "sha256": "021035722b170fed69b875031833fbe945ef7a790b6559612003580882a76e84"
+        },
+        {
+          "path": "P04-physics-tests.json",
+          "sha256": "98ac537ca645a2d63c13a0b7373af507e75f267576b3f8f71fe3a0050b59bea3"
+        },
+        {
+          "path": "P04-physics-tests.log",
+          "sha256": "4cdb028d23f67937d34c3022cafd56c4c428bdc1bd7e0f6a3767e148e895b87d"
+        },
+        {
+          "path": "P04-browser/results.json",
+          "sha256": "909514cee27c2661d568aa3bd15e24b8a40035c40df70e2d2f9e7ff9a9db0973"
+        },
+        {
+          "path": "P04-browser.log",
+          "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+        },
+        {
+          "path": "P01-production-manifest.json",
+          "sha256": "05f8b26635678759c6393da0234708fa868b3681b0d0c858e532762b4e6f1d17"
+        },
+        {
+          "path": "P04-browser/flight-hover.png",
+          "sha256": "efb3afdb3d41a121b7116a465665c309c6e26fc65f16ec10c3ae43644b2b456b"
+        }
+      ]
+    },
+    {
+      "id": "P04-02",
+      "status": "PASS",
+      "executed": 8,
+      "details": [],
+      "evidence": [
+        {
+          "path": "P04-selected-rules.json",
+          "sha256": "f5ca93c5eb083d02f616428bcd4c72fdf91d7f9e52764431307a91eb47752f3e"
+        },
+        {
+          "path": "P04-physics-observations.json",
+          "sha256": "021035722b170fed69b875031833fbe945ef7a790b6559612003580882a76e84"
+        },
+        {
+          "path": "P04-physics-tests.json",
+          "sha256": "98ac537ca645a2d63c13a0b7373af507e75f267576b3f8f71fe3a0050b59bea3"
+        },
+        {
+          "path": "P04-physics-tests.log",
+          "sha256": "4cdb028d23f67937d34c3022cafd56c4c428bdc1bd7e0f6a3767e148e895b87d"
+        },
+        {
+          "path": "P04-browser/results.json",
+          "sha256": "909514cee27c2661d568aa3bd15e24b8a40035c40df70e2d2f9e7ff9a9db0973"
+        },
+        {
+          "path": "P04-browser.log",
+          "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+        },
+        {
+          "path": "P01-production-manifest.json",
+          "sha256": "05f8b26635678759c6393da0234708fa868b3681b0d0c858e532762b4e6f1d17"
+        },
+        {
+          "path": "P04-browser/high-speed-wall.png",
+          "sha256": "082fd7fcfe5bb4456725a78db569ca856097f2b50f32df7ec50e8cd0353c3dde"
+        }
+      ]
+    },
+    {
+      "id": "P04-03",
+      "status": "PASS",
+      "executed": 5,
+      "details": [],
+      "evidence": [
+        {
+          "path": "P04-selected-rules.json",
+          "sha256": "f5ca93c5eb083d02f616428bcd4c72fdf91d7f9e52764431307a91eb47752f3e"
+        },
+        {
+          "path": "P04-physics-observations.json",
+          "sha256": "021035722b170fed69b875031833fbe945ef7a790b6559612003580882a76e84"
+        },
+        {
+          "path": "P04-physics-tests.json",
+          "sha256": "98ac537ca645a2d63c13a0b7373af507e75f267576b3f8f71fe3a0050b59bea3"
+        },
+        {
+          "path": "P04-physics-tests.log",
+          "sha256": "4cdb028d23f67937d34c3022cafd56c4c428bdc1bd7e0f6a3767e148e895b87d"
+        },
+        {
+          "path": "P04-browser/results.json",
+          "sha256": "909514cee27c2661d568aa3bd15e24b8a40035c40df70e2d2f9e7ff9a9db0973"
+        },
+        {
+          "path": "P04-browser.log",
+          "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+        },
+        {
+          "path": "P01-production-manifest.json",
+          "sha256": "05f8b26635678759c6393da0234708fa868b3681b0d0c858e532762b4e6f1d17"
+        }
+      ]
+    },
+    {
+      "id": "P04-04",
+      "status": "PASS",
+      "executed": 9,
+      "details": [],
+      "evidence": [
+        {
+          "path": "P04-selected-rules.json",
+          "sha256": "f5ca93c5eb083d02f616428bcd4c72fdf91d7f9e52764431307a91eb47752f3e"
+        },
+        {
+          "path": "P04-physics-observations.json",
+          "sha256": "021035722b170fed69b875031833fbe945ef7a790b6559612003580882a76e84"
+        },
+        {
+          "path": "P04-physics-tests.json",
+          "sha256": "98ac537ca645a2d63c13a0b7373af507e75f267576b3f8f71fe3a0050b59bea3"
+        },
+        {
+          "path": "P04-physics-tests.log",
+          "sha256": "4cdb028d23f67937d34c3022cafd56c4c428bdc1bd7e0f6a3767e148e895b87d"
+        },
+        {
+          "path": "P04-browser/results.json",
+          "sha256": "909514cee27c2661d568aa3bd15e24b8a40035c40df70e2d2f9e7ff9a9db0973"
+        },
+        {
+          "path": "P04-browser.log",
+          "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+        },
+        {
+          "path": "P01-production-manifest.json",
+          "sha256": "05f8b26635678759c6393da0234708fa868b3681b0d0c858e532762b4e6f1d17"
+        },
+        {
+          "path": "P04-browser/palace-flight.png",
+          "sha256": "a9e9f512b618d7fc373cf73e72aed24ca08e3737f51d3fee955ed7f4412f5820"
+        }
+      ]
+    }
+  ],
+  "environment": {
+    "browser": "154.0.8037.57",
+    "physics": "Rapier 0.21.0 WASM; fixed 60 Hz; bounded swept substeps",
+    "scope": "cloud-functional-only; native Chromium tab visibility; not Windows performance evidence"
+  }
+}

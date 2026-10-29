@@ -1,0 +1,245 @@
+{
+  "runId": "2026-10-29T08-35-58-884Z-fffce199",
+  "candidate": "2789c624ca827aa1b50c38245af4601fab6c1183f0568bd484e3bfef1567b5b8",
+  "stage": "P07",
+  "status": "PASS",
+  "cases": [
+    {
+      "id": "P07-01",
+      "status": "PASS",
+      "executed": 22,
+      "details": [
+        "Registry integrity/build contracts plus exact legacy/managed PNG equality at bank and palace, identical authored collider set."
+      ],
+      "evidence": [
+        {
+          "path": "P07-contracts.json",
+          "sha256": "426d6d81332fa73ed6561ff636adfccf2fd7c309702305c64827e76a58adb88a"
+        },
+        {
+          "path": "P07-asset-tests.json",
+          "sha256": "c1696821c3bcd227a6f3211f121f3ee7730d63622e9458139431422d354f9332"
+        },
+        {
+          "path": "P07-asset-tests.log",
+          "sha256": "40cb25540bc26f36e729af1f654660287229c7354df8bbb39e6dbb46701c89be"
+        },
+        {
+          "path": "P07-browser/results.json",
+          "sha256": "968234d271985d06cfa987b7f84e64238542fe1106df6772495c7c0848ad74d5"
+        },
+        {
+          "path": "P07-browser.log",
+          "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+        },
+        {
+          "path": "P01-production-manifest.json",
+          "sha256": "05f8b26635678759c6393da0234708fa868b3681b0d0c858e532762b4e6f1d17"
+        },
+        {
+          "path": "P07-browser/shared-b-before.png",
+          "sha256": "2e76eba93ec5b1bc65bf16172226d204dedb35eb379b640629c026923bb33013"
+        },
+        {
+          "path": "P07-browser/shared-b-after.png",
+          "sha256": "2e76eba93ec5b1bc65bf16172226d204dedb35eb379b640629c026923bb33013"
+        },
+        {
+          "path": "P07-browser/bank-legacy.png",
+          "sha256": "52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566"
+        },
+        {
+          "path": "P07-browser/bank-managed.png",
+          "sha256": "52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566"
+        },
+        {
+          "path": "P07-browser/palace-legacy.png",
+          "sha256": "03553f63dbf7ad992c8952ed249da04236b3fa2fa76f8fec190b8dc1a25b4a0a"
+        },
+        {
+          "path": "P07-browser/palace-managed.png",
+          "sha256": "03553f63dbf7ad992c8952ed249da04236b3fa2fa76f8fec190b8dc1a25b4a0a"
+        }
+      ]
+    },
+    {
+      "id": "P07-02",
+      "status": "PASS",
+      "executed": 15,
+      "details": [
+        "Real WebGL shared RawTexture, identical surviving-zone PNGs and ten complete load/release cycles return to baseline."
+      ],
+      "evidence": [
+        {
+          "path": "P07-contracts.json",
+          "sha256": "426d6d81332fa73ed6561ff636adfccf2fd7c309702305c64827e76a58adb88a"
+        },
+        {
+          "path": "P07-asset-tests.json",
+          "sha256": "c1696821c3bcd227a6f3211f121f3ee7730d63622e9458139431422d354f9332"
+        },
+        {
+          "path": "P07-asset-tests.log",
+          "sha256": "40cb25540bc26f36e729af1f654660287229c7354df8bbb39e6dbb46701c89be"
+        },
+        {
+          "path": "P07-browser/results.json",
+          "sha256": "968234d271985d06cfa987b7f84e64238542fe1106df6772495c7c0848ad74d5"
+        },
+        {
+          "path": "P07-browser.log",
+          "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+        },
+        {
+          "path": "P01-production-manifest.json",
+          "sha256": "05f8b26635678759c6393da0234708fa868b3681b0d0c858e532762b4e6f1d17"
+        },
+        {
+          "path": "P07-browser/shared-b-before.png",
+          "sha256": "2e76eba93ec5b1bc65bf16172226d204dedb35eb379b640629c026923bb33013"
+        },
+        {
+          "path": "P07-browser/shared-b-after.png",
+          "sha256": "2e76eba93ec5b1bc65bf16172226d204dedb35eb379b640629c026923bb33013"
+        },
+        {
+          "path": "P07-browser/bank-legacy.png",
+          "sha256": "52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566"
+        },
+        {
+          "path": "P07-browser/bank-managed.png",
+          "sha256": "52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566"
+        },
+        {
+          "path": "P07-browser/palace-legacy.png",
+          "sha256": "03553f63dbf7ad992c8952ed249da04236b3fa2fa76f8fec190b8dc1a25b4a0a"
+        },
+        {
+          "path": "P07-browser/palace-managed.png",
+          "sha256": "03553f63dbf7ad992c8952ed249da04236b3fa2fa76f8fec190b8dc1a25b4a0a"
+        }
+      ]
+    },
+    {
+      "id": "P07-03",
+      "status": "PASS",
+      "executed": 8,
+      "details": [
+        "Cancelled decode finishes after a newer generation: old actual GPU texture disposed, current zone and texture preserved."
+      ],
+      "evidence": [
+        {
+          "path": "P07-contracts.json",
+          "sha256": "426d6d81332fa73ed6561ff636adfccf2fd7c309702305c64827e76a58adb88a"
+        },
+        {
+          "path": "P07-asset-tests.json",
+          "sha256": "c1696821c3bcd227a6f3211f121f3ee7730d63622e9458139431422d354f9332"
+        },
+        {
+          "path": "P07-asset-tests.log",
+          "sha256": "40cb25540bc26f36e729af1f654660287229c7354df8bbb39e6dbb46701c89be"
+        },
+        {
+          "path": "P07-browser/results.json",
+          "sha256": "968234d271985d06cfa987b7f84e64238542fe1106df6772495c7c0848ad74d5"
+        },
+        {
+          "path": "P07-browser.log",
+          "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+        },
+        {
+          "path": "P01-production-manifest.json",
+          "sha256": "05f8b26635678759c6393da0234708fa868b3681b0d0c858e532762b4e6f1d17"
+        },
+        {
+          "path": "P07-browser/shared-b-before.png",
+          "sha256": "2e76eba93ec5b1bc65bf16172226d204dedb35eb379b640629c026923bb33013"
+        },
+        {
+          "path": "P07-browser/shared-b-after.png",
+          "sha256": "2e76eba93ec5b1bc65bf16172226d204dedb35eb379b640629c026923bb33013"
+        },
+        {
+          "path": "P07-browser/bank-legacy.png",
+          "sha256": "52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566"
+        },
+        {
+          "path": "P07-browser/bank-managed.png",
+          "sha256": "52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566"
+        },
+        {
+          "path": "P07-browser/palace-legacy.png",
+          "sha256": "03553f63dbf7ad992c8952ed249da04236b3fa2fa76f8fec190b8dc1a25b4a0a"
+        },
+        {
+          "path": "P07-browser/palace-managed.png",
+          "sha256": "03553f63dbf7ad992c8952ed249da04236b3fa2fa76f8fec190b8dc1a25b4a0a"
+        }
+      ]
+    },
+    {
+      "id": "P07-04",
+      "status": "PASS",
+      "executed": 11,
+      "details": [
+        "HTTP 404 and hash corruption report actionable errors, no hidden retry; explicit retry/restart recovers including actual default P06 world."
+      ],
+      "evidence": [
+        {
+          "path": "P07-contracts.json",
+          "sha256": "426d6d81332fa73ed6561ff636adfccf2fd7c309702305c64827e76a58adb88a"
+        },
+        {
+          "path": "P07-asset-tests.json",
+          "sha256": "c1696821c3bcd227a6f3211f121f3ee7730d63622e9458139431422d354f9332"
+        },
+        {
+          "path": "P07-asset-tests.log",
+          "sha256": "40cb25540bc26f36e729af1f654660287229c7354df8bbb39e6dbb46701c89be"
+        },
+        {
+          "path": "P07-browser/results.json",
+          "sha256": "968234d271985d06cfa987b7f84e64238542fe1106df6772495c7c0848ad74d5"
+        },
+        {
+          "path": "P07-browser.log",
+          "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+        },
+        {
+          "path": "P01-production-manifest.json",
+          "sha256": "05f8b26635678759c6393da0234708fa868b3681b0d0c858e532762b4e6f1d17"
+        },
+        {
+          "path": "P07-browser/shared-b-before.png",
+          "sha256": "2e76eba93ec5b1bc65bf16172226d204dedb35eb379b640629c026923bb33013"
+        },
+        {
+          "path": "P07-browser/shared-b-after.png",
+          "sha256": "2e76eba93ec5b1bc65bf16172226d204dedb35eb379b640629c026923bb33013"
+        },
+        {
+          "path": "P07-browser/bank-legacy.png",
+          "sha256": "52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566"
+        },
+        {
+          "path": "P07-browser/bank-managed.png",
+          "sha256": "52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566"
+        },
+        {
+          "path": "P07-browser/palace-legacy.png",
+          "sha256": "03553f63dbf7ad992c8952ed249da04236b3fa2fa76f8fec190b8dc1a25b4a0a"
+        },
+        {
+          "path": "P07-browser/palace-managed.png",
+          "sha256": "03553f63dbf7ad992c8952ed249da04236b3fa2fa76f8fec190b8dc1a25b4a0a"
+        }
+      ]
+    }
+  ],
+  "environment": {
+    "browser": "154.0.8037.57",
+    "scope": "Real WebGL ownership, late decodes, local HTTP errors, migration pixel comparison and ten P06 world lifetimes; no streaming or target-device performance claim",
+    "executionBudgetMs": 1800000
+  }
+}

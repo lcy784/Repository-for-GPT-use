@@ -1,0 +1,236 @@
+{
+  "date": "2026-10-29 Asia/Shanghai",
+  "automaticFindings": 45,
+  "review": [
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "public/streaming/registry.json",
+      "line": 1,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "quality/visual-acceptance/P06-P08-CONTINUED-DEVELOPMENT.json",
+      "line": 11,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "quality/visual-acceptance/P06-P08-CONTINUED-DEVELOPMENT.json",
+      "line": 15,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "quality/visual-acceptance/P06-P08-CONTINUED-DEVELOPMENT.json",
+      "line": 19,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "quality/visual-acceptance/P06-P08-CONTINUED-DEVELOPMENT.json",
+      "line": 23,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "quality/visual-acceptance/P06-P08-CONTINUED-DEVELOPMENT.json",
+      "line": 27,
+      "classification": "declared SHA-256 content/source digest"
+    },
+    {
+      "path": "quality/visual-acceptance/P06-P08-CONTINUED-DEVELOPMENT.json",
+      "line": 31,
+      "classification": "declared SHA-256 content/source digest"
+    }
+  ],
+  "credentialFindings": 0,
+  "scope": "Changed source/scripts/new tests, generated streaming assets, rule proposal and protected-source continuation record; generated binary geometry sourced from verified original collider export.",
+  "finalScanLog": "final-scan.log",
+  "candidate": "2789c624ca827aa1b50c38245af4601fab6c1183f0568bd484e3bfef1567b5b8",
+  "finalScanScope": "All changed source, scripts, tests, generated collision assets, runtime config, documentation, P07 fixture and P08 rule/continuation records"
+}
