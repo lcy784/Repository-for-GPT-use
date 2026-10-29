@@ -1,0 +1,2207 @@
+{
+  "runId": "2026-10-29T14-15-51-767Z-55e91d69",
+  "through": "P09",
+  "candidate": "c8198c76d379db4cd1179d3a3f389c868dad39a91f3b6405a3b6ae7750355c04",
+  "status": "BLOCKED",
+  "stages": [
+    {
+      "runId": "2026-10-29T14-15-51-767Z-55e91d69",
+      "candidate": "c8198c76d379db4cd1179d3a3f389c868dad39a91f3b6405a3b6ae7750355c04",
+      "stage": "P00",
+      "status": "PASS",
+      "cases": [
+        {
+          "id": "P00-01",
+          "status": "PASS",
+          "executed": 5,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P00-input-checks.log",
+              "sha256": "9755161012e68396876bfa6e17a025c7d9b510636fb99421bca23e707feb8703"
+            },
+            {
+              "path": "candidate-contracts.json",
+              "sha256": "3cbed0baf923135795f7cf1fb946d96dfe239f548099e63fbb68e4d3e6e683e5"
+            },
+            {
+              "path": "P00-vitest.json",
+              "sha256": "54208db3d80a5f09ff1f5451692e153d9b77bc61807126101368681a58594dc3"
+            },
+            {
+              "path": "P00-vitest.log",
+              "sha256": "cc47e001c417c2f195992658b59a1f96db519295a460a8d943cb72b35a4b73bc"
+            }
+          ]
+        },
+        {
+          "id": "P00-02",
+          "status": "PASS",
+          "executed": 13,
+          "evidence": [
+            {
+              "path": "P00-vitest.json",
+              "sha256": "54208db3d80a5f09ff1f5451692e153d9b77bc61807126101368681a58594dc3"
+            },
+            {
+              "path": "P00-vitest.log",
+              "sha256": "cc47e001c417c2f195992658b59a1f96db519295a460a8d943cb72b35a4b73bc"
+            }
+          ]
+        },
+        {
+          "id": "P00-03",
+          "status": "PASS",
+          "executed": 4,
+          "evidence": [
+            {
+              "path": "P00-vitest.json",
+              "sha256": "54208db3d80a5f09ff1f5451692e153d9b77bc61807126101368681a58594dc3"
+            },
+            {
+              "path": "P00-vitest.log",
+              "sha256": "cc47e001c417c2f195992658b59a1f96db519295a460a8d943cb72b35a4b73bc"
+            }
+          ]
+        },
+        {
+          "id": "P00-04",
+          "status": "PASS",
+          "executed": 9,
+          "evidence": [
+            {
+              "path": "P00-vitest.json",
+              "sha256": "54208db3d80a5f09ff1f5451692e153d9b77bc61807126101368681a58594dc3"
+            },
+            {
+              "path": "P00-vitest.log",
+              "sha256": "cc47e001c417c2f195992658b59a1f96db519295a460a8d943cb72b35a4b73bc"
+            }
+          ]
+        }
+      ],
+      "automaticTests": 30,
+      "startedAt": "2026-10-29T14:15:51.786Z",
+      "endedAt": "2026-10-29T14:15:52.822Z",
+      "exitCode": 0,
+      "signal": null,
+      "environment": {
+        "node": "24.19.0",
+        "os": "linux",
+        "arch": "x64"
+      }
+    },
+    {
+      "runId": "2026-10-29T14-15-51-767Z-55e91d69",
+      "candidate": "c8198c76d379db4cd1179d3a3f389c868dad39a91f3b6405a3b6ae7750355c04",
+      "stage": "P01",
+      "status": "PASS",
+      "cases": [
+        {
+          "id": "P01-01",
+          "status": "PASS",
+          "executed": 2,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "f7c07641557507f5bdc6b07e2a3cea286f62eb0657b2ec7f9d2a77fb8e6e8070"
+            },
+            {
+              "path": "P01-build-and-tests.log",
+              "sha256": "b696bd80767839b961e2aa3b24deb41e0f6f00c57f88d1eb16f8c70ef61952d4"
+            },
+            {
+              "path": "P01-browser/results.json",
+              "sha256": "228c691d69603c956244fb99db37aabc3a62eef8b60ec38bd40243bd5af3142f"
+            },
+            {
+              "path": "P01-browser.log",
+              "sha256": "28c98415649369f73b062eae7d44ae82739b7f2ff799c6e6d21e1f1066bf9462"
+            },
+            {
+              "path": "P01-browser/production-camera-a.png",
+              "sha256": "27e8291c2f32c62f3dbb8362c7c7f4d9d44f9209ff26c4c7f91514f87905e848"
+            },
+            {
+              "path": "P01-browser/production-camera-b.png",
+              "sha256": "a353242133c5d17db385267c3c97d88842e529fa40397d9b57b65fd3f10fb343"
+            },
+            {
+              "path": "P01-browser/development-camera-a.png",
+              "sha256": "27e8291c2f32c62f3dbb8362c7c7f4d9d44f9209ff26c4c7f91514f87905e848"
+            },
+            {
+              "path": "P01-browser/development-camera-b.png",
+              "sha256": "a353242133c5d17db385267c3c97d88842e529fa40397d9b57b65fd3f10fb343"
+            }
+          ]
+        },
+        {
+          "id": "P01-02",
+          "status": "PASS",
+          "executed": 4,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "f7c07641557507f5bdc6b07e2a3cea286f62eb0657b2ec7f9d2a77fb8e6e8070"
+            },
+            {
+              "path": "P01-build-and-tests.log",
+              "sha256": "b696bd80767839b961e2aa3b24deb41e0f6f00c57f88d1eb16f8c70ef61952d4"
+            },
+            {
+              "path": "P01-browser/results.json",
+              "sha256": "228c691d69603c956244fb99db37aabc3a62eef8b60ec38bd40243bd5af3142f"
+            },
+            {
+              "path": "P01-browser.log",
+              "sha256": "28c98415649369f73b062eae7d44ae82739b7f2ff799c6e6d21e1f1066bf9462"
+            }
+          ]
+        },
+        {
+          "id": "P01-03",
+          "status": "PASS",
+          "executed": 7,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "f7c07641557507f5bdc6b07e2a3cea286f62eb0657b2ec7f9d2a77fb8e6e8070"
+            },
+            {
+              "path": "P01-build-and-tests.log",
+              "sha256": "b696bd80767839b961e2aa3b24deb41e0f6f00c57f88d1eb16f8c70ef61952d4"
+            },
+            {
+              "path": "P01-browser/results.json",
+              "sha256": "228c691d69603c956244fb99db37aabc3a62eef8b60ec38bd40243bd5af3142f"
+            },
+            {
+              "path": "P01-browser.log",
+              "sha256": "28c98415649369f73b062eae7d44ae82739b7f2ff799c6e6d21e1f1066bf9462"
+            },
+            {
+              "path": "P01-clock-tests.json",
+              "sha256": "ecdf395576d0f5bac1c8c18bd16d9647ed5c18761c397a578f6526d63d1a853a"
+            },
+            {
+              "path": "P01-clock-tests.log",
+              "sha256": "66302d43c40c4429faba057dd37aa58a59e7dbdae2520f3db46676eb3b5ad0cf"
+            }
+          ]
+        },
+        {
+          "id": "P01-04",
+          "status": "PASS",
+          "executed": 6,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "f7c07641557507f5bdc6b07e2a3cea286f62eb0657b2ec7f9d2a77fb8e6e8070"
+            },
+            {
+              "path": "P01-build-and-tests.log",
+              "sha256": "b696bd80767839b961e2aa3b24deb41e0f6f00c57f88d1eb16f8c70ef61952d4"
+            },
+            {
+              "path": "P01-browser/results.json",
+              "sha256": "228c691d69603c956244fb99db37aabc3a62eef8b60ec38bd40243bd5af3142f"
+            },
+            {
+              "path": "P01-browser.log",
+              "sha256": "28c98415649369f73b062eae7d44ae82739b7f2ff799c6e6d21e1f1066bf9462"
+            }
+          ]
+        }
+      ],
+      "environment": {
+        "browser": "154.0.8037.57",
+        "display": "real Chromium tabs on cloud Xvfb",
+        "graphics": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "node": "24.19.0",
+        "os": "linux",
+        "arch": "x64"
+      },
+      "buildManifest": {
+        "path": "P01-production-manifest.json",
+        "sha256": "f7c07641557507f5bdc6b07e2a3cea286f62eb0657b2ec7f9d2a77fb8e6e8070"
+      },
+      "startedAt": "2026-10-29T14:15:52.823Z",
+      "endedAt": "2026-10-29T14:16:07.412Z",
+      "exitCode": 0,
+      "signal": null
+    },
+    {
+      "runId": "2026-10-29T14-15-51-767Z-55e91d69",
+      "candidate": "c8198c76d379db4cd1179d3a3f389c868dad39a91f3b6405a3b6ae7750355c04",
+      "stage": "P02",
+      "status": "PASS",
+      "cases": [
+        {
+          "id": "P02-01",
+          "status": "PASS",
+          "executed": 6,
+          "details": [
+            "Actual local PBR assets, authored cameras and sample/source dimensions loaded."
+          ],
+          "evidence": [
+            {
+              "path": "P02-browser.log",
+              "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+            },
+            {
+              "path": "P02-browser/results.json",
+              "sha256": "841baa01eb665ada4657ff4b0745ed2c4ca031c20f58134f93b5dea78507ee10"
+            },
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "f7c07641557507f5bdc6b07e2a3cea286f62eb0657b2ec7f9d2a77fb8e6e8070"
+            },
+            {
+              "path": "P02-browser/far.png",
+              "sha256": "abd21b8948109f0c6aca1b4cba16b0be0eb18b06aeea530d2fb556f5c75da78d"
+            },
+            {
+              "path": "P02-browser/stairs.png",
+              "sha256": "1cd77a5c02137eb0aab948ea7bc20d9a868b7443cbff2ebe5e32b5b322acba0d"
+            },
+            {
+              "path": "P02-browser/human.png",
+              "sha256": "8301b58014fe0afac6346469c4eee81a99bc7bc685a999ecd956d1b8e9349ca6"
+            },
+            {
+              "path": "P02-unit-tests.json",
+              "sha256": "9657263fd48107d883b1758526f7309c40b0c1bee91f75b73ddd28380c63af76"
+            },
+            {
+              "path": "P02-unit-tests.log",
+              "sha256": "2e3b56084f50187f991f77e1006e8a94bcfa723e197caa0bcee55b5d0f2937f6"
+            }
+          ]
+        },
+        {
+          "id": "P02-02",
+          "status": "PASS",
+          "executed": 13,
+          "details": [
+            "Repeated and rebuilt pixels are stable.",
+            "User acceptance applies: current visual inputs and three rendered images match the accepted sample."
+          ],
+          "evidence": [
+            {
+              "path": "P02-browser.log",
+              "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+            },
+            {
+              "path": "P02-browser/results.json",
+              "sha256": "841baa01eb665ada4657ff4b0745ed2c4ca031c20f58134f93b5dea78507ee10"
+            },
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "f7c07641557507f5bdc6b07e2a3cea286f62eb0657b2ec7f9d2a77fb8e6e8070"
+            },
+            {
+              "path": "P02-browser/far.png",
+              "sha256": "abd21b8948109f0c6aca1b4cba16b0be0eb18b06aeea530d2fb556f5c75da78d"
+            },
+            {
+              "path": "P02-browser/stairs.png",
+              "sha256": "1cd77a5c02137eb0aab948ea7bc20d9a868b7443cbff2ebe5e32b5b322acba0d"
+            },
+            {
+              "path": "P02-browser/human.png",
+              "sha256": "8301b58014fe0afac6346469c4eee81a99bc7bc685a999ecd956d1b8e9349ca6"
+            },
+            {
+              "path": "P02-review-request.json",
+              "sha256": "f9a97a1d66e45f05a1eccfbfebc069dec1d0e27935867a9e338cf3b411e4ca5c"
+            },
+            {
+              "path": "P02-visual-acceptance.json",
+              "sha256": "ad82519e0f248a413777cf08e47aa44f2606afb7b9386765dea2f923e5a9b6ee"
+            },
+            {
+              "path": "P02-unit-tests.json",
+              "sha256": "9657263fd48107d883b1758526f7309c40b0c1bee91f75b73ddd28380c63af76"
+            },
+            {
+              "path": "P02-unit-tests.log",
+              "sha256": "2e3b56084f50187f991f77e1006e8a94bcfa723e197caa0bcee55b5d0f2937f6"
+            },
+            {
+              "path": "P02-browser/far-repeat.png",
+              "sha256": "abd21b8948109f0c6aca1b4cba16b0be0eb18b06aeea530d2fb556f5c75da78d"
+            },
+            {
+              "path": "P02-browser/far-restarted.png",
+              "sha256": "abd21b8948109f0c6aca1b4cba16b0be0eb18b06aeea530d2fb556f5c75da78d"
+            }
+          ]
+        },
+        {
+          "id": "P02-03",
+          "status": "PASS",
+          "executed": 3,
+          "details": [
+            "Actual triangle ray intersections at changed cameras demonstrate different surfaces and world-space depths."
+          ],
+          "evidence": [
+            {
+              "path": "P02-browser.log",
+              "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+            },
+            {
+              "path": "P02-browser/results.json",
+              "sha256": "841baa01eb665ada4657ff4b0745ed2c4ca031c20f58134f93b5dea78507ee10"
+            },
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "f7c07641557507f5bdc6b07e2a3cea286f62eb0657b2ec7f9d2a77fb8e6e8070"
+            }
+          ]
+        },
+        {
+          "id": "P02-04",
+          "status": "PASS",
+          "executed": 4,
+          "details": [
+            "User explicitly confirmed this performance item passed and authorized continued development. No device measurements were supplied or invented. Cloud measurements remain labelled as software-only."
+          ],
+          "evidence": [
+            {
+              "path": "P02-browser.log",
+              "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+            },
+            {
+              "path": "P02-browser/results.json",
+              "sha256": "841baa01eb665ada4657ff4b0745ed2c4ca031c20f58134f93b5dea78507ee10"
+            },
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "f7c07641557507f5bdc6b07e2a3cea286f62eb0657b2ec7f9d2a77fb8e6e8070"
+            },
+            {
+              "path": "P02-cost-record.json",
+              "sha256": "afe8fb4d8f976d0063ab6dedd1ba908c20e5bd1fd8656da0a2581d257ee87c65"
+            },
+            {
+              "path": "P02-user-performance-acceptance.json",
+              "sha256": "de48a711a3611e25dd96bcf0f5cfa07a124bba6f85c6b86dba11447d71491d3b"
+            }
+          ]
+        }
+      ],
+      "environment": {
+        "browser": "154.0.8037.57",
+        "graphics": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "scope": "cloud-functional-only",
+        "node": "24.19.0",
+        "os": "linux",
+        "arch": "x64"
+      },
+      "startedAt": "2026-10-29T14:16:07.415Z",
+      "endedAt": "2026-10-29T14:17:34.749Z",
+      "exitCode": 0,
+      "signal": null
+    },
+    {
+      "runId": "2026-10-29T14-15-51-767Z-55e91d69",
+      "candidate": "c8198c76d379db4cd1179d3a3f389c868dad39a91f3b6405a3b6ae7750355c04",
+      "stage": "P03",
+      "status": "PASS",
+      "cases": [
+        {
+          "id": "P03-01",
+          "status": "PASS",
+          "executed": 8,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P03-physics-observations.json",
+              "sha256": "a63eda0b61d8b03ba6df058c13d4d7c2e7b74a98043b42b28dd53ffc186311ff"
+            },
+            {
+              "path": "P03-physics-tests.json",
+              "sha256": "0571c2745c143e79bd0ff744ac018d8275a154a1a72cbe0878fd637310618bde"
+            },
+            {
+              "path": "P03-physics-tests.log",
+              "sha256": "2be44b310080572e5427c88476ea5ca97ea26341e22496932a566dc6ec26b9ec"
+            },
+            {
+              "path": "P03-browser/results.json",
+              "sha256": "44c7747190ea48585698c6193a3c6b7735e2fc0473cf5541454dba7102a745a3"
+            },
+            {
+              "path": "P03-browser.log",
+              "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+            },
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "f7c07641557507f5bdc6b07e2a3cea286f62eb0657b2ec7f9d2a77fb8e6e8070"
+            },
+            {
+              "path": "P03-browser/terrain-real-input.png",
+              "sha256": "4d76caaa1e316c05c28b1f498b13c49b2102fe73c2b7197f8ffffa503cf0dc53"
+            }
+          ]
+        },
+        {
+          "id": "P03-02",
+          "status": "PASS",
+          "executed": 12,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P03-physics-observations.json",
+              "sha256": "a63eda0b61d8b03ba6df058c13d4d7c2e7b74a98043b42b28dd53ffc186311ff"
+            },
+            {
+              "path": "P03-physics-tests.json",
+              "sha256": "0571c2745c143e79bd0ff744ac018d8275a154a1a72cbe0878fd637310618bde"
+            },
+            {
+              "path": "P03-physics-tests.log",
+              "sha256": "2be44b310080572e5427c88476ea5ca97ea26341e22496932a566dc6ec26b9ec"
+            },
+            {
+              "path": "P03-browser/results.json",
+              "sha256": "44c7747190ea48585698c6193a3c6b7735e2fc0473cf5541454dba7102a745a3"
+            },
+            {
+              "path": "P03-browser.log",
+              "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+            },
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "f7c07641557507f5bdc6b07e2a3cea286f62eb0657b2ec7f9d2a77fb8e6e8070"
+            },
+            {
+              "path": "P03-browser/palace-ground-walking.png",
+              "sha256": "3d61d3104ae85c6a4fb636be0c98d0d2c65b51cabae15d69b5231263ae7a32db"
+            }
+          ]
+        },
+        {
+          "id": "P03-03",
+          "status": "PASS",
+          "executed": 1,
+          "details": [
+            "Real Rapier simulation replayed at 30/60/144 display cadences; endpoints within 0.01 m."
+          ],
+          "evidence": [
+            {
+              "path": "P03-physics-observations.json",
+              "sha256": "a63eda0b61d8b03ba6df058c13d4d7c2e7b74a98043b42b28dd53ffc186311ff"
+            },
+            {
+              "path": "P03-physics-tests.json",
+              "sha256": "0571c2745c143e79bd0ff744ac018d8275a154a1a72cbe0878fd637310618bde"
+            },
+            {
+              "path": "P03-physics-tests.log",
+              "sha256": "2be44b310080572e5427c88476ea5ca97ea26341e22496932a566dc6ec26b9ec"
+            },
+            {
+              "path": "P03-browser/results.json",
+              "sha256": "44c7747190ea48585698c6193a3c6b7735e2fc0473cf5541454dba7102a745a3"
+            },
+            {
+              "path": "P03-browser.log",
+              "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+            },
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "f7c07641557507f5bdc6b07e2a3cea286f62eb0657b2ec7f9d2a77fb8e6e8070"
+            }
+          ]
+        },
+        {
+          "id": "P03-04",
+          "status": "PASS",
+          "executed": 6,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P03-physics-observations.json",
+              "sha256": "a63eda0b61d8b03ba6df058c13d4d7c2e7b74a98043b42b28dd53ffc186311ff"
+            },
+            {
+              "path": "P03-physics-tests.json",
+              "sha256": "0571c2745c143e79bd0ff744ac018d8275a154a1a72cbe0878fd637310618bde"
+            },
+            {
+              "path": "P03-physics-tests.log",
+              "sha256": "2be44b310080572e5427c88476ea5ca97ea26341e22496932a566dc6ec26b9ec"
+            },
+            {
+              "path": "P03-browser/results.json",
+              "sha256": "44c7747190ea48585698c6193a3c6b7735e2fc0473cf5541454dba7102a745a3"
+            },
+            {
+              "path": "P03-browser.log",
+              "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+            },
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "f7c07641557507f5bdc6b07e2a3cea286f62eb0657b2ec7f9d2a77fb8e6e8070"
+            }
+          ]
+        }
+      ],
+      "environment": {
+        "browser": "154.0.8037.57",
+        "physics": "Rapier 0.21.0 WASM; kinematic capsule; fixed 60 Hz",
+        "node": "24.19.0",
+        "os": "linux",
+        "arch": "x64"
+      },
+      "startedAt": "2026-10-29T14:17:34.754Z",
+      "endedAt": "2026-10-29T14:18:27.651Z",
+      "exitCode": 0,
+      "signal": null
+    },
+    {
+      "runId": "2026-10-29T14-15-51-767Z-55e91d69",
+      "candidate": "c8198c76d379db4cd1179d3a3f389c868dad39a91f3b6405a3b6ae7750355c04",
+      "stage": "P04",
+      "status": "PASS",
+      "cases": [
+        {
+          "id": "P04-01",
+          "status": "PASS",
+          "executed": 14,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P04-selected-rules.json",
+              "sha256": "f5ca93c5eb083d02f616428bcd4c72fdf91d7f9e52764431307a91eb47752f3e"
+            },
+            {
+              "path": "P04-physics-observations.json",
+              "sha256": "33bac1ba87b4e92433ad79f4f56bc4f7c5b00e0fd26c451cf563df374d01cdb5"
+            },
+            {
+              "path": "P04-physics-tests.json",
+              "sha256": "d72413f9aa607785109da36545dea994591ab4253469665f07f35e7d52bd3c97"
+            },
+            {
+              "path": "P04-physics-tests.log",
+              "sha256": "1c4b5b3e032ff401589b0fd2024264b8bb6331a16bf487a4e4cf84cec4844e5f"
+            },
+            {
+              "path": "P04-browser/results.json",
+              "sha256": "81d32aa73640c70e0a9f228b06d42744887f337a07c7dbae0667de6ebd1b2f19"
+            },
+            {
+              "path": "P04-browser.log",
+              "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+            },
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "f7c07641557507f5bdc6b07e2a3cea286f62eb0657b2ec7f9d2a77fb8e6e8070"
+            },
+            {
+              "path": "P04-browser/flight-hover.png",
+              "sha256": "8cb639099cffc358215871de0aae642c36960e158fb4dcdf77a7762efb2ca34c"
+            }
+          ]
+        },
+        {
+          "id": "P04-02",
+          "status": "PASS",
+          "executed": 8,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P04-selected-rules.json",
+              "sha256": "f5ca93c5eb083d02f616428bcd4c72fdf91d7f9e52764431307a91eb47752f3e"
+            },
+            {
+              "path": "P04-physics-observations.json",
+              "sha256": "33bac1ba87b4e92433ad79f4f56bc4f7c5b00e0fd26c451cf563df374d01cdb5"
+            },
+            {
+              "path": "P04-physics-tests.json",
+              "sha256": "d72413f9aa607785109da36545dea994591ab4253469665f07f35e7d52bd3c97"
+            },
+            {
+              "path": "P04-physics-tests.log",
+              "sha256": "1c4b5b3e032ff401589b0fd2024264b8bb6331a16bf487a4e4cf84cec4844e5f"
+            },
+            {
+              "path": "P04-browser/results.json",
+              "sha256": "81d32aa73640c70e0a9f228b06d42744887f337a07c7dbae0667de6ebd1b2f19"
+            },
+            {
+              "path": "P04-browser.log",
+              "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+            },
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "f7c07641557507f5bdc6b07e2a3cea286f62eb0657b2ec7f9d2a77fb8e6e8070"
+            },
+            {
+              "path": "P04-browser/high-speed-wall.png",
+              "sha256": "082fd7fcfe5bb4456725a78db569ca856097f2b50f32df7ec50e8cd0353c3dde"
+            }
+          ]
+        },
+        {
+          "id": "P04-03",
+          "status": "PASS",
+          "executed": 5,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P04-selected-rules.json",
+              "sha256": "f5ca93c5eb083d02f616428bcd4c72fdf91d7f9e52764431307a91eb47752f3e"
+            },
+            {
+              "path": "P04-physics-observations.json",
+              "sha256": "33bac1ba87b4e92433ad79f4f56bc4f7c5b00e0fd26c451cf563df374d01cdb5"
+            },
+            {
+              "path": "P04-physics-tests.json",
+              "sha256": "d72413f9aa607785109da36545dea994591ab4253469665f07f35e7d52bd3c97"
+            },
+            {
+              "path": "P04-physics-tests.log",
+              "sha256": "1c4b5b3e032ff401589b0fd2024264b8bb6331a16bf487a4e4cf84cec4844e5f"
+            },
+            {
+              "path": "P04-browser/results.json",
+              "sha256": "81d32aa73640c70e0a9f228b06d42744887f337a07c7dbae0667de6ebd1b2f19"
+            },
+            {
+              "path": "P04-browser.log",
+              "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+            },
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "f7c07641557507f5bdc6b07e2a3cea286f62eb0657b2ec7f9d2a77fb8e6e8070"
+            }
+          ]
+        },
+        {
+          "id": "P04-04",
+          "status": "PASS",
+          "executed": 9,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P04-selected-rules.json",
+              "sha256": "f5ca93c5eb083d02f616428bcd4c72fdf91d7f9e52764431307a91eb47752f3e"
+            },
+            {
+              "path": "P04-physics-observations.json",
+              "sha256": "33bac1ba87b4e92433ad79f4f56bc4f7c5b00e0fd26c451cf563df374d01cdb5"
+            },
+            {
+              "path": "P04-physics-tests.json",
+              "sha256": "d72413f9aa607785109da36545dea994591ab4253469665f07f35e7d52bd3c97"
+            },
+            {
+              "path": "P04-physics-tests.log",
+              "sha256": "1c4b5b3e032ff401589b0fd2024264b8bb6331a16bf487a4e4cf84cec4844e5f"
+            },
+            {
+              "path": "P04-browser/results.json",
+              "sha256": "81d32aa73640c70e0a9f228b06d42744887f337a07c7dbae0667de6ebd1b2f19"
+            },
+            {
+              "path": "P04-browser.log",
+              "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+            },
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "f7c07641557507f5bdc6b07e2a3cea286f62eb0657b2ec7f9d2a77fb8e6e8070"
+            },
+            {
+              "path": "P04-browser/palace-flight.png",
+              "sha256": "b8fa5790c46997baef2d742ae752dba112eb58fa1db3aaf733edc1705a6ac43d"
+            }
+          ]
+        }
+      ],
+      "environment": {
+        "browser": "154.0.8037.57",
+        "physics": "Rapier 0.21.0 WASM; fixed 60 Hz; bounded swept substeps",
+        "scope": "cloud-functional-only; native Chromium tab visibility; not Windows performance evidence",
+        "node": "24.19.0",
+        "os": "linux",
+        "arch": "x64"
+      },
+      "startedAt": "2026-10-29T14:18:27.653Z",
+      "endedAt": "2026-10-29T14:19:59.032Z",
+      "exitCode": 0,
+      "signal": null
+    },
+    {
+      "runId": "2026-10-29T14-15-51-767Z-55e91d69",
+      "candidate": "c8198c76d379db4cd1179d3a3f389c868dad39a91f3b6405a3b6ae7750355c04",
+      "stage": "P05",
+      "status": "PASS",
+      "cases": [
+        {
+          "id": "P05-01",
+          "status": "PASS",
+          "executed": 5,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P05-selected-rules.json",
+              "sha256": "06979a4b6054edb9454a7fd291b64589eff3b92642340d499d06459e212dc0a2"
+            },
+            {
+              "path": "P05-asset-manifest.json",
+              "sha256": "35c4d16780ea5b9f9363da0132c44bfb1d750c817c288d95c2b0f34b2333fcae"
+            },
+            {
+              "path": "P05-model-camera-tests.json",
+              "sha256": "6abd69ff1c9ef746a4a276910d8b06315fc03626bfce8ca47c4805c603f132e8"
+            },
+            {
+              "path": "P05-model-camera-tests.log",
+              "sha256": "f1deae03ce75ec69337d25062150bbb3ca4c56dd2223e505ffe14ea65d512c05"
+            },
+            {
+              "path": "P05-model-camera-observations.json",
+              "sha256": "2663385f73f34d90f1c6df79438395a364d8dfb254c4f9d8130d4a878b392dc7"
+            },
+            {
+              "path": "P05-browser/results.json",
+              "sha256": "5967d36658899dae9eabcb2773755b4c5c386f5271a3482ebcff63a089ed7f4d"
+            },
+            {
+              "path": "P05-browser.log",
+              "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+            },
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "f7c07641557507f5bdc6b07e2a3cea286f62eb0657b2ec7f9d2a77fb8e6e8070"
+            },
+            {
+              "path": "P05-browser/avatar-third.png",
+              "sha256": "2eb61bdd5802dfa82fe7ac68002862939f5002af47ba94012da47f5c675cc15e"
+            },
+            {
+              "path": "P05-browser/avatar-first.png",
+              "sha256": "128b55851ffc5963fc52c58dc793390bf59511b2808c2ebd4e243f59e24348e7"
+            }
+          ]
+        },
+        {
+          "id": "P05-02",
+          "status": "PASS",
+          "executed": 8,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P05-selected-rules.json",
+              "sha256": "06979a4b6054edb9454a7fd291b64589eff3b92642340d499d06459e212dc0a2"
+            },
+            {
+              "path": "P05-asset-manifest.json",
+              "sha256": "35c4d16780ea5b9f9363da0132c44bfb1d750c817c288d95c2b0f34b2333fcae"
+            },
+            {
+              "path": "P05-model-camera-tests.json",
+              "sha256": "6abd69ff1c9ef746a4a276910d8b06315fc03626bfce8ca47c4805c603f132e8"
+            },
+            {
+              "path": "P05-model-camera-tests.log",
+              "sha256": "f1deae03ce75ec69337d25062150bbb3ca4c56dd2223e505ffe14ea65d512c05"
+            },
+            {
+              "path": "P05-model-camera-observations.json",
+              "sha256": "2663385f73f34d90f1c6df79438395a364d8dfb254c4f9d8130d4a878b392dc7"
+            },
+            {
+              "path": "P05-browser/results.json",
+              "sha256": "5967d36658899dae9eabcb2773755b4c5c386f5271a3482ebcff63a089ed7f4d"
+            },
+            {
+              "path": "P05-browser.log",
+              "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+            },
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "f7c07641557507f5bdc6b07e2a3cea286f62eb0657b2ec7f9d2a77fb8e6e8070"
+            },
+            {
+              "path": "P05-browser/camera-wall.png",
+              "sha256": "c415b04b1c005c0138030ea14e3e26cb13186606ed5079593a21a93cdd7bdc5f"
+            },
+            {
+              "path": "P05-browser/camera-eave.png",
+              "sha256": "c04b4da84c03dab33f90fadf2b91db6d085fded408547dca60569f9b98e90801"
+            }
+          ]
+        },
+        {
+          "id": "P05-03",
+          "status": "PASS",
+          "executed": 9,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P05-selected-rules.json",
+              "sha256": "06979a4b6054edb9454a7fd291b64589eff3b92642340d499d06459e212dc0a2"
+            },
+            {
+              "path": "P05-asset-manifest.json",
+              "sha256": "35c4d16780ea5b9f9363da0132c44bfb1d750c817c288d95c2b0f34b2333fcae"
+            },
+            {
+              "path": "P05-model-camera-tests.json",
+              "sha256": "6abd69ff1c9ef746a4a276910d8b06315fc03626bfce8ca47c4805c603f132e8"
+            },
+            {
+              "path": "P05-model-camera-tests.log",
+              "sha256": "f1deae03ce75ec69337d25062150bbb3ca4c56dd2223e505ffe14ea65d512c05"
+            },
+            {
+              "path": "P05-model-camera-observations.json",
+              "sha256": "2663385f73f34d90f1c6df79438395a364d8dfb254c4f9d8130d4a878b392dc7"
+            },
+            {
+              "path": "P05-browser/results.json",
+              "sha256": "5967d36658899dae9eabcb2773755b4c5c386f5271a3482ebcff63a089ed7f4d"
+            },
+            {
+              "path": "P05-browser.log",
+              "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+            },
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "f7c07641557507f5bdc6b07e2a3cea286f62eb0657b2ec7f9d2a77fb8e6e8070"
+            },
+            {
+              "path": "P05-browser/avatar-flight.png",
+              "sha256": "de8bc5d03de12082cafe8c958d9d8c508c10083cb54767bad49130f470015d56"
+            }
+          ]
+        },
+        {
+          "id": "P05-04",
+          "status": "PASS",
+          "executed": 18,
+          "details": [],
+          "evidence": [
+            {
+              "path": "P05-selected-rules.json",
+              "sha256": "06979a4b6054edb9454a7fd291b64589eff3b92642340d499d06459e212dc0a2"
+            },
+            {
+              "path": "P05-asset-manifest.json",
+              "sha256": "35c4d16780ea5b9f9363da0132c44bfb1d750c817c288d95c2b0f34b2333fcae"
+            },
+            {
+              "path": "P05-model-camera-tests.json",
+              "sha256": "6abd69ff1c9ef746a4a276910d8b06315fc03626bfce8ca47c4805c603f132e8"
+            },
+            {
+              "path": "P05-model-camera-tests.log",
+              "sha256": "f1deae03ce75ec69337d25062150bbb3ca4c56dd2223e505ffe14ea65d512c05"
+            },
+            {
+              "path": "P05-model-camera-observations.json",
+              "sha256": "2663385f73f34d90f1c6df79438395a364d8dfb254c4f9d8130d4a878b392dc7"
+            },
+            {
+              "path": "P05-browser/results.json",
+              "sha256": "5967d36658899dae9eabcb2773755b4c5c386f5271a3482ebcff63a089ed7f4d"
+            },
+            {
+              "path": "P05-browser.log",
+              "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+            },
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "f7c07641557507f5bdc6b07e2a3cea286f62eb0657b2ec7f9d2a77fb8e6e8070"
+            }
+          ]
+        }
+      ],
+      "environment": {
+        "browser": "154.0.8037.57",
+        "animation": "real imported GLB AnimationGroups; deterministic tick-sampled joint poses; no root motion",
+        "camera": "Rapier sphere sweeps; real keyboard, pointer, resize and native tab focus",
+        "scope": "cloud-functional-only; not Windows performance evidence",
+        "node": "24.19.0",
+        "os": "linux",
+        "arch": "x64"
+      },
+      "startedAt": "2026-10-29T14:19:59.034Z",
+      "endedAt": "2026-10-29T14:21:42.788Z",
+      "exitCode": 0,
+      "signal": null
+    },
+    {
+      "runId": "2026-10-29T14-15-51-767Z-55e91d69",
+      "candidate": "c8198c76d379db4cd1179d3a3f389c868dad39a91f3b6405a3b6ae7750355c04",
+      "stage": "P06",
+      "status": "PASS",
+      "cases": [
+        {
+          "id": "P06-01",
+          "status": "PASS",
+          "executed": 9,
+          "details": [
+            "Default production configuration, 10 m/s; real V-key first-person transit and third/first-person review views; one continuous player, no reload or state injection."
+          ],
+          "evidence": [
+            {
+              "path": "P06-physics-tests.json",
+              "sha256": "ce53bca5e119b62a94ff4706a730995dd9d01f0ae35229c2dafacc9ff4e9aaa1"
+            },
+            {
+              "path": "P06-physics-tests.log",
+              "sha256": "2574aed5c2c3e2c9339d79aaadf684da358e4f851ab1a186a07eed72f70bb2ba"
+            },
+            {
+              "path": "P06-physics-observations.json",
+              "sha256": "e1db35e060898b7eb4ddcb7cb26e4b9cc6e7cbdba3136181dc37a4f51bc935fe"
+            },
+            {
+              "path": "P06-browser/results.json",
+              "sha256": "4989c8415237559525ccbf003548680f80e1197e2bf3faf66f74a1cd8c608245"
+            },
+            {
+              "path": "P06-browser.log",
+              "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+            },
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "f7c07641557507f5bdc6b07e2a3cea286f62eb0657b2ec7f9d2a77fb8e6e8070"
+            },
+            {
+              "path": "P06-review-request.json",
+              "sha256": "5821e790ccd29d0bbf4d3153a110f49ac74a7208523eb068ab488e3648609af8"
+            },
+            {
+              "path": "P06-browser/01-jiangnan.png",
+              "sha256": "0a3a2ae90320d49963790453e8af845d6ae76588f3886a308787ceb2b7de1e45"
+            },
+            {
+              "path": "P06-browser/02-bridge.png",
+              "sha256": "0cb1b180cb67c8f207b15d63eaf2873955f480aa68fdffc25f01828585379d9a"
+            },
+            {
+              "path": "P06-browser/03-cloud-below-third.png",
+              "sha256": "4b19603b1a39209e824ee3fbb296e29b114851a95844a4764750cb2ac7304c83"
+            },
+            {
+              "path": "P06-browser/03-cloud-below-first.png",
+              "sha256": "32c8dbcd345c9ec95c7bd54e6964eb43ebb3e8f07395c8e0c312c0e985385781"
+            },
+            {
+              "path": "P06-browser/03-cloud-inside-third.png",
+              "sha256": "2fe705cd82f9ba5d1af8f0054a049992da0a727832ec15cb93c2c74e8a72f35b"
+            },
+            {
+              "path": "P06-browser/03-cloud-inside-first.png",
+              "sha256": "bd92c962212074c9b0f2b8aeae939d33ed6f5f0b281fec9821500ca54d562bd4"
+            },
+            {
+              "path": "P06-browser/03-cloud-above-third.png",
+              "sha256": "48e90d7051f8293a9d412b0b862c4573c6044aee5760e0b2b68d56f57dca86e4"
+            },
+            {
+              "path": "P06-browser/03-cloud-above-first.png",
+              "sha256": "838a51235dc4ad2159733bbf5515d9c5c1a95e191509da06cf575eaf0e116d16"
+            },
+            {
+              "path": "P06-browser/04-palace-entrance.png",
+              "sha256": "a2875561ebd18138983732a63eff88414691081f6290447c73316fc2db2ad34b"
+            },
+            {
+              "path": "P06-browser/05-interior.png",
+              "sha256": "7d71aed0ab433b812fb4c375d6f7c95c3afd6ae017964ca2baf8d257fad364e2"
+            },
+            {
+              "path": "P06-browser/06-roof.png",
+              "sha256": "716c42a94afedb6dff4328133117415f1480f21fe2be3b4e8b235760fc0bf289"
+            },
+            {
+              "path": "P06-browser/07-roof-first.png",
+              "sha256": "cfe7af202ad7b6b009bdab63b5fc5179bd81a11f847c16342826e8dbf0a5e513"
+            },
+            {
+              "path": "P06-browser/08-return-view.png",
+              "sha256": "b31b97f16e64938cb06f14bf22fe936a58fa4b6dc8dded41ac89426627bee23c"
+            }
+          ]
+        },
+        {
+          "id": "P06-02",
+          "status": "PASS",
+          "executed": 10,
+          "details": [
+            "Central indoor entry and offset exit, actual roof landing, stable support and takeoff; both entry lanes also run in the physics matrix."
+          ],
+          "evidence": [
+            {
+              "path": "P06-physics-tests.json",
+              "sha256": "ce53bca5e119b62a94ff4706a730995dd9d01f0ae35229c2dafacc9ff4e9aaa1"
+            },
+            {
+              "path": "P06-physics-tests.log",
+              "sha256": "2574aed5c2c3e2c9339d79aaadf684da358e4f851ab1a186a07eed72f70bb2ba"
+            },
+            {
+              "path": "P06-physics-observations.json",
+              "sha256": "e1db35e060898b7eb4ddcb7cb26e4b9cc6e7cbdba3136181dc37a4f51bc935fe"
+            },
+            {
+              "path": "P06-browser/results.json",
+              "sha256": "4989c8415237559525ccbf003548680f80e1197e2bf3faf66f74a1cd8c608245"
+            },
+            {
+              "path": "P06-browser.log",
+              "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+            },
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "f7c07641557507f5bdc6b07e2a3cea286f62eb0657b2ec7f9d2a77fb8e6e8070"
+            },
+            {
+              "path": "P06-review-request.json",
+              "sha256": "5821e790ccd29d0bbf4d3153a110f49ac74a7208523eb068ab488e3648609af8"
+            },
+            {
+              "path": "P06-browser/01-jiangnan.png",
+              "sha256": "0a3a2ae90320d49963790453e8af845d6ae76588f3886a308787ceb2b7de1e45"
+            },
+            {
+              "path": "P06-browser/02-bridge.png",
+              "sha256": "0cb1b180cb67c8f207b15d63eaf2873955f480aa68fdffc25f01828585379d9a"
+            },
+            {
+              "path": "P06-browser/03-cloud-below-third.png",
+              "sha256": "4b19603b1a39209e824ee3fbb296e29b114851a95844a4764750cb2ac7304c83"
+            },
+            {
+              "path": "P06-browser/03-cloud-below-first.png",
+              "sha256": "32c8dbcd345c9ec95c7bd54e6964eb43ebb3e8f07395c8e0c312c0e985385781"
+            },
+            {
+              "path": "P06-browser/03-cloud-inside-third.png",
+              "sha256": "2fe705cd82f9ba5d1af8f0054a049992da0a727832ec15cb93c2c74e8a72f35b"
+            },
+            {
+              "path": "P06-browser/03-cloud-inside-first.png",
+              "sha256": "bd92c962212074c9b0f2b8aeae939d33ed6f5f0b281fec9821500ca54d562bd4"
+            },
+            {
+              "path": "P06-browser/03-cloud-above-third.png",
+              "sha256": "48e90d7051f8293a9d412b0b862c4573c6044aee5760e0b2b68d56f57dca86e4"
+            },
+            {
+              "path": "P06-browser/03-cloud-above-first.png",
+              "sha256": "838a51235dc4ad2159733bbf5515d9c5c1a95e191509da06cf575eaf0e116d16"
+            },
+            {
+              "path": "P06-browser/04-palace-entrance.png",
+              "sha256": "a2875561ebd18138983732a63eff88414691081f6290447c73316fc2db2ad34b"
+            },
+            {
+              "path": "P06-browser/05-interior.png",
+              "sha256": "7d71aed0ab433b812fb4c375d6f7c95c3afd6ae017964ca2baf8d257fad364e2"
+            },
+            {
+              "path": "P06-browser/06-roof.png",
+              "sha256": "716c42a94afedb6dff4328133117415f1480f21fe2be3b4e8b235760fc0bf289"
+            },
+            {
+              "path": "P06-browser/07-roof-first.png",
+              "sha256": "cfe7af202ad7b6b009bdab63b5fc5179bd81a11f847c16342826e8dbf0a5e513"
+            },
+            {
+              "path": "P06-browser/08-return-view.png",
+              "sha256": "b31b97f16e64938cb06f14bf22fe936a58fa4b6dc8dded41ac89426627bee23c"
+            }
+          ]
+        },
+        {
+          "id": "P06-03",
+          "status": "PASS",
+          "executed": 8,
+          "details": [
+            "Below/inside/above cloud with both perspectives, actual rendered captures; user review remains separate."
+          ],
+          "evidence": [
+            {
+              "path": "P06-physics-tests.json",
+              "sha256": "ce53bca5e119b62a94ff4706a730995dd9d01f0ae35229c2dafacc9ff4e9aaa1"
+            },
+            {
+              "path": "P06-physics-tests.log",
+              "sha256": "2574aed5c2c3e2c9339d79aaadf684da358e4f851ab1a186a07eed72f70bb2ba"
+            },
+            {
+              "path": "P06-physics-observations.json",
+              "sha256": "e1db35e060898b7eb4ddcb7cb26e4b9cc6e7cbdba3136181dc37a4f51bc935fe"
+            },
+            {
+              "path": "P06-browser/results.json",
+              "sha256": "4989c8415237559525ccbf003548680f80e1197e2bf3faf66f74a1cd8c608245"
+            },
+            {
+              "path": "P06-browser.log",
+              "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+            },
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "f7c07641557507f5bdc6b07e2a3cea286f62eb0657b2ec7f9d2a77fb8e6e8070"
+            },
+            {
+              "path": "P06-review-request.json",
+              "sha256": "5821e790ccd29d0bbf4d3153a110f49ac74a7208523eb068ab488e3648609af8"
+            },
+            {
+              "path": "P06-browser/01-jiangnan.png",
+              "sha256": "0a3a2ae90320d49963790453e8af845d6ae76588f3886a308787ceb2b7de1e45"
+            },
+            {
+              "path": "P06-browser/02-bridge.png",
+              "sha256": "0cb1b180cb67c8f207b15d63eaf2873955f480aa68fdffc25f01828585379d9a"
+            },
+            {
+              "path": "P06-browser/03-cloud-below-third.png",
+              "sha256": "4b19603b1a39209e824ee3fbb296e29b114851a95844a4764750cb2ac7304c83"
+            },
+            {
+              "path": "P06-browser/03-cloud-below-first.png",
+              "sha256": "32c8dbcd345c9ec95c7bd54e6964eb43ebb3e8f07395c8e0c312c0e985385781"
+            },
+            {
+              "path": "P06-browser/03-cloud-inside-third.png",
+              "sha256": "2fe705cd82f9ba5d1af8f0054a049992da0a727832ec15cb93c2c74e8a72f35b"
+            },
+            {
+              "path": "P06-browser/03-cloud-inside-first.png",
+              "sha256": "bd92c962212074c9b0f2b8aeae939d33ed6f5f0b281fec9821500ca54d562bd4"
+            },
+            {
+              "path": "P06-browser/03-cloud-above-third.png",
+              "sha256": "48e90d7051f8293a9d412b0b862c4573c6044aee5760e0b2b68d56f57dca86e4"
+            },
+            {
+              "path": "P06-browser/03-cloud-above-first.png",
+              "sha256": "838a51235dc4ad2159733bbf5515d9c5c1a95e191509da06cf575eaf0e116d16"
+            },
+            {
+              "path": "P06-browser/04-palace-entrance.png",
+              "sha256": "a2875561ebd18138983732a63eff88414691081f6290447c73316fc2db2ad34b"
+            },
+            {
+              "path": "P06-browser/05-interior.png",
+              "sha256": "7d71aed0ab433b812fb4c375d6f7c95c3afd6ae017964ca2baf8d257fad364e2"
+            },
+            {
+              "path": "P06-browser/06-roof.png",
+              "sha256": "716c42a94afedb6dff4328133117415f1480f21fe2be3b4e8b235760fc0bf289"
+            },
+            {
+              "path": "P06-browser/07-roof-first.png",
+              "sha256": "cfe7af202ad7b6b009bdab63b5fc5179bd81a11f847c16342826e8dbf0a5e513"
+            },
+            {
+              "path": "P06-browser/08-return-view.png",
+              "sha256": "b31b97f16e64938cb06f14bf22fe936a58fa4b6dc8dded41ac89426627bee23c"
+            }
+          ]
+        },
+        {
+          "id": "P06-04",
+          "status": "PASS",
+          "executed": 4,
+          "details": [
+            "User explicitly directed continued development on preserved P06 artwork. Continuation authorization supersedes the stop; independent artistic acceptance and P15 hardware measurements remain outstanding."
+          ],
+          "evidence": [
+            {
+              "path": "P06-physics-tests.json",
+              "sha256": "ce53bca5e119b62a94ff4706a730995dd9d01f0ae35229c2dafacc9ff4e9aaa1"
+            },
+            {
+              "path": "P06-physics-tests.log",
+              "sha256": "2574aed5c2c3e2c9339d79aaadf684da358e4f851ab1a186a07eed72f70bb2ba"
+            },
+            {
+              "path": "P06-physics-observations.json",
+              "sha256": "e1db35e060898b7eb4ddcb7cb26e4b9cc6e7cbdba3136181dc37a4f51bc935fe"
+            },
+            {
+              "path": "P06-browser/results.json",
+              "sha256": "4989c8415237559525ccbf003548680f80e1197e2bf3faf66f74a1cd8c608245"
+            },
+            {
+              "path": "P06-browser.log",
+              "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+            },
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "f7c07641557507f5bdc6b07e2a3cea286f62eb0657b2ec7f9d2a77fb8e6e8070"
+            },
+            {
+              "path": "P06-review-request.json",
+              "sha256": "5821e790ccd29d0bbf4d3153a110f49ac74a7208523eb068ab488e3648609af8"
+            },
+            {
+              "path": "P06-user-review.json",
+              "sha256": "d4c52191d5cc79eba0349d5eb71de133cac143396d00132d6d8b2264e664ab28"
+            }
+          ]
+        }
+      ],
+      "environment": {
+        "browser": "154.0.8037.57",
+        "functionalViewport": {
+          "width": 640,
+          "height": 480
+        },
+        "captureViewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "scope": "actual default production journey plus physics matrix; cloud functional checks; user artistic acceptance separate",
+        "executionBudgetMs": 2400000,
+        "browserBudgetMs": 2280000,
+        "node": "24.19.0",
+        "os": "linux",
+        "arch": "x64"
+      },
+      "startedAt": "2026-10-29T14:21:42.791Z",
+      "endedAt": "2026-10-29T14:33:06.038Z",
+      "exitCode": 0,
+      "signal": null
+    },
+    {
+      "runId": "2026-10-29T14-15-51-767Z-55e91d69",
+      "candidate": "c8198c76d379db4cd1179d3a3f389c868dad39a91f3b6405a3b6ae7750355c04",
+      "stage": "P07",
+      "status": "PASS",
+      "cases": [
+        {
+          "id": "P07-01",
+          "status": "PASS",
+          "executed": 22,
+          "details": [
+            "Registry integrity/build contracts plus exact legacy/managed PNG equality at bank and palace, identical authored collider set."
+          ],
+          "evidence": [
+            {
+              "path": "P07-contracts.json",
+              "sha256": "74903173ed73e250470552d7dc40a89a452404149f6857376f43ab73b535f6f7"
+            },
+            {
+              "path": "P07-asset-tests.json",
+              "sha256": "0b10aae4e71f6ea3d7a6dab770da12cf57911714d1387d5132384d3b5e4b212e"
+            },
+            {
+              "path": "P07-asset-tests.log",
+              "sha256": "7519f2e8ef9d963eb15351a099b341114a75e10a1ca68032c40f58d94aa52b9d"
+            },
+            {
+              "path": "P07-browser/results.json",
+              "sha256": "86bdf1d13643fc5d3f4fea6c93344f1c363861155a7e4f471ee3bef5b5867413"
+            },
+            {
+              "path": "P07-browser.log",
+              "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+            },
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "f7c07641557507f5bdc6b07e2a3cea286f62eb0657b2ec7f9d2a77fb8e6e8070"
+            },
+            {
+              "path": "P07-browser/shared-b-before.png",
+              "sha256": "2e76eba93ec5b1bc65bf16172226d204dedb35eb379b640629c026923bb33013"
+            },
+            {
+              "path": "P07-browser/shared-b-after.png",
+              "sha256": "2e76eba93ec5b1bc65bf16172226d204dedb35eb379b640629c026923bb33013"
+            },
+            {
+              "path": "P07-browser/bank-legacy.png",
+              "sha256": "52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566"
+            },
+            {
+              "path": "P07-browser/bank-managed.png",
+              "sha256": "52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566"
+            },
+            {
+              "path": "P07-browser/palace-legacy.png",
+              "sha256": "03553f63dbf7ad992c8952ed249da04236b3fa2fa76f8fec190b8dc1a25b4a0a"
+            },
+            {
+              "path": "P07-browser/palace-managed.png",
+              "sha256": "03553f63dbf7ad992c8952ed249da04236b3fa2fa76f8fec190b8dc1a25b4a0a"
+            }
+          ]
+        },
+        {
+          "id": "P07-02",
+          "status": "PASS",
+          "executed": 15,
+          "details": [
+            "Real WebGL shared RawTexture, identical surviving-zone PNGs and ten complete load/release cycles return to baseline."
+          ],
+          "evidence": [
+            {
+              "path": "P07-contracts.json",
+              "sha256": "74903173ed73e250470552d7dc40a89a452404149f6857376f43ab73b535f6f7"
+            },
+            {
+              "path": "P07-asset-tests.json",
+              "sha256": "0b10aae4e71f6ea3d7a6dab770da12cf57911714d1387d5132384d3b5e4b212e"
+            },
+            {
+              "path": "P07-asset-tests.log",
+              "sha256": "7519f2e8ef9d963eb15351a099b341114a75e10a1ca68032c40f58d94aa52b9d"
+            },
+            {
+              "path": "P07-browser/results.json",
+              "sha256": "86bdf1d13643fc5d3f4fea6c93344f1c363861155a7e4f471ee3bef5b5867413"
+            },
+            {
+              "path": "P07-browser.log",
+              "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+            },
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "f7c07641557507f5bdc6b07e2a3cea286f62eb0657b2ec7f9d2a77fb8e6e8070"
+            },
+            {
+              "path": "P07-browser/shared-b-before.png",
+              "sha256": "2e76eba93ec5b1bc65bf16172226d204dedb35eb379b640629c026923bb33013"
+            },
+            {
+              "path": "P07-browser/shared-b-after.png",
+              "sha256": "2e76eba93ec5b1bc65bf16172226d204dedb35eb379b640629c026923bb33013"
+            },
+            {
+              "path": "P07-browser/bank-legacy.png",
+              "sha256": "52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566"
+            },
+            {
+              "path": "P07-browser/bank-managed.png",
+              "sha256": "52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566"
+            },
+            {
+              "path": "P07-browser/palace-legacy.png",
+              "sha256": "03553f63dbf7ad992c8952ed249da04236b3fa2fa76f8fec190b8dc1a25b4a0a"
+            },
+            {
+              "path": "P07-browser/palace-managed.png",
+              "sha256": "03553f63dbf7ad992c8952ed249da04236b3fa2fa76f8fec190b8dc1a25b4a0a"
+            }
+          ]
+        },
+        {
+          "id": "P07-03",
+          "status": "PASS",
+          "executed": 8,
+          "details": [
+            "Cancelled decode finishes after a newer generation: old actual GPU texture disposed, current zone and texture preserved."
+          ],
+          "evidence": [
+            {
+              "path": "P07-contracts.json",
+              "sha256": "74903173ed73e250470552d7dc40a89a452404149f6857376f43ab73b535f6f7"
+            },
+            {
+              "path": "P07-asset-tests.json",
+              "sha256": "0b10aae4e71f6ea3d7a6dab770da12cf57911714d1387d5132384d3b5e4b212e"
+            },
+            {
+              "path": "P07-asset-tests.log",
+              "sha256": "7519f2e8ef9d963eb15351a099b341114a75e10a1ca68032c40f58d94aa52b9d"
+            },
+            {
+              "path": "P07-browser/results.json",
+              "sha256": "86bdf1d13643fc5d3f4fea6c93344f1c363861155a7e4f471ee3bef5b5867413"
+            },
+            {
+              "path": "P07-browser.log",
+              "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+            },
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "f7c07641557507f5bdc6b07e2a3cea286f62eb0657b2ec7f9d2a77fb8e6e8070"
+            },
+            {
+              "path": "P07-browser/shared-b-before.png",
+              "sha256": "2e76eba93ec5b1bc65bf16172226d204dedb35eb379b640629c026923bb33013"
+            },
+            {
+              "path": "P07-browser/shared-b-after.png",
+              "sha256": "2e76eba93ec5b1bc65bf16172226d204dedb35eb379b640629c026923bb33013"
+            },
+            {
+              "path": "P07-browser/bank-legacy.png",
+              "sha256": "52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566"
+            },
+            {
+              "path": "P07-browser/bank-managed.png",
+              "sha256": "52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566"
+            },
+            {
+              "path": "P07-browser/palace-legacy.png",
+              "sha256": "03553f63dbf7ad992c8952ed249da04236b3fa2fa76f8fec190b8dc1a25b4a0a"
+            },
+            {
+              "path": "P07-browser/palace-managed.png",
+              "sha256": "03553f63dbf7ad992c8952ed249da04236b3fa2fa76f8fec190b8dc1a25b4a0a"
+            }
+          ]
+        },
+        {
+          "id": "P07-04",
+          "status": "PASS",
+          "executed": 11,
+          "details": [
+            "HTTP 404 and hash corruption report actionable errors, no hidden retry; explicit retry/restart recovers including actual default P06 world."
+          ],
+          "evidence": [
+            {
+              "path": "P07-contracts.json",
+              "sha256": "74903173ed73e250470552d7dc40a89a452404149f6857376f43ab73b535f6f7"
+            },
+            {
+              "path": "P07-asset-tests.json",
+              "sha256": "0b10aae4e71f6ea3d7a6dab770da12cf57911714d1387d5132384d3b5e4b212e"
+            },
+            {
+              "path": "P07-asset-tests.log",
+              "sha256": "7519f2e8ef9d963eb15351a099b341114a75e10a1ca68032c40f58d94aa52b9d"
+            },
+            {
+              "path": "P07-browser/results.json",
+              "sha256": "86bdf1d13643fc5d3f4fea6c93344f1c363861155a7e4f471ee3bef5b5867413"
+            },
+            {
+              "path": "P07-browser.log",
+              "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+            },
+            {
+              "path": "P01-production-manifest.json",
+              "sha256": "f7c07641557507f5bdc6b07e2a3cea286f62eb0657b2ec7f9d2a77fb8e6e8070"
+            },
+            {
+              "path": "P07-browser/shared-b-before.png",
+              "sha256": "2e76eba93ec5b1bc65bf16172226d204dedb35eb379b640629c026923bb33013"
+            },
+            {
+              "path": "P07-browser/shared-b-after.png",
+              "sha256": "2e76eba93ec5b1bc65bf16172226d204dedb35eb379b640629c026923bb33013"
+            },
+            {
+              "path": "P07-browser/bank-legacy.png",
+              "sha256": "52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566"
+            },
+            {
+              "path": "P07-browser/bank-managed.png",
+              "sha256": "52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566"
+            },
+            {
+              "path": "P07-browser/palace-legacy.png",
+              "sha256": "03553f63dbf7ad992c8952ed249da04236b3fa2fa76f8fec190b8dc1a25b4a0a"
+            },
+            {
+              "path": "P07-browser/palace-managed.png",
+              "sha256": "03553f63dbf7ad992c8952ed249da04236b3fa2fa76f8fec190b8dc1a25b4a0a"
+            }
+          ]
+        }
+      ],
+      "environment": {
+        "browser": "154.0.8037.57",
+        "scope": "Real WebGL ownership, late decodes, local HTTP errors, migration pixel comparison and ten P06 world lifetimes; no streaming or target-device performance claim",
+        "executionBudgetMs": 1800000,
+        "node": "24.19.0",
+        "os": "linux",
+        "arch": "x64"
+      },
+      "startedAt": "2026-10-29T14:33:06.054Z",
+      "endedAt": "2026-10-29T14:34:38.300Z",
+      "exitCode": 0,
+      "signal": null
+    },
+    {
+      "runId": "2026-10-29T14-15-51-767Z-55e91d69",
+      "candidate": "c8198c76d379db4cd1179d3a3f389c868dad39a91f3b6405a3b6ae7750355c04",
+      "stage": "P08",
+      "status": "PASS",
+      "cases": [
+        {
+          "id": "P08-01",
+          "status": "PASS",
+          "executed": 7,
+          "details": [
+            "Actual streamed Rapier world and resident authored visuals; exact bank/palace legacy-versus-streamed PNG equality. Full default journey also freshly executed in P06.",
+            "Boundary behavior is a reversible engineering default under the P08 development instruction; user preference is not confirmed."
+          ],
+          "evidence": [
+            {
+              "path": "P08-contracts.json",
+              "sha256": "260d34b4d7b330cd5a8e1d211f37ac126b472b004fd730ccb4251bc73aea692a"
+            },
+            {
+              "path": "P08-tests.json",
+              "sha256": "387c4883bd21788b86023aa3e9d3b1a0713a99d5bff5d3d018395faa095522f5"
+            },
+            {
+              "path": "P08-tests.log",
+              "sha256": "3c47d5ae1458963da7b7a3d3ce658786cb5d46d6c34cde3321c574d2c3393caa"
+            },
+            {
+              "path": "P08-physics-observations.json",
+              "sha256": "f6275c76fe2d298ea0e91af3d83e59e30face24b531e7731dfc0c1fc7db364f2"
+            },
+            {
+              "path": "P08-browser/results.json",
+              "sha256": "c759536fc11e5ad6be639d15066d04c94c26f426a4eb2f5fb2070481c3a5f883"
+            },
+            {
+              "path": "P08-browser.log",
+              "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+            },
+            {
+              "path": "P08-rules.json",
+              "sha256": "590a904668b6335944a5ceb07e8fed53725bf58696591ce3e529a562e1d5370f"
+            },
+            {
+              "path": "P08-browser/bank-false.png",
+              "sha256": "52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566"
+            },
+            {
+              "path": "P08-browser/bank-true.png",
+              "sha256": "52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566"
+            },
+            {
+              "path": "P08-browser/palace-false.png",
+              "sha256": "03553f63dbf7ad992c8952ed249da04236b3fa2fa76f8fec190b8dc1a25b4a0a"
+            },
+            {
+              "path": "P08-browser/palace-true.png",
+              "sha256": "03553f63dbf7ad992c8952ed249da04236b3fa2fa76f8fec190b8dc1a25b4a0a"
+            },
+            {
+              "path": "P08-browser/boundary-error.png",
+              "sha256": "ffae088dfc63b24b49a438462a17dae71bd50cada4ecb516397d268616a1db50"
+            }
+          ]
+        },
+        {
+          "id": "P08-02",
+          "status": "PASS",
+          "executed": 6,
+          "details": [
+            "Real HTTP 503 blocks the capsule before boundary, keeps floor support, reports error, no background retries; actual retry button restores traversal.",
+            "Boundary behavior is a reversible engineering default under the P08 development instruction; user preference is not confirmed."
+          ],
+          "evidence": [
+            {
+              "path": "P08-contracts.json",
+              "sha256": "260d34b4d7b330cd5a8e1d211f37ac126b472b004fd730ccb4251bc73aea692a"
+            },
+            {
+              "path": "P08-tests.json",
+              "sha256": "387c4883bd21788b86023aa3e9d3b1a0713a99d5bff5d3d018395faa095522f5"
+            },
+            {
+              "path": "P08-tests.log",
+              "sha256": "3c47d5ae1458963da7b7a3d3ce658786cb5d46d6c34cde3321c574d2c3393caa"
+            },
+            {
+              "path": "P08-physics-observations.json",
+              "sha256": "f6275c76fe2d298ea0e91af3d83e59e30face24b531e7731dfc0c1fc7db364f2"
+            },
+            {
+              "path": "P08-browser/results.json",
+              "sha256": "c759536fc11e5ad6be639d15066d04c94c26f426a4eb2f5fb2070481c3a5f883"
+            },
+            {
+              "path": "P08-browser.log",
+              "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+            },
+            {
+              "path": "P08-rules.json",
+              "sha256": "590a904668b6335944a5ceb07e8fed53725bf58696591ce3e529a562e1d5370f"
+            },
+            {
+              "path": "P08-browser/bank-false.png",
+              "sha256": "52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566"
+            },
+            {
+              "path": "P08-browser/bank-true.png",
+              "sha256": "52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566"
+            },
+            {
+              "path": "P08-browser/palace-false.png",
+              "sha256": "03553f63dbf7ad992c8952ed249da04236b3fa2fa76f8fec190b8dc1a25b4a0a"
+            },
+            {
+              "path": "P08-browser/palace-true.png",
+              "sha256": "03553f63dbf7ad992c8952ed249da04236b3fa2fa76f8fec190b8dc1a25b4a0a"
+            },
+            {
+              "path": "P08-browser/boundary-error.png",
+              "sha256": "ffae088dfc63b24b49a438462a17dae71bd50cada4ecb516397d268616a1db50"
+            }
+          ]
+        },
+        {
+          "id": "P08-03",
+          "status": "PASS",
+          "executed": 5,
+          "details": [
+            "Real keyboard flight at 60 m/s crosses a vertical boundary then reverses across a horizontal boundary; physics remains supported/loaded, no recovery. Deferred stale-generation proof also executed in units.",
+            "Boundary behavior is a reversible engineering default under the P08 development instruction; user preference is not confirmed."
+          ],
+          "evidence": [
+            {
+              "path": "P08-contracts.json",
+              "sha256": "260d34b4d7b330cd5a8e1d211f37ac126b472b004fd730ccb4251bc73aea692a"
+            },
+            {
+              "path": "P08-tests.json",
+              "sha256": "387c4883bd21788b86023aa3e9d3b1a0713a99d5bff5d3d018395faa095522f5"
+            },
+            {
+              "path": "P08-tests.log",
+              "sha256": "3c47d5ae1458963da7b7a3d3ce658786cb5d46d6c34cde3321c574d2c3393caa"
+            },
+            {
+              "path": "P08-physics-observations.json",
+              "sha256": "f6275c76fe2d298ea0e91af3d83e59e30face24b531e7731dfc0c1fc7db364f2"
+            },
+            {
+              "path": "P08-browser/results.json",
+              "sha256": "c759536fc11e5ad6be639d15066d04c94c26f426a4eb2f5fb2070481c3a5f883"
+            },
+            {
+              "path": "P08-browser.log",
+              "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+            },
+            {
+              "path": "P08-rules.json",
+              "sha256": "590a904668b6335944a5ceb07e8fed53725bf58696591ce3e529a562e1d5370f"
+            },
+            {
+              "path": "P08-browser/bank-false.png",
+              "sha256": "52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566"
+            },
+            {
+              "path": "P08-browser/bank-true.png",
+              "sha256": "52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566"
+            },
+            {
+              "path": "P08-browser/palace-false.png",
+              "sha256": "03553f63dbf7ad992c8952ed249da04236b3fa2fa76f8fec190b8dc1a25b4a0a"
+            },
+            {
+              "path": "P08-browser/palace-true.png",
+              "sha256": "03553f63dbf7ad992c8952ed249da04236b3fa2fa76f8fec190b8dc1a25b4a0a"
+            },
+            {
+              "path": "P08-browser/boundary-error.png",
+              "sha256": "ffae088dfc63b24b49a438462a17dae71bd50cada4ecb516397d268616a1db50"
+            }
+          ]
+        },
+        {
+          "id": "P08-04",
+          "status": "PASS",
+          "executed": 12,
+          "details": [
+            "Ten actual keyboard round trips return to the same working set; stopping releases all zone, physical and model resources.",
+            "Boundary behavior is a reversible engineering default under the P08 development instruction; user preference is not confirmed."
+          ],
+          "evidence": [
+            {
+              "path": "P08-contracts.json",
+              "sha256": "260d34b4d7b330cd5a8e1d211f37ac126b472b004fd730ccb4251bc73aea692a"
+            },
+            {
+              "path": "P08-tests.json",
+              "sha256": "387c4883bd21788b86023aa3e9d3b1a0713a99d5bff5d3d018395faa095522f5"
+            },
+            {
+              "path": "P08-tests.log",
+              "sha256": "3c47d5ae1458963da7b7a3d3ce658786cb5d46d6c34cde3321c574d2c3393caa"
+            },
+            {
+              "path": "P08-physics-observations.json",
+              "sha256": "f6275c76fe2d298ea0e91af3d83e59e30face24b531e7731dfc0c1fc7db364f2"
+            },
+            {
+              "path": "P08-browser/results.json",
+              "sha256": "c759536fc11e5ad6be639d15066d04c94c26f426a4eb2f5fb2070481c3a5f883"
+            },
+            {
+              "path": "P08-browser.log",
+              "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+            },
+            {
+              "path": "P08-rules.json",
+              "sha256": "590a904668b6335944a5ceb07e8fed53725bf58696591ce3e529a562e1d5370f"
+            },
+            {
+              "path": "P08-browser/bank-false.png",
+              "sha256": "52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566"
+            },
+            {
+              "path": "P08-browser/bank-true.png",
+              "sha256": "52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566"
+            },
+            {
+              "path": "P08-browser/palace-false.png",
+              "sha256": "03553f63dbf7ad992c8952ed249da04236b3fa2fa76f8fec190b8dc1a25b4a0a"
+            },
+            {
+              "path": "P08-browser/palace-true.png",
+              "sha256": "03553f63dbf7ad992c8952ed249da04236b3fa2fa76f8fec190b8dc1a25b4a0a"
+            },
+            {
+              "path": "P08-browser/boundary-error.png",
+              "sha256": "ffae088dfc63b24b49a438462a17dae71bd50cada4ecb516397d268616a1db50"
+            }
+          ]
+        }
+      ],
+      "environment": {
+        "browser": "154.0.8037.57",
+        "scope": "Actual streamed collision world; authored visual sample intentionally resident; boundary wait uses a documented reversible engineering default, not confirmed user preference; not Windows performance evidence",
+        "node": "24.19.0",
+        "os": "linux",
+        "arch": "x64"
+      },
+      "startedAt": "2026-10-29T14:34:38.304Z",
+      "endedAt": "2026-10-29T14:37:08.410Z",
+      "exitCode": 0,
+      "signal": null
+    },
+    {
+      "runId": "2026-10-29T14-15-51-767Z-55e91d69",
+      "candidate": "c8198c76d379db4cd1179d3a3f389c868dad39a91f3b6405a3b6ae7750355c04",
+      "stage": "P09",
+      "status": "BLOCKED",
+      "packageManifest": "P09-package.json",
+      "cases": [
+        {
+          "id": "P09-01",
+          "status": "PASS",
+          "executed": 2,
+          "details": [
+            "Single IIFE, embedded WASM/config/model/registry and 66 assets; no runtime external requests.",
+            "file:// blocked by managed Chromium URL policy; equivalent copied bytes exercised via allowed loopback HTTP only. Direct-open offline acceptance outstanding."
+          ],
+          "evidence": [
+            {
+              "path": "P09-tests.json",
+              "sha256": "03644e9141302c84130e09da7bc5285e4a71a9825868d18efdb6227548bbd7de"
+            },
+            {
+              "path": "P09-tests.log",
+              "sha256": "b6e8cc5fc1e4fcca6ed511afde956624c1e36c71efe3ceef3ae5b51e3e957a5d"
+            },
+            {
+              "path": "P09-package.json",
+              "sha256": "7264eb238518868931313ad1ace4d2b724fb1df437794b26f5f0dde001fa8739"
+            },
+            {
+              "path": "P09-package/manifest.json",
+              "sha256": "e640e6f0d6d959e8b19e92301ccb0dc2f88f65fd43d9d674453111105f6db8c1"
+            },
+            {
+              "path": "P09-package/天宫-A.html",
+              "sha256": "9d862ce52e0f5711ca0b7e988b76c0fb7dd488a257b6c240f31f094a2ac48d87"
+            },
+            {
+              "path": "P09-journey/results.json",
+              "sha256": "6addaca7a1e26e676d9c45e923e678b2957ef9627d0a50a6f36a60ea67a011fc"
+            },
+            {
+              "path": "P09-journey.log",
+              "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+            },
+            {
+              "path": "P09-copies/copies.json",
+              "sha256": "da30f20f3f7c256a784fcae023f06cad69774dc9580469b347e95693beca9487"
+            },
+            {
+              "path": "P09-journey/01-jiangnan.png",
+              "sha256": "efaf8fd9357a123e0fe96d6e738eb007d9852fe182d44af029c298b2f0376b59"
+            },
+            {
+              "path": "P09-journey/02-bridge.png",
+              "sha256": "71b0737a88f3fcec11a8987b09b0328a4fc7a051acc83ea79e2604b9025e9cb8"
+            },
+            {
+              "path": "P09-journey/03-cloud-below-third.png",
+              "sha256": "08f352d095975918b11a74fcf1fc5356841a9bc763b4d2f0eb6cb28011f89a62"
+            },
+            {
+              "path": "P09-journey/03-cloud-below-first.png",
+              "sha256": "78167b0b7b9026ec91c04c79d8676f0e5e1394ed90141cd1aefc38df80784e6a"
+            },
+            {
+              "path": "P09-journey/03-cloud-inside-third.png",
+              "sha256": "cb757d3222dea75f7a01ff4c48826018b7263d8300c69c8044d7bc5c68c5625d"
+            },
+            {
+              "path": "P09-journey/03-cloud-inside-first.png",
+              "sha256": "2a34f4430facd55f3d894f152c28a0b4c62466ed1bd6137b2780d58cacd36548"
+            },
+            {
+              "path": "P09-journey/03-cloud-above-third.png",
+              "sha256": "6441139f6a3647f4ded0b3e381809ca7cc959e27b32d8a8194a7d761b9138a11"
+            },
+            {
+              "path": "P09-journey/03-cloud-above-first.png",
+              "sha256": "cae525dc16a555e3661d3d005ebbf1bfd391be657fe3c722474c2191f8c95950"
+            },
+            {
+              "path": "P09-journey/04-palace-entrance.png",
+              "sha256": "c57876f27365efafcf904bc0ea069017d644ba2b151532040bf7922a00c1c2c4"
+            },
+            {
+              "path": "P09-journey/05-interior.png",
+              "sha256": "9aff05f332c618fa7e92f95f77294aa0af611a0bcc3f57b105195126e6646f4d"
+            },
+            {
+              "path": "P09-journey/06-roof.png",
+              "sha256": "c81134eef8bee4452e1360383a049b7ad7ca8ebac931031caf8c323d00b74c57"
+            },
+            {
+              "path": "P09-journey/07-roof-first.png",
+              "sha256": "e59d3b8daa1bf3353ed0f0fe29e5327c3301cc274dc1784f73b32d8503c8885d"
+            },
+            {
+              "path": "P09-journey/08-return-view.png",
+              "sha256": "1737cf07a00fb87c8ff50baf9028414950a5b516e0ae0000fb5b7b031f7a5b6e"
+            }
+          ]
+        },
+        {
+          "id": "P09-02",
+          "status": "BLOCKED",
+          "executed": 2,
+          "details": [
+            "Fresh browser contexts with cache cleared and Service Workers blocked; real rendered pixels and controls. File navigation result recorded separately.",
+            "file:// blocked by managed Chromium URL policy; equivalent copied bytes exercised via allowed loopback HTTP only. Direct-open offline acceptance outstanding."
+          ],
+          "evidence": [
+            {
+              "path": "P09-tests.json",
+              "sha256": "03644e9141302c84130e09da7bc5285e4a71a9825868d18efdb6227548bbd7de"
+            },
+            {
+              "path": "P09-tests.log",
+              "sha256": "b6e8cc5fc1e4fcca6ed511afde956624c1e36c71efe3ceef3ae5b51e3e957a5d"
+            },
+            {
+              "path": "P09-package.json",
+              "sha256": "7264eb238518868931313ad1ace4d2b724fb1df437794b26f5f0dde001fa8739"
+            },
+            {
+              "path": "P09-package/manifest.json",
+              "sha256": "e640e6f0d6d959e8b19e92301ccb0dc2f88f65fd43d9d674453111105f6db8c1"
+            },
+            {
+              "path": "P09-package/天宫-A.html",
+              "sha256": "9d862ce52e0f5711ca0b7e988b76c0fb7dd488a257b6c240f31f094a2ac48d87"
+            },
+            {
+              "path": "P09-journey/results.json",
+              "sha256": "6addaca7a1e26e676d9c45e923e678b2957ef9627d0a50a6f36a60ea67a011fc"
+            },
+            {
+              "path": "P09-journey.log",
+              "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+            },
+            {
+              "path": "P09-copies/copies.json",
+              "sha256": "da30f20f3f7c256a784fcae023f06cad69774dc9580469b347e95693beca9487"
+            },
+            {
+              "path": "P09-journey/01-jiangnan.png",
+              "sha256": "efaf8fd9357a123e0fe96d6e738eb007d9852fe182d44af029c298b2f0376b59"
+            },
+            {
+              "path": "P09-journey/02-bridge.png",
+              "sha256": "71b0737a88f3fcec11a8987b09b0328a4fc7a051acc83ea79e2604b9025e9cb8"
+            },
+            {
+              "path": "P09-journey/03-cloud-below-third.png",
+              "sha256": "08f352d095975918b11a74fcf1fc5356841a9bc763b4d2f0eb6cb28011f89a62"
+            },
+            {
+              "path": "P09-journey/03-cloud-below-first.png",
+              "sha256": "78167b0b7b9026ec91c04c79d8676f0e5e1394ed90141cd1aefc38df80784e6a"
+            },
+            {
+              "path": "P09-journey/03-cloud-inside-third.png",
+              "sha256": "cb757d3222dea75f7a01ff4c48826018b7263d8300c69c8044d7bc5c68c5625d"
+            },
+            {
+              "path": "P09-journey/03-cloud-inside-first.png",
+              "sha256": "2a34f4430facd55f3d894f152c28a0b4c62466ed1bd6137b2780d58cacd36548"
+            },
+            {
+              "path": "P09-journey/03-cloud-above-third.png",
+              "sha256": "6441139f6a3647f4ded0b3e381809ca7cc959e27b32d8a8194a7d761b9138a11"
+            },
+            {
+              "path": "P09-journey/03-cloud-above-first.png",
+              "sha256": "cae525dc16a555e3661d3d005ebbf1bfd391be657fe3c722474c2191f8c95950"
+            },
+            {
+              "path": "P09-journey/04-palace-entrance.png",
+              "sha256": "c57876f27365efafcf904bc0ea069017d644ba2b151532040bf7922a00c1c2c4"
+            },
+            {
+              "path": "P09-journey/05-interior.png",
+              "sha256": "9aff05f332c618fa7e92f95f77294aa0af611a0bcc3f57b105195126e6646f4d"
+            },
+            {
+              "path": "P09-journey/06-roof.png",
+              "sha256": "c81134eef8bee4452e1360383a049b7ad7ca8ebac931031caf8c323d00b74c57"
+            },
+            {
+              "path": "P09-journey/07-roof-first.png",
+              "sha256": "e59d3b8daa1bf3353ed0f0fe29e5327c3301cc274dc1784f73b32d8503c8885d"
+            },
+            {
+              "path": "P09-journey/08-return-view.png",
+              "sha256": "1737cf07a00fb87c8ff50baf9028414950a5b516e0ae0000fb5b7b031f7a5b6e"
+            }
+          ]
+        },
+        {
+          "id": "P09-03",
+          "status": "BLOCKED",
+          "executed": 2,
+          "details": [
+            "Identical bytes opened from Chinese/space and ordinary copied paths; walking, perspective switching and cleanup checked.",
+            "file:// blocked by managed Chromium URL policy; equivalent copied bytes exercised via allowed loopback HTTP only. Direct-open offline acceptance outstanding."
+          ],
+          "evidence": [
+            {
+              "path": "P09-tests.json",
+              "sha256": "03644e9141302c84130e09da7bc5285e4a71a9825868d18efdb6227548bbd7de"
+            },
+            {
+              "path": "P09-tests.log",
+              "sha256": "b6e8cc5fc1e4fcca6ed511afde956624c1e36c71efe3ceef3ae5b51e3e957a5d"
+            },
+            {
+              "path": "P09-package.json",
+              "sha256": "7264eb238518868931313ad1ace4d2b724fb1df437794b26f5f0dde001fa8739"
+            },
+            {
+              "path": "P09-package/manifest.json",
+              "sha256": "e640e6f0d6d959e8b19e92301ccb0dc2f88f65fd43d9d674453111105f6db8c1"
+            },
+            {
+              "path": "P09-package/天宫-A.html",
+              "sha256": "9d862ce52e0f5711ca0b7e988b76c0fb7dd488a257b6c240f31f094a2ac48d87"
+            },
+            {
+              "path": "P09-journey/results.json",
+              "sha256": "6addaca7a1e26e676d9c45e923e678b2957ef9627d0a50a6f36a60ea67a011fc"
+            },
+            {
+              "path": "P09-journey.log",
+              "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+            },
+            {
+              "path": "P09-copies/copies.json",
+              "sha256": "da30f20f3f7c256a784fcae023f06cad69774dc9580469b347e95693beca9487"
+            },
+            {
+              "path": "P09-journey/01-jiangnan.png",
+              "sha256": "efaf8fd9357a123e0fe96d6e738eb007d9852fe182d44af029c298b2f0376b59"
+            },
+            {
+              "path": "P09-journey/02-bridge.png",
+              "sha256": "71b0737a88f3fcec11a8987b09b0328a4fc7a051acc83ea79e2604b9025e9cb8"
+            },
+            {
+              "path": "P09-journey/03-cloud-below-third.png",
+              "sha256": "08f352d095975918b11a74fcf1fc5356841a9bc763b4d2f0eb6cb28011f89a62"
+            },
+            {
+              "path": "P09-journey/03-cloud-below-first.png",
+              "sha256": "78167b0b7b9026ec91c04c79d8676f0e5e1394ed90141cd1aefc38df80784e6a"
+            },
+            {
+              "path": "P09-journey/03-cloud-inside-third.png",
+              "sha256": "cb757d3222dea75f7a01ff4c48826018b7263d8300c69c8044d7bc5c68c5625d"
+            },
+            {
+              "path": "P09-journey/03-cloud-inside-first.png",
+              "sha256": "2a34f4430facd55f3d894f152c28a0b4c62466ed1bd6137b2780d58cacd36548"
+            },
+            {
+              "path": "P09-journey/03-cloud-above-third.png",
+              "sha256": "6441139f6a3647f4ded0b3e381809ca7cc959e27b32d8a8194a7d761b9138a11"
+            },
+            {
+              "path": "P09-journey/03-cloud-above-first.png",
+              "sha256": "cae525dc16a555e3661d3d005ebbf1bfd391be657fe3c722474c2191f8c95950"
+            },
+            {
+              "path": "P09-journey/04-palace-entrance.png",
+              "sha256": "c57876f27365efafcf904bc0ea069017d644ba2b151532040bf7922a00c1c2c4"
+            },
+            {
+              "path": "P09-journey/05-interior.png",
+              "sha256": "9aff05f332c618fa7e92f95f77294aa0af611a0bcc3f57b105195126e6646f4d"
+            },
+            {
+              "path": "P09-journey/06-roof.png",
+              "sha256": "c81134eef8bee4452e1360383a049b7ad7ca8ebac931031caf8c323d00b74c57"
+            },
+            {
+              "path": "P09-journey/07-roof-first.png",
+              "sha256": "e59d3b8daa1bf3353ed0f0fe29e5327c3301cc274dc1784f73b32d8503c8885d"
+            },
+            {
+              "path": "P09-journey/08-return-view.png",
+              "sha256": "1737cf07a00fb87c8ff50baf9028414950a5b516e0ae0000fb5b7b031f7a5b6e"
+            }
+          ]
+        },
+        {
+          "id": "P09-04",
+          "status": "PASS",
+          "executed": 14,
+          "details": [
+            "Shared production core: walking/bridge/wall, flight/fall, dual perspective, clouds/interior/roof/departure. Default 10m/s, same player, no state injection.",
+            "file:// blocked by managed Chromium URL policy; equivalent copied bytes exercised via allowed loopback HTTP only. Direct-open offline acceptance outstanding."
+          ],
+          "evidence": [
+            {
+              "path": "P09-tests.json",
+              "sha256": "03644e9141302c84130e09da7bc5285e4a71a9825868d18efdb6227548bbd7de"
+            },
+            {
+              "path": "P09-tests.log",
+              "sha256": "b6e8cc5fc1e4fcca6ed511afde956624c1e36c71efe3ceef3ae5b51e3e957a5d"
+            },
+            {
+              "path": "P09-package.json",
+              "sha256": "7264eb238518868931313ad1ace4d2b724fb1df437794b26f5f0dde001fa8739"
+            },
+            {
+              "path": "P09-package/manifest.json",
+              "sha256": "e640e6f0d6d959e8b19e92301ccb0dc2f88f65fd43d9d674453111105f6db8c1"
+            },
+            {
+              "path": "P09-package/天宫-A.html",
+              "sha256": "9d862ce52e0f5711ca0b7e988b76c0fb7dd488a257b6c240f31f094a2ac48d87"
+            },
+            {
+              "path": "P09-journey/results.json",
+              "sha256": "6addaca7a1e26e676d9c45e923e678b2957ef9627d0a50a6f36a60ea67a011fc"
+            },
+            {
+              "path": "P09-journey.log",
+              "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+            },
+            {
+              "path": "P09-copies/copies.json",
+              "sha256": "da30f20f3f7c256a784fcae023f06cad69774dc9580469b347e95693beca9487"
+            },
+            {
+              "path": "P09-journey/01-jiangnan.png",
+              "sha256": "efaf8fd9357a123e0fe96d6e738eb007d9852fe182d44af029c298b2f0376b59"
+            },
+            {
+              "path": "P09-journey/02-bridge.png",
+              "sha256": "71b0737a88f3fcec11a8987b09b0328a4fc7a051acc83ea79e2604b9025e9cb8"
+            },
+            {
+              "path": "P09-journey/03-cloud-below-third.png",
+              "sha256": "08f352d095975918b11a74fcf1fc5356841a9bc763b4d2f0eb6cb28011f89a62"
+            },
+            {
+              "path": "P09-journey/03-cloud-below-first.png",
+              "sha256": "78167b0b7b9026ec91c04c79d8676f0e5e1394ed90141cd1aefc38df80784e6a"
+            },
+            {
+              "path": "P09-journey/03-cloud-inside-third.png",
+              "sha256": "cb757d3222dea75f7a01ff4c48826018b7263d8300c69c8044d7bc5c68c5625d"
+            },
+            {
+              "path": "P09-journey/03-cloud-inside-first.png",
+              "sha256": "2a34f4430facd55f3d894f152c28a0b4c62466ed1bd6137b2780d58cacd36548"
+            },
+            {
+              "path": "P09-journey/03-cloud-above-third.png",
+              "sha256": "6441139f6a3647f4ded0b3e381809ca7cc959e27b32d8a8194a7d761b9138a11"
+            },
+            {
+              "path": "P09-journey/03-cloud-above-first.png",
+              "sha256": "cae525dc16a555e3661d3d005ebbf1bfd391be657fe3c722474c2191f8c95950"
+            },
+            {
+              "path": "P09-journey/04-palace-entrance.png",
+              "sha256": "c57876f27365efafcf904bc0ea069017d644ba2b151532040bf7922a00c1c2c4"
+            },
+            {
+              "path": "P09-journey/05-interior.png",
+              "sha256": "9aff05f332c618fa7e92f95f77294aa0af611a0bcc3f57b105195126e6646f4d"
+            },
+            {
+              "path": "P09-journey/06-roof.png",
+              "sha256": "c81134eef8bee4452e1360383a049b7ad7ca8ebac931031caf8c323d00b74c57"
+            },
+            {
+              "path": "P09-journey/07-roof-first.png",
+              "sha256": "e59d3b8daa1bf3353ed0f0fe29e5327c3301cc274dc1784f73b32d8503c8885d"
+            },
+            {
+              "path": "P09-journey/08-return-view.png",
+              "sha256": "1737cf07a00fb87c8ff50baf9028414950a5b516e0ae0000fb5b7b031f7a5b6e"
+            }
+          ]
+        }
+      ],
+      "environment": {
+        "browser": "154.0.8037.57",
+        "scope": "Linux Chromium file protocol functional evidence, not target Windows performance or independent artistic acceptance",
+        "node": "24.19.0",
+        "os": "linux",
+        "arch": "x64"
+      },
+      "startedAt": "2026-10-29T14:37:08.413Z",
+      "endedAt": "2026-10-29T14:51:38.180Z",
+      "exitCode": 0,
+      "signal": null
+    }
+  ],
+  "nextStageEligible": false,
+  "packages": {
+    "A": "P09-package.json",
+    "B": "not-yet-delivered",
+    "P01": {
+      "path": "P01-production-manifest.json",
+      "sha256": "f7c07641557507f5bdc6b07e2a3cea286f62eb0657b2ec7f9d2a77fb8e6e8070"
+    }
+  }
+}

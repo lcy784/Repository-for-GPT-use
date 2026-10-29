@@ -1,0 +1,12 @@
+{
+  "runId": "2026-10-29T13-50-14-322Z-edfc3d92",
+  "candidate": "6366e36e7ea69aee177215631df6b54df9a921b81553d531e3a07a6c2a81f08b",
+  "zones": 60,
+  "colliders": 253,
+  "assets": 64,
+  "residentVisuals": [
+    "palace.recipe",
+    "journey.recipe",
+    "traveler.model"
+  ]
+}

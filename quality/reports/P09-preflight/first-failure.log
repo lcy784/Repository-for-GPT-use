@@ -1,0 +1,6 @@
+page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///workspace/Repository-for-GPT-use/quality/reports/P09-local/P09-copies/%E4%B8%AD%E6%96%87%20%E7%A9%BA%E6%A0%BC%E7%9B%AE%E5%BD%95/%E5%A4%A9%E5%AE%AB%20A.html
+Call log:
+[2m  - navigating to "file:///workspace/Repository-for-GPT-use/quality/reports/P09-local/P09-copies/%E4%B8%AD%E6%96%87%20%E7%A9%BA%E6%A0%BC%E7%9B%AE%E5%BD%95/%E5%A4%A9%E5%AE%AB%20A.html", waiting until "load"[22m
+
+    at checkCopies (/workspace/Repository-for-GPT-use/scripts/quality/p09-offline.mjs:16:136)
+    at async file:///workspace/Repository-for-GPT-use/scripts/quality/stages/P09.mjs:11:15

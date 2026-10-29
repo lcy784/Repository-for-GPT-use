@@ -1,0 +1,36 @@
+{
+  "findings": [
+    {
+      "path": "quality/visual-acceptance/P06-P09-CONTINUED-DEVELOPMENT.json",
+      "line": 11,
+      "classification": "SHA-256 source/content digest"
+    },
+    {
+      "path": "quality/visual-acceptance/P06-P09-CONTINUED-DEVELOPMENT.json",
+      "line": 15,
+      "classification": "SHA-256 source/content digest"
+    },
+    {
+      "path": "quality/visual-acceptance/P06-P09-CONTINUED-DEVELOPMENT.json",
+      "line": 19,
+      "classification": "SHA-256 source/content digest"
+    },
+    {
+      "path": "quality/visual-acceptance/P06-P09-CONTINUED-DEVELOPMENT.json",
+      "line": 23,
+      "classification": "SHA-256 source/content digest"
+    },
+    {
+      "path": "quality/visual-acceptance/P06-P09-CONTINUED-DEVELOPMENT.json",
+      "line": 27,
+      "classification": "SHA-256 source/content digest"
+    },
+    {
+      "path": "quality/visual-acceptance/P06-P09-CONTINUED-DEVELOPMENT.json",
+      "line": 31,
+      "classification": "SHA-256 source/content digest"
+    }
+  ],
+  "result": "All six findings are existing source/content hashes, not credentials; reviewed changed source and docs.",
+  "finalScanLog": "final-scan.log"
+}

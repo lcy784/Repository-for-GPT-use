@@ -1,0 +1,290 @@
+{
+  "runId": "2026-10-29T14-15-51-767Z-55e91d69",
+  "candidate": "c8198c76d379db4cd1179d3a3f389c868dad39a91f3b6405a3b6ae7750355c04",
+  "version": 1,
+  "format": "single-html-file",
+  "entry": "天宫-A.html",
+  "sha256": "9d862ce52e0f5711ca0b7e988b76c0fb7dd488a257b6c240f31f094a2ac48d87",
+  "bytes": 14815398,
+  "embedded": [
+    {
+      "uri": "characters/p05/traveler.glb",
+      "sha256": "a8a6f7394d870bc7cfe3b4dcf0e038c4e5f0a92fa42841a75e27e1c990f372d3"
+    },
+    {
+      "uri": "registry/journey.json",
+      "sha256": "8bd2979ff0bc0d5f68702218ef2e3a18dd39611af9bec5e3fb9cda2c00e3b110"
+    },
+    {
+      "uri": "registry/palace.json",
+      "sha256": "c7d865e5069249ac6ea3a023593ba6292561799728fe72cfbd262f4b2ac6ee33"
+    },
+    {
+      "uri": "runtime-config.json",
+      "sha256": "c2407d5cdee72127d03c0b5a890e8718126c89fa56d8bade3880505260bb639e"
+    },
+    {
+      "uri": "streaming/cell-0-0-0.json",
+      "sha256": "b6d06183fc2a6ba2ec02d6328f087e725060f091ccfbe8ed3a590c30c1094e7e"
+    },
+    {
+      "uri": "streaming/cell-0-0-1.json",
+      "sha256": "b6d06183fc2a6ba2ec02d6328f087e725060f091ccfbe8ed3a590c30c1094e7e"
+    },
+    {
+      "uri": "streaming/cell-0-0-2.json",
+      "sha256": "f90d9cc9e930ce901ff52eaa6546d4cb71ba1a61124047ff7041430a7da72e75"
+    },
+    {
+      "uri": "streaming/cell-0-0-3.json",
+      "sha256": "b44fc9fbe6f46c86d41f10c4035a47d57ff597cea4ae954cd648b33b591d6f0a"
+    },
+    {
+      "uri": "streaming/cell-0-0-4.json",
+      "sha256": "47df9376845f6213093b75fee8bc39741ccd55d9418d8008d4f47296bef7ced5"
+    },
+    {
+      "uri": "streaming/cell-0-1-0.json",
+      "sha256": "b6d06183fc2a6ba2ec02d6328f087e725060f091ccfbe8ed3a590c30c1094e7e"
+    },
+    {
+      "uri": "streaming/cell-0-1-1.json",
+      "sha256": "b6d06183fc2a6ba2ec02d6328f087e725060f091ccfbe8ed3a590c30c1094e7e"
+    },
+    {
+      "uri": "streaming/cell-0-1-2.json",
+      "sha256": "b6d06183fc2a6ba2ec02d6328f087e725060f091ccfbe8ed3a590c30c1094e7e"
+    },
+    {
+      "uri": "streaming/cell-0-1-3.json",
+      "sha256": "b6d06183fc2a6ba2ec02d6328f087e725060f091ccfbe8ed3a590c30c1094e7e"
+    },
+    {
+      "uri": "streaming/cell-0-1-4.json",
+      "sha256": "b6d06183fc2a6ba2ec02d6328f087e725060f091ccfbe8ed3a590c30c1094e7e"
+    },
+    {
+      "uri": "streaming/cell-0-2-0.json",
+      "sha256": "b40c1f878eebec859cba9c9f4f52bac4884f65101e32cdd59044ba52d34866b9"
+    },
+    {
+      "uri": "streaming/cell-0-2-1.json",
+      "sha256": "bfc07f33a8c5550ff0932fe16a4e1e25a2b61a5c6455be2ba4ea2260ec2a947d"
+    },
+    {
+      "uri": "streaming/cell-0-2-2.json",
+      "sha256": "5cb3a2217f72d4b4316905f2c7534ff211531cb2730598e83428996a6da240bc"
+    },
+    {
+      "uri": "streaming/cell-0-2-3.json",
+      "sha256": "b6d06183fc2a6ba2ec02d6328f087e725060f091ccfbe8ed3a590c30c1094e7e"
+    },
+    {
+      "uri": "streaming/cell-0-2-4.json",
+      "sha256": "b6d06183fc2a6ba2ec02d6328f087e725060f091ccfbe8ed3a590c30c1094e7e"
+    },
+    {
+      "uri": "streaming/cell-0-3-0.json",
+      "sha256": "d456ac4c9b2081230ea2badc45633a779dde5afabb7fbd12d17da5ac86696978"
+    },
+    {
+      "uri": "streaming/cell-0-3-1.json",
+      "sha256": "e3bf7cbab34ae1d2cf3d9bbf12e4a31db4045515bb59d50d66c3d03f1c99a052"
+    },
+    {
+      "uri": "streaming/cell-0-3-2.json",
+      "sha256": "e752efce579c2278fed40027acf1e288188cd913b0c3fc3172d9f3e9be55a63f"
+    },
+    {
+      "uri": "streaming/cell-0-3-3.json",
+      "sha256": "b6d06183fc2a6ba2ec02d6328f087e725060f091ccfbe8ed3a590c30c1094e7e"
+    },
+    {
+      "uri": "streaming/cell-0-3-4.json",
+      "sha256": "b6d06183fc2a6ba2ec02d6328f087e725060f091ccfbe8ed3a590c30c1094e7e"
+    },
+    {
+      "uri": "streaming/cell-1-0-0.json",
+      "sha256": "b6d06183fc2a6ba2ec02d6328f087e725060f091ccfbe8ed3a590c30c1094e7e"
+    },
+    {
+      "uri": "streaming/cell-1-0-1.json",
+      "sha256": "b6d06183fc2a6ba2ec02d6328f087e725060f091ccfbe8ed3a590c30c1094e7e"
+    },
+    {
+      "uri": "streaming/cell-1-0-2.json",
+      "sha256": "5e13f1c03134b1a51962e64330aab213631f5e61a437dd226992b97bad1e56e3"
+    },
+    {
+      "uri": "streaming/cell-1-0-3.json",
+      "sha256": "fef0cd98b7876417fb5ee27f117bc9f990bb968b96161f24daaa3b6164cae324"
+    },
+    {
+      "uri": "streaming/cell-1-0-4.json",
+      "sha256": "54e2a04d7014f6167d9cfc2165285db0740a85229ec8103873309cce7a8fc72b"
+    },
+    {
+      "uri": "streaming/cell-1-1-0.json",
+      "sha256": "b6d06183fc2a6ba2ec02d6328f087e725060f091ccfbe8ed3a590c30c1094e7e"
+    },
+    {
+      "uri": "streaming/cell-1-1-1.json",
+      "sha256": "b6d06183fc2a6ba2ec02d6328f087e725060f091ccfbe8ed3a590c30c1094e7e"
+    },
+    {
+      "uri": "streaming/cell-1-1-2.json",
+      "sha256": "b6d06183fc2a6ba2ec02d6328f087e725060f091ccfbe8ed3a590c30c1094e7e"
+    },
+    {
+      "uri": "streaming/cell-1-1-3.json",
+      "sha256": "b6d06183fc2a6ba2ec02d6328f087e725060f091ccfbe8ed3a590c30c1094e7e"
+    },
+    {
+      "uri": "streaming/cell-1-1-4.json",
+      "sha256": "b6d06183fc2a6ba2ec02d6328f087e725060f091ccfbe8ed3a590c30c1094e7e"
+    },
+    {
+      "uri": "streaming/cell-1-2-0.json",
+      "sha256": "8b748c7cd36e6c5c5542c2cc72263fd03a4519563b34055ead53bbc8f66774ff"
+    },
+    {
+      "uri": "streaming/cell-1-2-1.json",
+      "sha256": "4a8ddaa585a16f51daf89bd33e9163e8057825465fcf63a43fd29ee6959e05d6"
+    },
+    {
+      "uri": "streaming/cell-1-2-2.json",
+      "sha256": "d773501c1efda1a071510d827d8ba8b441a48b02ebd134737b38364ad926abba"
+    },
+    {
+      "uri": "streaming/cell-1-2-3.json",
+      "sha256": "6793036eb874381f90078557e989eac7211c625d684c5b07bed1205de69e2b81"
+    },
+    {
+      "uri": "streaming/cell-1-2-4.json",
+      "sha256": "b6d06183fc2a6ba2ec02d6328f087e725060f091ccfbe8ed3a590c30c1094e7e"
+    },
+    {
+      "uri": "streaming/cell-1-3-0.json",
+      "sha256": "537ee69d6f186edca7fb07c375664caaee80cbb925433fe549226459e4cef0db"
+    },
+    {
+      "uri": "streaming/cell-1-3-1.json",
+      "sha256": "8311be99c7229e435fed39c4e56953b059caaedc522d54e144af64ddee839827"
+    },
+    {
+      "uri": "streaming/cell-1-3-2.json",
+      "sha256": "e752efce579c2278fed40027acf1e288188cd913b0c3fc3172d9f3e9be55a63f"
+    },
+    {
+      "uri": "streaming/cell-1-3-3.json",
+      "sha256": "b6d06183fc2a6ba2ec02d6328f087e725060f091ccfbe8ed3a590c30c1094e7e"
+    },
+    {
+      "uri": "streaming/cell-1-3-4.json",
+      "sha256": "b6d06183fc2a6ba2ec02d6328f087e725060f091ccfbe8ed3a590c30c1094e7e"
+    },
+    {
+      "uri": "streaming/cell-2-0-0.json",
+      "sha256": "b6d06183fc2a6ba2ec02d6328f087e725060f091ccfbe8ed3a590c30c1094e7e"
+    },
+    {
+      "uri": "streaming/cell-2-0-1.json",
+      "sha256": "b6d06183fc2a6ba2ec02d6328f087e725060f091ccfbe8ed3a590c30c1094e7e"
+    },
+    {
+      "uri": "streaming/cell-2-0-2.json",
+      "sha256": "b213e3a4fba4507a1790cd1020c034f83dea65ae4b1a03323c2ccfb7f8e17169"
+    },
+    {
+      "uri": "streaming/cell-2-0-3.json",
+      "sha256": "dfb3a27beb16eb3a4edf55cc4657ed2942a24d5506eca1105313f8b6fa0794ca"
+    },
+    {
+      "uri": "streaming/cell-2-0-4.json",
+      "sha256": "dc85e32937838aecdb42d2602a0df9cf66396c473eac6987e5c95198bf7a6c9a"
+    },
+    {
+      "uri": "streaming/cell-2-1-0.json",
+      "sha256": "b6d06183fc2a6ba2ec02d6328f087e725060f091ccfbe8ed3a590c30c1094e7e"
+    },
+    {
+      "uri": "streaming/cell-2-1-1.json",
+      "sha256": "b6d06183fc2a6ba2ec02d6328f087e725060f091ccfbe8ed3a590c30c1094e7e"
+    },
+    {
+      "uri": "streaming/cell-2-1-2.json",
+      "sha256": "b6d06183fc2a6ba2ec02d6328f087e725060f091ccfbe8ed3a590c30c1094e7e"
+    },
+    {
+      "uri": "streaming/cell-2-1-3.json",
+      "sha256": "b6d06183fc2a6ba2ec02d6328f087e725060f091ccfbe8ed3a590c30c1094e7e"
+    },
+    {
+      "uri": "streaming/cell-2-1-4.json",
+      "sha256": "b6d06183fc2a6ba2ec02d6328f087e725060f091ccfbe8ed3a590c30c1094e7e"
+    },
+    {
+      "uri": "streaming/cell-2-2-0.json",
+      "sha256": "a1b859060d15610d9fc21259273541ac0d7b30316b9df0a0a8ceca12d00f1cd3"
+    },
+    {
+      "uri": "streaming/cell-2-2-1.json",
+      "sha256": "531bf67ea8dada978e560faa2b3394a83fbd47038e0ec9968cdd4b219709d41e"
+    },
+    {
+      "uri": "streaming/cell-2-2-2.json",
+      "sha256": "a3b04affb3706e5a5cab6445595b4d9435349bc8ebae88077a547678c8d909ed"
+    },
+    {
+      "uri": "streaming/cell-2-2-3.json",
+      "sha256": "b6d06183fc2a6ba2ec02d6328f087e725060f091ccfbe8ed3a590c30c1094e7e"
+    },
+    {
+      "uri": "streaming/cell-2-2-4.json",
+      "sha256": "b6d06183fc2a6ba2ec02d6328f087e725060f091ccfbe8ed3a590c30c1094e7e"
+    },
+    {
+      "uri": "streaming/cell-2-3-0.json",
+      "sha256": "8af80ac191b14fc1e02db0cd605a918f2933d0438c45aad5cf5c9dabdb4b44f8"
+    },
+    {
+      "uri": "streaming/cell-2-3-1.json",
+      "sha256": "471994400977a7f740e0734609c9527f071abeb1c47f6cf5e66b9346da1536d5"
+    },
+    {
+      "uri": "streaming/cell-2-3-2.json",
+      "sha256": "e752efce579c2278fed40027acf1e288188cd913b0c3fc3172d9f3e9be55a63f"
+    },
+    {
+      "uri": "streaming/cell-2-3-3.json",
+      "sha256": "b6d06183fc2a6ba2ec02d6328f087e725060f091ccfbe8ed3a590c30c1094e7e"
+    },
+    {
+      "uri": "streaming/cell-2-3-4.json",
+      "sha256": "b6d06183fc2a6ba2ec02d6328f087e725060f091ccfbe8ed3a590c30c1094e7e"
+    },
+    {
+      "uri": "streaming/registry.json",
+      "sha256": "02dbebb11e4a3f681d5d67739ca789a10faf333163ac8a932af043de2ac33cf7"
+    },
+    {
+      "uri": "streaming/world.json",
+      "sha256": "39f18e76f25d9ae456e4d5e7b674e8091381111a3320243cb447e3851bd3e86e"
+    }
+  ],
+  "matrix": {
+    "P03": "walking, bridge and hall collision",
+    "P04": "flight, hover, descent and fall",
+    "P05": "temporary avatar and both perspectives",
+    "P06": "bank, bridge, clouds, palace interior, roof and departure",
+    "P07": "shared asset ownership",
+    "P08": "embedded collision zones and support handoff"
+  },
+  "limits": [
+    "P06 independent artistic acceptance outstanding",
+    "P15 target Windows performance not measured",
+    "Expanded world, water and interactions remain P10+"
+  ],
+  "artifact": "P09-package/天宫-A.html",
+  "offline": true
+}

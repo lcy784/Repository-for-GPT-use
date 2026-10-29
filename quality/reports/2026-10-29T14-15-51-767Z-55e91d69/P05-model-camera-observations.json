@@ -1,0 +1,970 @@
+{
+  "runId": "2026-10-29T14-15-51-767Z-55e91d69",
+  "candidate": "c8198c76d379db4cd1179d3a3f389c868dad39a91f3b6405a3b6ae7750355c04",
+  "observations": [
+    {
+      "test": "P05-03: authored model and real animation groups > validates the self-contained GLB and reproduces it from the source generator",
+      "avatars": [],
+      "sessions": [],
+      "cameras": []
+    },
+    {
+      "test": "P05-03: authored model and real animation groups > imports a real 1.75 m articulated model with four GLB clips and aligned feet",
+      "avatars": [
+        {
+          "position": [
+            0,
+            0.875,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "animation": {
+            "active": true,
+            "action": "idle",
+            "weights": {
+              "idle": 1,
+              "walk": 0,
+              "fly": 0,
+              "fall": 0
+            },
+            "visible": true,
+            "enabledMeshes": 29,
+            "time": 0,
+            "joints": [
+              {
+                "name": "left-shoulder",
+                "rotation": [
+                  0,
+                  0,
+                  -0.02999550104141235,
+                  0.9995500445365905
+                ]
+              },
+              {
+                "name": "left-hip",
+                "rotation": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              },
+              {
+                "name": "left-knee",
+                "rotation": [
+                  0,
+                  0,
+                  0,
+                  0.9999999999999999
+                ]
+              },
+              {
+                "name": "right-shoulder",
+                "rotation": [
+                  0,
+                  0,
+                  0.02999550104141235,
+                  0.9995500445365905
+                ]
+              },
+              {
+                "name": "right-hip",
+                "rotation": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              },
+              {
+                "name": "right-knee",
+                "rotation": [
+                  0,
+                  0,
+                  0,
+                  0.9999999999999999
+                ]
+              }
+            ],
+            "meshes": 29,
+            "groups": 4,
+            "rootOffset": [
+              0,
+              -0.875,
+              0
+            ],
+            "heightMeters": 1.7499999809265137,
+            "facing": {
+              "x": 0,
+              "z": -1
+            }
+          }
+        }
+      ],
+      "sessions": [],
+      "cameras": []
+    },
+    {
+      "test": "P05-03: authored model and real animation groups > changes actual limb poses while walking and blends back to standing without root motion",
+      "avatars": [
+        {
+          "position": [
+            -0.00038146006409078836,
+            0.8946484923362732,
+            0.5997393131256104
+          ],
+          "rotation": [
+            0,
+            -3.141592653589793,
+            0
+          ],
+          "animation": {
+            "active": true,
+            "action": "idle",
+            "weights": {
+              "idle": 0.9999969772206924,
+              "walk": 0.000003022779307635822,
+              "fly": 0,
+              "fall": 0
+            },
+            "visible": true,
+            "enabledMeshes": 29,
+            "time": 2.449999999999996,
+            "joints": [
+              {
+                "name": "left-shoulder",
+                "rotation": [
+                  0.003836289807309998,
+                  0.0001151209349273638,
+                  -0.029995324247564584,
+                  0.9995426676303504
+                ]
+              },
+              {
+                "name": "left-hip",
+                "rotation": [
+                  1.6242805619320083e-7,
+                  0,
+                  0,
+                  0.9999999999999868
+                ]
+              },
+              {
+                "name": "left-knee",
+                "rotation": [
+                  0,
+                  0,
+                  0,
+                  0.9999999999999999
+                ]
+              },
+              {
+                "name": "right-shoulder",
+                "rotation": [
+                  0.003836595799359394,
+                  -0.00011513471391688752,
+                  0.029995324206433343,
+                  0.9995426664555396
+                ]
+              },
+              {
+                "name": "right-hip",
+                "rotation": [
+                  -1.6242805619320083e-7,
+                  0,
+                  0,
+                  0.9999999999999868
+                ]
+              },
+              {
+                "name": "right-knee",
+                "rotation": [
+                  1.856320594435337e-7,
+                  0,
+                  0,
+                  0.9999999999999828
+                ]
+              }
+            ],
+            "meshes": 29,
+            "groups": 4,
+            "rootOffset": [
+              0,
+              -0.875,
+              0
+            ],
+            "heightMeters": 1.7499999809265137,
+            "facing": {
+              "x": 1.2246467991473532e-16,
+              "z": 1
+            }
+          }
+        }
+      ],
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 147,
+            "position": {
+              "x": -0.00038146006409078836,
+              "y": 0.8946484923362732,
+              "z": 0.5997393131256104
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 3.141592653589793,
+            "mode": "grounded",
+            "supportId": "camera-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 147,
+            "position": "{\"x\":-0.00038146006409078836,\"y\":0.8946484923362732,\"z\":0.5997393131256104}",
+            "physicalPosition": "{\"x\":-0.00038146006409078836,\"y\":0.8946484923362732,\"z\":0.5997393131256104}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "camera-ground",
+            "velocity": "{\"x\":0,\"y\":0,\"z\":0}",
+            "penetration": 0,
+            "colliders": 8,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": true,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 1,
+            "maxSweepDistance": 0.05,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": -0.00038146006409078836,
+              "y": 0.8946484923362732,
+              "z": 0.5997393131256104
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": 0,
+                  "y": 0.8950000405311584,
+                  "z": 0
+                },
+                "supportId": "camera-ground"
+              }
+            ]
+          }
+        }
+      ],
+      "cameras": []
+    },
+    {
+      "test": "P05-03: authored model and real animation groups > maps real flight and falling to different animated poses with the physics position authoritative",
+      "avatars": [
+        {
+          "position": [
+            0,
+            7.191033840179443,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "animation": {
+            "active": true,
+            "action": "fall",
+            "weights": {
+              "idle": 0.000481363002811649,
+              "walk": 0,
+              "fly": 0.12403310844131146,
+              "fall": 0.8754855285558769
+            },
+            "visible": true,
+            "enabledMeshes": 29,
+            "time": 1.6666666666666656,
+            "joints": [
+              {
+                "name": "left-shoulder",
+                "rotation": [
+                  -0.13982549910503878,
+                  -0.09304678126662803,
+                  -0.5421664135615225,
+                  0.8233144635035355
+                ]
+              },
+              {
+                "name": "left-hip",
+                "rotation": [
+                  -0.041354353939886825,
+                  0,
+                  0,
+                  0.999144539423169
+                ]
+              },
+              {
+                "name": "left-knee",
+                "rotation": [
+                  0.0867105515421483,
+                  0,
+                  0,
+                  0.9962335567991538
+                ]
+              },
+              {
+                "name": "right-shoulder",
+                "rotation": [
+                  -0.14001857404901857,
+                  0.09277304252904756,
+                  0.5399372938741891,
+                  0.8247761393241673
+                ]
+              },
+              {
+                "name": "right-hip",
+                "rotation": [
+                  0.0636490560843278,
+                  0,
+                  0,
+                  0.9979723397574864
+                ]
+              },
+              {
+                "name": "right-knee",
+                "rotation": [
+                  0.0867105515421483,
+                  0,
+                  0,
+                  0.9962335567991538
+                ]
+              }
+            ],
+            "meshes": 29,
+            "groups": 4,
+            "rootOffset": [
+              0,
+              -0.875,
+              0
+            ],
+            "heightMeters": 1.7499999809265137,
+            "facing": {
+              "x": 0,
+              "z": -1
+            }
+          }
+        }
+      ],
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 102,
+            "position": {
+              "x": 0,
+              "y": 7.191033840179443,
+              "z": 0
+            },
+            "velocity": {
+              "x": 0,
+              "y": -2.616119384765625,
+              "z": 0
+            },
+            "yaw": 0,
+            "mode": "falling",
+            "supportId": null
+          },
+          "physics": {
+            "active": true,
+            "tick": 102,
+            "position": "{\"x\":0,\"y\":7.191033840179443,\"z\":0}",
+            "physicalPosition": "{\"x\":0,\"y\":7.191033840179443,\"z\":0}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "falling",
+            "supportId": null,
+            "velocity": "{\"x\":0,\"y\":-2.616119384765625,\"z\":0}",
+            "penetration": 0,
+            "colliders": 8,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": true,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 1,
+            "maxSweepDistance": 0.16666666666666666,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": 0,
+              "y": 0.894986629486084,
+              "z": 0
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": 0,
+                  "y": 0.8950000405311584,
+                  "z": 0
+                },
+                "supportId": "camera-ground"
+              },
+              {
+                "tick": 46,
+                "kind": "takeoff",
+                "from": "grounded",
+                "to": "flying",
+                "position": {
+                  "x": 0,
+                  "y": 0.894986629486084,
+                  "z": 0
+                },
+                "supportId": null
+              },
+              {
+                "tick": 87,
+                "kind": "flight-stopped",
+                "from": "flying",
+                "to": "falling",
+                "position": {
+                  "x": 0,
+                  "y": 7.558925628662109,
+                  "z": 0
+                },
+                "supportId": null
+              }
+            ]
+          }
+        }
+      ],
+      "cameras": []
+    },
+    {
+      "test": "P05-03: authored model and real animation groups > loops and blends GLB actions without moving the animation origin or resetting session state",
+      "avatars": [
+        {
+          "position": [
+            0,
+            0.894986629486084,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "animation": {
+            "active": true,
+            "action": "idle",
+            "weights": {
+              "idle": 1,
+              "walk": 0,
+              "fly": 0,
+              "fall": 0
+            },
+            "visible": false,
+            "enabledMeshes": 0,
+            "time": 4.7499999999999885,
+            "joints": [
+              {
+                "name": "left-shoulder",
+                "rotation": [
+                  -0.012494049966335179,
+                  -0.00037493399577214956,
+                  -0.029993155971169472,
+                  0.9994719624519348
+                ]
+              },
+              {
+                "name": "left-hip",
+                "rotation": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              },
+              {
+                "name": "left-knee",
+                "rotation": [
+                  0,
+                  0,
+                  0,
+                  0.9999999999999999
+                ]
+              },
+              {
+                "name": "right-shoulder",
+                "rotation": [
+                  -0.012494049966335177,
+                  0.0003749339957721495,
+                  0.02999315597116947,
+                  0.9994719624519347
+                ]
+              },
+              {
+                "name": "right-hip",
+                "rotation": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              },
+              {
+                "name": "right-knee",
+                "rotation": [
+                  0,
+                  0,
+                  0,
+                  0.9999999999999999
+                ]
+              }
+            ],
+            "meshes": 29,
+            "groups": 4,
+            "rootOffset": [
+              0,
+              -0.875,
+              0
+            ],
+            "heightMeters": 1.7499999809265137,
+            "facing": {
+              "x": 0,
+              "z": -1
+            }
+          }
+        }
+      ],
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 45,
+            "position": {
+              "x": 0,
+              "y": 0.894986629486084,
+              "z": 0
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 0,
+            "mode": "grounded",
+            "supportId": "camera-ground"
+          },
+          "physics": {
+            "active": true,
+            "tick": 45,
+            "position": "{\"x\":0,\"y\":0.894986629486084,\"z\":0}",
+            "physicalPosition": "{\"x\":0,\"y\":0.894986629486084,\"z\":0}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "grounded",
+            "supportId": "camera-ground",
+            "velocity": "{\"x\":0,\"y\":0,\"z\":0}",
+            "penetration": 0,
+            "colliders": 8,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": true,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 1,
+            "maxSweepDistance": 0.002725,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": 0,
+              "y": 0.894986629486084,
+              "z": 0
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "landed",
+                "from": "falling",
+                "to": "grounded",
+                "position": {
+                  "x": 0,
+                  "y": 0.8950000405311584,
+                  "z": 0
+                },
+                "supportId": "camera-ground"
+              }
+            ]
+          }
+        }
+      ],
+      "cameras": []
+    },
+    {
+      "test": "P05-02: real Rapier camera obstruction queries > excludes the player capsule and leaves an unobstructed camera segment unchanged",
+      "avatars": [],
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 0,
+            "position": {
+              "x": 0,
+              "y": 0.91,
+              "z": 0
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 0,
+            "mode": "falling",
+            "supportId": null
+          },
+          "physics": {
+            "active": true,
+            "tick": 0,
+            "position": "{\"x\":0,\"y\":0.91,\"z\":0}",
+            "physicalPosition": "{\"x\":0,\"y\":0.9100000262260437,\"z\":0}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "falling",
+            "supportId": null,
+            "velocity": "{\"x\":0,\"y\":0,\"z\":0}",
+            "penetration": 0,
+            "colliders": 8,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": true,
+            "flightSpeed": 10,
+            "lastSubsteps": 0,
+            "maxSubsteps": 0,
+            "maxSweepDistance": 0,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": 0,
+              "y": 0.91,
+              "z": 0
+            },
+            "events": []
+          }
+        }
+      ],
+      "cameras": []
+    },
+    {
+      "test": "P05-02: real Rapier camera obstruction queries > finds a side wall with a sphere clearance margin without mutating physics",
+      "avatars": [],
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 0,
+            "position": {
+              "x": 0,
+              "y": 0.91,
+              "z": 0
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 0,
+            "mode": "falling",
+            "supportId": null
+          },
+          "physics": {
+            "active": true,
+            "tick": 0,
+            "position": "{\"x\":0,\"y\":0.91,\"z\":0}",
+            "physicalPosition": "{\"x\":0,\"y\":0.9100000262260437,\"z\":0}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "falling",
+            "supportId": null,
+            "velocity": "{\"x\":0,\"y\":0,\"z\":0}",
+            "penetration": 0,
+            "colliders": 8,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": true,
+            "flightSpeed": 10,
+            "lastSubsteps": 0,
+            "maxSubsteps": 0,
+            "maxSweepDistance": 0,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": 0,
+              "y": 0.91,
+              "z": 0
+            },
+            "events": []
+          }
+        }
+      ],
+      "cameras": []
+    },
+    {
+      "test": "P05-02: real Rapier camera obstruction queries > keeps the doorway opening clear and contracts below an eave",
+      "avatars": [],
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 0,
+            "position": {
+              "x": 0,
+              "y": 0.91,
+              "z": 0
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 0,
+            "mode": "falling",
+            "supportId": null
+          },
+          "physics": {
+            "active": true,
+            "tick": 0,
+            "position": "{\"x\":0,\"y\":0.91,\"z\":0}",
+            "physicalPosition": "{\"x\":0,\"y\":0.9100000262260437,\"z\":0}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "falling",
+            "supportId": null,
+            "velocity": "{\"x\":0,\"y\":0,\"z\":0}",
+            "penetration": 0,
+            "colliders": 8,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": true,
+            "flightSpeed": 10,
+            "lastSubsteps": 0,
+            "maxSubsteps": 0,
+            "maxSweepDistance": 0,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": 0,
+              "y": 0.91,
+              "z": 0
+            },
+            "events": []
+          }
+        }
+      ],
+      "cameras": []
+    },
+    {
+      "test": "P05-02: real Rapier camera obstruction queries > contracts immediately at a wall and restores distance after the player leaves it",
+      "avatars": [],
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 76,
+            "position": {
+              "x": -0.000023282598704099655,
+              "y": 0.9099998474121094,
+              "z": 7.590111255645752
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 3.141592653589793,
+            "mode": "flying",
+            "supportId": null
+          },
+          "physics": {
+            "active": true,
+            "tick": 76,
+            "position": "{\"x\":-0.000023282598704099655,\"y\":0.9099998474121094,\"z\":7.590111255645752}",
+            "physicalPosition": "{\"x\":-0.000023282598704099655,\"y\":0.9099998474121094,\"z\":7.590111255645752}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "flying",
+            "supportId": null,
+            "velocity": "{\"x\":0,\"y\":0,\"z\":0}",
+            "penetration": 0,
+            "colliders": 8,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": true,
+            "flightSpeed": 10,
+            "lastSubsteps": 1,
+            "maxSubsteps": 1,
+            "maxSweepDistance": 0.16666666666666666,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": 0,
+              "y": 0.91,
+              "z": 0
+            },
+            "events": [
+              {
+                "tick": 1,
+                "kind": "takeoff",
+                "from": "falling",
+                "to": "flying",
+                "position": {
+                  "x": 0,
+                  "y": 0.9100000262260437,
+                  "z": 0
+                },
+                "supportId": null
+              }
+            ]
+          }
+        }
+      ],
+      "cameras": [
+        {
+          "mode": "third",
+          "yaw": -1.5707963267948966,
+          "pitch": 0,
+          "desiredDistance": 6,
+          "distance": 5.960959477525217,
+          "blocker": null,
+          "toggles": 0,
+          "listeners": 10,
+          "dragging": false
+        }
+      ]
+    },
+    {
+      "test": "P05-01: perspective state continuity > changes only the camera and model visibility across twelve perspective switches",
+      "avatars": [],
+      "sessions": [
+        {
+          "state": {
+            "id": "local-player",
+            "tick": 0,
+            "position": {
+              "x": 0,
+              "y": 0.91,
+              "z": 0
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 0,
+            "mode": "falling",
+            "supportId": null
+          },
+          "physics": {
+            "active": true,
+            "tick": 0,
+            "position": "{\"x\":0,\"y\":0.91,\"z\":0}",
+            "physicalPosition": "{\"x\":0,\"y\":0.9100000262260437,\"z\":0}",
+            "capsuleAxis": "+Y",
+            "capsuleHeightMeters": 1.75,
+            "mode": "falling",
+            "supportId": null,
+            "velocity": "{\"x\":0,\"y\":0,\"z\":0}",
+            "penetration": 0,
+            "colliders": 8,
+            "bodyCount": 1,
+            "controllerCount": 1,
+            "flightEnabled": true,
+            "flightSpeed": 10,
+            "lastSubsteps": 0,
+            "maxSubsteps": 0,
+            "maxSweepDistance": 0,
+            "recoveryCount": 0,
+            "safePosition": {
+              "x": 0,
+              "y": 0.91,
+              "z": 0
+            },
+            "events": []
+          }
+        }
+      ],
+      "cameras": [
+        {
+          "mode": "third",
+          "yaw": 0,
+          "pitch": -0.25,
+          "desiredDistance": 6,
+          "distance": 6,
+          "blocker": null,
+          "toggles": 12,
+          "listeners": 10,
+          "dragging": false
+        }
+      ]
+    },
+    {
+      "test": "P05-04: model lifecycle > releases imported meshes and animation groups across three reloads",
+      "avatars": [
+        {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "animation": {
+            "active": false
+          }
+        },
+        {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "animation": {
+            "active": false
+          }
+        },
+        {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "animation": {
+            "active": false
+          }
+        }
+      ],
+      "sessions": [],
+      "cameras": []
+    }
+  ]
+}

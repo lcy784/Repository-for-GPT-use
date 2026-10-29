@@ -1,0 +1,1002 @@
+{
+  "runId": "2026-10-29T13-50-14-322Z-edfc3d92",
+  "candidate": "6366e36e7ea69aee177215631df6b54df9a921b81553d531e3a07a6c2a81f08b",
+  "records": [
+    {
+      "label": "bank",
+      "state": {
+        "id": "local-player",
+        "tick": 40,
+        "position": {
+          "x": -18,
+          "y": 0.8949941396713257,
+          "z": 282
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "yaw": 0,
+        "mode": "grounded",
+        "supportId": "jiangnan-bank--1"
+      },
+      "physics": {
+        "active": true,
+        "tick": 40,
+        "position": "{\"x\":-18,\"y\":0.8949941396713257,\"z\":282}",
+        "physicalPosition": "{\"x\":-18,\"y\":0.8949941396713257,\"z\":282}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "grounded",
+        "supportId": "jiangnan-bank--1",
+        "velocity": "{\"x\":0,\"y\":0,\"z\":0}",
+        "penetration": 0,
+        "colliders": 254,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 10,
+        "lastSubsteps": 1,
+        "maxSubsteps": 1,
+        "maxSweepDistance": 0.002725,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": -18,
+          "y": 0.8949941396713257,
+          "z": 282
+        },
+        "events": [
+          {
+            "tick": 1,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": -18,
+              "y": 0.8949971795082092,
+              "z": 282
+            },
+            "supportId": "jiangnan-bank--1"
+          }
+        ]
+      }
+    },
+    {
+      "label": "bridge",
+      "state": {
+        "id": "local-player",
+        "tick": 598,
+        "position": {
+          "x": -0.05218055099248886,
+          "y": 0.8949300050735474,
+          "z": 272.05279541015625
+        },
+        "velocity": {
+          "x": 2.983769327402115,
+          "y": 0,
+          "z": 0.0274658203125
+        },
+        "yaw": 1.5707963267948966,
+        "mode": "grounded",
+        "supportId": "jiangnan-bridge"
+      },
+      "physics": {
+        "active": true,
+        "tick": 598,
+        "position": "{\"x\":-0.05218055099248886,\"y\":0.8949300050735474,\"z\":272.05279541015625}",
+        "physicalPosition": "{\"x\":-0.05218055099248886,\"y\":0.8949300050735474,\"z\":272.05279541015625}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "grounded",
+        "supportId": "jiangnan-bridge",
+        "velocity": "{\"x\":2.983769327402115,\"y\":0,\"z\":0.0274658203125}",
+        "penetration": 0,
+        "colliders": 254,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 10,
+        "lastSubsteps": 1,
+        "maxSubsteps": 1,
+        "maxSweepDistance": 0.05,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": -0.05218055099248886,
+          "y": 0.8949300050735474,
+          "z": 272.05279541015625
+        },
+        "events": [
+          {
+            "tick": 1,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": -18,
+              "y": 0.8949971795082092,
+              "z": 282
+            },
+            "supportId": "jiangnan-bank--1"
+          }
+        ]
+      }
+    },
+    {
+      "label": "cloud",
+      "state": {
+        "id": "local-player",
+        "tick": 1194,
+        "position": {
+          "x": -0.05218055099248886,
+          "y": 100.06124114990234,
+          "z": 272.05279541015625
+        },
+        "velocity": {
+          "x": 0,
+          "y": 9.999847412109375,
+          "z": 0
+        },
+        "yaw": 1.5707963267948966,
+        "mode": "flying",
+        "supportId": null
+      },
+      "physics": {
+        "active": true,
+        "tick": 1194,
+        "position": "{\"x\":-0.05218055099248886,\"y\":100.06124114990234,\"z\":272.05279541015625}",
+        "physicalPosition": "{\"x\":-0.05218055099248886,\"y\":100.06124114990234,\"z\":272.05279541015625}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "flying",
+        "supportId": null,
+        "velocity": "{\"x\":0,\"y\":9.999847412109375,\"z\":0}",
+        "penetration": 0,
+        "colliders": 254,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 10,
+        "lastSubsteps": 1,
+        "maxSubsteps": 1,
+        "maxSweepDistance": 0.16666666666666666,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": -0.05218055099248886,
+          "y": 0.8949300050735474,
+          "z": 272.05279541015625
+        },
+        "events": [
+          {
+            "tick": 1,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": -18,
+              "y": 0.8949971795082092,
+              "z": 282
+            },
+            "supportId": "jiangnan-bank--1"
+          },
+          {
+            "tick": 599,
+            "kind": "takeoff",
+            "from": "grounded",
+            "to": "flying",
+            "position": {
+              "x": -0.05218055099248886,
+              "y": 0.8949300050735474,
+              "z": 272.05279541015625
+            },
+            "supportId": null
+          }
+        ]
+      }
+    },
+    {
+      "label": "terrace",
+      "state": {
+        "id": "local-player",
+        "tick": 2783,
+        "position": {
+          "x": -0.05218055099248886,
+          "y": 138.89498901367188,
+          "z": 54.05076599121094
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "yaw": 0,
+        "mode": "grounded",
+        "supportId": "palace-terrace"
+      },
+      "physics": {
+        "active": true,
+        "tick": 2783,
+        "position": "{\"x\":-0.05218055099248886,\"y\":138.89498901367188,\"z\":54.05076599121094}",
+        "physicalPosition": "{\"x\":-0.05218055099248886,\"y\":138.89498901367188,\"z\":54.05076599121094}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "grounded",
+        "supportId": "palace-terrace",
+        "velocity": "{\"x\":0,\"y\":0,\"z\":0}",
+        "penetration": 0,
+        "colliders": 254,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 10,
+        "lastSubsteps": 1,
+        "maxSubsteps": 1,
+        "maxSweepDistance": 0.16666666666666666,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": -0.05218055099248886,
+          "y": 0.8949300050735474,
+          "z": 272.05279541015625
+        },
+        "events": [
+          {
+            "tick": 1,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": -18,
+              "y": 0.8949971795082092,
+              "z": 282
+            },
+            "supportId": "jiangnan-bank--1"
+          },
+          {
+            "tick": 599,
+            "kind": "takeoff",
+            "from": "grounded",
+            "to": "flying",
+            "position": {
+              "x": -0.05218055099248886,
+              "y": 0.8949300050735474,
+              "z": 272.05279541015625
+            },
+            "supportId": null
+          },
+          {
+            "tick": 2773,
+            "kind": "landed",
+            "from": "flying",
+            "to": "grounded",
+            "position": {
+              "x": -0.05218055099248886,
+              "y": 138.8950958251953,
+              "z": 54.05076599121094
+            },
+            "supportId": "palace-terrace"
+          }
+        ]
+      }
+    },
+    {
+      "label": "interior",
+      "state": {
+        "id": "local-player",
+        "tick": 3863,
+        "position": {
+          "x": -0.052179716527462006,
+          "y": 138.89498901367188,
+          "z": 0.05130356177687645
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": -3.0000000447034836
+        },
+        "yaw": 0,
+        "mode": "grounded",
+        "supportId": "palace-terrace"
+      },
+      "physics": {
+        "active": true,
+        "tick": 3863,
+        "position": "{\"x\":-0.052179716527462006,\"y\":138.89498901367188,\"z\":0.05130356177687645}",
+        "physicalPosition": "{\"x\":-0.052179716527462006,\"y\":138.89498901367188,\"z\":0.05130356177687645}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "grounded",
+        "supportId": "palace-terrace",
+        "velocity": "{\"x\":0,\"y\":0,\"z\":-3.0000000447034836}",
+        "penetration": 0,
+        "colliders": 254,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 10,
+        "lastSubsteps": 1,
+        "maxSubsteps": 1,
+        "maxSweepDistance": 0.16666666666666666,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": -0.052179716527462006,
+          "y": 138.89498901367188,
+          "z": 0.05130356177687645
+        },
+        "events": [
+          {
+            "tick": 1,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": -18,
+              "y": 0.8949971795082092,
+              "z": 282
+            },
+            "supportId": "jiangnan-bank--1"
+          },
+          {
+            "tick": 599,
+            "kind": "takeoff",
+            "from": "grounded",
+            "to": "flying",
+            "position": {
+              "x": -0.05218055099248886,
+              "y": 0.8949300050735474,
+              "z": 272.05279541015625
+            },
+            "supportId": null
+          },
+          {
+            "tick": 2773,
+            "kind": "landed",
+            "from": "flying",
+            "to": "grounded",
+            "position": {
+              "x": -0.05218055099248886,
+              "y": 138.8950958251953,
+              "z": 54.05076599121094
+            },
+            "supportId": "palace-terrace"
+          }
+        ]
+      }
+    },
+    {
+      "label": "roof",
+      "state": {
+        "id": "local-player",
+        "tick": 6455,
+        "position": {
+          "x": 14.947829246520996,
+          "y": 248.0810089111328,
+          "z": -0.04930546507239342
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0.0026895850896835327
+        },
+        "yaw": 0,
+        "mode": "grounded",
+        "supportId": "palace-roof-2"
+      },
+      "physics": {
+        "active": true,
+        "tick": 6455,
+        "position": "{\"x\":14.947829246520996,\"y\":248.0810089111328,\"z\":-0.04930546507239342}",
+        "physicalPosition": "{\"x\":14.947829246520996,\"y\":248.0810089111328,\"z\":-0.04930546507239342}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "grounded",
+        "supportId": "palace-roof-2",
+        "velocity": "{\"x\":0,\"y\":0,\"z\":0.0026895850896835327}",
+        "penetration": 0,
+        "colliders": 254,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 10,
+        "lastSubsteps": 1,
+        "maxSubsteps": 1,
+        "maxSweepDistance": 0.16666666666666666,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": -0.05218084156513214,
+          "y": 138.8950958251953,
+          "z": 53.950767517089844
+        },
+        "events": [
+          {
+            "tick": 1,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": -18,
+              "y": 0.8949971795082092,
+              "z": 282
+            },
+            "supportId": "jiangnan-bank--1"
+          },
+          {
+            "tick": 599,
+            "kind": "takeoff",
+            "from": "grounded",
+            "to": "flying",
+            "position": {
+              "x": -0.05218055099248886,
+              "y": 0.8949300050735474,
+              "z": 272.05279541015625
+            },
+            "supportId": null
+          },
+          {
+            "tick": 2773,
+            "kind": "landed",
+            "from": "flying",
+            "to": "grounded",
+            "position": {
+              "x": -0.05218055099248886,
+              "y": 138.8950958251953,
+              "z": 54.05076599121094
+            },
+            "supportId": "palace-terrace"
+          },
+          {
+            "tick": 4942,
+            "kind": "takeoff",
+            "from": "grounded",
+            "to": "flying",
+            "position": {
+              "x": -0.05218084156513214,
+              "y": 138.8950958251953,
+              "z": 53.950767517089844
+            },
+            "supportId": null
+          },
+          {
+            "tick": 6455,
+            "kind": "landed",
+            "from": "flying",
+            "to": "grounded",
+            "position": {
+              "x": 14.947829246520996,
+              "y": 248.0810089111328,
+              "z": -0.04930546507239342
+            },
+            "supportId": "palace-roof-2"
+          }
+        ]
+      }
+    },
+    {
+      "label": "roof-departure",
+      "state": {
+        "id": "local-player",
+        "tick": 6536,
+        "position": {
+          "x": 14.947829246520996,
+          "y": 251.414306640625,
+          "z": -0.04930546507239342
+        },
+        "velocity": {
+          "x": 0,
+          "y": 10.00030517578125,
+          "z": 0
+        },
+        "yaw": 0,
+        "mode": "flying",
+        "supportId": null
+      },
+      "physics": {
+        "active": true,
+        "tick": 6536,
+        "position": "{\"x\":14.947829246520996,\"y\":251.414306640625,\"z\":-0.04930546507239342}",
+        "physicalPosition": "{\"x\":14.947829246520996,\"y\":251.414306640625,\"z\":-0.04930546507239342}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "flying",
+        "supportId": null,
+        "velocity": "{\"x\":0,\"y\":10.00030517578125,\"z\":0}",
+        "penetration": 0,
+        "colliders": 254,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 10,
+        "lastSubsteps": 1,
+        "maxSubsteps": 1,
+        "maxSweepDistance": 0.16666666666666666,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": 14.947829246520996,
+          "y": 248.08087158203125,
+          "z": -0.04930546507239342
+        },
+        "events": [
+          {
+            "tick": 1,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": -18,
+              "y": 0.8949971795082092,
+              "z": 282
+            },
+            "supportId": "jiangnan-bank--1"
+          },
+          {
+            "tick": 599,
+            "kind": "takeoff",
+            "from": "grounded",
+            "to": "flying",
+            "position": {
+              "x": -0.05218055099248886,
+              "y": 0.8949300050735474,
+              "z": 272.05279541015625
+            },
+            "supportId": null
+          },
+          {
+            "tick": 2773,
+            "kind": "landed",
+            "from": "flying",
+            "to": "grounded",
+            "position": {
+              "x": -0.05218055099248886,
+              "y": 138.8950958251953,
+              "z": 54.05076599121094
+            },
+            "supportId": "palace-terrace"
+          },
+          {
+            "tick": 4942,
+            "kind": "takeoff",
+            "from": "grounded",
+            "to": "flying",
+            "position": {
+              "x": -0.05218084156513214,
+              "y": 138.8950958251953,
+              "z": 53.950767517089844
+            },
+            "supportId": null
+          },
+          {
+            "tick": 6455,
+            "kind": "landed",
+            "from": "flying",
+            "to": "grounded",
+            "position": {
+              "x": 14.947829246520996,
+              "y": 248.0810089111328,
+              "z": -0.04930546507239342
+            },
+            "supportId": "palace-roof-2"
+          },
+          {
+            "tick": 6516,
+            "kind": "takeoff",
+            "from": "grounded",
+            "to": "flying",
+            "position": {
+              "x": 14.947829246520996,
+              "y": 248.08087158203125,
+              "z": -0.04930546507239342
+            },
+            "supportId": null
+          }
+        ]
+      }
+    },
+    {
+      "label": "hall--1",
+      "state": {
+        "id": "local-player",
+        "tick": 3397,
+        "position": {
+          "x": -8.002010345458984,
+          "y": 138.89500427246094,
+          "z": 53.95067596435547
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 2.9999542236328125
+        },
+        "yaw": 3.141592653589793,
+        "mode": "grounded",
+        "supportId": "palace-terrace"
+      },
+      "physics": {
+        "active": true,
+        "tick": 3397,
+        "position": "{\"x\":-8.002010345458984,\"y\":138.89500427246094,\"z\":53.95067596435547}",
+        "physicalPosition": "{\"x\":-8.002010345458984,\"y\":138.89500427246094,\"z\":53.95067596435547}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "grounded",
+        "supportId": "palace-terrace",
+        "velocity": "{\"x\":0,\"y\":0,\"z\":2.9999542236328125}",
+        "penetration": 0,
+        "colliders": 254,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 10,
+        "lastSubsteps": 1,
+        "maxSubsteps": 1,
+        "maxSweepDistance": 0.05,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": -8.002010345458984,
+          "y": 138.89500427246094,
+          "z": 53.95067596435547
+        },
+        "events": [
+          {
+            "tick": 1,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": -8,
+              "y": 138.89500427246094,
+              "z": 54
+            },
+            "supportId": "palace-terrace"
+          }
+        ]
+      }
+    },
+    {
+      "label": "hall-1",
+      "state": {
+        "id": "local-player",
+        "tick": 3397,
+        "position": {
+          "x": 7.999697208404541,
+          "y": 138.89500427246094,
+          "z": 53.95161437988281
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 2.9999542236328125
+        },
+        "yaw": 3.141592653589793,
+        "mode": "grounded",
+        "supportId": "palace-terrace"
+      },
+      "physics": {
+        "active": true,
+        "tick": 3397,
+        "position": "{\"x\":7.999697208404541,\"y\":138.89500427246094,\"z\":53.95161437988281}",
+        "physicalPosition": "{\"x\":7.999697208404541,\"y\":138.89500427246094,\"z\":53.95161437988281}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "grounded",
+        "supportId": "palace-terrace",
+        "velocity": "{\"x\":0,\"y\":0,\"z\":2.9999542236328125}",
+        "penetration": 0,
+        "colliders": 254,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 10,
+        "lastSubsteps": 1,
+        "maxSubsteps": 1,
+        "maxSweepDistance": 0.05,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": 7.999697208404541,
+          "y": 138.89500427246094,
+          "z": 53.95161437988281
+        },
+        "events": [
+          {
+            "tick": 1,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": 8,
+              "y": 138.89500427246094,
+              "z": 54
+            },
+            "supportId": "palace-terrace"
+          }
+        ]
+      }
+    },
+    {
+      "label": "roof--15",
+      "state": {
+        "id": "local-player",
+        "tick": 491,
+        "position": {
+          "x": -15,
+          "y": 253.05628967285156,
+          "z": 0.000044828102545579895
+        },
+        "velocity": {
+          "x": 0,
+          "y": 10.00030517578125,
+          "z": 0
+        },
+        "yaw": 0,
+        "mode": "flying",
+        "supportId": null
+      },
+      "physics": {
+        "active": true,
+        "tick": 491,
+        "position": "{\"x\":-15,\"y\":253.05628967285156,\"z\":0.000044828102545579895}",
+        "physicalPosition": "{\"x\":-15,\"y\":253.05628967285156,\"z\":0.000044828102545579895}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "flying",
+        "supportId": null,
+        "velocity": "{\"x\":0,\"y\":10.00030517578125,\"z\":0}",
+        "penetration": 0,
+        "colliders": 254,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 10,
+        "lastSubsteps": 1,
+        "maxSubsteps": 3,
+        "maxSweepDistance": 0.199360546875,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": -15,
+          "y": 248.05613708496094,
+          "z": 0.000044828102545579895
+        },
+        "events": [
+          {
+            "tick": 175,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": -15,
+              "y": 248.05624389648438,
+              "z": 0.000044828102545579895
+            },
+            "supportId": "palace-roof-2"
+          },
+          {
+            "tick": 461,
+            "kind": "takeoff",
+            "from": "grounded",
+            "to": "flying",
+            "position": {
+              "x": -15,
+              "y": 248.05613708496094,
+              "z": 0.000044828102545579895
+            },
+            "supportId": null
+          }
+        ]
+      }
+    },
+    {
+      "label": "roof-0",
+      "state": {
+        "id": "local-player",
+        "tick": 491,
+        "position": {
+          "x": 0,
+          "y": 253.0561065673828,
+          "z": 0.000044830616388935596
+        },
+        "velocity": {
+          "x": 0,
+          "y": 10.00030517578125,
+          "z": 0
+        },
+        "yaw": 0,
+        "mode": "flying",
+        "supportId": null
+      },
+      "physics": {
+        "active": true,
+        "tick": 491,
+        "position": "{\"x\":0,\"y\":253.0561065673828,\"z\":0.000044830616388935596}",
+        "physicalPosition": "{\"x\":0,\"y\":253.0561065673828,\"z\":0.000044830616388935596}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "flying",
+        "supportId": null,
+        "velocity": "{\"x\":0,\"y\":10.00030517578125,\"z\":0}",
+        "penetration": 0,
+        "colliders": 254,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 10,
+        "lastSubsteps": 1,
+        "maxSubsteps": 3,
+        "maxSweepDistance": 0.199360546875,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": 0,
+          "y": 248.0559539794922,
+          "z": 0.000044830616388935596
+        },
+        "events": [
+          {
+            "tick": 175,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": 0,
+              "y": 248.0560760498047,
+              "z": 0.000044830616388935596
+            },
+            "supportId": "palace-roof-2"
+          },
+          {
+            "tick": 461,
+            "kind": "takeoff",
+            "from": "grounded",
+            "to": "flying",
+            "position": {
+              "x": 0,
+              "y": 248.0559539794922,
+              "z": 0.000044830616388935596
+            },
+            "supportId": null
+          }
+        ]
+      }
+    },
+    {
+      "label": "roof-15",
+      "state": {
+        "id": "local-player",
+        "tick": 491,
+        "position": {
+          "x": 15,
+          "y": 253.05625915527344,
+          "z": 0.00004482594522414729
+        },
+        "velocity": {
+          "x": 0,
+          "y": 10.00030517578125,
+          "z": 0
+        },
+        "yaw": 0,
+        "mode": "flying",
+        "supportId": null
+      },
+      "physics": {
+        "active": true,
+        "tick": 491,
+        "position": "{\"x\":15,\"y\":253.05625915527344,\"z\":0.00004482594522414729}",
+        "physicalPosition": "{\"x\":15,\"y\":253.05625915527344,\"z\":0.00004482594522414729}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "flying",
+        "supportId": null,
+        "velocity": "{\"x\":0,\"y\":10.00030517578125,\"z\":0}",
+        "penetration": 0,
+        "colliders": 254,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 10,
+        "lastSubsteps": 1,
+        "maxSubsteps": 3,
+        "maxSweepDistance": 0.199360546875,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": 15,
+          "y": 248.0561065673828,
+          "z": 0.00004482594522414729
+        },
+        "events": [
+          {
+            "tick": 175,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": 15,
+              "y": 248.0562744140625,
+              "z": 0.00004482594522414729
+            },
+            "supportId": "palace-roof-2"
+          },
+          {
+            "tick": 461,
+            "kind": "takeoff",
+            "from": "grounded",
+            "to": "flying",
+            "position": {
+              "x": 15,
+              "y": 248.0561065673828,
+              "z": 0.00004482594522414729
+            },
+            "supportId": null
+          }
+        ]
+      }
+    },
+    {
+      "label": "hall-ceiling",
+      "state": {
+        "id": "local-player",
+        "tick": 2130,
+        "position": {
+          "x": 57.729522705078125,
+          "y": 210.77740478515625,
+          "z": -0.005383153911679983
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "yaw": 1.5707963267948966,
+        "mode": "flying",
+        "supportId": null
+      },
+      "physics": {
+        "active": true,
+        "tick": 2130,
+        "position": "{\"x\":57.729522705078125,\"y\":210.77740478515625,\"z\":-0.005383153911679983}",
+        "physicalPosition": "{\"x\":57.729522705078125,\"y\":210.77740478515625,\"z\":-0.005383153911679983}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "flying",
+        "supportId": null,
+        "velocity": "{\"x\":0,\"y\":0,\"z\":0}",
+        "penetration": 0,
+        "colliders": 254,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 10,
+        "lastSubsteps": 1,
+        "maxSubsteps": 1,
+        "maxSweepDistance": 0.16666666666666666,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": 57.72990417480469,
+          "y": 138.89500427246094,
+          "z": 0.000896643556188792
+        },
+        "events": [
+          {
+            "tick": 1,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": 0,
+              "y": 138.89500427246094,
+              "z": 0
+            },
+            "supportId": "palace-terrace"
+          },
+          {
+            "tick": 1330,
+            "kind": "takeoff",
+            "from": "grounded",
+            "to": "flying",
+            "position": {
+              "x": 57.72990417480469,
+              "y": 138.89500427246094,
+              "z": 0.000896643556188792
+            },
+            "supportId": null
+          }
+        ]
+      }
+    }
+  ]
+}

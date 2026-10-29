@@ -1,0 +1,64 @@
+{
+  "runId": "2026-10-29T13-50-14-322Z-edfc3d92",
+  "candidate": "6366e36e7ea69aee177215631df6b54df9a921b81553d531e3a07a6c2a81f08b",
+  "stage": "P09",
+  "status": "FAIL",
+  "cases": [
+    {
+      "id": "P09-01",
+      "status": "FAIL",
+      "executed": 1,
+      "details": [
+        "Unresolved code dependency"
+      ],
+      "evidence": [
+        {
+          "path": "P09-failure.log",
+          "sha256": "bab57cabf0be636c7ad7563690a41fbbc0fdea7ddde740a2f44ec491e833c43e"
+        }
+      ]
+    },
+    {
+      "id": "P09-02",
+      "status": "FAIL",
+      "executed": 1,
+      "details": [
+        "Unresolved code dependency"
+      ],
+      "evidence": [
+        {
+          "path": "P09-failure.log",
+          "sha256": "bab57cabf0be636c7ad7563690a41fbbc0fdea7ddde740a2f44ec491e833c43e"
+        }
+      ]
+    },
+    {
+      "id": "P09-03",
+      "status": "FAIL",
+      "executed": 1,
+      "details": [
+        "Unresolved code dependency"
+      ],
+      "evidence": [
+        {
+          "path": "P09-failure.log",
+          "sha256": "bab57cabf0be636c7ad7563690a41fbbc0fdea7ddde740a2f44ec491e833c43e"
+        }
+      ]
+    },
+    {
+      "id": "P09-04",
+      "status": "FAIL",
+      "executed": 1,
+      "details": [
+        "Unresolved code dependency"
+      ],
+      "evidence": [
+        {
+          "path": "P09-failure.log",
+          "sha256": "bab57cabf0be636c7ad7563690a41fbbc0fdea7ddde740a2f44ec491e833c43e"
+        }
+      ]
+    }
+  ]
+}

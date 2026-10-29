@@ -1,0 +1,57 @@
+
+> tiangong@0.0.0 gate
+> node scripts/quality/gate.mjs --through P09
+
+{
+  "status": "BLOCKED",
+  "through": "P09",
+  "stages": [
+    {
+      "id": "P00",
+      "status": "PASS"
+    },
+    {
+      "id": "P01",
+      "status": "PASS"
+    },
+    {
+      "id": "P02",
+      "status": "PASS"
+    },
+    {
+      "id": "P03",
+      "status": "PASS"
+    },
+    {
+      "id": "P04",
+      "status": "PASS"
+    },
+    {
+      "id": "P05",
+      "status": "PASS"
+    },
+    {
+      "id": "P06",
+      "status": "PASS"
+    },
+    {
+      "id": "P07",
+      "status": "PASS"
+    },
+    {
+      "id": "P08",
+      "status": "PASS"
+    },
+    {
+      "id": "P09",
+      "status": "BLOCKED"
+    }
+  ],
+  "nextStageEligible": false,
+  "report": "quality/reports/2026-10-29T14-15-51-767Z-55e91d69/summary.json"
+}
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice

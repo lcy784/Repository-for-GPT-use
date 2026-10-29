@@ -1,0 +1,4 @@
+AssertionError [ERR_ASSERTION]: Unresolved code dependency
+    at assembleHtml (file:///workspace/Repository-for-GPT-use/scripts/build-offline-a.mjs:11:33)
+    at buildOfflineA (file:///workspace/Repository-for-GPT-use/scripts/build-offline-a.mjs:25:13)
+    at async file:///workspace/Repository-for-GPT-use/scripts/quality/stages/P09.mjs:11:60

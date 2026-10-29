@@ -1,0 +1,6 @@
+AssertionError [ERR_ASSERTION]: Offline artifact core journey failed
+
+1 !== 0
+
+    at file:///workspace/Repository-for-GPT-use/scripts/quality/stages/P09.mjs:13:121
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)

@@ -1,0 +1,122 @@
+{
+  "status": "PASS",
+  "reason": "User acceptance applies: current visual inputs and three rendered images match the accepted sample.",
+  "approvedCommit": "1110e3868bd692b839204c1d2252ba1424f62984",
+  "approvedCandidate": "fb75666ecd7d379e80f945a87ec4ca9ecb0a17494f27c8585eea891576819151",
+  "record": {
+    "version": 1,
+    "status": "accepted-by-user",
+    "scope": "P02-visual-only",
+    "acceptedOn": "2026-10-21",
+    "timezone": "Asia/Shanghai",
+    "source": {
+      "kind": "user-chat",
+      "quote": "验收通过",
+      "context": "Explicit acceptance after the monumental palace revision and commit 1110e38 were presented."
+    },
+    "approvedCommit": "1110e3868bd692b839204c1d2252ba1424f62984",
+    "approvedCandidate": "fb75666ecd7d379e80f945a87ec4ca9ecb0a17494f27c8585eea891576819151",
+    "approvedRunDirectory": "quality/reports/2026-10-21T15-29-39-829Z-0da8381d",
+    "renderInputs": [
+      {
+        "path": "index.html",
+        "sha256": "a4e0ad0227a7175b9764a6a8a08d14b5840dae85a710af4f91ede360280fdd5d"
+      },
+      {
+        "path": "package-lock.json",
+        "sha256": "862ca1f3484e7e7f53d3e43b4b9bfc457dd9570465cfcba4a632d2ffcb88dc6a"
+      },
+      {
+        "path": "package.json",
+        "sha256": "a326ae1e8551770582a43bcd52f1873de93c6eef27e5e003c6d44563820fa718"
+      },
+      {
+        "path": "public/assets/palace/source-manifest.json",
+        "sha256": "f7451da15028218e05e267808eb81dc50ed12f40882f7c6e9d1d3a6e1ef1dcfc"
+      },
+      {
+        "path": "public/runtime-config.json",
+        "sha256": "da2fd6d5249a060323c0b10afc1c27633f07b1a2dd1067f0a61c3ce7b0babbb3"
+      },
+      {
+        "path": "src/env.d.ts",
+        "sha256": "da5bf71d48cf909584a01c80b445f730507068f5b34c920f352e2bfcf0315e4c"
+      },
+      {
+        "path": "src/main.ts",
+        "sha256": "162aa240e0612af3b2bfdf1c4d1c185a9e990f14f574c140a0b5c19f4a6c5a75"
+      },
+      {
+        "path": "src/runtime/application.ts",
+        "sha256": "b561b0ca5adc9abdb0fdef37ea4b7fb3f7cab51704a2a7d1af9fe5fd2abab3b9"
+      },
+      {
+        "path": "src/runtime/clock.ts",
+        "sha256": "2000fc356ce604c8b9b58e1c7b589d3f22feb989cd8aa8f5c8591ab400d6b5fe"
+      },
+      {
+        "path": "src/runtime/config.ts",
+        "sha256": "e08e8130fec7bb0d322d7630df68c134ccd834034774f39ac93b6b445f340149"
+      },
+      {
+        "path": "src/runtime/palace.ts",
+        "sha256": "361886f995158e2bebc64afb8a5e16d1a2f7afe0e65d0295af6d364e4b3d1d7d"
+      },
+      {
+        "path": "src/runtime/roof.ts",
+        "sha256": "bd699f080daf7c0c69a266ec1fe8b598b21edb440180fb3e399531c1153e241f"
+      },
+      {
+        "path": "src/shared/contracts.ts",
+        "sha256": "520001b1feaea23488b36f6a3f0b54c39dc4d22f3e5f1fa6373696e7a60496d3"
+      },
+      {
+        "path": "src/style.css",
+        "sha256": "dc9f41033ec155fe52a5badacd4a8585b0f729da76387989731a529f6dc88f31"
+      },
+      {
+        "path": "tools/tiangong/package-lock.json",
+        "sha256": "ada23080ecf3d99a3365695efe779402add272490b4ee4bef3a287da9b9449f3"
+      },
+      {
+        "path": "tools/tiangong/package.json",
+        "sha256": "e1deb629bb157b60b70c4420cfd889ad932d8bade07feac2f17f0e8afa2441d4"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha256": "7c6e6eed1f34ba59874ead255af211e0c45d0a202c1ce54d680d491de114c3ce"
+      },
+      {
+        "path": "vite.config.mjs",
+        "sha256": "7c9ea1f476bf91ebe6fd8fee8d3bcacbf5229dec25ca05256aa3f49ef3c34ad2"
+      }
+    ],
+    "images": [
+      {
+        "name": "far",
+        "path": "quality/reports/2026-10-21T15-29-39-829Z-0da8381d/P02-browser/far.png",
+        "sha256": "abd21b8948109f0c6aca1b4cba16b0be0eb18b06aeea530d2fb556f5c75da78d"
+      },
+      {
+        "name": "stairs",
+        "path": "quality/reports/2026-10-21T15-29-39-829Z-0da8381d/P02-browser/stairs.png",
+        "sha256": "1cd77a5c02137eb0aab948ea7bc20d9a868b7443cbff2ebe5e32b5b322acba0d"
+      },
+      {
+        "name": "human",
+        "path": "quality/reports/2026-10-21T15-29-39-829Z-0da8381d/P02-browser/human.png",
+        "sha256": "8301b58014fe0afac6346469c4eee81a99bc7bc685a999ecd956d1b8e9349ca6"
+      }
+    ],
+    "approvedCriteria": [
+      "Monumental proportions and 1.75 metre human reference",
+      "Three-tier roof silhouette and layered ornamental structure",
+      "Current visual sample and three fixed review cameras"
+    ],
+    "exclusions": [
+      "No Windows hardware performance measurement supplied",
+      "No gameplay or later-stage acceptance implied"
+    ],
+    "automaticBaselineReplacement": false
+  }
+}

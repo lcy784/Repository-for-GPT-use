@@ -1,0 +1,2241 @@
+{
+  "runId": "2026-10-29T13-50-14-322Z-edfc3d92",
+  "candidate": "6366e36e7ea69aee177215631df6b54df9a921b81553d531e3a07a6c2a81f08b",
+  "records": [
+    {
+      "label": "bridge-10",
+      "state": {
+        "id": "local-player",
+        "tick": 598,
+        "position": {
+          "x": -0.05218055099248886,
+          "y": 0.8949300050735474,
+          "z": 272.05279541015625
+        },
+        "velocity": {
+          "x": 2.983769327402115,
+          "y": 0,
+          "z": 0.0274658203125
+        },
+        "yaw": 1.5707963267948966,
+        "mode": "grounded",
+        "supportId": "jiangnan-bridge"
+      },
+      "physics": {
+        "active": true,
+        "tick": 598,
+        "position": "{\"x\":-0.05218055099248886,\"y\":0.8949300050735474,\"z\":272.05279541015625}",
+        "physicalPosition": "{\"x\":-0.05218055099248886,\"y\":0.8949300050735474,\"z\":272.05279541015625}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "grounded",
+        "supportId": "jiangnan-bridge",
+        "velocity": "{\"x\":2.983769327402115,\"y\":0,\"z\":0.0274658203125}",
+        "penetration": 0,
+        "colliders": 24,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 10,
+        "lastSubsteps": 1,
+        "maxSubsteps": 1,
+        "maxSweepDistance": 0.05,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": -0.05218055099248886,
+          "y": 0.8949300050735474,
+          "z": 272.05279541015625
+        },
+        "events": [
+          {
+            "tick": 1,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": -18,
+              "y": 0.8949971795082092,
+              "z": 282
+            },
+            "supportId": "jiangnan-bank--1"
+          }
+        ]
+      },
+      "streaming": {
+        "disposed": false,
+        "blocked": [],
+        "maxLoading": 2,
+        "activations": 0,
+        "zones": [
+          {
+            "id": "cell-1-0-4",
+            "state": "ready"
+          },
+          {
+            "id": "cell-1-0-3",
+            "state": "ready"
+          }
+        ],
+        "ready": [
+          "cell-1-0-4",
+          "cell-1-0-3"
+        ]
+      },
+      "assets": {
+        "bytes": {
+          "entries": 4,
+          "references": 7,
+          "ready": 4,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "decoded": {
+          "entries": 0,
+          "references": 0,
+          "ready": 0,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "scopeLeases": 0
+      }
+    },
+    {
+      "label": "vertical-10",
+      "state": {
+        "id": "local-player",
+        "tick": 1446,
+        "position": {
+          "x": -0.05218055099248886,
+          "y": 142,
+          "z": 272.05279541015625
+        },
+        "velocity": {
+          "x": 0,
+          "y": 6.32537841796875,
+          "z": 0
+        },
+        "yaw": 1.5707963267948966,
+        "mode": "flying",
+        "supportId": null
+      },
+      "physics": {
+        "active": true,
+        "tick": 1446,
+        "position": "{\"x\":-0.05218055099248886,\"y\":142,\"z\":272.05279541015625}",
+        "physicalPosition": "{\"x\":-0.05218055099248886,\"y\":142,\"z\":272.05279541015625}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "flying",
+        "supportId": null,
+        "velocity": "{\"x\":0,\"y\":6.32537841796875,\"z\":0}",
+        "penetration": 0,
+        "colliders": 31,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 10,
+        "lastSubsteps": 1,
+        "maxSubsteps": 1,
+        "maxSweepDistance": 0.16666666666666666,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": -0.05218055099248886,
+          "y": 0.8949300050735474,
+          "z": 272.05279541015625
+        },
+        "events": [
+          {
+            "tick": 1,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": -18,
+              "y": 0.8949971795082092,
+              "z": 282
+            },
+            "supportId": "jiangnan-bank--1"
+          },
+          {
+            "tick": 599,
+            "kind": "takeoff",
+            "from": "grounded",
+            "to": "flying",
+            "position": {
+              "x": -0.05218055099248886,
+              "y": 0.8949300050735474,
+              "z": 272.05279541015625
+            },
+            "supportId": null
+          }
+        ]
+      },
+      "streaming": {
+        "disposed": false,
+        "blocked": [],
+        "maxLoading": 2,
+        "activations": 0,
+        "zones": [
+          {
+            "id": "cell-1-2-3",
+            "state": "ready"
+          },
+          {
+            "id": "cell-1-2-4",
+            "state": "ready"
+          }
+        ],
+        "ready": [
+          "cell-1-2-3",
+          "cell-1-2-4"
+        ]
+      },
+      "assets": {
+        "bytes": {
+          "entries": 4,
+          "references": 7,
+          "ready": 4,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "decoded": {
+          "entries": 0,
+          "references": 0,
+          "ready": 0,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "scopeLeases": 0
+      }
+    },
+    {
+      "label": "interior-10",
+      "state": {
+        "id": "local-player",
+        "tick": 3861,
+        "position": {
+          "x": -0.052179716527462006,
+          "y": 138.89498901367188,
+          "z": 0.05130356177687645
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": -3.0000000447034836
+        },
+        "yaw": 0,
+        "mode": "grounded",
+        "supportId": "palace-terrace"
+      },
+      "physics": {
+        "active": true,
+        "tick": 3861,
+        "position": "{\"x\":-0.052179716527462006,\"y\":138.89498901367188,\"z\":0.05130356177687645}",
+        "physicalPosition": "{\"x\":-0.052179716527462006,\"y\":138.89498901367188,\"z\":0.05130356177687645}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "grounded",
+        "supportId": "palace-terrace",
+        "velocity": "{\"x\":0,\"y\":0,\"z\":-3.0000000447034836}",
+        "penetration": 0,
+        "colliders": 140,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 10,
+        "lastSubsteps": 1,
+        "maxSubsteps": 1,
+        "maxSweepDistance": 0.16666666666666666,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": -0.052179716527462006,
+          "y": 138.89498901367188,
+          "z": 0.05130356177687645
+        },
+        "events": [
+          {
+            "tick": 1,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": -18,
+              "y": 0.8949971795082092,
+              "z": 282
+            },
+            "supportId": "jiangnan-bank--1"
+          },
+          {
+            "tick": 599,
+            "kind": "takeoff",
+            "from": "grounded",
+            "to": "flying",
+            "position": {
+              "x": -0.05218055099248886,
+              "y": 0.8949300050735474,
+              "z": 272.05279541015625
+            },
+            "supportId": null
+          },
+          {
+            "tick": 2773,
+            "kind": "landed",
+            "from": "flying",
+            "to": "grounded",
+            "position": {
+              "x": -0.05218055099248886,
+              "y": 138.89999389648438,
+              "z": 54.05076599121094
+            },
+            "supportId": "palace-terrace"
+          }
+        ]
+      },
+      "streaming": {
+        "disposed": false,
+        "blocked": [],
+        "maxLoading": 2,
+        "activations": 0,
+        "zones": [
+          {
+            "id": "cell-1-2-2",
+            "state": "ready"
+          },
+          {
+            "id": "cell-1-2-1",
+            "state": "ready"
+          },
+          {
+            "id": "cell-1-1-1",
+            "state": "ready"
+          }
+        ],
+        "ready": [
+          "cell-1-2-2",
+          "cell-1-2-1",
+          "cell-1-1-1"
+        ]
+      },
+      "assets": {
+        "bytes": {
+          "entries": 5,
+          "references": 10,
+          "ready": 5,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "decoded": {
+          "entries": 0,
+          "references": 0,
+          "ready": 0,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "scopeLeases": 0
+      }
+    },
+    {
+      "label": "roof-10",
+      "state": {
+        "id": "local-player",
+        "tick": 6453,
+        "position": {
+          "x": 14.947829246520996,
+          "y": 248.05625915527344,
+          "z": 0.00004482678195927292
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0.0026896069175563753
+        },
+        "yaw": 0,
+        "mode": "grounded",
+        "supportId": "palace-roof-2"
+      },
+      "physics": {
+        "active": true,
+        "tick": 6453,
+        "position": "{\"x\":14.947829246520996,\"y\":248.05625915527344,\"z\":0.00004482678195927292}",
+        "physicalPosition": "{\"x\":14.947829246520996,\"y\":248.05625915527344,\"z\":0.00004482678195927292}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "grounded",
+        "supportId": "palace-roof-2",
+        "velocity": "{\"x\":0,\"y\":0,\"z\":0.0026896069175563753}",
+        "penetration": 0,
+        "colliders": 26,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 10,
+        "lastSubsteps": 1,
+        "maxSubsteps": 1,
+        "maxSweepDistance": 0.16666666666666666,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": -0.05218084156513214,
+          "y": 138.8950958251953,
+          "z": 53.950767517089844
+        },
+        "events": [
+          {
+            "tick": 1,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": -18,
+              "y": 0.8949971795082092,
+              "z": 282
+            },
+            "supportId": "jiangnan-bank--1"
+          },
+          {
+            "tick": 599,
+            "kind": "takeoff",
+            "from": "grounded",
+            "to": "flying",
+            "position": {
+              "x": -0.05218055099248886,
+              "y": 0.8949300050735474,
+              "z": 272.05279541015625
+            },
+            "supportId": null
+          },
+          {
+            "tick": 2773,
+            "kind": "landed",
+            "from": "flying",
+            "to": "grounded",
+            "position": {
+              "x": -0.05218055099248886,
+              "y": 138.89999389648438,
+              "z": 54.05076599121094
+            },
+            "supportId": "palace-terrace"
+          },
+          {
+            "tick": 4940,
+            "kind": "takeoff",
+            "from": "grounded",
+            "to": "flying",
+            "position": {
+              "x": -0.05218084156513214,
+              "y": 138.8950958251953,
+              "z": 53.950767517089844
+            },
+            "supportId": null
+          },
+          {
+            "tick": 6453,
+            "kind": "landed",
+            "from": "flying",
+            "to": "grounded",
+            "position": {
+              "x": 14.947829246520996,
+              "y": 248.05625915527344,
+              "z": 0.00004482678195927292
+            },
+            "supportId": "palace-roof-2"
+          }
+        ]
+      },
+      "streaming": {
+        "disposed": false,
+        "blocked": [],
+        "maxLoading": 2,
+        "activations": 0,
+        "zones": [
+          {
+            "id": "cell-1-3-1",
+            "state": "ready"
+          },
+          {
+            "id": "cell-2-3-1",
+            "state": "ready"
+          }
+        ],
+        "ready": [
+          "cell-1-3-1",
+          "cell-2-3-1"
+        ]
+      },
+      "assets": {
+        "bytes": {
+          "entries": 4,
+          "references": 7,
+          "ready": 4,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "decoded": {
+          "entries": 0,
+          "references": 0,
+          "ready": 0,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "scopeLeases": 0
+      }
+    },
+    {
+      "label": "bridge-60",
+      "state": {
+        "id": "local-player",
+        "tick": 598,
+        "position": {
+          "x": -0.05218055099248886,
+          "y": 0.8949300050735474,
+          "z": 272.05279541015625
+        },
+        "velocity": {
+          "x": 2.983769327402115,
+          "y": 0,
+          "z": 0.0274658203125
+        },
+        "yaw": 1.5707963267948966,
+        "mode": "grounded",
+        "supportId": "jiangnan-bridge"
+      },
+      "physics": {
+        "active": true,
+        "tick": 598,
+        "position": "{\"x\":-0.05218055099248886,\"y\":0.8949300050735474,\"z\":272.05279541015625}",
+        "physicalPosition": "{\"x\":-0.05218055099248886,\"y\":0.8949300050735474,\"z\":272.05279541015625}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "grounded",
+        "supportId": "jiangnan-bridge",
+        "velocity": "{\"x\":2.983769327402115,\"y\":0,\"z\":0.0274658203125}",
+        "penetration": 0,
+        "colliders": 24,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 60,
+        "lastSubsteps": 1,
+        "maxSubsteps": 1,
+        "maxSweepDistance": 0.05,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": -0.05218055099248886,
+          "y": 0.8949300050735474,
+          "z": 272.05279541015625
+        },
+        "events": [
+          {
+            "tick": 1,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": -18,
+              "y": 0.8949971795082092,
+              "z": 282
+            },
+            "supportId": "jiangnan-bank--1"
+          }
+        ]
+      },
+      "streaming": {
+        "disposed": false,
+        "blocked": [],
+        "maxLoading": 2,
+        "activations": 0,
+        "zones": [
+          {
+            "id": "cell-1-0-4",
+            "state": "ready"
+          },
+          {
+            "id": "cell-1-0-3",
+            "state": "ready"
+          }
+        ],
+        "ready": [
+          "cell-1-0-4",
+          "cell-1-0-3"
+        ]
+      },
+      "assets": {
+        "bytes": {
+          "entries": 4,
+          "references": 7,
+          "ready": 4,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "decoded": {
+          "entries": 0,
+          "references": 0,
+          "ready": 0,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "scopeLeases": 0
+      }
+    },
+    {
+      "label": "vertical-60",
+      "state": {
+        "id": "local-player",
+        "tick": 741,
+        "position": {
+          "x": -0.05218055099248886,
+          "y": 142,
+          "z": 272.05279541015625
+        },
+        "velocity": {
+          "x": 0,
+          "y": 6.36474609375,
+          "z": 0
+        },
+        "yaw": 1.5707963267948966,
+        "mode": "flying",
+        "supportId": null
+      },
+      "physics": {
+        "active": true,
+        "tick": 741,
+        "position": "{\"x\":-0.05218055099248886,\"y\":142,\"z\":272.05279541015625}",
+        "physicalPosition": "{\"x\":-0.05218055099248886,\"y\":142,\"z\":272.05279541015625}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "flying",
+        "supportId": null,
+        "velocity": "{\"x\":0,\"y\":6.36474609375,\"z\":0}",
+        "penetration": 0,
+        "colliders": 31,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 60,
+        "lastSubsteps": 1,
+        "maxSubsteps": 5,
+        "maxSweepDistance": 0.2,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": -0.05218055099248886,
+          "y": 0.8949300050735474,
+          "z": 272.05279541015625
+        },
+        "events": [
+          {
+            "tick": 1,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": -18,
+              "y": 0.8949971795082092,
+              "z": 282
+            },
+            "supportId": "jiangnan-bank--1"
+          },
+          {
+            "tick": 599,
+            "kind": "takeoff",
+            "from": "grounded",
+            "to": "flying",
+            "position": {
+              "x": -0.05218055099248886,
+              "y": 0.8949300050735474,
+              "z": 272.05279541015625
+            },
+            "supportId": null
+          }
+        ]
+      },
+      "streaming": {
+        "disposed": false,
+        "blocked": [],
+        "maxLoading": 2,
+        "activations": 0,
+        "zones": [
+          {
+            "id": "cell-1-2-4",
+            "state": "ready"
+          },
+          {
+            "id": "cell-1-2-3",
+            "state": "ready"
+          },
+          {
+            "id": "cell-1-3-4",
+            "state": "ready"
+          },
+          {
+            "id": "cell-1-3-3",
+            "state": "ready"
+          }
+        ],
+        "ready": [
+          "cell-1-2-4",
+          "cell-1-2-3",
+          "cell-1-3-4",
+          "cell-1-3-3"
+        ]
+      },
+      "assets": {
+        "bytes": {
+          "entries": 6,
+          "references": 13,
+          "ready": 6,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "decoded": {
+          "entries": 0,
+          "references": 0,
+          "ready": 0,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "scopeLeases": 0
+      }
+    },
+    {
+      "label": "interior-60",
+      "state": {
+        "id": "local-player",
+        "tick": 2051,
+        "position": {
+          "x": -0.052179932594299316,
+          "y": 138.8950958251953,
+          "z": 0.05524792522192001
+        },
+        "velocity": {
+          "x": -8.940696716308594e-7,
+          "y": 0,
+          "z": -2.9999984800815582
+        },
+        "yaw": 0,
+        "mode": "grounded",
+        "supportId": "palace-terrace"
+      },
+      "physics": {
+        "active": true,
+        "tick": 2051,
+        "position": "{\"x\":-0.052179932594299316,\"y\":138.8950958251953,\"z\":0.05524792522192001}",
+        "physicalPosition": "{\"x\":-0.052179932594299316,\"y\":138.8950958251953,\"z\":0.05524792522192001}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "grounded",
+        "supportId": "palace-terrace",
+        "velocity": "{\"x\":-8.940696716308594e-7,\"y\":0,\"z\":-2.9999984800815582}",
+        "penetration": 0,
+        "colliders": 140,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 60,
+        "lastSubsteps": 1,
+        "maxSubsteps": 5,
+        "maxSweepDistance": 0.2,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": -0.052179932594299316,
+          "y": 138.8950958251953,
+          "z": 0.05524792522192001
+        },
+        "events": [
+          {
+            "tick": 1,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": -18,
+              "y": 0.8949971795082092,
+              "z": 282
+            },
+            "supportId": "jiangnan-bank--1"
+          },
+          {
+            "tick": 599,
+            "kind": "takeoff",
+            "from": "grounded",
+            "to": "flying",
+            "position": {
+              "x": -0.05218055099248886,
+              "y": 0.8949300050735474,
+              "z": 272.05279541015625
+            },
+            "supportId": null
+          },
+          {
+            "tick": 963,
+            "kind": "landed",
+            "from": "flying",
+            "to": "grounded",
+            "position": {
+              "x": -0.05218055099248886,
+              "y": 138.89999389648438,
+              "z": 54.054710388183594
+            },
+            "supportId": "palace-terrace"
+          }
+        ]
+      },
+      "streaming": {
+        "disposed": false,
+        "blocked": [],
+        "maxLoading": 2,
+        "activations": 0,
+        "zones": [
+          {
+            "id": "cell-1-2-2",
+            "state": "ready"
+          },
+          {
+            "id": "cell-1-2-1",
+            "state": "ready"
+          },
+          {
+            "id": "cell-1-1-1",
+            "state": "prepared"
+          }
+        ],
+        "ready": [
+          "cell-1-2-2",
+          "cell-1-2-1"
+        ]
+      },
+      "assets": {
+        "bytes": {
+          "entries": 5,
+          "references": 10,
+          "ready": 5,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "decoded": {
+          "entries": 0,
+          "references": 0,
+          "ready": 0,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "scopeLeases": 0
+      }
+    },
+    {
+      "label": "roof-60",
+      "state": {
+        "id": "local-player",
+        "tick": 3383,
+        "position": {
+          "x": 14.947809219360352,
+          "y": 248.05624389648438,
+          "z": 0.00004479770359466784
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0.002689650355023332
+        },
+        "yaw": 0,
+        "mode": "grounded",
+        "supportId": "palace-roof-2"
+      },
+      "physics": {
+        "active": true,
+        "tick": 3383,
+        "position": "{\"x\":14.947809219360352,\"y\":248.05624389648438,\"z\":0.00004479770359466784}",
+        "physicalPosition": "{\"x\":14.947809219360352,\"y\":248.05624389648438,\"z\":0.00004479770359466784}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "grounded",
+        "supportId": "palace-roof-2",
+        "velocity": "{\"x\":0,\"y\":0,\"z\":0.002689650355023332}",
+        "penetration": 0,
+        "colliders": 71,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 60,
+        "lastSubsteps": 5,
+        "maxSubsteps": 5,
+        "maxSweepDistance": 0.2,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": -0.05218084156513214,
+          "y": 138.89498901367188,
+          "z": 53.9547119140625
+        },
+        "events": [
+          {
+            "tick": 1,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": -18,
+              "y": 0.8949971795082092,
+              "z": 282
+            },
+            "supportId": "jiangnan-bank--1"
+          },
+          {
+            "tick": 599,
+            "kind": "takeoff",
+            "from": "grounded",
+            "to": "flying",
+            "position": {
+              "x": -0.05218055099248886,
+              "y": 0.8949300050735474,
+              "z": 272.05279541015625
+            },
+            "supportId": null
+          },
+          {
+            "tick": 963,
+            "kind": "landed",
+            "from": "flying",
+            "to": "grounded",
+            "position": {
+              "x": -0.05218055099248886,
+              "y": 138.89999389648438,
+              "z": 54.054710388183594
+            },
+            "supportId": "palace-terrace"
+          },
+          {
+            "tick": 3130,
+            "kind": "takeoff",
+            "from": "grounded",
+            "to": "flying",
+            "position": {
+              "x": -0.05218084156513214,
+              "y": 138.89498901367188,
+              "z": 53.9547119140625
+            },
+            "supportId": null
+          },
+          {
+            "tick": 3383,
+            "kind": "landed",
+            "from": "flying",
+            "to": "grounded",
+            "position": {
+              "x": 14.947809219360352,
+              "y": 248.05624389648438,
+              "z": 0.00004479770359466784
+            },
+            "supportId": "palace-roof-2"
+          }
+        ]
+      },
+      "streaming": {
+        "disposed": false,
+        "blocked": [],
+        "maxLoading": 2,
+        "activations": 0,
+        "zones": [
+          {
+            "id": "cell-1-3-1",
+            "state": "ready"
+          },
+          {
+            "id": "cell-2-3-1",
+            "state": "ready"
+          },
+          {
+            "id": "cell-1-2-1",
+            "state": "ready"
+          }
+        ],
+        "ready": [
+          "cell-1-3-1",
+          "cell-2-3-1",
+          "cell-1-2-1"
+        ]
+      },
+      "assets": {
+        "bytes": {
+          "entries": 5,
+          "references": 10,
+          "ready": 5,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "decoded": {
+          "entries": 0,
+          "references": 0,
+          "ready": 0,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "scopeLeases": 0
+      }
+    },
+    {
+      "label": "failed-boundary-held",
+      "state": {
+        "id": "local-player",
+        "tick": 150,
+        "position": {
+          "x": -18,
+          "y": 0.8949899673461914,
+          "z": 256.5008544921875
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "yaw": 0,
+        "mode": "grounded",
+        "supportId": "jiangnan-bank--1"
+      },
+      "physics": {
+        "active": true,
+        "tick": 150,
+        "position": "{\"x\":-18,\"y\":0.8949899673461914,\"z\":256.5008544921875}",
+        "physicalPosition": "{\"x\":-18,\"y\":0.8949899673461914,\"z\":256.5008544921875}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "grounded",
+        "supportId": "jiangnan-bank--1",
+        "velocity": "{\"x\":0,\"y\":0,\"z\":0}",
+        "penetration": 0,
+        "colliders": 16,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 60,
+        "lastSubsteps": 1,
+        "maxSubsteps": 1,
+        "maxSweepDistance": 0.050074201191831307,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": -18,
+          "y": 0.8949899673461914,
+          "z": 256.5008544921875
+        },
+        "events": [
+          {
+            "tick": 2,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": -18,
+              "y": 0.894992470741272,
+              "z": 259.95001220703125
+            },
+            "supportId": "jiangnan-bank--1"
+          }
+        ]
+      },
+      "streaming": {
+        "disposed": false,
+        "blocked": [
+          "cell-1-0-3"
+        ],
+        "maxLoading": 2,
+        "activations": 0,
+        "zones": [
+          {
+            "id": "cell-1-0-4",
+            "state": "ready"
+          },
+          {
+            "id": "cell-1-0-3",
+            "state": "error",
+            "error": "Error: HTTP 503 delayed region"
+          }
+        ],
+        "ready": [
+          "cell-1-0-4"
+        ]
+      },
+      "assets": {
+        "bytes": {
+          "entries": 3,
+          "references": 4,
+          "ready": 3,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "decoded": {
+          "entries": 0,
+          "references": 0,
+          "ready": 0,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "scopeLeases": 0
+      }
+    },
+    {
+      "label": "retry-crossed",
+      "state": {
+        "id": "local-player",
+        "tick": 279,
+        "position": {
+          "x": -18,
+          "y": 0.8949825763702393,
+          "z": 250.0506134033203
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": -3.00018310546875
+        },
+        "yaw": 0,
+        "mode": "grounded",
+        "supportId": "jiangnan-bank--1"
+      },
+      "physics": {
+        "active": true,
+        "tick": 279,
+        "position": "{\"x\":-18,\"y\":0.8949825763702393,\"z\":250.0506134033203}",
+        "physicalPosition": "{\"x\":-18,\"y\":0.8949825763702393,\"z\":250.0506134033203}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "grounded",
+        "supportId": "jiangnan-bank--1",
+        "velocity": "{\"x\":0,\"y\":0,\"z\":-3.00018310546875}",
+        "penetration": 0,
+        "colliders": 24,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 60,
+        "lastSubsteps": 1,
+        "maxSubsteps": 1,
+        "maxSweepDistance": 0.050074201191831307,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": -18,
+          "y": 0.8949825763702393,
+          "z": 250.0506134033203
+        },
+        "events": [
+          {
+            "tick": 2,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": -18,
+              "y": 0.894992470741272,
+              "z": 259.95001220703125
+            },
+            "supportId": "jiangnan-bank--1"
+          }
+        ]
+      },
+      "streaming": {
+        "disposed": false,
+        "blocked": [],
+        "maxLoading": 2,
+        "activations": 0,
+        "zones": [
+          {
+            "id": "cell-1-0-4",
+            "state": "ready"
+          },
+          {
+            "id": "cell-1-0-3",
+            "state": "ready"
+          }
+        ],
+        "ready": [
+          "cell-1-0-4",
+          "cell-1-0-3"
+        ]
+      },
+      "assets": {
+        "bytes": {
+          "entries": 4,
+          "references": 7,
+          "ready": 4,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "decoded": {
+          "entries": 0,
+          "references": 0,
+          "ready": 0,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "scopeLeases": 0
+      }
+    },
+    {
+      "label": "support-pinned",
+      "state": {
+        "id": "local-player",
+        "tick": 40,
+        "position": {
+          "x": -18,
+          "y": 0.8949941396713257,
+          "z": 282
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "yaw": 0,
+        "mode": "grounded",
+        "supportId": "jiangnan-bank--1"
+      },
+      "physics": {
+        "active": true,
+        "tick": 40,
+        "position": "{\"x\":-18,\"y\":0.8949941396713257,\"z\":282}",
+        "physicalPosition": "{\"x\":-18,\"y\":0.8949941396713257,\"z\":282}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "grounded",
+        "supportId": "jiangnan-bank--1",
+        "velocity": "{\"x\":0,\"y\":0,\"z\":0}",
+        "penetration": 0,
+        "colliders": 24,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 60,
+        "lastSubsteps": 1,
+        "maxSubsteps": 1,
+        "maxSweepDistance": 0.002725,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": -18,
+          "y": 0.8949941396713257,
+          "z": 282
+        },
+        "events": [
+          {
+            "tick": 1,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": -18,
+              "y": 0.8949971795082092,
+              "z": 282
+            },
+            "supportId": "jiangnan-bank--1"
+          }
+        ]
+      },
+      "streaming": {
+        "disposed": false,
+        "blocked": [],
+        "maxLoading": 2,
+        "activations": 0,
+        "zones": [
+          {
+            "id": "cell-1-0-4",
+            "state": "ready"
+          },
+          {
+            "id": "cell-1-0-3",
+            "state": "ready"
+          },
+          {
+            "id": "cell-2-3-4",
+            "state": "loading"
+          }
+        ],
+        "ready": [
+          "cell-1-0-4",
+          "cell-1-0-3"
+        ]
+      },
+      "assets": {
+        "bytes": {
+          "entries": 5,
+          "references": 8,
+          "ready": 4,
+          "loading": 1,
+          "lateDisposed": 0
+        },
+        "decoded": {
+          "entries": 0,
+          "references": 0,
+          "ready": 0,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "scopeLeases": 0
+      }
+    },
+    {
+      "label": "round-trip-0",
+      "state": {
+        "id": "local-player",
+        "tick": 4195,
+        "position": {
+          "x": -18.013700485229492,
+          "y": 0.8949910998344421,
+          "z": 281.935546875
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 2.999267578125
+        },
+        "yaw": 3.141592653589793,
+        "mode": "grounded",
+        "supportId": "jiangnan-bank--1"
+      },
+      "physics": {
+        "active": true,
+        "tick": 4195,
+        "position": "{\"x\":-18.013700485229492,\"y\":0.8949910998344421,\"z\":281.935546875}",
+        "physicalPosition": "{\"x\":-18.013700485229492,\"y\":0.8949910998344421,\"z\":281.935546875}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "grounded",
+        "supportId": "jiangnan-bank--1",
+        "velocity": "{\"x\":0,\"y\":0,\"z\":2.999267578125}",
+        "penetration": 0,
+        "colliders": 24,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 60,
+        "lastSubsteps": 1,
+        "maxSubsteps": 1,
+        "maxSweepDistance": 0.05,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": -18.013700485229492,
+          "y": 0.8949910998344421,
+          "z": 281.935546875
+        },
+        "events": [
+          {
+            "tick": 1,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": -18,
+              "y": 0.8949971795082092,
+              "z": 282
+            },
+            "supportId": "jiangnan-bank--1"
+          }
+        ]
+      },
+      "streaming": {
+        "disposed": false,
+        "blocked": [],
+        "maxLoading": 2,
+        "activations": 0,
+        "zones": [
+          {
+            "id": "cell-1-0-4",
+            "state": "ready"
+          },
+          {
+            "id": "cell-1-0-3",
+            "state": "ready"
+          }
+        ],
+        "ready": [
+          "cell-1-0-4",
+          "cell-1-0-3"
+        ]
+      },
+      "assets": {
+        "bytes": {
+          "entries": 4,
+          "references": 7,
+          "ready": 4,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "decoded": {
+          "entries": 0,
+          "references": 0,
+          "ready": 0,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "scopeLeases": 0
+      }
+    },
+    {
+      "label": "round-trip-1",
+      "state": {
+        "id": "local-player",
+        "tick": 6272,
+        "position": {
+          "x": -18.014192581176758,
+          "y": 0.8950991630554199,
+          "z": 281.9382019042969
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 2.999267578125
+        },
+        "yaw": 3.141592653589793,
+        "mode": "grounded",
+        "supportId": "jiangnan-bank--1"
+      },
+      "physics": {
+        "active": true,
+        "tick": 6272,
+        "position": "{\"x\":-18.014192581176758,\"y\":0.8950991630554199,\"z\":281.9382019042969}",
+        "physicalPosition": "{\"x\":-18.014192581176758,\"y\":0.8950991630554199,\"z\":281.9382019042969}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "grounded",
+        "supportId": "jiangnan-bank--1",
+        "velocity": "{\"x\":0,\"y\":0,\"z\":2.999267578125}",
+        "penetration": 0,
+        "colliders": 24,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 60,
+        "lastSubsteps": 1,
+        "maxSubsteps": 1,
+        "maxSweepDistance": 0.05,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": -18.014192581176758,
+          "y": 0.8950991630554199,
+          "z": 281.9382019042969
+        },
+        "events": [
+          {
+            "tick": 1,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": -18,
+              "y": 0.8949971795082092,
+              "z": 282
+            },
+            "supportId": "jiangnan-bank--1"
+          }
+        ]
+      },
+      "streaming": {
+        "disposed": false,
+        "blocked": [],
+        "maxLoading": 2,
+        "activations": 0,
+        "zones": [
+          {
+            "id": "cell-1-0-4",
+            "state": "ready"
+          },
+          {
+            "id": "cell-1-0-3",
+            "state": "ready"
+          }
+        ],
+        "ready": [
+          "cell-1-0-4",
+          "cell-1-0-3"
+        ]
+      },
+      "assets": {
+        "bytes": {
+          "entries": 4,
+          "references": 7,
+          "ready": 4,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "decoded": {
+          "entries": 0,
+          "references": 0,
+          "ready": 0,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "scopeLeases": 0
+      }
+    },
+    {
+      "label": "round-trip-2",
+      "state": {
+        "id": "local-player",
+        "tick": 8350,
+        "position": {
+          "x": -18.02641487121582,
+          "y": 0.8950991630554199,
+          "z": 281.9671936035156
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 2.999267578125
+        },
+        "yaw": 3.141592653589793,
+        "mode": "grounded",
+        "supportId": "jiangnan-bank--1"
+      },
+      "physics": {
+        "active": true,
+        "tick": 8350,
+        "position": "{\"x\":-18.02641487121582,\"y\":0.8950991630554199,\"z\":281.9671936035156}",
+        "physicalPosition": "{\"x\":-18.02641487121582,\"y\":0.8950991630554199,\"z\":281.9671936035156}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "grounded",
+        "supportId": "jiangnan-bank--1",
+        "velocity": "{\"x\":0,\"y\":0,\"z\":2.999267578125}",
+        "penetration": 0,
+        "colliders": 24,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 60,
+        "lastSubsteps": 1,
+        "maxSubsteps": 1,
+        "maxSweepDistance": 0.05,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": -18.02641487121582,
+          "y": 0.8950991630554199,
+          "z": 281.9671936035156
+        },
+        "events": [
+          {
+            "tick": 1,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": -18,
+              "y": 0.8949971795082092,
+              "z": 282
+            },
+            "supportId": "jiangnan-bank--1"
+          }
+        ]
+      },
+      "streaming": {
+        "disposed": false,
+        "blocked": [],
+        "maxLoading": 2,
+        "activations": 0,
+        "zones": [
+          {
+            "id": "cell-1-0-4",
+            "state": "ready"
+          },
+          {
+            "id": "cell-1-0-3",
+            "state": "ready"
+          }
+        ],
+        "ready": [
+          "cell-1-0-4",
+          "cell-1-0-3"
+        ]
+      },
+      "assets": {
+        "bytes": {
+          "entries": 4,
+          "references": 7,
+          "ready": 4,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "decoded": {
+          "entries": 0,
+          "references": 0,
+          "ready": 0,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "scopeLeases": 0
+      }
+    },
+    {
+      "label": "round-trip-3",
+      "state": {
+        "id": "local-player",
+        "tick": 10429,
+        "position": {
+          "x": -18.030864715576172,
+          "y": 0.895098865032196,
+          "z": 281.9631652832031
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 2.999267578125
+        },
+        "yaw": 3.141592653589793,
+        "mode": "grounded",
+        "supportId": "jiangnan-bank--1"
+      },
+      "physics": {
+        "active": true,
+        "tick": 10429,
+        "position": "{\"x\":-18.030864715576172,\"y\":0.895098865032196,\"z\":281.9631652832031}",
+        "physicalPosition": "{\"x\":-18.030864715576172,\"y\":0.895098865032196,\"z\":281.9631652832031}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "grounded",
+        "supportId": "jiangnan-bank--1",
+        "velocity": "{\"x\":0,\"y\":0,\"z\":2.999267578125}",
+        "penetration": 0,
+        "colliders": 24,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 60,
+        "lastSubsteps": 1,
+        "maxSubsteps": 1,
+        "maxSweepDistance": 0.05,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": -18.030864715576172,
+          "y": 0.895098865032196,
+          "z": 281.9631652832031
+        },
+        "events": [
+          {
+            "tick": 1,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": -18,
+              "y": 0.8949971795082092,
+              "z": 282
+            },
+            "supportId": "jiangnan-bank--1"
+          }
+        ]
+      },
+      "streaming": {
+        "disposed": false,
+        "blocked": [],
+        "maxLoading": 2,
+        "activations": 0,
+        "zones": [
+          {
+            "id": "cell-1-0-4",
+            "state": "ready"
+          },
+          {
+            "id": "cell-1-0-3",
+            "state": "ready"
+          }
+        ],
+        "ready": [
+          "cell-1-0-4",
+          "cell-1-0-3"
+        ]
+      },
+      "assets": {
+        "bytes": {
+          "entries": 4,
+          "references": 7,
+          "ready": 4,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "decoded": {
+          "entries": 0,
+          "references": 0,
+          "ready": 0,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "scopeLeases": 0
+      }
+    },
+    {
+      "label": "round-trip-4",
+      "state": {
+        "id": "local-player",
+        "tick": 12505,
+        "position": {
+          "x": -18.034374237060547,
+          "y": 0.8949955105781555,
+          "z": 281.9324035644531
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 2.999267578125
+        },
+        "yaw": 3.141592653589793,
+        "mode": "grounded",
+        "supportId": "jiangnan-bank--1"
+      },
+      "physics": {
+        "active": true,
+        "tick": 12505,
+        "position": "{\"x\":-18.034374237060547,\"y\":0.8949955105781555,\"z\":281.9324035644531}",
+        "physicalPosition": "{\"x\":-18.034374237060547,\"y\":0.8949955105781555,\"z\":281.9324035644531}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "grounded",
+        "supportId": "jiangnan-bank--1",
+        "velocity": "{\"x\":0,\"y\":0,\"z\":2.999267578125}",
+        "penetration": 0,
+        "colliders": 24,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 60,
+        "lastSubsteps": 1,
+        "maxSubsteps": 1,
+        "maxSweepDistance": 0.05,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": -18.034374237060547,
+          "y": 0.8949955105781555,
+          "z": 281.9324035644531
+        },
+        "events": [
+          {
+            "tick": 1,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": -18,
+              "y": 0.8949971795082092,
+              "z": 282
+            },
+            "supportId": "jiangnan-bank--1"
+          }
+        ]
+      },
+      "streaming": {
+        "disposed": false,
+        "blocked": [],
+        "maxLoading": 2,
+        "activations": 0,
+        "zones": [
+          {
+            "id": "cell-1-0-4",
+            "state": "ready"
+          },
+          {
+            "id": "cell-1-0-3",
+            "state": "ready"
+          }
+        ],
+        "ready": [
+          "cell-1-0-4",
+          "cell-1-0-3"
+        ]
+      },
+      "assets": {
+        "bytes": {
+          "entries": 4,
+          "references": 7,
+          "ready": 4,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "decoded": {
+          "entries": 0,
+          "references": 0,
+          "ready": 0,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "scopeLeases": 0
+      }
+    },
+    {
+      "label": "round-trip-5",
+      "state": {
+        "id": "local-player",
+        "tick": 14582,
+        "position": {
+          "x": -18.03898811340332,
+          "y": 0.8949970602989197,
+          "z": 281.9372863769531
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 2.999267578125
+        },
+        "yaw": 3.141592653589793,
+        "mode": "grounded",
+        "supportId": "jiangnan-bank--1"
+      },
+      "physics": {
+        "active": true,
+        "tick": 14582,
+        "position": "{\"x\":-18.03898811340332,\"y\":0.8949970602989197,\"z\":281.9372863769531}",
+        "physicalPosition": "{\"x\":-18.03898811340332,\"y\":0.8949970602989197,\"z\":281.9372863769531}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "grounded",
+        "supportId": "jiangnan-bank--1",
+        "velocity": "{\"x\":0,\"y\":0,\"z\":2.999267578125}",
+        "penetration": 0,
+        "colliders": 24,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 60,
+        "lastSubsteps": 1,
+        "maxSubsteps": 1,
+        "maxSweepDistance": 0.05,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": -18.03898811340332,
+          "y": 0.8949970602989197,
+          "z": 281.9372863769531
+        },
+        "events": [
+          {
+            "tick": 1,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": -18,
+              "y": 0.8949971795082092,
+              "z": 282
+            },
+            "supportId": "jiangnan-bank--1"
+          }
+        ]
+      },
+      "streaming": {
+        "disposed": false,
+        "blocked": [],
+        "maxLoading": 2,
+        "activations": 0,
+        "zones": [
+          {
+            "id": "cell-1-0-4",
+            "state": "ready"
+          },
+          {
+            "id": "cell-1-0-3",
+            "state": "ready"
+          }
+        ],
+        "ready": [
+          "cell-1-0-4",
+          "cell-1-0-3"
+        ]
+      },
+      "assets": {
+        "bytes": {
+          "entries": 4,
+          "references": 7,
+          "ready": 4,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "decoded": {
+          "entries": 0,
+          "references": 0,
+          "ready": 0,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "scopeLeases": 0
+      }
+    },
+    {
+      "label": "round-trip-6",
+      "state": {
+        "id": "local-player",
+        "tick": 16660,
+        "position": {
+          "x": -18.049091339111328,
+          "y": 0.8949970006942749,
+          "z": 281.94677734375
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 2.999267578125
+        },
+        "yaw": 3.141592653589793,
+        "mode": "grounded",
+        "supportId": "jiangnan-bank--1"
+      },
+      "physics": {
+        "active": true,
+        "tick": 16660,
+        "position": "{\"x\":-18.049091339111328,\"y\":0.8949970006942749,\"z\":281.94677734375}",
+        "physicalPosition": "{\"x\":-18.049091339111328,\"y\":0.8949970006942749,\"z\":281.94677734375}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "grounded",
+        "supportId": "jiangnan-bank--1",
+        "velocity": "{\"x\":0,\"y\":0,\"z\":2.999267578125}",
+        "penetration": 0,
+        "colliders": 24,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 60,
+        "lastSubsteps": 1,
+        "maxSubsteps": 1,
+        "maxSweepDistance": 0.05,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": -18.049091339111328,
+          "y": 0.8949970006942749,
+          "z": 281.94677734375
+        },
+        "events": [
+          {
+            "tick": 1,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": -18,
+              "y": 0.8949971795082092,
+              "z": 282
+            },
+            "supportId": "jiangnan-bank--1"
+          }
+        ]
+      },
+      "streaming": {
+        "disposed": false,
+        "blocked": [],
+        "maxLoading": 2,
+        "activations": 0,
+        "zones": [
+          {
+            "id": "cell-1-0-4",
+            "state": "ready"
+          },
+          {
+            "id": "cell-1-0-3",
+            "state": "ready"
+          }
+        ],
+        "ready": [
+          "cell-1-0-4",
+          "cell-1-0-3"
+        ]
+      },
+      "assets": {
+        "bytes": {
+          "entries": 4,
+          "references": 7,
+          "ready": 4,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "decoded": {
+          "entries": 0,
+          "references": 0,
+          "ready": 0,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "scopeLeases": 0
+      }
+    },
+    {
+      "label": "round-trip-7",
+      "state": {
+        "id": "local-player",
+        "tick": 18737,
+        "position": {
+          "x": -18.056781768798828,
+          "y": 0.8949971199035645,
+          "z": 281.9559631347656
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 2.999267578125
+        },
+        "yaw": 3.141592653589793,
+        "mode": "grounded",
+        "supportId": "jiangnan-bank--1"
+      },
+      "physics": {
+        "active": true,
+        "tick": 18737,
+        "position": "{\"x\":-18.056781768798828,\"y\":0.8949971199035645,\"z\":281.9559631347656}",
+        "physicalPosition": "{\"x\":-18.056781768798828,\"y\":0.8949971199035645,\"z\":281.9559631347656}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "grounded",
+        "supportId": "jiangnan-bank--1",
+        "velocity": "{\"x\":0,\"y\":0,\"z\":2.999267578125}",
+        "penetration": 0,
+        "colliders": 24,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 60,
+        "lastSubsteps": 1,
+        "maxSubsteps": 1,
+        "maxSweepDistance": 0.05,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": -18.056781768798828,
+          "y": 0.8949971199035645,
+          "z": 281.9559631347656
+        },
+        "events": [
+          {
+            "tick": 1,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": -18,
+              "y": 0.8949971795082092,
+              "z": 282
+            },
+            "supportId": "jiangnan-bank--1"
+          }
+        ]
+      },
+      "streaming": {
+        "disposed": false,
+        "blocked": [],
+        "maxLoading": 2,
+        "activations": 0,
+        "zones": [
+          {
+            "id": "cell-1-0-4",
+            "state": "ready"
+          },
+          {
+            "id": "cell-1-0-3",
+            "state": "ready"
+          }
+        ],
+        "ready": [
+          "cell-1-0-4",
+          "cell-1-0-3"
+        ]
+      },
+      "assets": {
+        "bytes": {
+          "entries": 4,
+          "references": 7,
+          "ready": 4,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "decoded": {
+          "entries": 0,
+          "references": 0,
+          "ready": 0,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "scopeLeases": 0
+      }
+    },
+    {
+      "label": "round-trip-8",
+      "state": {
+        "id": "local-player",
+        "tick": 20815,
+        "position": {
+          "x": -18.057710647583008,
+          "y": 0.8949946165084839,
+          "z": 281.9219055175781
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 2.999267578125
+        },
+        "yaw": 3.141592653589793,
+        "mode": "grounded",
+        "supportId": "jiangnan-bank--1"
+      },
+      "physics": {
+        "active": true,
+        "tick": 20815,
+        "position": "{\"x\":-18.057710647583008,\"y\":0.8949946165084839,\"z\":281.9219055175781}",
+        "physicalPosition": "{\"x\":-18.057710647583008,\"y\":0.8949946165084839,\"z\":281.9219055175781}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "grounded",
+        "supportId": "jiangnan-bank--1",
+        "velocity": "{\"x\":0,\"y\":0,\"z\":2.999267578125}",
+        "penetration": 0,
+        "colliders": 24,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 60,
+        "lastSubsteps": 1,
+        "maxSubsteps": 1,
+        "maxSweepDistance": 0.05,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": -18.057710647583008,
+          "y": 0.8949946165084839,
+          "z": 281.9219055175781
+        },
+        "events": [
+          {
+            "tick": 1,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": -18,
+              "y": 0.8949971795082092,
+              "z": 282
+            },
+            "supportId": "jiangnan-bank--1"
+          }
+        ]
+      },
+      "streaming": {
+        "disposed": false,
+        "blocked": [],
+        "maxLoading": 2,
+        "activations": 0,
+        "zones": [
+          {
+            "id": "cell-1-0-4",
+            "state": "ready"
+          },
+          {
+            "id": "cell-1-0-3",
+            "state": "ready"
+          }
+        ],
+        "ready": [
+          "cell-1-0-4",
+          "cell-1-0-3"
+        ]
+      },
+      "assets": {
+        "bytes": {
+          "entries": 4,
+          "references": 7,
+          "ready": 4,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "decoded": {
+          "entries": 0,
+          "references": 0,
+          "ready": 0,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "scopeLeases": 0
+      }
+    },
+    {
+      "label": "round-trip-9",
+      "state": {
+        "id": "local-player",
+        "tick": 22892,
+        "position": {
+          "x": -18.05708122253418,
+          "y": 0.894995391368866,
+          "z": 281.9453125
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 2.999267578125
+        },
+        "yaw": 3.141592653589793,
+        "mode": "grounded",
+        "supportId": "jiangnan-bank--1"
+      },
+      "physics": {
+        "active": true,
+        "tick": 22892,
+        "position": "{\"x\":-18.05708122253418,\"y\":0.894995391368866,\"z\":281.9453125}",
+        "physicalPosition": "{\"x\":-18.05708122253418,\"y\":0.894995391368866,\"z\":281.9453125}",
+        "capsuleAxis": "+Y",
+        "capsuleHeightMeters": 1.75,
+        "mode": "grounded",
+        "supportId": "jiangnan-bank--1",
+        "velocity": "{\"x\":0,\"y\":0,\"z\":2.999267578125}",
+        "penetration": 0,
+        "colliders": 24,
+        "bodyCount": 1,
+        "controllerCount": 1,
+        "flightEnabled": true,
+        "flightSpeed": 60,
+        "lastSubsteps": 1,
+        "maxSubsteps": 1,
+        "maxSweepDistance": 0.05,
+        "recoveryCount": 0,
+        "safePosition": {
+          "x": -18.05708122253418,
+          "y": 0.894995391368866,
+          "z": 281.9453125
+        },
+        "events": [
+          {
+            "tick": 1,
+            "kind": "landed",
+            "from": "falling",
+            "to": "grounded",
+            "position": {
+              "x": -18,
+              "y": 0.8949971795082092,
+              "z": 282
+            },
+            "supportId": "jiangnan-bank--1"
+          }
+        ]
+      },
+      "streaming": {
+        "disposed": false,
+        "blocked": [],
+        "maxLoading": 2,
+        "activations": 0,
+        "zones": [
+          {
+            "id": "cell-1-0-4",
+            "state": "ready"
+          },
+          {
+            "id": "cell-1-0-3",
+            "state": "ready"
+          }
+        ],
+        "ready": [
+          "cell-1-0-4",
+          "cell-1-0-3"
+        ]
+      },
+      "assets": {
+        "bytes": {
+          "entries": 4,
+          "references": 7,
+          "ready": 4,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "decoded": {
+          "entries": 0,
+          "references": 0,
+          "ready": 0,
+          "loading": 0,
+          "lateDisposed": 0
+        },
+        "scopeLeases": 0
+      }
+    }
+  ]
+}

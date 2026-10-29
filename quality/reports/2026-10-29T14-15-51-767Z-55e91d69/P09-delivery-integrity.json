@@ -1,0 +1,12 @@
+{
+  "candidate": "c8198c76d379db4cd1179d3a3f389c868dad39a91f3b6405a3b6ae7750355c04",
+  "sourceCommit": "e988d4e",
+  "status": "BLOCKED",
+  "evidenceHashesVerified": 402,
+  "artifactSha256": "9d862ce52e0f5711ca0b7e988b76c0fb7dd488a257b6c240f31f094a2ac48d87",
+  "artifactBytes": 14815398,
+  "checkpoints": 14,
+  "captures": 13,
+  "unchangedCandidate": true,
+  "scope": "Original executions retained; archive integrity verification only; file protocol remains blocked by managed browser policy."
+}

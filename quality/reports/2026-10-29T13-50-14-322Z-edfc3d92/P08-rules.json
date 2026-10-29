@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "status": "engineering-default",
+  "source": {
+    "quote": "执行p08开发"
+  },
+  "proposal": {
+    "boundary": "pause movement at last ready capsule position; preserve support and flight mode",
+    "retry": "explicit retry after read error; no automatic retry",
+    "regions": "60 adjustable axis-aligned horizontal/vertical cells; ground, ascent, palace exterior/interior, roof",
+    "prefetchMetres": 14,
+    "retainMetres": 28,
+    "lookAheadSeconds": 2,
+    "maxConcurrentReads": 2,
+    "maxActivationsPerFrame": 1
+  },
+  "boundary": "Development implementation default, not a claim that the user confirmed a product preference. No merge, deployment, artistic or hardware acceptance implied.",
+  "userPreferenceConfirmed": false,
+  "decisionBasis": "P08 explicitly requires retaining old support and preventing entry without ready collisions. This reversible boundary wait is the engineering implementation of that requirement under the instruction to develop P08. The optional behavior question remains open; elapsed time is not approval."
+}

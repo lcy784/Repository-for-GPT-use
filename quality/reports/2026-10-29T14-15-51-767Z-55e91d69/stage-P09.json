@@ -1,0 +1,393 @@
+{
+  "runId": "2026-10-29T14-15-51-767Z-55e91d69",
+  "candidate": "c8198c76d379db4cd1179d3a3f389c868dad39a91f3b6405a3b6ae7750355c04",
+  "stage": "P09",
+  "status": "BLOCKED",
+  "packageManifest": "P09-package.json",
+  "cases": [
+    {
+      "id": "P09-01",
+      "status": "PASS",
+      "executed": 2,
+      "details": [
+        "Single IIFE, embedded WASM/config/model/registry and 66 assets; no runtime external requests.",
+        "file:// blocked by managed Chromium URL policy; equivalent copied bytes exercised via allowed loopback HTTP only. Direct-open offline acceptance outstanding."
+      ],
+      "evidence": [
+        {
+          "path": "P09-tests.json",
+          "sha256": "03644e9141302c84130e09da7bc5285e4a71a9825868d18efdb6227548bbd7de"
+        },
+        {
+          "path": "P09-tests.log",
+          "sha256": "b6e8cc5fc1e4fcca6ed511afde956624c1e36c71efe3ceef3ae5b51e3e957a5d"
+        },
+        {
+          "path": "P09-package.json",
+          "sha256": "7264eb238518868931313ad1ace4d2b724fb1df437794b26f5f0dde001fa8739"
+        },
+        {
+          "path": "P09-package/manifest.json",
+          "sha256": "e640e6f0d6d959e8b19e92301ccb0dc2f88f65fd43d9d674453111105f6db8c1"
+        },
+        {
+          "path": "P09-package/天宫-A.html",
+          "sha256": "9d862ce52e0f5711ca0b7e988b76c0fb7dd488a257b6c240f31f094a2ac48d87"
+        },
+        {
+          "path": "P09-journey/results.json",
+          "sha256": "6addaca7a1e26e676d9c45e923e678b2957ef9627d0a50a6f36a60ea67a011fc"
+        },
+        {
+          "path": "P09-journey.log",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "path": "P09-copies/copies.json",
+          "sha256": "da30f20f3f7c256a784fcae023f06cad69774dc9580469b347e95693beca9487"
+        },
+        {
+          "path": "P09-journey/01-jiangnan.png",
+          "sha256": "efaf8fd9357a123e0fe96d6e738eb007d9852fe182d44af029c298b2f0376b59"
+        },
+        {
+          "path": "P09-journey/02-bridge.png",
+          "sha256": "71b0737a88f3fcec11a8987b09b0328a4fc7a051acc83ea79e2604b9025e9cb8"
+        },
+        {
+          "path": "P09-journey/03-cloud-below-third.png",
+          "sha256": "08f352d095975918b11a74fcf1fc5356841a9bc763b4d2f0eb6cb28011f89a62"
+        },
+        {
+          "path": "P09-journey/03-cloud-below-first.png",
+          "sha256": "78167b0b7b9026ec91c04c79d8676f0e5e1394ed90141cd1aefc38df80784e6a"
+        },
+        {
+          "path": "P09-journey/03-cloud-inside-third.png",
+          "sha256": "cb757d3222dea75f7a01ff4c48826018b7263d8300c69c8044d7bc5c68c5625d"
+        },
+        {
+          "path": "P09-journey/03-cloud-inside-first.png",
+          "sha256": "2a34f4430facd55f3d894f152c28a0b4c62466ed1bd6137b2780d58cacd36548"
+        },
+        {
+          "path": "P09-journey/03-cloud-above-third.png",
+          "sha256": "6441139f6a3647f4ded0b3e381809ca7cc959e27b32d8a8194a7d761b9138a11"
+        },
+        {
+          "path": "P09-journey/03-cloud-above-first.png",
+          "sha256": "cae525dc16a555e3661d3d005ebbf1bfd391be657fe3c722474c2191f8c95950"
+        },
+        {
+          "path": "P09-journey/04-palace-entrance.png",
+          "sha256": "c57876f27365efafcf904bc0ea069017d644ba2b151532040bf7922a00c1c2c4"
+        },
+        {
+          "path": "P09-journey/05-interior.png",
+          "sha256": "9aff05f332c618fa7e92f95f77294aa0af611a0bcc3f57b105195126e6646f4d"
+        },
+        {
+          "path": "P09-journey/06-roof.png",
+          "sha256": "c81134eef8bee4452e1360383a049b7ad7ca8ebac931031caf8c323d00b74c57"
+        },
+        {
+          "path": "P09-journey/07-roof-first.png",
+          "sha256": "e59d3b8daa1bf3353ed0f0fe29e5327c3301cc274dc1784f73b32d8503c8885d"
+        },
+        {
+          "path": "P09-journey/08-return-view.png",
+          "sha256": "1737cf07a00fb87c8ff50baf9028414950a5b516e0ae0000fb5b7b031f7a5b6e"
+        }
+      ]
+    },
+    {
+      "id": "P09-02",
+      "status": "BLOCKED",
+      "executed": 2,
+      "details": [
+        "Fresh browser contexts with cache cleared and Service Workers blocked; real rendered pixels and controls. File navigation result recorded separately.",
+        "file:// blocked by managed Chromium URL policy; equivalent copied bytes exercised via allowed loopback HTTP only. Direct-open offline acceptance outstanding."
+      ],
+      "evidence": [
+        {
+          "path": "P09-tests.json",
+          "sha256": "03644e9141302c84130e09da7bc5285e4a71a9825868d18efdb6227548bbd7de"
+        },
+        {
+          "path": "P09-tests.log",
+          "sha256": "b6e8cc5fc1e4fcca6ed511afde956624c1e36c71efe3ceef3ae5b51e3e957a5d"
+        },
+        {
+          "path": "P09-package.json",
+          "sha256": "7264eb238518868931313ad1ace4d2b724fb1df437794b26f5f0dde001fa8739"
+        },
+        {
+          "path": "P09-package/manifest.json",
+          "sha256": "e640e6f0d6d959e8b19e92301ccb0dc2f88f65fd43d9d674453111105f6db8c1"
+        },
+        {
+          "path": "P09-package/天宫-A.html",
+          "sha256": "9d862ce52e0f5711ca0b7e988b76c0fb7dd488a257b6c240f31f094a2ac48d87"
+        },
+        {
+          "path": "P09-journey/results.json",
+          "sha256": "6addaca7a1e26e676d9c45e923e678b2957ef9627d0a50a6f36a60ea67a011fc"
+        },
+        {
+          "path": "P09-journey.log",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "path": "P09-copies/copies.json",
+          "sha256": "da30f20f3f7c256a784fcae023f06cad69774dc9580469b347e95693beca9487"
+        },
+        {
+          "path": "P09-journey/01-jiangnan.png",
+          "sha256": "efaf8fd9357a123e0fe96d6e738eb007d9852fe182d44af029c298b2f0376b59"
+        },
+        {
+          "path": "P09-journey/02-bridge.png",
+          "sha256": "71b0737a88f3fcec11a8987b09b0328a4fc7a051acc83ea79e2604b9025e9cb8"
+        },
+        {
+          "path": "P09-journey/03-cloud-below-third.png",
+          "sha256": "08f352d095975918b11a74fcf1fc5356841a9bc763b4d2f0eb6cb28011f89a62"
+        },
+        {
+          "path": "P09-journey/03-cloud-below-first.png",
+          "sha256": "78167b0b7b9026ec91c04c79d8676f0e5e1394ed90141cd1aefc38df80784e6a"
+        },
+        {
+          "path": "P09-journey/03-cloud-inside-third.png",
+          "sha256": "cb757d3222dea75f7a01ff4c48826018b7263d8300c69c8044d7bc5c68c5625d"
+        },
+        {
+          "path": "P09-journey/03-cloud-inside-first.png",
+          "sha256": "2a34f4430facd55f3d894f152c28a0b4c62466ed1bd6137b2780d58cacd36548"
+        },
+        {
+          "path": "P09-journey/03-cloud-above-third.png",
+          "sha256": "6441139f6a3647f4ded0b3e381809ca7cc959e27b32d8a8194a7d761b9138a11"
+        },
+        {
+          "path": "P09-journey/03-cloud-above-first.png",
+          "sha256": "cae525dc16a555e3661d3d005ebbf1bfd391be657fe3c722474c2191f8c95950"
+        },
+        {
+          "path": "P09-journey/04-palace-entrance.png",
+          "sha256": "c57876f27365efafcf904bc0ea069017d644ba2b151532040bf7922a00c1c2c4"
+        },
+        {
+          "path": "P09-journey/05-interior.png",
+          "sha256": "9aff05f332c618fa7e92f95f77294aa0af611a0bcc3f57b105195126e6646f4d"
+        },
+        {
+          "path": "P09-journey/06-roof.png",
+          "sha256": "c81134eef8bee4452e1360383a049b7ad7ca8ebac931031caf8c323d00b74c57"
+        },
+        {
+          "path": "P09-journey/07-roof-first.png",
+          "sha256": "e59d3b8daa1bf3353ed0f0fe29e5327c3301cc274dc1784f73b32d8503c8885d"
+        },
+        {
+          "path": "P09-journey/08-return-view.png",
+          "sha256": "1737cf07a00fb87c8ff50baf9028414950a5b516e0ae0000fb5b7b031f7a5b6e"
+        }
+      ]
+    },
+    {
+      "id": "P09-03",
+      "status": "BLOCKED",
+      "executed": 2,
+      "details": [
+        "Identical bytes opened from Chinese/space and ordinary copied paths; walking, perspective switching and cleanup checked.",
+        "file:// blocked by managed Chromium URL policy; equivalent copied bytes exercised via allowed loopback HTTP only. Direct-open offline acceptance outstanding."
+      ],
+      "evidence": [
+        {
+          "path": "P09-tests.json",
+          "sha256": "03644e9141302c84130e09da7bc5285e4a71a9825868d18efdb6227548bbd7de"
+        },
+        {
+          "path": "P09-tests.log",
+          "sha256": "b6e8cc5fc1e4fcca6ed511afde956624c1e36c71efe3ceef3ae5b51e3e957a5d"
+        },
+        {
+          "path": "P09-package.json",
+          "sha256": "7264eb238518868931313ad1ace4d2b724fb1df437794b26f5f0dde001fa8739"
+        },
+        {
+          "path": "P09-package/manifest.json",
+          "sha256": "e640e6f0d6d959e8b19e92301ccb0dc2f88f65fd43d9d674453111105f6db8c1"
+        },
+        {
+          "path": "P09-package/天宫-A.html",
+          "sha256": "9d862ce52e0f5711ca0b7e988b76c0fb7dd488a257b6c240f31f094a2ac48d87"
+        },
+        {
+          "path": "P09-journey/results.json",
+          "sha256": "6addaca7a1e26e676d9c45e923e678b2957ef9627d0a50a6f36a60ea67a011fc"
+        },
+        {
+          "path": "P09-journey.log",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "path": "P09-copies/copies.json",
+          "sha256": "da30f20f3f7c256a784fcae023f06cad69774dc9580469b347e95693beca9487"
+        },
+        {
+          "path": "P09-journey/01-jiangnan.png",
+          "sha256": "efaf8fd9357a123e0fe96d6e738eb007d9852fe182d44af029c298b2f0376b59"
+        },
+        {
+          "path": "P09-journey/02-bridge.png",
+          "sha256": "71b0737a88f3fcec11a8987b09b0328a4fc7a051acc83ea79e2604b9025e9cb8"
+        },
+        {
+          "path": "P09-journey/03-cloud-below-third.png",
+          "sha256": "08f352d095975918b11a74fcf1fc5356841a9bc763b4d2f0eb6cb28011f89a62"
+        },
+        {
+          "path": "P09-journey/03-cloud-below-first.png",
+          "sha256": "78167b0b7b9026ec91c04c79d8676f0e5e1394ed90141cd1aefc38df80784e6a"
+        },
+        {
+          "path": "P09-journey/03-cloud-inside-third.png",
+          "sha256": "cb757d3222dea75f7a01ff4c48826018b7263d8300c69c8044d7bc5c68c5625d"
+        },
+        {
+          "path": "P09-journey/03-cloud-inside-first.png",
+          "sha256": "2a34f4430facd55f3d894f152c28a0b4c62466ed1bd6137b2780d58cacd36548"
+        },
+        {
+          "path": "P09-journey/03-cloud-above-third.png",
+          "sha256": "6441139f6a3647f4ded0b3e381809ca7cc959e27b32d8a8194a7d761b9138a11"
+        },
+        {
+          "path": "P09-journey/03-cloud-above-first.png",
+          "sha256": "cae525dc16a555e3661d3d005ebbf1bfd391be657fe3c722474c2191f8c95950"
+        },
+        {
+          "path": "P09-journey/04-palace-entrance.png",
+          "sha256": "c57876f27365efafcf904bc0ea069017d644ba2b151532040bf7922a00c1c2c4"
+        },
+        {
+          "path": "P09-journey/05-interior.png",
+          "sha256": "9aff05f332c618fa7e92f95f77294aa0af611a0bcc3f57b105195126e6646f4d"
+        },
+        {
+          "path": "P09-journey/06-roof.png",
+          "sha256": "c81134eef8bee4452e1360383a049b7ad7ca8ebac931031caf8c323d00b74c57"
+        },
+        {
+          "path": "P09-journey/07-roof-first.png",
+          "sha256": "e59d3b8daa1bf3353ed0f0fe29e5327c3301cc274dc1784f73b32d8503c8885d"
+        },
+        {
+          "path": "P09-journey/08-return-view.png",
+          "sha256": "1737cf07a00fb87c8ff50baf9028414950a5b516e0ae0000fb5b7b031f7a5b6e"
+        }
+      ]
+    },
+    {
+      "id": "P09-04",
+      "status": "PASS",
+      "executed": 14,
+      "details": [
+        "Shared production core: walking/bridge/wall, flight/fall, dual perspective, clouds/interior/roof/departure. Default 10m/s, same player, no state injection.",
+        "file:// blocked by managed Chromium URL policy; equivalent copied bytes exercised via allowed loopback HTTP only. Direct-open offline acceptance outstanding."
+      ],
+      "evidence": [
+        {
+          "path": "P09-tests.json",
+          "sha256": "03644e9141302c84130e09da7bc5285e4a71a9825868d18efdb6227548bbd7de"
+        },
+        {
+          "path": "P09-tests.log",
+          "sha256": "b6e8cc5fc1e4fcca6ed511afde956624c1e36c71efe3ceef3ae5b51e3e957a5d"
+        },
+        {
+          "path": "P09-package.json",
+          "sha256": "7264eb238518868931313ad1ace4d2b724fb1df437794b26f5f0dde001fa8739"
+        },
+        {
+          "path": "P09-package/manifest.json",
+          "sha256": "e640e6f0d6d959e8b19e92301ccb0dc2f88f65fd43d9d674453111105f6db8c1"
+        },
+        {
+          "path": "P09-package/天宫-A.html",
+          "sha256": "9d862ce52e0f5711ca0b7e988b76c0fb7dd488a257b6c240f31f094a2ac48d87"
+        },
+        {
+          "path": "P09-journey/results.json",
+          "sha256": "6addaca7a1e26e676d9c45e923e678b2957ef9627d0a50a6f36a60ea67a011fc"
+        },
+        {
+          "path": "P09-journey.log",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "path": "P09-copies/copies.json",
+          "sha256": "da30f20f3f7c256a784fcae023f06cad69774dc9580469b347e95693beca9487"
+        },
+        {
+          "path": "P09-journey/01-jiangnan.png",
+          "sha256": "efaf8fd9357a123e0fe96d6e738eb007d9852fe182d44af029c298b2f0376b59"
+        },
+        {
+          "path": "P09-journey/02-bridge.png",
+          "sha256": "71b0737a88f3fcec11a8987b09b0328a4fc7a051acc83ea79e2604b9025e9cb8"
+        },
+        {
+          "path": "P09-journey/03-cloud-below-third.png",
+          "sha256": "08f352d095975918b11a74fcf1fc5356841a9bc763b4d2f0eb6cb28011f89a62"
+        },
+        {
+          "path": "P09-journey/03-cloud-below-first.png",
+          "sha256": "78167b0b7b9026ec91c04c79d8676f0e5e1394ed90141cd1aefc38df80784e6a"
+        },
+        {
+          "path": "P09-journey/03-cloud-inside-third.png",
+          "sha256": "cb757d3222dea75f7a01ff4c48826018b7263d8300c69c8044d7bc5c68c5625d"
+        },
+        {
+          "path": "P09-journey/03-cloud-inside-first.png",
+          "sha256": "2a34f4430facd55f3d894f152c28a0b4c62466ed1bd6137b2780d58cacd36548"
+        },
+        {
+          "path": "P09-journey/03-cloud-above-third.png",
+          "sha256": "6441139f6a3647f4ded0b3e381809ca7cc959e27b32d8a8194a7d761b9138a11"
+        },
+        {
+          "path": "P09-journey/03-cloud-above-first.png",
+          "sha256": "cae525dc16a555e3661d3d005ebbf1bfd391be657fe3c722474c2191f8c95950"
+        },
+        {
+          "path": "P09-journey/04-palace-entrance.png",
+          "sha256": "c57876f27365efafcf904bc0ea069017d644ba2b151532040bf7922a00c1c2c4"
+        },
+        {
+          "path": "P09-journey/05-interior.png",
+          "sha256": "9aff05f332c618fa7e92f95f77294aa0af611a0bcc3f57b105195126e6646f4d"
+        },
+        {
+          "path": "P09-journey/06-roof.png",
+          "sha256": "c81134eef8bee4452e1360383a049b7ad7ca8ebac931031caf8c323d00b74c57"
+        },
+        {
+          "path": "P09-journey/07-roof-first.png",
+          "sha256": "e59d3b8daa1bf3353ed0f0fe29e5327c3301cc274dc1784f73b32d8503c8885d"
+        },
+        {
+          "path": "P09-journey/08-return-view.png",
+          "sha256": "1737cf07a00fb87c8ff50baf9028414950a5b516e0ae0000fb5b7b031f7a5b6e"
+        }
+      ]
+    }
+  ],
+  "environment": {
+    "browser": "154.0.8037.57",
+    "scope": "Linux Chromium file protocol functional evidence, not target Windows performance or independent artistic acceptance"
+  }
+}

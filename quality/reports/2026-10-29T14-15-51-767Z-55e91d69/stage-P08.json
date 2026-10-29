@@ -1,0 +1,248 @@
+{
+  "runId": "2026-10-29T14-15-51-767Z-55e91d69",
+  "candidate": "c8198c76d379db4cd1179d3a3f389c868dad39a91f3b6405a3b6ae7750355c04",
+  "stage": "P08",
+  "status": "PASS",
+  "cases": [
+    {
+      "id": "P08-01",
+      "status": "PASS",
+      "executed": 7,
+      "details": [
+        "Actual streamed Rapier world and resident authored visuals; exact bank/palace legacy-versus-streamed PNG equality. Full default journey also freshly executed in P06.",
+        "Boundary behavior is a reversible engineering default under the P08 development instruction; user preference is not confirmed."
+      ],
+      "evidence": [
+        {
+          "path": "P08-contracts.json",
+          "sha256": "260d34b4d7b330cd5a8e1d211f37ac126b472b004fd730ccb4251bc73aea692a"
+        },
+        {
+          "path": "P08-tests.json",
+          "sha256": "387c4883bd21788b86023aa3e9d3b1a0713a99d5bff5d3d018395faa095522f5"
+        },
+        {
+          "path": "P08-tests.log",
+          "sha256": "3c47d5ae1458963da7b7a3d3ce658786cb5d46d6c34cde3321c574d2c3393caa"
+        },
+        {
+          "path": "P08-physics-observations.json",
+          "sha256": "f6275c76fe2d298ea0e91af3d83e59e30face24b531e7731dfc0c1fc7db364f2"
+        },
+        {
+          "path": "P08-browser/results.json",
+          "sha256": "c759536fc11e5ad6be639d15066d04c94c26f426a4eb2f5fb2070481c3a5f883"
+        },
+        {
+          "path": "P08-browser.log",
+          "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+        },
+        {
+          "path": "P08-rules.json",
+          "sha256": "590a904668b6335944a5ceb07e8fed53725bf58696591ce3e529a562e1d5370f"
+        },
+        {
+          "path": "P08-browser/bank-false.png",
+          "sha256": "52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566"
+        },
+        {
+          "path": "P08-browser/bank-true.png",
+          "sha256": "52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566"
+        },
+        {
+          "path": "P08-browser/palace-false.png",
+          "sha256": "03553f63dbf7ad992c8952ed249da04236b3fa2fa76f8fec190b8dc1a25b4a0a"
+        },
+        {
+          "path": "P08-browser/palace-true.png",
+          "sha256": "03553f63dbf7ad992c8952ed249da04236b3fa2fa76f8fec190b8dc1a25b4a0a"
+        },
+        {
+          "path": "P08-browser/boundary-error.png",
+          "sha256": "ffae088dfc63b24b49a438462a17dae71bd50cada4ecb516397d268616a1db50"
+        }
+      ]
+    },
+    {
+      "id": "P08-02",
+      "status": "PASS",
+      "executed": 6,
+      "details": [
+        "Real HTTP 503 blocks the capsule before boundary, keeps floor support, reports error, no background retries; actual retry button restores traversal.",
+        "Boundary behavior is a reversible engineering default under the P08 development instruction; user preference is not confirmed."
+      ],
+      "evidence": [
+        {
+          "path": "P08-contracts.json",
+          "sha256": "260d34b4d7b330cd5a8e1d211f37ac126b472b004fd730ccb4251bc73aea692a"
+        },
+        {
+          "path": "P08-tests.json",
+          "sha256": "387c4883bd21788b86023aa3e9d3b1a0713a99d5bff5d3d018395faa095522f5"
+        },
+        {
+          "path": "P08-tests.log",
+          "sha256": "3c47d5ae1458963da7b7a3d3ce658786cb5d46d6c34cde3321c574d2c3393caa"
+        },
+        {
+          "path": "P08-physics-observations.json",
+          "sha256": "f6275c76fe2d298ea0e91af3d83e59e30face24b531e7731dfc0c1fc7db364f2"
+        },
+        {
+          "path": "P08-browser/results.json",
+          "sha256": "c759536fc11e5ad6be639d15066d04c94c26f426a4eb2f5fb2070481c3a5f883"
+        },
+        {
+          "path": "P08-browser.log",
+          "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+        },
+        {
+          "path": "P08-rules.json",
+          "sha256": "590a904668b6335944a5ceb07e8fed53725bf58696591ce3e529a562e1d5370f"
+        },
+        {
+          "path": "P08-browser/bank-false.png",
+          "sha256": "52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566"
+        },
+        {
+          "path": "P08-browser/bank-true.png",
+          "sha256": "52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566"
+        },
+        {
+          "path": "P08-browser/palace-false.png",
+          "sha256": "03553f63dbf7ad992c8952ed249da04236b3fa2fa76f8fec190b8dc1a25b4a0a"
+        },
+        {
+          "path": "P08-browser/palace-true.png",
+          "sha256": "03553f63dbf7ad992c8952ed249da04236b3fa2fa76f8fec190b8dc1a25b4a0a"
+        },
+        {
+          "path": "P08-browser/boundary-error.png",
+          "sha256": "ffae088dfc63b24b49a438462a17dae71bd50cada4ecb516397d268616a1db50"
+        }
+      ]
+    },
+    {
+      "id": "P08-03",
+      "status": "PASS",
+      "executed": 5,
+      "details": [
+        "Real keyboard flight at 60 m/s crosses a vertical boundary then reverses across a horizontal boundary; physics remains supported/loaded, no recovery. Deferred stale-generation proof also executed in units.",
+        "Boundary behavior is a reversible engineering default under the P08 development instruction; user preference is not confirmed."
+      ],
+      "evidence": [
+        {
+          "path": "P08-contracts.json",
+          "sha256": "260d34b4d7b330cd5a8e1d211f37ac126b472b004fd730ccb4251bc73aea692a"
+        },
+        {
+          "path": "P08-tests.json",
+          "sha256": "387c4883bd21788b86023aa3e9d3b1a0713a99d5bff5d3d018395faa095522f5"
+        },
+        {
+          "path": "P08-tests.log",
+          "sha256": "3c47d5ae1458963da7b7a3d3ce658786cb5d46d6c34cde3321c574d2c3393caa"
+        },
+        {
+          "path": "P08-physics-observations.json",
+          "sha256": "f6275c76fe2d298ea0e91af3d83e59e30face24b531e7731dfc0c1fc7db364f2"
+        },
+        {
+          "path": "P08-browser/results.json",
+          "sha256": "c759536fc11e5ad6be639d15066d04c94c26f426a4eb2f5fb2070481c3a5f883"
+        },
+        {
+          "path": "P08-browser.log",
+          "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+        },
+        {
+          "path": "P08-rules.json",
+          "sha256": "590a904668b6335944a5ceb07e8fed53725bf58696591ce3e529a562e1d5370f"
+        },
+        {
+          "path": "P08-browser/bank-false.png",
+          "sha256": "52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566"
+        },
+        {
+          "path": "P08-browser/bank-true.png",
+          "sha256": "52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566"
+        },
+        {
+          "path": "P08-browser/palace-false.png",
+          "sha256": "03553f63dbf7ad992c8952ed249da04236b3fa2fa76f8fec190b8dc1a25b4a0a"
+        },
+        {
+          "path": "P08-browser/palace-true.png",
+          "sha256": "03553f63dbf7ad992c8952ed249da04236b3fa2fa76f8fec190b8dc1a25b4a0a"
+        },
+        {
+          "path": "P08-browser/boundary-error.png",
+          "sha256": "ffae088dfc63b24b49a438462a17dae71bd50cada4ecb516397d268616a1db50"
+        }
+      ]
+    },
+    {
+      "id": "P08-04",
+      "status": "PASS",
+      "executed": 12,
+      "details": [
+        "Ten actual keyboard round trips return to the same working set; stopping releases all zone, physical and model resources.",
+        "Boundary behavior is a reversible engineering default under the P08 development instruction; user preference is not confirmed."
+      ],
+      "evidence": [
+        {
+          "path": "P08-contracts.json",
+          "sha256": "260d34b4d7b330cd5a8e1d211f37ac126b472b004fd730ccb4251bc73aea692a"
+        },
+        {
+          "path": "P08-tests.json",
+          "sha256": "387c4883bd21788b86023aa3e9d3b1a0713a99d5bff5d3d018395faa095522f5"
+        },
+        {
+          "path": "P08-tests.log",
+          "sha256": "3c47d5ae1458963da7b7a3d3ce658786cb5d46d6c34cde3321c574d2c3393caa"
+        },
+        {
+          "path": "P08-physics-observations.json",
+          "sha256": "f6275c76fe2d298ea0e91af3d83e59e30face24b531e7731dfc0c1fc7db364f2"
+        },
+        {
+          "path": "P08-browser/results.json",
+          "sha256": "c759536fc11e5ad6be639d15066d04c94c26f426a4eb2f5fb2070481c3a5f883"
+        },
+        {
+          "path": "P08-browser.log",
+          "sha256": "4f97cf4a983ce1d6270e5727e386dc3b8e584412b2960b61d7c129fd40f010a2"
+        },
+        {
+          "path": "P08-rules.json",
+          "sha256": "590a904668b6335944a5ceb07e8fed53725bf58696591ce3e529a562e1d5370f"
+        },
+        {
+          "path": "P08-browser/bank-false.png",
+          "sha256": "52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566"
+        },
+        {
+          "path": "P08-browser/bank-true.png",
+          "sha256": "52fd66b3688629521ea432e3d90697a23348211af6de89aa95b72912db066566"
+        },
+        {
+          "path": "P08-browser/palace-false.png",
+          "sha256": "03553f63dbf7ad992c8952ed249da04236b3fa2fa76f8fec190b8dc1a25b4a0a"
+        },
+        {
+          "path": "P08-browser/palace-true.png",
+          "sha256": "03553f63dbf7ad992c8952ed249da04236b3fa2fa76f8fec190b8dc1a25b4a0a"
+        },
+        {
+          "path": "P08-browser/boundary-error.png",
+          "sha256": "ffae088dfc63b24b49a438462a17dae71bd50cada4ecb516397d268616a1db50"
+        }
+      ]
+    }
+  ],
+  "environment": {
+    "browser": "154.0.8037.57",
+    "scope": "Actual streamed collision world; authored visual sample intentionally resident; boundary wait uses a documented reversible engineering default, not confirmed user preference; not Windows performance evidence"
+  }
+}

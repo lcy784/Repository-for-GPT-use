@@ -1,0 +1,1495 @@
+{
+  "runId": "2026-10-29T13-50-14-322Z-edfc3d92",
+  "candidate": "6366e36e7ea69aee177215631df6b54df9a921b81553d531e3a07a6c2a81f08b",
+  "browser": "154.0.8037.57",
+  "results": [
+    {
+      "id": "P03-01",
+      "status": "PASS",
+      "executed": 8,
+      "moves": [
+        {
+          "key": "w",
+          "before": {
+            "id": "local-player",
+            "tick": 95,
+            "position": {
+              "x": 0,
+              "y": 0.8949785828590393,
+              "z": 0
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 0,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          },
+          "after": {
+            "id": "local-player",
+            "tick": 141,
+            "position": {
+              "x": -0.6026576161384583,
+              "y": 0.8949807286262512,
+              "z": -0.9092870354652405
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": -0.5880026035475675,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          }
+        },
+        {
+          "key": "a",
+          "before": {
+            "id": "local-player",
+            "tick": 146,
+            "position": {
+              "x": -0.6026576161384583,
+              "y": 0.8949807286262512,
+              "z": -0.9092870354652405
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": -0.5880026035475675,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          },
+          "after": {
+            "id": "local-player",
+            "tick": 195,
+            "position": {
+              "x": -1.765293836593628,
+              "y": 0.8926061391830444,
+              "z": -0.13310478627681732
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": -2.158798930342464,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          }
+        },
+        {
+          "key": "s",
+          "before": {
+            "id": "local-player",
+            "tick": 197,
+            "position": {
+              "x": -1.765293836593628,
+              "y": 0.8926061391830444,
+              "z": -0.13310478627681732
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": -2.158798930342464,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          },
+          "after": {
+            "id": "local-player",
+            "tick": 237,
+            "position": {
+              "x": -1.1830600500106812,
+              "y": 0.894446611404419,
+              "z": 0.7404366731643677
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 2.5535900500422257,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          }
+        },
+        {
+          "key": "d",
+          "before": {
+            "id": "local-player",
+            "tick": 239,
+            "position": {
+              "x": -1.1830600500106812,
+              "y": 0.894446611404419,
+              "z": 0.7404366731643677
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 2.5535900500422257,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          },
+          "after": {
+            "id": "local-player",
+            "tick": 282,
+            "position": {
+              "x": -0.2262025773525238,
+              "y": 0.8939573168754578,
+              "z": 0.10253173112869263
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 0.9827937232473292,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          }
+        },
+        {
+          "key": "ArrowUp",
+          "before": {
+            "id": "local-player",
+            "tick": 287,
+            "position": {
+              "x": -0.2262025773525238,
+              "y": 0.8939573168754578,
+              "z": 0.10253173112869263
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": 0.9827937232473292,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          },
+          "after": {
+            "id": "local-player",
+            "tick": 334,
+            "position": {
+              "x": -0.9757418036460876,
+              "y": 0.8949778079986572,
+              "z": -1.0173782110214233
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "yaw": -0.5880026035475674,
+            "mode": "grounded",
+            "supportId": "flat-ground"
+          }
+        }
+      ],
+      "stopped": {
+        "id": "local-player",
+        "tick": 339,
+        "position": {
+          "x": -0.9757418036460876,
+          "y": 0.8949778079986572,
+          "z": -1.0173782110214233
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "yaw": -0.5880026035475674,
+        "mode": "grounded",
+        "supportId": "flat-ground"
+      },
+      "idle": {
+        "id": "local-player",
+        "tick": 366,
+        "position": {
+          "x": -0.9757418036460876,
+          "y": 0.8949778079986572,
+          "z": -1.0173782110214233
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "yaw": -0.5880026035475674,
+        "mode": "grounded",
+        "supportId": "flat-ground"
+      },
+      "blurred": {
+        "id": "local-player",
+        "tick": 439,
+        "position": {
+          "x": 1.3949207067489624,
+          "y": 0.8949810266494751,
+          "z": -2.5990569591522217
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "yaw": 0.9827937232473292,
+        "mode": "grounded",
+        "supportId": "flat-ground"
+      },
+      "afterBlur": {
+        "id": "local-player",
+        "tick": 467,
+        "position": {
+          "x": 1.3949207067489624,
+          "y": 0.8949810266494751,
+          "z": -2.5990569591522217
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "yaw": 0.9827937232473292,
+        "mode": "grounded",
+        "supportId": "flat-ground"
+      },
+      "capture": {
+        "file": "terrain-real-input.png",
+        "sha256": "a8fd015c8ba78a2150b8e6eb68de0c30cf8143753df2b9ec65c1152af0ab21a4"
+      },
+      "network": [
+        {
+          "path": "/",
+          "status": 200
+        },
+        {
+          "path": "/assets/domManagement-BqltO0ki.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/math.scalar.functions-B_eaYLVj.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/engineStore-Bn2tApal.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/logger-CuBYPcDK.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/internalTexture-B3djGrls.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/main-DDirLdHe.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/main-BvpIQhOp.css",
+          "status": 200
+        },
+        {
+          "path": "/assets/performanceConfigurator-UtxC_Odd.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/shaderStore-D-XQlhUT.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/tools.functions-DLQU6ymA.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/abstractEngine.pure-DsyZHOMD.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/thinEngine.pure-uc8GxMu0.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/halfFloat-Ce77JD5z.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/bufferUtils-DzEv5AIb.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/buffer.pure-0kM6nbI8.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/typeStore-Cu_sj2zM.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/math.plane-BCD5GnJJ.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/guid-BXdVC_j_.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/deviceInputEvents-Dt9ANTQz.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/math.color.pure-CTDT11DD.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/decorators-BWcttrMP.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/decorators.serialization-f7Ya6vNA.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/tools.pure-C3ZuX3AE.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/smartArray-BRfcgNbX.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/pointerEvents-qTg2CZx9.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/keyboardEvents-CGYiptFb.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/lightConstants-C_i-ky_L.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/sceneComponent-B-ifWw2U.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/math.axis-C6VbxCKu.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/math.viewport-Cp0w6PSE.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/node-BECfNhkM.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/preload-helper-CRzLMJPS.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/math.vector-D8owTGrY.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/drawWrapper-D7fYnWcK.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/math.size-BHZaDYSv.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/subMesh.pure-Mm_tI4lO.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/scene.pure-ym7Bq9K-.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/mesh.vertexData-mG0B_8Zu.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/baseTexture.pure-I8RDKg6S.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/texture.pure-CuoPR9TY.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/material.pure-DZEb72bm.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/light-B5DRx6-A.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/imageProcessing-C_8k1YIT.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/material.detailMapConfiguration-Do7m2gqM.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/abstractEngine.texture.pure-BIs82IMS.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/standardMaterial.pure-CJa42Ctr.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/sphericalPolynomial.pure-DH6ID2q8.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/standardMaterial-CdiHP9m6.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/easing-CGwFAe_u.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/animation.pure-CQum9zIt.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/math.color-cm09UcmL.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/effectRenderer.pure-JHduT-Qa.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/postProcess.pure-DuX_LpmF.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/renderTargetTexture.pure-RE4CfXaH.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/brdfTextureTools-D_Qbl6wu.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/environmentTextureTools.pure-CFvH_iTb.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/pbrMaterial.pure-DTFYrk2B.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/babylonFileParser.function-04mfLfi6.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/shadowLight-D3hAE4In.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/constants-_wyaM_ID.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/journey-C682_-rT.js",
+          "status": 200
+        },
+        {
+          "path": "/runtime-config.json",
+          "status": 200
+        },
+        {
+          "path": "/assets/session-CUvxCZKM.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/sceneUboDeclaration-B5VhSG0v.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/meshUboDeclaration-BmNu2KU_.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/mainUVVaryingDeclaration-BBamQlxR.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/default.vertex-DHc4KpZ0.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/defaultUboDeclaration-C53xcSdv.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/helperFunctions-gEnZbjN3.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/logDepthDeclaration-3gXGtHbI.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/bumpVertexDeclaration-Cb04kLz9.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/instancesDeclaration-CJBvtBV5.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/vertexColorMixing-Dr2MLCTE.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/bakedVertexAnimation-xLaKIOY3.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/logDepthVertex-CksyN44U.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/clipPlaneVertex-C59BO8JS.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/bumpVertex-CWhdIpqj.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/objectIdFunctions-BCg-H1o3.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/fogFragment-Ck1Rri6b.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/oitFragment-zTT3RJk0.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/lightFragment-x7Xpl9uU.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/default.fragment-DPDpC1pV.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/reflectionFunction-CivoLMz9.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/bumpFragment-BtJd9tYZ.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/clipPlaneFragment-DVK0wgyZ.js",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "id": "P03-02",
+      "status": "PASS",
+      "executed": 1,
+      "before": {
+        "id": "local-player",
+        "tick": 43,
+        "position": {
+          "x": 0,
+          "y": 18.89499855041504,
+          "z": 54
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "yaw": 0,
+        "mode": "grounded",
+        "supportId": "palace-terrace"
+      },
+      "after": {
+        "id": "local-player",
+        "tick": 134,
+        "position": {
+          "x": -0.5144957900047302,
+          "y": 18.89499855041504,
+          "z": 53.14253234863281
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "yaw": -0.540419500270584,
+        "mode": "grounded",
+        "supportId": "palace-terrace"
+      },
+      "snapshot": {
+        "phase": "ready",
+        "error": null,
+        "frame": 30,
+        "tick": 139,
+        "maxStepsInFrame": 5,
+        "backend": "WebGL2",
+        "meshes": 28,
+        "activeMeshes": 18,
+        "engines": 1,
+        "listeners": 2,
+        "width": 1280,
+        "height": 720,
+        "visibility": "visible",
+        "visibilityTransitions": 0,
+        "camera": 0,
+        "glError": 0,
+        "depthWitness": "",
+        "projectedRoofEnvelope": "",
+        "frameIntervalMsMedian": 975.0999999998603,
+        "frameIntervalMsP95": 2204.9000000001397,
+        "drawCalls": 27,
+        "assemblyMetrics": "{\"columnCount\":36,\"shaftHeightMeters\":64.97999918460846,\"humanHeightMeters\":1.75000198364258,\"roofTiers\":3,\"bracketTiers\":8}",
+        "study": null,
+        "triangles": 326900,
+        "materials": 17,
+        "textures": 5,
+        "renderCpuMsMedian": 1.9000000001396984,
+        "cameraEye": "5.485504209995268,22.98499855041504,63.14253234863281",
+        "cameraTarget": "-0.5144957900047302,19.49499855041504,53.14253234863281",
+        "perspective": null,
+        "cameraState": null,
+        "avatarAnimation": null,
+        "animatedAvatars": 0,
+        "player": "{\"id\":\"local-player\",\"tick\":139,\"position\":{\"x\":-0.5144957900047302,\"y\":18.89499855041504,\"z\":53.14253234863281},\"velocity\":{\"x\":0,\"y\":0,\"z\":0},\"yaw\":-0.540419500270584,\"mode\":\"grounded\",\"supportId\":\"palace-terrace\"}",
+        "physics": "{\"active\":true,\"tick\":139,\"position\":\"{\\\"x\\\":-0.5144957900047302,\\\"y\\\":18.89499855041504,\\\"z\\\":53.14253234863281}\",\"physicalPosition\":\"{\\\"x\\\":-0.5144957900047302,\\\"y\\\":18.89499855041504,\\\"z\\\":53.14253234863281}\",\"capsuleAxis\":\"+Y\",\"capsuleHeightMeters\":1.75,\"mode\":\"grounded\",\"supportId\":\"palace-terrace\",\"velocity\":\"{\\\"x\\\":0,\\\"y\\\":0,\\\"z\\\":0}\",\"penetration\":0,\"colliders\":233,\"bodyCount\":1,\"controllerCount\":1,\"flightEnabled\":false,\"flightSpeed\":10,\"lastSubsteps\":1,\"maxSubsteps\":1,\"maxSweepDistance\":0.05,\"recoveryCount\":0,\"safePosition\":{\"x\":0,\"y\":18.91,\"z\":54},\"events\":[{\"tick\":1,\"kind\":\"landed\",\"from\":\"falling\",\"to\":\"grounded\",\"position\":{\"x\":0,\"y\":18.895002365112305,\"z\":54},\"supportId\":\"palace-terrace\"}]}",
+        "avatarHeightMeters": 1.7499999976158143,
+        "avatarYaw": -0.540419500270584,
+        "avatarPosition": "-0.5144957900047302,18.89499855041504,53.14253234863281",
+        "controllers": 1,
+        "inputListeners": 6,
+        "pressedKeys": "",
+        "inputFocused": true,
+        "streaming": null,
+        "assets": null,
+        "journey": null,
+        "fixture": "p03-palace-walk",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "totalFrames": 30,
+        "generation": 1,
+        "canvases": 1
+      },
+      "capture": {
+        "file": "palace-ground-walking.png",
+        "sha256": "97dafa85412f6d44546b47508d0e7f6ffd1acc65329f823e1b0ea98eef2c5b12"
+      },
+      "network": [
+        {
+          "path": "/",
+          "status": 200
+        },
+        {
+          "path": "/assets/math.scalar.functions-B_eaYLVj.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/engineStore-Bn2tApal.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/main-BvpIQhOp.css",
+          "status": 200
+        },
+        {
+          "path": "/assets/internalTexture-B3djGrls.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/logger-CuBYPcDK.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/domManagement-BqltO0ki.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/shaderStore-D-XQlhUT.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/main-DDirLdHe.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/performanceConfigurator-UtxC_Odd.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/tools.functions-DLQU6ymA.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/abstractEngine.pure-DsyZHOMD.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/halfFloat-Ce77JD5z.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/thinEngine.pure-uc8GxMu0.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/bufferUtils-DzEv5AIb.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/typeStore-Cu_sj2zM.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/buffer.pure-0kM6nbI8.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/math.plane-BCD5GnJJ.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/decorators.serialization-f7Ya6vNA.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/deviceInputEvents-Dt9ANTQz.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/decorators-BWcttrMP.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/guid-BXdVC_j_.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/math.color.pure-CTDT11DD.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/pointerEvents-qTg2CZx9.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/keyboardEvents-CGYiptFb.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/smartArray-BRfcgNbX.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/tools.pure-C3ZuX3AE.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/lightConstants-C_i-ky_L.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/sceneComponent-B-ifWw2U.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/math.viewport-Cp0w6PSE.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/math.axis-C6VbxCKu.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/node-BECfNhkM.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/preload-helper-CRzLMJPS.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/math.vector-D8owTGrY.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/drawWrapper-D7fYnWcK.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/scene.pure-ym7Bq9K-.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/subMesh.pure-Mm_tI4lO.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/math.size-BHZaDYSv.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/mesh.vertexData-mG0B_8Zu.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/baseTexture.pure-I8RDKg6S.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/texture.pure-CuoPR9TY.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/material.pure-DZEb72bm.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/imageProcessing-C_8k1YIT.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/light-B5DRx6-A.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/material.detailMapConfiguration-Do7m2gqM.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/abstractEngine.texture.pure-BIs82IMS.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/sphericalPolynomial.pure-DH6ID2q8.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/math.color-cm09UcmL.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/easing-CGwFAe_u.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/standardMaterial-CdiHP9m6.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/standardMaterial.pure-CJa42Ctr.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/animation.pure-CQum9zIt.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/effectRenderer.pure-JHduT-Qa.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/postProcess.pure-DuX_LpmF.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/renderTargetTexture.pure-RE4CfXaH.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/brdfTextureTools-D_Qbl6wu.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/environmentTextureTools.pure-CFvH_iTb.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/shadowLight-D3hAE4In.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/babylonFileParser.function-04mfLfi6.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/journey-C682_-rT.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/pbrMaterial.pure-DTFYrk2B.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/constants-_wyaM_ID.js",
+          "status": 200
+        },
+        {
+          "path": "/runtime-config.json",
+          "status": 200
+        },
+        {
+          "path": "/assets/packingFunctions-DpGwbupU.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/sceneUboDeclaration-B5VhSG0v.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/meshUboDeclaration-BmNu2KU_.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/shadowMap.fragment-DX4Yo1bp.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/shadowMap.vertex-2__0EcBa.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/helperFunctions-gEnZbjN3.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/clipPlaneFragment-DVK0wgyZ.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/sceneVertexDeclaration-CluTp-RC.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/depthBoxBlur.fragment-CLEAG5DG.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/shadowMapFragmentSoftTransparentShadow-R_iOKnyx.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/clipPlaneVertex-C59BO8JS.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/bakedVertexAnimation-xLaKIOY3.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/rgbdDecode.fragment-Cdz2Tveq.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/session-CUvxCZKM.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/postprocess.vertex-DJCmMhI8.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/logDepthDeclaration-3gXGtHbI.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/instancesDeclaration-CJBvtBV5.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/bumpVertexDeclaration-Cb04kLz9.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/pbr.vertex-DPATFZiU.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/vertexColorMixing-Dr2MLCTE.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/logDepthVertex-CksyN44U.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/bumpVertex-CWhdIpqj.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/pbrBRDFFunctions-BCNINF-p.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/objectIdFunctions-BCg-H1o3.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/harmonicsFunctions-QSz_WdsQ.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/pbrUboDeclaration--xFZEw0i.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/pbr.fragment-Dbx7NFfY.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/fogFragment-Ck1Rri6b.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/oitFragment-zTT3RJk0.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/mainUVVaryingDeclaration-BBamQlxR.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/lightFragment-x7Xpl9uU.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/reflectionFunction-CivoLMz9.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/bumpFragment-BtJd9tYZ.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/pbrIBLFunctions-CSlJv7qb.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/pbrDebug-CLskE_ZH.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/default.vertex-DHc4KpZ0.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/defaultUboDeclaration-C53xcSdv.js",
+          "status": 200
+        },
+        {
+          "path": "/assets/default.fragment-DPDpC1pV.js",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "id": "P03-04",
+      "status": "PASS",
+      "executed": 4,
+      "cycles": [
+        {
+          "stopped": {
+            "phase": "disposed",
+            "error": null,
+            "frame": 28,
+            "tick": 53,
+            "maxStepsInFrame": 5,
+            "backend": null,
+            "meshes": 0,
+            "activeMeshes": 0,
+            "engines": 0,
+            "listeners": 0,
+            "width": 1280,
+            "height": 720,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "depthWitness": "",
+            "projectedRoofEnvelope": "",
+            "frameIntervalMsMedian": 24.899999999906868,
+            "frameIntervalMsP95": 68.60000000009313,
+            "drawCalls": 0,
+            "assemblyMetrics": null,
+            "study": null,
+            "triangles": 0,
+            "materials": 0,
+            "textures": 0,
+            "renderCpuMsMedian": 0.7999999998137355,
+            "cameraEye": null,
+            "cameraTarget": null,
+            "perspective": null,
+            "cameraState": null,
+            "avatarAnimation": null,
+            "animatedAvatars": 0,
+            "player": null,
+            "physics": null,
+            "avatarHeightMeters": null,
+            "avatarYaw": null,
+            "avatarPosition": null,
+            "controllers": 0,
+            "inputListeners": 0,
+            "pressedKeys": "",
+            "inputFocused": false,
+            "streaming": null,
+            "assets": null,
+            "journey": null,
+            "fixture": "p03-terrain",
+            "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+            "totalFrames": 28,
+            "generation": 1,
+            "canvases": 1
+          },
+          "restarted": {
+            "phase": "ready",
+            "error": null,
+            "frame": 8,
+            "tick": 11,
+            "maxStepsInFrame": 4,
+            "backend": "WebGL2",
+            "meshes": 14,
+            "activeMeshes": 9,
+            "engines": 1,
+            "listeners": 2,
+            "width": 1280,
+            "height": 720,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "depthWitness": "",
+            "projectedRoofEnvelope": "",
+            "frameIntervalMsMedian": 19.800000000046566,
+            "frameIntervalMsP95": 70.79999999981374,
+            "drawCalls": 9,
+            "assemblyMetrics": null,
+            "study": null,
+            "triangles": 1340,
+            "materials": 5,
+            "textures": 0,
+            "renderCpuMsMedian": 1,
+            "cameraEye": "5.999999999999998,3.9849785828590405,9",
+            "cameraTarget": "0,1.4949785828590394,0",
+            "perspective": null,
+            "cameraState": null,
+            "avatarAnimation": null,
+            "animatedAvatars": 0,
+            "player": "{\"id\":\"local-player\",\"tick\":11,\"position\":{\"x\":0,\"y\":0.8949785828590393,\"z\":0},\"velocity\":{\"x\":0,\"y\":0,\"z\":0},\"yaw\":0,\"mode\":\"grounded\",\"supportId\":\"flat-ground\"}",
+            "physics": "{\"active\":true,\"tick\":11,\"position\":\"{\\\"x\\\":0,\\\"y\\\":0.8949785828590393,\\\"z\\\":0}\",\"physicalPosition\":\"{\\\"x\\\":0,\\\"y\\\":0.8949785828590393,\\\"z\\\":0}\",\"capsuleAxis\":\"+Y\",\"capsuleHeightMeters\":1.75,\"mode\":\"grounded\",\"supportId\":\"flat-ground\",\"velocity\":\"{\\\"x\\\":0,\\\"y\\\":0,\\\"z\\\":0}\",\"penetration\":0,\"colliders\":11,\"bodyCount\":1,\"controllerCount\":1,\"flightEnabled\":false,\"flightSpeed\":10,\"lastSubsteps\":1,\"maxSubsteps\":1,\"maxSweepDistance\":0.002725,\"recoveryCount\":0,\"safePosition\":{\"x\":0,\"y\":0.91,\"z\":0},\"events\":[{\"tick\":1,\"kind\":\"landed\",\"from\":\"falling\",\"to\":\"grounded\",\"position\":{\"x\":0,\"y\":0.8950000405311584,\"z\":0},\"supportId\":\"flat-ground\"}]}",
+            "avatarHeightMeters": 1.7499999976158143,
+            "avatarYaw": 0,
+            "avatarPosition": "0,0.8949785828590393,0",
+            "controllers": 1,
+            "inputListeners": 6,
+            "pressedKeys": "",
+            "inputFocused": false,
+            "streaming": null,
+            "assets": null,
+            "journey": null,
+            "fixture": "p03-terrain",
+            "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+            "totalFrames": 36,
+            "generation": 2,
+            "canvases": 1
+          }
+        },
+        {
+          "stopped": {
+            "phase": "disposed",
+            "error": null,
+            "frame": 18,
+            "tick": 27,
+            "maxStepsInFrame": 4,
+            "backend": null,
+            "meshes": 0,
+            "activeMeshes": 0,
+            "engines": 0,
+            "listeners": 0,
+            "width": 1280,
+            "height": 720,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "depthWitness": "",
+            "projectedRoofEnvelope": "",
+            "frameIntervalMsMedian": 20.5,
+            "frameIntervalMsP95": 70.79999999981374,
+            "drawCalls": 0,
+            "assemblyMetrics": null,
+            "study": null,
+            "triangles": 0,
+            "materials": 0,
+            "textures": 0,
+            "renderCpuMsMedian": 0.6000000000931323,
+            "cameraEye": null,
+            "cameraTarget": null,
+            "perspective": null,
+            "cameraState": null,
+            "avatarAnimation": null,
+            "animatedAvatars": 0,
+            "player": null,
+            "physics": null,
+            "avatarHeightMeters": null,
+            "avatarYaw": null,
+            "avatarPosition": null,
+            "controllers": 0,
+            "inputListeners": 0,
+            "pressedKeys": "",
+            "inputFocused": false,
+            "streaming": null,
+            "assets": null,
+            "journey": null,
+            "fixture": "p03-terrain",
+            "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+            "totalFrames": 46,
+            "generation": 2,
+            "canvases": 1
+          },
+          "restarted": {
+            "phase": "ready",
+            "error": null,
+            "frame": 7,
+            "tick": 8,
+            "maxStepsInFrame": 2,
+            "backend": "WebGL2",
+            "meshes": 14,
+            "activeMeshes": 9,
+            "engines": 1,
+            "listeners": 2,
+            "width": 1280,
+            "height": 720,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "depthWitness": "",
+            "projectedRoofEnvelope": "",
+            "frameIntervalMsMedian": 24.399999999906868,
+            "frameIntervalMsP95": 31.600000000093132,
+            "drawCalls": 9,
+            "assemblyMetrics": null,
+            "study": null,
+            "triangles": 1340,
+            "materials": 5,
+            "textures": 0,
+            "renderCpuMsMedian": 2.1000000000931323,
+            "cameraEye": "5.999999999999998,3.9849785828590405,9",
+            "cameraTarget": "0,1.4949785828590394,0",
+            "perspective": null,
+            "cameraState": null,
+            "avatarAnimation": null,
+            "animatedAvatars": 0,
+            "player": "{\"id\":\"local-player\",\"tick\":8,\"position\":{\"x\":0,\"y\":0.8949785828590393,\"z\":0},\"velocity\":{\"x\":0,\"y\":0,\"z\":0},\"yaw\":0,\"mode\":\"grounded\",\"supportId\":\"flat-ground\"}",
+            "physics": "{\"active\":true,\"tick\":8,\"position\":\"{\\\"x\\\":0,\\\"y\\\":0.8949785828590393,\\\"z\\\":0}\",\"physicalPosition\":\"{\\\"x\\\":0,\\\"y\\\":0.8949785828590393,\\\"z\\\":0}\",\"capsuleAxis\":\"+Y\",\"capsuleHeightMeters\":1.75,\"mode\":\"grounded\",\"supportId\":\"flat-ground\",\"velocity\":\"{\\\"x\\\":0,\\\"y\\\":0,\\\"z\\\":0}\",\"penetration\":0,\"colliders\":11,\"bodyCount\":1,\"controllerCount\":1,\"flightEnabled\":false,\"flightSpeed\":10,\"lastSubsteps\":1,\"maxSubsteps\":1,\"maxSweepDistance\":0.002725,\"recoveryCount\":0,\"safePosition\":{\"x\":0,\"y\":0.91,\"z\":0},\"events\":[{\"tick\":1,\"kind\":\"landed\",\"from\":\"falling\",\"to\":\"grounded\",\"position\":{\"x\":0,\"y\":0.8950000405311584,\"z\":0},\"supportId\":\"flat-ground\"}]}",
+            "avatarHeightMeters": 1.7499999976158143,
+            "avatarYaw": 0,
+            "avatarPosition": "0,0.8949785828590393,0",
+            "controllers": 1,
+            "inputListeners": 6,
+            "pressedKeys": "",
+            "inputFocused": false,
+            "streaming": null,
+            "assets": null,
+            "journey": null,
+            "fixture": "p03-terrain",
+            "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+            "totalFrames": 53,
+            "generation": 3,
+            "canvases": 1
+          }
+        },
+        {
+          "stopped": {
+            "phase": "disposed",
+            "error": null,
+            "frame": 17,
+            "tick": 23,
+            "maxStepsInFrame": 3,
+            "backend": null,
+            "meshes": 0,
+            "activeMeshes": 0,
+            "engines": 0,
+            "listeners": 0,
+            "width": 1280,
+            "height": 720,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "depthWitness": "",
+            "projectedRoofEnvelope": "",
+            "frameIntervalMsMedian": 19.5,
+            "frameIntervalMsP95": 47.699999999953434,
+            "drawCalls": 0,
+            "assemblyMetrics": null,
+            "study": null,
+            "triangles": 0,
+            "materials": 0,
+            "textures": 0,
+            "renderCpuMsMedian": 1.3999999999068677,
+            "cameraEye": null,
+            "cameraTarget": null,
+            "perspective": null,
+            "cameraState": null,
+            "avatarAnimation": null,
+            "animatedAvatars": 0,
+            "player": null,
+            "physics": null,
+            "avatarHeightMeters": null,
+            "avatarYaw": null,
+            "avatarPosition": null,
+            "controllers": 0,
+            "inputListeners": 0,
+            "pressedKeys": "",
+            "inputFocused": false,
+            "streaming": null,
+            "assets": null,
+            "journey": null,
+            "fixture": "p03-terrain",
+            "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+            "totalFrames": 63,
+            "generation": 3,
+            "canvases": 1
+          },
+          "restarted": {
+            "phase": "ready",
+            "error": null,
+            "frame": 7,
+            "tick": 7,
+            "maxStepsInFrame": 2,
+            "backend": "WebGL2",
+            "meshes": 14,
+            "activeMeshes": 9,
+            "engines": 1,
+            "listeners": 2,
+            "width": 1280,
+            "height": 720,
+            "visibility": "visible",
+            "visibilityTransitions": 0,
+            "camera": 0,
+            "glError": 0,
+            "depthWitness": "",
+            "projectedRoofEnvelope": "",
+            "frameIntervalMsMedian": 27.9000000001397,
+            "frameIntervalMsP95": 32.39999999990687,
+            "drawCalls": 9,
+            "assemblyMetrics": null,
+            "study": null,
+            "triangles": 1340,
+            "materials": 5,
+            "textures": 0,
+            "renderCpuMsMedian": 0.5,
+            "cameraEye": "5.999999999999998,3.9849785828590405,9",
+            "cameraTarget": "0,1.4949785828590394,0",
+            "perspective": null,
+            "cameraState": null,
+            "avatarAnimation": null,
+            "animatedAvatars": 0,
+            "player": "{\"id\":\"local-player\",\"tick\":7,\"position\":{\"x\":0,\"y\":0.8949785828590393,\"z\":0},\"velocity\":{\"x\":0,\"y\":0,\"z\":0},\"yaw\":0,\"mode\":\"grounded\",\"supportId\":\"flat-ground\"}",
+            "physics": "{\"active\":true,\"tick\":7,\"position\":\"{\\\"x\\\":0,\\\"y\\\":0.8949785828590393,\\\"z\\\":0}\",\"physicalPosition\":\"{\\\"x\\\":0,\\\"y\\\":0.8949785828590393,\\\"z\\\":0}\",\"capsuleAxis\":\"+Y\",\"capsuleHeightMeters\":1.75,\"mode\":\"grounded\",\"supportId\":\"flat-ground\",\"velocity\":\"{\\\"x\\\":0,\\\"y\\\":0,\\\"z\\\":0}\",\"penetration\":0,\"colliders\":11,\"bodyCount\":1,\"controllerCount\":1,\"flightEnabled\":false,\"flightSpeed\":10,\"lastSubsteps\":1,\"maxSubsteps\":1,\"maxSweepDistance\":0.002725,\"recoveryCount\":0,\"safePosition\":{\"x\":0,\"y\":0.91,\"z\":0},\"events\":[{\"tick\":1,\"kind\":\"landed\",\"from\":\"falling\",\"to\":\"grounded\",\"position\":{\"x\":0,\"y\":0.8950000405311584,\"z\":0},\"supportId\":\"flat-ground\"}]}",
+            "avatarHeightMeters": 1.7499999976158143,
+            "avatarYaw": 0,
+            "avatarPosition": "0,0.8949785828590393,0",
+            "controllers": 1,
+            "inputListeners": 6,
+            "pressedKeys": "",
+            "inputFocused": false,
+            "streaming": null,
+            "assets": null,
+            "journey": null,
+            "fixture": "p03-terrain",
+            "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+            "totalFrames": 70,
+            "generation": 4,
+            "canvases": 1
+          }
+        }
+      ],
+      "rapidRestart": {
+        "phase": "ready",
+        "error": null,
+        "frame": 6,
+        "tick": 8,
+        "maxStepsInFrame": 2,
+        "backend": "WebGL2",
+        "meshes": 14,
+        "activeMeshes": 9,
+        "engines": 1,
+        "listeners": 2,
+        "width": 1280,
+        "height": 720,
+        "visibility": "visible",
+        "visibilityTransitions": 0,
+        "camera": 0,
+        "glError": 0,
+        "depthWitness": "",
+        "projectedRoofEnvelope": "",
+        "frameIntervalMsMedian": 27.4000000001397,
+        "frameIntervalMsP95": 40.199999999953434,
+        "drawCalls": 9,
+        "assemblyMetrics": null,
+        "study": null,
+        "triangles": 1340,
+        "materials": 5,
+        "textures": 0,
+        "renderCpuMsMedian": 0.39999999990686774,
+        "cameraEye": "5.999999999999998,3.9849785828590405,9",
+        "cameraTarget": "0,1.4949785828590394,0",
+        "perspective": null,
+        "cameraState": null,
+        "avatarAnimation": null,
+        "animatedAvatars": 0,
+        "player": "{\"id\":\"local-player\",\"tick\":8,\"position\":{\"x\":0,\"y\":0.8949785828590393,\"z\":0},\"velocity\":{\"x\":0,\"y\":0,\"z\":0},\"yaw\":0,\"mode\":\"grounded\",\"supportId\":\"flat-ground\"}",
+        "physics": "{\"active\":true,\"tick\":8,\"position\":\"{\\\"x\\\":0,\\\"y\\\":0.8949785828590393,\\\"z\\\":0}\",\"physicalPosition\":\"{\\\"x\\\":0,\\\"y\\\":0.8949785828590393,\\\"z\\\":0}\",\"capsuleAxis\":\"+Y\",\"capsuleHeightMeters\":1.75,\"mode\":\"grounded\",\"supportId\":\"flat-ground\",\"velocity\":\"{\\\"x\\\":0,\\\"y\\\":0,\\\"z\\\":0}\",\"penetration\":0,\"colliders\":11,\"bodyCount\":1,\"controllerCount\":1,\"flightEnabled\":false,\"flightSpeed\":10,\"lastSubsteps\":1,\"maxSubsteps\":1,\"maxSweepDistance\":0.002725,\"recoveryCount\":0,\"safePosition\":{\"x\":0,\"y\":0.91,\"z\":0},\"events\":[{\"tick\":1,\"kind\":\"landed\",\"from\":\"falling\",\"to\":\"grounded\",\"position\":{\"x\":0,\"y\":0.8950000405311584,\"z\":0},\"supportId\":\"flat-ground\"}]}",
+        "avatarHeightMeters": 1.7499999976158143,
+        "avatarYaw": 0,
+        "avatarPosition": "0,0.8949785828590393,0",
+        "controllers": 1,
+        "inputListeners": 6,
+        "pressedKeys": "",
+        "inputFocused": false,
+        "streaming": null,
+        "assets": null,
+        "journey": null,
+        "fixture": "p03-terrain",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "totalFrames": 87,
+        "generation": 6,
+        "canvases": 1
+      }
+    }
+  ]
+}
